@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Apercu";
+    font-weight: normal;
+    src: url("fonts/Apercu.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Apercu";
+    font-weight: bold;
+    src: url("fonts/Apercu-Bold.otf") format("opentype");
+}
+.container {
+    margin: 5% 0 0 5%;
+}
+p {
+    margin: 0;
+    font-family: "Apercu", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a.bio {
+    color: black;
+    text-decoration: none;
+}
+a.bio:hover, a.bio:focus {
+    text-decoration: underline;
+}
+p.name {
+    margin-bottom: 16px;
+}
+span.bold {
+    font-weight: bold;
+}
+p.signature {
+    margin-top: 160px;
+}
