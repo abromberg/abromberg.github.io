@@ -21,10 +21,12 @@ p.name {
 p.signature {
     margin-top: 160px;
 }
+p.h {
+    display: none;
+}
 span.bold {
     font-weight: bold;
 }
-
 a {
     color: black;
     text-decoration: none;
