@@ -15,19 +15,20 @@ p {
     margin: 0;
     font-family: "Apercu", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-a.bio {
-    color: black;
-    text-decoration: none;
-}
-a.bio:hover, a.bio:focus {
-    text-decoration: underline;
-}
 p.name {
     margin-bottom: 16px;
+}
+p.signature {
+    margin-top: 160px;
 }
 span.bold {
     font-weight: bold;
 }
-p.signature {
-    margin-top: 160px;
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    text-decoration: underline;
 }
