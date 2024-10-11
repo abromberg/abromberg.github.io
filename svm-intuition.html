@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Support Vector Machine Intuition | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Support Vector Machine Intuition" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Building graphical intuition around support vector machine algorithms." />
+<meta property="og:description" content="Building graphical intuition around support vector machine algorithms." />
+<link rel="canonical" href="https://andybromberg.com/svm-intuition" />
+<meta property="og:url" content="https://andybromberg.com/svm-intuition" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/meta/posts/svm-intuition.png" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:alt" content="Support Vector Machine Intuition" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-01-06T11:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/meta/posts/svm-intuition.png" />
+<meta name="twitter:image:alt" content="Support Vector Machine Intuition" />
+<meta property="twitter:title" content="Support Vector Machine Intuition" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2014-01-06T11:00:00-08:00","datePublished":"2014-01-06T11:00:00-08:00","description":"Building graphical intuition around support vector machine algorithms.","headline":"Support Vector Machine Intuition","image":{"width":1200,"height":600,"alt":"Support Vector Machine Intuition","url":"https://andybromberg.com/assets/images/meta/posts/svm-intuition.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/svm-intuition"},"url":"https://andybromberg.com/svm-intuition"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <script src="https://kit.fontawesome.com/82c7482def.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script></head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Support Vector Machine Intuition</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2014-01-06T11:00:00-08:00" itemprop="datePublished">January 6, 2014
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 7 minutes</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody">
+      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190331213740/http://andybromberg.com/svm-intuition" class="external-link" target="_blank" rel="noopener noreferrer">on my old blog</a>.</p>
+<h2 id="introduction">
+  
+  
+    Introduction <a href="#introduction" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>A very common <a href="http://en.wikipedia.org/wiki/Machine_learning" class="external-link" target="_blank" rel="noopener noreferrer">machine learning</a> algorithm is a <a href="http://en.wikipedia.org/wiki/Support_vector_machine" class="external-link" target="_blank" rel="noopener noreferrer">Support Vector Machine</a>, or SVM. SVMs will allow you to predict information about data — we’ll see an example shortly.</p>
+
+<p>In this post I’m going to walk you through the concept and intuition behind SVMs — to understand the content here, you need no technical background. I’ll be following up with another post containing the math behind SVMs, which will be substantially more advanced. Stay tuned!</p>
+<h2 id="example-1">
+  
+  
+    Example 1 <a href="#example-1" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Let’s imagine that we have a dataset of houses that have been on the market. We’ll imagine that we have three pieces of information for each: the house size in square feet, the list price of the house, and whether the house has been sold or not. Here’s a graph of that data<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">This data isn’t real — I randomly generated it.</span>:</p>
+
+<p><img src="/assets/images/svm-intuition/svm_c_data_unmod.png" alt="" /></p>
+
+<p>Now let’s say that I give you the size and cost of a new house, as below:</p>
+
+<p><img src="/assets/images/svm-intuition/svm_c_data_new.png" alt="" /></p>
+
+<p>If I asked you to predict whether you think the house has sold or not, you’d have a pretty clear answer: yes, it has probably sold. This simple bit of pattern recognition is exactly what we’re trying to get a computer to do when we talk about writing a machine learning algorithm!</p>
+
+<p>Now, if I pushed you to describe the pattern you saw, you might say that there seems to be a sort of dividing line between the sold houses and the unsold houses. You might draw something like this and say that it seems like everything above the line is unsold and everything below the line is sold.</p>
+
+<p><img src="/assets/images/svm-intuition/svm_c_data_line.png" alt="" /></p>
+
+<p>This is a fairly simple observation, but as it turns out, this is exactly what an SVM algorithm is doing on a basic level!</p>
+
+<p>Effectively, what SVMs do is take your data and draw the line (or hyperplane, but we’ll get to that in a minute) that divides your dataset into groups of positive (sold) and negative (unsold) observations. Then, when you feed it a new data point, the algorithm figures out which side of the line the data point is on and spits back the predicted classification!</p>
+
+<p>Of course, I’m simplifying the algorithm a great deal here, but this is the basic idea of a Support Vector Machine algorithm.</p>
+<h2 id="example-2">
+  
+  
+    Example 2 <a href="#example-2" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The example above is all well and good, but it has one characteristic that makes it a bit too simple: the fact that I can draw a line that divides the dataset perfectly, with no observations falling on the wrong side of the line. That dataset is what we call a <em>linearly separable</em> dataset, though in reality, datasets are rarely linearly separable. Let’s take the same example but make the data just a touch more realistic.</p>
+
+<p><img src="/assets/images/svm-intuition/svm_c_data2_new.png" alt="" /></p>
+
+<p>Now we can’t draw a line that perfectly divides the dataset into sold and unsold houses! On the conceptual end of things, this actually doesn’t change much for us. If I asked you to predict the status of the “new” data point again, you’d probably still tell me that it has been sold.</p>
+
+<p>If I asked you to show me the pattern again, you’d probably still draw a line that looks something like the one below and say that anything below the line has <em>probably</em> been sold and anything above the line has <em>probably</em> not been sold.</p>
+
+<p><img src="/assets/images/svm-intuition/svm_c_data2_line.png" alt="" /></p>
+
+<p>Maybe you’d be a little less confident with your predictions this time around, but it still seems like the obvious pattern.</p>
+
+<p>It turns out that this is pretty much how an SVM works with non-linearly separable data, too. It uses what is called a regularization parameter to draw the best dividing line it can, and then it predicts new data points based on which side of the line they lie on.</p>
+<h2 id="more-features">
+  
+  
+    More Features <a href="#more-features" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>In the examples above, we only had two features: the house size and the house price. Because of this, we could draw a nice 2-dimensional plot and draw a line to divide the data. But SVMs work with any number of features, whether there are 1, 2, 3, or 1000s. With our two features, we could draw a dividing line. But with 3 features, we need to draw a dividing <em>plane</em>. Here’s what that might look like:</p>
+
+<p><img src="/assets/images/svm-intuition/svm_c_data3_plane.png" alt="" /></p>
+
+<p>Then, intuitively, we can classify new data points by determining which side of the plane they fall on.</p>
+
+<p>Once we get beyond 3 features, we can no longer effectively visualize the data (or at least, <em>I</em> can’t see 4-dimensional plots!). With four or more features, the SVM creates what is called a hyperplane — a higher dimensional representation of a plane. But just like the line in 2-d or the plane in 3-d, the hyperplane divides the feature space in half and allows you to classify new points by determining which side of the hyperplane they fall on.</p>
+<h2 id="conclusion">
+  
+  
+    Conclusion <a href="#conclusion" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>In the end, the concept behind a Support Vector Machine algorithm is pretty simple — draw something that divides your training data<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">The “training data” is the data you have at the beginning, when you’re building your model. Then, you use the algorithm on your “test data” to get your results.</span> into positive and negative samples as best as possible, then classify new data by determining which side of the hyperplane they lie on.</p>
+
+<p>One note I want to make clear is that it’s impossible to guarantee that you’ll predict correctly, of course! Even if your training data is perfectly linearly separable, a new data point could lie on one side of the hyperplane but actually be classified as being on the other side. Machine learning algorithms can only give you guesses for how your data should be classified — they can’t definitively tell you one way or the other.</p>
+
+<p>There are a ton of directions to go from here, like using an SVM to predict multiple classes (rather than just classifying houses as sold or unsold, you could classify flowers as red, yellow, or blue) or optimizing an SVM in various ways to apply to certain problems. In an upcoming post I’m going to go over the math involved in what I discussed in this post, and then perhaps I’ll explore one of these directions.</p>
+
+<p>I’ve attempted to explain SVMs in an conceptual way here, and in doing so, I’ve made a number of simplifications and skipped over parts of the algorithm. Please take this information for what it is: an intuitive way to think about Support Vector Machines, and not a rigorous examination.</p>
+
+<p>I’d love to hear what you think about this post (or if I made any mistakes!) — feel free to <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a> or comment below!</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#conclusion" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/credit-cards">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/credit-cards">Weekend Project: Hacking the Square Reader</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/token-hostile-takeover">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/token-hostile-takeover" class="external-link">What the First Token Hostile Takeover Could Look Like<span class="home-article-external-link">(medium.com)</span></a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/svm-intuition" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>

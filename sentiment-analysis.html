@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>First shot: Sentiment Analysis in R | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="First shot: Sentiment Analysis in R" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Attempting sentiment analysis in the R language." />
+<meta property="og:description" content="Attempting sentiment analysis in the R language." />
+<link rel="canonical" href="https://andybromberg.com/sentiment-analysis" />
+<meta property="og:url" content="https://andybromberg.com/sentiment-analysis" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/meta/posts/sentiment-analysis.png" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:alt" content="First shot: Sentiment Analysis in R" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-01-05T11:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/meta/posts/sentiment-analysis.png" />
+<meta name="twitter:image:alt" content="First shot: Sentiment Analysis in R" />
+<meta property="twitter:title" content="First shot: Sentiment Analysis in R" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2013-01-05T11:00:00-08:00","datePublished":"2013-01-05T11:00:00-08:00","description":"Attempting sentiment analysis in the R language.","headline":"First shot: Sentiment Analysis in R","image":{"width":1200,"height":600,"alt":"First shot: Sentiment Analysis in R","url":"https://andybromberg.com/assets/images/meta/posts/sentiment-analysis.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/sentiment-analysis"},"url":"https://andybromberg.com/sentiment-analysis"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <script src="https://kit.fontawesome.com/82c7482def.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script></head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">First shot: Sentiment Analysis in R</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2013-01-05T11:00:00-08:00" itemprop="datePublished">January 5, 2013
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 9 minutes</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody">
+      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190414165112/http://andybromberg.com/sentiment-analysis" class="external-link" target="_blank" rel="noopener noreferrer">on my old blog</a>.</p>
+<h2 id="introduction">
+  
+  
+    Introduction <a href="#introduction" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Over the past few weeks, I’ve become very interested in statistics and machine learning. During my first semester at school, I learned a huge amount about the <a href="http://www.r-project.org/" class="external-link" target="_blank" rel="noopener noreferrer">R programming language</a> (thanks to a couple of my classes and a very helpful TA — more on that in a later post), but I quickly ran out of ideas to code up.</p>
+
+<p>About two weeks ago, I realized that I should really have more of a background in statistics (I’ve never taken a statistics class) if I wanted to keep advancing my knowledge of R. I watched a lot of <a href="https://www.khanacademy.org/math/probability" class="external-link" target="_blank" rel="noopener noreferrer">Khan Academy</a> videos and read tutorials and papers to begin getting a basic understanding of the field and some of the techniques used in it.</p>
+
+<p>Then, a few days ago, I started looking again for projects to work on. I came upon Jeffrey Breen’s excellent discussion of <a href="http://www.inside-r.org/howto/mining-twitter-airline-consumer-sentiment" class="external-link" target="_blank" rel="noopener noreferrer">mining Twitter for airline customer sentiment</a>. This launched me into research of sentiment analysis using R.</p>
+
+<p>Around the same time, I also came upon some of the basic concepts of <a href="http://en.wikipedia.org/wiki/Machine_learning" class="external-link" target="_blank" rel="noopener noreferrer">machine learning</a>, including <a href="http://en.wikipedia.org/wiki/Statistical_classification" class="external-link" target="_blank" rel="noopener noreferrer">classification algorithms</a>. I then decided on a project to work on that would combine my learning so far in all four of these areas: R, statistics, sentiment analysis and data mining, and classification algorithms (the last two being closely related).</p>
+
+<p>Here was my (very) basic workflow for the project:</p>
+
+<ol>
+  <li>Select content to analyze</li>
+  <li>Analyze content using dataset of positive and negative elements</li>
+  <li>Train a classification algorithm based on the data</li>
+  <li>Use a classification algorithm to attempt to re-classify the same content and see how well it does</li>
+</ol>
+
+<p>This post will be peppered with the code I wrote (in R) for this project. If you’d like to take a look at all of it at once, either scroll to the bottom of the post or check it out on GitHub <a href="https://github.com/abromberg/sentiment_analysis" class="external-link" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h2 id="the-process">
+  
+  
+    The Process <a href="#the-process" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>I quickly decided that for my first sentiment analysis project, I didn’t want to mine Twitter. Tweets are too varied, not only in intention but also in language<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Not only did the test Tweets I downloaded have plenty of misspellings and abbreviations, but a decent portion of them were in different languages entirely!</span>. I found that sentiment analysts often use product and movie reviews to test their analyses, so I settled on those. I found Cornell professor Bo Pang’s page on <a href="http://www.cs.cornell.edu/people/pabo/movie-review-data/" class="external-link" target="_blank" rel="noopener noreferrer">movie review data</a> and selected his <em>sentence polarity dataset v1.0</em>, which has 10,663 sentences from movie reviews, each classified as either positive or negative. This would be my base content.</p>
+
+<p>Here’s the code to load up the positive and negative sentences and split them onto individual lines (using <code class="language-plaintext highlighter-rouge">str_split()</code> from the <a href="http://cran.r-project.org/web/packages/stringr/index.html" class="external-link" target="_blank" rel="noopener noreferrer">stringr package</a>)<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote"><code class="language-plaintext highlighter-rouge">read.delim()</code> appeared to split most of the sentences onto individual lines but not all of them (hence the use of <code class="language-plaintext highlighter-rouge">str_split()</code>). If you’re a reader who knows why and wouldn’t mind explaining that to me, I’d love to hear from you! You can <a href="mailto:andy@andybromberg.com" class="mailto-link">email me here</a>.</span>:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">posText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s1">'polarityData/rt-polaritydata/rt-polarity-pos.txt'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="n">posText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">posText</span><span class="o">$</span><span class="n">V1</span><span class="w">
+</span><span class="n">posText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">lapply</span><span class="p">(</span><span class="n">posText</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">str_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"\n"</span><span class="p">)</span><span class="w"> </span><span class="p">}))</span><span class="w">
+</span><span class="n">negText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s1">'polarityData/rt-polaritydata/rt-polarity-neg.txt'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="n">negText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">negText</span><span class="o">$</span><span class="n">V1</span><span class="w">
+</span><span class="n">negText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">lapply</span><span class="p">(</span><span class="n">negText</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">str_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"\n"</span><span class="p">)</span><span class="w"> </span><span class="p">}))</span></code></pre></figure>
+
+<p>After a lot of searching around for a dataset to analyze the sentence content, I found the <a href="hhttp://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010" class="external-link" target="_blank" rel="noopener noreferrer">AFINN wordlist</a>, which has 2477 words and phrases rated from -5 [very negative] to +5 [very positive]. I reclassified the AFINN words into four categories<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote">I recategorized the AFINN wordlist to 4 categories rather than 10 (11 if you count the 0’s) because I knew that since I was working with short content — just a sentence each — there might be some issues where certain word categories don’t appear enough for there isn’t a strong correlation due to the lack of words of each sentiment.</span>:</p>
+
+<ul>
+  <li>Very Negative (rating -5 or -4)</li>
+  <li>Negative (rating -3, -2, or -1)</li>
+  <li>Positive (rating 1, 2, or 3)</li>
+  <li>Very Positive (rating 4 or 5)</li>
+</ul>
+
+<p>I also added in a few more words specific to movies (<a href="http://member.tokoha-u.ac.jp/~dixonfdm/Writing%20Topics%20htm/Movie%20Review%20Folder/movie_descrip_vocab.htm" class="external-link" target="_blank" rel="noopener noreferrer">found here</a>) to round out my wordlist. Here’s the code for all that:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#load up word polarity list and format it</span><span class="w">
+</span><span class="n">afinn_list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s1">'AFINN/AFINN-111.txt'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="nf">names</span><span class="p">(</span><span class="n">afinn_list</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'word'</span><span class="p">,</span><span class="w"> </span><span class="s1">'score'</span><span class="p">)</span><span class="w">
+</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tolower</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">)</span><span class="w">
+ 
+</span><span class="c1">#categorize words as very negative to very positive and add some movie-specific words</span><span class="w">
+</span><span class="n">vNegTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-5</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-4</span><span class="p">]</span><span class="w">
+</span><span class="n">negTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-1</span><span class="p">],</span><span class="w"> </span><span class="s2">"second-rate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"moronic"</span><span class="p">,</span><span class="w"> </span><span class="s2">"third-rate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"flawed"</span><span class="p">,</span><span class="w"> </span><span class="s2">"juvenile"</span><span class="p">,</span><span class="w"> </span><span class="s2">"boring"</span><span class="p">,</span><span class="w"> </span><span class="n">distasteful</span><span class="s2">", "</span><span class="n">ordinary</span><span class="s2">", "</span><span class="n">disgusting</span><span class="s2">", "</span><span class="n">senseless</span><span class="s2">", "</span><span class="n">static</span><span class="s2">", "</span><span class="n">brutal</span><span class="s2">", "</span><span class="n">confused</span><span class="s2">", "</span><span class="n">disappointing</span><span class="s2">", "</span><span class="n">bloody</span><span class="s2">", "</span><span class="n">silly</span><span class="s2">", "</span><span class="n">tired</span><span class="s2">", "</span><span class="n">predictable</span><span class="s2">", "</span><span class="n">stupid</span><span class="s2">", "</span><span class="n">uninteresting</span><span class="s2">", "</span><span class="n">trite</span><span class="s2">", uneven"</span><span class="p">,</span><span class="w"> </span><span class="s2">"outdated"</span><span class="p">,</span><span class="w"> </span><span class="s2">"dreadful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"bland"</span><span class="p">)</span><span class="w">
+</span><span class="n">posTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="s2">"first-rate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"insightful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"clever"</span><span class="p">,</span><span class="w"> </span><span class="s2">"charming"</span><span class="p">,</span><span class="w"> </span><span class="s2">"comical"</span><span class="p">,</span><span class="w"> </span><span class="s2">"charismatic"</span><span class="p">,</span><span class="w"> </span><span class="s2">"enjoyable"</span><span class="p">,</span><span class="w"> </span><span class="s2">"absorbing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"sensitive"</span><span class="p">,</span><span class="w"> </span><span class="s2">"intriguing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"powerful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"pleasant"</span><span class="p">,</span><span class="w"> </span><span class="s2">"surprising"</span><span class="p">,</span><span class="w"> </span><span class="s2">"thought-provoking"</span><span class="p">,</span><span class="w"> </span><span class="s2">"imaginative"</span><span class="p">,</span><span class="w"> </span><span class="s2">"unpretentious"</span><span class="p">)</span><span class="w">
+</span><span class="n">vPosTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">5</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">4</span><span class="p">],</span><span class="w"> </span><span class="s2">"uproarious"</span><span class="p">,</span><span class="w"> </span><span class="s2">"riveting"</span><span class="p">,</span><span class="w"> </span><span class="s2">"fascinating"</span><span class="p">,</span><span class="w"> </span><span class="s2">"dazzling"</span><span class="p">,</span><span class="w"> </span><span class="s2">"legendary"</span><span class="p">)</span></code></pre></figure>
+
+<p>I chose to ignore neutral words because I didn’t believe these would help my classification. I then counted the number of words in each review that fit one of those four categories. This left me with a big data table (10,663 rows) of the form:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>sentence</td>
+      <td>#vNeg</td>
+      <td>#neg</td>
+      <td>#pos</td>
+      <td>#vPos</td>
+      <td>sentiment</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Though it is by no means his best work, laissez-passer is a distinguished and distinctive effort by a bona-fide master, a fascinating film replete with rewards to be had by all willing to make the effort to reap them.</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>positive</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In this example, it means that sentence had 1 negative word, 3 positive words, and 1 very positive word. It was also classified as positive by the database creator.</p>
+
+<p>I wrote a bunch of code (heavily based off Jeffrey Breen’s code) to accomplish all this. Here it is (I used the laply function from the <a href="http://cran.r-project.org/web/packages/plyr/index.html" class="external-link" target="_blank" rel="noopener noreferrer">plyr package</a> in there):</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#function to calculate number of words in each category within a sentence</span><span class="w">
+</span><span class="n">sentimentScore</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">){</span><span class="w">
+  </span><span class="n">final_scores</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w">
+  </span><span class="n">scores</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">laply</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">){</span><span class="w">
+    </span><span class="n">initial_sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sentence</span><span class="w">
+    </span><span class="c1">#remove unnecessary characters and split up by word </span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s1">'[[:punct:]]'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s1">'[[:cntrl:]]'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s1">'\\d+'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tolower</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">wordList</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">str_split</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span><span class="w"> </span><span class="s1">'\\s+'</span><span class="p">)</span><span class="w">
+    </span><span class="n">words</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">wordList</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#build vector with matches between sentence and each category</span><span class="w">
+    </span><span class="n">vPosMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">)</span><span class="w">
+    </span><span class="n">posMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">)</span><span class="w">
+    </span><span class="n">vNegMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">)</span><span class="w">
+    </span><span class="n">negMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#sum up number of words in each category</span><span class="w">
+    </span><span class="n">vPosMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">vPosMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">posMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">posMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">vNegMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">vNegMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">negMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">negMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">score</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">vNegMatches</span><span class="p">,</span><span class="w"> </span><span class="n">negMatches</span><span class="p">,</span><span class="w"> </span><span class="n">posMatches</span><span class="p">,</span><span class="w"> </span><span class="n">vPosMatches</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#add row to scores table</span><span class="w">
+    </span><span class="n">newrow</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">initial_sentence</span><span class="p">,</span><span class="w"> </span><span class="n">score</span><span class="p">)</span><span class="w">
+    </span><span class="n">final_scores</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">final_scores</span><span class="p">,</span><span class="w"> </span><span class="n">newrow</span><span class="p">)</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">final_scores</span><span class="p">)</span><span class="w">
+  </span><span class="p">},</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">)</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span><span class="w">
+ </span><span class="p">}</span><span class="w">    
+ 
+</span><span class="c1">#build tables of positive and negative sentences with scores</span><span class="w">
+</span><span class="n">posResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">sentimentScore</span><span class="p">(</span><span class="n">posText</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">))</span><span class="w">
+</span><span class="n">negResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">sentimentScore</span><span class="p">(</span><span class="n">negText</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">))</span><span class="w">
+</span><span class="n">posResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">posResult</span><span class="p">,</span><span class="w"> </span><span class="s1">'positive'</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">posResult</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'sentence'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vNeg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'neg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'pos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vPos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'sentiment'</span><span class="p">)</span><span class="w">
+</span><span class="n">negResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">negResult</span><span class="p">,</span><span class="w"> </span><span class="s1">'negative'</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">negResult</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'sentence'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vNeg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'neg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'pos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vPos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'sentiment'</span><span class="p">)</span><span class="w">    
+ 
+</span><span class="c1">#combine the positive and negative tables</span><span class="w">
+</span><span class="n">results</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">posResult</span><span class="p">,</span><span class="w"> </span><span class="n">negResult</span><span class="p">)</span></code></pre></figure>
+
+<p>In Jeffrey Breen’s analysis of airline customer sentiment, he used a very simple algorithm to classify the Tweets: he simply took the number of negative terms and subtracted them from the number of positive terms. He then compared these negative and positive values to each other to visualize their sentiment. I decided to implement an algorithm I had learned while researching machine learning: the <a href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier" class="external-link" target="_blank" rel="noopener noreferrer">Naive Bayes classifier</a>. I picked up the idea to run a classification algorithm from <a href="http://danzambonini.com/self-improving-bayesian-sentiment-analysis-for-twitter/" class="external-link" target="_blank" rel="noopener noreferrer">this post</a>, which used a similar process to the one described by Breen but relied on a Bayes classifier instead of his additive method.</p>
+
+<p>At this point, I used the naiveBayes classifier from the <a href="http://cran.r-project.org/web/packages/e1071/index.html" class="external-link" target="_blank" rel="noopener noreferrer">e1071 package</a> to attempt to classify the sentences as positive or negative (of course, without looking at the sentiment column). As the name suggests, this works by implementing a Naive Bayes algorithm. I won’t go into great detail here as to how it works (check out the Wikipedia page I linked to if you want to learn more), but the essential idea is that it looks at how the number of words in each of the four categories relates to whether the sentence is positive or negative. It then tries to guess whether a sentence is positive or negative by examining how many words it has in each category and relating this to the probabilities of those numbers appearing in positive and negative sentences.</p>
+
+<p>Here’s all I needed to do to run the classifier:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">classifier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">naiveBayes</span><span class="p">(</span><span class="n">results</span><span class="p">[,</span><span class="m">2</span><span class="o">:</span><span class="m">5</span><span class="p">],</span><span class="w"> </span><span class="n">results</span><span class="p">[,</span><span class="m">6</span><span class="p">])</span></code></pre></figure>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Confusion_matrix" class="external-link" target="_blank" rel="noopener noreferrer">confusion matrix</a> can help visualize the results of a classification algorithm. The matrix for my result was:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                   actual
+predicted   positive   negative
+  positive   2847        1546
+  negative   2484        3786
+</code></pre></div></div>
+
+<p>This was generated by this code:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">confTable</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p">),</span><span class="w"> </span><span class="n">results</span><span class="p">[,</span><span class="m">6</span><span class="p">],</span><span class="w"> </span><span class="n">dnn</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="s1">'predicted'</span><span class="p">,</span><span class="s1">'actual'</span><span class="p">))</span><span class="w"> </span><span class="n">confTable</span></code></pre></figure>
+
+<p>Since this experiment conforms to a <a href="http://en.wikipedia.org/wiki/Bernoulli_distribution" class="external-link" target="_blank" rel="noopener noreferrer">Bernoulli Distribution</a>, I was able to run a binomial test to assess a confidence interval for my results. I found that, within a 95% confidence interval, the population mean of the percent my program would get correct would be between 61.28% and 63.13%. I learned about the Bernoulli Distribution and the binomial test from the excellent Khan Academy statistics videos I had been watching. Here’s what I wrote for the binomial test:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">binom.test</span><span class="p">(</span><span class="n">confTable</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">]</span><span class="w">  </span><span class="o">+</span><span class="w"> </span><span class="n">confTable</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">],</span><span class="w"> </span><span class="n">nrow</span><span class="p">(</span><span class="n">results</span><span class="p">),</span><span class="w"> </span><span class="n">p</span><span class="o">=</span><span class="m">0.5</span><span class="p">)</span></code></pre></figure>
+<h2 id="conclusion">
+  
+  
+    Conclusion <a href="#conclusion" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>I learned a lot from this project. I’m so glad that I was able to pull together what I’ve learned in several different areas to work on one unified program.</p>
+
+<p>Taking a look at my results, though, I have a few comments.</p>
+
+<ol>
+  <li>My classification results aren’t that great. I had hoped to get much higher than a 60-65% correct classification rate. That’s quite alright with me, though; it means I have plenty of room to improve this program! I could try different classification algorithms, different wordlists, even different training data. There’s lots of space to work.</li>
+  <li>My code isn’t particularly pretty, and I would like to change that. I’ve just started to read <a href="http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html" class="external-link" target="_blank" rel="noopener noreferrer">Google’s Style Guide for R</a> and I’ve noticed a few things I do wrong. I’ll set out to fix those in later versions of this program if I choose to move forward with it.</li>
+  <li>I’d like to try <a href="http://en.wikipedia.org/wiki/Web_scraping" class="external-link" target="_blank" rel="noopener noreferrer">scraping</a> my data in the future rather than relying on premade databases for analysis. Even though there are undoubtedly advantages to the premade ones (they’ve likely been cleaned up and/or additional attributes have been added to them), I’d like to get more practice with scraping if I can. I could also use this as an opportunity to try to interface between PHP or Python (for the scraping) and R (for the analysis).</li>
+</ol>
+
+<p>If you’d like to grab the code from GitHub, please feel free. It’s <a href="https://github.com/abromberg/sentiment_analysis" class="external-link" target="_blank" rel="noopener noreferrer">right here</a>.</p>
+
+<p>As I said, I just started to learn all of this within the past couple weeks; I wouldn’t be surprised if I made a misstep somewhere. If you spot one — or just found this interesting and would like to chat — please <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a>!</p>
+
+<p>I wrote a followup post to this in Python. You can check it out <a href="/sentiment-analysis-python">here</a>.</p>
+
+<p>As promised, here’s the full code</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#import libraries to work with</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">plyr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">stringr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">e1071</span><span class="p">)</span><span class="w">    
+ 
+</span><span class="c1">#load up word polarity list and format it</span><span class="w">
+</span><span class="n">afinn_list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s1">'AFINN/AFINN-111.txt'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="nf">names</span><span class="p">(</span><span class="n">afinn_list</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'word'</span><span class="p">,</span><span class="w"> </span><span class="s1">'score'</span><span class="p">)</span><span class="w">
+</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tolower</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">)</span><span class="w">    
+ 
+</span><span class="c1">#categorize words as very negative to very positive and add some movie-specific words</span><span class="w">
+</span><span class="n">vNegTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-5</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-4</span><span class="p">]</span><span class="w">
+</span><span class="n">negTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">-1</span><span class="p">],</span><span class="w"> </span><span class="s2">"second-rate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"moronic"</span><span class="p">,</span><span class="w"> </span><span class="s2">"third-rate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"flawed"</span><span class="p">,</span><span class="w"> </span><span class="s2">"juvenile"</span><span class="p">,</span><span class="w"> </span><span class="s2">"boring"</span><span class="p">,</span><span class="w"> </span><span class="s2">"distasteful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"ordinary"</span><span class="p">,</span><span class="w"> </span><span class="s2">"disgusting"</span><span class="p">,</span><span class="w"> </span><span class="s2">"senseless"</span><span class="p">,</span><span class="w"> </span><span class="s2">"static"</span><span class="p">,</span><span class="w"> </span><span class="s2">"brutal"</span><span class="p">,</span><span class="w"> </span><span class="s2">"confused"</span><span class="p">,</span><span class="w"> </span><span class="s2">"disappointing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"bloody"</span><span class="p">,</span><span class="w"> </span><span class="s2">"silly"</span><span class="p">,</span><span class="w"> </span><span class="s2">"tired"</span><span class="p">,</span><span class="w"> </span><span class="s2">"predictable"</span><span class="p">,</span><span class="w"> </span><span class="s2">"stupid"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uninteresting"</span><span class="p">,</span><span class="w"> </span><span class="s2">"trite"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uneven"</span><span class="p">,</span><span class="w"> </span><span class="s2">"outdated"</span><span class="p">,</span><span class="w"> </span><span class="s2">"dreadful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"bland"</span><span class="p">)</span><span class="w">
+</span><span class="n">posTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="s2">"first-rate"</span><span class="p">,</span><span class="w"> </span><span class="s2">"insightful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"clever"</span><span class="p">,</span><span class="w"> </span><span class="s2">"charming"</span><span class="p">,</span><span class="w"> </span><span class="s2">"comical"</span><span class="p">,</span><span class="w"> </span><span class="s2">"charismatic"</span><span class="p">,</span><span class="w"> </span><span class="s2">"enjoyable"</span><span class="p">,</span><span class="w"> </span><span class="s2">"absorbing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"sensitive"</span><span class="p">,</span><span class="w"> </span><span class="s2">"intriguing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"powerful"</span><span class="p">,</span><span class="w"> </span><span class="s2">"pleasant"</span><span class="p">,</span><span class="w"> </span><span class="s2">"surprising"</span><span class="p">,</span><span class="w"> </span><span class="s2">"thought-provoking"</span><span class="p">,</span><span class="w"> </span><span class="s2">"imaginative"</span><span class="p">,</span><span class="w"> </span><span class="s2">"unpretentious"</span><span class="p">)</span><span class="w">
+</span><span class="n">vPosTerms</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">word</span><span class="p">[</span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">5</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">afinn_list</span><span class="o">$</span><span class="n">score</span><span class="o">==</span><span class="m">4</span><span class="p">],</span><span class="w"> </span><span class="s2">"uproarious"</span><span class="p">,</span><span class="w"> </span><span class="s2">"riveting"</span><span class="p">,</span><span class="w"> </span><span class="s2">"fascinating"</span><span class="p">,</span><span class="w"> </span><span class="s2">"dazzling"</span><span class="p">,</span><span class="w"> </span><span class="s2">"legendary"</span><span class="p">)</span><span class="w">    
+ 
+</span><span class="c1">#load up positive and negative sentences and format</span><span class="w">
+</span><span class="n">posText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s1">'polarityData/rt-polaritydata/rt-polarity-pos.txt'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="n">posText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">posText</span><span class="o">$</span><span class="n">V1</span><span class="w">
+</span><span class="n">posText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">lapply</span><span class="p">(</span><span class="n">posText</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">str_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"\n"</span><span class="p">)</span><span class="w"> </span><span class="p">}))</span><span class="w">
+</span><span class="n">negText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s1">'polarityData/rt-polaritydata/rt-polarity-neg.txt'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="n">negText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">negText</span><span class="o">$</span><span class="n">V1</span><span class="w">
+</span><span class="n">negText</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">lapply</span><span class="p">(</span><span class="n">negText</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">str_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"\n"</span><span class="p">)</span><span class="w"> </span><span class="p">}))</span><span class="w">    
+ 
+</span><span class="c1">#function to calculate number of words in each category within a sentence</span><span class="w">
+</span><span class="n">sentimentScore</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">){</span><span class="w">
+  </span><span class="n">final_scores</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w">
+  </span><span class="n">scores</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">laply</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">){</span><span class="w">
+    </span><span class="n">initial_sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sentence</span><span class="w">
+    </span><span class="c1">#remove unnecessary characters and split up by word </span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s1">'[[:punct:]]'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s1">'[[:cntrl:]]'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s1">'\\d+'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">,</span><span class="w"> </span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">sentence</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tolower</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="w">
+    </span><span class="n">wordList</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">str_split</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span><span class="w"> </span><span class="s1">'\\s+'</span><span class="p">)</span><span class="w">
+    </span><span class="n">words</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">wordList</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#build vector with matches between sentence and each category</span><span class="w">
+    </span><span class="n">vPosMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">)</span><span class="w">
+    </span><span class="n">posMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">)</span><span class="w">
+    </span><span class="n">vNegMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">)</span><span class="w">
+    </span><span class="n">negMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match</span><span class="p">(</span><span class="n">words</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#sum up number of words in each category</span><span class="w">
+    </span><span class="n">vPosMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">vPosMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">posMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">posMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">vNegMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">vNegMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">negMatches</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">negMatches</span><span class="p">))</span><span class="w">
+    </span><span class="n">score</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">vNegMatches</span><span class="p">,</span><span class="w"> </span><span class="n">negMatches</span><span class="p">,</span><span class="w"> </span><span class="n">posMatches</span><span class="p">,</span><span class="w"> </span><span class="n">vPosMatches</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#add row to scores table</span><span class="w">
+    </span><span class="n">newrow</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">initial_sentence</span><span class="p">,</span><span class="w"> </span><span class="n">score</span><span class="p">)</span><span class="w">
+    </span><span class="n">final_scores</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">final_scores</span><span class="p">,</span><span class="w"> </span><span class="n">newrow</span><span class="p">)</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">final_scores</span><span class="p">)</span><span class="w">
+  </span><span class="p">},</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">)</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">    
+ 
+</span><span class="c1">#build tables of positive and negative sentences with scores</span><span class="w">
+</span><span class="n">posResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">sentimentScore</span><span class="p">(</span><span class="n">posText</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">))</span><span class="w">
+</span><span class="n">negResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">sentimentScore</span><span class="p">(</span><span class="n">negText</span><span class="p">,</span><span class="w"> </span><span class="n">vNegTerms</span><span class="p">,</span><span class="w"> </span><span class="n">negTerms</span><span class="p">,</span><span class="w"> </span><span class="n">posTerms</span><span class="p">,</span><span class="w"> </span><span class="n">vPosTerms</span><span class="p">))</span><span class="w">
+</span><span class="n">posResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">posResult</span><span class="p">,</span><span class="w"> </span><span class="s1">'positive'</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">posResult</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'sentence'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vNeg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'neg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'pos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vPos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'sentiment'</span><span class="p">)</span><span class="w">
+</span><span class="n">negResult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">negResult</span><span class="p">,</span><span class="w"> </span><span class="s1">'negative'</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">negResult</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'sentence'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vNeg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'neg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'pos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'vPos'</span><span class="p">,</span><span class="w"> </span><span class="s1">'sentiment'</span><span class="p">)</span><span class="w">    
+ 
+</span><span class="c1">#combine the positive and negative tables</span><span class="w">
+</span><span class="n">results</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">posResult</span><span class="p">,</span><span class="w"> </span><span class="n">negResult</span><span class="p">)</span><span class="w">    
+ 
+</span><span class="c1">#run the naive bayes algorithm using all four categories</span><span class="w">
+</span><span class="n">classifier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">naiveBayes</span><span class="p">(</span><span class="n">results</span><span class="p">[,</span><span class="m">2</span><span class="o">:</span><span class="m">5</span><span class="p">],</span><span class="w"> </span><span class="n">results</span><span class="p">[,</span><span class="m">6</span><span class="p">])</span><span class="w">    
+ 
+</span><span class="c1">#display the confusion table for the classification ran on the same data</span><span class="w">
+</span><span class="n">confTable</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span><span class="w"> </span><span class="n">results</span><span class="p">),</span><span class="w"> </span><span class="n">results</span><span class="p">[,</span><span class="m">6</span><span class="p">],</span><span class="w"> </span><span class="n">dnn</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="s1">'predicted'</span><span class="p">,</span><span class="s1">'actual'</span><span class="p">))</span><span class="w">
+</span><span class="n">confTable</span><span class="w">    
+ 
+</span><span class="c1">#run a binomial test for confidence interval of results</span><span class="w">
+</span><span class="n">binom.test</span><span class="p">(</span><span class="n">confTable</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">confTable</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">],</span><span class="w"> </span><span class="n">nrow</span><span class="p">(</span><span class="n">results</span><span class="p">),</span><span class="w"> </span><span class="n">p</span><span class="o">=</span><span class="m">0.5</span><span class="p">)</span></code></pre></figure><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#conclusion" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    
+        <em>This was the earliest post!</em>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/sentiment-analysis-python">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/sentiment-analysis-python">Second Try: Sentiment Analysis in Python</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/sentiment-analysis" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>

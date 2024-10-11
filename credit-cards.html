@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Weekend Project: Hacking the Square Reader | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Weekend Project: Hacking the Square Reader" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Taking apart an early Square Reader to understand how it really works." />
+<meta property="og:description" content="Taking apart an early Square Reader to understand how it really works." />
+<link rel="canonical" href="https://andybromberg.com/credit-cards" />
+<meta property="og:url" content="https://andybromberg.com/credit-cards" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/meta/posts/credit-cards.png" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:alt" content="Weekend Project: Hacking the Square Reader" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-06-30T12:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/meta/posts/credit-cards.png" />
+<meta name="twitter:image:alt" content="Weekend Project: Hacking the Square Reader" />
+<meta property="twitter:title" content="Weekend Project: Hacking the Square Reader" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2013-06-30T12:00:00-07:00","datePublished":"2013-06-30T12:00:00-07:00","description":"Taking apart an early Square Reader to understand how it really works.","headline":"Weekend Project: Hacking the Square Reader","image":{"width":1200,"height":600,"alt":"Weekend Project: Hacking the Square Reader","url":"https://andybromberg.com/assets/images/meta/posts/credit-cards.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/credit-cards"},"url":"https://andybromberg.com/credit-cards"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <script src="https://kit.fontawesome.com/82c7482def.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script></head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Weekend Project: Hacking the Square Reader</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2013-06-30T12:00:00-07:00" itemprop="datePublished">June 30, 2013
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 9 minutes</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody">
+      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190331213740/http://andybromberg.com/credit-cards" class="external-link" target="_blank" rel="noopener noreferrer">on my old blog</a>.</p>
+<h2 id="introduction">
+  
+  
+    Introduction <a href="#introduction" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>I’ve been interested in looking at the information contained in credit cards ever since I first heard about the <a href="https://squareup.com/" class="external-link" target="_blank" rel="noopener noreferrer">Square</a> card reader. The idea of such a tiny device being able to parse all the information on a credit card directly into your phone is fascinating to me and I wanted to figure out how it worked and if I could play with it a little bit. Unfortunately, Square moved from a very simple circuit design to a larger, encrypted version before I got mine. Coming into this weekend, I didn’t even have the expertise to figure out the simple version, much less the encrypted version and so I had mostly given up on working with credit card information.</p>
+
+<p>However, one of my friends happened to have a few of the old Square readers that he gave me to work with. That gave me the opportunity to see what I could do and start hacking on this project.</p>
+<h2 id="software">
+  
+  
+    Software <a href="#software" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>My first goal was just to read data off a credit card (or any other card with a magstripe) with the Square reader. <a href="http://blog.tehinterweb.com/" class="external-link" target="_blank" rel="noopener noreferrer">Jeffrey Malone</a> has put together a couple excellent libraries for parsing data off the unencrypted Square reader, so I jumped right into those. I downloaded <a href="https://github.com/ieatlint/MagRead" class="external-link" target="_blank" rel="noopener noreferrer">MagRead</a> and built it, as below (from the command line):</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">ieatlint</span><span class="o">/</span><span class="n">MagRead.git</span><span class="w">
+</span><span class="n">cd</span><span class="w"> </span><span class="n">MagRead</span><span class="w">
+</span><span class="n">qmake</span><span class="w"> </span><span class="n">MagRead.pro</span><span class="w">
+</span><span class="n">make</span><span class="w">
+</span><span class="n">open</span><span class="w"> </span><span class="o">-</span><span class="n">a</span><span class="w"> </span><span class="n">MagRead.app</span></code></pre></figure>
+
+<p>Then I plugged the Square reader into my computer, started scanning, and slid my card through. Note that this only works with audio jacks that are both the microphone and speaker jack, like on MacBooks or ThinkPads. The app worked exactly as advertised and instantly displayed my credit card number and expiration date. I tried scanning some other cards (my student ID, insurance card, AAA card, etc.) and they all worked, displaying some of the information they contained.</p>
+
+<p>After reading a bit more about how credit card magstripe encoding works, I learned that there are typically three tracks on the magstripe. Track 3 includes a variety of miscellaneous information, track 2 is the normal track with the card number and expiration date (along with a couple other pieces of information), and track 1 has everything on track 2 plus the cardholder’s name and the CVV (different from what most people consider the CVV on the back of the card). If you’re interested in learning more, I highly recommend checking out <a href="http://www.gae.ucm.es/~padilla/extrawork/stripe.html" class="external-link" target="_blank" rel="noopener noreferrer">this website</a> on credit card information.</p>
+
+<p>I learned that the Square reader reads track 2 by default, but by putting a shim into the reader that’s about .11 inches thick, you could get it to read track 1 instead. I found that a zip tie did the trick and I could start reading the first track, which revealed some more information. MagRead continued to display this input perfectly, but it didn’t display the discretionary data on the track, which includes the CVV.</p>
+
+<p><img src="/assets/images/credit-cards/ziptie_shim.jpg" alt="" /></p>
+
+<p><img src="/assets/images/credit-cards/ziptie_scan.jpg" alt="" /></p>
+
+<p>It turns out that the author of MagRead released another library called <a href="https://github.com/ieatlint/SWipe" class="external-link" target="_blank" rel="noopener noreferrer">SWipe</a> that dumps all the information read. I went through much the same process to get it to work, cloning it from GitHub, qmake’ing it, make’ing it, and then opening the resulting application. Now when I scanned the cards I could see everything on them, in the following format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$B################^BROMBERG/ANDREW A^1408101##############?
+</code></pre></div></div>
+
+<p>Here’s a breakdown of what’s there:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ : Start of sequence
+B : Indicates a bank-issued card
+#s : Card number
+^ : Separator
+BROMBERG/ANDREW A : My name
+^ : Separator
+1408 : The expiration date (August 2014)
+101 : The card service code, indicating that the card can be used
+  internationally and without restrictions
+#s : The discretionary data, including the CVV
+? : The end-of-sequence marker
+</code></pre></div></div>
+
+<p>Similarly, I could see more information from other cards by scanning their first track as opposed to the second track.</p>
+<h2 id="hardware">
+  
+  
+    Hardware <a href="#hardware" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This was very cool, but I wasn’t satisfied yet. I wanted to know more about how and why the Square reader actually works. Thankfully I live in the same house as Jonathan Friedman, who runs <a href="https://circuithub.com/" class="external-link" target="_blank" rel="noopener noreferrer">CircuitHub</a><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">If you’re interested in electronics and don’t know CircuitHub yet, you should. They’re building a free, universal parts library that makes it incredibly easy to pick out the parts you need.</span> and has a PhD in Electrical Engineering. He spent a couple hours teaching me about electricity and magnetism from the ground up (which I’ll spare you in this blog post) and explained the principles behind magnetic card readers. If you’re interested in learning more about how they work, please <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a> and I’d be happy to talk to you, but there’s a large enough amount of background knowledge required that I don’t think it’s appropriate for this blog post.</p>
+
+<p>Jonathan suggested that we try to dive into the electronics of the reader to help me better visualize what’s going on — so we did exactly that.</p>
+
+<p><img src="/assets/images/credit-cards/tweezers_square.jpg" alt="" /></p>
+
+<p>Our first step was to open the reader up so we could see the innards, which were actually really simple. The most prominent component is a magnetic head that is capable of detecting magnetic changes that are very close to it. This is then attached to two wires that are soldered onto the connector.</p>
+
+<p>The wires in the reader connect to the ground and microphone segments of the connector. This means that the connector propagates a voltage differential (generated in the magnetic read head) into the computer or phone, which can then be parsed into the desired information. We decided to tap the internal part of the connector (where the original wires are connected) with our own wires to facilitate attachment to an <a href="http://en.wikipedia.org/wiki/Oscilloscope" class="external-link" target="_blank" rel="noopener noreferrer">oscilloscope</a> to measure the output and visualize the results.</p>
+
+<p><img src="/assets/images/credit-cards/desk_setup.jpg" alt="" /></p>
+
+<p>Jonathan soldered a couple wires on very delicately while I whittled the top half of the Square reader so that we could place it back on top without the new wires interfering with the placement.</p>
+
+<p><img src="/assets/images/credit-cards/soldering_square.jpg" alt="" /></p>
+
+<p><img src="/assets/images/credit-cards/whittling_top.jpg" alt="" /></p>
+
+<p>Finally we plugged our wires into the oscilloscope and started swiping a card through the reader.</p>
+
+<p><img src="/assets/images/credit-cards/clamped_square.jpg" alt="" /></p>
+
+<p><img src="/assets/images/credit-cards/scanning_card.jpg" alt="" /></p>
+
+<p>Unfortunately, no matter how much tuning we did, we couldn’t see anything. The Square reader doesn’t actually have an amplifier in it, just a raw magnetic transducer so the signal is very weak. We measured the reader’s impedance at 5.375k Ohms. With the oscilloscope set to its 1 million ohm input impedance setting, the wiring detected the 60Hz airborne signal emanating from the power grid strongly enough to make decoding of the card reader’s signal extremely difficult.</p>
+
+<p><label for="mn-1" class="margin-toggle">⊕</label>
+<input type="checkbox" id="mn-1" class="margin-toggle" />
+<span class="marginnote">
+  The oscilloscope at the 1 million ohm impedance setting. Only the 60Hz power grid signal is visible.
+</span>
+<img src="/assets/images/credit-cards/high_impedance.jpg" alt="" /></p>
+
+<p>Switching to the oscilloscope’s low (50 ohm) impedance setting largely eliminated the influence of the airborne signal, but reduced the reader’s signal by more than 100x — to the point where we could no longer see it.</p>
+
+<p><label for="mn-1" class="margin-toggle">⊕</label>
+<input type="checkbox" id="mn-1" class="margin-toggle" />
+<span class="marginnote">
+  The oscilloscope at the 50 ohm impedance setting. No signal is visible at all.
+</span>
+<img src="/assets/images/credit-cards/low_impedance.jpg" alt="" /></p>
+
+<p>Jonathan explained to me that Ohm’s law (voltage being generally current times impedance) implies that a large input impedance allows very weak induced currents to turn into comparatively large voltages. This is why the airborne power grid current turned into a very large displayed voltage in the oscilloscope at the 1 million ohm impedance setting.</p>
+
+<p>Jonathan suggested that we try an intermediate impedance value between 50 ohms and 1 million ohm, which we managed by putting a resistor in parallel with the circuit while setting the oscilloscope to the 50 ohm setting. We went with about 360k ohms. This was perfect, and we could suddenly see my credit card data being displayed as waveforms on the screen as I swiped it! Here’s a picture of one of the digits of my credit card number:</p>
+
+<p><img src="/assets/images/credit-cards/oscilloscope_output.jpg" alt="" /></p>
+
+<p>What’s so amazing about this for me is that I could see the waveform representing the data on my card — the very same data that MagRead and SWipe and the Square app take in to parse and output as numbers. With some signal processing, we could actually refine the data on the oscilloscope and get the credit card information right out of it!</p>
+<h2 id="conclusion">
+  
+  
+    Conclusion <a href="#conclusion" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>There are a few ways I’d like to go with this project now that I have a solid baseline.</p>
+
+<ol>
+  <li>I want to read track 3 on credit cards and try to parse through that information to figure out what’s actually there. That will involve rigging the reader in such a way that I can offset the card correctly while reading the information.</li>
+  <li>I want to try to do some signal processing on the oscilloscope output to actually parse some data out myself, without the help of MagRead or SWipe.</li>
+  <li>Now that I know a tiny bit about electricity and magnetism, I want to learn more, especially about practical circuitry design and modification. I would really like to be able to hack electronics effectively as well as understand what’s going on in the things I use every day.</li>
+</ol>
+
+<p>If you have any questions or comments on this post, please don’t hesitate to <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a>! I’d love to answer any questions you might have and if there’s any suggestions you have, please let me know.</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#conclusion" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/sentiment-analysis-python">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/sentiment-analysis-python">Second Try: Sentiment Analysis in Python</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/svm-intuition">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/svm-intuition">Support Vector Machine Intuition</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/credit-cards" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>
