@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2024-10-12T15:18:17-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Try just one fragrance-free month</title><link href="https://andybromberg.com/fragrance-free" rel="alternate" type="text/html" title="Try just one fragrance-free month" /><published>2024-10-11T12:00:00-07:00</published><updated>2024-10-11T12:00:00-07:00</updated><id>https://andybromberg.com/fragrance-free</id><content type="html" xml:base="https://andybromberg.com/fragrance-free"><![CDATA[<p class="vignette-image"><img src="/assets/images/fragrance-free/fragrances.png" alt="" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2024-10-12T16:30:13-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Try just one fragrance-free month</title><link href="https://andybromberg.com/fragrance-free" rel="alternate" type="text/html" title="Try just one fragrance-free month" /><published>2024-10-11T12:00:00-07:00</published><updated>2024-10-11T12:00:00-07:00</updated><id>https://andybromberg.com/fragrance-free</id><content type="html" xml:base="https://andybromberg.com/fragrance-free"><![CDATA[<p class="vignette-image"><img src="/assets/images/fragrance-free/fragrances.png" alt="" /></p>
 
 <p>In 2018, I was <em>always</em> at least a little congested and sniffly. I had some brain fog. I got headaches more than I felt like I should.</p>
 
@@ -20,7 +20,7 @@
 
 <p>Here’s the experiement I think <em>everyone</em> should try:</p>
 
-<p><strong>Go entirely fragrance-free for a month.</strong> That means:</p>
+<p><span class="highlighter"><strong>Go entirely fragrance-free for a month.</strong></span> That means:</p>
 <ul>
   <li>unscented deoderant</li>
   <li>unscented laundry detergent and dryer sheets</li>
@@ -339,7 +339,7 @@
 
 <p>Here are a few principles to consider:</p>
 
-<p><strong>Journalists are just people like you</strong> — there’s a lot of talk in tech these days about the evils of journalism, and <a href="https://x.com/PalmerLuckey/status/1533637324034101248">in some cases</a>, for very good reason. But at the end of the day, individual journalists are just plain ol’ human beings.</p>
+<p><span class="highlighter"><strong>Journalists are just people like you</strong></span> — there’s a lot of talk in tech these days about the evils of journalism, and <a href="https://x.com/PalmerLuckey/status/1533637324034101248">in some cases</a>, for very good reason. But at the end of the day, individual journalists are just plain ol’ human beings.</p>
 
 <p>Many founders feel like they need to give stiff, tightly-scripted pitches to journalists. But, at their core, journalists want the same things everyone else does: enjoyable conversations, pleasant relationships, and not being yelled at.</p>
 
@@ -349,7 +349,7 @@
 
 <p>So most of all, when you’re talking to them, remember that they’re people too. It sounds silly, but I’ve seen far too many founders fail to get coverage — or worse — by treating journalists like story-writing machines and nothing more.</p>
 
-<p><strong>… but they (mostly) aren’t your friends</strong> — with the above said… they usually aren’t your friend. You may be <em>friendly</em> with them, but you need to remember their incentives.</p>
+<p><span class="highlighter"><strong>… but they (mostly) aren’t your friends</strong></span> — with the above said… by default, they aren’t your friend. They’re a business relationship. You may be <em>friendly</em> with them, but you need to remember their incentives.</p>
 
 <p>In a sense, it’s like your relationship with your direct competitors’ CEOs.</p>
 
@@ -357,7 +357,7 @@
 
 <p>Journalists are the same. They’re <em>mostly</em> not out to screw you (although some are). But if you give them something too good, they won’t hesitate. That’s because…</p>
 
-<p><strong>They’re making expected value calculations</strong> — by default, most journalists want to retain a neutral/positive relationship with you.</p>
+<p><span class="highlighter"><strong>They’re making expected value calculations</strong></span> — by default, most journalists want to retain a neutral/positive relationship with you.</p>
 
 <p>This is because they get rewarded (career-wise) for <strong>scoops</strong> — being the first to break a piece of news that others haven’t found yet. So they want to be the person you call when you have news. That doesn’t mean they’ll go overboard on positivity, but does means they (again, mostly) won’t just be randomly negative for little gain.</p>
 
@@ -369,7 +369,7 @@
 
 <p>It’s a dilemma — sometimes you (usually accidentally) give them something so good that they have to burn you. And this is one place where the dislike of journalists can arise.</p>
 
-<p><strong>It’s an iterated game of agreements</strong> — dealing with journalists is a series of agreements, trust, and building a relationship (just like anything else, really).</p>
+<p><span class="highlighter"><strong>It’s an iterated game of agreements</strong></span> — dealing with journalists is a series of agreements, trust, and building a relationship (just like anything else, really).</p>
 
 <p>And — as evidenced by how far we are into this article, basically just covering terminology so far — the game you play with journalists has a lot of very idiosyncratic rules.</p>
 
@@ -383,23 +383,23 @@
 
 <p>(And it goes the other way too: if you lie to a journalist and get caught, you can be sure they’re going to be less friendly in the future.)</p>
 
-<p><strong>They want interesting info</strong> — they’re in the business of finding newsworthy stories and writing about them. They don’t want to cover fundraising announcements all day — they want to be doing deeper journalism.</p>
+<p><span class="highlighter"><strong>They want interesting info</strong></span> — they’re in the business of finding newsworthy stories and writing about them. They don’t want to cover fundraising announcements all day — they want to be doing deeper journalism.</p>
 
 <p>So if you have a piece of information that might be interesting, it can be worth giving it to them. Maybe you’re hearing rumors of an acquisition, or something going on in your industry.</p>
 
 <p>Reaching out and saying “<em>hey, I’m hearing some interesting stuff about [company], thought you might be interested. Can we chat off the record [or on background]?”</em> is a great way to build a relationship (<em>if</em> the information is actually interesting and especially if it’s not purely self-serving.)</p>
 
-<p><strong>They cover what they want to cover</strong> — everyone wishes that journalists would just use the quotes they want them to. But… that’s not how it works.</p>
+<p><span class="highlighter"><strong>They cover what they want to cover</strong></span> — everyone wishes that journalists would just use the quotes they want them to. But… that’s not how it works.</p>
 
 <p>They can slice up your quotes, take pieces, remove the self-promotional part, etc. — so never assume when you give a quote that it will be printed in full (or at all!).</p>
 
 <p>You need to be okay with any fragment coming out.</p>
 
-<p><strong>You’ll make mistakes</strong> — it’s like buying a car from a dealership. The car salesman is practicing for the interaction 8 hours a day. You do it once every five years. They’ve got the upper hand.</p>
+<p><span class="highlighter"><strong>You’ll make mistakes</strong></span> — it’s like buying a car from a dealership. The car salesman is practicing for the interaction 8 hours a day. You do it once every five years. They’ve got the upper hand.</p>
 
 <p>Journalists live and breathe the rules of the “journalistic engagement game.” You do it occasionally. Hopefully this article helps you do it well — like reading up on negotiating at a dealership — but you’ll still make mistakes every now and then, and probably get screwed a few times. Such is life.</p>
 
-<p><strong>It’s all about the relationships</strong> — they call it “media relations” for a reason.</p>
+<p><span class="highlighter"><strong>It’s all about the relationships</strong></span> — they call it “media relations” for a reason.</p>
 
 <p>The game of dealing with journalists has its own rules, but at the end of the day, it’s just relationships — same as when you’re raising money, hiring candidates, closing deals…</p>
 
@@ -479,7 +479,7 @@
 
 <p>I have found, over and over again, that partnerships with PR firms tend to be either 1) bad from the beginning (sad), or 2) great for 3-9 months, then they begin to slide downhill and you need to separate or do some sort of hard reset. Stay vigilant and manage to the plan, as you would with anything else.</p>
 
-<p class="vignette-image"><img src="/assets/images/startup-pr-rulebook/equanimity.png" alt="" /></p>
+<p class="vignette-image"><img src="/assets/images/startup-pr-rulebook/imity.png" alt="" /></p>
 
 <h2 id="equanimity">Equanimity</h2>
 
@@ -487,7 +487,7 @@
 
 <p>But before getting to a few FAQs, I want to wrap with perhaps my biggest takeaway from years of dealing with the media:</p>
 
-<p><strong>It’s an exercise in equanimity and non-attachment to outcomes.</strong></p>
+<p><strong>It’s an exercise in <span class="highlighter">equanimity</span> and non-attachment to outcomes.</strong></p>
 
 <p>The media is out of your control. No matter how much you try to make coverage perfect, it never will be.</p>
 
