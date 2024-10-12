@@ -68,7 +68,7 @@
       <div class="post-date"><time class="dt-published" datetime="2014-01-06T11:00:00-08:00" itemprop="datePublished">January 6, 2014
         </time></div>
             
-    <div class="article-reading-time">Reading time: about 7 minutes</div>
+    <div class="article-reading-time">Reading time: about 4 minutes</div>
       
       
     </header>
@@ -98,17 +98,17 @@
 
 <p>Let’s imagine that we have a dataset of houses that have been on the market. We’ll imagine that we have three pieces of information for each: the house size in square feet, the list price of the house, and whether the house has been sold or not. Here’s a graph of that data<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">This data isn’t real — I randomly generated it.</span>:</p>
 
-<p><img src="/assets/images/svm-intuition/svm_c_data_unmod.png" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/svm-intuition/svm_c_data_unmod.png" alt="" /></p>
 
 <p>Now let’s say that I give you the size and cost of a new house, as below:</p>
 
-<p><img src="/assets/images/svm-intuition/svm_c_data_new.png" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/svm-intuition/svm_c_data_new.png" alt="" /></p>
 
 <p>If I asked you to predict whether you think the house has sold or not, you’d have a pretty clear answer: yes, it has probably sold. This simple bit of pattern recognition is exactly what we’re trying to get a computer to do when we talk about writing a machine learning algorithm!</p>
 
 <p>Now, if I pushed you to describe the pattern you saw, you might say that there seems to be a sort of dividing line between the sold houses and the unsold houses. You might draw something like this and say that it seems like everything above the line is unsold and everything below the line is sold.</p>
 
-<p><img src="/assets/images/svm-intuition/svm_c_data_line.png" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/svm-intuition/svm_c_data_line.png" alt="" /></p>
 
 <p>This is a fairly simple observation, but as it turns out, this is exactly what an SVM algorithm is doing on a basic level!</p>
 
@@ -126,13 +126,13 @@
 
 <p>The example above is all well and good, but it has one characteristic that makes it a bit too simple: the fact that I can draw a line that divides the dataset perfectly, with no observations falling on the wrong side of the line. That dataset is what we call a <em>linearly separable</em> dataset, though in reality, datasets are rarely linearly separable. Let’s take the same example but make the data just a touch more realistic.</p>
 
-<p><img src="/assets/images/svm-intuition/svm_c_data2_new.png" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/svm-intuition/svm_c_data2_new.png" alt="" /></p>
 
 <p>Now we can’t draw a line that perfectly divides the dataset into sold and unsold houses! On the conceptual end of things, this actually doesn’t change much for us. If I asked you to predict the status of the “new” data point again, you’d probably still tell me that it has been sold.</p>
 
 <p>If I asked you to show me the pattern again, you’d probably still draw a line that looks something like the one below and say that anything below the line has <em>probably</em> been sold and anything above the line has <em>probably</em> not been sold.</p>
 
-<p><img src="/assets/images/svm-intuition/svm_c_data2_line.png" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/svm-intuition/svm_c_data2_line.png" alt="" /></p>
 
 <p>Maybe you’d be a little less confident with your predictions this time around, but it still seems like the obvious pattern.</p>
 
@@ -148,7 +148,7 @@
 
 <p>In the examples above, we only had two features: the house size and the house price. Because of this, we could draw a nice 2-dimensional plot and draw a line to divide the data. But SVMs work with any number of features, whether there are 1, 2, 3, or 1000s. With our two features, we could draw a dividing line. But with 3 features, we need to draw a dividing <em>plane</em>. Here’s what that might look like:</p>
 
-<p><img src="/assets/images/svm-intuition/svm_c_data3_plane.png" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/svm-intuition/svm_c_data3_plane.png" alt="" /></p>
 
 <p>Then, intuitively, we can classify new data points by determining which side of the plane they fall on.</p>
 
@@ -212,7 +212,7 @@
 <div>
     <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
     <div class="substack">
-        <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>

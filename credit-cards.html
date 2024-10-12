@@ -68,7 +68,7 @@
       <div class="post-date"><time class="dt-published" datetime="2013-06-30T12:00:00-07:00" itemprop="datePublished">June 30, 2013
         </time></div>
             
-    <div class="article-reading-time">Reading time: about 9 minutes</div>
+    <div class="article-reading-time">Reading time: about 6 minutes</div>
       
       
     </header>
@@ -110,9 +110,9 @@
 
 <p>I learned that the Square reader reads track 2 by default, but by putting a shim into the reader that’s about .11 inches thick, you could get it to read track 1 instead. I found that a zip tie did the trick and I could start reading the first track, which revealed some more information. MagRead continued to display this input perfectly, but it didn’t display the discretionary data on the track, which includes the CVV.</p>
 
-<p><img src="/assets/images/credit-cards/ziptie_shim.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/ziptie_shim.jpg" alt="" /></p>
 
-<p><img src="/assets/images/credit-cards/ziptie_scan.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/ziptie_scan.jpg" alt="" /></p>
 
 <p>It turns out that the author of MagRead released another library called <a href="https://github.com/ieatlint/SWipe" class="external-link" target="_blank" rel="noopener noreferrer">SWipe</a> that dumps all the information read. I went through much the same process to get it to work, cloning it from GitHub, qmake’ing it, make’ing it, and then opening the resulting application. Now when I scanned the cards I could see everything on them, in the following format:</p>
 
@@ -148,25 +148,25 @@ BROMBERG/ANDREW A : My name
 
 <p>Jonathan suggested that we try to dive into the electronics of the reader to help me better visualize what’s going on — so we did exactly that.</p>
 
-<p><img src="/assets/images/credit-cards/tweezers_square.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/tweezers_square.jpg" alt="" /></p>
 
 <p>Our first step was to open the reader up so we could see the innards, which were actually really simple. The most prominent component is a magnetic head that is capable of detecting magnetic changes that are very close to it. This is then attached to two wires that are soldered onto the connector.</p>
 
 <p>The wires in the reader connect to the ground and microphone segments of the connector. This means that the connector propagates a voltage differential (generated in the magnetic read head) into the computer or phone, which can then be parsed into the desired information. We decided to tap the internal part of the connector (where the original wires are connected) with our own wires to facilitate attachment to an <a href="http://en.wikipedia.org/wiki/Oscilloscope" class="external-link" target="_blank" rel="noopener noreferrer">oscilloscope</a> to measure the output and visualize the results.</p>
 
-<p><img src="/assets/images/credit-cards/desk_setup.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/desk_setup.jpg" alt="" /></p>
 
 <p>Jonathan soldered a couple wires on very delicately while I whittled the top half of the Square reader so that we could place it back on top without the new wires interfering with the placement.</p>
 
-<p><img src="/assets/images/credit-cards/soldering_square.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/soldering_square.jpg" alt="" /></p>
 
-<p><img src="/assets/images/credit-cards/whittling_top.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/whittling_top.jpg" alt="" /></p>
 
 <p>Finally we plugged our wires into the oscilloscope and started swiping a card through the reader.</p>
 
-<p><img src="/assets/images/credit-cards/clamped_square.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/clamped_square.jpg" alt="" /></p>
 
-<p><img src="/assets/images/credit-cards/scanning_card.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/scanning_card.jpg" alt="" /></p>
 
 <p>Unfortunately, no matter how much tuning we did, we couldn’t see anything. The Square reader doesn’t actually have an amplifier in it, just a raw magnetic transducer so the signal is very weak. We measured the reader’s impedance at 5.375k Ohms. With the oscilloscope set to its 1 million ohm input impedance setting, the wiring detected the 60Hz airborne signal emanating from the power grid strongly enough to make decoding of the card reader’s signal extremely difficult.</p>
 
@@ -175,7 +175,7 @@ BROMBERG/ANDREW A : My name
 <span class="marginnote">
   The oscilloscope at the 1 million ohm impedance setting. Only the 60Hz power grid signal is visible.
 </span>
-<img src="/assets/images/credit-cards/high_impedance.jpg" alt="" /></p>
+<img loading="lazy" src="/assets/images/credit-cards/high_impedance.jpg" alt="" /></p>
 
 <p>Switching to the oscilloscope’s low (50 ohm) impedance setting largely eliminated the influence of the airborne signal, but reduced the reader’s signal by more than 100x — to the point where we could no longer see it.</p>
 
@@ -184,13 +184,13 @@ BROMBERG/ANDREW A : My name
 <span class="marginnote">
   The oscilloscope at the 50 ohm impedance setting. No signal is visible at all.
 </span>
-<img src="/assets/images/credit-cards/low_impedance.jpg" alt="" /></p>
+<img loading="lazy" src="/assets/images/credit-cards/low_impedance.jpg" alt="" /></p>
 
 <p>Jonathan explained to me that Ohm’s law (voltage being generally current times impedance) implies that a large input impedance allows very weak induced currents to turn into comparatively large voltages. This is why the airborne power grid current turned into a very large displayed voltage in the oscilloscope at the 1 million ohm impedance setting.</p>
 
 <p>Jonathan suggested that we try an intermediate impedance value between 50 ohms and 1 million ohm, which we managed by putting a resistor in parallel with the circuit while setting the oscilloscope to the 50 ohm setting. We went with about 360k ohms. This was perfect, and we could suddenly see my credit card data being displayed as waveforms on the screen as I swiped it! Here’s a picture of one of the digits of my credit card number:</p>
 
-<p><img src="/assets/images/credit-cards/oscilloscope_output.jpg" alt="" /></p>
+<p><img loading="lazy" src="/assets/images/credit-cards/oscilloscope_output.jpg" alt="" /></p>
 
 <p>What’s so amazing about this for me is that I could see the waveform representing the data on my card — the very same data that MagRead and SWipe and the Square app take in to parse and output as numbers. With some signal processing, we could actually refine the data on the oscilloscope and get the credit card information right out of it!</p>
 <h2 id="conclusion">
@@ -252,7 +252,7 @@ BROMBERG/ANDREW A : My name
 <div>
     <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
     <div class="substack">
-        <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>

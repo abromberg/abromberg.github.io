@@ -7,17 +7,13 @@ handle_error() {
     exit 1
 }
 
-cd "$(git rev-parse --show-toplevel)"
+GIT_ROOT="$(git rev-parse --show-toplevel)"
+cd "$GIT_ROOT"
 mkdir -p ../andybrombergcom_build
 bundle exec jekyll build -d ../andybrombergcom_build || handle_error "Jekyll build failed"
-if ! git checkout gh-pages 2>/dev/null; then
-    handle_error "Unable to switch to gh-pages branch. Please resolve any conflicts and try again."
-fi
-git rm -rf .
-cp -r ../andybrombergcom_build/* .
+cd ../andybrombergcom_build
 git add .
 git commit -m "Deploy site $(date)"
-git push origin gh-pages
-rm -rf _site
-git checkout master
+git push origin gh-pages || handle_error "Git push failed"
+cd "$GIT_ROOT"
 echo "Deployment complete"
