@@ -82,7 +82,7 @@
     </header>
     
     <div class="post-content e-content prose" itemprop="articleBody">
-      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190331213740/http://andybromberg.com/credit-cards" class="external-link" target="_blank" rel="noopener noreferrer">on my old blog</a> in 2013.</p>
+      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190331213740/http://andybromberg.com/credit-cards">on my old blog</a> in 2013.</p>
 <h2 id="introduction">
   
   
@@ -92,7 +92,7 @@
 </h2>
     
 
-<p>I’ve been interested in looking at the information contained in credit cards ever since I first heard about the <a href="https://squareup.com/" class="external-link" target="_blank" rel="noopener noreferrer">Square</a> card reader. The idea of such a tiny device being able to parse all the information on a credit card directly into your phone is fascinating to me and I wanted to figure out how it worked and if I could play with it a little bit. Unfortunately, Square moved from a very simple circuit design to a larger, encrypted version before I got mine. Coming into this weekend, I didn’t even have the expertise to figure out the simple version, much less the encrypted version and so I had mostly given up on working with credit card information.</p>
+<p>I’ve been interested in looking at the information contained in credit cards ever since I first heard about the <a href="https://squareup.com/">Square</a> card reader. The idea of such a tiny device being able to parse all the information on a credit card directly into your phone is fascinating to me and I wanted to figure out how it worked and if I could play with it a little bit. Unfortunately, Square moved from a very simple circuit design to a larger, encrypted version before I got mine. Coming into this weekend, I didn’t even have the expertise to figure out the simple version, much less the encrypted version and so I had mostly given up on working with credit card information.</p>
 
 <p>However, one of my friends happened to have a few of the old Square readers that he gave me to work with. That gave me the opportunity to see what I could do and start hacking on this project.</p>
 <h2 id="software">
@@ -104,7 +104,7 @@
 </h2>
     
 
-<p>My first goal was just to read data off a credit card (or any other card with a magstripe) with the Square reader. <a href="http://blog.tehinterweb.com/" class="external-link" target="_blank" rel="noopener noreferrer">Jeffrey Malone</a> has put together a couple excellent libraries for parsing data off the unencrypted Square reader, so I jumped right into those. I downloaded <a href="https://github.com/ieatlint/MagRead" class="external-link" target="_blank" rel="noopener noreferrer">MagRead</a> and built it, as below (from the command line):</p>
+<p>My first goal was just to read data off a credit card (or any other card with a magstripe) with the Square reader. <a href="http://blog.tehinterweb.com/">Jeffrey Malone</a> has put together a couple excellent libraries for parsing data off the unencrypted Square reader, so I jumped right into those. I downloaded <a href="https://github.com/ieatlint/MagRead">MagRead</a> and built it, as below (from the command line):</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">ieatlint</span><span class="o">/</span><span class="n">MagRead.git</span><span class="w">
 </span><span class="n">cd</span><span class="w"> </span><span class="n">MagRead</span><span class="w">
@@ -114,15 +114,15 @@
 
 <p>Then I plugged the Square reader into my computer, started scanning, and slid my card through. Note that this only works with audio jacks that are both the microphone and speaker jack, like on MacBooks or ThinkPads. The app worked exactly as advertised and instantly displayed my credit card number and expiration date. I tried scanning some other cards (my student ID, insurance card, AAA card, etc.) and they all worked, displaying some of the information they contained.</p>
 
-<p>After reading a bit more about how credit card magstripe encoding works, I learned that there are typically three tracks on the magstripe. Track 3 includes a variety of miscellaneous information, track 2 is the normal track with the card number and expiration date (along with a couple other pieces of information), and track 1 has everything on track 2 plus the cardholder’s name and the CVV (different from what most people consider the CVV on the back of the card). If you’re interested in learning more, I highly recommend checking out <a href="http://www.gae.ucm.es/~padilla/extrawork/stripe.html" class="external-link" target="_blank" rel="noopener noreferrer">this website</a> on credit card information.</p>
+<p>After reading a bit more about how credit card magstripe encoding works, I learned that there are typically three tracks on the magstripe. Track 3 includes a variety of miscellaneous information, track 2 is the normal track with the card number and expiration date (along with a couple other pieces of information), and track 1 has everything on track 2 plus the cardholder’s name and the CVV (different from what most people consider the CVV on the back of the card). If you’re interested in learning more, I highly recommend checking out <a href="http://www.gae.ucm.es/~padilla/extrawork/stripe.html">this website</a> on credit card information.</p>
 
 <p>I learned that the Square reader reads track 2 by default, but by putting a shim into the reader that’s about .11 inches thick, you could get it to read track 1 instead. I found that a zip tie did the trick and I could start reading the first track, which revealed some more information. MagRead continued to display this input perfectly, but it didn’t display the discretionary data on the track, which includes the CVV.</p>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/ziptie_shim.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/ziptie_shim-400-fad9d77d2.webp 400w, /assets/images/generated/credit-cards/ziptie_shim-600-fad9d77d2.webp 600w, /assets/images/generated/credit-cards/ziptie_shim-750-fad9d77d2.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/ziptie_shim-400-a487b8486.jpg 400w, /assets/images/generated/credit-cards/ziptie_shim-600-a487b8486.jpg 600w, /assets/images/generated/credit-cards/ziptie_shim-750-a487b8486.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/ziptie_shim-750-a487b8486.jpg" width="750" height="500" /></picture>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/ziptie_scan.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/ziptie_scan-400-bff7a49e9.webp 400w, /assets/images/generated/credit-cards/ziptie_scan-600-bff7a49e9.webp 600w, /assets/images/generated/credit-cards/ziptie_scan-750-bff7a49e9.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/ziptie_scan-400-6fe59aab1.jpg 400w, /assets/images/generated/credit-cards/ziptie_scan-600-6fe59aab1.jpg 600w, /assets/images/generated/credit-cards/ziptie_scan-750-6fe59aab1.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/ziptie_scan-750-6fe59aab1.jpg" width="750" height="750" /></picture>
 
-<p>It turns out that the author of MagRead released another library called <a href="https://github.com/ieatlint/SWipe" class="external-link" target="_blank" rel="noopener noreferrer">SWipe</a> that dumps all the information read. I went through much the same process to get it to work, cloning it from GitHub, qmake’ing it, make’ing it, and then opening the resulting application. Now when I scanned the cards I could see everything on them, in the following format:</p>
+<p>It turns out that the author of MagRead released another library called <a href="https://github.com/ieatlint/SWipe">SWipe</a> that dumps all the information read. I went through much the same process to get it to work, cloning it from GitHub, qmake’ing it, make’ing it, and then opening the resulting application. Now when I scanned the cards I could see everything on them, in the following format:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$B################^BROMBERG/ANDREW A^1408101##############?
 </code></pre></div></div>
@@ -152,29 +152,29 @@ BROMBERG/ANDREW A : My name
 </h2>
     
 
-<p>This was very cool, but I wasn’t satisfied yet. I wanted to know more about how and why the Square reader actually works. Thankfully I live in the same house as Jonathan Friedman, who runs <a href="https://circuithub.com/" class="external-link" target="_blank" rel="noopener noreferrer">CircuitHub</a><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">If you’re interested in electronics and don’t know CircuitHub yet, you should. They’re building a free, universal parts library that makes it incredibly easy to pick out the parts you need.</span> and has a PhD in Electrical Engineering. He spent a couple hours teaching me about electricity and magnetism from the ground up (which I’ll spare you in this blog post) and explained the principles behind magnetic card readers. If you’re interested in learning more about how they work, please <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a> and I’d be happy to talk to you, but there’s a large enough amount of background knowledge required that I don’t think it’s appropriate for this blog post.</p>
+<p>This was very cool, but I wasn’t satisfied yet. I wanted to know more about how and why the Square reader actually works. Thankfully I live in the same house as Jonathan Friedman, who runs <a href="https://circuithub.com/">CircuitHub</a><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">If you’re interested in electronics and don’t know CircuitHub yet, you should. They’re building a free, universal parts library that makes it incredibly easy to pick out the parts you need.</span> and has a PhD in Electrical Engineering. He spent a couple hours teaching me about electricity and magnetism from the ground up (which I’ll spare you in this blog post) and explained the principles behind magnetic card readers. If you’re interested in learning more about how they work, please <a href="mailto:andy@andybromberg.com">email me</a> and I’d be happy to talk to you, but there’s a large enough amount of background knowledge required that I don’t think it’s appropriate for this blog post.</p>
 
 <p>Jonathan suggested that we try to dive into the electronics of the reader to help me better visualize what’s going on — so we did exactly that.</p>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/tweezers_square.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/tweezers_square-400-10d2cc623.webp 400w, /assets/images/generated/credit-cards/tweezers_square-600-10d2cc623.webp 600w, /assets/images/generated/credit-cards/tweezers_square-750-10d2cc623.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/tweezers_square-400-b1e55037f.jpg 400w, /assets/images/generated/credit-cards/tweezers_square-600-b1e55037f.jpg 600w, /assets/images/generated/credit-cards/tweezers_square-750-b1e55037f.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/tweezers_square-750-b1e55037f.jpg" width="750" height="500" /></picture>
 
 <p>Our first step was to open the reader up so we could see the innards, which were actually really simple. The most prominent component is a magnetic head that is capable of detecting magnetic changes that are very close to it. This is then attached to two wires that are soldered onto the connector.</p>
 
-<p>The wires in the reader connect to the ground and microphone segments of the connector. This means that the connector propagates a voltage differential (generated in the magnetic read head) into the computer or phone, which can then be parsed into the desired information. We decided to tap the internal part of the connector (where the original wires are connected) with our own wires to facilitate attachment to an <a href="http://en.wikipedia.org/wiki/Oscilloscope" class="external-link" target="_blank" rel="noopener noreferrer">oscilloscope</a> to measure the output and visualize the results.</p>
+<p>The wires in the reader connect to the ground and microphone segments of the connector. This means that the connector propagates a voltage differential (generated in the magnetic read head) into the computer or phone, which can then be parsed into the desired information. We decided to tap the internal part of the connector (where the original wires are connected) with our own wires to facilitate attachment to an <a href="http://en.wikipedia.org/wiki/Oscilloscope">oscilloscope</a> to measure the output and visualize the results.</p>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/desk_setup.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/desk_setup-400-dd47b8f52.webp 400w, /assets/images/generated/credit-cards/desk_setup-600-dd47b8f52.webp 600w, /assets/images/generated/credit-cards/desk_setup-750-dd47b8f52.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/desk_setup-400-980cd12a9.jpg 400w, /assets/images/generated/credit-cards/desk_setup-600-980cd12a9.jpg 600w, /assets/images/generated/credit-cards/desk_setup-750-980cd12a9.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/desk_setup-750-980cd12a9.jpg" width="750" height="500" /></picture>
 
 <p>Jonathan soldered a couple wires on very delicately while I whittled the top half of the Square reader so that we could place it back on top without the new wires interfering with the placement.</p>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/soldering_square.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/soldering_square-400-c6d25e018.webp 400w, /assets/images/generated/credit-cards/soldering_square-600-c6d25e018.webp 600w, /assets/images/generated/credit-cards/soldering_square-750-c6d25e018.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/soldering_square-400-1cbc6e2d5.jpg 400w, /assets/images/generated/credit-cards/soldering_square-600-1cbc6e2d5.jpg 600w, /assets/images/generated/credit-cards/soldering_square-750-1cbc6e2d5.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/soldering_square-750-1cbc6e2d5.jpg" width="750" height="500" /></picture>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/whittling_top.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/whittling_top-400-b7bfc806c.webp 400w, /assets/images/generated/credit-cards/whittling_top-600-b7bfc806c.webp 600w, /assets/images/generated/credit-cards/whittling_top-750-b7bfc806c.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/whittling_top-400-ceea50425.jpg 400w, /assets/images/generated/credit-cards/whittling_top-600-ceea50425.jpg 600w, /assets/images/generated/credit-cards/whittling_top-750-ceea50425.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/whittling_top-750-ceea50425.jpg" width="750" height="500" /></picture>
 
 <p>Finally we plugged our wires into the oscilloscope and started swiping a card through the reader.</p>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/clamped_square.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/clamped_square-400-efbaf7499.webp 400w, /assets/images/generated/credit-cards/clamped_square-600-efbaf7499.webp 600w, /assets/images/generated/credit-cards/clamped_square-750-efbaf7499.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/clamped_square-400-a16e63df5.jpg 400w, /assets/images/generated/credit-cards/clamped_square-600-a16e63df5.jpg 600w, /assets/images/generated/credit-cards/clamped_square-750-a16e63df5.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/clamped_square-750-a16e63df5.jpg" width="750" height="750" /></picture>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/scanning_card.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/scanning_card-400-bd4802c20.webp 400w, /assets/images/generated/credit-cards/scanning_card-600-bd4802c20.webp 600w, /assets/images/generated/credit-cards/scanning_card-750-bd4802c20.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/scanning_card-400-1891ae2e9.jpg 400w, /assets/images/generated/credit-cards/scanning_card-600-1891ae2e9.jpg 600w, /assets/images/generated/credit-cards/scanning_card-750-1891ae2e9.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/scanning_card-750-1891ae2e9.jpg" width="750" height="500" /></picture>
 
 <p>Unfortunately, no matter how much tuning we did, we couldn’t see anything. The Square reader doesn’t actually have an amplifier in it, just a raw magnetic transducer so the signal is very weak. We measured the reader’s impedance at 5.375k Ohms. With the oscilloscope set to its 1 million ohm input impedance setting, the wiring detected the 60Hz airborne signal emanating from the power grid strongly enough to make decoding of the card reader’s signal extremely difficult.</p>
 
@@ -182,8 +182,8 @@ BROMBERG/ANDREW A : My name
 <input type="checkbox" id="mn-1" class="margin-toggle" />
 <span class="marginnote">
   The oscilloscope at the 1 million ohm impedance setting. Only the 60Hz power grid signal is visible.
-</span>
-<img loading="lazy" src="/assets/images/credit-cards/high_impedance.jpg" alt="" /></p>
+</span></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/high_impedance-400-815ff007b.webp 400w, /assets/images/generated/credit-cards/high_impedance-600-815ff007b.webp 600w, /assets/images/generated/credit-cards/high_impedance-750-815ff007b.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/high_impedance-400-304bed5c3.jpg 400w, /assets/images/generated/credit-cards/high_impedance-600-304bed5c3.jpg 600w, /assets/images/generated/credit-cards/high_impedance-750-304bed5c3.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/high_impedance-750-304bed5c3.jpg" width="750" height="500" /></picture>
 
 <p>Switching to the oscilloscope’s low (50 ohm) impedance setting largely eliminated the influence of the airborne signal, but reduced the reader’s signal by more than 100x — to the point where we could no longer see it.</p>
 
@@ -191,14 +191,14 @@ BROMBERG/ANDREW A : My name
 <input type="checkbox" id="mn-1" class="margin-toggle" />
 <span class="marginnote">
   The oscilloscope at the 50 ohm impedance setting. No signal is visible at all.
-</span>
-<img loading="lazy" src="/assets/images/credit-cards/low_impedance.jpg" alt="" /></p>
+</span></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/low_impedance-400-6fd65dc27.webp 400w, /assets/images/generated/credit-cards/low_impedance-600-6fd65dc27.webp 600w, /assets/images/generated/credit-cards/low_impedance-750-6fd65dc27.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/low_impedance-400-0819db7a6.jpg 400w, /assets/images/generated/credit-cards/low_impedance-600-0819db7a6.jpg 600w, /assets/images/generated/credit-cards/low_impedance-750-0819db7a6.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/low_impedance-750-0819db7a6.jpg" width="750" height="500" /></picture>
 
 <p>Jonathan explained to me that Ohm’s law (voltage being generally current times impedance) implies that a large input impedance allows very weak induced currents to turn into comparatively large voltages. This is why the airborne power grid current turned into a very large displayed voltage in the oscilloscope at the 1 million ohm impedance setting.</p>
 
 <p>Jonathan suggested that we try an intermediate impedance value between 50 ohms and 1 million ohm, which we managed by putting a resistor in parallel with the circuit while setting the oscilloscope to the 50 ohm setting. We went with about 360k ohms. This was perfect, and we could suddenly see my credit card data being displayed as waveforms on the screen as I swiped it! Here’s a picture of one of the digits of my credit card number:</p>
 
-<p><img loading="lazy" src="/assets/images/credit-cards/oscilloscope_output.jpg" alt="" /></p>
+<picture loading="lazy"><source srcset="/assets/images/generated/credit-cards/oscilloscope_output-400-bc5f3315e.webp 400w, /assets/images/generated/credit-cards/oscilloscope_output-600-bc5f3315e.webp 600w, /assets/images/generated/credit-cards/oscilloscope_output-750-bc5f3315e.webp 750w" type="image/webp" /><source srcset="/assets/images/generated/credit-cards/oscilloscope_output-400-8102d0cad.jpg 400w, /assets/images/generated/credit-cards/oscilloscope_output-600-8102d0cad.jpg 600w, /assets/images/generated/credit-cards/oscilloscope_output-750-8102d0cad.jpg 750w" type="image/jpeg" /><img src="/assets/images/generated/credit-cards/oscilloscope_output-750-8102d0cad.jpg" width="750" height="500" /></picture>
 
 <p>What’s so amazing about this for me is that I could see the waveform representing the data on my card — the very same data that MagRead and SWipe and the Square app take in to parse and output as numbers. With some signal processing, we could actually refine the data on the oscilloscope and get the credit card information right out of it!</p>
 <h2 id="conclusion">
@@ -218,7 +218,7 @@ BROMBERG/ANDREW A : My name
   <li>Now that I know a tiny bit about electricity and magnetism, I want to learn more, especially about practical circuitry design and modification. I would really like to be able to hack electronics effectively as well as understand what’s going on in the things I use every day.</li>
 </ol>
 
-<p>If you have any questions or comments on this post, please don’t hesitate to <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a>! I’d love to answer any questions you might have and if there’s any suggestions you have, please let me know.</p><hr class="end-of-article-divider" />
+<p>If you have any questions or comments on this post, please don’t hesitate to <a href="mailto:andy@andybromberg.com">email me</a>! I’d love to answer any questions you might have and if there’s any suggestions you have, please let me know.</p><hr class="end-of-article-divider" />
 <h2 class="no_toc">
   
   
@@ -258,12 +258,12 @@ BROMBERG/ANDREW A : My name
 </nav>
 
 <div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
     <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>
 
     </div><a class="u-url" href="/credit-cards" hidden></a>

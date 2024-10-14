@@ -70,8 +70,11 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-.highlight {
+ul, ol, dl, figure .highlight {
+  margin-bottom: 15px;
+}
+
+picture {
   margin-bottom: 15px;
 }
 
@@ -88,6 +91,8 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  width: 100%;
+  height: auto;
 }
 
 /**
