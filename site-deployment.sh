@@ -10,7 +10,7 @@ handle_error() {
 GIT_ROOT="$(git rev-parse --show-toplevel)"
 cd "$GIT_ROOT"
 mkdir -p ../andybrombergcom_build
-bundle exec jekyll build -d ../andybrombergcom_build || handle_error "Jekyll build failed"
+JEKYLL_ENV=production; bundle exec jekyll  build -d ../andybrombergcom_build || handle_error "Jekyll build failed"
 cd ../andybrombergcom_build
 git add .
 git commit -m "Deploy site $(date)"
