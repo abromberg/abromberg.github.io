@@ -79,7 +79,7 @@
     </header>
     
     <div class="post-content e-content prose" itemprop="articleBody">
-      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190414054427/http://andybromberg.com/sentiment-analysis-python/">on my old blog</a> in 2013.</p>
+      <p class="dateline">Originally published <a href="https://web.archive.org/web/20190414054427/http://andybromberg.com/sentiment-analysis-python/" class="external-link" target="_blank" rel="noopener noreferrer">on my old blog</a> in 2013.</p>
 <h2 id="introduction">
   
   
@@ -91,9 +91,9 @@
 
 <p>After my <a href="/sentiment-analysis/">first experiments</a> with using R for sentiment analysis, I started talking with a friend here at school about my work. Jackson and I decided that we’d like to give it a better shot and really try to get some meaningful results. After a lot of research, we decided to shift languages to Python (even though we both know R). We made this shift because Python has a number of very useful libraries for text processing and sentiment analysis, plus it’s easy to code in. We launched right into tutorials and coding, and this post will be about that process and our results.</p>
 
-<p>We also met with <a href="http://www.stanford.edu/~cgpotts/">Christopher Potts</a>, a professor of linguistics here at Stanford. Prior to meeting with him, we consulted <a href="http://sentiment.christopherpotts.net/">his sentiment analysis guide</a> extensively and found it incredibly useful. We had a fantastic chat with Professor Potts and he helped us grasp some of the concepts we were working on.</p>
+<p>We also met with <a href="http://www.stanford.edu/~cgpotts/" class="external-link" target="_blank" rel="noopener noreferrer">Christopher Potts</a>, a professor of linguistics here at Stanford. Prior to meeting with him, we consulted <a href="http://sentiment.christopherpotts.net/" class="external-link" target="_blank" rel="noopener noreferrer">his sentiment analysis guide</a> extensively and found it incredibly useful. We had a fantastic chat with Professor Potts and he helped us grasp some of the concepts we were working on.</p>
 
-<p>If you’d like to jump straight to seeing the full code, you can head over to the <a href="https://github.com/abromberg/sentiment_analysis_python">GitHub repository</a>.</p>
+<p>If you’d like to jump straight to seeing the full code, you can head over to the <a href="https://github.com/abromberg/sentiment_analysis_python" class="external-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
 <h2 id="the-setup">
   
   
@@ -103,9 +103,9 @@
 </h2>
     
 
-<p>One of the resources we got a lot of mileage out of was <a href="http://streamhacker.com/">StreamHacker</a>, especially the articles on <a href="http://streamhacker.com/2010/05/10/text-classification-sentiment-analysis-naive-bayes-classifier/">basic techniques</a>, <a href="http://streamhacker.com/2010/05/17/text-classification-sentiment-analysis-precision-recall/">precision and recall</a> and <a href="http://streamhacker.com/2010/06/16/text-classification-sentiment-analysis-eliminate-low-information-features/">eliminating features</a>. More to follow about each of those elements.</p>
+<p>One of the resources we got a lot of mileage out of was <a href="http://streamhacker.com/" class="external-link" target="_blank" rel="noopener noreferrer">StreamHacker</a>, especially the articles on <a href="http://streamhacker.com/2010/05/10/text-classification-sentiment-analysis-naive-bayes-classifier/" class="external-link" target="_blank" rel="noopener noreferrer">basic techniques</a>, <a href="http://streamhacker.com/2010/05/17/text-classification-sentiment-analysis-precision-recall/" class="external-link" target="_blank" rel="noopener noreferrer">precision and recall</a> and <a href="http://streamhacker.com/2010/06/16/text-classification-sentiment-analysis-eliminate-low-information-features/" class="external-link" target="_blank" rel="noopener noreferrer">eliminating features</a>. More to follow about each of those elements.</p>
 
-<p>Another great discovery was the <a href="http://nltk.org/">Natural Language ToolKit</a> (NLTK). This is an incredible library for Python that can do a huge amount of text processing and analysis. This would end up forming the basis for our program.</p>
+<p>Another great discovery was the <a href="http://nltk.org/" class="external-link" target="_blank" rel="noopener noreferrer">Natural Language ToolKit</a> (NLTK). This is an incredible library for Python that can do a huge amount of text processing and analysis. This would end up forming the basis for our program.</p>
 
 <p>During our first attempt, we basically just tried to convert my program in R into Python. We quickly realized that not only did Python have more efficient ways to do some of the steps, but it also was missing some functionality that I used in the R version. So instead, we started based on StreamHacker’s code.</p>
 
@@ -169,7 +169,7 @@
         <span class="n">predicted</span> <span class="o">=</span> <span class="n">classifier</span><span class="p">.</span><span class="nf">classify</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
         <span class="n">testSets</span><span class="p">[</span><span class="n">predicted</span><span class="p">].</span><span class="nf">add</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></figure>
 
-<p>This gives me a big list of identifiers in referenceSets[‘pos’], which are the reviews known to be positive (and the same for the negative reviews). It also gives me a list of identifiers in testSets[‘pos’], which are the reviews predicted to be positive (and similarly for predicted negatives). What this allows me to do is to compare these lists and see how well the predictor did. Here’s where one of the StreamHacker articles (on <a href="https://streamhacker.com/2010/05/17/text-classification-sentiment-analysis-precision-recall/">precision and recall</a>) really helped.</p>
+<p>This gives me a big list of identifiers in referenceSets[‘pos’], which are the reviews known to be positive (and the same for the negative reviews). It also gives me a list of identifiers in testSets[‘pos’], which are the reviews predicted to be positive (and similarly for predicted negatives). What this allows me to do is to compare these lists and see how well the predictor did. Here’s where one of the StreamHacker articles (on <a href="https://streamhacker.com/2010/05/17/text-classification-sentiment-analysis-precision-recall/" class="external-link" target="_blank" rel="noopener noreferrer">precision and recall</a>) really helped.</p>
 
 <p>The essence of those two terms is that precision is a measure of false positives — a higher precision means fewer reviews that aren’t in the desired label get labeled as being in there. A high recall means fewer reviews that are in the desired label get put in the wrong level. As you can imagine, these metrics correlate very closely. Here’s the code (again from the NLTK library) to print out the positive and negative recall and precision, as well as the accuracy (a less-specific measure just showing what percentage the classifier got right). NLTK also has a cool function that shows the features (words) that were most helpful to the classifier in determining whether a review was positive or negative. So here’s the code:</p>
 
@@ -200,7 +200,7 @@
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">def</span><span class="w"> </span><span class="n">make_full_dict</span><span class="p">(</span><span class="n">words</span><span class="p">)</span><span class="o">:</span><span class="w">
     </span><span class="n">return</span><span class="w"> </span><span class="n">dict</span><span class="p">([(</span><span class="n">word</span><span class="p">,</span><span class="w"> </span><span class="n">True</span><span class="p">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">words</span><span class="p">])</span></code></pre></figure>
 
-<p>This just builds a <a href="http://docs.python.org/2/tutorial/datastructures.html#dictionaries">dictionary object</a> (what we need for the evaluate_features method) that has each of the words in the review followed by ‘True’.</p>
+<p>This just builds a <a href="http://docs.python.org/2/tutorial/datastructures.html#dictionaries" class="external-link" target="_blank" rel="noopener noreferrer">dictionary object</a> (what we need for the evaluate_features method) that has each of the words in the review followed by ‘True’.</p>
 
 <p>Then we can just run the testing method:</p>
 
@@ -287,7 +287,7 @@
     <span class="n">neg_word_count</span> <span class="o">=</span> <span class="n">cond_word_fd</span><span class="p">[</span><span class="sh">'</span><span class="s">neg</span><span class="sh">'</span><span class="p">].</span><span class="nc">N</span><span class="p">()</span>
     <span class="n">total_word_count</span> <span class="o">=</span> <span class="n">pos_word_count</span> <span class="o">+</span> <span class="n">neg_word_count</span></code></pre></figure>
 
-<p>The last thing we need to do is use a <a href="http://en.wikipedia.org/wiki/Chi-squared_test">chi-squared test</a> test (also from NLTK) to score the words. We find each word’s positive information score and negative information score, add them up, and fill up a dictionary correlating the words and scores, which we then return out of the function. Chi-squared tests, as you can read in the Wikipedia article I just linked to, is a great way to see how much information a given input conveys.</p>
+<p>The last thing we need to do is use a <a href="http://en.wikipedia.org/wiki/Chi-squared_test" class="external-link" target="_blank" rel="noopener noreferrer">chi-squared test</a> test (also from NLTK) to score the words. We find each word’s positive information score and negative information score, add them up, and fill up a dictionary correlating the words and scores, which we then return out of the function. Chi-squared tests, as you can read in the Wikipedia article I just linked to, is a great way to see how much information a given input conveys.</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">word_scores</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">word_fd</span><span class="p">.</span><span class="nf">iteritems</span><span class="p">():</span>
@@ -304,7 +304,7 @@
     <span class="n">best_words</span> <span class="o">=</span> <span class="nf">set</span><span class="p">([</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">best_vals</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">best_words</span></code></pre></figure>
 
-<p>Are you a little confused by that ‘lambda’? I certainly was when I saw it. Essentially what it does is allow you to temporarily make a function to return something. In this case, it’s helping to sort the words into the correct order. You can check <a href="http://www.secnetix.de/olli/Python/lambda_functions.hawk">this</a> out for more information on lambda functions.</p>
+<p>Are you a little confused by that ‘lambda’? I certainly was when I saw it. Essentially what it does is allow you to temporarily make a function to return something. In this case, it’s helping to sort the words into the correct order. You can check <a href="http://www.secnetix.de/olli/Python/lambda_functions.hawk" class="external-link" target="_blank" rel="noopener noreferrer">this</a> out for more information on lambda functions.</p>
 
 <p>Finally, we can make a feature selection mechanism that returns ‘True’ for a word only if it is in the best words list:</p>
 
@@ -386,9 +386,9 @@ neg recall: 0.868717179295
   <li>Trying a different classifier than the Naive Bayes Classifier</li>
 </ol>
 
-<p>A disclaimer applies: we’re just learning all of this, and fairly independently too. There’s a decent chance that there’s a mistake or an inappropriate conclusion somewhere. If there is, please don’t hesitate to <a href="mailto:andy@andybromberg.com">email me</a>. I’d also love to hear from you if you have any other input on the project!</p>
+<p>A disclaimer applies: we’re just learning all of this, and fairly independently too. There’s a decent chance that there’s a mistake or an inappropriate conclusion somewhere. If there is, please don’t hesitate to <a href="mailto:andy@andybromberg.com" class="mailto-link">email me</a>. I’d also love to hear from you if you have any other input on the project!</p>
 
-<p>For the full code, check out the <a href="https://github.com/abromberg/sentiment_analysis_python">GitHub repository</a>.</p>
+<p>For the full code, check out the <a href="https://github.com/abromberg/sentiment_analysis_python" class="external-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
 <h2 id="addendum">
   
   
@@ -398,7 +398,7 @@ neg recall: 0.868717179295
 </h2>
     
 
-<p><a href="http://protobi.com/">Pieter Sheth-Voss</a> pointed out in the comments section that there’s a linear relationship between the accuracy and the log of the number of features. I decided to take a look at this in R. Here’s the code I used.</p>
+<p><a href="http://protobi.com/" class="external-link" target="_blank" rel="noopener noreferrer">Pieter Sheth-Voss</a> pointed out in the comments section that there’s a linear relationship between the accuracy and the log of the number of features. I decided to take a look at this in R. Here’s the code I used.</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
 </span><span class="n">features</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">250</span><span class="p">,</span><span class="w"> </span><span class="m">500</span><span class="p">,</span><span class="w"> </span><span class="m">750</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">2500</span><span class="p">,</span><span class="w"> </span><span class="m">5000</span><span class="p">,</span><span class="w"> </span><span class="m">7500</span><span class="p">,</span><span class="w"> </span><span class="m">10000</span><span class="p">,</span><span class="w"> </span><span class="m">12500</span><span class="p">,</span><span class="w"> </span><span class="m">15000</span><span class="p">)</span><span class="w">
@@ -409,7 +409,7 @@ neg recall: 0.868717179295
   </span><span class="n">geom_point</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
   </span><span class="n">geom_smooth</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">lm</span><span class="p">)</span></code></pre></figure>
 
-<p>This takes advantage of the great <a href="http://ggplot2.org/">ggplot2</a> library for R. It simply puts in the features, calculates the log of them, puts in the accuracy, and plots these two variables. Here’s the output:</p>
+<p>This takes advantage of the great <a href="http://ggplot2.org/" class="external-link" target="_blank" rel="noopener noreferrer">ggplot2</a> library for R. It simply puts in the features, calculates the log of them, puts in the accuracy, and plots these two variables. Here’s the output:</p>
 
 <picture loading="lazy"><source srcset="/assets/images/generated/sentiment-analysis-python/features_performance_all-400-d24067f35.webp 400w, /assets/images/generated/sentiment-analysis-python/features_performance_all-600-d24067f35.webp 600w" type="image/webp" /><source srcset="/assets/images/generated/sentiment-analysis-python/features_performance_all-400-06e292092.png 400w, /assets/images/generated/sentiment-analysis-python/features_performance_all-600-06e292092.png 600w" type="image/png" /><img src="/assets/images/generated/sentiment-analysis-python/features_performance_all-600-06e292092.png" width="600" height="500" /></picture>
 
@@ -457,12 +457,12 @@ neg recall: 0.868717179295
 </nav>
 
 <div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
     <div class="substack">
         <iframe src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
 </div>
 
     </div><a class="u-url" href="/sentiment-analysis-python" hidden></a>
