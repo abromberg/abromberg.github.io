@@ -1196,6 +1196,8 @@ hr:not(.end-of-article-divider)::before {
 .highlighter {
   position: relative;
   display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .highlighter::before {
