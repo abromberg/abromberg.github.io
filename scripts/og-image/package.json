@@ -1,0 +1,14 @@
+{
+  "name": "og-image-generator",
+  "version": "1.0.0",
+  "description": "OG Image generator for andybromberg.com",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "dependencies": {
+    "@vercel/og": "^0.6.2",
+    "front-matter": "^4.0.2",
+    "glob": "^10.3.10"
+  }
+} 

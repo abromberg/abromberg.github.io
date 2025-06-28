@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>A design pattern I hope Yelp copies | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="A design pattern I hope Yelp copies" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Clean Travel Club has a design pattern for restaurant chains, and I hope Yelp and others copy it." />
+<meta property="og:description" content="Clean Travel Club has a design pattern for restaurant chains, and I hope Yelp and others copy it." />
+<link rel="canonical" href="https://andybromberg.com/chain-design-pattern" />
+<meta property="og:url" content="https://andybromberg.com/chain-design-pattern" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2025-02-09-chain-design-pattern.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-02-09T11:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2025-02-09-chain-design-pattern.png" />
+<meta property="twitter:title" content="A design pattern I hope Yelp copies" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2025-02-09T11:00:00-08:00","datePublished":"2025-02-09T11:00:00-08:00","description":"Clean Travel Club has a design pattern for restaurant chains, and I hope Yelp and others copy it.","headline":"A design pattern I hope Yelp copies","image":"https://andybromberg.com/assets/images/og/2025-02-09-chain-design-pattern.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/chain-design-pattern"},"url":"https://andybromberg.com/chain-design-pattern"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">A design pattern I hope Yelp copies</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2025-02-09T11:00:00-08:00" itemprop="datePublished">February 9, 2025
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 1 minute</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody">
+      <p>While building out <a href="https://cleantravelclub.com" class="external-link" target="_blank" rel="noopener noreferrer">Clean Travel Club</a> and thinking about how I wanted to search for restaurants, I came up with a design pattern that I wished other sites like Yelp and TripAdvisor had: grouping multiple locations of the same restaurant chain in the search results, and showing them all on the map.</p>
+
+<p>Let’s say you’re on a flight to San Francisco where you’ll be staying in the Marina, and you search for “salad.”</p>
+
+<p>You see a place called “Blue Barn” that looks pretty good. Unfortunately, it’s a bit of a trek from where you’re staying.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/chain-design-pattern/yelp-blue-barn-800-fcdd5e410.webp 800w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-1000-fcdd5e410.webp 1000w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-1200-fcdd5e410.webp 1200w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-1600-fcdd5e410.webp 1600w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-2000-fcdd5e410.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/chain-design-pattern/yelp-blue-barn-800-748f2b2f4.png 800w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-1000-748f2b2f4.png 1000w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-1200-748f2b2f4.png 1200w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-1600-748f2b2f4.png 1600w, /assets/images/generated/chain-design-pattern/yelp-blue-barn-2000-748f2b2f4.png 2000w" type="image/png" /><img src="/assets/images/generated/chain-design-pattern/yelp-blue-barn-800-748f2b2f4.png" width="2334" height="852" /></picture>
+
+<p>But really, there are three Blue Barn locations, and two of them would be much more convenient for you. Here’s Google Maps showing where they are:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/chain-design-pattern/google-blue-barn-800-3ac6937eb.webp 800w, /assets/images/generated/chain-design-pattern/google-blue-barn-1000-3ac6937eb.webp 1000w, /assets/images/generated/chain-design-pattern/google-blue-barn-1200-3ac6937eb.webp 1200w, /assets/images/generated/chain-design-pattern/google-blue-barn-1260-3ac6937eb.webp 1260w" type="image/webp" /><source srcset="/assets/images/generated/chain-design-pattern/google-blue-barn-800-19d18bb4d.png 800w, /assets/images/generated/chain-design-pattern/google-blue-barn-1000-19d18bb4d.png 1000w, /assets/images/generated/chain-design-pattern/google-blue-barn-1200-19d18bb4d.png 1200w, /assets/images/generated/chain-design-pattern/google-blue-barn-1260-19d18bb4d.png 1260w" type="image/png" /><img src="/assets/images/generated/chain-design-pattern/google-blue-barn-800-19d18bb4d.png" width="1260" height="444" /></picture>
+
+<p>So I thought: why doesn’t Yelp bundle all the Blue Barns into a single result on the search page and highlight all of them on the map, so the user can find the one that is most convenient for them?</p>
+
+<p>And that’s what I built into Clean Travel Club:</p>
+
+<p><img src="/assets/images/chain-design-pattern/ctc-blue-barn.gif" alt="Clean Travel Club Blue Barn search result" width="100%" /></p>
+
+<p>It’s pretty simple:</p>
+<ul>
+  <li>Combine all the locations of a chain that meet the search criteria into a single result</li>
+  <li>Show them all on the map and highlight them together when the user hovers over the search result</li>
+  <li>Create a chain-specific page (here’s <a href="https://cleantravelclub.com/chains/restaurants/blue-barn/?city=san-francisco" class="external-link" target="_blank" rel="noopener noreferrer">Blue Barn’s</a>) where you can see just that chain’s locations and click through to the specific one you want.</li>
+</ul>
+
+<p>Of course, if there’s only one location that meets the search location and criteria, that result is shown as a typical solo listing. But if there are multiple locations that all meet the search criteria, why not show them all in case one is more convenient? They’re the same chain, after all.</p>
+
+<p>Yelp, TripAdvisor, OpenTable — can you please copy this pattern?</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read?
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/nor-eply-stanford-vulnerability">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/nor-eply-stanford-vulnerability">The death of Nor Eply: a Stanford security story</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/intuition-electromagnetism-symmetry">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/intuition-electromagnetism-symmetry">Building intuition for electromagnetism's symmetric origins</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/chain-design-pattern" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>

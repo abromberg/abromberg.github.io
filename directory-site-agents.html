@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Building out directory site content with AI agents | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Building out directory site content with AI agents" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AI agents are already way better than scrapers. But how can you use them to distill structured content for a directory?" />
+<meta property="og:description" content="AI agents are already way better than scrapers. But how can you use them to distill structured content for a directory?" />
+<link rel="canonical" href="https://andybromberg.com/directory-site-agents" />
+<meta property="og:url" content="https://andybromberg.com/directory-site-agents" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2024-12-26-directory-site-agents.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-26T11:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2024-12-26-directory-site-agents.png" />
+<meta property="twitter:title" content="Building out directory site content with AI agents" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2024-12-26T11:00:00-08:00","datePublished":"2024-12-26T11:00:00-08:00","description":"AI agents are already way better than scrapers. But how can you use them to distill structured content for a directory?","headline":"Building out directory site content with AI agents","image":"https://andybromberg.com/assets/images/og/2024-12-26-directory-site-agents.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/directory-site-agents"},"url":"https://andybromberg.com/directory-site-agents"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Building out directory site content with AI agents</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2024-12-26T11:00:00-08:00" itemprop="datePublished">December 26, 2024
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 5 minutes</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody"><div class="toc">
+        <div class="toc-header">Contents</div>
+        <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#one-agent-is-not-enough">One Agent is Not Enough</a></li>
+<li class="toc-entry toc-h2"><a href="#data-models">Data models</a></li>
+<li class="toc-entry toc-h2"><a href="#the-agents">The agents</a></li>
+<li class="toc-entry toc-h2"><a href="#closing-thoughts">Closing thoughts</a></li>
+</ul>
+      </div>
+      <p>While building a recent hobby project, <a href="https://cleantravelclub.com" class="external-link" target="_blank" rel="noopener noreferrer">Clean Travel Club</a>, I wanted to get some initial content loaded into the site without doing it all manually.</p>
+
+<p>This was a great opportunity to play around with AI agents and their tooling.</p>
+
+<p>Clean Travel Club rates restaurants, coffee shops, hotels, and more on a bunch of health-related attributes. Think: “Yelp, but healthy.”</p>
+
+<p>You can filter for places like the <a href="https://cleantravelclub.com/new-york-city/restaurants/" class="external-link" target="_blank" rel="noopener noreferrer">healthiest restaurants in New York City</a>, or <a href="https://cleantravelclub.com/san-francisco/restaurants/?f=diet-seed_oil" class="external-link" target="_blank" rel="noopener noreferrer">seed-oil-free restaurants in San Francisco</a>, or <a href="https://cleantravelclub.com/austin/coffee/?f=drinks-organic_coffee%2Camenities-outdoor_seating" class="external-link" target="_blank" rel="noopener noreferrer">organic coffee shops in Austin with outdoor seating</a>. (And soon, lots more — hotels with non-toxic cleaning products and blackout shades, the best saunas or massages, more city coverage, etc.)</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/directory-site-agents/filters-800-9df4f976a.webp 800w, /assets/images/generated/directory-site-agents/filters-1000-9df4f976a.webp 1000w, /assets/images/generated/directory-site-agents/filters-1200-9df4f976a.webp 1200w, /assets/images/generated/directory-site-agents/filters-1600-9df4f976a.webp 1600w, /assets/images/generated/directory-site-agents/filters-1870-9df4f976a.webp 1870w" type="image/webp" /><source srcset="/assets/images/generated/directory-site-agents/filters-800-f955de419.png 800w, /assets/images/generated/directory-site-agents/filters-1000-f955de419.png 1000w, /assets/images/generated/directory-site-agents/filters-1200-f955de419.png 1200w, /assets/images/generated/directory-site-agents/filters-1600-f955de419.png 1600w, /assets/images/generated/directory-site-agents/filters-1870-f955de419.png 1870w" type="image/png" /><img src="/assets/images/generated/directory-site-agents/filters-800-f955de419.png" width="1870" height="846" /></picture>
+
+<p>My goal was to have the AI do a first pass on collecting all this information and put it on the site, and we’d then go through and verify it over time.</p>
+
+<p>There are a bunch of ways of varying technical complexity to go about this sort of task, including simply interfacing with Perplexity/ChatGPT/Claude, or using low- or no-code tools. But this post takes a reasonably technical approach involving writing code to interface with the APIs.</p>
+
+<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/directory-site-agents/robots-facing-800-2bccb0ca5.webp 800w, /assets/images/generated/directory-site-agents/robots-facing-1000-2bccb0ca5.webp 1000w, /assets/images/generated/directory-site-agents/robots-facing-1200-2bccb0ca5.webp 1200w, /assets/images/generated/directory-site-agents/robots-facing-1600-2bccb0ca5.webp 1600w, /assets/images/generated/directory-site-agents/robots-facing-1904-2bccb0ca5.webp 1904w" type="image/webp" /><source srcset="/assets/images/generated/directory-site-agents/robots-facing-800-d125cb812.png 800w, /assets/images/generated/directory-site-agents/robots-facing-1000-d125cb812.png 1000w, /assets/images/generated/directory-site-agents/robots-facing-1200-d125cb812.png 1200w, /assets/images/generated/directory-site-agents/robots-facing-1600-d125cb812.png 1600w, /assets/images/generated/directory-site-agents/robots-facing-1904-d125cb812.png 1904w" type="image/png" /><img src="/assets/images/generated/directory-site-agents/robots-facing-800-d125cb812.png" width="1904" height="482" /></picture>
+<h2 id="one-agent-is-not-enough">
+  
+  
+    One Agent is Not Enough <a href="#one-agent-is-not-enough" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The first challenge: I wanted up-to-date information, which meant using an “online” LLM that has access to the internet (most LLM APIs only have access to the LLM’s internal knowledge base, not the live internet). <a href="https://docs.perplexity.ai/guides/getting-started" class="external-link" target="_blank" rel="noopener noreferrer">Perplexity’s API</a> was the obvious choice.</p>
+
+<p>But Perplexity’s LLMs are missing a feature I also needed: “structured outputs.” Structured outputs allows you to ensure that the agent outputs the data in a specific format. This is useful for ensuring the output matches your database schema. If you don’t use structured outputs, you risk the LLM adding a new parameter, changing the name of a parameter, or ignoring a parameter entirely — and then adding the data to your system could fail or be incomplete.</p>
+
+<p>OpenAI offers <a href="https://platform.openai.com/docs/guides/structured-outputs" class="external-link" target="_blank" rel="noopener noreferrer">structured outputs</a>. But the OpenAI API models are not online.</p>
+
+<p>The answer: a multi-agent system. I used <a href="https://github.com/crewAIInc/crewAI" class="external-link" target="_blank" rel="noopener noreferrer">CrewAI</a> — which seems like the easiest tool for a proof-of-concept — to orchestrate the two models.</p>
+
+<p>I’d ask the Perplexity agent to go out and get live information, then hand it off to the OpenAI agent who would structure it correctly before returning it to my program.</p>
+
+<p>Here’s the basic sketch (again, simplified — Clean Travel Club does a bunch more than this) of the sequence:</p>
+<ol>
+  <li>I input a list of places (e.g. a list of restaurants in NYC)</li>
+  <li>One-by-one, my program runs through the places</li>
+  <li>First it queries the Google Places API to get baseline information</li>
+  <li>Then it kicks off a CrewAI “crew”</li>
+  <li>That crew begins with a Perplexity prompt asking about all the specific desired attributes of the place (accessing the internet to get the most up-to-date information)</li>
+  <li>Then the crew moves those results to the OpenAI agent to structure it (again with specific instructions)</li>
+  <li>And finally it all gets inserted into the database</li>
+</ol>
+
+<p>Ready to dive into some code examples?</p>
+<h2 id="data-models">
+  
+  
+    Data models <a href="#data-models" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>I built Clean Travel Club in Python / Django (with the help of the truly excellent <a href="https://www.saaspegasus.com/" class="external-link" target="_blank" rel="noopener noreferrer">SaaS Pegasus</a> boilerplate!), but you could do something similar with any language or framework.</p>
+
+<p>First I had to set up my data models with the desired parameters. I have a Django model for <code class="language-plaintext highlighter-rouge">Restaurant</code> and then a Pydantic model for the data that goes into it (this is OpenAI’s preferred format). Here’s abridged/simplified excerpt from <code class="language-plaintext highlighter-rouge">models.py</code><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Note: I’m only showing simplified versions of the core, material logic to illustrate the playbook for using agents to get data. There’s a bunch more complexity around data/schema munging, specifying other parameters (city, other types of places, other attributes, attribute categories, etc.) and more — but in the interest of keeping this post and code snippets to a reasonable length, I’ve removed all that. If there’s enough interest, I’d clean up my fuller code and publish it.</span>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># apps/places/models.py
+</span>
+<span class="kn">from</span> <span class="n">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span> <span class="k">as</span> <span class="n">PydanticBaseModel</span>
+
+<span class="c1"># A Pydantic model that will be used inside the attribute to allow for Boolean values with a None option, and notes on that value. 
+# I also have a similar RatingField in the real product for values that aren't boolean.
+</span><span class="k">class</span> <span class="nc">BooleanField</span><span class="p">(</span><span class="n">PydanticBaseModel</span><span class="p">):</span>
+    <span class="n">value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="bp">None</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">Boolean value of the attribute</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">notes</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="bp">None</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">Notes about the attribute</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># A basic version of the restaurant data schema. 
+# In the real application, this is several layers of nested Pydantic models and output data.
+</span><span class="k">class</span> <span class="nc">RestaurantAttributes</span><span class="p">(</span><span class="n">PydanticBaseModel</span><span class="p">):</span>
+    <span class="n">seed_oil_free</span><span class="p">:</span> <span class="n">BooleanField</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">Whether the restaurant is seed oil free</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">grass_fed</span><span class="p">:</span> <span class="n">BooleanField</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">Whether the establishment has grass-fed meats</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Additional metadata — both for the app to display and for the agents to ingest
+# You'll see how the *_notes fields are used in a minute.
+</span><span class="n">restaurant_attribute_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">seed_oil_free</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">display_name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Seed oil free food</span><span class="sh">"</span><span class="p">,</span> 
+        <span class="sh">"</span><span class="s">ai_structure_notes</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Does the establishment specifically make its food WITHOUT SEED OILS? Either True or False. You can also be unsure (None).</span><span class="sh">"</span>
+    <span class="p">},</span>
+    <span class="sh">"</span><span class="s">grass_fed</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">display_name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Grass-fed meats</span><span class="sh">"</span><span class="p">,</span> 
+        <span class="sh">"</span><span class="s">ai_research_notes</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">This is specifically about GRASS-FED meats on the menu. Simply having meat in general is not enough.</span><span class="sh">"</span><span class="p">,</span> 
+        <span class="sh">"</span><span class="s">ai_structure_notes</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Does the establishment have grass-fed meats? Either True or False. You can also be unsure (None).</span><span class="sh">"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># The core model for Restaurants
+</span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="nc">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">slug</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="nc">SlugField</span><span class="p">(</span><span class="n">unique</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">google_place_id</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="nc">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">google_place_data</span> <span class="o">=</span> <span class="nc">JSONField</span><span class="p">(</span>
+        <span class="n">default</span><span class="o">=</span><span class="nb">dict</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> 
+        <span class="n">schema</span><span class="o">=</span><span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">object</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">keys</span><span class="sh">"</span><span class="p">:</span> <span class="p">{}}</span>
+    <span class="p">)</span>
+
+    <span class="c1"># This is a data-munging function I define elsewhere that converts the Pydantic model to a JSONField. 
+</span>    <span class="c1"># You could also use django-pydantic-field or other approaches, including using JSON the whole way through
+</span>    <span class="n">SCHEMA</span> <span class="o">=</span> <span class="nf">pydantic_to_jsonfield_schema</span><span class="p">(</span><span class="n">RestaurantAttributes</span><span class="p">,</span> <span class="n">restaurant_name_mapping</span><span class="p">)</span> 
+
+    <span class="n">attributes</span> <span class="o">=</span> <span class="nc">JSONField</span><span class="p">(</span><span class="n">schema</span><span class="o">=</span><span class="n">SCHEMA</span><span class="p">)</span>
+</code></pre></div></div>
+
+<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/directory-site-agents/robots-staring-800-5f6580e5f.webp 800w, /assets/images/generated/directory-site-agents/robots-staring-1000-5f6580e5f.webp 1000w, /assets/images/generated/directory-site-agents/robots-staring-1200-5f6580e5f.webp 1200w, /assets/images/generated/directory-site-agents/robots-staring-1600-5f6580e5f.webp 1600w, /assets/images/generated/directory-site-agents/robots-staring-1904-5f6580e5f.webp 1904w" type="image/webp" /><source srcset="/assets/images/generated/directory-site-agents/robots-staring-800-01efb013f.png 800w, /assets/images/generated/directory-site-agents/robots-staring-1000-01efb013f.png 1000w, /assets/images/generated/directory-site-agents/robots-staring-1200-01efb013f.png 1200w, /assets/images/generated/directory-site-agents/robots-staring-1600-01efb013f.png 1600w, /assets/images/generated/directory-site-agents/robots-staring-1904-01efb013f.png 1904w" type="image/png" /><img src="/assets/images/generated/directory-site-agents/robots-staring-800-01efb013f.png" width="1904" height="537" /></picture>
+<h2 id="the-agents">
+  
+  
+    The agents <a href="#the-agents" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Now that we have our structure, let’s set up our agents. Here are the basic components of the key logic<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">Again: leaving lots of details out of this to keep the post simple and focused on the agents.</span>.</p>
+
+<p>First I get the data out of the input file:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># apps/places/management/commands/collect_data.py
+</span>
+<span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="n">help</span> <span class="o">=</span> <span class="sh">"""</span><span class="s">
+    Researches places using Google Places API, Perplexity, and OpenAI, and inserts them into the database.
+    Usage: 
+        Batch search: $ docker compose exec web python manage.py collect_data --file &lt;path_to_file&gt;
+    Batch file format is one search_query per line.
+    </span><span class="sh">"""</span>
+        
+    <span class="k">def</span> <span class="nf">add_arguments</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+        <span class="n">parser</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">'</span><span class="s">--file</span><span class="sh">'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="sh">'</span><span class="s">Path to file containing search queries (one per line)</span><span class="sh">'</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+        <span class="n">file_path</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="sh">'</span><span class="s">file</span><span class="sh">'</span><span class="p">]</span>
+        <span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">queries</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="p">.</span><span class="nf">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span> <span class="k">if</span> <span class="n">line</span><span class="p">.</span><span class="nf">strip</span><span class="p">()]</span>
+            <span class="k">for</span> <span class="n">query</span> <span class="ow">in</span> <span class="n">queries</span><span class="p">:</span>
+                <span class="n">place</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">run_search</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">place</span><span class="p">:</span>
+                    <span class="n">self</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">style</span><span class="p">.</span><span class="nc">SUCCESS</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Successfully saved </span><span class="si">{</span><span class="n">place</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="sh">'</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">self</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">style</span><span class="p">.</span><span class="nc">ERROR</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Failed to process </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="sh">'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Then I find the place in Google Places, and kick off the agent crew:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># apps/places/management/commands/collect_data.py:Command
+</span>
+<span class="c1"># all these snippets are still in the Command class
+</span>
+<span class="k">def</span> <span class="nf">run_search</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">search_query</span><span class="p">):</span>
+    <span class="n">gmaps_api_key</span> <span class="o">=</span> <span class="nf">getattr</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="sh">'</span><span class="s">GOOGLE_MAPS_API_KEY</span><span class="sh">'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="n">gmaps</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="p">.</span><span class="nc">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">gmaps_api_key</span><span class="p">)</span>
+    <span class="n">google_place</span> <span class="o">=</span> <span class="n">gmaps</span><span class="p">.</span><span class="nf">places</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">search_query</span><span class="si">}</span><span class="s">, New York City</span><span class="sh">"</span><span class="p">)[</span><span class="sh">'</span><span class="s">results</span><span class="sh">'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">google_place_details</span> <span class="o">=</span> <span class="n">gmaps</span><span class="p">.</span><span class="nf">place</span><span class="p">(</span><span class="n">google_place</span><span class="p">[</span><span class="sh">'</span><span class="s">place_id</span><span class="sh">'</span><span class="p">])[</span><span class="sh">'</span><span class="s">result</span><span class="sh">'</span><span class="p">]</span>
+		
+    <span class="n">crew_ouput</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">run_crew</span><span class="p">(</span><span class="n">schema</span><span class="o">=</span><span class="n">RestaurantAttributes</span><span class="p">,</span> <span class="n">inputs</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">place_name</span><span class="sh">'</span><span class="p">:</span> <span class="n">search_query</span><span class="p">})</span>
+		
+    <span class="n">place</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">save_place</span><span class="p">(</span><span class="n">search_query</span><span class="p">,</span> <span class="n">google_place_details</span><span class="p">,</span> <span class="n">crew_output</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">place</span>
+</code></pre></div></div>
+
+<p>Now, what you’ll see below is how the crew runs.</p>
+
+<p>The first function (<code class="language-plaintext highlighter-rouge">generate_prompts</code>) creates schema-specific prompts for the agents with clarifying information for them. These prompts take in the attributes we defined in <code class="language-plaintext highlighter-rouge">models.py</code> and create a prompt inquiring about them, including adding parenthetical notes from the <code class="language-plaintext highlighter-rouge">restaurant_attribute_mapping</code> if they exist.</p>
+
+<p>The notes are useful for making sure the agents know clearly what they’re looking for, as well as ensuring the OpenAI structuring agent knows data format you’re looking for (otherwise sometimes it guesses wrong and the task fails when its output doesn’t match the designated structured format)<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote">I’ve found it really interesting to be working both in the deterministic world of “normal code” and the non-deterministic world of “LLM prompting” in the same project. The “normal code” (usually) either consistently works, or consistently fails. But the prompting requires coaxing and tweaking to get it to <em>reliably</em> return the desired outcome. It’s fun and sometimes frustrating. <br /><br />My prompts here could probably be 10x better with some few-shot examples and other adjustments.</span>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># apps/places/management/commands/collect_data.py:Command
+</span>
+<span class="k">def</span> <span class="nf">generate_prompts</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">place_name</span><span class="p">,</span> <span class="n">attribute_mapping</span><span class="p">):</span>
+    <span class="n">research_body</span> <span class="o">=</span> <span class="sh">''</span>
+    <span class="n">structure_body</span> <span class="o">=</span> <span class="sh">''</span>
+
+    <span class="k">for</span> <span class="n">attribute</span><span class="p">,</span> <span class="n">attribute_data</span> <span class="ow">in</span> <span class="n">attribute_mapping</span><span class="p">.</span><span class="nf">items</span><span class="p">():</span>
+        <span class="n">research_body</span> <span class="o">+=</span> <span class="sa">f</span><span class="sh">'</span><span class="s">- it has </span><span class="si">{</span><span class="n">attribute_data</span><span class="p">[</span><span class="sh">'</span><span class="s">display_name</span><span class="sh">'</span><span class="p">]</span><span class="si">}</span><span class="sh">'</span>
+        <span class="n">structure_body</span> <span class="o">+=</span> <span class="sa">f</span><span class="sh">'</span><span class="s">- it has </span><span class="si">{</span><span class="n">attribute_data</span><span class="p">[</span><span class="sh">'</span><span class="s">display_name</span><span class="sh">'</span><span class="p">]</span><span class="si">}</span><span class="sh">'</span>
+        <span class="k">if</span> <span class="sh">'</span><span class="s">ai_research_notes</span><span class="sh">'</span> <span class="ow">in</span> <span class="n">attribute_data</span><span class="p">:</span>
+            <span class="n">research_body</span> <span class="o">+=</span> <span class="sa">f</span><span class="sh">'</span><span class="s"> (</span><span class="si">{</span><span class="n">attribute_data</span><span class="p">[</span><span class="sh">"</span><span class="s">ai_research_notes</span><span class="sh">"</span><span class="p">]</span><span class="si">}</span><span class="s">)</span><span class="sh">'</span>
+        <span class="k">if</span> <span class="sh">'</span><span class="s">ai_structure_notes</span><span class="sh">'</span> <span class="ow">in</span> <span class="n">attribute_data</span><span class="p">:</span>
+            <span class="n">structure_body</span> <span class="o">+=</span> <span class="sa">f</span><span class="sh">'</span><span class="s"> (</span><span class="si">{</span><span class="n">attribute_data</span><span class="p">[</span><span class="sh">"</span><span class="s">ai_structure_notes</span><span class="sh">"</span><span class="p">]</span><span class="si">}</span><span class="s">)</span><span class="sh">'</span>
+        <span class="n">research_body</span> <span class="o">+=</span> <span class="sh">'</span><span class="se">\n</span><span class="sh">'</span>
+        <span class="n">structure_body</span> <span class="o">+=</span> <span class="sh">'</span><span class="se">\n</span><span class="sh">'</span>
+
+    <span class="n">research_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">
+    Research </span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="s"> to learn about how healthy it is and specifically about each of the following attributes. 
+    Briefly include any relevant information for each:
+    </span><span class="si">{</span><span class="n">research_body</span><span class="si">}</span><span class="s">
+    - as well as how expensive it is — either low-priced ($), mid-priced ($$), high-priced ($$$), or very high-priced ($$$$)
+    - as well as a brief general description of the establishment, specifically anything about its healthiness.
+    </span><span class="sh">"""</span>
+
+    <span class="n">research_expected_output</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">Bullet points about each of the following attributes:
+    </span><span class="si">{</span><span class="n">research_body</span><span class="si">}</span><span class="s">
+    - as well as how expensive it is — either low-priced ($), mid-priced ($$), high-priced ($$$), or very high-priced ($$$$)
+    - as well as a brief general description of the establishment, specifically anything about its healthiness.
+    </span><span class="sh">"""</span>
+
+    <span class="n">structure_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">Take information about </span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="s"> and return it in the defined structured format. 
+    If you are unsure, None is an acceptable answer for both the attribute value and the notes — don</span><span class="sh">'</span><span class="s">t hesitate to leave them as None if you aren</span><span class="sh">'</span><span class="s">t sure!
+    For the notes, keep them brief and to the point, with a </span><span class="sh">'</span><span class="s">smart friend</span><span class="sh">'</span><span class="s"> tone. 
+    These will be on a site where people are trying to find healthy establishments, so give context relevant to that and the specific attribute.
+    Do NOT say </span><span class="sh">"</span><span class="s">Yes</span><span class="sh">"</span><span class="s"> or </span><span class="sh">"</span><span class="s">No</span><span class="sh">"</span><span class="s"> — we</span><span class="sh">'</span><span class="s">re looking for True or False or None.
+    Do NOT put an attribute as True simply because it</span><span class="sh">'</span><span class="s">s </span><span class="sh">"</span><span class="s">likely</span><span class="sh">"</span><span class="s"> due to similar places in that category having that attribute. You should just put None.
+		
+    We are looking for the following information:
+    </span><span class="si">{</span><span class="n">structure_body</span><span class="si">}</span><span class="s">
+    - Whether it is $
+    - Whether it is $$
+    - Whether it is $$$
+    - Whether it is $$$$
+    - And how you would describe it in a sentence or two for overall notes.
+		
+    Overall notes should be just 1 sentence, or 2 at most. And not too salesy, just a smart friend telling you about the place. 
+    Do NOT put None in the Overall Notes, but you can put it in any other field.
+
+    Also, if you include the place</span><span class="sh">'</span><span class="s">s name anywhere, use a short version of the name, like </span><span class="sh">"</span><span class="s">The Well</span><span class="sh">"</span><span class="s"> instead of </span><span class="sh">"</span><span class="s">The Well Kitchen &amp; Table</span><span class="sh">"</span><span class="s">, or </span><span class="sh">"</span><span class="s">Sweetgreen</span><span class="sh">"</span><span class="s"> instead of </span><span class="sh">"</span><span class="s">Sweetgreen - 12th + University.</span><span class="sh">"</span><span class="s">
+    </span><span class="sh">"""</span>
+
+    <span class="n">structure_expected_output</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">
+    Each of the items below about the establishment </span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="s">, and notes about each.
+
+    If you are unsure on a specific item, put None as the answer for both the attribute value and the notes. Don</span><span class="sh">'</span><span class="s">t hesitate to leave it as None if you aren</span><span class="sh">'</span><span class="s">t sure! Include whether:
+
+    </span><span class="si">{</span><span class="n">structure_body</span><span class="si">}</span><span class="s">
+    - Whether it is $
+    - Whether it is $$
+    - Whether it is $$$
+    - Whether it is $$$$
+    - And how you would describe it in a sentence or two for overall notes.
+    </span><span class="sh">"""</span>
+
+    <span class="k">return</span> <span class="n">research_prompt</span><span class="p">,</span> <span class="n">research_expected_output</span><span class="p">,</span> <span class="n">structure_prompt</span><span class="p">,</span> <span class="n">structure_expected_output</span>
+</code></pre></div></div>
+
+<p>Here’s an example of the research prompt that gets generated:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/directory-site-agents/agent-800-12277661e.webp 800w, /assets/images/generated/directory-site-agents/agent-1000-12277661e.webp 1000w, /assets/images/generated/directory-site-agents/agent-1200-12277661e.webp 1200w, /assets/images/generated/directory-site-agents/agent-1600-12277661e.webp 1600w, /assets/images/generated/directory-site-agents/agent-2000-12277661e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/directory-site-agents/agent-800-62cd090e6.png 800w, /assets/images/generated/directory-site-agents/agent-1000-62cd090e6.png 1000w, /assets/images/generated/directory-site-agents/agent-1200-62cd090e6.png 1200w, /assets/images/generated/directory-site-agents/agent-1600-62cd090e6.png 1600w, /assets/images/generated/directory-site-agents/agent-2000-62cd090e6.png 2000w" type="image/png" /><img src="/assets/images/generated/directory-site-agents/agent-800-62cd090e6.png" width="3044" height="654" /></picture>
+
+<p>The second function (<code class="language-plaintext highlighter-rouge">run_crew</code>) is what we called in the last code snippet, and references those generated prompts.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># apps/places/management/commands/collect_data.py:Command
+</span>
+<span class="k">def</span> <span class="nf">run_crew</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">schema</span><span class="p">,</span> <span class="n">inputs</span><span class="p">):</span>
+    <span class="n">place_name</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="sh">'</span><span class="s">place_name</span><span class="sh">'</span><span class="p">]</span>
+
+    <span class="n">research_prompt</span><span class="p">,</span> <span class="n">research_expected_output</span><span class="p">,</span> <span class="n">structure_prompt</span><span class="p">,</span> <span class="n">structure_expected_output</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">generate_prompts</span><span class="p">(</span><span class="n">place_name</span><span class="p">,</span> <span class="n">restaurant_attribute_mapping</span><span class="p">)</span>
+
+    <span class="n">agents</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">researcher</span> <span class="o">=</span> <span class="nc">Agent</span><span class="p">(</span>
+        <span class="n">role</span><span class="o">=</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="s"> Senior Data Researcher</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">goal</span><span class="o">=</span><span class="sa">f</span><span class="sh">"</span><span class="s">Discover and document requested information about </span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">backstory</span><span class="o">=</span><span class="sa">f</span><span class="sh">"</span><span class="s">You</span><span class="sh">'</span><span class="s">re a seasoned researcher with a knack for uncovering requested information. You are known for your ability to find the most relevant information requested and present it in a clear and concise manner.</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">verbose</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="n">llm</span> <span class="o">=</span> <span class="nc">LLM</span><span class="p">(</span>
+            <span class="c1"># I use model llama-3.1-sonar-large-128k-online but am experimenting with whether small could do the trick too (or if huge is better) 
+</span>            <span class="n">model</span><span class="o">=</span><span class="nf">getattr</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="sh">'</span><span class="s">PERPLEXITY_MODEL</span><span class="sh">'</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span> 
+            <span class="n">base_url</span><span class="o">=</span><span class="sh">"</span><span class="s">https://api.perplexity.ai/</span><span class="sh">"</span><span class="p">,</span>
+            <span class="n">api_key</span><span class="o">=</span><span class="nf">getattr</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="sh">'</span><span class="s">PERPLEXITY_API_KEY</span><span class="sh">'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">agents</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">researcher</span><span class="p">)</span>
+
+    <span class="n">structurer</span> <span class="o">=</span> <span class="nc">Agent</span><span class="p">(</span>
+        <span class="n">role</span><span class="o">=</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="s"> Data Structuring Specialist</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">goal</span><span class="o">=</span><span class="sa">f</span><span class="sh">"</span><span class="s">Take information about </span><span class="si">{</span><span class="n">place_name</span><span class="si">}</span><span class="s"> and return it in the defined structured format</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">backstory</span><span class="o">=</span><span class="sa">f</span><span class="sh">"</span><span class="s">You</span><span class="sh">'</span><span class="s">re a meticulous data structuring specialist with a keen eye for detail. You take information and return it in the defined structured format.</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">verbose</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="n">llm</span> <span class="o">=</span> <span class="nc">LLM</span><span class="p">(</span>
+            <span class="c1"># I use gpt-4o-mini
+</span>            <span class="n">model</span><span class="o">=</span><span class="nf">getattr</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="sh">'</span><span class="s">OPENAI_MODEL</span><span class="sh">'</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span> 
+            <span class="n">api_key</span><span class="o">=</span><span class="nf">getattr</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="sh">'</span><span class="s">OPENAI_API_KEY</span><span class="sh">'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">agents</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">structurer</span><span class="p">)</span>
+
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">research_task</span> <span class="o">=</span> <span class="nc">Task</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="n">research_prompt</span><span class="p">,</span>
+        <span class="n">agent</span><span class="o">=</span><span class="n">researcher</span><span class="p">,</span>
+        <span class="n">expected_output</span><span class="o">=</span><span class="n">research_expected_output</span>
+    <span class="p">)</span>
+    <span class="n">tasks</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">research_task</span><span class="p">)</span>
+
+    <span class="n">structure_task</span> <span class="o">=</span> <span class="nc">Task</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="n">structure_prompt</span><span class="p">,</span>
+        <span class="n">agent</span><span class="o">=</span><span class="n">structurer</span><span class="p">,</span>
+        <span class="n">expected_output</span><span class="o">=</span><span class="n">structure_expected_output</span><span class="p">,</span>
+        <span class="n">output_json</span><span class="o">=</span><span class="n">RestaurantAttributes</span>
+    <span class="p">)</span>
+    <span class="n">tasks</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">structure_task</span><span class="p">)</span>
+
+    <span class="n">crew</span> <span class="o">=</span> <span class="nc">Crew</span><span class="p">(</span>
+        <span class="n">agents</span><span class="o">=</span><span class="n">agents</span><span class="p">,</span>
+        <span class="n">tasks</span><span class="o">=</span><span class="n">tasks</span><span class="p">,</span>
+        <span class="n">process</span><span class="o">=</span><span class="n">Process</span><span class="p">.</span><span class="n">sequential</span><span class="p">,</span>
+        <span class="n">verbose</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">crew</span><span class="p">.</span><span class="nf">kickoff</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inputs</span><span class="p">)</span>
+    <span class="n">task_output</span> <span class="o">=</span> <span class="n">structured_return_task</span><span class="p">.</span><span class="n">output</span><span class="p">.</span><span class="n">json_dict</span>
+
+    <span class="k">return</span> <span class="n">task_output</span>
+</code></pre></div></div>
+
+<p>That’s most of the core logic! First put together the prompts (lots of words, but not actually that much going on), then set up the agents and their tasks, kick them off, and get the results. I was shocked how easy this was the first time I ran it.</p>
+
+<p>Finally, we wrap up with the <code class="language-plaintext highlighter-rouge">save_place</code> function we referenced earlier:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># apps/places/management/commands/collect_data.py:Command
+</span>
+<span class="k">def</span> <span class="nf">save_place</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">search_query</span><span class="p">,</span> <span class="n">google_place_details</span><span class="p">,</span> <span class="n">crew_output</span><span class="p">):</span>
+    <span class="n">place_name</span> <span class="o">=</span> <span class="n">google_place_details</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="p">,</span> <span class="n">search_query</span><span class="p">)</span>
+    
+    <span class="c1"># another data munging function that puts the crew output into the right format to be inserted
+</span>    <span class="n">attribute_data</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">format_attribute_data</span><span class="p">(</span><span class="n">Restaurant</span><span class="p">.</span><span class="n">SCHEMA</span><span class="p">,</span> <span class="n">crew_output</span><span class="p">)</span> 
+    
+    <span class="n">place</span> <span class="o">=</span> <span class="n">Restaurant</span><span class="p">.</span><span class="n">objects</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="n">place_name</span><span class="p">,</span>
+        <span class="n">slug</span><span class="o">=</span><span class="nf">slugify</span><span class="p">(</span><span class="n">place_name</span><span class="p">),</span>
+        <span class="n">google_place_id</span><span class="o">=</span><span class="n">google_place_details</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">place_id</span><span class="sh">'</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span>
+        <span class="n">google_place_details</span><span class="o">=</span><span class="n">google_place_details</span><span class="p">,</span>
+        <span class="n">attributes</span><span class="o">=</span><span class="n">attribute_data</span>
+    <span class="p">)</span>
+
+    <span class="n">place</span><span class="p">.</span><span class="nf">save</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">place</span>
+</code></pre></div></div>
+
+<p>And with that: it’s all done.</p>
+
+<p>So again, when I run this, it takes my list of search queries, finds them on Google Places to get basic metadata, then runs to Perplexity to get up-to-date information about the requested attributes, then goes to OpenAI to structure it all, and then dumps it all right in the database.</p>
+
+<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/directory-site-agents/robot-typing-800-4f1477389.webp 800w, /assets/images/generated/directory-site-agents/robot-typing-1000-4f1477389.webp 1000w, /assets/images/generated/directory-site-agents/robot-typing-1200-4f1477389.webp 1200w, /assets/images/generated/directory-site-agents/robot-typing-1600-4f1477389.webp 1600w, /assets/images/generated/directory-site-agents/robot-typing-1904-4f1477389.webp 1904w" type="image/webp" /><source srcset="/assets/images/generated/directory-site-agents/robot-typing-800-61579e7ff.png 800w, /assets/images/generated/directory-site-agents/robot-typing-1000-61579e7ff.png 1000w, /assets/images/generated/directory-site-agents/robot-typing-1200-61579e7ff.png 1200w, /assets/images/generated/directory-site-agents/robot-typing-1600-61579e7ff.png 1600w, /assets/images/generated/directory-site-agents/robot-typing-1904-61579e7ff.png 1904w" type="image/png" /><img src="/assets/images/generated/directory-site-agents/robot-typing-800-61579e7ff.png" width="1904" height="555" /></picture>
+<h2 id="closing-thoughts">
+  
+  
+    Closing thoughts <a href="#closing-thoughts" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>When I first ran this, I found it pretty magical. I can simply input a list of places, and for a few cents and a couple minutes of waiting, I can get back a whole load of specified data about them, in exactly the format I need, and insert it straight into the site.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/directory-site-agents/springbone-800-2108ce706.webp 800w, /assets/images/generated/directory-site-agents/springbone-1000-2108ce706.webp 1000w, /assets/images/generated/directory-site-agents/springbone-1200-2108ce706.webp 1200w, /assets/images/generated/directory-site-agents/springbone-1600-2108ce706.webp 1600w, /assets/images/generated/directory-site-agents/springbone-1836-2108ce706.webp 1836w" type="image/webp" /><source srcset="/assets/images/generated/directory-site-agents/springbone-800-ee0efba13.png 800w, /assets/images/generated/directory-site-agents/springbone-1000-ee0efba13.png 1000w, /assets/images/generated/directory-site-agents/springbone-1200-ee0efba13.png 1200w, /assets/images/generated/directory-site-agents/springbone-1600-ee0efba13.png 1600w, /assets/images/generated/directory-site-agents/springbone-1836-ee0efba13.png 1836w" type="image/png" /><img src="/assets/images/generated/directory-site-agents/springbone-800-ee0efba13.png" width="1836" height="648" /></picture>
+
+<p>Next up on the data front, aside from improving Clean Travel Club overall, I’m thinking about combining all this with other data sources (like I already do with the Google Maps data), or even using AI agents (phone or email) to reach out directly to places to verify the information and get even more that’s not on the internet.</p>
+
+<p>The possibilities for this are, obviously, endless. There are so many useful directory-style sites you could make. There are b2b products you could make. There are personal tools you could make.</p>
+
+<p>It used to be that in order to pull together a big load of structured data, you either needed to find a source of the data already-structured and buy or scrape it, or you needed to write massively complex scrapers, or you needed to manually extract it and input it (I’ve done all three, and none are particularly fun).</p>
+
+<p>Now, with just a couple hundred lines of code, you can generate it all, as long as that data exists on the internet.</p>
+
+<p>Obviously, the LLMs themselves are indistinguishable-from-magic technology. But I’ve been equally blown away by the quality of open-source tooling around them. Whether it’s CrewAI orchestrating the agents, or LiteLLM handling connections to them behind the scenes, it’s remarkable that tools exist with such good ergonomics so early in this technology wave.</p>
+
+<p>The speed of development in the AI space is ridiculous right now — I’m looking forward to this post being horribly out-of-date in a month’s time. Onwards.</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#closing-thoughts" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/rational-guide-to-emfs">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/rational-guide-to-emfs">What are EMFs? A rational, skeptical, curious person’s guide</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/bricklaying-engineering-ai">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/bricklaying-engineering-ai">Bricklaying, architecture, software engineering, and AI</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/directory-site-agents" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>

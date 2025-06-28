@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>I²C + AI = crazy fast simple hardware prototyping | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="I²C + AI = crazy fast simple hardware prototyping" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Here’s a 30 minute project to get a full-blown DIY environmental sensor. Prototyping projects like this have gotten way faster." />
+<meta property="og:description" content="Here’s a 30 minute project to get a full-blown DIY environmental sensor. Prototyping projects like this have gotten way faster." />
+<link rel="canonical" href="https://andybromberg.com/fast-hardware-prototyping" />
+<meta property="og:url" content="https://andybromberg.com/fast-hardware-prototyping" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2025-03-30-fast-hardware-prototyping.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-30T10:30:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2025-03-30-fast-hardware-prototyping.png" />
+<meta property="twitter:title" content="I²C + AI = crazy fast simple hardware prototyping" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2025-03-30T10:30:00-07:00","datePublished":"2025-03-30T10:30:00-07:00","description":"Here’s a 30 minute project to get a full-blown DIY environmental sensor. Prototyping projects like this have gotten way faster.","headline":"I²C + AI = crazy fast simple hardware prototyping","image":"https://andybromberg.com/assets/images/og/2025-03-30-fast-hardware-prototyping.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/fast-hardware-prototyping"},"url":"https://andybromberg.com/fast-hardware-prototyping"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">I²C + AI = crazy fast simple hardware prototyping</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2025-03-30T10:30:00-07:00" itemprop="datePublished">March 30, 2025
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 7 minutes</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody"><div class="toc">
+        <div class="toc-header">Contents</div>
+        <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#30-minute-project-office-environmental-monitor">30 minute project: Office Environmental Monitor</a></li>
+<li class="toc-entry toc-h2"><a href="#step-1-wire-everything-up-7-minutes">Step 1: Wire everything up (7 minutes)</a></li>
+<li class="toc-entry toc-h2"><a href="#step-2-install-circuitpython--libraries-5-minutes">Step 2: Install CircuitPython &amp; libraries (5 minutes)</a></li>
+<li class="toc-entry toc-h2"><a href="#step-3-code-it-up-7-minutes">Step 3: Code it up (7 minutes)</a></li>
+<li class="toc-entry toc-h2"><a href="#step-4-run-it-1-minute">Step 4: Run it (1 minute)</a></li>
+<li class="toc-entry toc-h2"><a href="#what-next">What next?</a></li>
+</ul>
+      </div>
+      <p>Historically, two things have made prototyping even simple hardware annoying for me:</p>
+<ol>
+  <li>Getting the wiring right, especially with the variance in how different peripherals connect</li>
+  <li>Writing the code to read from/write to the peripherals, often requiring wading through poorly-translated spec sheets</li>
+</ol>
+
+<p>But recently, I’ve done a couple hack projects that have taken no time at all, thanks to peripherals with I²C/Qwiic/Stemma connectors solving bullet number 1, and AI coding assistance solving bullet number 2.</p>
+
+<p>This post will walk through a step-by-step tutorial of a recent toy hardware project that took just <em>30 minutes</em> to get operational after opening up the sensors I ordered.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/fast-hardware-prototyping/top-view-800-eda95cea4.webp 800w, /assets/images/generated/fast-hardware-prototyping/top-view-1000-eda95cea4.webp 1000w, /assets/images/generated/fast-hardware-prototyping/top-view-1200-eda95cea4.webp 1200w, /assets/images/generated/fast-hardware-prototyping/top-view-1600-eda95cea4.webp 1600w, /assets/images/generated/fast-hardware-prototyping/top-view-2000-eda95cea4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/fast-hardware-prototyping/top-view-800-2c1f9d8f8.jpg 800w, /assets/images/generated/fast-hardware-prototyping/top-view-1000-2c1f9d8f8.jpg 1000w, /assets/images/generated/fast-hardware-prototyping/top-view-1200-2c1f9d8f8.jpg 1200w, /assets/images/generated/fast-hardware-prototyping/top-view-1600-2c1f9d8f8.jpg 1600w, /assets/images/generated/fast-hardware-prototyping/top-view-2000-2c1f9d8f8.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/fast-hardware-prototyping/top-view-800-2c1f9d8f8.jpg" width="5712" height="3163" /></picture>
+<h2 id="30-minute-project-office-environmental-monitor">
+  
+  
+    30 minute project: Office Environmental Monitor <a href="#30-minute-project-office-environmental-monitor" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The goal: <strong>make an environmental sensor for my office</strong> that monitors<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Tracking “true” VOC levels is hard with commodity hardware, and subject to a bunch of tricky nuances. <a href="https://forum.airgradient.com/t/measurement-values-for-the-airgradient-one-tvoc-readings/1027" class="external-link" target="_blank" rel="noopener noreferrer">Here’s a thread</a> on the AirGradient forums if you want to learn more. The AirGradient uses the Sensirion SGP41, and I went with the SGP30. The SGP41 outputs an arguably-more-informative VOC <em>index</em> measurement to show changes in concentration, whereas the SGP30 outputs a proper TVOC measurement in ppb, but there are issues with it (hence the change to an index approach in the SGP4x next-generation sensor).</span>:</p>
+<ul>
+  <li>the current light spectrum (including UV and IR) and brightness (see <a href="all-light" class="external-link" target="_blank" rel="noopener noreferrer">All light is not created equal</a> for why this matters)</li>
+  <li>particulate matter of various sizes in the air</li>
+  <li>CO2 and VOC levels</li>
+  <li>plus temperature, humidity, and anything else I could easily pick up</li>
+</ul>
+
+<p>Basically: how healthy is my office right now? <a href="https://x.com/karpathy/status/1548766160434241536" class="external-link" target="_blank" rel="noopener noreferrer">People are</a> <a href="https://x.com/VitalikButerin/status/1812114231489110491" class="external-link" target="_blank" rel="noopener noreferrer">increasingly carrying</a> CO2 monitors, but I think we can do even better.</p>
+
+<p>Here’s a preview of the final product booting up and running (sped up):</p>
+
+<script src="https://asciinema.org/a/q5fKUBHHFtu7nTxuoQiH9zL4v.js" id="asciicast-q5fKUBHHFtu7nTxuoQiH9zL4v" async=""></script>
+
+<p>I went shopping on <a href="https://www.adafruit.com/" class="external-link" target="_blank" rel="noopener noreferrer">Adafruit</a> and got<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">This gets way cheaper if you’re okay without a “true” CO2 measurement (the most expensive component, ~35% of the total sensor costs). The SGP30, which we want anyway for VOCs, outputs estimated CO2 based on H2 concentrations. The SCD-41 is a true photoacoustic CO2 sensor, which is a more expensive component.</span>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/3686" class="external-link" target="_blank" rel="noopener noreferrer">PM2.5 Air Quality Sensor and Breadboard Adapter Kit - PMS5003</a></td>
+      <td>$39.95</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/3709" class="external-link" target="_blank" rel="noopener noreferrer">Adafruit SGP30 Air Quality Sensor Breakout - VOC and eCO2</a></td>
+      <td>$17.50</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/5190" class="external-link" target="_blank" rel="noopener noreferrer">Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor</a></td>
+      <td>$49.95</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/4698" class="external-link" target="_blank" rel="noopener noreferrer">Adafruit AS7341 10-Channel Light / Color Sensor Breakout</a></td>
+      <td>$15.95</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/1980" class="external-link" target="_blank" rel="noopener noreferrer">Adafruit TSL2591 High Dynamic Range Digital Light Sensor</a></td>
+      <td>$6.95</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/4831" class="external-link" target="_blank" rel="noopener noreferrer">Adafruit LTR390 UV Light Sensor</a></td>
+      <td>$4.95</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/4210" class="external-link" target="_blank" rel="noopener noreferrer">STEMMA QT / Qwiic JST SH 4-pin Cables</a> x4</td>
+      <td>$3.80</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>$139.05</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Across these, I’d be able to read:</p>
+<ul>
+  <li>light quality
+    <ul>
+      <li>8-band (violet, indigo, blue, cyan, green, yellow, orange, red) light spectrum distribution</li>
+      <li>UV and NIR indices</li>
+      <li>illuminance</li>
+    </ul>
+  </li>
+  <li>air quality
+    <ul>
+      <li>6 sizes of (0.3, 0.5, 1.0, 2.5, 5, and 10 micron) particulate matter</li>
+      <li>true CO2</li>
+      <li>TVOCs</li>
+      <li>temperature</li>
+      <li>humidity</li>
+    </ul>
+  </li>
+  <li>(and a few more characteristics too!)</li>
+</ul>
+
+<p>At the time I didn’t realize Adafruit made an <a href="https://www.adafruit.com/product/4632" class="external-link" target="_blank" rel="noopener noreferrer">I²C interface version</a> of the PMS5003 air quality sensor, so I might have swapped for that in place of the sensor with breadboard adapter kit<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote"> With that said, I would have some concerns about the current draw of the PMS5003 and it screwing up the I²C chain, so maybe the standalone breadboard adapter is better anyway. Don’t tell me I didn’t warn you!</span>.</p>
+
+<p>You’ll also need a few other things I had laying around, including a CircuitPython-compatible development board (I used the Itsy Bitsy M4 Express), a breadboard, some jumper wires, and an I2C-male-to-4-header-pin cable. I think these would cover you:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/4028" class="external-link" target="_blank" rel="noopener noreferrer">CircuitPython Starter Kit with Adafruit Itsy Bitsy M4</a></td>
+      <td>$24.95</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.adafruit.com/product/3955" class="external-link" target="_blank" rel="noopener noreferrer">JST PH 2mm 4-Pin to Male Header Cable</a></td>
+      <td>$1.50</td>
+    </tr>
+    <tr>
+      <td><em>Subtotal</em></td>
+      <td>$26.45</td>
+    </tr>
+    <tr>
+      <td><strong>Total with above</strong></td>
+      <td><strong>$165.50</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Once you get all this stuff and unpack it, we can get to work. Start your timers!</p>
+<h2 id="step-1-wire-everything-up-7-minutes">
+  
+  
+    Step 1: Wire everything up (7 minutes) <a href="#step-1-wire-everything-up-7-minutes" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p><a href="https://en.wikipedia.org/wiki/I%C2%B2C" class="external-link" target="_blank" rel="noopener noreferrer">I²C</a> is a protocol invented by Philips Semiconductors back in 1982, but now in use by companies like Sparkfun and Adafruit to make dead-simple peripheral connections. Adafruit calls their version of it “Qwiic” and Sparkfun calls theirs “Stemma.” For our simple purposes, they’re all basically equivalent.</p>
+
+<p>One of the awesome things about I²C (and the reason it solves my original problem #1) is that you can wire up all the peripherals in series, one after another. And as long as they have different I²C addresses, it <em>just works</em>. The data flows through the whole chain of sensors and ends up where it needs to be.</p>
+
+<p>So the wiring for this project is incredibly simple, despite the number of sensors:</p>
+
+<ul>
+  <li>connect the five I²C sensors (SCD41, SGP30, AS7341, TSL2591, LTR390) to each other in a chain with the I²C cables, in any order</li>
+  <li>connect the first one with your I²C-to-male-header cable</li>
+  <li>put the dev board on your breadboard and connect the male headers from the previous cable as follows:
+    <ul>
+      <li>black into the ground row</li>
+      <li>red into 3.3V</li>
+      <li>yellow into SCL</li>
+      <li>blue into SDA</li>
+    </ul>
+  </li>
+  <li>plug the PMS5003 adapter cable into the PMS5003 sensor, and then stick the breadboard adapter into the breadboard</li>
+  <li>take three male-to-male jumper cables and put them:
+    <ul>
+      <li>PMS5003 adapter VCC to dev board VHI (or USB, if your board doesn’t have a VHI)</li>
+      <li>adapter GND to board G</li>
+      <li>adapter TXD to board RX</li>
+    </ul>
+  </li>
+  <li>plug a micro usb cable into your dev board and prepare to plug the other end into your computer</li>
+</ul>
+
+<p>Here’s a snapshot. No, it ain’t pretty — it’s a 30 minute project!</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/fast-hardware-prototyping/wiring-side-800-c9bb8b2a1.webp 800w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1000-c9bb8b2a1.webp 1000w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1200-c9bb8b2a1.webp 1200w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1600-c9bb8b2a1.webp 1600w, /assets/images/generated/fast-hardware-prototyping/wiring-side-2000-c9bb8b2a1.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/fast-hardware-prototyping/wiring-side-800-3c4159de9.jpg 800w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1000-3c4159de9.jpg 1000w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1200-3c4159de9.jpg 1200w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1600-3c4159de9.jpg 1600w, /assets/images/generated/fast-hardware-prototyping/wiring-side-2000-3c4159de9.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/fast-hardware-prototyping/wiring-side-800-3c4159de9.jpg" width="4032" height="1902" /></picture>
+<h2 id="step-2-install-circuitpython--libraries-5-minutes">
+  
+  
+    Step 2: Install CircuitPython &amp; libraries (5 minutes) <a href="#step-2-install-circuitpython--libraries-5-minutes" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Next up, plug the dev board’s USB cable into your computer. It should show up as an external drive.</p>
+
+<p>Find your board on the <a href="https://circuitpython.org/downloads" class="external-link" target="_blank" rel="noopener noreferrer">CircuitPython website</a> and download the appropriate <code class="language-plaintext highlighter-rouge">.UF2</code> file. This will allow your board to run CircuitPython code, which is a version of Python specifically made for (… can you guess?) programming electronics / microcontrollers.</p>
+
+<p>Also download the Adafruit <a href="https://circuitpython.org/libraries" class="external-link" target="_blank" rel="noopener noreferrer">“bundle” of CircuitPython libraries</a>. This has everything you’ll need to connect to your sensors.</p>
+
+<p>Now press the reset button twice on your board to get it into bootloader mode, and then copy the <code class="language-plaintext highlighter-rouge">.UF2</code> file over to the drive. It will disappear for a minute, and when it comes back, the drive should be named <code class="language-plaintext highlighter-rouge">CIRCUITPYTHON</code>.</p>
+
+<p>Go into it and make a <code class="language-plaintext highlighter-rouge">lib</code> folder. Then go into your Adafruit bundle and select the following items:</p>
+<ul>
+  <li>adafruit_as7341.mpy</li>
+  <li>adafruit_bus_device/</li>
+  <li>adafruit_ltr390.mpy</li>
+  <li>adafruit_pm25/</li>
+  <li>adafruit_register/</li>
+  <li>adafruit_scd4x.mpy</li>
+  <li>adafruit_sgp30.mpy</li>
+  <li>adafruit_tsl2591.mpy</li>
+</ul>
+
+<p>And copy them all over into the <code class="language-plaintext highlighter-rouge">lib</code> folder on your <code class="language-plaintext highlighter-rouge">CIRCUITPYTHON</code> drive.</p>
+
+<p>Now we have CircuitPython installed and all the libraries we need to interface with our sensors!</p>
+<h2 id="step-3-code-it-up-7-minutes">
+  
+  
+    Step 3: Code it up (7 minutes) <a href="#step-3-code-it-up-7-minutes" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Plugging six different sensors into a board, each with a different library and way of reading data, used to be a nightmare. I’d be reading through library documentation to get the special incantation required to get each of them working.</p>
+
+<p>But this is a place where AI really shines.</p>
+
+<p>I made a new directory, copied the <code class="language-plaintext highlighter-rouge">lib/</code> directory into it, opened up a new file named <code class="language-plaintext highlighter-rouge">code.py</code> in Cursor, went to the agent (Claude Sonnet 3.7), and said something like:</p>
+
+<blockquote>
+  <p>I want to read data off the following sensors: SCD41, SGP30, AS7341, TSL2591, LTR390 (all from Adafruit, connected with I2C) and a PMS5003 (connected over UART). My development board is an Itsy Bitsy M4 Express running CircuitPython.</p>
+
+  <p>The libraries (several with examples) are all in here: @lib/</p>
+
+  <p>Please import the libraries and make a simple script that connects to all these sensors and then reads all the available data off the sensors every 10 seconds, outputting it in print() statements</p>
+
+  <p>Include some simple status print() statements, like when the connections are happening and sampling is beginning.</p>
+</blockquote>
+
+<p>I hit enter, waited three minutes for the agent to write it up, and there we were. Barely had to lift a finger.</p>
+<h2 id="step-4-run-it-1-minute">
+  
+  
+    Step 4: Run it (1 minute) <a href="#step-4-run-it-1-minute" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Then, go into your terminal and type (I’m on macOS) <code class="language-plaintext highlighter-rouge">ls /dev/tty.*</code> and you will see something that looks like <code class="language-plaintext highlighter-rouge">/dev/tty.usbmodem211301</code></p>
+
+<p>Copy that and run (replace path with what you copied) <code class="language-plaintext highlighter-rouge">screen /dev/tty.usbmodem211301 115200</code></p>
+
+<p>(115200 is the speed / baud rate of that board — yours may vary.)</p>
+
+<p>Take the <code class="language-plaintext highlighter-rouge">code.py</code> file and drag it over to the <code class="language-plaintext highlighter-rouge">CIRCUITPYTHON</code> drive, replacing the current <code class="language-plaintext highlighter-rouge">code.py</code> file.</p>
+
+<p>And… it should pretty magically start working, printing out the results of the sensor readings every 10 seconds.</p>
+
+<p>Again, here’s that same screengrab of the output (after I prettied it up a bit):</p>
+
+<script src="https://asciinema.org/a/q5fKUBHHFtu7nTxuoQiH9zL4v.js" id="asciicast-q5fKUBHHFtu7nTxuoQiH9zL4v" async=""></script>
+
+<p>At this point, you should have 10 minutes left in our 30 minute project. Or, maybe not — if you’re anything like me, you probably used up those 10 minutes sorting out something you messed up (like swapping TX / RX pins as I always do).</p>
+<h2 id="what-next">
+  
+  
+    What next? <a href="#what-next" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>I find it pretty remarkable that in less than an hour, it’s possible to have a fully-functional multimodal environmental sensor up and running. Sure, it’s basic<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote"> And: you <em>should</em> still read the docs, make sure you’re calibrating all the sensors correctly and giving them all the data they need (some are more accurate when you feed in e.g. humidity) and interpreting the data correctly.</span>, but… we’re talking about thirty minutes and $150 or less for way more data than you get from any commercial environment sensor I can find (are there <em>any</em> that give you light spectrum data?).</p>
+
+<p>I’ve fumbled my way through a lot of hardware hack projects, getting stuck in the mud on weird nuances of reading data from sensors or connecting them. That — at least for me — is not the fun stuff. But I’m realizing that now, with modern connectors and AI, you can skip that and get to the fun.</p>
+
+<p>What are the fun next steps? Things like:</p>
+<ul>
+  <li>Improving the output visually (see my screen recording above)</li>
+  <li>Doing more analysis on the output to make it informative, triggering alerts, etc.</li>
+  <li>Adding a screen so the device can be standalone</li>
+  <li>Designing and printing a case/stand so it’s not a tangled mess of wires and can be placed in a more accurate location (i.e. light sensors should be as close to my eye position/perspective as possible)</li>
+  <li>Getting this off a breadboard and soldering it</li>
+  <li>Connecting to internet or Bluetooth to pass data elsewhere</li>
+</ul>
+
+<p>I’m planning on continuing to improve this device. I actually think it’s quite useful.</p>
+
+<p>If you try building something similar, <a href="mailto:andy@andybromberg.com" class="mailto-link">let me know</a>!</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#what-next" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/jizo-instax-impermanence">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/jizo-instax-impermanence">Jizo, Instax, and Impermanence</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/speedrun-docsend">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/speedrun-docsend">Speedrunning a home-cooked DocSend replacement</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/fast-hardware-prototyping" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>interface0: the LLM interface I’ve been waiting for | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="interface0: the LLM interface I’ve been waiting for" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I built an augmented version of ChatGPT/Claude-style LLM interfaces, designed for power users like me. It’s called interface0." />
+<meta property="og:description" content="I built an augmented version of ChatGPT/Claude-style LLM interfaces, designed for power users like me. It’s called interface0." />
+<link rel="canonical" href="https://andybromberg.com/interface0-intro" />
+<meta property="og:url" content="https://andybromberg.com/interface0-intro" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2025-06-08-interface0-intro.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-08T09:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2025-06-08-interface0-intro.png" />
+<meta property="twitter:title" content="interface0: the LLM interface I’ve been waiting for" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2025-06-08T09:00:00-07:00","datePublished":"2025-06-08T09:00:00-07:00","description":"I built an augmented version of ChatGPT/Claude-style LLM interfaces, designed for power users like me. It’s called interface0.","headline":"interface0: the LLM interface I’ve been waiting for","image":"https://andybromberg.com/assets/images/og/2025-06-08-interface0-intro.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/interface0-intro"},"url":"https://andybromberg.com/interface0-intro"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">interface0: the LLM interface I&#39;ve been waiting for</h1>
+    <div class="post-meta">
+
+      <div class="post-date"><time class="dt-published" datetime="2025-06-08T09:00:00-07:00" itemprop="datePublished">June 8, 2025
+        </time></div>
+            
+    <div class="article-reading-time">Reading time: about 2 minutes</div>
+      
+      
+    </header>
+    
+    <div class="post-content e-content prose" itemprop="articleBody">
+      <p>I built an augmented version of ChatGPT/Claude-style LLM interfaces, designed for power users like me. For the past week, I used it exclusively and have been quite pleased. It’s called <a href="https://www.interface0.com/" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a>.</p>
+
+<p>Today, interface0 is missing some of the polish of those canonical interfaces, and also some of the functionality that I personally find less important — but it makes up for it with several key new features. Most importantly:</p>
+
+<ul>
+  <li><strong>all models in one place:</strong> you can use models from ChatGPT, Anthropic, Grok, Gemini, or anything else — even mixed in the same chat.</li>
+  <li><strong>cross-provider memory:</strong> memories persist across those providers. I was starting to feel stuck with ChatGPT because it had built up memories, and found it hard to switch to blank-slate Claude 4 when it came out. But now, I’ve dumped all those memories into interface0 and am free to use any provider without lock-in.</li>
+  <li><strong>swappable system prompts:</strong> you can create a range of system prompts/custom instructions and swap between them on a per-message basis. Sometimes I want the agent to be casual and concise, sometimes I want it to act as a lawyer, sometimes I want it to follow a certain template response. Rather than having default system prompts and pasting these further (and sometimes-conflicting) instructions into the user prompt, I now just swap the system prompt.</li>
+  <li>plus: <strong>inbox vs. all chats</strong> (separating unread/priority/pinned chats from others), <strong>outbound phone calls,</strong> and <strong>outbound + inbound emails</strong> (letting the agent interact with the world), <strong>forking chats</strong>, <strong>chained prompts</strong> (where a second message auto-triggers after the first one), and more…</li>
+</ul>
+
+<p>Much more to come as well, both on polish and new features. I’ll continue to post about interface0 as it evolves, including demos.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/interface0-intro/interface0-well-800-350a2e732.webp 800w, /assets/images/generated/interface0-intro/interface0-well-1000-350a2e732.webp 1000w, /assets/images/generated/interface0-intro/interface0-well-1200-350a2e732.webp 1200w, /assets/images/generated/interface0-intro/interface0-well-1600-350a2e732.webp 1600w, /assets/images/generated/interface0-intro/interface0-well-2000-350a2e732.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/interface0-intro/interface0-well-800-2f6c162bd.png 800w, /assets/images/generated/interface0-intro/interface0-well-1000-2f6c162bd.png 1000w, /assets/images/generated/interface0-intro/interface0-well-1200-2f6c162bd.png 1200w, /assets/images/generated/interface0-intro/interface0-well-1600-2f6c162bd.png 1600w, /assets/images/generated/interface0-intro/interface0-well-2000-2f6c162bd.png 2000w" type="image/png" /><img src="/assets/images/generated/interface0-intro/interface0-well-800-2f6c162bd.png" width="4000" height="1270" /></picture>
+
+<p><a href="https://www.interface0.com/" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a> is forked off of <a href="https://x.com/ibelick" class="external-link" target="_blank" rel="noopener noreferrer">Julien Thibeaut’s</a> excellent <a href="https://github.com/ibelick/zola" class="external-link" target="_blank" rel="noopener noreferrer">Zola</a> project, which gave me the UI framework and scaffolding and some really slick touches, and then I’ve built these differentiated features on top of it.</p>
+
+<p>You can sign up with your Google account to get on the waitlist, or find an <span style="display: inline-block; cursor: zoom-in; user-select: none;" onclick="this.innerHTML = '&lt;code style=&quot;user-select: text;&quot;&gt;1d6c598421d6&lt;/code&gt;'; if(this.innerHTML.includes('code')) { this.innerHTML = '1d6c598421d6'; this.style.fontFamily = 'monospace'; this.style.userSelect = 'text'; }">invite code</span> somewhere…</p>
+
+<p>It’s very much in early beta. But once you try it out, I’d love your feedback. And if you have any ideas for new features or improvements, I’m all ears.</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read?
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/quantum-intuition">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/quantum-intuition">Quantum intuition for everyone, or: why Einstein thinks reality isn't reasonable</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/not-sure-ai-post">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/not-sure-ai-post">I'm not sure how I feel about this</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+    </div><a class="u-url" href="/interface0-intro" hidden></a>
+  </article>
+  
+      </div>
+    </main></body>
+
+</html>
