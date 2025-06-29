@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-06-29T10:28:22-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">How the Yom Kippur War led to America’s moldy homes</title><link href="https://andybromberg.com/energy-crisis-mold" rel="alternate" type="text/html" title="How the Yom Kippur War led to America’s moldy homes" /><published>2025-06-28T09:00:00-07:00</published><updated>2025-06-28T09:00:00-07:00</updated><id>https://andybromberg.com/energy-crisis-mold</id><content type="html" xml:base="https://andybromberg.com/energy-crisis-mold"><![CDATA[<p>Before the 1970s, almost nobody in the US was talking about mold in their homes. It was a non-issue.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-06-29T10:38:45-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">How the Yom Kippur War led to America’s moldy homes</title><link href="https://andybromberg.com/energy-crisis-mold" rel="alternate" type="text/html" title="How the Yom Kippur War led to America’s moldy homes" /><published>2025-06-28T09:00:00-07:00</published><updated>2025-06-28T09:00:00-07:00</updated><id>https://andybromberg.com/energy-crisis-mold</id><content type="html" xml:base="https://andybromberg.com/energy-crisis-mold"><![CDATA[<p>Before the 1970s, almost nobody in the US was talking about mold in their homes. It was a non-issue.</p>
 
 <p>But starting then — and continuing to surge through today — mold has become a huge health concern and topic of discussion in America. There are undoubtedly many factors, simple awareness and better detection being two of them.</p>
 
@@ -1442,7 +1442,27 @@ document.addEventListener('DOMContentLoaded', function() {
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[In 1935, Einstein and colleagues argued that "no reasonable definition of reality could be expected to permit" the consequences of quantum mechanics. A century later, we now know they were right — in that reality is not reasonable.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Captains Log</title><link href="https://andybromberg.com/log/ai" rel="alternate" type="text/html" title="AI Captains Log" /><published>2025-05-18T09:00:00-07:00</published><updated>2025-05-18T09:00:00-07:00</updated><id>https://andybromberg.com/log/log-ai</id><content type="html" xml:base="https://andybromberg.com/log/ai"><![CDATA[<p>So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this era years from now and recall how the ground was shifting. So here are some captain’s logs from that time, mostly for my own use. I only wish I started it earlier…</p>
 
-<h4 id="june-16-2025-merge-conflicts">June 16, 2025: Merge conflicts</h4>
+<h4 id="june-29-2025-agents-async-and-baseline-knowledge">June 29, 2025: agents, async, and baseline knowledge</h4>
+
+<blockquote>
+  <p>Date: 2025.180, 1030</p>
+
+  <p>Current models: o3 &amp; GPT 4.1 (now that interface0 is my frontend instead of ChatGPT, which doesn’t have this model) for general tasks, plus some Sonnet 4; for coding, mostly Sonnet 4, and Gemini 2.5 Pro for long-context.</p>
+
+  <p>Current tools: <a href="/interface0-intro">interface0</a>! Cursor + Codex + Codegen for code.</p>
+</blockquote>
+
+<p>I continue to really, really enjoy the async/agentic model of Codex and Codegen, and am starting to build that more into <a href="https://interface0.com">interface0</a> itself. There’s something very compelling about “kicking off” a bunch of workstreams, letting them all run, and then coming back later to review.</p>
+
+<p>Because of ChatGPT being the first real LLM product we all used, I think we’ve gotten stuck in the chat / synchronous paradigm. But for a lot of this stuff, it’s much nicer to let it run in the background. I’m excited for more products like this.</p>
+
+<p>It’s even nice to be able to kick off several agents doing the same thing and compare. Sometimes I’ll run a couple Codex runs plus a Codegen run and then evaluate them all against each other (spoiler alert: Codegen almost always comes out on top).</p>
+
+<p>One other interesting experience: I’ve been onboarding a few friends to interface0. Almost everyone I’ve onboarded works in tech and is actively using AI. But even so: most of them don’t know about how “system prompts” work, or what “context” means in the abstract. I’ve been surprised by the low baseline level of knowledge about the specifics, even for people who are active users. Exposing some of these primitives to people could help them become much more effective users of LLM technologies.</p>
+
+<p>Last: I continue to build out interface0. It is remarkable how quickly — with AI assistance — you can ship features for a (relatively) simple product like it. This past week I spent maybe 10-15 hours building and shipped as much as you’d expect an old-school SaaS company with 10 engineers to ship in a sprint — or maybe even a month. I may start to post about some of what I’m building into it publicly…</p>
+
+<h4 id="june-16-2025-merge-conflicts">June 16, 2025: merge conflicts</h4>
 
 <blockquote>
   <p>Date: 2025.167, 0925</p>
