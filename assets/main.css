@@ -1424,6 +1424,139 @@ hr:not(.end-of-article-divider)::before {
     font-size: 0.8em;
   }
 }
+/* Disclaimer Box */
+.disclaimer-box {
+  margin: 2em 0;
+  font-family: "Andada Pro", Georgia, serif;
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  padding: 2em 1.5em 1.5em;
+  background-color: #F2F0E5;
+  position: relative;
+}
+
+.disclaimer-box-title {
+  position: absolute;
+  top: -0.9em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F2F0E5;
+  padding: 0 0.8em;
+  color: #6F6E69;
+  font-size: 0.9em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  border: 1px solid #E6E4D9;
+  border-radius: 1em;
+  line-height: 1.4em;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.disclaimer-box-content {
+  line-height: 1.5;
+}
+
+.disclaimer-box-content p {
+  margin-bottom: 1em;
+}
+
+.disclaimer-box-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .disclaimer-box {
+    padding: 1.5em 1em 1em;
+  }
+}
+/* UWoL Series Badge */
+.uwol-series-badge {
+  display: inline-block;
+  background-color: #F2F0E5;
+  border: 1px solid #E6E4D9;
+  border-radius: 1em;
+  padding: 0.2em 0.6em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #6F6E69;
+  text-decoration: none;
+  margin-right: 0.6em;
+  line-height: 1.2;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.uwol-series-badge-large {
+  font-size: 0.6em;
+  margin-left: 0.6em;
+}
+
+.uwol-series-badge:hover {
+  background-color: #edeadb;
+  border-color: #B7B5AC;
+  color: #100F0F;
+  text-decoration: none;
+}
+
+.uwol-series-badge-inline {
+  margin-right: 0.2em;
+}
+
+/* UWoL Series Index Page */
+.uwol-series-list {
+  margin: 2em 0;
+}
+
+.uwol-series-item {
+  margin-bottom: 2.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #E6E4D9;
+}
+
+.uwol-series-item:last-child {
+  border-bottom: none;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+}
+
+.uwol-series-item h3 {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  font-size: 1.3em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.uwol-series-item h3 a {
+  color: #100F0F;
+  text-decoration: none;
+}
+
+.uwol-series-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.uwol-series-description {
+  color: #6F6E69;
+  margin-bottom: 0.8em;
+  margin-top: 0;
+  line-height: 1.5;
+  font-family: "Andada Pro", Georgia, serif;
+}
+
+.uwol-series-meta {
+  font-size: 0.9em;
+  color: #B7B5AC;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.uwol-series-date {
+  font-style: italic;
+}
+
 body {
   counter-reset: sidenote-counter;
   padding-left: 4%;

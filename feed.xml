@@ -1,4 +1,276 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-06-29T10:38:45-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">How the Yom Kippur War led to America’s moldy homes</title><link href="https://andybromberg.com/energy-crisis-mold" rel="alternate" type="text/html" title="How the Yom Kippur War led to America’s moldy homes" /><published>2025-06-28T09:00:00-07:00</published><updated>2025-06-28T09:00:00-07:00</updated><id>https://andybromberg.com/energy-crisis-mold</id><content type="html" xml:base="https://andybromberg.com/energy-crisis-mold"><![CDATA[<p>Before the 1970s, almost nobody in the US was talking about mold in their homes. It was a non-issue.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-03T14:22:03-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">UWoL: Parkinson’s Law, generalized</title><link href="https://andybromberg.com/uwol/parkinsons-law-generalized" rel="alternate" type="text/html" title="UWoL: Parkinson’s Law, generalized" /><published>2025-07-02T09:00:00-07:00</published><updated>2025-07-02T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-parkinsons-law-generalized</id><content type="html" xml:base="https://andybromberg.com/uwol/parkinsons-law-generalized"><![CDATA[<div class="disclaimer-box">
+  <span class="disclaimer-box-title">Useful Ways of Looking</span>
+  <div class="disclaimer-box-content">
+    <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
+
+  </div>
+</div>
+
+<h2 id="in-brief">In brief</h2>
+
+<p>Work expands to the time allotted for its completion, and elsewhere constraints generally predict outcomes as well; the intelligent definition of constraints is often more important than the energy put into execution.</p>
+
+<h2 id="more-context">More context</h2>
+
+<p>We have all experienced the phenomenon naval historian C. Northcote Parkinson wrote about in 1955: that “work expands so as to fill the time available for its completion.” If you give yourself or a team a lax deadline, the work somehow still gets done at the last minute.</p>
+
+<p>The same is true in the inverse: setting aggressive deadlines somehow allows more work to get done than you could ever imagined.</p>
+
+<p>Work indeed expands to the time allotted for its completion. But the pattern is far broader than “work”:</p>
+
+<p>Food consumption expands to the quantity allotted on the plate.</p>
+
+<p>Personal expenses expand to the income allotted to the individual.</p>
+
+<p>Car traffic volume expands to the lanes allotted to the highway.</p>
+
+<p>Actual meeting duration expands to the time allotted on the calendar.</p>
+
+<p>The common thread: outcomes get pulled into the shape of the constraint framing them.</p>
+
+<p>One can imagine a sequence:</p>
+
+<ol>
+  <li>We identify a future action (workshipping a feature, eating dinner, allocating a budget)</li>
+  <li>We — often implicitly — set constraints around that action</li>
+  <li>We execute the action inside the frame of those constraints</li>
+</ol>
+
+<p>We would like to think that the “frame” is irrelevant to the execution. That if a task is defined, it will take a certain amount of time or effort irrespective of how it is “framed.” But real-world experience says otherwise.</p>
+
+<p>I argue that the (often-implicit or ignored) step of setting constraints around the action <em>plays a more important role in the execution of the action than the action’s very definition itself.</em></p>
+
+<p>In our sister <a href="/uwol" class="uwol-series-badge uwol-series-badge-inline" title="the Useful Ways of Looking series">UWoL</a> piece on <a href="/uwol/ways-of-looking">Ways of Looking</a>, we said:</p>
+
+<blockquote>
+  <p>Move the “hard” work to the stage of “framing” the problem rather then the stage of “executing” on it, and you will find many more problems are within your capabilities.</p>
+</blockquote>
+
+<p>The same is useful here. When presented with something to do, shake yourself out of the routine of “just doing” and instead make the framing or setting of constraints an explicit, intentional step. You will then find the “doing” much easier.</p>
+
+<p>A caveat: frames and constraints need not always be so explicit — sometimes they can be cultural. Corporate norms, family habits, and software defaults are silent frames that still nudge behavior. Learn to spot them; you can’t redesign a frame you can’t see.</p>
+
+<p>Ultimately, you rise or fall to the level of your constraints and frame. Creativity arises from intentional constraints, and failures from improper ones.</p>
+
+<h2 id="further-readings">Further readings</h2>
+
+<p>Parkinson’s original 1955 <a href="https://www.economist.com/news/1955/11/19/parkinsons-law">Economist piece</a>.</p>
+
+<p><a href="https://basecamp.com/books#shapeup">Shape Up</a> by Ryan Singer from 37signals, on constraint-driven product development.</p>
+
+<p><a href="https://jamesclear.com/atomic-habits">Atomic Habits</a> by James Clear, on systems and constraints leading to behavior change.</p>
+
+<p><a href="https://amzn.to/4liXAdu">The Goal</a> by Eliyahu Goldratt, on the Theory of Constraints (more to come on this in future <a href="/uwol" class="uwol-series-badge uwol-series-badge-inline" title="the Useful Ways of Looking series">UWoL</a> posts.)</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/ways-of-looking">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/ways-of-looking">UWoL: Ways of Looking</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Work expands to the time allotted for its completion, and elsewhere constraints generally predict outcomes as well; the intelligent definition of constraints is often more important than the energy put into execution.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-07-02-uwol-parkinsons-law-generalized.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-07-02-uwol-parkinsons-law-generalized.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Ways of Looking</title><link href="https://andybromberg.com/uwol/ways-of-looking" rel="alternate" type="text/html" title="UWoL: Ways of Looking" /><published>2025-07-01T09:05:00-07:00</published><updated>2025-07-01T09:05:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-ways-of-looking</id><content type="html" xml:base="https://andybromberg.com/uwol/ways-of-looking"><![CDATA[<div class="disclaimer-box">
+  <span class="disclaimer-box-title">Useful Ways of Looking</span>
+  <div class="disclaimer-box-content">
+    <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
+
+  </div>
+</div>
+
+<h2 id="in-brief">In brief</h2>
+
+<p>“The most fundamental fact about any experience is that it depends on the way of looking” (Rob Burbea); by leveraging this, we can make any “problem” we’re facing trivially soluble.</p>
+
+<h2 id="more-context">More context</h2>
+
+<p>Think about a classic <a href="https://en.wikipedia.org/wiki/Chinese_finger_trap">Chinese finger trap</a> toy. If your Way of Looking at the problem is “to get an object out of a hole, one must move the object towards the exit of the hole,” you will try mightily to free yourself and never will (or, perhaps, only with <em>great</em> difficulty).</p>
+
+<p>Getting out of the trap requires first shifting your Way of Looking (to: “when an object is trapped by tension, one must first release the tension before exiting”), and then the problem is trivially and effortlessly solved.</p>
+
+<p>I contend that just about every “problem” in life is like this. To solve a problem that isn’t disappearing easily, you must first accept that the problem remains <em>because</em> of your Way of Looking (or the current knowledge you are applying to it).</p>
+
+<p>I wrote at length about one application of this — lessening your experience of suffering — in <a href="/ways-of-looking">this post</a>. But really, the idea applies much more broadly.</p>
+
+<p>As Rob Burbea says in <em>Seeing that Frees</em>, “Other than what we can perceive through different ways of looking, there is no ‘objective reality’ existing independently,” and he’s not the only one pointing at the same idea…</p>
+
+<p>John Wheeler, a respected quantum physicist, argues that we live in a “participatory universe” and that the observer is not separate from what is observed — our measurement (or way of looking) defines what seems to happen. Psychologist Jean Piaget put forth the theory that the mind actively constructs its own reality, rather than passively mirroring it. And there are so many more.</p>
+
+<p>The whole <a href="/uwol">Useful Ways of Looking</a> series relies on this underlying concept: that reality doesn’t exist to us absent a Way of Looking. And if that is the case, and if we can choose which Way of Looking to use, why not have an arsenal of Useful ones?</p>
+
+<p>Problems that appear insoluble are only so because of your current Way of Looking. Rather than trying to solve the problem with <em>that</em> Way, you should <em>first</em> seek a Way of Looking that makes the problem easier to solve, and only then do it.</p>
+
+<p>David Deutsch — another quantum physicist — gets at this “problems are soluble” idea from a slightly different angle (emphasis mine):</p>
+
+<blockquote>
+  <p>It is inevitable that we face problems, but no particular problem is inevitable. We survive, and thrive, by solving each problem as it comes up. And, since the human ability to transform nature is limited only by the laws of physics, none of the endless stream of problems will ever constitute an impassable barrier. <strong>So a complementary and equally important truth about people and the physical world is that problems are soluble. By ‘soluble’ I mean that the right knowledge would solve them.</strong></p>
+
+  <p>— David Deutsch, The Beginning of Infinity</p>
+</blockquote>
+
+<p>Once you have accepted that a “problem” exists due to your current Way of Looking, you must be willing to change that Way, and seek a different one that will make the problem easy to solve — and only then take action to solve it.</p>
+
+<p>Move the “hard” work to the stage of “framing” the problem (how to remove your fingers from the trap) rather then the stage of “executing” on it (physically moving your fingers), and you will find many more problems are within your capabilities.</p>
+
+<p>I hope this <a href="/uwol">Useful Ways of Looking</a> series equips you with a range of such tools that I have found valuable in my life and work. I often run into a problem — or one is surfaced to me — and think back to this list, seeking the lens that will make the problem easily soluble.</p>
+
+<p>(And, of course — this whole idea <em>itself</em> is a Way of Looking, and is not objectively <a href="/uwol/useful-correct">correct</a>. But, per its inclusion in the UWoL list, it is quite useful!)</p>
+
+<h2 id="further-readings">Further readings</h2>
+
+<p>Rob Burbea’s book <a href="https://amzn.to/40ym4H5">Seeing that Frees</a> is exceptional.</p>
+
+<p>Also, my earlier post on <a href="/ways-of-looking">Ways of Looking</a> and how they can be used to relieve suffering.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/useful-correct">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/useful-correct">UWoL: Useful vs. Correct</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/uwol/parkinsons-law-generalized">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/uwol/parkinsons-law-generalized">UWoL: Parkinson's Law, generalized</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA['The most fundamental fact about any experience is that it depends on the way of looking' (Rob Burbea); by leveraging this, we can make any 'problem' we're facing trivially soluble.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-07-01-uwol-ways-of-looking.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-07-01-uwol-ways-of-looking.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Useful vs. Correct</title><link href="https://andybromberg.com/uwol/useful-correct" rel="alternate" type="text/html" title="UWoL: Useful vs. Correct" /><published>2025-07-01T09:00:00-07:00</published><updated>2025-07-01T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-useful-correct</id><content type="html" xml:base="https://andybromberg.com/uwol/useful-correct"><![CDATA[<div class="disclaimer-box">
+  <span class="disclaimer-box-title">Useful Ways of Looking</span>
+  <div class="disclaimer-box-content">
+    <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
+
+  </div>
+</div>
+
+<h2 id="in-brief">In brief</h2>
+
+<p>The usefulness of any idea is not necessarily correlated with how correct it is; it is only within a specified context that attributes like usefulness and correctness of the idea can be evaluated.</p>
+
+<h2 id="more-context">More context</h2>
+
+<p>The degree to which any way of looking or mental model is “correct” is not necessarily correlated with how “useful” is it. When people disagree about a principle, they are often arguing from different sides of this divide.</p>
+
+<p>In any situation — especially when you’re getting advice or evaluating a way of looking — you should consider whether you’re looking for a useful model or a correct one, and you should narrow your evaluation to the specific context rather than questioning what applies “broadly.”</p>
+
+<p>For instance: the idea of weight loss happening via a calories in / calories out math is correct, but not useful. Yes, the first law of thermodynamics applies, and the amount of energy (and thus mass) your body retains is equal to how much comes in minus how much comes out.</p>
+
+<p><em>However</em>, this ignores the useful reality that what constitutes your “calories in” <em>affects</em> your “calories out” (let alone your psychology and continued adherence). If all you ate was 2500 calories of straight sugar vs. 2500 calories of olive oil vs. 2500 calories of a “balanced” diet, your results would obviously vary massively.</p>
+
+<p>Yes, in each of those three cases, we could calculate your calories in (2500 kcal) and your calories out, and the net of those two would indeed lead directly to how much weight you gained or lost. But the composition of the “in” would affect how much goes “out,” and thus the results.</p>
+
+<p>So “calories in / calories out” is a model that is correct but not terribly useful. When people start bickering about this, it’s often because one of them is arguing the model is correct, and the other is arguing it is not useful, but at least one of them is using imprecise language to say so.</p>
+
+<p>I would argue this applies to just about everything.</p>
+
+<p>It’s impossible to evaluate a model without putting it in context. So when considering a way of looking, first make sure you’re thinking of it in a context, and then ask yourself whether you’re looking for correctness or usefulness. Only then can reasonable statements be made.</p>
+
+<p>In the context of an experiment that measured calories in and weight loss, where the experimenter was seeking to find how the subjects’ calories out varied, the calories-in-calories-out model is both useful and correct! But in the context of our everyday lives, it is more correct than it is useful.</p>
+
+<p><em>Note:</em> even <em>this very</em> model of “useful vs. correct” falls victim to itself! In a given context, it’s certainly possible that correctness and usefulness are one and the same, or that the division is technically correct but not useful. But with respect to humanity’s use of ways of looking writ large, I think the “correct vs. useful” division is highly useful itself — hence this inclusion of the idea in the series.</p>
+
+<h2 id="further-readings">Further readings</h2>
+
+<p>Brian Lui wrote a great post on this, including the <a href="https://web.archive.org/web/20230604083152/https://brianlui.dog/2018/03/20/useful-models-are-better-than-correct-models/">CICO example</a>.</p>
+
+<p>Wikipedia on <a href="https://en.wikipedia.org/wiki/All_models_are_wrong">“All models are wrong”</a> from statistician George Box.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/energy-crisis-mold">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/energy-crisis-mold">How the Yom Kippur War led to America's moldy homes</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        <a href="/uwol/ways-of-looking">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
+        
+    </div>
+    
+      <a href="/uwol/ways-of-looking">UWoL: Ways of Looking</a>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[The usefulness of any idea is not necessarily correlated with how correct it is; it is only within a specified context that attributes like usefulness and correctness of the idea can be evaluated.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-07-01-uwol-useful-correct.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-07-01-uwol-useful-correct.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How the Yom Kippur War led to America’s moldy homes</title><link href="https://andybromberg.com/energy-crisis-mold" rel="alternate" type="text/html" title="How the Yom Kippur War led to America’s moldy homes" /><published>2025-06-28T09:00:00-07:00</published><updated>2025-06-28T09:00:00-07:00</updated><id>https://andybromberg.com/energy-crisis-mold</id><content type="html" xml:base="https://andybromberg.com/energy-crisis-mold"><![CDATA[<p>Before the 1970s, almost nobody in the US was talking about mold in their homes. It was a non-issue.</p>
 
 <p>But starting then — and continuing to surge through today — mold has become a huge health concern and topic of discussion in America. There are undoubtedly many factors, simple awareness and better detection being two of them.</p>
 
@@ -82,11 +354,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/uwol/useful-correct">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/uwol/useful-correct">UWoL: Useful vs. Correct</a>
     
   </div>
 </nav>
@@ -1414,7 +1690,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </a>
     
     
-      <a href="/log/ai">AI Captains Log</a>
+      <a href="/log/ai">AI Captain's Log</a>
     
   </div>
   <div class="next-post">
@@ -1440,7 +1716,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[In 1935, Einstein and colleagues argued that "no reasonable definition of reality could be expected to permit" the consequences of quantum mechanics. A century later, we now know they were right — in that reality is not reasonable.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Captains Log</title><link href="https://andybromberg.com/log/ai" rel="alternate" type="text/html" title="AI Captains Log" /><published>2025-05-18T09:00:00-07:00</published><updated>2025-05-18T09:00:00-07:00</updated><id>https://andybromberg.com/log/log-ai</id><content type="html" xml:base="https://andybromberg.com/log/ai"><![CDATA[<p>So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this era years from now and recall how the ground was shifting. So here are some captain’s logs from that time, mostly for my own use. I only wish I started it earlier…</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[In 1935, Einstein and colleagues argued that "no reasonable definition of reality could be expected to permit" the consequences of quantum mechanics. A century later, we now know they were right — in that reality is not reasonable.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Captain’s Log</title><link href="https://andybromberg.com/log/ai" rel="alternate" type="text/html" title="AI Captain’s Log" /><published>2025-05-18T09:00:00-07:00</published><updated>2025-05-18T09:00:00-07:00</updated><id>https://andybromberg.com/log/log-ai</id><content type="html" xml:base="https://andybromberg.com/log/ai"><![CDATA[<p>So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this era years from now and recall how the ground was shifting. So here are some captain’s logs from that time, mostly for my own use. I only wish I started it earlier…</p>
 
 <h4 id="june-29-2025-agents-async-and-baseline-knowledge">June 29, 2025: agents, async, and baseline knowledge</h4>
 
@@ -2099,7 +2375,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>More from Burbea:</p>
 
 <blockquote>
-  <p>A profound realization of voidness [(emptiness)], perhaps more than any other means, allows us to recognize, to freely play in, and to delight in the wondrous and unique, magical and empty nature of all appearances.</p>
+  <p>A profound realization of voidness [emptiness], perhaps more than any other means, allows us to recognize, to freely play in, and to delight in the wondrous and unique, magical and empty nature of all appearances.</p>
 </blockquote>
 
 <h3 id="feel-the-shift">Feel the shift</h3>
@@ -2128,7 +2404,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <p>Charlie Munger once said that you should “take a simple idea and take it seriously,” and I believe this is one of them. Suffering is caused by our oft-unknown “ways of looking” at our experiences, and we are fully in control of those lenses. We can very simply notice these ways of looking and choose ones that are more fit for our goals, and for removing suffering.</p>
 
-<p>Good luck. I’ll close here with some additional ideas from Seeing that Frees that may be enjoyable jumping-off points:</p>
+<p>Good luck. I’ll close here with some additional ideas from Seeing that Frees which may be enjoyable jumping-off points:</p>
 
 <p><strong>On practically interacting with others</strong></p>
 
@@ -2142,7 +2418,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <p>Such a perspective and its expression may just be unskilful and inappropriate to the situation. It may well be that what is needed instead for the easing of the dukkha here is a view wherein two ‘selves’ talk caringly and honestly to each other, in terms of their ‘selves.’</p>
 </blockquote>
 
-<p><strong>The middle way of existence of non-existence</strong></p>
+<p><strong>The middle way of existence and non-existence</strong></p>
 
 <blockquote>
   <p>The voidness of things is the ‘Middle Way’ between the assumptions of existence and non-existence, being and non-being, and it is this that needs to be understood.</p>
@@ -2216,7 +2492,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     </div>
     
-      <a href="/log/ai">AI Captains Log</a>
+      <a href="/log/ai">AI Captain's Log</a>
     
   </div>
 </nav>
@@ -2418,2665 +2694,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Posts, quotes, and excerpts on the malleability of what we often consider to be the immutable reality around us.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-21-reality-malleability.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-21-reality-malleability.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The illuminated blog</title><link href="https://andybromberg.com/illuminated-blog" rel="alternate" type="text/html" title="The illuminated blog" /><published>2025-04-21T09:00:00-07:00</published><updated>2025-04-21T09:00:00-07:00</updated><id>https://andybromberg.com/illuminated-blog</id><content type="html" xml:base="https://andybromberg.com/illuminated-blog"><![CDATA[<p>In Medieval Europe, monks created <a href="https://en.wikipedia.org/wiki/Illuminated_manuscript">“illuminated manuscripts”</a>: books and documents embellished with miniature illustrations, flourishes, and bespoke styling. They were writing each one by hand anyway, so why not add some light artistry?</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/illuminated-blog/manuscript-800-0537fc934.webp 800w, /assets/images/generated/illuminated-blog/manuscript-1000-0537fc934.webp 1000w, /assets/images/generated/illuminated-blog/manuscript-1200-0537fc934.webp 1200w, /assets/images/generated/illuminated-blog/manuscript-1230-0537fc934.webp 1230w" type="image/webp" /><source srcset="/assets/images/generated/illuminated-blog/manuscript-800-b00adb04b.png 800w, /assets/images/generated/illuminated-blog/manuscript-1000-b00adb04b.png 1000w, /assets/images/generated/illuminated-blog/manuscript-1200-b00adb04b.png 1200w, /assets/images/generated/illuminated-blog/manuscript-1230-b00adb04b.png 1230w" type="image/png" /><img src="/assets/images/generated/illuminated-blog/manuscript-800-b00adb04b.png" width="1230" height="536" /></picture>
-
-<p>But by 1440, Johannes Gutenberg had arrived with the printing press, document creation became more structured and text-driven, and illuminated manuscripts began to fade away.</p>
-
-<p>Nearly six hundred years later, bloggers stare into HTML <code class="language-plaintext highlighter-rouge">&lt;textarea&gt;</code> inputs, as rigid as any of Gutenberg’s text block frames.</p>
-
-<p>But, as I’ve discovered over the last six months, one of the most enjoyable aspects of running your own blog is that you can write whatever one-off custom code, elements, and illustrations you want for each post.</p>
-
-<p>You can create an “illuminated blog,” with code-as-art in any post, mirroring the monastic scriptoria of the 13th century — except instead of using <a href="https://en.wikipedia.org/wiki/Silverpoint">silver rods on vellum</a>, we use Cursor on CSS.</p>
-
-<p>Here are a few “illuminations” I’ve enjoyed putting together for recent posts.</p>
-
-<hr />
-
-<h3 id="in-all-light-is-not-created-equal">In <a href="/all-light">All light is not created equal</a></h3>
-
-<p><em>When discussing the appearance of fluorescent bulbs, I made the phrase “vibrate slightly”… vibrate slightly:</em></p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/all-light/fluorescent-classroom-800-c286af8d1.webp 800w, /assets/images/generated/all-light/fluorescent-classroom-846-c286af8d1.webp 846w" type="image/webp" /><source srcset="/assets/images/generated/all-light/fluorescent-classroom-800-f4f327be1.png 800w, /assets/images/generated/all-light/fluorescent-classroom-846-f4f327be1.png 846w" type="image/png" /><img src="/assets/images/generated/all-light/fluorescent-classroom-800-f4f327be1.png" width="846" height="224" /></picture>
-
-<p>When you’re in that environment, faces look tired and flat and discolored. Objects in your peripheral vision <span class="vibrate">vibrate slightly</span>. Everything looks a little off.</p>
-
-<style>
-@keyframes subtle-vibrate {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(0.35px, 0.35px); }
-  50% { transform: translate(-0.35px, -0.35px); }
-  75% { transform: translate(-0.35px, 0.35px); }
-  100% { transform: translate(0, 0); }
-}
-
-.vibrate {
-  display: inline-block;
-  animation: subtle-vibrate 0.15s infinite;
-}
-</style>
-
-<hr />
-
-<h3 id="in-ways-of-looking">In <a href="/ways-of-looking">Ways of Looking</a></h3>
-
-<p><em>I added an interactive, styled perspective list to avoid a wall of text in the post:</em></p>
-
-<p>I know the Buddhist angle isn’t everyone’s thing. But they’re not the only ones who have glimpsed this idea:</p>
-
-<div class="expandable-paragraphs" data-total-paragraphs="10" data-initial-count="1" data-item-name="perspective">
-  <span class="expandable-paragraphs-title">Different Traditions, Same Insight</span>
-  <div class="expandable-paragraphs-content">
-    
-      
-        <div class="expandable-paragraph"><p>Quantum physicist John Wheeler argues that we live in a ‘participatory universe’ and that the observer is not separate from what is observed — our measurement (or way of looking) defines what seems to happen.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Ancient Greek Pyrrhonian skeptics advocated for suspending all judgement on the true nature of things, realizing that any appearance can be challenged or changed when seen from a different perspective.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Psychologist Jean Piaget put forth the theory that the mind actively constructs its own reality, rather than passively mirroring it. He observed how children’s conceptual frameworks evolve and fundamentally change what appears ‘real’ to them.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Neuroscientist V.S. Ramachandran’s work revealed how the brain invents details to fit internal expectations (or, perhaps, “ways of looking.”). His work with phantom limbs and optical illusions showed that what we perceive isn’t always in direct contact with reality.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The philosopher Immanuel Kant wrote of the <em>noumenon</em> (the ‘thing-in-itself’) and the <em>phenomenon</em> (how it appears to us), arguing that it’s impossible for us to access any unfiltered thing — we only get our mind’s representation of it.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Jewish mystics — Kabbalists — talk of <em>Ein Sof</em> and the world as emanations of layered illusions, or ‘veils,’ and how reality is only perceived as filtered through vessels — ways of looking — called Sefirot.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Stephen Wolfram’s “observer theory” proposes that physics itself cannot be disentangled from the nature of us as observers, and that our observational nature  is critical even in determining the most fundamental laws we attribute to the universe.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Hindu Advaita Vedanta leans on the concept of Māyā, or illusion: that the phenomenal world appears distinct and real, but is ultimately just a mental and sensory construction.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Byron Katie's “The Work” asks four questions of your perception of each experience, culminating in “who would you be without that thought?” and then prompting you to experience it differently by inverting your beliefs.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Biblical Book of Job moves from one lens to another on the same situation — Job’s moral-ledger-based bewilderment (‘why hasn’t virtue earned reward?’), his friends’ retribution calculus (‘your suffering means you must have sinned’), and ultimately God’s whirlwind responses revealing the insufficiency of any mortal viewpoint to grasp the full story as He sees it.</p>
-</div>
-      
-    
-  </div>
-  
-  
-    <button class="expandable-paragraphs-button" aria-expanded="false" aria-controls="expandable-paragraphs-content">
-      <span class="expandable-paragraphs-button-text">Show another perspective (1/10)</span>
-      <i class="fa fa-plus-circle"></i>
-    </button>
-  
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const widgets = document.querySelectorAll('.expandable-paragraphs');
-    
-    widgets.forEach(widget => {
-      const button = widget.querySelector('.expandable-paragraphs-button');
-      const hiddenParagraphs = Array.from(widget.querySelectorAll('.expandable-paragraph.visually-hidden'));
-      let currentIndex = 0;
-      const totalParagraphs = widget.getAttribute('data-total-paragraphs');
-      const initialCount = parseInt(widget.getAttribute('data-initial-count'), 10);
-      const itemName = widget.getAttribute('data-item-name');
-      
-      if (button && hiddenParagraphs.length > 0) {
-        // Set initial button text
-        const buttonText = button.querySelector('.expandable-paragraphs-button-text');
-        buttonText.textContent = `Show another ${itemName} (${initialCount}/${totalParagraphs})`;
-        
-        button.addEventListener('click', function() {
-          if (currentIndex < hiddenParagraphs.length) {
-            // Show the next hidden paragraph
-            const paragraph = hiddenParagraphs[currentIndex];
-            paragraph.classList.remove('visually-hidden');
-            paragraph.classList.add('fade-in');
-            paragraph.setAttribute('aria-hidden', 'false');
-            
-            currentIndex++;
-            
-            // Update button text
-            buttonText.textContent = `Show another ${itemName} (${initialCount + currentIndex}/${totalParagraphs})`;
-            
-            // Update ARIA attributes
-            button.setAttribute('aria-expanded', currentIndex === hiddenParagraphs.length ? 'true' : 'false');
-            
-            if (currentIndex >= hiddenParagraphs.length) {
-              button.style.display = 'none';
-            }
-          }
-        });
-      }
-    });
-  });
-</script>
-
-<hr />
-
-<h3 id="in-the-death-of-nor-eply">In <a href="/nor-eply-stanford-vulnerability">The death of Nor Eply</a></h3>
-
-<p><em>I created an email window rather than taking a screenshot or just putting it in text (complete with hover effects on the buttons):</em></p>
-
-<!-- _includes/gmail_email.html -->
-
-<div class="mac-window gmail-popup">
-  <div class="mac-toolbar">
-    <div class="mac-buttons">
-      <span class="mac-button close"></span>
-      <span class="mac-button minimize"></span>
-      <span class="mac-button maximize"></span>
-    </div>
-    <div class="toolbar-title">Misuse of your Stanford account</div>
-  </div>
-  <div class="gmail-email">
-    <div class="email-header">
-      
-      <div class="email-subject">Misuse of your Stanford account</div>
-      
-      <div class="email-metadata">
-        
-        <div class="email-field">
-          <span class="field-label">From:</span>
-          <div class="field-value">
-            
-              <span class="avatar" style="background-color: #4285F4">R</span>
-            
-            <span class="name-email">
-              <span class="name">Redacted Name</span>
-              
-              <span class="email">&lt;Redacted Email&gt;</span>
-              
-            </span>
-          </div>
-        </div>
-        
-        
-        <div class="email-field">
-          <span class="field-label">To:</span>
-          <div class="field-value">
-            
-              <img src="/assets/images/headshot.jpg" alt="Andy Bromberg" class="avatar andy-avatar" />
-            
-            <span class="name-email">
-              <span class="name">Andy Bromberg</span>
-              
-              <span class="email">&lt;abromberg@alumni.stanford.edu&gt;</span>
-              
-            </span>
-          </div>
-        </div>
-        
-        
-        <div class="email-field">
-          <span class="field-label">Date:</span>
-          <span class="field-value">Fri, May 17, 2:32 PM</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="email-divider"></div>
-    <div class="email-body">
-      <p>Dear Mr. Bromberg,</p>
-
-<p>My name is [redacted name], and I am the [redacted title] at the Stanford Alumni Association.</p>
-
-<p>I am writing to you today because it appears that you have used your Stanford alumni email account (abromberg) for a mass email or spamming effort. In just the last 30 days, over 900 emails were sent from your email alias noreply@alumni.stanford.edu. These emails are being flagged and processed by email servers which hurts our domain reputation, and potential problems for all alumni.stanford.edu users.</p>
-
-<p>…</p>
-
-    </div>
-  </div>
-</div>
-
-<hr />
-
-<h3 id="in-its-illegal-to-buy-healthy-lightbulbs-in-california">In <a href="/illegal-light">It’s illegal to buy healthy lightbulbs in California</a></h3>
-
-<p><em>I made responsive, interactive, CSS-only spectrogram charts that fit into the blog’s styling:</em></p>
-
-<p>2700K looks like a nice evening light, right? Well, here’s a spectrogram for a 2700K LED bulb I found lying around:</p>
-
-<div class="spectrum-chart-container">
-  <svg class="spectrum-chart" width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:rgb(97,0,255);stop-opacity:1" />
-            <stop offset="15%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
-            <stop offset="25%" style="stop-color:rgb(0,255,255);stop-opacity:1" />
-            <stop offset="35%" style="stop-color:rgb(0,255,0);stop-opacity:1" />
-            <stop offset="45%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-            <stop offset="55%" style="stop-color:rgb(255,128,0);stop-opacity:1" />
-            <stop offset="65%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-            <stop offset="80%" style="stop-color:rgb(127,0,0);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
-        </linearGradient>    
-    </defs>
-
-    <clipPath id="chart-area">
-      <rect x="80" y="60" width="640" height="280" />
-    </clipPath>
-
-    
-    <path fill="url(#spectrum)" fill-opacity="0.7" stroke="none" clip-path="url(#chart-area)" d="
-        M 80,340
-        
-          
-          
-          
-          
-          L 80.0,338.28727283784906
-        
-          
-          
-          
-          
-          L 88.0,337.3767908142854
-        
-          
-          
-          
-          
-          L 96.0,337.864816343532
-        
-          
-          
-          
-          
-          L 104.0,337.29247863083447
-        
-          
-          
-          
-          
-          L 112.0,337.5948318440976
-        
-          
-          
-          
-          
-          L 120.0,337.4198424830733
-        
-          
-          
-          
-          
-          L 128.0,335.9284507949286
-        
-          
-          
-          
-          
-          L 136.0,335.0375755120536
-        
-          
-          
-          
-          
-          L 144.0,331.97601333916344
-        
-          
-          
-          
-          
-          L 152.0,328.03668969038415
-        
-          
-          
-          
-          
-          L 160.0,319.701777864401
-        
-          
-          
-          
-          
-          L 168.0,303.8599471915674
-        
-          
-          
-          
-          
-          L 176.0,275.38427486850156
-        
-          
-          
-          
-          
-          L 184.0,231.71309064763722
-        
-          
-          
-          
-          
-          L 192.0,206.27572747873288
-        
-          
-          
-          
-          
-          L 200.0,218.11541616883514
-        
-          
-          
-          
-          
-          L 208.0,244.14302859168612
-        
-          
-          
-          
-          
-          L 216.0,259.3496072631848
-        
-          
-          
-          
-          
-          L 224.0,273.40725651824175
-        
-          
-          
-          
-          
-          L 232.0,282.5102855997537
-        
-          
-          
-          
-          
-          L 240.0,282.3712152759128
-        
-          
-          
-          
-          
-          L 248.0,276.8155349538815
-        
-          
-          
-          
-          
-          L 256.0,266.4752981454861
-        
-          
-          
-          
-          
-          L 264.0,254.5646669580795
-        
-          
-          
-          
-          
-          L 272.0,240.7939541968535
-        
-          
-          
-          
-          
-          L 280.0,229.08847412653876
-        
-          
-          
-          
-          
-          L 288.0,218.412587829094
-        
-          
-          
-          
-          
-          L 296.0,208.99492333460537
-        
-          
-          
-          
-          
-          L 304.0,202.68123298389304
-        
-          
-          
-          
-          
-          L 312.0,194.8671312046213
-        
-          
-          
-          
-          
-          L 320.0,189.3356314632763
-        
-          
-          
-          
-          
-          L 328.0,183.02101355060645
-        
-          
-          
-          
-          
-          L 336.0,178.5937603272658
-        
-          
-          
-          
-          
-          L 344.0,172.98418545701196
-        
-          
-          
-          
-          
-          L 352.0,167.25543486766168
-        
-          
-          
-          
-          
-          L 360.0,161.4448029468872
-        
-          
-          
-          
-          
-          L 368.0,155.6913920034244
-        
-          
-          
-          
-          
-          L 376.0,150.67392151103223
-        
-          
-          
-          
-          
-          L 384.0,143.77106939280634
-        
-          
-          
-          
-          
-          L 392.0,138.04532538359427
-        
-          
-          
-          
-          
-          L 400.0,130.60154471964677
-        
-          
-          
-          
-          
-          L 408.0,124.90673010398453
-        
-          
-          
-          
-          
-          L 416.0,117.31869756319196
-        
-          
-          
-          
-          
-          L 424.0,110.24882032281855
-        
-          
-          
-          
-          
-          L 432.0,103.15687350483472
-        
-          
-          
-          
-          
-          L 440.0,97.0117115663389
-        
-          
-          
-          
-          
-          L 448.0,92.50683100262071
-        
-          
-          
-          
-          
-          L 456.0,87.275925305309
-        
-          
-          
-          
-          
-          L 464.0,85.45454545454547
-        
-          
-          
-          
-          
-          L 472.0,85.62969474004515
-        
-          
-          
-          
-          
-          L 480.0,88.4275734378332
-        
-          
-          
-          
-          
-          L 488.0,93.79367928668017
-        
-          
-          
-          
-          
-          L 496.0,99.30534839307091
-        
-          
-          
-          
-          
-          L 504.0,107.50458029409242
-        
-          
-          
-          
-          
-          L 512.0,118.3775255301719
-        
-          
-          
-          
-          
-          L 520.0,131.3711972501398
-        
-          
-          
-          
-          
-          L 528.0,145.2147396174803
-        
-          
-          
-          
-          
-          L 536.0,158.52458202538915
-        
-          
-          
-          
-          
-          L 544.0,173.72489165745066
-        
-          
-          
-          
-          
-          L 552.0,187.98718027127808
-        
-          
-          
-          
-          
-          L 560.0,201.85979690825323
-        
-          
-          
-          
-          
-          L 568.0,216.81247948254654
-        
-          
-          
-          
-          
-          L 576.0,230.26481459807064
-        
-          
-          
-          
-          
-          L 584.0,242.44069652043865
-        
-          
-          
-          
-          
-          L 592.0,254.43586378556174
-        
-          
-          
-          
-          
-          L 600.0,265.5908838114188
-        
-          
-          
-          
-          
-          L 608.0,274.89173946904754
-        
-          
-          
-          
-          
-          L 616.0,283.1585234684941
-        
-          
-          
-          
-          
-          L 624.0,289.6930695197863
-        
-          
-          
-          
-          
-          L 632.0,295.10273879574265
-        
-          
-          
-          
-          
-          L 640.0,301.40181204939995
-        
-          
-          
-          
-          
-          L 648.0,307.07858718423284
-        
-          
-          
-          
-          
-          L 656.0,311.97419522634124
-        
-          
-          
-          
-          
-          L 664.0,315.5303718168661
-        
-          
-          
-          
-          
-          L 672.0,319.376459496465
-        
-          
-          
-          
-          
-          L 680.0,320.92222550625866
-        
-          
-          
-          
-          
-          L 688.0,324.0673642100127
-        
-          
-          
-          
-          
-          L 696.0,325.3382840163186
-        
-          
-          
-          
-          
-          L 704.0,327.12083420444577
-        
-          
-          
-          
-          
-          L 712.0,327.9610134286069
-        
-          
-          
-          
-          
-          L 720.0,329.5919232291237
-        
-        L 720,340
-        Z
-      " />
-    
-
-    
-
-    
-
-    <path d="M80,50 v290 h640" fill="none" stroke="black" stroke-width="2px" />
-
-    <line x1="80" y1="340" x2="720" y2="340" stroke="black" />
-    <text x="400" y="390" text-anchor="middle">Wavelength (nm)</text>
-
-    <line x1="80" y1="60" x2="80" y2="340" stroke="black" />
-    <text x="15" y="200" text-anchor="middle" transform="rotate(-90 15,190)">Relative Intensity</text>
-
-    
-
-    
-      
-      
-      
-      <text class="labels" x="80" y="360" text-anchor="middle">380</text>
-    
-      
-      
-      
-      <text class="labels" x="240" y="360" text-anchor="middle">480</text>
-    
-      
-      
-      
-      <text class="labels" x="400" y="360" text-anchor="middle">580</text>
-    
-      
-      
-      
-      <text class="labels" x="560" y="360" text-anchor="middle">680</text>
-    
-      
-      
-      
-      <text class="labels" x="720" y="360" text-anchor="middle">780</text>
-    
-    
-    
-      
-      
-      
-      <text class="labels" x="70" y="270" text-anchor="end" alignment-baseline="middle">25%</text>
-    
-      
-      
-      
-      <text class="labels" x="70" y="200" text-anchor="end" alignment-baseline="middle">50%</text>
-    
-      
-      
-      
-      <text class="labels" x="70" y="130" text-anchor="end" alignment-baseline="middle">75%</text>
-    
-      
-      
-      
-      <text class="labels" x="70" y="60" text-anchor="end" alignment-baseline="middle">100%</text>
-    
-
-    
-    <g class="data-points">
-        
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="78.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="80.0" cy="338.28727283784906" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="30.0" y="308.28727283784906" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>0.7% intensity</div>
-                <div>at 380 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="86.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="88.0" cy="337.3767908142854" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="38.0" y="307.3767908142854" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>1.0% intensity</div>
-                <div>at 385 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="94.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="96.0" cy="337.864816343532" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="46.0" y="307.864816343532" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>0.8% intensity</div>
-                <div>at 390 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="102.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="104.0" cy="337.29247863083447" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="54.0" y="307.29247863083447" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>1.1% intensity</div>
-                <div>at 395 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="110.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="112.0" cy="337.5948318440976" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="62.0" y="307.5948318440976" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>0.9% intensity</div>
-                <div>at 400 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="118.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="120.0" cy="337.4198424830733" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="70.0" y="307.4198424830733" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>1.0% intensity</div>
-                <div>at 405 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="126.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="128.0" cy="335.9284507949286" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="78.0" y="305.9284507949286" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>1.6% intensity</div>
-                <div>at 410 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="134.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="136.0" cy="335.0375755120536" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="86.0" y="305.0375755120536" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>1.9% intensity</div>
-                <div>at 415 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="142.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="144.0" cy="331.97601333916344" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="94.0" y="301.97601333916344" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>3.2% intensity</div>
-                <div>at 420 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="150.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="152.0" cy="328.03668969038415" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="102.0" y="298.03668969038415" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>4.7% intensity</div>
-                <div>at 425 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="158.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="160.0" cy="319.701777864401" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="110.0" y="289.701777864401" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>8.0% intensity</div>
-                <div>at 430 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="166.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="168.0" cy="303.8599471915674" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="118.0" y="273.8599471915674" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>14.2% intensity</div>
-                <div>at 435 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="174.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="176.0" cy="275.38427486850156" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="126.0" y="245.38427486850156" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>25.4% intensity</div>
-                <div>at 440 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="182.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="184.0" cy="231.71309064763722" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="134.0" y="201.71309064763722" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>42.5% intensity</div>
-                <div>at 445 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="190.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="192.0" cy="206.27572747873288" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="142.0" y="176.27572747873288" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>52.5% intensity</div>
-                <div>at 450 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="198.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="200.0" cy="218.11541616883514" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="150.0" y="188.11541616883514" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>47.9% intensity</div>
-                <div>at 455 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="206.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="208.0" cy="244.14302859168612" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="158.0" y="214.14302859168612" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>37.7% intensity</div>
-                <div>at 460 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="214.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="216.0" cy="259.3496072631848" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="166.0" y="229.3496072631848" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>31.7% intensity</div>
-                <div>at 465 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="222.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="224.0" cy="273.40725651824175" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="174.0" y="243.40725651824175" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>26.2% intensity</div>
-                <div>at 470 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="230.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="232.0" cy="282.5102855997537" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="182.0" y="252.5102855997537" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>22.6% intensity</div>
-                <div>at 475 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="238.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="240.0" cy="282.3712152759128" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="190.0" y="252.3712152759128" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>22.6% intensity</div>
-                <div>at 480 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="246.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="248.0" cy="276.8155349538815" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="198.0" y="246.8155349538815" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>24.8% intensity</div>
-                <div>at 485 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="254.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="256.0" cy="266.4752981454861" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="206.0" y="236.4752981454861" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>28.9% intensity</div>
-                <div>at 490 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="262.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="264.0" cy="254.5646669580795" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="214.0" y="224.5646669580795" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>33.6% intensity</div>
-                <div>at 495 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="270.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="272.0" cy="240.7939541968535" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="222.0" y="210.7939541968535" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>39.0% intensity</div>
-                <div>at 500 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="278.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="280.0" cy="229.08847412653876" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="230.0" y="199.08847412653876" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>43.6% intensity</div>
-                <div>at 505 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="286.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="288.0" cy="218.412587829094" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="238.0" y="188.412587829094" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>47.8% intensity</div>
-                <div>at 510 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="294.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="296.0" cy="208.99492333460537" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="246.0" y="178.99492333460537" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>51.5% intensity</div>
-                <div>at 515 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="302.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="304.0" cy="202.68123298389304" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="254.0" y="172.68123298389304" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>53.9% intensity</div>
-                <div>at 520 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="310.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="312.0" cy="194.8671312046213" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="262.0" y="164.8671312046213" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>57.0% intensity</div>
-                <div>at 525 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="318.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="320.0" cy="189.3356314632763" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="270.0" y="159.3356314632763" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>59.2% intensity</div>
-                <div>at 530 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="326.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="328.0" cy="183.02101355060645" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="278.0" y="153.02101355060645" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>61.7% intensity</div>
-                <div>at 535 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="334.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="336.0" cy="178.5937603272658" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="286.0" y="148.5937603272658" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>63.4% intensity</div>
-                <div>at 540 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="342.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="344.0" cy="172.98418545701196" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="294.0" y="142.98418545701196" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>65.6% intensity</div>
-                <div>at 545 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="350.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="352.0" cy="167.25543486766168" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="302.0" y="137.25543486766168" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>67.9% intensity</div>
-                <div>at 550 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="358.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="360.0" cy="161.4448029468872" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="310.0" y="131.4448029468872" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>70.1% intensity</div>
-                <div>at 555 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="366.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="368.0" cy="155.6913920034244" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="318.0" y="125.6913920034244" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>72.4% intensity</div>
-                <div>at 560 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="374.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="376.0" cy="150.67392151103223" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="326.0" y="120.67392151103223" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>74.4% intensity</div>
-                <div>at 565 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="382.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="384.0" cy="143.77106939280634" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="334.0" y="113.77106939280634" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>77.1% intensity</div>
-                <div>at 570 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="390.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="392.0" cy="138.04532538359427" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="342.0" y="108.04532538359427" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>79.3% intensity</div>
-                <div>at 575 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="398.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="400.0" cy="130.60154471964677" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="350.0" y="100.60154471964677" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>82.3% intensity</div>
-                <div>at 580 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="406.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="408.0" cy="124.90673010398453" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="358.0" y="94.90673010398453" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>84.5% intensity</div>
-                <div>at 585 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="414.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="416.0" cy="117.31869756319196" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="366.0" y="87.31869756319196" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>87.5% intensity</div>
-                <div>at 590 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="422.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="424.0" cy="110.24882032281855" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="374.0" y="80.24882032281855" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>90.3% intensity</div>
-                <div>at 595 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="430.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="432.0" cy="103.15687350483472" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="382.0" y="73.15687350483472" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>93.0% intensity</div>
-                <div>at 600 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="438.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="440.0" cy="97.0117115663389" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="390.0" y="67.0117115663389" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>95.5% intensity</div>
-                <div>at 605 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="446.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="448.0" cy="92.50683100262071" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="398.0" y="62.50683100262071" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>97.2% intensity</div>
-                <div>at 610 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="454.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="456.0" cy="87.275925305309" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="406.0" y="57.275925305309" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>99.3% intensity</div>
-                <div>at 615 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="462.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="464.0" cy="85.45454545454547" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="414.0" y="55.45454545454547" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>100.0% intensity</div>
-                <div>at 620 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="470.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="472.0" cy="85.62969474004515" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="422.0" y="55.62969474004515" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>99.9% intensity</div>
-                <div>at 625 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="478.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="480.0" cy="88.4275734378332" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="430.0" y="58.4275734378332" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>98.8% intensity</div>
-                <div>at 630 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="486.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="488.0" cy="93.79367928668017" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="438.0" y="63.79367928668017" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>96.7% intensity</div>
-                <div>at 635 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="494.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="496.0" cy="99.30534839307091" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="446.0" y="69.30534839307091" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>94.6% intensity</div>
-                <div>at 640 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="502.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="504.0" cy="107.50458029409242" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="454.0" y="77.50458029409242" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>91.3% intensity</div>
-                <div>at 645 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="510.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="512.0" cy="118.3775255301719" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="462.0" y="88.3775255301719" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>87.1% intensity</div>
-                <div>at 650 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="518.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="520.0" cy="131.3711972501398" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="470.0" y="101.3711972501398" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>82.0% intensity</div>
-                <div>at 655 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="526.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="528.0" cy="145.2147396174803" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="478.0" y="115.2147396174803" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>76.5% intensity</div>
-                <div>at 660 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="534.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="536.0" cy="158.52458202538915" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="486.0" y="128.52458202538915" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>71.3% intensity</div>
-                <div>at 665 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="542.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="544.0" cy="173.72489165745066" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="494.0" y="143.72489165745066" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>65.3% intensity</div>
-                <div>at 670 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="550.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="552.0" cy="187.98718027127808" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="502.0" y="157.98718027127808" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>59.7% intensity</div>
-                <div>at 675 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="558.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="560.0" cy="201.85979690825323" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="510.0" y="171.85979690825323" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>54.3% intensity</div>
-                <div>at 680 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="566.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="568.0" cy="216.81247948254654" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="518.0" y="186.81247948254654" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>48.4% intensity</div>
-                <div>at 685 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="574.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="576.0" cy="230.26481459807064" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="526.0" y="200.26481459807064" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>43.1% intensity</div>
-                <div>at 690 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="582.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="584.0" cy="242.44069652043865" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="534.0" y="212.44069652043865" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>38.3% intensity</div>
-                <div>at 695 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="590.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="592.0" cy="254.43586378556174" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="542.0" y="224.43586378556174" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>33.6% intensity</div>
-                <div>at 700 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="598.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="600.0" cy="265.5908838114188" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="550.0" y="235.5908838114188" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>29.2% intensity</div>
-                <div>at 705 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="606.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="608.0" cy="274.89173946904754" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="558.0" y="244.89173946904754" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>25.6% intensity</div>
-                <div>at 710 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="614.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="616.0" cy="283.1585234684941" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="566.0" y="253.1585234684941" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>22.3% intensity</div>
-                <div>at 715 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="622.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="624.0" cy="289.6930695197863" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="574.0" y="259.6930695197863" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>19.8% intensity</div>
-                <div>at 720 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="630.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="632.0" cy="295.10273879574265" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="582.0" y="265.10273879574265" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>17.6% intensity</div>
-                <div>at 725 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="638.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="640.0" cy="301.40181204939995" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="590.0" y="271.40181204939995" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>15.2% intensity</div>
-                <div>at 730 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="646.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="648.0" cy="307.07858718423284" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="598.0" y="277.07858718423284" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>12.9% intensity</div>
-                <div>at 735 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="654.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="656.0" cy="311.97419522634124" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="606.0" y="281.97419522634124" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>11.0% intensity</div>
-                <div>at 740 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="662.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="664.0" cy="315.5303718168661" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="614.0" y="285.5303718168661" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>9.6% intensity</div>
-                <div>at 745 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="670.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="672.0" cy="319.376459496465" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="622.0" y="289.376459496465" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>8.1% intensity</div>
-                <div>at 750 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="678.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="680.0" cy="320.92222550625866" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="630.0" y="290.92222550625866" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>7.5% intensity</div>
-                <div>at 755 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="686.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="688.0" cy="324.0673642100127" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="638.0" y="294.0673642100127" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>6.3% intensity</div>
-                <div>at 760 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="694.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="696.0" cy="325.3382840163186" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="646.0" y="295.3382840163186" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>5.8% intensity</div>
-                <div>at 765 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="702.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="704.0" cy="327.12083420444577" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="654.0" y="297.12083420444577" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>5.1% intensity</div>
-                <div>at 770 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="710.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="712.0" cy="327.9610134286069" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="662.0" y="297.9610134286069" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>4.7% intensity</div>
-                <div>at 775 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-        
-        
-        
-        <g class="data-point-group">
-            <rect class="hover-target" x="718.0" y="60" width="10" height="280" fill="transparent" />
-            <circle class="data-point" cx="720.0" cy="329.5919232291237" r="4" fill="transparent" fill-opacity="0.1">
-            </circle>       
-            <foreignObject x="670.0" y="299.5919232291237" width="250" height="80" class="hover-container">
-            <div xmlns="http://www.w3.org/1999/xhtml" class="data-point-hover">
-                <div>4.1% intensity</div>
-                <div>at 780 nm</div>
-            </div>
-            </foreignObject>
-        </g>
-      
-    </g>
-    
-  </svg>
-</div>
-
-<style>
-  .spectrum-chart-container {
-    max-width: 100%;
-    margin: 20px auto;
-  }
-  .spectrum-chart {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    display: block;
-  }
-
-  .spectrum-chart text {
-    font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
-
-  .legend-text {
-    font-size: 14px;
-    font-weight: 500;
-    fill: #1a1a1a;
-  }
-
-  .data-point-group {
-    position: relative;
-    display: inline-block;
-  }
-
-  .data-point {
-    cursor: crosshair;
-  }
-
-  .hover-target {
-    cursor: crosshair;
-  }
-
-  .data-point-group:hover .data-point,
-  .data-point-group:focus .data-point,
-  .data-point-group:active .data-point,
-  .hover-target:hover + .data-point,
-  .hover-target:focus + .data-point,
-  .hover-target:active + .data-point {
-    r: 5;
-    fill-opacity: 0.7;
-    fill: black;
-  }
-
-  .hover-container {
-    pointer-events: none;
-    overflow: visible;
-  }
-
-  .data-point-group:hover .data-point-hover,
-  .data-point-group:focus .data-point-hover,
-  .data-point-group:active .data-point-hover,
-  .hover-target:hover ~ .hover-container .data-point-hover,
-  .hover-target:focus ~ .hover-container .data-point-hover,
-  .hover-target:active ~ .hover-container .data-point-hover {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .data-point-hover {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    bottom: 5em;
-    left: 0em;
-    background-color: #100F0F;
-    color: #CECDC3;
-    padding: 5px 10px;
-    border: 1px solid #282726;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1;
-    font-style: italic;
-    font-size: 12px;
-    transform: translateY(5px);
-    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
-    font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
-
-  @media (max-width: 600px) {
-    .spectrum-chart-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 50%;
-      height: 0;
-      overflow: hidden;
-      padding-left: 10px;
-    }
-    .spectrum-chart {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .spectrum-chart .labels, .spectrum-chart .units {
-      display: none;
-    }
-
-    .spectrum-chart text {
-      font-size: 1.5em;
-    }
-
-    .data-point-hover {
-      font-size: 1em;
-    }
-
-    .data-point-group {
-      display: none;
-      visibility: hidden;
-    }
-
-    .chart-legend {
-      transform: translate(10px, 10px) !important;
-    }
-
-    .legend-text {
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
-</style>
-
-<hr />
-
-<h3 id="in-startup-pr-part-i">In <a href="/startup-pr-rulebook">Startup PR, Part I</a></h3>
-
-<p><em>I added a simple iMessage-like chat window to illustrate an interaction:</em></p>
-
-<p>They might agree to the embargo to hear the pitch. Or, they might reply:</p>
-
-<div class="mac-window imessage-popup">
-    <div class="mac-toolbar">
-      <div class="mac-buttons">
-        <span class="mac-button close"></span>
-        <span class="mac-button minimize"></span>
-        <span class="mac-button maximize"></span>
-      </div>
-      <div class="toolbar-title">Chat</div>
-    </div>
-    <div class="imessage-scroll-container">
-        <div class="imessage">
-        
-            
-            <p class="from-me">We’ve got some really exciting news at Acme Corp. I’d love to share with you. Could you agree to an embargo for next Thursday at 9am ET?</p>
-            
-        
-            
-            <p class="from-them">Is this an exclusive?</p>
-            
-        
-        </div>
-    </div>
-</div>
-
-<hr />
-
-<h3 id="and-more">And more</h3>
-
-<p>There are more buried around the blog, and I expect to keep going. Writing posts is fun, but even better is adding a dash of illumination. Maybe the monks had it right after all.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/speedrun-docsend">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/speedrun-docsend">Speedrunning a home-cooked DocSend replacement</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/reality-malleability">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/reality-malleability">Assorted excerpts on the malleability of "reality"</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[In Medieval Europe, monks created illuminated manuscripts embellished with bespoke animations. Why don't blogs do the same?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-21-illuminated-blog.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-21-illuminated-blog.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Speedrunning a home-cooked DocSend replacement</title><link href="https://andybromberg.com/speedrun-docsend" rel="alternate" type="text/html" title="Speedrunning a home-cooked DocSend replacement" /><published>2025-04-06T09:00:00-07:00</published><updated>2025-04-06T09:00:00-07:00</updated><id>https://andybromberg.com/speedrun-docsend</id><content type="html" xml:base="https://andybromberg.com/speedrun-docsend"><![CDATA[<p>Yesterday, I was working on something where DocSend would have come in handy — a somewhat-sensitive document where we wanted the ability to verify the email addresses of viewers and track analytics, plus update the document over time. But, ugh:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/speedrun-docsend/docsend-pricing-800-e8d3a86ef.webp 800w, /assets/images/generated/speedrun-docsend/docsend-pricing-1000-e8d3a86ef.webp 1000w, /assets/images/generated/speedrun-docsend/docsend-pricing-1200-e8d3a86ef.webp 1200w, /assets/images/generated/speedrun-docsend/docsend-pricing-1392-e8d3a86ef.webp 1392w" type="image/webp" /><source srcset="/assets/images/generated/speedrun-docsend/docsend-pricing-800-594d54e4c.png 800w, /assets/images/generated/speedrun-docsend/docsend-pricing-1000-594d54e4c.png 1000w, /assets/images/generated/speedrun-docsend/docsend-pricing-1200-594d54e4c.png 1200w, /assets/images/generated/speedrun-docsend/docsend-pricing-1392-594d54e4c.png 1392w" type="image/png" /><img src="/assets/images/generated/speedrun-docsend/docsend-pricing-800-594d54e4c.png" width="1392" height="782" /></picture>
-
-<p>A quick search suggested there were alternatives, some of which have free plans. But who knows if those stick around, and I didn’t really want to spend the next couple hours trying them out and running into paywalls for features I needed.</p>
-
-<p>What I <em>did</em> want to spend the next couple hours on, though, was seeing if I could speedrun building my own replacement.</p>
-
-<p>Six <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">pomodoros</a> (2.5 hours) and $26 (for the domain) later, vibesend.co was live and functional. Email-verified and password-protected docs, per-viewer analytics, desktop and mobile views, scrollable and paginated document types, and more.</p>
-
-<p>The best part? It’s all free to run, thanks to <a href="https://cloudflare.com/">Cloudflare’s</a> free tiers for Pages and Workers, <a href="https://supabase.com/">Supabase’s</a> free tier for storage, and <a href="https://resend.com/">Resend’s</a> free tier for emails<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">A big thank you to the venture capital community — and the public markets — for subsidizing the free tiers of these wonderful money-losing companies. I appreciate their optimism as much as I did in 2014 when Uber Pool cost $1.73 to get across San Francisco.</span>.</p>
-
-<p>I’m now using Vibesend for real, and it’s great. Everything I want out of DocSend, nothing I don’t (including a subscription) — and whenever I want a new feature, I just… add it.</p>
-
-<p>Here’s an example<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">(with a doc from my recent <a href="/rfr-flawed-assumption">RFR regulation article</a>)</span>: <a href="https://vibesend.co/view/e81290f8">https://vibesend.co/view/e81290f8</a> — the password is <code class="language-plaintext highlighter-rouge">mypass</code>.</p>
-
-<p>Or one with email auth: <a href="https://vibesend.co/view/776beab2">https://vibesend.co/view/776beab2</a>.</p>
-
-<hr />
-
-<p>Robin Sloan wrote a post a few years ago called <a href="https://www.robinsloan.com/notes/home-cooked-app/">An app can be a home-cooked meal</a>. It’s short, excellent, and you should read it. Maggie Appleton also <a href="https://maggieappleton.com/home-cooked-software/">published a presentation</a> about similar themes. Here’s an excerpt from Robin’s:</p>
-
-<blockquote>
-  <p>When you liberate programming from the requirement to be professional and scalable, it becomes a different activity altogether, just as cooking at home is really nothing like cooking in a commercial kitchen. I can report to you: not only is this different activity rewarding in almost exactly the same way that cooking for someone you love is rewarding, there’s another feeling, too, specific to this realm. I have struggled to find words for this, but/and I think it might be the crux of the whole thing:</p>
-
-  <p>This messaging app I built for, and with, my family, it won’t change unless we want it to change. There will be no sudden redesign, no flood of ads, no pivot to chase a userbase inscrutable to us. It might go away at some point, but that will be our decision. What is this feeling? Independence? Security? Sovereignty?</p>
-
-  <p>Is it simply … the feeling of being home?</p>
-</blockquote>
-
-<p>I love this idea. Building software for yourself is fun and freeing.</p>
-
-<p>Plus, you get to skip a bunch of annoying stuff you don’t need. For example: right now, Vibesend doesn’t allow other users to create accounts (it’s just me). There’s no dashboard interface (uploading files and viewing analytics is just done locally) And there’s no billing (I’m graciously choosing not to charge myself).</p>
-
-<hr />
-
-<p>Let’s talk about one of those: I’m comfortable on the command line, so I thought: “why build a dashboard — and thus necessarily a user authentication system — if it’s just for me?”</p>
-
-<p>So here I am uploading a new document and editing it:</p>
-
-<script src="https://asciinema.org/a/Tl5d8mSXHncPxUvsJCYdGRxeY.js" id="asciicast-Tl5d8mSXHncPxUvsJCYdGRxeY" async="true"></script>
-
-<p>Easy as:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>python3 backend/upload_document.py ~/Downloads/sample-doc.pdf <span class="nt">--title</span> <span class="s2">"Just a sample doc"</span> <span class="nt">--email-required</span>
-</code></pre></div></div>
-
-<p>Or here’s me pulling analytics for a doc (I’m going to improve these):</p>
-
-<script src="https://asciinema.org/a/2CUlj6jizxwPSnDOhtRZ0kzMq.js" id="asciicast-2CUlj6jizxwPSnDOhtRZ0kzMq" async="true"></script>
-
-<p>Would this interface work for everyone? No. But it’s perfect for me.</p>
-
-<p>And it can be improved from there — let’s say I wanted to give a non-technical colleague access to the system. Maybe I’d still hold off on a login system and instead just give them a webpage they can run locally with a .env and keys that let them access the Supabase instance. No need for anything fancy if it’s not going mass-market!</p>
-
-<hr />
-
-<p>So, how’d I build it? Really simple:</p>
-
-<ol>
-  <li>Go back and forth with ChatGPT o1 Pro to create out a step-by-step implementation plan. Takeoff has some <a href="https://www.jointakeoff.com/prompts">good sample prompts</a>, and I’ve built my own based on these. I asked it to use Resend for emails, Supabase for all storage, Cloudflare Pages for the frontend, and Cloudflare Workers/Functions for any “backend” required (e.g. sending emails without exposing Resend API key, verifying email OTPs, etc.).</li>
-  <li>Pop into Cursor, make a plan.md file with that spec, and use a combo of Claude 3.7 and Gemini 2.5 Pro to work through the plan step-by-step, intervening when necessary and adjusting either the plan or the implementation.</li>
-</ol>
-
-<p>It’s about 2.5k LoC. Certainly some cruft in there, but also a hell of a lot more code than I could write myself in the timeboxed 2.5 hours I gave myself (I mean, 500 LoC in style.css alone… that would take me <em>days</em> done by hand.)</p>
-
-<p>It is easier than <em>ever</em> to build real products. The AI is obviously the biggest factor there, but beyond that:</p>
-<ul>
-  <li>Supabase MCP server takes so much pain out of early bootstrapping work (writing and applying migrations, testing out broken flows)</li>
-  <li>Cloudflare Domains, Pages, and Workers are truly great products, and the dev + prod experience is seamless (I can’t believe that 2.5 hours not only got this all working locally, but <em>also</em> fully deployed publicly)</li>
-  <li>Resend has a very easy API and a generous free tier</li>
-</ul>
-
-<p>Now, am I sure that Vibesend is totally secure, or that it’s as efficient as possible? No, of course not. AI mostly wrote the code. But, for this use case, do I care? Also no. And that’s the beauty of home-cooked software.</p>
-
-<hr />
-
-<p>I’ve already added some just-for-me features I’m enjoying. For example, I can create custom vanity URLs like this:</p>
-
-<p><a href="https://vibesend.co/andy/test-doc">https://vibesend.co/andy/test-doc</a></p>
-
-<p>I’m about to make a setting to trigger Telegram notifications for new viewers on specific docs. Maybe I’ll even just treat Telegram like the admin dashboard, and authorize colleagues’ Telegram handles to access the data too…</p>
-
-<hr />
-
-<p>I’m thinking of speedrunning more home-cooked SaaS rebuilds. It’s pretty staggering that I could get most everything I want out of DocSend in 2.5 hours, and it’s now making me think about all the other tools I use frequently that could be home-cooked instead.</p>
-
-<p>Plus, then, they’re <em>configurable</em> to my needs. Want a new feature? Done. A feature only available on enterprise plans? Done. Feel like different styling? Done.</p>
-
-<p>What should we speedrun next?</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/fast-hardware-prototyping">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/fast-hardware-prototyping">I²C + AI = crazy fast simple hardware prototyping</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/illuminated-blog">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/illuminated-blog">The illuminated blog</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[I wanted DocSend, but I didn't want to pay. Two and a half hours later, I had my own version. Here's how it happened.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-06-speedrun-docsend.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-06-speedrun-docsend.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I²C + AI = crazy fast simple hardware prototyping</title><link href="https://andybromberg.com/fast-hardware-prototyping" rel="alternate" type="text/html" title="I²C + AI = crazy fast simple hardware prototyping" /><published>2025-03-30T10:30:00-07:00</published><updated>2025-03-30T10:30:00-07:00</updated><id>https://andybromberg.com/fast-hardware-prototyping</id><content type="html" xml:base="https://andybromberg.com/fast-hardware-prototyping"><![CDATA[<p>Historically, two things have made prototyping even simple hardware annoying for me:</p>
-<ol>
-  <li>Getting the wiring right, especially with the variance in how different peripherals connect</li>
-  <li>Writing the code to read from/write to the peripherals, often requiring wading through poorly-translated spec sheets</li>
-</ol>
-
-<p>But recently, I’ve done a couple hack projects that have taken no time at all, thanks to peripherals with I²C/Qwiic/Stemma connectors solving bullet number 1, and AI coding assistance solving bullet number 2.</p>
-
-<p>This post will walk through a step-by-step tutorial of a recent toy hardware project that took just <em>30 minutes</em> to get operational after opening up the sensors I ordered.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/fast-hardware-prototyping/top-view-800-eda95cea4.webp 800w, /assets/images/generated/fast-hardware-prototyping/top-view-1000-eda95cea4.webp 1000w, /assets/images/generated/fast-hardware-prototyping/top-view-1200-eda95cea4.webp 1200w, /assets/images/generated/fast-hardware-prototyping/top-view-1600-eda95cea4.webp 1600w, /assets/images/generated/fast-hardware-prototyping/top-view-2000-eda95cea4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/fast-hardware-prototyping/top-view-800-2c1f9d8f8.jpg 800w, /assets/images/generated/fast-hardware-prototyping/top-view-1000-2c1f9d8f8.jpg 1000w, /assets/images/generated/fast-hardware-prototyping/top-view-1200-2c1f9d8f8.jpg 1200w, /assets/images/generated/fast-hardware-prototyping/top-view-1600-2c1f9d8f8.jpg 1600w, /assets/images/generated/fast-hardware-prototyping/top-view-2000-2c1f9d8f8.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/fast-hardware-prototyping/top-view-800-2c1f9d8f8.jpg" width="5712" height="3163" /></picture>
-
-<h2 id="30-minute-project-office-environmental-monitor">30 minute project: Office Environmental Monitor</h2>
-
-<p>The goal: <strong>make an environmental sensor for my office</strong> that monitors<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Tracking “true” VOC levels is hard with commodity hardware, and subject to a bunch of tricky nuances. <a href="https://forum.airgradient.com/t/measurement-values-for-the-airgradient-one-tvoc-readings/1027">Here’s a thread</a> on the AirGradient forums if you want to learn more. The AirGradient uses the Sensirion SGP41, and I went with the SGP30. The SGP41 outputs an arguably-more-informative VOC <em>index</em> measurement to show changes in concentration, whereas the SGP30 outputs a proper TVOC measurement in ppb, but there are issues with it (hence the change to an index approach in the SGP4x next-generation sensor).</span>:</p>
-<ul>
-  <li>the current light spectrum (including UV and IR) and brightness (see <a href="all-light">All light is not created equal</a> for why this matters)</li>
-  <li>particulate matter of various sizes in the air</li>
-  <li>CO2 and VOC levels</li>
-  <li>plus temperature, humidity, and anything else I could easily pick up</li>
-</ul>
-
-<p>Basically: how healthy is my office right now? <a href="https://x.com/karpathy/status/1548766160434241536">People are</a> <a href="https://x.com/VitalikButerin/status/1812114231489110491">increasingly carrying</a> CO2 monitors, but I think we can do even better.</p>
-
-<p>Here’s a preview of the final product booting up and running (sped up):</p>
-
-<script src="https://asciinema.org/a/q5fKUBHHFtu7nTxuoQiH9zL4v.js" id="asciicast-q5fKUBHHFtu7nTxuoQiH9zL4v" async=""></script>
-
-<p>I went shopping on <a href="https://www.adafruit.com/">Adafruit</a> and got<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">This gets way cheaper if you’re okay without a “true” CO2 measurement (the most expensive component, ~35% of the total sensor costs). The SGP30, which we want anyway for VOCs, outputs estimated CO2 based on H2 concentrations. The SCD-41 is a true photoacoustic CO2 sensor, which is a more expensive component.</span>:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Cost</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/3686">PM2.5 Air Quality Sensor and Breadboard Adapter Kit - PMS5003</a></td>
-      <td>$39.95</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/3709">Adafruit SGP30 Air Quality Sensor Breakout - VOC and eCO2</a></td>
-      <td>$17.50</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/5190">Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor</a></td>
-      <td>$49.95</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/4698">Adafruit AS7341 10-Channel Light / Color Sensor Breakout</a></td>
-      <td>$15.95</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/1980">Adafruit TSL2591 High Dynamic Range Digital Light Sensor</a></td>
-      <td>$6.95</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/4831">Adafruit LTR390 UV Light Sensor</a></td>
-      <td>$4.95</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/4210">STEMMA QT / Qwiic JST SH 4-pin Cables</a> x4</td>
-      <td>$3.80</td>
-    </tr>
-    <tr>
-      <td><strong>Total</strong></td>
-      <td><strong>$139.05</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Across these, I’d be able to read:</p>
-<ul>
-  <li>light quality
-    <ul>
-      <li>8-band (violet, indigo, blue, cyan, green, yellow, orange, red) light spectrum distribution</li>
-      <li>UV and NIR indices</li>
-      <li>illuminance</li>
-    </ul>
-  </li>
-  <li>air quality
-    <ul>
-      <li>6 sizes of (0.3, 0.5, 1.0, 2.5, 5, and 10 micron) particulate matter</li>
-      <li>true CO2</li>
-      <li>TVOCs</li>
-      <li>temperature</li>
-      <li>humidity</li>
-    </ul>
-  </li>
-  <li>(and a few more characteristics too!)</li>
-</ul>
-
-<p>At the time I didn’t realize Adafruit made an <a href="https://www.adafruit.com/product/4632">I²C interface version</a> of the PMS5003 air quality sensor, so I might have swapped for that in place of the sensor with breadboard adapter kit<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote"> With that said, I would have some concerns about the current draw of the PMS5003 and it screwing up the I²C chain, so maybe the standalone breadboard adapter is better anyway. Don’t tell me I didn’t warn you!</span>.</p>
-
-<p>You’ll also need a few other things I had laying around, including a CircuitPython-compatible development board (I used the Itsy Bitsy M4 Express), a breadboard, some jumper wires, and an I2C-male-to-4-header-pin cable. I think these would cover you:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Cost</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/4028">CircuitPython Starter Kit with Adafruit Itsy Bitsy M4</a></td>
-      <td>$24.95</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.adafruit.com/product/3955">JST PH 2mm 4-Pin to Male Header Cable</a></td>
-      <td>$1.50</td>
-    </tr>
-    <tr>
-      <td><em>Subtotal</em></td>
-      <td>$26.45</td>
-    </tr>
-    <tr>
-      <td><strong>Total with above</strong></td>
-      <td><strong>$165.50</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Once you get all this stuff and unpack it, we can get to work. Start your timers!</p>
-
-<h2 id="step-1-wire-everything-up-7-minutes">Step 1: Wire everything up (7 minutes)</h2>
-
-<p><a href="https://en.wikipedia.org/wiki/I%C2%B2C">I²C</a> is a protocol invented by Philips Semiconductors back in 1982, but now in use by companies like Sparkfun and Adafruit to make dead-simple peripheral connections. Adafruit calls their version of it “Qwiic” and Sparkfun calls theirs “Stemma.” For our simple purposes, they’re all basically equivalent.</p>
-
-<p>One of the awesome things about I²C (and the reason it solves my original problem #1) is that you can wire up all the peripherals in series, one after another. And as long as they have different I²C addresses, it <em>just works</em>. The data flows through the whole chain of sensors and ends up where it needs to be.</p>
-
-<p>So the wiring for this project is incredibly simple, despite the number of sensors:</p>
-
-<ul>
-  <li>connect the five I²C sensors (SCD41, SGP30, AS7341, TSL2591, LTR390) to each other in a chain with the I²C cables, in any order</li>
-  <li>connect the first one with your I²C-to-male-header cable</li>
-  <li>put the dev board on your breadboard and connect the male headers from the previous cable as follows:
-    <ul>
-      <li>black into the ground row</li>
-      <li>red into 3.3V</li>
-      <li>yellow into SCL</li>
-      <li>blue into SDA</li>
-    </ul>
-  </li>
-  <li>plug the PMS5003 adapter cable into the PMS5003 sensor, and then stick the breadboard adapter into the breadboard</li>
-  <li>take three male-to-male jumper cables and put them:
-    <ul>
-      <li>PMS5003 adapter VCC to dev board VHI (or USB, if your board doesn’t have a VHI)</li>
-      <li>adapter GND to board G</li>
-      <li>adapter TXD to board RX</li>
-    </ul>
-  </li>
-  <li>plug a micro usb cable into your dev board and prepare to plug the other end into your computer</li>
-</ul>
-
-<p>Here’s a snapshot. No, it ain’t pretty — it’s a 30 minute project!</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/fast-hardware-prototyping/wiring-side-800-c9bb8b2a1.webp 800w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1000-c9bb8b2a1.webp 1000w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1200-c9bb8b2a1.webp 1200w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1600-c9bb8b2a1.webp 1600w, /assets/images/generated/fast-hardware-prototyping/wiring-side-2000-c9bb8b2a1.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/fast-hardware-prototyping/wiring-side-800-3c4159de9.jpg 800w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1000-3c4159de9.jpg 1000w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1200-3c4159de9.jpg 1200w, /assets/images/generated/fast-hardware-prototyping/wiring-side-1600-3c4159de9.jpg 1600w, /assets/images/generated/fast-hardware-prototyping/wiring-side-2000-3c4159de9.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/fast-hardware-prototyping/wiring-side-800-3c4159de9.jpg" width="4032" height="1902" /></picture>
-
-<h2 id="step-2-install-circuitpython--libraries-5-minutes">Step 2: Install CircuitPython &amp; libraries (5 minutes)</h2>
-
-<p>Next up, plug the dev board’s USB cable into your computer. It should show up as an external drive.</p>
-
-<p>Find your board on the <a href="https://circuitpython.org/downloads">CircuitPython website</a> and download the appropriate <code class="language-plaintext highlighter-rouge">.UF2</code> file. This will allow your board to run CircuitPython code, which is a version of Python specifically made for (… can you guess?) programming electronics / microcontrollers.</p>
-
-<p>Also download the Adafruit <a href="https://circuitpython.org/libraries">“bundle” of CircuitPython libraries</a>. This has everything you’ll need to connect to your sensors.</p>
-
-<p>Now press the reset button twice on your board to get it into bootloader mode, and then copy the <code class="language-plaintext highlighter-rouge">.UF2</code> file over to the drive. It will disappear for a minute, and when it comes back, the drive should be named <code class="language-plaintext highlighter-rouge">CIRCUITPYTHON</code>.</p>
-
-<p>Go into it and make a <code class="language-plaintext highlighter-rouge">lib</code> folder. Then go into your Adafruit bundle and select the following items:</p>
-<ul>
-  <li>adafruit_as7341.mpy</li>
-  <li>adafruit_bus_device/</li>
-  <li>adafruit_ltr390.mpy</li>
-  <li>adafruit_pm25/</li>
-  <li>adafruit_register/</li>
-  <li>adafruit_scd4x.mpy</li>
-  <li>adafruit_sgp30.mpy</li>
-  <li>adafruit_tsl2591.mpy</li>
-</ul>
-
-<p>And copy them all over into the <code class="language-plaintext highlighter-rouge">lib</code> folder on your <code class="language-plaintext highlighter-rouge">CIRCUITPYTHON</code> drive.</p>
-
-<p>Now we have CircuitPython installed and all the libraries we need to interface with our sensors!</p>
-
-<h2 id="step-3-code-it-up-7-minutes">Step 3: Code it up (7 minutes)</h2>
-
-<p>Plugging six different sensors into a board, each with a different library and way of reading data, used to be a nightmare. I’d be reading through library documentation to get the special incantation required to get each of them working.</p>
-
-<p>But this is a place where AI really shines.</p>
-
-<p>I made a new directory, copied the <code class="language-plaintext highlighter-rouge">lib/</code> directory into it, opened up a new file named <code class="language-plaintext highlighter-rouge">code.py</code> in Cursor, went to the agent (Claude Sonnet 3.7), and said something like:</p>
-
-<blockquote>
-  <p>I want to read data off the following sensors: SCD41, SGP30, AS7341, TSL2591, LTR390 (all from Adafruit, connected with I2C) and a PMS5003 (connected over UART). My development board is an Itsy Bitsy M4 Express running CircuitPython.</p>
-
-  <p>The libraries (several with examples) are all in here: @lib/</p>
-
-  <p>Please import the libraries and make a simple script that connects to all these sensors and then reads all the available data off the sensors every 10 seconds, outputting it in print() statements</p>
-
-  <p>Include some simple status print() statements, like when the connections are happening and sampling is beginning.</p>
-</blockquote>
-
-<p>I hit enter, waited three minutes for the agent to write it up, and there we were. Barely had to lift a finger.</p>
-
-<h2 id="step-4-run-it-1-minute">Step 4: Run it (1 minute)</h2>
-
-<p>Then, go into your terminal and type (I’m on macOS) <code class="language-plaintext highlighter-rouge">ls /dev/tty.*</code> and you will see something that looks like <code class="language-plaintext highlighter-rouge">/dev/tty.usbmodem211301</code></p>
-
-<p>Copy that and run (replace path with what you copied) <code class="language-plaintext highlighter-rouge">screen /dev/tty.usbmodem211301 115200</code></p>
-
-<p>(115200 is the speed / baud rate of that board — yours may vary.)</p>
-
-<p>Take the <code class="language-plaintext highlighter-rouge">code.py</code> file and drag it over to the <code class="language-plaintext highlighter-rouge">CIRCUITPYTHON</code> drive, replacing the current <code class="language-plaintext highlighter-rouge">code.py</code> file.</p>
-
-<p>And… it should pretty magically start working, printing out the results of the sensor readings every 10 seconds.</p>
-
-<p>Again, here’s that same screengrab of the output (after I prettied it up a bit):</p>
-
-<script src="https://asciinema.org/a/q5fKUBHHFtu7nTxuoQiH9zL4v.js" id="asciicast-q5fKUBHHFtu7nTxuoQiH9zL4v" async=""></script>
-
-<p>At this point, you should have 10 minutes left in our 30 minute project. Or, maybe not — if you’re anything like me, you probably used up those 10 minutes sorting out something you messed up (like swapping TX / RX pins as I always do).</p>
-
-<h2 id="what-next">What next?</h2>
-
-<p>I find it pretty remarkable that in less than an hour, it’s possible to have a fully-functional multimodal environmental sensor up and running. Sure, it’s basic<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote"> And: you <em>should</em> still read the docs, make sure you’re calibrating all the sensors correctly and giving them all the data they need (some are more accurate when you feed in e.g. humidity) and interpreting the data correctly.</span>, but… we’re talking about thirty minutes and $150 or less for way more data than you get from any commercial environment sensor I can find (are there <em>any</em> that give you light spectrum data?).</p>
-
-<p>I’ve fumbled my way through a lot of hardware hack projects, getting stuck in the mud on weird nuances of reading data from sensors or connecting them. That — at least for me — is not the fun stuff. But I’m realizing that now, with modern connectors and AI, you can skip that and get to the fun.</p>
-
-<p>What are the fun next steps? Things like:</p>
-<ul>
-  <li>Improving the output visually (see my screen recording above)</li>
-  <li>Doing more analysis on the output to make it informative, triggering alerts, etc.</li>
-  <li>Adding a screen so the device can be standalone</li>
-  <li>Designing and printing a case/stand so it’s not a tangled mess of wires and can be placed in a more accurate location (i.e. light sensors should be as close to my eye position/perspective as possible)</li>
-  <li>Getting this off a breadboard and soldering it</li>
-  <li>Connecting to internet or Bluetooth to pass data elsewhere</li>
-</ul>
-
-<p>I’m planning on continuing to improve this device. I actually think it’s quite useful.</p>
-
-<p>If you try building something similar, <a href="mailto:andy@andybromberg.com">let me know</a>!</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/jizo-instax-impermanence">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/jizo-instax-impermanence">Jizo, Instax, and Impermanence</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/speedrun-docsend">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/speedrun-docsend">Speedrunning a home-cooked DocSend replacement</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Here's a 30 minute project to get a full-blown DIY environmental sensor. Prototyping projects like this have gotten way faster.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-03-30-fast-hardware-prototyping.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-03-30-fast-hardware-prototyping.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Posts, quotes, and excerpts on the malleability of what we often consider to be the immutable reality around us.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-21-reality-malleability.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-21-reality-malleability.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
