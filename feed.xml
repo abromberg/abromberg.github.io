@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-03T14:22:03-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">UWoL: Parkinson’s Law, generalized</title><link href="https://andybromberg.com/uwol/parkinsons-law-generalized" rel="alternate" type="text/html" title="UWoL: Parkinson’s Law, generalized" /><published>2025-07-02T09:00:00-07:00</published><updated>2025-07-02T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-parkinsons-law-generalized</id><content type="html" xml:base="https://andybromberg.com/uwol/parkinsons-law-generalized"><![CDATA[<div class="disclaimer-box">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-07T09:20:24-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">interface0: early July update</title><link href="https://andybromberg.com/interface0-early-july-update" rel="alternate" type="text/html" title="interface0: early July update" /><published>2025-07-06T09:00:00-07:00</published><updated>2025-07-06T09:00:00-07:00</updated><id>https://andybromberg.com/interface0-early-july-update</id><content type="html" xml:base="https://andybromberg.com/interface0-early-july-update"><![CDATA[<p><a href="https://interface0.com">interface0</a> continues to be my preferred way to interact with LLMs (and increasingly a few of my friends’ preference as well!). Here’s some of what I shipped since the <a href="/interface0-intro">previous post</a>:</p>
+
+<h3 id="chat-sharing">Chat sharing</h3>
+
+<p>You can now share chats, either with another individual interface0 user, or a team (see below). When you share it, you can choose whether they are a “viewer” or an “editor.” Either way, the chat will now show up in their interface0 inbox, and if they make them an editor, they will also be able to send messages in the chat.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/interface0-early-july-update/share-dialog-800-641ba7aca.webp 800w, /assets/images/generated/interface0-early-july-update/share-dialog-1000-641ba7aca.webp 1000w, /assets/images/generated/interface0-early-july-update/share-dialog-1200-641ba7aca.webp 1200w, /assets/images/generated/interface0-early-july-update/share-dialog-1600-641ba7aca.webp 1600w, /assets/images/generated/interface0-early-july-update/share-dialog-2000-641ba7aca.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/interface0-early-july-update/share-dialog-800-fa600f3e2.png 800w, /assets/images/generated/interface0-early-july-update/share-dialog-1000-fa600f3e2.png 1000w, /assets/images/generated/interface0-early-july-update/share-dialog-1200-fa600f3e2.png 1200w, /assets/images/generated/interface0-early-july-update/share-dialog-1600-fa600f3e2.png 1600w, /assets/images/generated/interface0-early-july-update/share-dialog-2000-fa600f3e2.png 2000w" type="image/png" /><img src="/assets/images/generated/interface0-early-july-update/share-dialog-800-fa600f3e2.png" width="6428" height="2572" /></picture>
+
+<p>Sharing makes it easy to have collaborative conversations with AI, with multiple users in the chat. Plus, anyone can “fork” the chat at any time to split it off into their own private conversation.</p>
+
+<p>This alone feels like a huge upgrade over existing LLM interfaces for certain use cases (especially within teams).</p>
+
+<p>You can also publish chats publicly and share a link with anyone, including non-interface0 users.</p>
+
+<h3 id="knowledge">Knowledge</h3>
+
+<p>You can now create a folder with text and files that gives the agent knowledge, and tag that in on any specific chat request. This is similar to ChatGPT/Claude’s “projects” feature, except that the chat doesn’t need to be in a project folder, and you can tag multiple pieces of knowledge into any given chat.</p>
+
+<p>I have a “health” knowledge folder with info about my health, plus ones for different companies, and it makes it easy to tag that context into any chat where I need it.</p>
+
+<h3 id="teams-functionality">Teams functionality</h3>
+
+<p>You can now make “teams” — for example, we now have an interface0 team at Amity Ventures, where I’m a venture partner, and at Lightwork. You can be on multiple teams.</p>
+
+<p>Once you’re on a team with other interface0 users, a few options open up. You can share contexts/knowledge folders, template messages, and personas across the team, so everyone can use them.</p>
+
+<p>For example, we can have a “water testing protocol” knowledge folder at Lightwork, or a “memo drafting” template message at Amity. Everyone on the team could access these.</p>
+
+<p>Plus, chats can be shared with a whole team, as viewers or editors. That way the chat shows up in each person’s inbox on the team.</p>
+
+<h3 id="lots-of-little-features">Lots of little features</h3>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/interface0-early-july-update/enhance-prompt-800-942f5420e.webp 800w, /assets/images/generated/interface0-early-july-update/enhance-prompt-1000-942f5420e.webp 1000w, /assets/images/generated/interface0-early-july-update/enhance-prompt-1200-942f5420e.webp 1200w, /assets/images/generated/interface0-early-july-update/enhance-prompt-1600-942f5420e.webp 1600w, /assets/images/generated/interface0-early-july-update/enhance-prompt-2000-942f5420e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/interface0-early-july-update/enhance-prompt-800-31e4affc9.png 800w, /assets/images/generated/interface0-early-july-update/enhance-prompt-1000-31e4affc9.png 1000w, /assets/images/generated/interface0-early-july-update/enhance-prompt-1200-31e4affc9.png 1200w, /assets/images/generated/interface0-early-july-update/enhance-prompt-1600-31e4affc9.png 1600w, /assets/images/generated/interface0-early-july-update/enhance-prompt-2000-31e4affc9.png 2000w" type="image/png" /><img src="/assets/images/generated/interface0-early-july-update/enhance-prompt-800-31e4affc9.png" width="4344" height="724" /></picture>
+
+<p>Some favorites:</p>
+<ul>
+  <li><strong>Enhance prompt</strong> — just hit a button and your half-assed prompt gets upgraded into something more clear for the agent</li>
+  <li><strong>Autopilot mode</strong> — you can let an agent select what model to use, what knowledge to loop in, and what persona to leverage for each message instead of choosing yourself</li>
+  <li><strong>Summarize chat</strong> — hit one button and get a summary of the current chat, which can then be used to kick off a new chat or to create a new knowledge folder. You can also <strong>download a chat</strong> as a text file for use elsewhere.</li>
+  <li><strong>Template variables</strong> — template messages can now have variables in them. When you select the template message, you just fill in the variables in a popup and the completed message gets inserted</li>
+  <li><strong>Forwarding email</strong> — every user has an email address they can send or forward emails to. When they do, it kicks off a new chat where the agent suggests next steps on the email or answers whatever question you included</li>
+  <li><strong>Edit message</strong> — you can edit the last message you sent in the conversation, which will cause the agent to update their reply</li>
+  <li><strong>A better landing page</strong> — <a href="https://interface0.com">check it out!</a></li>
+</ul>
+
+<p>Plus a whole lot of bugfixes, performance improvements, and other quality-of-life touches…</p>
+
+<p>It’s great fun building “personal software” like this to scratch my own itches. I can create <em>exactly</em> the interface I want to use. It will continue to evolve! Ping me if you want an invite.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/parkinsons-law-generalized">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/parkinsons-law-generalized">UWoL: Parkinson's Law, generalized</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Here's what I shipped in June for interface0.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-07-06-interface0-early-july-update.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-07-06-interface0-early-july-update.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Parkinson’s Law, generalized</title><link href="https://andybromberg.com/uwol/parkinsons-law-generalized" rel="alternate" type="text/html" title="UWoL: Parkinson’s Law, generalized" /><published>2025-07-02T09:00:00-07:00</published><updated>2025-07-02T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-parkinsons-law-generalized</id><content type="html" xml:base="https://andybromberg.com/uwol/parkinsons-law-generalized"><![CDATA[<div class="disclaimer-box">
   <span class="disclaimer-box-title">Useful Ways of Looking</span>
   <div class="disclaimer-box-content">
     <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
@@ -82,11 +167,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/interface0-early-july-update">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/interface0-early-july-update">interface0: early July update</a>
     
   </div>
 </nav>
@@ -525,6 +614,8 @@
 <p>You can sign up with your Google account to get on the waitlist, or find an <span style="display: inline-block; cursor: zoom-in; user-select: none;" onclick="this.innerHTML = '&lt;code style=&quot;user-select: text;&quot;&gt;1d6c598421d6&lt;/code&gt;'; if(this.innerHTML.includes('code')) { this.innerHTML = '1d6c598421d6'; this.style.fontFamily = 'monospace'; this.style.userSelect = 'text'; }">invite code</span> somewhere…</p>
 
 <p>It’s very much in early beta. But once you try it out, I’d love your feedback. And if you have any ideas for new features or improvements, I’m all ears.</p>
+
+<p><strong>Update:</strong> see <a href="/interface0-early-july-update">interface0: early July update</a> for the latest.</p>
 
 <hr class="end-of-article-divider" />
 
@@ -2504,194 +2595,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[On the difference between pain and suffering, and the path towards eliminating all of the latter.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-22-ways-of-looking.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-22-ways-of-looking.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Assorted excerpts on the malleability of “reality”</title><link href="https://andybromberg.com/reality-malleability" rel="alternate" type="text/html" title="Assorted excerpts on the malleability of “reality”" /><published>2025-04-21T11:00:00-07:00</published><updated>2025-04-21T11:00:00-07:00</updated><id>https://andybromberg.com/reality-malleability</id><content type="html" xml:base="https://andybromberg.com/reality-malleability"><![CDATA[<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When did you first discover the malleability of social reality?<br /><br />For me, it was when I did my Eagle Scout project (building a boardwalk). I was advised to call up lumberyards and ask for wood for free. I did and the lumberyards were just like &quot;OK&quot;</p>&mdash; Tyler Alterman (@TylerAlterman) <a href="https://twitter.com/TylerAlterman/status/1693648303706058820?ref_src=twsrc%5Etfw">August 21, 2023</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<hr />
-
-<blockquote>
-  <p><em>The world is a very malleable place</em>. If you know what you want, and you go for it with maximum energy and drive and passion, the world will often reconfigure itself around you much more quickly and easily than you would think.</p>
-
-  <p>– Marc Andreessen, <a href="https://pmarchive.com/guide_to_career_planning_part1.html">Pmarca Guide to Career Planning: Opportunity</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>“We are what we pretend to be, so we must be careful about what we pretend to be.”</p>
-
-  <p>– Kurt Vonnegut, <a href="https://www.amazon.com/Mother-Night-Kurt-Vonnegut/dp/0385334141">Mother Night</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Machine Gun Kelly- who had a poster of Megan Fox growing up and ended up dating her- described it as like, I paraphrase, “if you wear an astronaut suit to school everyday, and one day NASA comes to school and says “we need one of you to suit up”, everyone will point at you”</p>&mdash; Visakan Veerasamy (@visakanv) <a href="https://twitter.com/visakanv/status/1775166791918190695?ref_src=twsrc%5Etfw">April 2, 2024</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>The <a href="https://www.gq.com/story/machine-gun-kelly-wesley-lowery-high-school-reunion">un-paraphrased quote</a>:</p>
-
-<blockquote>
-  <p>I was like the kid wearing an astronaut suit and everybody was like, ‘Why the fuck would you do that?’ But the universe saw me wearing an astronaut suit and was like, ‘We can give it to all the people who aren’t wearing it, or we can just give it to the fucking kid who’s wearing an astronaut suit and make him a spaceship.’</p>
-
-  <p>– Colson Baker, a.k.a. Machine Gun Kelly</p>
-</blockquote>
-
-<hr />
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Asking my choir to sing as soft as they can: 50dB<br />Softer pls: 40dB<br />Pls even softer pls: 35dB<br />I&#39;m begging u: 30dB<br />Asking them to do their best impression of the softest choir of all time: 0.0001dB</p>&mdash; Reb (@soundrotator) <a href="https://twitter.com/soundrotator/status/1720136286244393469?ref_src=twsrc%5Etfw">November 2, 2023</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<hr />
-
-<blockquote>
-  <p>I am convinced that there exists a mysterious power in writing things down. I don’t know exactly how it works or why it works but I do believe <em>that</em> it works. I have experienced it myself, and I have read about it from others who experienced it themselves.</p>
-
-  <p>– Jake, <a href="https://www.blogofjake.com/p/the-mysterious-power-of-writing-things-down">The Mysterious Power of Writing Things Down</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>The description was about five or six handwritten pages long, and at the time, it was a manifestation of desperate longing to be somewhere other than where I was, someone who felt free and cared for. At the time I saw that description as basically an impossibility; my life could never be so amazing in reality.</p>
-
-  <p>Fast forward about seven or ten years and I rediscovered the description when I was moving old notebooks and journals from one dusty storage spot to another. As I read through it, I discovered that 90% of the statements I had made in that description were true (or true in spirit).</p>
-
-  <p>– Autotranslucence, <a href="https://autotranslucence.com/2018/03/30/becoming-a-magician/">Becoming a magician</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>The faith of all humans conforms to the nature of their mind. All people possess faith, and whatever the nature of their faith, that is verily what they are.</p>
-
-  <p>– <a href="https://www.holy-bhagavad-gita.org/chapter/17/verse/3#:~:text=BG%2017.3%3A%20The%20faith%20of,is%20verily%20what%20they%20are.">Bhagavad Gita 17:3</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>For as he thinketh in his heart, so is he</p>
-
-  <p>– The Bible (King James Version), <a href="https://www.biblegateway.com/passage/?search=Proverbs%2023%3A7&amp;version=KJV">Proverbs 23:7</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>You want to know how to paint a perfect painting? It’s easy. Make yourself perfect and then just paint naturally. That’s the way all the experts do it. The making of a painting or the fixing of a motorcycle isn’t separate from the rest of your existence.</p>
-
-  <p>– Robert Pirsig, <a href="https://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Inquiry/dp/0060589469">Zen and the Art of Motorcycle Maintenance</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A lot of visible problems that you can&#39;t seem to solve are secretly solutions you don&#39;t want to admit to adopting to problems you don&#39;t want to admit to having.</p>&mdash; David R. MacIver (@DRMacIver) <a href="https://twitter.com/DRMacIver/status/1602705373152034833?ref_src=twsrc%5Etfw">December 13, 2022</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<hr />
-
-<blockquote>
-  <p>As a self-modifying system, you directly modify all of reality when you act. Each thought, intention, reaction, emotion, dream, wish, etc directly modifies the state of the entire universe by virtue of you being part of the entire universe</p>
-
-  <p>– Loophole Kid, <a href="https://loopholekid.com/practical-philosophy-for-flourishing/">A Practical Philosophy for Flourishing</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i hate how well asking myself &quot;if i had 10x the agency i have what would i do&quot; works</p>&mdash; Nick (@nickcammarata) <a href="https://twitter.com/nickcammarata/status/1876749765951562209?ref_src=twsrc%5Etfw">January 7, 2025</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<hr />
-
-<blockquote>
-  <p>Everything around you that you call life was made up by people that were no smarter than you. And you can change it, you can influence it. You can build your own things that other people can use. And the minute that you understand that you can poke life, and actually something will, you know, if you push in, something will pop out the other side, that you can - you can - change it. You can mold it. That’s maybe the most important thing… is to shake off this erroneous notion that life is there and you’re just going to live in it. Versus embrace it. Change it. Improve it. Make your mark upon it.</p>
-
-  <p>– <a href="https://www.youtube.com/watch?v=kYfNvmF0Bqw">Steve Jobs</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>Sometimes magic is just someone spending more time on something than anyone else might reasonably expect.</p>
-
-  <p>– <a href="https://www.goodreads.com/quotes/6641527-sometimes-magic-is-just-someone-spending-more-time-on-something">Teller</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>When you can skillfully control, deepen, and direct your attention, you may discover that life is easier and more malleable than it seemed.</p>
-
-  <p>– Nadia Asparouhova, <a href="https://nadia.xyz/jhanas">How to do the jhanas</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-
-  <p>It was very clear that magic was real. What Scooter [Braun] always used to say is “you have to believe.” Again, with my cynicism at that point in my life, I was an asshole 19 year old, I said “oh this is just marketing.” And he was like “no. You have to believe.”</p>
-
-  <p>And then I left there and was like why isn’t any of this stuff working? Oh — because I didn’t believe in it.</p>
-
-  <p>– John Fio, <a href="https://joincolossus.com/episode/fiorentino-creating-magic-for-consumers/">Creating Magic for Consumers</a></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>We construct, through our way of looking, what we experience… Sooner or later we come to realize that perhaps the most fundamental, and most fundamentally important, fact about any experience is that it depends on the way of looking.</p>
-
-  <p>…</p>
-
-  <p>Other than what we can perceive through different ways of looking, there is no ‘objective reality’ existing independently; and there is no way of looking that reveals some ‘objective reality’.</p>
-
-  <p>– Rob Burbea, <a href="https://www.amazon.com/Seeing-That-Frees-Robert-Burbea/dp/0992848911">Seeing that Frees</a></p>
-</blockquote>
-
-<p>(For more on this last idea, see my piece on <a href="/ways-of-looking">Ways of Looking</a>.)</p>
-
-<hr />
-
-<p>Have any posts, quotes, or excerpts I should add? <a href="mailto:andy@andybromberg.com">Email me</a>.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/illuminated-blog">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/illuminated-blog">The illuminated blog</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/ways-of-looking">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/ways-of-looking">Ways of Looking: a brief guide to ending suffering</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Posts, quotes, and excerpts on the malleability of what we often consider to be the immutable reality around us.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-21-reality-malleability.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-21-reality-malleability.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[On the difference between pain and suffering, and the path towards eliminating all of the latter.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-22-ways-of-looking.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-22-ways-of-looking.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
