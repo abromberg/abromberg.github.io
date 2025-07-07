@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-07T09:20:24-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">interface0: early July update</title><link href="https://andybromberg.com/interface0-early-july-update" rel="alternate" type="text/html" title="interface0: early July update" /><published>2025-07-06T09:00:00-07:00</published><updated>2025-07-06T09:00:00-07:00</updated><id>https://andybromberg.com/interface0-early-july-update</id><content type="html" xml:base="https://andybromberg.com/interface0-early-july-update"><![CDATA[<p><a href="https://interface0.com">interface0</a> continues to be my preferred way to interact with LLMs (and increasingly a few of my friends’ preference as well!). Here’s some of what I shipped since the <a href="/interface0-intro">previous post</a>:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-07T14:35:42-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">UWoL: Theory of Constraints</title><link href="https://andybromberg.com/uwol/theory-of-constraints" rel="alternate" type="text/html" title="UWoL: Theory of Constraints" /><published>2025-07-07T09:00:00-07:00</published><updated>2025-07-07T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-theory-of-constraints</id><content type="html" xml:base="https://andybromberg.com/uwol/theory-of-constraints"><![CDATA[<div class="disclaimer-box">
+  <span class="disclaimer-box-title">Useful Ways of Looking</span>
+  <div class="disclaimer-box-content">
+    <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
+
+  </div>
+</div>
+
+<h2 id="in-brief">In brief</h2>
+
+<p>To solve any problem: 1) properly define your goal, 2) clearly outline the system that will dictate the achievement of that goal, 3) determine the bottleneck of that system, and 4) address the bottleneck — and only the bottleneck.</p>
+
+<h2 id="more-context">More context</h2>
+
+<p>Eliyahu Goldratt’s Theory of Constraints — first covered in his book <a href="https://amzn.to/4liXAdu">The Goal</a> — is superficially about how to generate more output from a factory floor. But the approach can be used for <em>any</em> problem you’re facing.</p>
+
+<p>First, define the outcome you want. Without a specific, clear goal, optimization efforts are for naught.</p>
+
+<p>Second, outline the “system” that dictates the achievement of that goal. In the case of a factory with a goal of throughput, it is relatively clear: there are a series of stations which each perform a role in the creation of the product. You can then estimate the throughput of each of those stations.</p>
+
+<p>You could do the same for software product development (definition to design to engineering to QA), or marketing (campaign concepting to asset creation to placement to measurement), or anything else in your life where there is a goal (perhaps gaining muscle: fueling your body to working out to recovering).</p>
+
+<p>Once you have a clear understanding of the system and its components — this is the crux of the approach — define the bottleneck (also known as a “constraint”). In nearly every single system, <em>there is only one bottleneck</em>.</p>
+
+<p>The key insight behind the Theory of Constraints is this: <strong>improving anything other than the bottleneck will have no positive impact on the goal.</strong></p>
+
+<p>This may seem unintuitive (there are several such realizations in this theory), but it holds.</p>
+
+<p>Unfortunately, we are often tempted to improve lots of things that are not bottlenecks.</p>
+
+<p>If another part of the system is underperforming, shouldn’t we fix it? The Theory of Constraints suggests that while you can, <em>it will not get you any closer to your goal.</em></p>
+
+<p>If there’s low-hanging fruit, doesn’t it make sense to pick it up? The Theory of Constraints suggests that it would be a waste of even the little effort.</p>
+
+<p>In short: <strong>the only thing that matters is finding the bottleneck and fixing it.</strong> Doing so first requires understanding that a single bottleneck is the direct limiting factor and cause of your current throughput. Then you must identify that bottleneck.</p>
+
+<p>Once you improve one bottleneck, another may arise (or the same bottleneck may remain). There is deeper consideration in Goldratt’s books (beyond the scope of this post) about where you <em>want</em> the bottlenecks to be.</p>
+
+<p>There are three primary ways of fixing a bottleneck, and are best considered in this order (these are part of Goldratt’s “five focusing steps”):</p>
+<ol>
+  <li>Optimize the constraint: make sure it is being executed efficiently. Don’t let it be “idle” if at all possible.</li>
+  <li>Subordinate everything else to the constraint: don’t let other parts of the system cause problems for the constraint. For example, make sure there is a “buffer” of work waiting for the constraint from the previous step. And ensure that work gets sent “back” to the constraint as infrequently as possible.</li>
+  <li>Add more capacity to the constraint: as a last resort, you can try to simply add more horsepower to the constraint.</li>
+</ol>
+
+<p>There is more to the theory, available in the readings below. But the heart of this Way of Looking is that whenever you have a “problem” or an outcome you want to improve, you should sit down and calmly, logically follow these steps:</p>
+
+<ol>
+  <li>Clearly identify your goal in terms of an output metric</li>
+  <li>Understand the steps of the “system” that leads to that output</li>
+  <li>Identify where the bottleneck is in that system</li>
+  <li><strong>Do nothing other than improve that bottleneck</strong> — by optimizing it, subordinating other parts of the system to it, or adding more capacity</li>
+  <li>Sit back and re-evaluate, and begin the cycle again</li>
+</ol>
+
+<h2 id="further-readings">Further readings</h2>
+
+<p><a href="https://amzn.to/4liXAdu">The Goal</a> by Eliyahu Goldratt is exceptional and highly readable. A business book that is worth every minute! His other books are great too.</p>
+
+<p>The best article I have found on the Theory of Constraints is <a href="https://criticalfallibilism.com/introduction-to-theory-of-constraints">this one from Elliot Temple</a>.</p>
+
+<p>Tiago Forte two a <a href="https://fortelabs.com/blog/theory-of-constraints-101-table-of-contents/">good layman’s series</a> too.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/interface0-early-july-update">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/interface0-early-july-update">interface0: early July update</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[To solve any problem: 1) properly define your goal, 2) clearly outline the system that will dictate the achievement of that goal, 3) determine the bottleneck of that system, and 4) address the bottleneck — and only the bottleneck.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-07-07-uwol-theory-of-constraints.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-07-07-uwol-theory-of-constraints.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">interface0: early July update</title><link href="https://andybromberg.com/interface0-early-july-update" rel="alternate" type="text/html" title="interface0: early July update" /><published>2025-07-06T09:00:00-07:00</published><updated>2025-07-06T09:00:00-07:00</updated><id>https://andybromberg.com/interface0-early-july-update</id><content type="html" xml:base="https://andybromberg.com/interface0-early-july-update"><![CDATA[<p><a href="https://interface0.com">interface0</a> continues to be my preferred way to interact with LLMs (and increasingly a few of my friends’ preference as well!). Here’s some of what I shipped since the <a href="/interface0-intro">previous post</a>:</p>
 
 <h3 id="chat-sharing">Chat sharing</h3>
 
@@ -67,11 +166,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/uwol/theory-of-constraints">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/uwol/theory-of-constraints">UWoL: Theory of Constraints</a>
     
   </div>
 </nav>
@@ -2012,587 +2115,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this time years from now and recall how the ground was shifting.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-18-log-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-18-log-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Ways of Looking: a brief guide to ending suffering</title><link href="https://andybromberg.com/ways-of-looking" rel="alternate" type="text/html" title="Ways of Looking: a brief guide to ending suffering" /><published>2025-04-22T11:00:00-07:00</published><updated>2025-04-22T11:00:00-07:00</updated><id>https://andybromberg.com/ways-of-looking</id><content type="html" xml:base="https://andybromberg.com/ways-of-looking"><![CDATA[<h2 id="what-is-suffering">What is suffering?</h2>
-
-<p>Before we try to end our suffering, we should first ask ourselves: what <em>is</em> this thing we’re seeking to end?</p>
-
-<p>In colloquial English, we use “pain and suffering” almost as a <a href="https://en.wikipedia.org/wiki/Legal_doublet">legal doublet</a> like “null and void” or “cease and desist” or “each and every,” where two synonyms are paired for emphasis. Null is void; to cease is to desist; pain is suffering.</p>
-
-<p>But what if “pain” and “suffering” were in fact two very different experiences?</p>
-
-<p>Well: they are, and that distinction gives us a first step toward unlocking a life more free of the latter.</p>
-
-<p>Imagine stubbing your toe.</p>
-
-<p>There’s an immediate <em>physical</em> throbbing sensation, radiating discomfort from your toe up through your body.</p>
-
-<p>But then — quickly thereafter — there’s an ensuing <em>mental</em> experience of anguish and aversion <em>to</em> that physical sensation. Perhaps you think “gosh I’m an idiot, why did I do that?” or “oh no, that’s going to hurt so much on my run later.”</p>
-
-<p>The first sensation — the physical experience — is the pain.</p>
-
-<p>The second — the mental layering — is the suffering.</p>
-
-<p>You can think of these as “two darts.” When something happens to you, you are hit by a first dart of painful sensation. And then a second dart of suffering lands.</p>
-
-<p>The dart analogy comes from the Buddha, in the <em>Sallattha Sutta</em><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Usually numbered SN 36:6, preserved in the <em>Vedanā-saṃyutta</em> (suttas on feeling) of the <em>Salāyatana-vagga</em> (chapter on the six senses) inside the <em>Saṃyutta Nikāya</em> (linked discourses). I’ve quoted <a href="https://suttacentral.net/sn36.6/en/bodhi?lang=en&amp;reference=none&amp;highlight=false">Bhikkhu Bodhi’s translation</a> here, but also quite like <a href="https://ancient-buddhist-texts.net/Reference/PTS/Mrs-Rhys-Davids-The-Book-of-Kindred-Sayings-04.pdf">C. A. F. Rhys Davids’ earlier version</a> (see <em>§ 6 (6). By the barb.</em> on PDF page 148 / original page 139).</span>, or the “Dart Discourse:”</p>
-
-<blockquote>
-  <p>… when the uninstructed worldling is being contacted by a painful feeling, he sorrows, grieves, and laments; he weeps beating his breast and becomes distraught. He feels two feelings—a bodily one and a mental one.</p>
-
-  <p>Suppose they were to strike a man with a dart, and then they would strike him immediately afterwards with a second dart, so that the man would feel a feeling caused by two darts.</p>
-
-  <p>So too, when the uninstructed worldling is being contacted by a painful feeling … he feels two feelings—a bodily one and a mental one.</p>
-</blockquote>
-
-<p>We, the “uninstructed worldlings,”<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">I didn’t call you that, the Buddha did.</span> suffer these two darts. A physical pain, and then a mental suffering layered on top of it.</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/ways-of-looking/dart-800-1ecb3b98b.webp 800w, /assets/images/generated/ways-of-looking/dart-1000-1ecb3b98b.webp 1000w, /assets/images/generated/ways-of-looking/dart-1200-1ecb3b98b.webp 1200w, /assets/images/generated/ways-of-looking/dart-1360-1ecb3b98b.webp 1360w" type="image/webp" /><source srcset="/assets/images/generated/ways-of-looking/dart-800-a4ab64955.png 800w, /assets/images/generated/ways-of-looking/dart-1000-a4ab64955.png 1000w, /assets/images/generated/ways-of-looking/dart-1200-a4ab64955.png 1200w, /assets/images/generated/ways-of-looking/dart-1360-a4ab64955.png 1360w" type="image/png" /><img src="/assets/images/generated/ways-of-looking/dart-800-a4ab64955.png" width="1360" height="583" /></picture>
-
-<p>And these Buddhist texts suggest that while the first dart of pain may be an unavoidable part of our embodied lives, the second dart of suffering is entirely preventable.</p>
-
-<p>But how exactly do we get rid of this tendency towards suffering?</p>
-
-<hr />
-
-<p>Now: I don’t claim to be free of suffering myself, and so maybe you should just go read the Pāli canon or the Bible or Marcus Aurelius or whatever other original wisdom text speaks to your own sensibilities on waking up and compassion.</p>
-
-<p>But I <em>do</em> suffer a whole lot less than I used to, and what follows is my attempt to concisely break down the idea that allowed that to be so.</p>
-
-<h2 id="on-ways-of-looking">On Ways of Looking</h2>
-
-<blockquote>
-  <p>We construct, through our way of looking, what we experience… Sooner or later we come to realize that perhaps the most fundamental, and most fundamentally important, fact about any experience is that it depends on the way of looking.</p>
-</blockquote>
-
-<p>That quote — the core of this essay — comes from Buddhist teacher Rob Burbea’s exceptional book, <em>Seeing that Frees,</em> where he suggests that our “ways of looking” at the world have the capacity to change our experience of reality, and, in so doing, relieve ourselves of suffering.</p>
-
-<p>Back to Burbea (emphasis mine):</p>
-
-<blockquote>
-  <p>[The] mode of approach of actively cultivating a range of skilful ways of looking is premised, then, on the understanding that <strong>we are always and inevitably engaged in some way of looking at or relating to experience anyway. But we are not usually aware of this fact.</strong> Nor are we usually aware of how we are looking – what exactly the view is – at any time.</p>
-</blockquote>
-
-<p>When we say “ways of looking,” we’re referring to a broad idea: the <em>entire</em> lens — assumptions, beliefs, perspectives, perceptions — that together fabricate our perceived reality. And as Burbea suggests, we are <em>always</em> using one, whether we like it or not.</p>
-
-<p>Thankfully, once we recognize this, we can <em>choose</em> our ways of looking skillfully and purposefully and specifically for the moment. Over time, we gain new ways of looking, adding to our toolbox. We may apply certain ways of looking broadly, and others narrowly; some we may return to often; others may not suit us.</p>
-
-<p>This may begin to sound like the trite advice we hear so often: to “stay positive” or “change your attitude” or “use a growth mindset.” But we’re going on a more radical exploration — one that suggests that <em>all</em> suffering and problems can disintegrate once you recognize that <em>reality itself</em> depends on the way you are looking at it.</p>
-
-<hr />
-
-<p>So, what is a way of looking? Burbea suggests:</p>
-
-<blockquote>
-  <p>Other than what we can perceive through different ways of looking, there is no ‘objective reality’ existing independently; and there is no way of looking that reveals some ‘objective reality’.</p>
-</blockquote>
-
-<p>This may seem crazy (“there’s plenty of objective reality! The chair I’m sitting in objectively exists!”), but bear with me. He continues:</p>
-
-<blockquote>
-  <p>Generally speaking, a full conviction that all this is the case will only be available through the deepening realizations which come mostly as emptiness practices progress. It must be pointed out, however, that all that is needed right now is an acknowledgment that different ways of looking are, at least sometimes, possible.</p>
-</blockquote>
-
-<p>Burbea’s teaching here are about the Buddhist idea of “emptiness” — that phenomena lack <em>inherent</em> essence. That they arise dependent on one another, shaped by conceptual labels.</p>
-
-<p>The chair you are sitting in is not <em>inherently</em> a chair — in fact, there’s no <em>inherent</em> meaning of “chair” at all! The concept of a “chair” only arises dependent on the concept of “sit.”<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote"><strong><a href="https://en.wiktionary.org/wiki/chair">chair</a></strong> [châr] <em>n.</em> an item of furniture used to sit on or in, comprising a seat, legs or wheels, back, and sometimes arm rests, for use by one person.<br /><br />And so “chair” then <em>also</em> depends on “furniture,” “seat,” “back,” “person”…</span></p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/ways-of-looking/chair-800-a48ce085e.webp 800w, /assets/images/generated/ways-of-looking/chair-1000-a48ce085e.webp 1000w, /assets/images/generated/ways-of-looking/chair-1200-a48ce085e.webp 1200w, /assets/images/generated/ways-of-looking/chair-1360-a48ce085e.webp 1360w" type="image/webp" /><source srcset="/assets/images/generated/ways-of-looking/chair-800-aed900689.png 800w, /assets/images/generated/ways-of-looking/chair-1000-aed900689.png 1000w, /assets/images/generated/ways-of-looking/chair-1200-aed900689.png 1200w, /assets/images/generated/ways-of-looking/chair-1360-aed900689.png 1360w" type="image/png" /><img src="/assets/images/generated/ways-of-looking/chair-800-aed900689.png" width="1360" height="629" /></picture>
-
-<p>But then “sit” itself arises dependent on the concept of a position where our butt is our primary point of contact with a supporting surface.</p>
-
-<p>But then that concept arises dependent on the concepts of “butt” and “primary point of contact” and “supporting surface…”</p>
-
-<p>It’s <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">turtles all the way down</a>. The chain of dependent arising never ends.<label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle" /><span class="sidenote">Note here that we aren’t suggesting (for now) that the chair doesn’t <em>exist</em> — simply that it is “empty” of “<em>inherent essence.</em>” The essence of “chair-ness” doesn’t exist on its own, even if you can, in fact, sit in one.</span></p>
-
-<p>“Sure,” you may say, “maybe ‘chair’ isn’t an inherent concept. But ‘object’ is — the chair is a <em>object</em>.”</p>
-
-<p>And to this, too, I say: only inasmuch as the concept of “an object” exists — which itself arises dependent on the idea of boundaries between “things” and “space,” and — more importantly — on a specific way of looking.</p>
-
-<p>You see: yes, that chair <em>could</em> be looked at as an object. But it could also be looked at as just a drop in the ocean of “the furniture in this room,” or as an ocean itself of drops of “many smaller beams and surfaces made of plastic or metal or wood fused together.”</p>
-
-<p><em>It all depends on the way of looking. Because the phenomena themselves are empty of “meaning,” we fabricate — through our way of looking — our perceived “reality.”</em></p>
-
-<p>And most of the time, we are unaware of our current way of looking.</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/ways-of-looking/treachery-buddhism-800-0321fcad5.webp 800w, /assets/images/generated/ways-of-looking/treachery-buddhism-1000-0321fcad5.webp 1000w, /assets/images/generated/ways-of-looking/treachery-buddhism-1200-0321fcad5.webp 1200w, /assets/images/generated/ways-of-looking/treachery-buddhism-1360-0321fcad5.webp 1360w" type="image/webp" /><source srcset="/assets/images/generated/ways-of-looking/treachery-buddhism-800-69588e8dd.png 800w, /assets/images/generated/ways-of-looking/treachery-buddhism-1000-69588e8dd.png 1000w, /assets/images/generated/ways-of-looking/treachery-buddhism-1200-69588e8dd.png 1200w, /assets/images/generated/ways-of-looking/treachery-buddhism-1360-69588e8dd.png 1360w" type="image/png" /><img src="/assets/images/generated/ways-of-looking/treachery-buddhism-800-69588e8dd.png" width="1360" height="622" /></picture>
-
-<p>I know the Buddhist angle isn’t everyone’s thing. But they’re not the only ones who have glimpsed this idea:</p>
-
-<div class="expandable-paragraphs" data-total-paragraphs="10" data-initial-count="1" data-item-name="perspective">
-  <span class="expandable-paragraphs-title">Different Traditions, Same Insight</span>
-  <div class="expandable-paragraphs-content">
-    
-      
-        <div class="expandable-paragraph"><p>Quantum physicist John Wheeler argues that we live in a ‘participatory universe’ and that the observer is not separate from what is observed — our measurement (or way of looking) defines what seems to happen.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Ancient Greek Pyrrhonian skeptics advocated for suspending all judgement on the true nature of things, realizing that any appearance can be challenged or changed when seen from a different perspective.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Psychologist Jean Piaget put forth the theory that the mind actively constructs its own reality, rather than passively mirroring it. He observed how children’s conceptual frameworks evolve and fundamentally change what appears ‘real’ to them.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Neuroscientist V.S. Ramachandran’s work revealed how the brain invents details to fit internal expectations (or, perhaps, “ways of looking.”). His work with phantom limbs and optical illusions showed that what we perceive isn’t always in direct contact with reality.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The philosopher Immanuel Kant wrote of the <em>noumenon</em> (the ‘thing-in-itself’) and the <em>phenomenon</em> (how it appears to us), arguing that it’s impossible for us to access any unfiltered thing — we only get our mind’s representation of it.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Jewish mystics — Kabbalists — talk of <em>Ein Sof</em> and the world as emanations of layered illusions, or ‘veils,’ and how reality is only perceived as filtered through vessels — ways of looking — called Sefirot.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Stephen Wolfram’s “observer theory” proposes that physics itself cannot be disentangled from the nature of us as observers, and that our observational nature  is critical even in determining the most fundamental laws we attribute to the universe.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Hindu Advaita Vedanta leans on the concept of Māyā, or illusion: that the phenomenal world appears distinct and real, but is ultimately just a mental and sensory construction.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Byron Katie's “The Work” asks four questions of your perception of each experience, culminating in “who would you be without that thought?” and then prompting you to experience it differently by inverting your beliefs.</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Biblical Book of Job moves from one lens to another on the same situation — Job’s moral-ledger-based bewilderment (‘why hasn’t virtue earned reward?’), his friends’ retribution calculus (‘your suffering means you must have sinned’), and ultimately God’s whirlwind responses revealing the insufficiency of any mortal viewpoint to grasp the full story as He sees it.</p>
-</div>
-      
-    
-  </div>
-  
-  
-    <button class="expandable-paragraphs-button" aria-expanded="false" aria-controls="expandable-paragraphs-content">
-      <span class="expandable-paragraphs-button-text">Show another perspective (1/10)</span>
-      <i class="fa fa-plus-circle"></i>
-    </button>
-  
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const widgets = document.querySelectorAll('.expandable-paragraphs');
-    
-    widgets.forEach(widget => {
-      const button = widget.querySelector('.expandable-paragraphs-button');
-      const hiddenParagraphs = Array.from(widget.querySelectorAll('.expandable-paragraph.visually-hidden'));
-      let currentIndex = 0;
-      const totalParagraphs = widget.getAttribute('data-total-paragraphs');
-      const initialCount = parseInt(widget.getAttribute('data-initial-count'), 10);
-      const itemName = widget.getAttribute('data-item-name');
-      
-      if (button && hiddenParagraphs.length > 0) {
-        // Set initial button text
-        const buttonText = button.querySelector('.expandable-paragraphs-button-text');
-        buttonText.textContent = `Show another ${itemName} (${initialCount}/${totalParagraphs})`;
-        
-        button.addEventListener('click', function() {
-          if (currentIndex < hiddenParagraphs.length) {
-            // Show the next hidden paragraph
-            const paragraph = hiddenParagraphs[currentIndex];
-            paragraph.classList.remove('visually-hidden');
-            paragraph.classList.add('fade-in');
-            paragraph.setAttribute('aria-hidden', 'false');
-            
-            currentIndex++;
-            
-            // Update button text
-            buttonText.textContent = `Show another ${itemName} (${initialCount + currentIndex}/${totalParagraphs})`;
-            
-            // Update ARIA attributes
-            button.setAttribute('aria-expanded', currentIndex === hiddenParagraphs.length ? 'true' : 'false');
-            
-            if (currentIndex >= hiddenParagraphs.length) {
-              button.style.display = 'none';
-            }
-          }
-        });
-      }
-    });
-  });
-</script>
-
-<p>These are, at some level, all pointers at the same idea: that in every moment, we are carrying a “way of looking” that is the entire lens — conscious and unconscious — through which we are fabricating our perceived experience.</p>
-
-<h2 id="a-return-to-suffering">A return to suffering</h2>
-
-<p>“Fine,” you say, “I’ll accept at an abstract level that our perceived reality is always mediated by some <em>way of looking.</em>”</p>
-
-<p>But how, then, does this idea relieve us of suffering in our day-to-day lives?</p>
-
-<p>It turns out that suffering — that pesky second dart we’re seeking to drop — is fabricated by our minds, based on our interpretation of the raw data — the first dart — coming in.</p>
-
-<p>We <em>manufacture</em> suffering from raw experience. We stub our toe, and that experience is seen through a mix of assumptions, beliefs, perceptions — a way of looking. That way of looking then causes suffering to arise.</p>
-
-<p>A lifetime of walking into stationary objects creates a suffering reaction of “I am <em>so</em> clumsy, why do I do that?”</p>
-
-<p>An intense attachment to your performance in an upcoming race this weekend generates a suffering reaction of frustration and fear.</p>
-
-<p>We’re pretty creative beings, though, and we have the ability to create suffering out of much more than just direct pain.</p>
-
-<p>We can create suffering from anticipation — you get an evening message from your boss “can we connect tomorrow at 10am?” — and immediately spiral into suffering in aversion to the future pain of being fired — which may not even happen.</p>
-
-<p>We can create suffering from chasing pleasure — maybe you’re craving a fun night out and it isn’t as good as you imagined, and you suffer as a result of those expectations; or maybe you even have a great vacation but then it fades away and you sufferingly miss it (“why aren’t I still there?”).</p>
-
-<p>But in all these situation, we’ve <em>manufactured</em> suffering from raw experience. Sensory data comes in, we process it in a certain manner through a certain way of looking (known or unknown), and suffering emerges as a function of that.</p>
-
-<p>To go back to the original Burbea quote, now with more context:</p>
-
-<blockquote>
-  <p>We construct, through our way of looking, what we experience… Sooner or later we come to realize that perhaps the most fundamental, and most fundamentally important, fact about any experience is that it depends on the way of looking.</p>
-</blockquote>
-
-<h2 id="dropping-darts-on-demand">Dropping darts on demand</h2>
-
-<p>We’re saying that pain is raw data, and suffering is the mental narrative that judges, clings, or resists that data — and that there is no suffering apart from that. Which means: suffering never arises from events themselves; it arises from the way those events are seen.</p>
-
-<p>And if suffering is a reaction made out of interpretation, fully contained within our minds, then it doesn’t exist absent <em>us</em> and our perspective. It’s the result of a way of looking that is aversive, grasping, or fearful.</p>
-
-<p>If suffering does indeed come from the way of looking, and any specific way of looking is optional, then so too is the suffering.</p>
-
-<p>But knowing this in theory doesn’t make it easy. Most of the time, we don’t even <em>notice</em> we’re looking through a lens, let alone choose it.</p>
-
-<p>The move, then — the move that frees you — is to notice the lens, recognize what it’s doing, and deliberately switch to one that hurts less. It’s not magic. It’s not denial. It’s simply skillful seeing.</p>
-
-<p>The <em>most</em> skillful way to do so is to be able to <em>expand</em> the time between raw data coming in and your reaction to that data. This is, in some sense, what is meant by “awareness practice” — the cultivation of spaciousness between stimulus and response, where you can notice the default lens before it locks in.</p>
-
-<p>If you can sit in that space between data and reaction, you can rifle through your arsenal of lenses to pick the one most apropos before a suffering reaction ever surfaces.</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/ways-of-looking/kaleidescope-800-54d4e178b.webp 800w, /assets/images/generated/ways-of-looking/kaleidescope-1000-54d4e178b.webp 1000w, /assets/images/generated/ways-of-looking/kaleidescope-1200-54d4e178b.webp 1200w, /assets/images/generated/ways-of-looking/kaleidescope-1360-54d4e178b.webp 1360w" type="image/webp" /><source srcset="/assets/images/generated/ways-of-looking/kaleidescope-800-636ddda77.png 800w, /assets/images/generated/ways-of-looking/kaleidescope-1000-636ddda77.png 1000w, /assets/images/generated/ways-of-looking/kaleidescope-1200-636ddda77.png 1200w, /assets/images/generated/ways-of-looking/kaleidescope-1360-636ddda77.png 1360w" type="image/png" /><img src="/assets/images/generated/ways-of-looking/kaleidescope-800-636ddda77.png" width="1360" height="654" /></picture>
-
-<p>Getting to that point takes practice.</p>
-
-<p>But even if you haven’t attained that nonreactive ability yet, this idea can still unlock a dramatic decrease in your suffering.</p>
-
-<p>The path is simple:</p>
-<ul>
-  <li>First, recognize that your current suffering is caused by a way of looking (probably an unintentional, unskillful one).</li>
-  <li>Second, identify a way of looking that would not cause such suffering.</li>
-  <li>Third, skillfully choose to use that way of looking instead.</li>
-</ul>
-
-<p>It sounds easy, and perhaps even obvious.</p>
-
-<p>And, yes, everyone does this <em>at some level.</em> We’ve all been told to look at a situation positively rather than negatively (“getting fired could be a great opportunity for you to do what you’re really passionate about!”) or “take a growth mindset,” or shift our perspective one way or another.</p>
-
-<p>Those <em>are</em> all applications of this idea of skillfully using ways of looking to reduce suffering. But the <em>degree</em> to which this can be used serves as a constant source of surprise to me.</p>
-
-<p>The claim I’m making here is that I (and the Buddha, so I’m on decent authority) believe that <em>all suffering</em> can be eradicated in this way.</p>
-
-<p>I recognize this is a strong claim. But you don’t need to take it on faith or authority right away. All I’d ask you to notice is that at least <em>some</em> of your current suffering can dissolve by taking this approach. And then maybe more of it could, too.</p>
-
-<p>But also, if you doubt this, try to imagine a suffering that <em>doesn’t</em> involve a perspective — even intense grief or rage requires a way of looking at what’s happening: as permanent, as unfair, as happening to <em>me</em>. I’m not saying that makes it easy. Some ways of looking are deeply embedded, and it can take time — and willingness — to let them go.</p>
-
-<p>But when you’re ready, this path remains open. Pain may still visit, but suffering doesn’t have to stay.</p>
-
-<p>(And for what it’s worth: I’ve suffered a lot less over time, and I can tell you — it’s worth it.)</p>
-
-<p>So, in practice:</p>
-
-<h3 id="notice-the-dart">Notice the dart</h3>
-
-<p>When you feel suffering — fear, contraction, clenching, urgency, despair — notice that.</p>
-
-<p>That suffering is arising from some way of looking at some raw data.</p>
-
-<p>Often, amusingly, the hardest part is <em>wanting</em> to drop the suffering. We identify with suffering. We sometimes <em>want</em> things to be hard. We cling to the idea of a trial or tribulation we are moving through.</p>
-
-<p>But if you do want to be free of it — and I’m not telling you that you have to be — the first step is to notice it.</p>
-
-<h3 id="name-the-lens">Name the lens</h3>
-
-<p>Ask yourself: what is the premise of this feeling? What story am I telling myself? What am <em>I</em> doing to create this suffering in myself? What am I making this mean?</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/ways-of-looking/goggles-800-cbc1a0958.webp 800w, /assets/images/generated/ways-of-looking/goggles-1000-cbc1a0958.webp 1000w, /assets/images/generated/ways-of-looking/goggles-1200-cbc1a0958.webp 1200w, /assets/images/generated/ways-of-looking/goggles-1360-cbc1a0958.webp 1360w" type="image/webp" /><source srcset="/assets/images/generated/ways-of-looking/goggles-800-290b1ecaa.png 800w, /assets/images/generated/ways-of-looking/goggles-1000-290b1ecaa.png 1000w, /assets/images/generated/ways-of-looking/goggles-1200-290b1ecaa.png 1200w, /assets/images/generated/ways-of-looking/goggles-1360-290b1ecaa.png 1360w" type="image/png" /><img src="/assets/images/generated/ways-of-looking/goggles-800-290b1ecaa.png" width="1360" height="611" /></picture>
-
-<p>Naming the lens requires uncovering the assumptions and implicit beliefs that make up your current way of looking. This too takes practice.</p>
-
-<p>Some common places to look:</p>
-<ul>
-  <li>ideas that include the word “should.” “They shouldn’t do things like that.”</li>
-  <li>beliefs around permanence or solidity, seeing fleeting experiences or phenomena as fixed and enduring. “I can’t imagine life without this pain.”</li>
-  <li>excess self-identification, claiming experiences as “mine” or “me” or “I.” “I’m failing,” or “why is this happening to me?”</li>
-</ul>
-
-<p>There is no definite list of these suffering-creating ways of looking. But just about every wisdom tradition addresses them in some way. If you’re curious, I’d look at:</p>
-
-<div class="expandable-paragraphs" data-total-paragraphs="7" data-initial-count="1" data-item-name="tradition">
-  <span class="expandable-paragraphs-title">References on flawed lenses</span>
-  <div class="expandable-paragraphs-content">
-    
-      
-        <div class="expandable-paragraph"><p>The Pāli canon’s discourses on avijjā (ignorance), taṇhā (craving/averson), upādāna (clinging), vipallāsa (the four distortions), the five hindrances, plus the Brahma­jāla’s (DN 1) 62 speculative rabbit holes</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Christianity’s “deadly sins” — I like the desert monk Ponticus’ pre-Gregorian list of eight (gluttony, lust, avarice, sadness, anger, listlessness, vainglory, pride), plus the later-added envy</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>The Stoic passions that unseat reason: distress, fear, lust, delight, irrational value-judgements</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Kabbalah’s klipot — self-centered desire that occludes the light</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Islamic psychology’s lower <em>nafs</em> stages: commanding, blaming, heedlessness</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>Freud’s id-fixations, or even simply logical fallacies</p>
-</div>
-      
-    
-      
-        <div class="expandable-paragraph visually-hidden" aria-hidden="true"><p>And so many more…</p>
-</div>
-      
-    
-  </div>
-  
-  
-    <button class="expandable-paragraphs-button" aria-expanded="false" aria-controls="expandable-paragraphs-content">
-      <span class="expandable-paragraphs-button-text">Show another tradition (1/7)</span>
-      <i class="fa fa-plus-circle"></i>
-    </button>
-  
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const widgets = document.querySelectorAll('.expandable-paragraphs');
-    
-    widgets.forEach(widget => {
-      const button = widget.querySelector('.expandable-paragraphs-button');
-      const hiddenParagraphs = Array.from(widget.querySelectorAll('.expandable-paragraph.visually-hidden'));
-      let currentIndex = 0;
-      const totalParagraphs = widget.getAttribute('data-total-paragraphs');
-      const initialCount = parseInt(widget.getAttribute('data-initial-count'), 10);
-      const itemName = widget.getAttribute('data-item-name');
-      
-      if (button && hiddenParagraphs.length > 0) {
-        // Set initial button text
-        const buttonText = button.querySelector('.expandable-paragraphs-button-text');
-        buttonText.textContent = `Show another ${itemName} (${initialCount}/${totalParagraphs})`;
-        
-        button.addEventListener('click', function() {
-          if (currentIndex < hiddenParagraphs.length) {
-            // Show the next hidden paragraph
-            const paragraph = hiddenParagraphs[currentIndex];
-            paragraph.classList.remove('visually-hidden');
-            paragraph.classList.add('fade-in');
-            paragraph.setAttribute('aria-hidden', 'false');
-            
-            currentIndex++;
-            
-            // Update button text
-            buttonText.textContent = `Show another ${itemName} (${initialCount + currentIndex}/${totalParagraphs})`;
-            
-            // Update ARIA attributes
-            button.setAttribute('aria-expanded', currentIndex === hiddenParagraphs.length ? 'true' : 'false');
-            
-            if (currentIndex >= hiddenParagraphs.length) {
-              button.style.display = 'none';
-            }
-          }
-        });
-      }
-    });
-  });
-</script>
-
-<p>Pick any shelf — you’ll find the same sorts of lenses with tweaked nomenclature. And once you can name these ways of looking, they become optional.</p>
-
-<h3 id="choose-a-new-way">Choose a new Way</h3>
-
-<p>Once you know how you are creating suffering for yourself, you can choose a new way of looking, and the suffering dissolves.</p>
-
-<p>The search isn’t for the “right” way of looking — there is no “right” way (in fact, this whole <em>idea</em> is just another way of looking itself). Rather, you’re seeking a <em>useful</em> way of looking — one that reduces your suffering in a given situation.</p>
-
-<p>As Burbea says when addressing certain such temporarily-useful ways of looking:</p>
-
-<blockquote>
-  <p>These are all ways of conceiving and perceiving [that are] useful on the path to freedom. Perceivable, useful, and, as we will come to see, thoroughly empty.</p>
-</blockquote>
-
-<p>Or, on another occasion:</p>
-
-<blockquote>
-  <p>It is therefore not simply that stories are a problem and to be transcended once and for all. We are not endeavouring through practice to exist in some constant state of ‘being in the now without story’. Stories are, in fact, a finally inevitable dimension of our existence. And at an important level they matter greatly in giving our life its meanings and directions.</p>
-
-  <p>Being locked into a story, however, believing that this narrative and the fantasy of self-identity that it involves are ultimately true, with no room or freedom to story ourselves and our life differently, nor any ability to experience times of letting go of narrative ways of looking and seeing through other lenses – that is the problem.</p>
-
-  <p>What we seek, then, are both the means of recognizing the emptiness and the malleability of stories and self-views where they have been petrified, as well as ways to move, at times, out of the narrative mode so that other and more radical insights are possible.</p>
-</blockquote>
-
-<p>Some ways of looking that are often useful for relieving suffering:</p>
-<ul>
-  <li>impermanence — “this too will dissolve.” When you are clinging or dreading, recognizing the impermanence of the experience can relieve that.</li>
-  <li>loving-kindness / compassion — when you are angry at yourself or someone else (causing suffering in yourself!), intentionally flooding them with compassion can relieve that coldness</li>
-  <li>comic absurdity — when embarrassed or feeling a sort of egoic solemnity, recognizing the absurdity of it all can wipe that away</li>
-  <li>spacious awareness — zooming out and deconstructing the world in front of you into its base sensory inputs can help with a sense of overwhelm</li>
-</ul>
-
-<p>And, of course, so many more.</p>
-
-<p>When put this way, it — again — can feel trite. But we must recognize that you almost certainly already apply this idea at <em>some level</em> — the unlock is that it applies at <em>every level</em> of suffering.</p>
-
-<p>There are some set of “problems” or “suffering” which you already feel well-equipped to deal with. When a friend brings you a problem, you can often tell them exactly how to remove the suffering (“you’ll get over her by next week, just go have some fun!”).</p>
-
-<p>But the mind-expanding, suffering-relieving big idea here is that <em>literally any suffering you feel can be remediated in exactly this way</em> (if you are willing to). Once again: it’s not rocket science. All it takes is acceptance and practice.</p>
-
-<p>Any time suffering arises — no matter how severe: notice that second dart landing, recognize what way of looking you are applying that is causing the suffering to arise, and simply… swap it out.</p>
-
-<p>More from Burbea:</p>
-
-<blockquote>
-  <p>A profound realization of voidness [emptiness], perhaps more than any other means, allows us to recognize, to freely play in, and to delight in the wondrous and unique, magical and empty nature of all appearances.</p>
-</blockquote>
-
-<h3 id="feel-the-shift">Feel the shift</h3>
-
-<p>When the lens changes, suffering often drops <em>instantly.</em> It might feel like a loosening, a softening, a lightness.</p>
-
-<p>Sometimes, though, the new way of looking doesn’t “take” — and that’s okay. You can try another, or wait.</p>
-
-<p>Don’t weaponize it — “ugh, I should not be suffering!” is, well, a third dart.</p>
-
-<p>You can’t <em>fake</em> a way of looking. Slapping a “be happy” sticker on your current perception won’t do anything. It takes intention and clarity.</p>
-
-<p>And over time, you will build a toolkit of reliable, available ways of looking that work <em>for you</em>.</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/ways-of-looking/mask-off-wide-800-1c4756a37.webp 800w, /assets/images/generated/ways-of-looking/mask-off-wide-1000-1c4756a37.webp 1000w, /assets/images/generated/ways-of-looking/mask-off-wide-1200-1c4756a37.webp 1200w, /assets/images/generated/ways-of-looking/mask-off-wide-1536-1c4756a37.webp 1536w" type="image/webp" /><source srcset="/assets/images/generated/ways-of-looking/mask-off-wide-800-52999baff.png 800w, /assets/images/generated/ways-of-looking/mask-off-wide-1000-52999baff.png 1000w, /assets/images/generated/ways-of-looking/mask-off-wide-1200-52999baff.png 1200w, /assets/images/generated/ways-of-looking/mask-off-wide-1536-52999baff.png 1536w" type="image/png" /><img src="/assets/images/generated/ways-of-looking/mask-off-wide-800-52999baff.png" width="1536" height="824" /></picture>
-
-<h2 id="where-to-from-here">Where to from here?</h2>
-
-<p>There is much more to say on the topic, but I hope this has been a helpful introduction to what I expect to be a lifelong study.</p>
-
-<p>The only thing stopping you from eliminating <em>all</em> of your suffering is your belief that you can’t. There’s nothing you need to <em>add</em> to your life to remove suffering — all you need to do is remove the beliefs — the ways of looking – that are preventing you from being more free. Everything is as it should be, and it is fully possible to recognize that.</p>
-
-<p>I highly recommend reading <a href="https://www.amazon.com/Seeing-That-Frees-Robert-Burbea/dp/0992848911">Seeing that Frees</a>, the book that inspired much of this post — and which has most helped me suffer less.</p>
-
-<p>And I don’t mean “suffer less” in any sort of overdramatic way — I’m fortunate to have rarely felt a deep sense of suffering. But, to paraphrase a friend of mine, “one must still beware the little sufferings.”</p>
-
-<p>Charlie Munger once said that you should “take a simple idea and take it seriously,” and I believe this is one of them. Suffering is caused by our oft-unknown “ways of looking” at our experiences, and we are fully in control of those lenses. We can very simply notice these ways of looking and choose ones that are more fit for our goals, and for removing suffering.</p>
-
-<p>Good luck. I’ll close here with some additional ideas from Seeing that Frees which may be enjoyable jumping-off points:</p>
-
-<p><strong>On practically interacting with others</strong></p>
-
-<blockquote>
-  <p>There will be countless times when it is not only necessary, but most helpful, not to emphasize the view of emptiness. Sometimes seeing in terms of self is the most appropriate way of seeing, and the one that relieves the dukkha of a particular situation most satisfactorily.</p>
-
-  <p>We have already mentioned, for example, the importance of adopting at times the viewpoint of ourselves taking responsibility. A view of a somewhat autonomous self, with a measure of free will and choice, is usually basic to and necessary in establishing the kind of relationship with ethics that can sustain our Dharma path in a healthy way.</p>
-
-  <p>Very often too there are instances where communication, and in particular the resolution of conflict and hurt, between two people needs to be in terms of selves, and not simply because the language of self is a convenient ‘conventional shorthand’. If my friend feels hurt by me because of something I have said or done, and I respond only by reminding her that, like everyone else, she “has no self” and that she should therefore just “let it go” and “get over it”, I am hardly being sensitive, respectful, or caring.</p>
-
-  <p>Such a perspective and its expression may just be unskilful and inappropriate to the situation. It may well be that what is needed instead for the easing of the dukkha here is a view wherein two ‘selves’ talk caringly and honestly to each other, in terms of their ‘selves.’</p>
-</blockquote>
-
-<p><strong>The middle way of existence and non-existence</strong></p>
-
-<blockquote>
-  <p>The voidness of things is the ‘Middle Way’ between the assumptions of existence and non-existence, being and non-being, and it is this that needs to be understood.</p>
-</blockquote>
-
-<p><strong>On still accepting the self and phenomena</strong></p>
-
-<blockquote>
-  <p>Though all self-views and all things are fabricated, this emptiness of self and phenomena does not mean that we cannot engage with, and view in terms of, the self or any phenomenon on a conventional level. A part of the freedom that comes with any degree of realizing emptiness is a freedom to view in different ways.</p>
-</blockquote>
-
-<p><strong>On the dependence of self and phenomena</strong></p>
-
-<blockquote>
-  <p>We can see that self-construction depends on some thing being reacted to, made an issue of, or viewed in certain ways. That thing may be conceived as an inner phenomenon or an outer one, but the sense of self cannot be supported without depending on some thing or other as a kind of base. Self-construction always relies on clinging, on reactivity and view, with regard to some thing. The phenomenon thus regarded, though – just like the self-sense and self-view – is also pumped up, constructed, in the process of constructing the self. Fabrication of a thing and fabrication of the self are mutually dependent.</p>
-</blockquote>
-
-<p><strong>On the fabrication of the mind</strong></p>
-
-<blockquote>
-  <p>It is not that while everything else is fabricated by the mind, the mind itself is somehow real, a really existing basis for the fabrication. The mind, whether conceived as mental processes or ‘Awareness’ – even the awareness that we can know as vast and unperturbed, that seems natural and effortless – is also fabricated in the process. We find, in the end, that there is no ‘ground’ to fabrication.</p>
-</blockquote>
-
-<p><strong>On the fabrication of fabrication</strong></p>
-
-<blockquote>
-  <p>And as if that were not cause enough for amazement, we eventually also recognize, taking this exploration of dependent arising deeper and deeper still, that even this profound realization of the fabricated nature of all phenomena is only a relative truth. Fabrication itself is empty too. Ultimately, it turns out we cannot say that things are fabricated, nor that they are not fabricated. We cannot even say that they arise and cease, nor that they do not arise and cease. What we come to understand is that the way things truly are is beautifully beyond the capacities of our conception.</p>
-</blockquote>
-
-<p><strong>On the regressive usefulness of ways of looking</strong></p>
-
-<blockquote>
-  <p>Practising with dependent arising forms a thread, though, that can be followed to such great depths. For in doing so, insights of greater and greater profundity are progressively opened, until this thread ultimately dissolves even itself. It leads and opens beyond itself.</p>
-</blockquote>
-
-<p><strong>On practice as the way forward</strong></p>
-
-<p>(And why just reading a blog post isn’t likely to be enough…)</p>
-
-<blockquote>
-  <p>While purely scholastic approaches have their place and can have great value, it is primarily through practice that liberating insights are born and empowered. It is also mainly through practice that the fullness of the intimate connection between emptiness and dependent arising is understood.</p>
-</blockquote>
-
-<p>Now go get some practice.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/reality-malleability">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/reality-malleability">Assorted excerpts on the malleability of "reality"</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/log/ai">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/log/ai">AI Captain's Log</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[On the difference between pain and suffering, and the path towards eliminating all of the latter.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-04-22-ways-of-looking.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-04-22-ways-of-looking.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this time years from now and recall how the ground was shifting.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-18-log-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-18-log-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
