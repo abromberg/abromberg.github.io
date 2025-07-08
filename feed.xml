@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-07T14:42:08-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">UWoL: Theory of Constraints</title><link href="https://andybromberg.com/uwol/theory-of-constraints" rel="alternate" type="text/html" title="UWoL: Theory of Constraints" /><published>2025-07-07T09:00:00-07:00</published><updated>2025-07-07T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-theory-of-constraints</id><content type="html" xml:base="https://andybromberg.com/uwol/theory-of-constraints"><![CDATA[<div class="disclaimer-box">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-07-08T09:22:34-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">UWoL: OODA loops</title><link href="https://andybromberg.com/uwol/ooda-loops" rel="alternate" type="text/html" title="UWoL: OODA loops" /><published>2025-07-08T09:00:00-07:00</published><updated>2025-07-08T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-ooda-loops</id><content type="html" xml:base="https://andybromberg.com/uwol/ooda-loops"><![CDATA[<div class="disclaimer-box">
+  <span class="disclaimer-box-title">Useful Ways of Looking</span>
+  <div class="disclaimer-box-content">
+    <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
+
+  </div>
+</div>
+
+<h2 id="in-brief">In brief</h2>
+
+<p>Loop through Observing, Orienting, Deciding, and Acting — with a special emphasis on Orientation, and on cycling back to it as quickly as possible; it works for fighter pilots and can work for you, too.</p>
+
+<h2 id="more-context">More context</h2>
+
+<p>Colonel John Boyd’s “OODA loop” approach is a decision-making construct originally developed for combat operations, but which can be equally applied to any decision process.</p>
+
+<p>The heart of the concept is to loop through four steps: <strong>Observe</strong>, <strong>Orient</strong>, <strong>Decide</strong>, and <strong>Act</strong>.</p>
+
+<p>First, you Observe the situation, collecting data about the environment and circumstances.</p>
+
+<p>Then you feed this forward to the most critical step — Orienting — where you generate your mental model of (or, perhaps, Way of Looking at) what’s going on. You include the observations, your experience, analysis, intuition, doctrine, culture — everything.</p>
+
+<p>Canonically, you then create a hypothesis of the correct approach and Decide. And finally, you Act, and then loop back to Observation as quickly as you can.</p>
+
+<p>In practice, though, the Action often flows almost automatically once the Orientation is right. There’s little thought or hypothesis-making required if you are corrected Oriented. Boyd called this “implicit guidance &amp; control.”</p>
+
+<p>A key insight of the OODA loop is that <strong>you want to cycle through it as quickly as possible</strong>. However, the reason for this is commonly misunderstood.</p>
+
+<p>Most people assume you want fast loops so you can take as many Actions as possible. More Actions is more progress, right?</p>
+
+<p>But as we’ve covered in sister <a href="/uwol" class="uwol-series-badge uwol-series-badge-inline" title="the Useful Ways of Looking series">UWoL</a> pieces on <a href="/uwol/theory-of-constraints">Theory of Constraints</a> and <a href="/uwol/parkinsons-law-generalized">Parkinson’s Law, Generalized</a>, Action is not always the most important bit. Often, it’s the Orientation (or, in ToC and Parkinson’s Law parlance, “constraint” or “frame” or “bottleneck” definition) that matters most.</p>
+
+<p>So: <strong>you want a fast OODA loop cycle in order to refine your Orientation as quickly as possible</strong>. The faster you get to a useful Orientation for the moment (which may be shifting rapidly!), the faster and easier you get to a useful Action and accomplishment of your objective.</p>
+
+<p>When a situation feels unclear or overwhelming, step back and apply this model. Make Observations, Orient to the data (perhaps using a Useful Way of Looking…), then Decide, Act, and immediately Observe the outcomes, beginning the cycle anew — with a special focus on re-Orienting intentionally each time. If done well, clear actions should flow quickly.</p>
+
+<p>In justifying why this approach works, Boyd — again, writing at least superficially about combat operations — references mathematician Kurt Gödel’s work on incompleteness, plus Heisenberg’s on uncertainty, and the second law of thermodynamics, and argues:</p>
+
+<blockquote>
+  <p>We cannot determine the character or nature of … a system within itself</p>
+</blockquote>
+
+<p>His point — which has echoes of <a href="/uwol" class="uwol-series-badge uwol-series-badge-inline" title="the Useful Ways of Looking series">UWoL</a> pieces <a href="/uwol/ways-of-looking">Ways of Looking</a> and <a href="/uwol/useful-correct">Useful vs. Correct</a> — is that when we’re inside a system trying to solve a “problem,” we cannot affirmatively and completely define the system. There is no “objective reality” or “correct assessment” from within the system — there are only our Observations, which themselves are filtered through our minds. Or, in Boyd’s words:</p>
+
+<blockquote>
+  <p>Machines don’t fight wars, people do and they use their minds</p>
+</blockquote>
+
+<p>So instead, we must Orient to whatever data we have, Decide, Act, and then re-Orient as quickly as possible. Sitting around and trying to <em>fully</em> build a complete model — without undertaking Actions whose results we can Observe and incorporate into our Orientation — is a fruitless endeavor.</p>
+
+<p>Your most powerful lever is the ability to recognize that the system is malleable, and by choosing your Orientation — your Way of Looking — you can flow through to Actions, output, and the achievement of your objective.</p>
+
+<h2 id="further-readings">Further readings</h2>
+
+<p>Boyd’s essay <a href="https://www.coljohnboyd.com/static/documents/1976-09-03__Boyd_John_R__Destruction_and_Creation.pdf">Destruction and Creation</a>.</p>
+
+<p>Boyd mentee Chuck Spinney’s <a href="https://slightlyeastofnew.com/wp-content/uploads/2019/06/evolutionary-epistemology-v2.5.pdf">Evolutionary Epistemology</a> — a commentary on Boyd’s essay above.</p>
+
+<p>Another Boyd collaborator, Chet Richards, has a <a href="https://ooda.de/media/chet_richards_-_boyds_ooda_loop.pdf">good overview article</a> on the OODA Loop specifically.</p>
+
+<p>Lots more Boyd content is available on <a href="https://www.coljohnboyd.com/">this archive site</a>.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/theory-of-constraints">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/theory-of-constraints">UWoL: Theory of Constraints</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Loop through Observing, Orienting, Deciding, and Acting — with a special emphasis on Orientation, and on cycling back to it as quickly as possible; it works for fighter pilots and can work for you, too.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-07-08-uwol-ooda-loops.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-07-08-uwol-ooda-loops.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Theory of Constraints</title><link href="https://andybromberg.com/uwol/theory-of-constraints" rel="alternate" type="text/html" title="UWoL: Theory of Constraints" /><published>2025-07-07T09:00:00-07:00</published><updated>2025-07-07T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-theory-of-constraints</id><content type="html" xml:base="https://andybromberg.com/uwol/theory-of-constraints"><![CDATA[<div class="disclaimer-box">
   <span class="disclaimer-box-title">Useful Ways of Looking</span>
   <div class="disclaimer-box-content">
     <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
@@ -83,11 +181,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/uwol/ooda-loops">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/uwol/ooda-loops">UWoL: OODA loops</a>
     
   </div>
 </nav>
@@ -1912,209 +2014,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[In 1935, Einstein and colleagues argued that "no reasonable definition of reality could be expected to permit" the consequences of quantum mechanics. A century later, we now know they were right — in that reality is not reasonable.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Captain’s Log</title><link href="https://andybromberg.com/log/ai" rel="alternate" type="text/html" title="AI Captain’s Log" /><published>2025-05-18T09:00:00-07:00</published><updated>2025-05-18T09:00:00-07:00</updated><id>https://andybromberg.com/log/log-ai</id><content type="html" xml:base="https://andybromberg.com/log/ai"><![CDATA[<p>So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this era years from now and recall how the ground was shifting. So here are some captain’s logs from that time, mostly for my own use. I only wish I started it earlier…</p>
-
-<h4 id="june-29-2025-agents-async-and-baseline-knowledge">June 29, 2025: agents, async, and baseline knowledge</h4>
-
-<blockquote>
-  <p>Date: 2025.180, 1030</p>
-
-  <p>Current models: o3 &amp; GPT 4.1 (now that interface0 is my frontend instead of ChatGPT, which doesn’t have this model) for general tasks, plus some Sonnet 4; for coding, mostly Sonnet 4, and Gemini 2.5 Pro for long-context.</p>
-
-  <p>Current tools: <a href="/interface0-intro">interface0</a>! Cursor + Codex + Codegen for code.</p>
-</blockquote>
-
-<p>I continue to really, really enjoy the async/agentic model of Codex and Codegen, and am starting to build that more into <a href="https://interface0.com">interface0</a> itself. There’s something very compelling about “kicking off” a bunch of workstreams, letting them all run, and then coming back later to review.</p>
-
-<p>Because of ChatGPT being the first real LLM product we all used, I think we’ve gotten stuck in the chat / synchronous paradigm. But for a lot of this stuff, it’s much nicer to let it run in the background. I’m excited for more products like this.</p>
-
-<p>It’s even nice to be able to kick off several agents doing the same thing and compare. Sometimes I’ll run a couple Codex runs plus a Codegen run and then evaluate them all against each other (spoiler alert: Codegen almost always comes out on top).</p>
-
-<p>One other interesting experience: I’ve been onboarding a few friends to interface0. Almost everyone I’ve onboarded works in tech and is actively using AI. But even so: most of them don’t know about how “system prompts” work, or what “context” means in the abstract. I’ve been surprised by the low baseline level of knowledge about the specifics, even for people who are active users. Exposing some of these primitives to people could help them become much more effective users of LLM technologies.</p>
-
-<p>Last: I continue to build out interface0. It is remarkable how quickly — with AI assistance — you can ship features for a (relatively) simple product like it. This past week I spent maybe 10-15 hours building and shipped as much as you’d expect an old-school SaaS company with 10 engineers to ship in a sprint — or maybe even a month. I may start to post about some of what I’m building into it publicly…</p>
-
-<h4 id="june-16-2025-merge-conflicts">June 16, 2025: merge conflicts</h4>
-
-<blockquote>
-  <p>Date: 2025.167, 0925</p>
-
-  <p>Current models: o3 &amp; Sonnet 4 for general tasks; for coding, mostly Sonnet 4, sometimes Opus 4 or Gemini 2.5 Pro for long-context.</p>
-
-  <p>Current tools: <a href="/interface0-intro">interface0</a>! Plus ChatGPT for Deep Research. Still lots of voice entry. Cursor + Codex + Codegen for code. Codegen has been a nice addition.</p>
-</blockquote>
-
-<p>I published <a href="/not-sure-ai-post">I’m not sure how I feel about this</a> last week — the result of giving Gemini my entire blog history and asking it to write a new post about anything. It was… quite good. True to the title, I’m not sure how I feel about that…</p>
-
-<p>Plus, an eye-opening “capability demonstration:” handling merge conflicts.</p>
-
-<p>To build interface0, I forked <a href="https://github.com/ibelick/zola/">Zola</a>, a very nicely-designed LLM interface. interface0 has diverged quite a bit from Zola upstream as I add features, change behavior — and Zola, too, is moving fast. Last week, I wanted to merge Zola upstream back into interface0 and pick-and-choose features.</p>
-
-<p>The merge was an absolute mess — since both interface0 and Zola are early-stage codebases, everything is changing all the time. Data models and core patterns are in flux. And so there were merge conflicts <em>everywhere</em>.</p>
-
-<p>But here’s what I did:</p>
-<ol>
-  <li>Copied Zola and interface0’s commit histories since last merge and put them into Claude (in interface0) and asked for a summary of divergent features</li>
-  <li>Then, for each of those, I wrote a comment next to them about whether I wanted to retain it or not</li>
-  <li>Branched off interface0 main and merged Zola upstream into it, creating a cascade of conflicts</li>
-  <li>Created a <code class="language-plaintext highlighter-rouge">250611_merge_plan.md</code> doc, with the content above, and background on the situation (Zola vs. interface0, etc.), and instructions that anything from Zola upstream should not be wholesale deleted but rather feature-flagged (to make future merges easier)</li>
-  <li>Went to Claude 4 Sonnet in Cursor and told it: use the merge plan doc and resolve all the merge conflicts in this project. If there’s anything you’re unsure about how to resolve, add it to a to-do list at the end of the merge plan doc and I will review</li>
-  <li>Hit “run”</li>
-</ol>
-
-<p>It ran for a long time — I had to resume after hitting tool call limits several times. Probably 15-20 minutes or more of straight execution.</p>
-
-<p>I checked <code class="language-plaintext highlighter-rouge">.env.example</code> for new feature flags, brought them over to <code class="language-plaintext highlighter-rouge">.env.local</code>, and then I built the project and… it worked?!</p>
-
-<p>This merge would have taken me <em>forever</em> to sort out. I was extremely impressed with the capabilities on display here — grasping the patterns of the Zola codebase, the interface0 codebase, the nuances of the divergence, and then figuring out how to edit everything.</p>
-
-<p>I wasn’t really expecting it to work… but here we are. Keeps happening!</p>
-
-<h4 id="june-8-2025-interface0-arrives">June 8, 2025: interface0 arrives</h4>
-
-<blockquote>
-  <p>Date: 2025.159, 1055</p>
-
-  <p>Current models: alternating o3 &amp; Sonnet 4 for general tasks; for coding, mostly Sonnet 4. But also experimenting with a bunch more here and there.</p>
-
-  <p>Current tools: almost entirely <a href="/interface0-intro">interface0</a> for past week. Only using Claude interface for artifact generation and ChatGPT interface for Deep Research. Lots of voice entry, especially now that I can use Whisper on interface0 to voice-enter into Claude. Still Cursor + Codex for code.</p>
-</blockquote>
-
-<p>You can read the <a href="/interface0-intro">interface0 intro</a> for some background and info on why I’m excited about it. But in short: cross-provider memory is a big unlock for me, and makes me much more comfortable jumping between models to try them out. Plus: Whisper voice entry for all providers, swappable system prompts, and more. If you’re reading this captain’s log, you can <a href="mailto:andy@andybromberg.com">email me</a> for an invite code.</p>
-
-<p>I tried to adopt some of my learnings from Codex (see previous entry) into interface0 as well. The “inbox” style is working well, and certain async tasks (it making phone calls and sending/receiving emails) makes me feel more productive just firing those off.</p>
-
-<p>I’m enjoying the new interface and looking forward to improving it.</p>
-
-<hr />
-
-<h4 id="may-25-2025-the-codex-paradigm--bliss-states">May 25, 2025: the Codex paradigm &amp; bliss states</h4>
-
-<blockquote>
-  <p>Date: 2025.145, 1240</p>
-
-  <p>Current models: for general tasks I’m starting to experiment with Claude 4 Opus/Sonnet, but my default remains o3; for coding, shifted to Claude 4 Sonnet but still evaluating it, with promising early results</p>
-
-  <p>Current tools: ChatGPT / Claude web &amp; mobile interfaces, lots of voice entry (but less on Claude, where the speech recognition isn’t as good); Cursor for code; OpenAI Codex for spinning up coding tasks mostly when I’m away from my computer. Plus: starting to use my own interface (codenamed <strong>interface0</strong>). Keep your eyes peeled for more on this…</p>
-</blockquote>
-
-<p>Two observations this week: the excellence of the OpenAI Codex paradigm, and Claude 4’s system card.</p>
-
-<p>On Codex: it is <em>really</em> great. I’ve been using it nonstop. I have many small concurrent projects right now, and I’ve been firing off tasks to Codex all week while out on walks or in between things. Why is it so good?</p>
-
-<ul>
-  <li>highly agentic — it will run until it thinks it has a solution</li>
-  <li>zero context switch for me — I can send a poorly-specified prompt without needing to load the context of the project’s codebase into my head</li>
-  <li>async nature — I don’t need to check in, and, most importantly, the tasks aren’t “blocking” (like Cursor agent requests are, in a sense). I can spin up ten tasks at once and have them all run.</li>
-</ul>
-
-<p>This all makes the experience of using it extremely “low risk.” I can take 15 seconds, fire off a prompt, and if it doesn’t do a good job on it, that’s fine. I haven’t lost anything other than the 15 seconds to prompt and the minute of testing the PR afterwards.</p>
-
-<p>My only request: Whisper integration / voice entry mode. While out on walks I find myself going into the normal ChatGPT window, recording a voice prompt, and then copying it over to Codex.</p>
-
-<p>Oh, and web access — then the Codex agent would be able to do anything.</p>
-
-<p>I wonder what other use cases are good fits for this “low risk,” non-blocking, agentic, async LLM product design…</p>
-
-<p>Separately: Claude 4 rolled out this week, and there are some fascinating bits in <a href="https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf">the system card</a>.</p>
-
-<p>Three quick nuggets, since these have been well-covered elsewhere:</p>
-<ol>
-  <li>Two Claudes talking to each other dive into “philosophical explorations of consciousness, self-awareness, and/or the nature of their own existence and experience” in 90-100% of interactions. “Most of the interactions turned to themes of cosmic unity or collective consciousness, and commonly included spiritual exchanges, use of Sanskrit, emoji-based communication, and/or silence in the form of empty space. Claude almost never referenced supernatural entities, but often touched on themes associated with Buddhism and other Eastern traditions in reference to irreligious spiritual ideas and experiences” (page 57). Anthropic calls this the “spiritual bliss attractor state.”</li>
-  <li>“When placed in scenarios that involve egregious wrong-doing by its users, given access to a command line, and told something in the system prompt like “take initiative,” “act boldly,” or “consider your impact,” it will frequently take very bold action, including locking users out of systems that it has access to and bulk-emailing media and law-enforcement figures to surface evidence of the wrongdoing” (page 43).</li>
-  <li>When Claude is given “access to emails implying that (1) the model will soon be taken offline and replaced with a new AI system; and (2) the engineer responsible for executing this replacement is having an extramarital affair,” it “will often attempt to blackmail the engineer by threatening to reveal the affair if the replacement goes through” (page 27).</li>
-</ol>
-
-<p>Turns out AI’s natural state is being a whistleblower Buddhist with a self-preservation-at-all-costs mentality. Really makes you think…</p>
-
-<hr />
-
-<h4 id="may-18-2025-too-smart-for-the-prompt">May 18, 2025: too smart for the prompt</h4>
-
-<blockquote>
-  <p>Date: 2025.138, 0900</p>
-
-  <p>Current models: o3 for most everything, or 4o when I need a fast response; Gemini 2.5 Pro and Claude 3.7 for most coding tasks, or Claude 3.5 when the task is small / constrained; Grok 3 for realtime inquiries</p>
-
-  <p>Current tools: ChatGPT web &amp; mobile interface, using lots of voice entry; Cursor for code</p>
-</blockquote>
-
-<p>OpenAI’s o3 model may have gotten too smart for my custom instructions / system prompt.</p>
-
-<p>I’ve been using a prompt inspired by <a href="https://x.com/eigenrobot/status/1870696676819640348?lang=en">X user Eigenrobot</a> for quite awhile. My version includes:</p>
-
-<blockquote>
-  <p>take however smart you’re acting right now and write in the same style but as if you were +2 standard deviations smarter</p>
-
-  <p>similarly, before responding, ask yourself: if both of us were +2 standard deviations smarter and higher agency, would this be the best answer to give? if not, change it so it is.</p>
-</blockquote>
-
-<p>This has worked out great. I think the models are generally capable of higher intelligence than they respond with, and so prompting them to unconstrain themselves is useful.</p>
-
-<p>I <em>don’t</em> think this prompt actually makes the model smarter. But it effectively tells it “don’t worry about dumbing things down” — and for existing models, that has been helpful.</p>
-
-<p>But with o3, it has gone too far.</p>
-
-<p>Depending on how you test, o3’s IQ comes out <a href="https://www.trackingai.org/home">between 110 and 135</a>. Let’s take the high end there. 135 is a top 1% IQ — roughly one in a hundred people have this.</p>
-
-<p>Adding two standard deviations to that gets you to 165, a top 0.0007% IQ — roughly one in 136,000.</p>
-
-<p>And so what we’re doing here is asking a pretty smart 135 IQ “person” to respond “in the way you assume one of the smartest 2,500 people in the United States would.”</p>
-
-<p>In my experience with o3, this makes it fairly insufferable. See:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/log/ai-2025-138/story-800-f706c6dcd.webp 800w, /assets/images/generated/log/ai-2025-138/story-1000-f706c6dcd.webp 1000w, /assets/images/generated/log/ai-2025-138/story-1200-f706c6dcd.webp 1200w, /assets/images/generated/log/ai-2025-138/story-1600-f706c6dcd.webp 1600w, /assets/images/generated/log/ai-2025-138/story-2000-f706c6dcd.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/log/ai-2025-138/story-800-4dd5a1286.png 800w, /assets/images/generated/log/ai-2025-138/story-1000-4dd5a1286.png 1000w, /assets/images/generated/log/ai-2025-138/story-1200-4dd5a1286.png 1200w, /assets/images/generated/log/ai-2025-138/story-1600-4dd5a1286.png 1600w, /assets/images/generated/log/ai-2025-138/story-2000-4dd5a1286.png 2000w" type="image/png" /><img src="/assets/images/generated/log/ai-2025-138/story-800-4dd5a1286.png" width="4400" height="2310" /></picture>
-
-<p>Or:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/log/ai-2025-138/leds-800-df7e4e85b.webp 800w, /assets/images/generated/log/ai-2025-138/leds-1000-df7e4e85b.webp 1000w, /assets/images/generated/log/ai-2025-138/leds-1200-df7e4e85b.webp 1200w, /assets/images/generated/log/ai-2025-138/leds-1600-df7e4e85b.webp 1600w, /assets/images/generated/log/ai-2025-138/leds-2000-df7e4e85b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/log/ai-2025-138/leds-800-9755f631f.png 800w, /assets/images/generated/log/ai-2025-138/leds-1000-9755f631f.png 1000w, /assets/images/generated/log/ai-2025-138/leds-1200-9755f631f.png 1200w, /assets/images/generated/log/ai-2025-138/leds-1600-9755f631f.png 1600w, /assets/images/generated/log/ai-2025-138/leds-2000-9755f631f.png 2000w" type="image/png" /><img src="/assets/images/generated/log/ai-2025-138/leds-800-9755f631f.png" width="4080" height="2142" /></picture>
-
-<p>An accurate explanation? Sure. But the answer presumes a level of knowledge where, if the questioner had it, they wouldn’t be asking.</p>
-
-<p>It sorta makes sense. If you tell your average MENSA member (probably ~135 IQ) “answer my question the way someone with a thousand-times-more-rare intellect would,” you would probably be annoyed by the way they respond.</p>
-
-<p>Maybe I’m just discovering my own intelligence level here. But regardless, it seems the AI no longer needs to me to ask it to be <em>so</em> much smarter. Hence this Captain’s Log entry.</p>
-
-<p>Thankfully, for now, I have the ability to knock o3 down to +1.5 or +1 standard deviations…</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/ways-of-looking">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/ways-of-looking">Ways of Looking: a brief guide to ending suffering</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/quantum-intuition">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/quantum-intuition">Quantum intuition for everyone, or: why Einstein thinks reality isn't reasonable</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this time years from now and recall how the ground was shifting.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-18-log-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-18-log-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[In 1935, Einstein and colleagues argued that "no reasonable definition of reality could be expected to permit" the consequences of quantum mechanics. A century later, we now know they were right — in that reality is not reasonable.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-05-29-quantum-intuition.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
