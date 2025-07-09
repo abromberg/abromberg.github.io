@@ -1470,6 +1470,321 @@ hr:not(.end-of-article-divider)::before {
     padding: 1.5em 1em 1em;
   }
 }
+/* Context Engineering Model */
+.context-engineering-model {
+  margin: 2em 0;
+  font-family: "Andada Pro", Georgia, serif;
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  padding: 2em 1.5em 1.5em;
+  background-color: #F2F0E5;
+  position: relative;
+}
+
+.context-engineering-model-title {
+  position: absolute;
+  top: -0.9em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F2F0E5;
+  padding: 0 0.8em;
+  color: #6F6E69;
+  font-size: 0.9em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  border: 1px solid #E6E4D9;
+  border-radius: 1em;
+  line-height: 1.4em;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.context-model-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  margin-top: 1em;
+  align-items: start;
+}
+
+.context-section {
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  background-color: #FEFEFE;
+  overflow: hidden;
+  align-self: start;
+}
+
+.context-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #E6E4D9;
+  cursor: pointer;
+}
+
+.context-section-header h4 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #100F0F;
+}
+
+.context-section-toggle {
+  background: none;
+  border: none;
+  color: #6F6E69;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 0.2em;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.context-section-toggle:hover {
+  background-color: #E6E4D9;
+  color: #100F0F;
+}
+
+.context-section-content {
+  padding: 1em;
+  display: none;
+}
+
+.context-subsection {
+  margin-bottom: 1em;
+}
+
+.context-subsection:last-child {
+  margin-bottom: 0;
+}
+
+.context-item {
+  padding: 0.8em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 1.4;
+  background-color: #F9F9F9;
+  border: 1px solid #E8E8E8;
+}
+
+.context-item-detail {
+  color: #6F6E69;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.context-item.user-message {
+  background-color: #E8F4FD;
+  border-color: #B3D9F2;
+}
+
+.context-item.assistant-message {
+  background-color: #F0F8E8;
+  border-color: #C8E6C9;
+}
+
+.context-item.current {
+  border-color: #FF6B6B;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+}
+
+/* Section-specific styling */
+.system-prompt-section .context-section-header {
+  background-color: #FFF8E1;
+}
+
+.tooling-section .context-section-header {
+  background-color: #E8F5E8;
+}
+
+.conversation-section .context-section-header {
+  background-color: #E3F2FD;
+}
+
+.injected-knowledge-section .context-section-header {
+  background-color: #F3E5F5;
+}
+
+.call-parameters-section .context-section-header {
+  background-color: #FFF3E0;
+}
+
+@media screen and (max-width: 768px) {
+  .context-model-grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .context-engineering-model {
+    padding: 1.5em 1em 1em;
+  }
+  .context-section-header {
+    padding: 0.8em;
+  }
+  .context-section-content {
+    padding: 0.8em;
+  }
+}
+/* Call Parameters Widget */
+.call-parameters-widget {
+  margin: 2em 0;
+  font-family: "Andada Pro", Georgia, serif;
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  padding: 2em 1.5em 1.5em;
+  background-color: #F2F0E5;
+  position: relative;
+}
+
+.call-parameters-title {
+  position: absolute;
+  top: -0.9em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F2F0E5;
+  padding: 0 0.8em;
+  color: #6F6E69;
+  font-size: 0.9em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  border: 1px solid #E6E4D9;
+  border-radius: 1em;
+  line-height: 1.4em;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.call-parameters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.call-parameter {
+  background-color: #FEFEFE;
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  padding: 1.2em;
+  transition: all 0.2s ease;
+}
+
+.call-parameter:hover {
+  border-color: #B7B5AC;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.call-parameter-name {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #100F0F;
+  margin-bottom: 0.3em;
+}
+
+.call-parameter-description {
+  color: #6F6E69;
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+}
+
+.call-parameter-detail {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #100F0F;
+}
+
+@media screen and (max-width: 768px) {
+  .call-parameters-grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .call-parameters-widget {
+    padding: 1.5em 1em 1em;
+  }
+  .call-parameter {
+    padding: 1em;
+  }
+}
+/* System Prompt Widget */
+.system-prompt-widget {
+  margin: 2em 0;
+  font-family: "Andada Pro", Georgia, serif;
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  padding: 2em 1.5em 1.5em;
+  background-color: #F2F0E5;
+  position: relative;
+}
+
+.system-prompt-title {
+  position: absolute;
+  top: -0.9em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F2F0E5;
+  padding: 0 0.8em;
+  color: #6F6E69;
+  font-size: 0.9em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  border: 1px solid #E6E4D9;
+  border-radius: 1em;
+  line-height: 1.4em;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.system-prompt-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.system-prompt-component {
+  background-color: #FEFEFE;
+  border: 1px solid #E6E4D9;
+  border-radius: 4px;
+  padding: 1.2em;
+  transition: all 0.2s ease;
+}
+
+.system-prompt-component:hover {
+  border-color: #B7B5AC;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.system-prompt-name {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #100F0F;
+  margin-bottom: 0.3em;
+}
+
+.system-prompt-description {
+  color: #6F6E69;
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+}
+
+.system-prompt-detail {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #100F0F;
+}
+
+@media screen and (max-width: 768px) {
+  .system-prompt-widget {
+    padding: 1.5em 1em 1em;
+  }
+  .system-prompt-component {
+    padding: 1em;
+  }
+}
 /* UWoL Series Badge */
 .uwol-series-badge {
   display: inline-block;

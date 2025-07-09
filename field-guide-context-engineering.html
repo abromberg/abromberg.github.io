@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>A field guide on “Context Engineering” for LLM users | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="A field guide on “Context Engineering” for LLM users" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A breakdown of the components that go into an LLM call. Understanding this will help you get better results from AI." />
+<meta property="og:description" content="A breakdown of the components that go into an LLM call. Understanding this will help you get better results from AI." />
+<link rel="canonical" href="https://andybromberg.com/field-guide-context-engineering" />
+<meta property="og:url" content="https://andybromberg.com/field-guide-context-engineering" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2025-07-09-field-guide-context-engineering.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-09T09:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2025-07-09-field-guide-context-engineering.png" />
+<meta property="twitter:title" content="A field guide on “Context Engineering” for LLM users" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2025-07-09T09:00:00-07:00","datePublished":"2025-07-09T09:00:00-07:00","description":"A breakdown of the components that go into an LLM call. Understanding this will help you get better results from AI.","headline":"A field guide on “Context Engineering” for LLM users","image":"https://andybromberg.com/assets/images/og/2025-07-09-field-guide-context-engineering.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/field-guide-context-engineering"},"url":"https://andybromberg.com/field-guide-context-engineering"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header"><h1 class="post-title p-name" itemprop="name headline">
+      A field guide on &quot;Context Engineering&quot; for LLM users</h1>
+    
+    <div class="post-meta">
+      <div class="post-date"><time class="dt-published" datetime="2025-07-09T09:00:00-07:00" itemprop="datePublished">July 9, 2025
+        </time></div>
+            
+      <div class="article-reading-time">Reading time: about 11 minutes</div>
+    </div>
+      
+  </header>
+    
+  <div class="post-content e-content prose" itemprop="articleBody"><div class="toc">
+      <div class="toc-header">Contents</div>
+      <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#background">Background</a></li>
+<li class="toc-entry toc-h2"><a href="#conversation-history--prompts">Conversation history &amp; prompts</a></li>
+<li class="toc-entry toc-h2"><a href="#call-parameters">Call parameters</a></li>
+<li class="toc-entry toc-h2"><a href="#system-prompt">System prompt</a></li>
+<li class="toc-entry toc-h2"><a href="#injected-knowledge--context">Injected knowledge / context</a></li>
+<li class="toc-entry toc-h2"><a href="#tools--mcp">Tools &amp; MCP</a></li>
+<li class="toc-entry toc-h2"><a href="#full-picture">Full picture</a></li>
+</ul>
+    </div>
+    <p><strong>tl;dr:</strong> it’s not just “prompts” that matter for good AI results — context is king. LLM interfaces inject a lot of context themselves, and you can augment it. If you do so well, you’ll get better answers!</p>
+
+<p>As I began to onboard friends to <a href="https://interface0.com" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a>, I realized many of them could use a primer on what information actually goes into an LLM call. A strong layman’s understanding of this allows you to get better results from AI.</p>
+
+<p>Recently, the management of this information has taken up the moniker “context engineering,” popularized by tweets from <a href="https://x.com/tobi/status/1935533422589399127" class="external-link" target="_blank" rel="noopener noreferrer">Tobi Lutke</a> and <a href="https://x.com/karpathy/status/1937902205765607626" class="external-link" target="_blank" rel="noopener noreferrer">Andrej Karpathy</a>.</p>
+
+<p>LLMs have enormously complex networked “brains.” As users, we send inquiries (“prompts”) to those brains, along with “context” that augments the brains’ existing intelligence.</p>
+
+<p>Without context, the brain only knows what it was trained on. That means that it doesn’t know about your preferences, your company’s specific data or practices, or anything else that isn’t on the open web.</p>
+
+<p>Much has been said about “prompt engineering”: making the right inquiries of the model. But as Tobi and Andrej point out, equally critical is “context engineering”: making sure the right supplemental information goes to the model.</p>
+<h2 id="background">
+  
+  
+    Background <a href="#background" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Let’s say you want to ask an LLM a health question. We can imagine three levels of framing:</p>
+<ol>
+  <li><strong>Bad prompt, bad context</strong>: is giving blood good for you?</li>
+  <li><strong>Better prompt, bad context</strong>: does giving blood help with elevated SHBG levels?</li>
+  <li><strong>Better prompt, better context</strong>: does giving blood help with elevated SHBG levels? Here are attachments of my historical blood panels, dates of giving blood, and relevant gene testing results.</li>
+</ol>
+
+<p>As the prompt and context improve, so too will the results — dramatically. The more complex your question, the more the right context will help.</p>
+
+<p>But the context that goes into LLMs is typically opaque to us as users. Even when all you see is a simple chatbox, there is a lot of context going in behind the scenes.</p>
+
+<p>I’ll put the bottom line up front: here’s my mental model for a typical<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Each one is different, of course! And this leaves out some of the more technical aspects. This post is meant to be more <a href="/uwol/useful-correct">useful than correct</a>.</span> LLM call. There’s a lot here — don’t worry, we’ll break it down piece-by-piece.</p>
+
+<div class="context-engineering-model" id="context-model-1752100536-0" data-show-all="true">
+  <span class="context-engineering-model-title">Context Engineering Model</span>
+  
+  <div class="context-model-grid">
+    <!-- System Prompt Section -->
+    <div class="context-section system-prompt-section" data-section="system-prompt">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    System prompt <a href="#background" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Model system prompt<br /><span class="context-item-detail">"You are GPT 4-1..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Product system prompt<br /><span class="context-item-detail">"The user is using interface0 to interact with you..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Personas / custom instructions<br /><span class="context-item-detail">"Be clear and concise..."</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tooling Section -->
+    <div class="context-section tooling-section" data-section="tooling">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Tooling (incl. MCP) <a href="#background" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Available tools<br /><span class="context-item-detail">"[searchWeb], [sendEmail], ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Tool definitions<br /><span class="context-item-detail">"searchWeb: requires term, ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Recent tool outputs<br /><span class="context-item-detail">"searchWeb_1 returned..."</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Injected Knowledge Section -->
+    <div class="context-section injected-knowledge-section" data-section="injected-knowledge">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Injected knowledge / context <a href="#background" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Short-term memory<br /><span class="context-item-detail">"User recently asked about..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Long-term memory / preferences<br /><span class="context-item-detail">"User is named Andy, lives in..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Retrieved data ("RAG")<br /><span class="context-item-detail">"Relevant docs: [file.docx], ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">User-submitted data<br /><span class="context-item-detail">"User uploaded a file..."</span></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Call Parameters Section -->
+    <div class="context-section call-parameters-section" data-section="call-parameters">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Call parameters <a href="#background" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Temperature<br /><span class="context-item-detail">Creativity level</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Max tokens<br /><span class="context-item-detail">Budget for length of prompt</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Logit bias<br /><span class="context-item-detail">Specific term bias</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Other<br /><span class="context-item-detail">Tool-choice, etc.</span></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Conversation History Section -->
+    <div class="context-section conversation-section" data-section="conversation">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Conversation history + new prompt <a href="#background" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item user-message">User: "What types of stores..."</div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item assistant-message">Assistant: "Hardware stores..."</div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item user-message">User: "what are the hours..."</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contextModel = document.getElementById('context-model-1752100536-0');
+    if (!contextModel) return;
+    
+    const sections = contextModel.querySelectorAll('.context-section');
+    const showAll = contextModel.getAttribute('data-show-all') === 'true';
+    
+    sections.forEach(section => {
+      const toggle = section.querySelector('.context-section-toggle');
+      const content = section.querySelector('.context-section-content');
+      const icon = toggle.querySelector('i');
+      
+      // Initialize state
+      if (showAll) {
+        content.style.display = 'block';
+        toggle.setAttribute('aria-expanded', 'true');
+        icon.className = 'fa fa-minus';
+      } else {
+        content.style.display = 'none';
+        toggle.setAttribute('aria-expanded', 'false');
+        icon.className = 'fa fa-plus';
+      }
+      
+      toggle.addEventListener('click', function() {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        
+        if (isExpanded) {
+          content.style.display = 'none';
+          toggle.setAttribute('aria-expanded', 'false');
+          icon.className = 'fa fa-plus';
+        } else {
+          content.style.display = 'block';
+          toggle.setAttribute('aria-expanded', 'true');
+          icon.className = 'fa fa-minus';
+          content.style.animation = 'fadeIn 0.3s ease-in-out';
+        }
+      });
+    });
+  });
+</script>
+
+<p>Yes, all of that is included in an inquiry as simple <a href="https://www.interface0.com/p/4bfc8a48-1d86-4cd9-9af4-021378ee77c4" class="external-link" target="_blank" rel="noopener noreferrer">as this</a>:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/field-guide-context-engineering/manhattan_excerpt-800-07928b8c4.webp 800w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-1000-07928b8c4.webp 1000w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-1200-07928b8c4.webp 1200w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-1600-07928b8c4.webp 1600w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-2000-07928b8c4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/field-guide-context-engineering/manhattan_excerpt-800-bc44ba811.png 800w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-1000-bc44ba811.png 1000w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-1200-bc44ba811.png 1200w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-1600-bc44ba811.png 1600w, /assets/images/generated/field-guide-context-engineering/manhattan_excerpt-2000-bc44ba811.png 2000w" type="image/png" /><img src="/assets/images/generated/field-guide-context-engineering/manhattan_excerpt-800-bc44ba811.png" width="5088" height="2034" /></picture>
+<h2 id="conversation-history--prompts">
+  
+  
+    Conversation history &amp; prompts <a href="#conversation-history--prompts" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Your experience of using an LLM frontend (ChatGPT or Claude or interface0) mostly centers around the blue section in the diagram (“Conversation history + new prompt”).</p>
+
+<p>That bit is straightforward enough, although we’ll revisit it at the end of this post — there are techniques for doing even <em>that</em> part of the process better.</p>
+<h2 id="call-parameters">
+  
+  
+    Call parameters <a href="#call-parameters" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Then, the call parameters (orange in the diagram) are rarely exposed to you as a user. Typically, whatever frontend you’re using selects this for you. The key ones are:</p>
+
+<div class="call-parameters-widget">
+  <span class="call-parameters-title">Call Parameters</span>
+  
+  <div class="call-parameters-grid">
+    <div class="call-parameter">
+      <div class="call-parameter-name">Temperature</div>
+      <div class="call-parameter-description">creativity level</div>
+      <div class="call-parameter-detail">A value between 0 and 1 that determines how "creative" or "random" the model is. Close to 0 means very similar results every time. Close to 1 means more "out there" responses.</div>
+    </div>
+    
+    <div class="call-parameter">
+      <div class="call-parameter-name">Max tokens</div>
+      <div class="call-parameter-description">budget for length of prompt</div>
+      <div class="call-parameter-detail">The maximum context length that the model can handle. This is the sum of everything: conversation, system prompt, injected context, etc.</div>
+    </div>
+    
+    <div class="call-parameter">
+      <div class="call-parameter-name">Logit bias</div>
+      <div class="call-parameter-description">specific term bias</div>
+      <div class="call-parameter-detail">LLMs can be guided towards or away from certain tokens/words. Rarely exposed to users, but can encourage higher probability of certain words.</div>
+    </div>
+    
+    <div class="call-parameter">
+      <div class="call-parameter-name">Other</div>
+      <div class="call-parameter-description">tool-choice, etc.</div>
+      <div class="call-parameter-detail">Additional parameters like tool selection preferences, response format requirements, and other model-specific settings.</div>
+    </div>
+  </div>
+</div>
+
+<p>Regarding “max tokens”: each model has a maximum “context length” that it can handle. If the context exceeds the maximum context length of the LLM, it will fail (this is when you get the notification “this conversation is getting too long, please start a new one”). Some frontends handle this for you by beginning to compress or summarize the conversation history or context, thus making more space (but also possibly losing fidelity or details).</p>
+
+<p>Context lengths are defined in “tokens.” For reasons beyond the scope of this post, 1 token is roughly 3/4 of a average word. For example, Claude Pro’s context window is <a href="https://support.anthropic.com/en/articles/7996856-what-is-the-maximum-prompt-length" class="external-link" target="_blank" rel="noopener noreferrer">200k tokens</a> at time of writing. This is around 150k words, or almost two normal books’ worth of content.</p>
+<h2 id="system-prompt">
+  
+  
+    System prompt <a href="#system-prompt" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Now let’s talk about the “system prompt,” which in my view is often made up of three sub-components:</p>
+
+<div class="system-prompt-widget">
+  <span class="system-prompt-title">System Prompt Components</span>
+  
+  <div class="system-prompt-grid">
+    <div class="system-prompt-component">
+      <div class="system-prompt-name">Model system prompt</div>
+      <div class="system-prompt-description">"You are GPT 4-1..."</div>
+      <div class="system-prompt-detail">The base instructions that come with the model itself. These define the model's fundamental behavior, capabilities, and limitations. Usually set by the AI company (OpenAI, Anthropic, etc.) and not user-modifiable.</div>
+    </div>
+    
+    <div class="system-prompt-component">
+      <div class="system-prompt-name">Product system prompt</div>
+      <div class="system-prompt-description">"The user is using interface0 to interact with you..."</div>
+      <div class="system-prompt-detail">Instructions added by the frontend application you're using. These tell the model about the specific context, tools available, and how to behave within that particular interface or product.</div>
+    </div>
+    
+    <div class="system-prompt-component">
+      <div class="system-prompt-name">Personas / custom instructions</div>
+      <div class="system-prompt-description">"Be clear and concise..."</div>
+      <div class="system-prompt-detail">Your personal customizations and preferences. These are the instructions you've given to modify how the AI should respond to you specifically - your preferred tone, style, or specialized knowledge areas.</div>
+    </div>
+  </div>
+</div>
+
+<p>The last of these — “personas” or “custom instructions” is typically the one you are able to edit. In ChatGPT you go to your settings, then Personalization, and then Custom Instructions. In Claude, Settings and then fill in your Personal Preferences. In interface0, you can set a variety of Personas from the chat bar and swap them in.</p>
+
+<p>Let’s just revisit the components of the full prompt briefly. So far we’ve gone through “Conversation history + new prompt,” “Call parameters,” and “System prompt:”</p>
+
+<div class="context-engineering-model" id="second-model-1752100537-0" data-show-all="false">
+  <span class="context-engineering-model-title">Context Engineering Model</span>
+  
+  <div class="context-model-grid">
+    <!-- System Prompt Section -->
+    <div class="context-section system-prompt-section" data-section="system-prompt">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    System prompt <a href="#system-prompt" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Model system prompt<br /><span class="context-item-detail">"You are GPT 4-1..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Product system prompt<br /><span class="context-item-detail">"The user is using interface0 to interact with you..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Personas / custom instructions<br /><span class="context-item-detail">"Be clear and concise..."</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tooling Section -->
+    <div class="context-section tooling-section" data-section="tooling">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Tooling (incl. MCP) <a href="#system-prompt" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Available tools<br /><span class="context-item-detail">"[searchWeb], [sendEmail], ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Tool definitions<br /><span class="context-item-detail">"searchWeb: requires term, ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Recent tool outputs<br /><span class="context-item-detail">"searchWeb_1 returned..."</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Injected Knowledge Section -->
+    <div class="context-section injected-knowledge-section" data-section="injected-knowledge">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Injected knowledge / context <a href="#system-prompt" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Short-term memory<br /><span class="context-item-detail">"User recently asked about..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Long-term memory / preferences<br /><span class="context-item-detail">"User is named Andy, lives in..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Retrieved data ("RAG")<br /><span class="context-item-detail">"Relevant docs: [file.docx], ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">User-submitted data<br /><span class="context-item-detail">"User uploaded a file..."</span></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Call Parameters Section -->
+    <div class="context-section call-parameters-section" data-section="call-parameters">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Call parameters <a href="#system-prompt" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Temperature<br /><span class="context-item-detail">Creativity level</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Max tokens<br /><span class="context-item-detail">Budget for length of prompt</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Logit bias<br /><span class="context-item-detail">Specific term bias</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Other<br /><span class="context-item-detail">Tool-choice, etc.</span></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Conversation History Section -->
+    <div class="context-section conversation-section" data-section="conversation">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Conversation history + new prompt <a href="#system-prompt" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item user-message">User: "What types of stores..."</div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item assistant-message">Assistant: "Hardware stores..."</div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item user-message">User: "what are the hours..."</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contextModel = document.getElementById('second-model-1752100537-0');
+    if (!contextModel) return;
+    
+    const sections = contextModel.querySelectorAll('.context-section');
+    const showAll = contextModel.getAttribute('data-show-all') === 'true';
+    
+    sections.forEach(section => {
+      const toggle = section.querySelector('.context-section-toggle');
+      const content = section.querySelector('.context-section-content');
+      const icon = toggle.querySelector('i');
+      
+      // Initialize state
+      if (showAll) {
+        content.style.display = 'block';
+        toggle.setAttribute('aria-expanded', 'true');
+        icon.className = 'fa fa-minus';
+      } else {
+        content.style.display = 'none';
+        toggle.setAttribute('aria-expanded', 'false');
+        icon.className = 'fa fa-plus';
+      }
+      
+      toggle.addEventListener('click', function() {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        
+        if (isExpanded) {
+          content.style.display = 'none';
+          toggle.setAttribute('aria-expanded', 'false');
+          icon.className = 'fa fa-plus';
+        } else {
+          content.style.display = 'block';
+          toggle.setAttribute('aria-expanded', 'true');
+          icon.className = 'fa fa-minus';
+          content.style.animation = 'fadeIn 0.3s ease-in-out';
+        }
+      });
+    });
+  });
+</script>
+
+<p>What remains is injected knowledge and tooling. We’ll cover those, then recap what you can practically do about all this, and some tips for prompting &amp; context management.</p>
+<h2 id="injected-knowledge--context">
+  
+  
+    Injected knowledge / context <a href="#injected-knowledge--context" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Injected knowledge is the meat of what we usually think of as “context.” It includes:</p>
+<ol>
+  <li>Memories that the system has preserved about you</li>
+  <li>Data the system retrieves from some sort of connected datastore</li>
+  <li>Anything you upload</li>
+</ol>
+
+<p>You typically have little control over #1 on a prompt-by-prompt basis — although in some applications, you can see a list of retained memories and add/delete them globally.</p>
+
+<p>One differentiator of interface0 is that it preserves memory across providers — so if you say something to OpenAI o3, when you are later talking to Claude Sonnet 4, Claude will “remember” that. This is actually illustrative of the overall point here: memory (and all this other context) does <em>not</em> happen at the model / LLM level. Rather, it all happens at the <em>application</em> level.</p>
+
+<p>The models o3 and Sonnet 4 are not “remembering” anything — rather, the interface you’re using to interact with them is retrieving relevant memories and including them in the context <em>before</em> sending them off to the big-brain LLM.</p>
+
+<p>In much the same way, you can retrieve data (often called Retrieval-Augmented Generation, or “RAG”) from databases or elsewhere before sending the inquiry to the model. I’m very excited about next-generation retrieval engines like <a href="https://lucenia.io" class="external-link" target="_blank" rel="noopener noreferrer">Lucenia</a> that can power workflows like this (disclaimer: so excited that I recently invested!).</p>
+
+<p>You can think of this happening in a business context, where your AI-powered customer service agent application conducts a retrieval operation across your internal knowledgebase to find relevant articles, before attaching those articles as context in the inquiry to the LLM which ultimately produces the message to be sent to the user. The LLM doesn’t “search” itself — rather, the infrastructure searches and finds the context to attach before shipping it all off to the LLM.</p>
+
+<p>Last, user-submitted data is obviously relevant. You can either attach files directly to a prompt, or you might use a feature like ChatGPT/Claude’s “Projects” or interface0’s “Knowledge,” where saved files and text can be attached across many related conversations.</p>
+<h2 id="tools--mcp">
+  
+  
+    Tools &amp; MCP <a href="#tools--mcp" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Finally, we have “tools.” You may have heard buzz about “MCP,” or the Model Context Protocol. MCP fits into the tools category.</p>
+
+<p>Tools can be anything from searching the web, to drafting emails, to writing and running code, or anything else you can imagine. But tools aren’t magical — nor do they even really have anything specifically to do with LLMs.</p>
+
+<p>Anything that was programmable before LLMs — like, again, searching the web, or drafting emails — can be a “tool.”</p>
+
+<p>And, in fact, the LLM itself doesn’t even use the tools (just like the LLM doesn’t “remember” things or “search”). The LLM is a floating brain-in-a-jar. Brains-in-jars don’t use tools.</p>
+
+<p>Rather, there’s an “orchestrator” — a piece of backend infrastructure - that coordinates sending the ultimate inquiry to the LLM brain, and receiving the results. And the LLMs have been trained in such a way that they can be given a list of tools (called “tool specifications”), and that when they want to use that tool (“I think it’d be appropriate to search the web now”), they emit a certain sequence of tokens/words that indicate this.</p>
+
+<p>Once they emit those tokens/words, the orchestrator takes over, and does the programmatic thing for the LLM. Once that thing is done, there is presumably some result (“success!” or “here are 10 restaurants in New York from Yelp” or whatever), and then the orchestrator passes that result back to the LLM to finish its work.</p>
+
+<p>People sometimes call this type of architecture “agentic” — meaning that the LLM doesn’t always just spit back an answer immediately, but rather (managed by the non-LLM orchestrator) goes through some “loops” of trying different tools, thinking, and assessing its progress before ultimately saying “I’m done!” and returning the result back to the user.</p>
+
+<p>There has been a lot of buzz about “MCP” technology. It is indeed cool (albeit with some <a href="https://www.generalanalysis.com/blog/supabase-mcp-blog" class="external-link" target="_blank" rel="noopener noreferrer">risks</a>). A full breakdown is out of scope here, but the simplest way to think about it is that “MCP” is just a standard by which tools can be implemented across many different LLMs. That is, it’s a unification of how services should respond to LLM-initiated calls and how they should expose their abilities to those LLMs and their orchestrators. “MCP” itself doesn’t really <em>do</em> anything — it’s a standard that other tools follow.</p>
+
+<p>But LLMs can use non-MCP tools too! In fact, many LLM systems just take MCP specifications and transform them to more “traditional” tool specifications.</p>
+
+<p>Anyway. Let’s sum it all up by showing our diagram again. But this time, let’s highlight in red the parts that are actually in your control (typically):</p>
+
+<div class="context-engineering-model" id="third_model-1752100537-0" data-show-all="true">
+  <span class="context-engineering-model-title">Context Engineering Model</span>
+  
+  <div class="context-model-grid">
+    <!-- System Prompt Section -->
+    <div class="context-section system-prompt-section" data-section="system-prompt">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    System prompt <a href="#tools--mcp" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Model system prompt<br /><span class="context-item-detail">"You are GPT 4-1..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Product system prompt<br /><span class="context-item-detail">"The user is using interface0 to interact with you..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item current">Personas / custom instructions<br /><span class="context-item-detail">"Be clear and concise..."</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tooling Section -->
+    <div class="context-section tooling-section" data-section="tooling">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Tooling (incl. MCP) <a href="#tools--mcp" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item current">Available tools<br /><span class="context-item-detail">"[searchWeb], [sendEmail], ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Tool definitions<br /><span class="context-item-detail">"searchWeb: requires term, ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Recent tool outputs<br /><span class="context-item-detail">"searchWeb_1 returned..."</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Injected Knowledge Section -->
+    <div class="context-section injected-knowledge-section" data-section="injected-knowledge">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Injected knowledge / context <a href="#tools--mcp" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Short-term memory<br /><span class="context-item-detail">"User recently asked about..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Long-term memory / preferences<br /><span class="context-item-detail">"User is named Andy, lives in..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item current">Retrieved data ("RAG")<br /><span class="context-item-detail">"Relevant docs: [file.docx], ..."</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item current">User-submitted data<br /><span class="context-item-detail">"User uploaded a file..."</span></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Call Parameters Section -->
+    <div class="context-section call-parameters-section" data-section="call-parameters">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Call parameters <a href="#tools--mcp" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item">Temperature<br /><span class="context-item-detail">Creativity level</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Max tokens<br /><span class="context-item-detail">Budget for length of prompt</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Logit bias<br /><span class="context-item-detail">Specific term bias</span></div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item">Other<br /><span class="context-item-detail">Tool-choice, etc.</span></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Conversation History Section -->
+    <div class="context-section conversation-section" data-section="conversation">
+      <div class="context-section-header">
+<h4 class="no_toc">
+  
+  
+    Conversation history + new prompt <a href="#tools--mcp" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+        <button class="context-section-toggle" aria-expanded="false">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="context-section-content">
+        <div class="context-subsection">
+          <div class="context-item user-message">User: "What types of stores..."</div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item assistant-message">Assistant: "Hardware stores..."</div>
+        </div>
+        <div class="context-subsection">
+          <div class="context-item user-message current">User: "what are the hours..."</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contextModel = document.getElementById('third_model-1752100537-0');
+    if (!contextModel) return;
+    
+    const sections = contextModel.querySelectorAll('.context-section');
+    const showAll = contextModel.getAttribute('data-show-all') === 'true';
+    
+    sections.forEach(section => {
+      const toggle = section.querySelector('.context-section-toggle');
+      const content = section.querySelector('.context-section-content');
+      const icon = toggle.querySelector('i');
+      
+      // Initialize state
+      if (showAll) {
+        content.style.display = 'block';
+        toggle.setAttribute('aria-expanded', 'true');
+        icon.className = 'fa fa-minus';
+      } else {
+        content.style.display = 'none';
+        toggle.setAttribute('aria-expanded', 'false');
+        icon.className = 'fa fa-plus';
+      }
+      
+      toggle.addEventListener('click', function() {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        
+        if (isExpanded) {
+          content.style.display = 'none';
+          toggle.setAttribute('aria-expanded', 'false');
+          icon.className = 'fa fa-plus';
+        } else {
+          content.style.display = 'block';
+          toggle.setAttribute('aria-expanded', 'true');
+          icon.className = 'fa fa-minus';
+          content.style.animation = 'fadeIn 0.3s ease-in-out';
+        }
+      });
+    });
+  });
+</script>
+
+<p>All that explanation for just five parameters!</p>
+<ol>
+  <li><strong>Personas/custom instructions</strong>: I think this is underrated by people right now. You can ask the model to behave however you want it to! Use this! If you have stylistic or intelligence preferences, or anything else, put them in here. (I believe this is partially because most frontends make it hard to edit this on a message-by-message basis.)</li>
+  <li><strong>Available tools</strong>: interfaces are increasingly exposing a list of tools to you (connect to your Gmail, search the web, etc.). Intelligent usage here is key. Cursor and other AI IDEs make heavy use of tools, and that’s a big part of why they are so useful.</li>
+  <li><strong>RAG</strong>: you don’t directly choose the queries that lead to the retrieved documents, but, especially in enterprise settings, you can choose which datastores you are connecting for queryability (as well as the search solutions you’re using). This is a key lever for performance. In consumer use cases this is less relevant.</li>
+  <li><strong>User-submitted data</strong>: more context is better! Attach files whenever you think it would be helpful. Again, features like Projects or interface0’s “knowledge” help make this easier, so you aren’t re-attaching all the time. Again, Cursor and other AI IDEs make it trivial to attach files that are relevant, and it makes an enormous performance difference.</li>
+  <li><strong>Your prompt</strong>: last of all, there’s what you ultimately send in the chatbox. This, of course, matters greatly.</li>
+</ol>
+
+<p>Much has been written about the prompt itself, and so I’ll spare you the words. But the one thing to note is that different models perform best with different prompts. Models like o3 pro need a <em>lot</em> of detail to perform at their best (see <a href="https://www.latent.space/p/o3-pro" class="external-link" target="_blank" rel="noopener noreferrer">this great writeup</a>). Other models can get by with less.</p>
+
+<p>Consider the model when putting together the prompt (p.s. this is why interface0’s “enhance prompt” button returns different enhancements depending on the model you’re using!).</p>
+<h2 id="full-picture">
+  
+  
+    Full picture <a href="#full-picture" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Here’s a rough sketch of the whole flow:</p>
+<ol>
+  <li>You type in your prompt and attach files</li>
+  <li>The application enriches that with memories or data it retrieves</li>
+  <li>It then compiles the full context, including pulling together the various system prompts, the tools selected, the call parameters, all the injected context, and the prompt and conversation history</li>
+  <li>It drops that to the orchestration / LLM services</li>
+  <li>The orchestrator then fires off a request to the LLM brain itself, and they together may decide to call some tools, do some agentic looping, whatever</li>
+  <li>Eventually the LLM decides it’s done, sends the results to the orchestrator, and you get your response</li>
+</ol>
+
+<p>In an image:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/field-guide-context-engineering/full_image-800-b064c6962.webp 800w, /assets/images/generated/field-guide-context-engineering/full_image-1000-b064c6962.webp 1000w, /assets/images/generated/field-guide-context-engineering/full_image-1200-b064c6962.webp 1200w, /assets/images/generated/field-guide-context-engineering/full_image-1600-b064c6962.webp 1600w, /assets/images/generated/field-guide-context-engineering/full_image-2000-b064c6962.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/field-guide-context-engineering/full_image-800-074f79b21.png 800w, /assets/images/generated/field-guide-context-engineering/full_image-1000-074f79b21.png 1000w, /assets/images/generated/field-guide-context-engineering/full_image-1200-074f79b21.png 1200w, /assets/images/generated/field-guide-context-engineering/full_image-1600-074f79b21.png 1600w, /assets/images/generated/field-guide-context-engineering/full_image-2000-074f79b21.png 2000w" type="image/png" /><img src="/assets/images/generated/field-guide-context-engineering/full_image-800-074f79b21.png" width="5523" height="5968" /></picture><hr />
+
+<p>I’ve been shamelessly plugging <a href="https://interface0.com" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a> throughout this post — but it’s because I have genuinely built it to solve my problems with making LLMs more performant. The Personas and Knowledge features (and Template Prompts) are a direct result of my frustration with the main interfaces to these models having poor context engineering capabilities.</p>
+
+<p>I will mention one more feature I use a lot: Summarize Chat. Like I mentioned, models can run out of context capacity, and performance will start to degrade (or they will fail entirely). I built interface0 so that with one click, you can generate a summary of a long chat. That summary can then be turned into a “Knowledge entry,” which you can then tag in on any subsequent chat.</p>
+
+<p>So I’ll often run short on context length, hit Summarize, add it as a new context, and then start a new chat, tagging in that context to get things rolling without missing a beat.</p>
+
+<p>I’m looking forward to adding more context engineering features as well! If you have any ideas, I’m all ears.</p>
+
+<p>Plus: any feedback on this post? Let me know.</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#full-picture" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/ooda-loops">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/ooda-loops">UWoL: OODA loops</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+  </div><a class="u-url" href="/field-guide-context-engineering" hidden></a>
+</article>
+  
+      </div>
+    </main></body>
+
+</html>
