@@ -69,10 +69,10 @@
       AI Captain&#39;s Log</h1>
     
     <div class="post-meta">
-      <div class="post-date"><time class="dt-published" datetime="2025-05-18T09:00:00-07:00" itemprop="datePublished">Published: May 18, 2025 | Updated: Jun 29, 2025
+      <div class="post-date"><time class="dt-published" datetime="2025-05-18T09:00:00-07:00" itemprop="datePublished">Published: May 18, 2025 | Updated: Jul 13, 2025
         </time></div>
             
-      <div class="article-reading-time">Reading time: about 9 minutes</div>
+      <div class="article-reading-time">Reading time: about 10 minutes</div>
     </div>
       
   </header>
@@ -80,6 +80,7 @@
   <div class="post-content e-content prose" itemprop="articleBody"><div class="toc">
       <div class="toc-header">Contents</div>
       <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h4"><a href="#july-13-2025-momoe--meta-layers">July 13, 2025: MoMoE &amp; meta layers</a></li>
 <li class="toc-entry toc-h4"><a href="#june-29-2025-agents-async-and-baseline-knowledge">June 29, 2025: agents, async, and baseline knowledge</a></li>
 <li class="toc-entry toc-h4"><a href="#june-16-2025-merge-conflicts">June 16, 2025: merge conflicts</a></li>
 <li class="toc-entry toc-h4"><a href="#june-8-2025-interface0-arrives">June 8, 2025: interface0 arrives</a></li>
@@ -87,7 +88,39 @@
 <li class="toc-entry toc-h4"><a href="#may-18-2025-too-smart-for-the-prompt">May 18, 2025: too smart for the prompt</a></li>
 </ul>
     </div>
-    <p>So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this era years from now and recall how the ground was shifting. So here are some captain’s logs from that time, mostly for my own use. I only wish I started it earlier…</p>
+    <p>So much is happening in AI every week, and my usage of it is changing just as fast. I realized it might be interesting to look back on this era years from now and recall how the ground was shifting. So here are some captain’s logs from that time, mostly for my own use. I only wish I started it earlier…</p><hr />
+<h4 id="july-13-2025-momoe--meta-layers">
+  
+  
+    July 13, 2025: MoMoE &amp; meta layers <a href="#july-13-2025-momoe--meta-layers" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<blockquote>
+  <p>Date: 2025.194, 1310</p>
+
+  <p>Current models: o3, GPT 4.1, and Sonnet 4 for general tasks. No real rhyme or reason between them, other than preferring o3 for complex reasoning questions. For coding, mostly Sonnet 4, Gemini 2.5 Pro for long-context, and just starting to try Grok 4 although it seems Cursor is fine-tuned in a way that hurts Grok.</p>
+
+  <p>Current tools: <a href="https://interface0.com" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a>! Plus Cursor + Codex + Codegen for code.</p>
+</blockquote>
+
+<p>There’s a concept in LLM-land called “Mixture of Experts” (MoE). In layman’s terms, it involves the language model actually having a bunch of “sub-models” under the hood, each of which are differently-tuned “experts.” You could imagine a “creative writer” sub-model, an “analytical writer” sub-model, a “mathematician” sub-model, and so forth. When an inquiry comes into the big model, it then routes through the various sub-models and comes up with an ultimate answer that is better for having consulted them.</p>
+
+<p>At my friend &amp; colleague CJ Reim’s suggestion, I added a “synthesize” tool to interface0, and it has quickly become one of my favorite features.</p>
+
+<p>Basically: you select a few models, and your prompt gets sent to <em>all</em> of them. But rather than getting all the individual results back, the responses then go into <em>another</em> model, which synthesizes the varied responses into just one. It can use several strategies to do so, including a “best of” strategy (pick the best answer), or a “comparison” strategy (compare and contrast them for the user), or a “comprehensive” strategy (combine all of them into one comprehensive/cohesive answer).</p>
+
+<p>This is sort of a “mixture of mixture of experts” — each of those individual underlying models might use a MoE approach, and then we’re mixing each of <em>those</em> together. Hence: MoMoE.</p>
+
+<p>I’ve been using this for writing emails (combine the best of GPT-4.1, Sonnet, o3), code (select the best answer from o3, Sonnet, Gemini, Grok), explaining tricky things (combine multiple explanations), etc.</p>
+
+<p>I used to sometimes manually go and send the same inquiry to ChatGPT and Claude. But now I can ask them both at once, get a synthesized response, and still see the underlying individual responses if I want. It’s great.</p>
+
+<p>This is making me think more about how — at least until we’re at true ASI, where presumably I won’t be able to really make quality distinctions between model responses — there’s real value in a neutral, meta-model layer like interface0. The model companies just can’t do something like this — they’re stuck with just their own model.</p>
+
+<p>I already saw this benefit with interface0’s “cross-provider memory” feature (which I still love), but it now feels to me like there’s even more that the model labs just can’t or won’t do, which others should…</p><hr />
 <h4 id="june-29-2025-agents-async-and-baseline-knowledge">
   
   
@@ -113,7 +146,7 @@
 
 <p>One other interesting experience: I’ve been onboarding a few friends to interface0. Almost everyone I’ve onboarded works in tech and is actively using AI. But even so: most of them don’t know about how “system prompts” work, or what “context” means in the abstract. I’ve been surprised by the low baseline level of knowledge about the specifics, even for people who are active users. Exposing some of these primitives to people could help them become much more effective users of LLM technologies.</p>
 
-<p>Last: I continue to build out interface0. It is remarkable how quickly — with AI assistance — you can ship features for a (relatively) simple product like it. This past week I spent maybe 10-15 hours building and shipped as much as you’d expect an old-school SaaS company with 10 engineers to ship in a sprint — or maybe even a month. I may start to post about some of what I’m building into it publicly…</p>
+<p>Last: I continue to build out interface0. It is remarkable how quickly — with AI assistance — you can ship features for a (relatively) simple product like it. This past week I spent maybe 10-15 hours building and shipped as much as you’d expect an old-school SaaS company with 10 engineers to ship in a sprint — or maybe even a month. I may start to post about some of what I’m building into it publicly…</p><hr />
 <h4 id="june-16-2025-merge-conflicts">
   
   
@@ -155,7 +188,7 @@
 
 <p>This merge would have taken me <em>forever</em> to sort out. I was extremely impressed with the capabilities on display here — grasping the patterns of the Zola codebase, the interface0 codebase, the nuances of the divergence, and then figuring out how to edit everything.</p>
 
-<p>I wasn’t really expecting it to work… but here we are. Keeps happening!</p>
+<p>I wasn’t really expecting it to work… but here we are. Keeps happening!</p><hr />
 <h4 id="june-8-2025-interface0-arrives">
   
   
