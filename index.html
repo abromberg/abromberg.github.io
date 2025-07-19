@@ -27,6 +27,7 @@
 
 
   <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/generated-category-filters.css">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
 <script>
@@ -63,7 +64,26 @@
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home">
-<ul class="post-list home-article-section"><li><div class="home-article-line">
+<!-- Category Filter -->
+  <div class="category-filter-container">
+    <input type="radio" id="filter-all" name="category-filter" value="all" checked>
+    <input type="radio" id="filter-best-of" name="category-filter" value="best-of"><input type="radio" id="filter-ai" name="category-filter" value="ai"><input type="radio" id="filter-health" name="category-filter" value="health"><input type="radio" id="filter-math-science" name="category-filter" value="math-science"><input type="radio" id="filter-startups" name="category-filter" value="startups"><input type="radio" id="filter-tinkering" name="category-filter" value="tinkering"><input type="radio" id="filter-ways-of-looking" name="category-filter" value="ways-of-looking"><div class="category-filter">
+      <span class="category-filter-title">Topics:</span>
+      <label for="filter-all" class="category-filter-label">All</label>
+      <label for="filter-best-of" class="category-filter-label">Best-of</label><label for="filter-tinkering" class="category-filter-label">Tinkering</label><label for="filter-ways-of-looking" class="category-filter-label">Ways of Looking</label><label for="filter-health" class="category-filter-label">Health</label><label for="filter-ai" class="category-filter-label">AI</label><label for="filter-math-science" class="category-filter-label">Math & science</label><label for="filter-startups" class="category-filter-label">Startups</label></div>
+
+    <ul class="post-list home-article-section"><li class="post-item" data-categories="tinkering"><div class="home-article-line">
+        <div class="home-article-title"><a  
+            class="home-article-link  " 
+            href="/no-js-jekyll-filtering">Jekyll category filtering with no JS</a>
+        </div>
+        <div class="home-article-right"><div class="home-article-date">July 19, 2025</div><div class="home-article-status">
+            <div class="home-article-status-hover"><span class="home-article-status-hover-text">Quite short. Probably less than 1 minute.</span></div>
+
+            <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
+          </div>
+        </div>
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ai"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/log/ai">AI Captain&#39;s Log</a>
@@ -74,8 +94,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/gradient-generator">A pretty gradient generator</a>
@@ -86,8 +105,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ai best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">🏗️</span><a  
             class="home-article-link bold " 
             href="/field-guide-context-engineering">Introductory field guide to Context Engineering for LLM users</a>
@@ -98,8 +116,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a href="/uwol" class="uwol-series-badge" title="Part of the Useful Ways of Looking series">UWoL</a><a  
             class="home-article-link  " 
             href="/uwol/ooda-loops">OODA loops</a>
@@ -110,8 +127,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a href="/uwol" class="uwol-series-badge" title="Part of the Useful Ways of Looking series">UWoL</a><a  
             class="home-article-link  " 
             href="/uwol/theory-of-constraints">Theory of Constraints</a>
@@ -122,8 +138,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ai tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/interface0-early-july-update">interface0: early July update</a>
@@ -134,8 +149,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a href="/uwol" class="uwol-series-badge" title="Part of the Useful Ways of Looking series">UWoL</a><a  
             class="home-article-link  " 
             href="/uwol/parkinsons-law-generalized">Parkinson&#39;s Law, generalized</a>
@@ -146,8 +160,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a href="/uwol" class="uwol-series-badge" title="Part of the Useful Ways of Looking series">UWoL</a><a  
             class="home-article-link  " 
             href="/uwol/ways-of-looking">Ways of Looking</a>
@@ -158,8 +171,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a href="/uwol" class="uwol-series-badge" title="Part of the Useful Ways of Looking series">UWoL</a><a  
             class="home-article-link  " 
             href="/uwol/useful-correct">Useful vs. Correct</a>
@@ -170,8 +182,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/energy-crisis-mold">How the Yom Kippur War led to America&#39;s moldy homes</a>
@@ -182,8 +193,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ai"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/not-sure-ai-post">I&#39;m not sure how I feel about this</a>
@@ -194,8 +204,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ai tinkering best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">💻</span><a  
             class="home-article-link bold " 
             href="/interface0-intro">interface0: the LLM interface I&#39;ve been waiting for</a>
@@ -206,8 +215,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="math-science best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">⚛️</span><a  
             class="home-article-link bold " 
             href="/quantum-intuition">Quantum intuition for everyone, or: why Einstein thinks reality isn&#39;t reasonable</a>
@@ -218,8 +226,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">👁️</span><a  
             class="home-article-link bold " 
             href="/ways-of-looking">Ways of Looking: a brief guide to ending suffering</a>
@@ -230,8 +237,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/reality-malleability">Assorted excerpts on the malleability of &quot;reality&quot;</a>
@@ -242,8 +248,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/illuminated-blog">The illuminated blog</a>
@@ -254,8 +259,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/speedrun-docsend">Speedrunning a home-cooked DocSend replacement</a>
@@ -266,8 +270,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/fast-hardware-prototyping">I²C + AI = crazy fast simple hardware prototyping</a>
@@ -278,8 +281,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ways-of-looking"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/jizo-instax-impermanence">Jizo, Instax, and Impermanence</a>
@@ -290,8 +292,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/rfr-flawed-assumption">The flawed assumption at the heart of US RFR regulation</a>
@@ -302,8 +303,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health math-science best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">💡</span><a  
             class="home-article-link bold " 
             href="/all-light">All light is not created equal</a>
@@ -314,8 +314,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering ai best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">🧠</span><a  
             class="home-article-link bold " 
             href="/mentat-mail">Mentat Mail: Email as an interface for AI</a>
@@ -326,8 +325,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering ai best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">😈</span><a  
             class="home-article-link bold " 
             href="/deus-deceptor">Deus Deceptor: Descartes&#39; Chrome extension</a>
@@ -338,8 +336,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="math-science"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/intuition-electromagnetism-symmetry">Building intuition for electromagnetism&#39;s symmetric origins</a>
@@ -350,8 +347,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/chain-design-pattern">A design pattern I hope Yelp copies</a>
@@ -362,8 +358,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">🏴‍☠️</span><a  
             class="home-article-link bold " 
             href="/nor-eply-stanford-vulnerability">The death of Nor Eply: a Stanford security story</a>
@@ -374,8 +369,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="startups"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/tv-media-training">So, you&#39;re going on TV? Here&#39;s your media training</a>
@@ -386,8 +380,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="startups"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/tech-crypto-dafs">More tech and crypto people should use DAFs</a>
@@ -398,8 +391,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="ai"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/bricklaying-engineering-ai">Bricklaying, architecture, software engineering, and AI</a>
@@ -410,8 +402,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering ai best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">🤖</span><a  
             class="home-article-link bold " 
             href="/directory-site-agents">Building out directory site content with AI agents</a>
@@ -422,8 +413,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health math-science best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">🌊</span><a  
             class="home-article-link bold " 
             href="/rational-guide-to-emfs">What are EMFs? A rational, skeptical, curious person’s guide</a>
@@ -434,8 +424,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/illegal-light">It&#39;s illegal to buy healthy lightbulbs in California</a>
@@ -446,8 +435,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/fragrance-free">Try just one fragrance-free month</a>
@@ -458,8 +446,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="startups best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">📰</span><a  
             class="home-article-link bold " 
             href="/startup-pr-rulebook">Startup PR, Part I: the rules of the game</a>
@@ -470,8 +457,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="startups"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/investor-updates">My investor update format</a>
@@ -482,8 +468,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">☢️</span><a  
             class="home-article-link bold " 
             href="/toxic-progress-paradox">The Toxic Progress Paradox</a>
@@ -494,8 +479,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/freedom-phones">Freedom Phones and Focus Accounts</a>
@@ -506,8 +490,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="health best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">📊</span><a  
             class="home-article-link bold " 
             href="/minimum-effective-quantification">Minimum Effective Quantification</a>
@@ -518,8 +501,7 @@
             <span class="home-article-status-text"><i class="fa-regular fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="startups best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">☎️</span><a  
             class="home-article-link bold " 
             href="/useful-reference-calls">Tools for getting the truth on reference calls</a>
@@ -530,8 +512,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="uncategorized"><div class="home-article-line">
         <div class="home-article-title"><a  target="_blank"  
             class="home-article-link  external-link" 
             href="https://medium.com/@andy_bromberg/nile-a-sovereign-decentralized-bookstore-661c7cddd0ff">Welcome to Nile: A Sovereign Bookstore<span class="home-article-external-link">(medium.com)</span></a>
@@ -542,8 +523,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="uncategorized"><div class="home-article-line">
         <div class="home-article-title"><a  target="_blank"  
             class="home-article-link  external-link" 
             href="https://medium.com/@andy_bromberg/paying-to-be-bought-a-token-network-acquisition-blueprint-a3e47d59b134">Paying to be Bought: A Token Network Acquisition Blueprint<span class="home-article-external-link">(medium.com)</span></a>
@@ -554,8 +534,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="uncategorized"><div class="home-article-line">
         <div class="home-article-title"><a  target="_blank"  
             class="home-article-link  external-link" 
             href="https://medium.com/@andy_bromberg/charter-currencies-designing-a-future-of-competitive-monetary-policy-ce100f010fe">Charter Currencies: A Future of Competitive Monetary Policy<span class="home-article-external-link">(medium.com)</span></a>
@@ -566,8 +545,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="uncategorized"><div class="home-article-line">
         <div class="home-article-title"><a  target="_blank"  
             class="home-article-link  external-link" 
             href="https://medium.com/@andy_bromberg/what-the-first-token-hostile-takeover-could-look-like-c40be3ccb6b5">What the First Token Hostile Takeover Could Look Like<span class="home-article-external-link">(medium.com)</span></a>
@@ -578,8 +556,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="math-science"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/svm-intuition">Support Vector Machine Intuition</a>
@@ -590,8 +567,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering best-of"><div class="home-article-line">
         <div class="home-article-title"><span class="home-article-recommended">💳</span><a  
             class="home-article-link bold " 
             href="/credit-cards">Weekend Project: Hacking the Square Reader</a>
@@ -602,8 +578,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/sentiment-analysis-python">Second Try: Sentiment Analysis in Python</a>
@@ -614,8 +589,7 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li><hr class="home-article-divider"><li><div class="home-article-line">
+      </div><hr class="home-article-divider"></li><li class="post-item" data-categories="tinkering"><div class="home-article-line">
         <div class="home-article-title"><a  
             class="home-article-link  " 
             href="/sentiment-analysis">First shot: Sentiment Analysis in R</a>
@@ -626,8 +600,8 @@
             <span class="home-article-status-text"><i class="fa-solid fa-circle-half-stroke"></i></span>
           </div>
         </div>
-      </div>
-    </li></ul></div>
+      </div></li></ul>
+  </div></div>
 
       </div>
     </main></body>
