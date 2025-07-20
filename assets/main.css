@@ -2411,9 +2411,9 @@ hr:not(.end-of-article-divider)::before {
 
 .category-filter {
   margin: 2em 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
   gap: 0.8em;
 }
 
@@ -2422,7 +2422,18 @@ hr:not(.end-of-article-divider)::before {
   font-size: 0.9em;
   font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
-  margin-right: 0.2em;
+  grid-column: 1;
+  grid-row: 1;
+  line-height: 2.4em; /* Match the height of a filter button including padding */
+  align-self: start;
+}
+
+.category-filter-options {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
 }
 
 .category-filter-label {
@@ -2456,7 +2467,7 @@ hr:not(.end-of-article-divider)::before {
     gap: 0.6em;
   }
   .category-filter-options {
-    gap: 0.3em;
+    gap: 0.6em;
   }
   .category-filter-label {
     font-size: 0.8em;
