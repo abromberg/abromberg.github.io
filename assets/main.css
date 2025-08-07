@@ -2417,15 +2417,48 @@ hr:not(.end-of-article-divider)::before {
   gap: 0.8em;
 }
 
+.category-filter-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .category-filter-title {
+  display: none; /* Hidden on desktop */
   color: #6F6E69;
   font-size: 0.9em;
   font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
-  grid-column: 1;
-  grid-row: 1;
   line-height: 2.4em; /* Match the height of a filter button including padding */
-  align-self: start;
+}
+
+.category-filter-toggle-input {
+  display: none; /* Hidden checkbox */
+}
+
+.category-filter-toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  padding: 0.4em;
+  border-radius: 0.3em;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.category-filter-toggle-label i {
+  display: none; /* Hidden on desktop */
+  color: #6F6E69;
+  font-size: 1.1em;
+}
+
+.category-filter-toggle-label:hover i {
+  color: #100F0F;
 }
 
 .category-filter-options {
@@ -2464,10 +2497,49 @@ hr:not(.end-of-article-divider)::before {
 /* Responsive design for mobile */
 @media screen and (max-width: 600px) {
   .category-filter {
-    gap: 0.6em;
+    display: block; /* Override grid layout */
+  }
+  .category-filter-header {
+    grid-column: unset;
+    grid-row: unset;
+    margin-bottom: 0;
+  }
+  .category-filter-toggle-label {
+    padding: 0; /* Remove padding on mobile to keep text aligned */
+  }
+  .category-filter-toggle-label i {
+    display: block; /* Show icon on mobile */
+  }
+  .category-filter-title {
+    display: block; /* Show text on mobile */
+  }
+  .category-filter-toggle-label:hover {
+    background-color: rgba(0, 0, 0, 0.05);
   }
   .category-filter-options {
+    grid-column: unset;
+    grid-row: unset;
+    display: none; /* Hidden by default on mobile */
     gap: 0.6em;
+    margin-top: 0.8em;
+    padding-top: 0.8em;
+    border-top: 1px solid #DAD8CE;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+  }
+  /* Show options when checkbox is checked */
+  .category-filter-toggle-input:checked ~ .category-filter-header .category-filter-toggle-label {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .category-filter-toggle-input:checked ~ .category-filter-header .category-filter-toggle-label i {
+    color: #100F0F;
+  }
+  .category-filter-toggle-input:checked ~ .category-filter-options {
+    display: flex;
+    opacity: 1;
+    max-height: 200px; /* Adjust based on content */
   }
   .category-filter-label {
     font-size: 0.8em;
