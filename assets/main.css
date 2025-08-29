@@ -929,6 +929,14 @@ header a:hover, a:focus {
   font-weight: bold;
 }
 
+.semi-bold {
+  font-weight: 600;
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
 .post-content ul, ol {
   width: 85%;
 }
