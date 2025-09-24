@@ -24,6 +24,12 @@
   font-style: italic;
 }
 @font-face {
+  font-family: "Excalifont";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Excalifont-Regular.woff2") format("woff2");
+}
+@font-face {
   font-family: "Fira Mono";
   src: url("/assets/fonts/FiraMono-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -1251,6 +1257,129 @@ hr:not(.end-of-article-divider)::before {
   display: none; /* Extra safety */
 }
 
+/* Full Bleed Iframe */
+.full-bleed-iframe {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.full-bleed-iframe iframe {
+  width: 100%;
+  display: block;
+  border: 2px solid #6F6E69;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fullscreen button for iframe */
+.iframe-fullscreen-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.fullscreen-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.fullscreen-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-1px);
+}
+
+.fullscreen-btn:active {
+  transform: translateY(0);
+}
+
+/* Fullscreen styles */
+.iframe-fullscreen-container:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe-fullscreen-container:fullscreen iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.iframe-fullscreen-container:fullscreen .fullscreen-btn {
+  top: 20px;
+  right: 20px;
+}
+
+/* Webkit fullscreen support */
+.iframe-fullscreen-container:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe-fullscreen-container:-webkit-full-screen iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Mozilla fullscreen support */
+.iframe-fullscreen-container:-moz-full-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe-fullscreen-container:-moz-full-screen iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Prevent horizontal overflow issues */
+@media screen and (max-width: 820px) {
+  .full-bleed-iframe {
+    width: calc(100vw - 2rem);
+    margin-left: calc(-50vw + 1rem);
+    margin-right: calc(-50vw + 1rem);
+    padding: 0 3%;
+  }
+}
 /* Expandable Paragraphs Widget */
 .expandable-paragraphs {
   margin: 2em 0;
