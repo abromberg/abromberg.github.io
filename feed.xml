@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-10-21T12:29:45-06:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">The trick to changing router bits on a Laguna Shaper</title><link href="https://andybromberg.com/laguna-shaper-bit-change" rel="alternate" type="text/html" title="The trick to changing router bits on a Laguna Shaper" /><published>2025-10-02T09:00:00-06:00</published><updated>2025-10-02T09:00:00-06:00</updated><id>https://andybromberg.com/laguna-shaper-bit-change</id><content type="html" xml:base="https://andybromberg.com/laguna-shaper-bit-change"><![CDATA[<p><em>This is a low-TAM post meant for people who were Googling the same thing I was a few days ago, trying to figure out how to change the bit on a woodworking machine. If that is not you, you can stop reading now :)</em></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-10-24T13:53:27-05:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Lightwork Home Health: functional health for modern homes</title><link href="https://andybromberg.com/lightwork-home-health" rel="alternate" type="text/html" title="Lightwork Home Health: functional health for modern homes" /><published>2025-10-24T11:00:00-05:00</published><updated>2025-10-24T11:00:00-05:00</updated><id>https://andybromberg.com/lightwork-home-health</id><content type="html" xml:base="https://andybromberg.com/lightwork-home-health"><![CDATA[<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-10f76f8c3.webp 800w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1000-10f76f8c3.webp 1000w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1200-10f76f8c3.webp 1200w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1584-10f76f8c3.webp 1584w" type="image/webp" /><source srcset="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-dffba7db5.png 800w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1000-dffba7db5.png 1000w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1200-dffba7db5.png 1200w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1584-dffba7db5.png 1584w" type="image/png" /><img src="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-dffba7db5.png" width="1584" height="555" /></picture>
+
+<p>My wife Alexa and I learned the hard way that homes can be very toxic.</p>
+
+<p>We spent a couple years like frogs in boiling water, unknowingly becoming progressively sicker. And then, once we finally realized what was going on, it took us more than a year to find and fix the cause of our health issues.</p>
+
+<p>We saw a revolving door of doctors and home inspectors with different theories and, bafflingly, no clear answers. Eventually, we took matters into our own hands and figured it out — aided by the realization that when we <em>weren’t</em> at the house, Alexa felt better, and when we were there, she felt worse.</p>
+
+<p>It took us buying thousands of dollars of testing equipment for different facets of our home’s health and doing endless research, reading academic papers and consulting experts (and LLMs).</p>
+
+<p>Nobody should need to go through all that.</p>
+
+<p>So with our close friend <a href="https://justinmares.substack.com/">Justin Mares</a> (CEO of Truemed and founder of Kettle &amp; Fire), we incubated <a href="https://lightworkhome.com">Lightwork Home Health</a>, the world’s most data-driven home health assessment. We brought on an incredible operating team who have been quietly building the business, and now are excited to talk about it publicly.</p>
+
+<p>You can think of Lightwork as “functional health for your home,” with assessments that cover air and water quality, lighting, electromagnetic fields, mold, household products, and more. Most people have no idea what they and their family are exposed to — so we help them find and fix these hidden toxins and health hazards.</p>
+
+<p>At the end of this post, I’ll share more about Lightwork’s services and what we’ve found in customers’ homes. But first:</p>
+
+<p>Why now?</p>
+
+<hr />
+
+<p>For a couple hundred thousand years, humans adapted to the environmental realities of living on Planet Earth. These realities aren’t always pleasant — it gets awfully cold in some places, and awfully hot in others; certain plants are poisonous to consume or touch; wild animals can attack us; and storms can strike.</p>
+
+<p>Of course, over those many thousands of years, the conditions changed — we’ve even gone through ice ages. But, for most of that time, humanity itself didn’t introduce new “environmental exposures” or “toxins” that we then needed to contend with. We just got better — through a <em>lot</em> of practice — at dealing with the planet’s <em>natural</em> exposures.</p>
+
+<p>That changed starting with the scientific and industrial revolutions, beginning in the 1500s and running through the mid 1900s, when we began to invent new things in earnest, much faster than ever before.</p>
+
+<p>That invention and progress was — and is — great. Progress makes the world get better. But, as I talked about in <a href="/toxic-progress-paradox">The Toxic Progress Paradox</a>, progress also often comes with downsides.</p>
+
+<p>Here’s a chart of patents granted in the US — an admittedly-rough proxy for innovation and invention:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/toxic-progress-paradox/patents-800-f5ac9c2bb.webp 800w, /assets/images/generated/toxic-progress-paradox/patents-1000-f5ac9c2bb.webp 1000w, /assets/images/generated/toxic-progress-paradox/patents-1200-f5ac9c2bb.webp 1200w, /assets/images/generated/toxic-progress-paradox/patents-1600-f5ac9c2bb.webp 1600w, /assets/images/generated/toxic-progress-paradox/patents-2000-f5ac9c2bb.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toxic-progress-paradox/patents-800-234cce265.png 800w, /assets/images/generated/toxic-progress-paradox/patents-1000-234cce265.png 1000w, /assets/images/generated/toxic-progress-paradox/patents-1200-234cce265.png 1200w, /assets/images/generated/toxic-progress-paradox/patents-1600-234cce265.png 1600w, /assets/images/generated/toxic-progress-paradox/patents-2000-234cce265.png 2000w" type="image/png" /><img src="/assets/images/generated/toxic-progress-paradox/patents-800-234cce265.png" width="2032" height="1290" /></picture>
+
+<p>If we imagine that some small percentage of deployed inventions is capable of causing negative health effects, you can imagine that as the hockey stick bends upwards, so too do the toxins we are exposed to.</p>
+
+<p>And since, say, the 1970s, we’ve been ramping these novel exposures faster than ever before. Just a few examples:</p>
+
+<ul>
+  <li>after the oil &amp; energy crises of the 1970s, we made homes <em>airtight</em> — trapping <strong>particulates</strong>, <strong>VOCs</strong>, and moisture &amp; <strong>mold</strong> indoors, unlike ever before</li>
+  <li>in the early/mid 2000s, we began to push LED lighting, dramatically shifting the <strong>light spectra</strong> we are exposed to, as well as changing other characteristics of our light sources</li>
+  <li>the energy-efficient windows spurred by the energy crises started blocking more and more sunlight from reaching us indoors</li>
+  <li>new sources of water contamination appeared with the advent of novel chemicals like <strong>PFAS</strong></li>
+  <li>as cell phones, WiFi, Bluetooth, smart meters, and more were commercialized from the ’90s onward, our exposure to <strong>non-native electromagnetic fields</strong> skyrocketed</li>
+</ul>
+
+<p>In short, since the 1970s, our air, water, lighting, and electromagnetic environments have changed <em>dramatically.</em> Way, way faster than ever before. All within just a couple generations.</p>
+
+<p>In no way am I denying the wonderful outcomes of all of that — including the internet, one of the greatest inventions of all time. But I merely point out: after literally hundreds of thousands of years of slow-changing environmental exposures, we have thrust ourselves into a new reality — one where our exposures are changing at a dizzying pace, often in the space of years rather than centuries.</p>
+
+<p>And, as Alexa and my experience shows, that world can come with downsides.</p>
+
+<p>I’ve written about some of this over the last few months, and will continue to do so:</p>
+<ul>
+  <li><a href="/rational-guide-to-emfs">What are EMFs? A rational, skeptical, curious person’s guide</a></li>
+  <li><a href="/all-light">All light is not created equal</a></li>
+  <li><a href="/energy-crisis-mold">How the Yom Kippur War led to America’s moldy homes</a></li>
+  <li><a href="/rfr-flawed-assumption">The flawed assumption at the heart of US RFR regulation</a></li>
+  <li><a href="/fragrance-free">Try just one fragrance-free month</a></li>
+  <li><a href="/illegal-light">It’s illegal to buy healthy lightbulbs in California</a></li>
+  <li><a href="/toxic-progress-paradox">The Toxic Progress Paradox</a></li>
+</ul>
+
+<hr />
+
+<p>So, given all that — and our own struggles — we started <a href="https://lightworkhome.com">Lightwork Home Health</a>. It began with helping friends and evolved into a business that has already helped many customers across the country (and across the pond in London!) deal with this brave new world of novel exposures.</p>
+
+<p>We’ve built a killer operating team led by Jay Devram (co-founder; leading operations) and Johnny Bowman and Dom Francks (running our flagship NY and SF markets, respectively), along with exceptional advisors and supporters. We’re currently offering our white-glove home health assessments in New York, Austin, Los Angeles, San Francisco, and London — and the team travels to test homes across the US.</p>
+
+<p>Alexa and I found it nearly impossible to get rigorous, science-backed, trustworthy, data-driven answers about our home from people who were also open-minded to these new exposures. So that’s our north star: tell people the truth, with empirical data and science.</p>
+
+<p>Our assessments are best-in-class for understanding your home’s health. We:</p>
+<ul>
+  <li>collect data in a half-day on-site visit using our custom-built home-mapping inspection app, lab tests, and professional testing equipment</li>
+  <li>conduct the most data-driven analysis in the industry, measuring your home’s performance against our proprietary Lightwork Exposure Indexes</li>
+  <li>compile an in-depth 40+ page report with specific recommendations and next steps</li>
+  <li>deliver it to you live with all the context you need</li>
+  <li>and then support you through the remediation process</li>
+</ul>
+
+<p>Every home has room for improvement, and we’ve found all sorts of serious issues across the tests our team has run. To share just a few examples:</p>
+<ul>
+  <li>combustion gas leaks</li>
+  <li>an incorrectly-installed $8k water filtration system that was filtering nothing and letting - through arsenic and uranium contamination</li>
+  <li>lighting with huge blue light peaks contributing to delayed sleep onset</li>
+  <li>plumbing current causing elevated magnetic fields in a nursery room at levels that have been linked to increased risk of childhood leukemia</li>
+  <li>hidden mycotoxin-producing mold species despite previous remediation</li>
+  <li>wiring issues in walls creating elevated electrical fields</li>
+  <li>highly-volatile compounds in shower water, creating risks from inhalation and dermal exposure</li>
+  <li>and so much more</li>
+</ul>
+
+<p>If you’re interested in learning more, check out <a href="https://lightworkhome.com">Lightwork Home Health</a> or drop me a note.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/laguna-shaper-bit-change">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/laguna-shaper-bit-change">The trick to changing router bits on a Laguna Shaper</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[My wife Alexa and I learned the hard way that homes can be very toxic, so we incubated a company to save others from the same fate.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-24-lightwork-home-health.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-24-lightwork-home-health.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The trick to changing router bits on a Laguna Shaper</title><link href="https://andybromberg.com/laguna-shaper-bit-change" rel="alternate" type="text/html" title="The trick to changing router bits on a Laguna Shaper" /><published>2025-10-02T10:00:00-05:00</published><updated>2025-10-02T10:00:00-05:00</updated><id>https://andybromberg.com/laguna-shaper-bit-change</id><content type="html" xml:base="https://andybromberg.com/laguna-shaper-bit-change"><![CDATA[<p><em>This is a low-TAM post meant for people who were Googling the same thing I was a few days ago, trying to figure out how to change the bit on a woodworking machine. If that is not you, you can stop reading now :)</em></p>
 
 <p>All the guides I could find for changing shaper bits had to do with full-spindle transfers. But I was using the shaper as a routing table and couldn’t figure out how to get the bit assembly to screw on appropriately.</p>
 
@@ -40,11 +170,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/lightwork-home-health">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/lightwork-home-health">Lightwork Home Health: functional health for modern homes</a>
     
   </div>
 </nav>
@@ -56,7 +190,7 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A low-TAM post meant for people trying to figure out how to change a router bit on a Laguna Shaper machine, who are having issues with it rotating.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Doors and keys</title><link href="https://andybromberg.com/uwol/doors-keys" rel="alternate" type="text/html" title="UWoL: Doors and keys" /><published>2025-09-29T09:00:00-06:00</published><updated>2025-09-29T09:00:00-06:00</updated><id>https://andybromberg.com/uwol/uwol-doors-keys</id><content type="html" xml:base="https://andybromberg.com/uwol/doors-keys"><![CDATA[<div class="disclaimer-box">
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A low-TAM post meant for people trying to figure out how to change a router bit on a Laguna Shaper machine, who are having issues with it rotating.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Doors and keys</title><link href="https://andybromberg.com/uwol/doors-keys" rel="alternate" type="text/html" title="UWoL: Doors and keys" /><published>2025-09-29T10:00:00-05:00</published><updated>2025-09-29T10:00:00-05:00</updated><id>https://andybromberg.com/uwol/uwol-doors-keys</id><content type="html" xml:base="https://andybromberg.com/uwol/doors-keys"><![CDATA[<div class="disclaimer-box">
   <span class="disclaimer-box-title">Useful Ways of Looking</span>
   <div class="disclaimer-box-content">
     <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
@@ -148,7 +282,7 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[Any journey of change — improving a skill, building a company, spiritual evolution — can be thought of as moving through a series of locked doors (lessons), for each of which you must find the key. But the doors are in a different order for everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-29-uwol-doors-keys.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-29-uwol-doors-keys.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the application of high effort</title><link href="https://andybromberg.com/high-effort" rel="alternate" type="text/html" title="On the application of high effort" /><published>2025-09-28T11:00:00-06:00</published><updated>2025-09-28T11:00:00-06:00</updated><id>https://andybromberg.com/high-effort</id><content type="html" xml:base="https://andybromberg.com/high-effort"><![CDATA[<blockquote>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[Any journey of change — improving a skill, building a company, spiritual evolution — can be thought of as moving through a series of locked doors (lessons), for each of which you must find the key. But the doors are in a different order for everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-29-uwol-doors-keys.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-29-uwol-doors-keys.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the application of high effort</title><link href="https://andybromberg.com/high-effort" rel="alternate" type="text/html" title="On the application of high effort" /><published>2025-09-28T12:00:00-05:00</published><updated>2025-09-28T12:00:00-05:00</updated><id>https://andybromberg.com/high-effort</id><content type="html" xml:base="https://andybromberg.com/high-effort"><![CDATA[<blockquote>
   <p>Everybody want to be a bodybuilder, but don’t nobody want to lift no heavy-ass weights.</p>
 
   <p>— Ronnie Coleman, eight-time Mr. Olympia (<a href="https://www.youtube.com/shorts/IQmOGlbdn8g">video source</a>)</p>
@@ -396,7 +530,7 @@ What could I do that others would call unreasonable?</p>
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>
 
-</h3>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The difference between success and failure often lies not with a trick or secret, but with the simple application of very high effort.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-28-high-effort.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-28-high-effort.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Upcoming trend predictions (September 2025 edition)</title><link href="https://andybromberg.com/trends-september-2025" rel="alternate" type="text/html" title="Upcoming trend predictions (September 2025 edition)" /><published>2025-09-28T10:00:00-06:00</published><updated>2025-09-28T10:00:00-06:00</updated><id>https://andybromberg.com/trends-september-2025</id><content type="html" xml:base="https://andybromberg.com/trends-september-2025"><![CDATA[<p>A few scattered societal shifts I think might happen in the coming years (each presented without judgement)…</p>
+</h3>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The difference between success and failure often lies not with a trick or secret, but with the simple application of very high effort.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-28-high-effort.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-28-high-effort.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Upcoming trend predictions (September 2025 edition)</title><link href="https://andybromberg.com/trends-september-2025" rel="alternate" type="text/html" title="Upcoming trend predictions (September 2025 edition)" /><published>2025-09-28T11:00:00-05:00</published><updated>2025-09-28T11:00:00-05:00</updated><id>https://andybromberg.com/trends-september-2025</id><content type="html" xml:base="https://andybromberg.com/trends-september-2025"><![CDATA[<p>A few scattered societal shifts I think might happen in the coming years (each presented without judgement)…</p>
 
 <ul>
   <li><strong>Fragrances</strong> (especially artificial cologne, perfume, heavily-scented body wash) are seen like second-hand smoke. It becomes much less socially acceptable to wear them in public places.</li>
@@ -449,7 +583,7 @@ What could I do that others would call unreasonable?</p>
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[A few scattered societal shifts I think might happen in the coming years (each presented without judgement)...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-28-trends-september-2025.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-28-trends-september-2025.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Free site and layout planner mini-app</title><link href="https://andybromberg.com/free-pixel-site-planner" rel="alternate" type="text/html" title="Free site and layout planner mini-app" /><published>2025-09-24T10:00:00-06:00</published><updated>2025-09-24T10:00:00-06:00</updated><id>https://andybromberg.com/free-pixel-site-planner</id><content type="html" xml:base="https://andybromberg.com/free-pixel-site-planner"><![CDATA[<p>Thanks for bearing with me on the SEO-bot title — I wish I could have been able to find something this a week ago, so am trying to make it easier for the next person :)</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[A few scattered societal shifts I think might happen in the coming years (each presented without judgement)...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-28-trends-september-2025.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-28-trends-september-2025.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Free site and layout planner mini-app</title><link href="https://andybromberg.com/free-pixel-site-planner" rel="alternate" type="text/html" title="Free site and layout planner mini-app" /><published>2025-09-24T11:00:00-05:00</published><updated>2025-09-24T11:00:00-05:00</updated><id>https://andybromberg.com/free-pixel-site-planner</id><content type="html" xml:base="https://andybromberg.com/free-pixel-site-planner"><![CDATA[<p>Thanks for bearing with me on the SEO-bot title — I wish I could have been able to find something this a week ago, so am trying to make it easier for the next person :)</p>
 
 <picture loading="lazy"><source srcset="/assets/images/generated/free-pixel-site-planner/room-layout-800-443a51da5.webp 800w, /assets/images/generated/free-pixel-site-planner/room-layout-1000-443a51da5.webp 1000w, /assets/images/generated/free-pixel-site-planner/room-layout-1200-443a51da5.webp 1200w, /assets/images/generated/free-pixel-site-planner/room-layout-1600-443a51da5.webp 1600w, /assets/images/generated/free-pixel-site-planner/room-layout-2000-443a51da5.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/free-pixel-site-planner/room-layout-800-42de8d445.png 800w, /assets/images/generated/free-pixel-site-planner/room-layout-1000-42de8d445.png 1000w, /assets/images/generated/free-pixel-site-planner/room-layout-1200-42de8d445.png 1200w, /assets/images/generated/free-pixel-site-planner/room-layout-1600-42de8d445.png 1600w, /assets/images/generated/free-pixel-site-planner/room-layout-2000-42de8d445.png 2000w" type="image/png" /><img src="/assets/images/generated/free-pixel-site-planner/room-layout-800-42de8d445.png" width="4140" height="1916" /></picture>
 
@@ -598,7 +732,7 @@ document.addEventListener('keydown', function(e) {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Thanks for bearing with me on the SEO title — I wish I could have been able to find something this a week ago, so am trying to make it easier for the next person :)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-24-free-pixel-site-planner.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-24-free-pixel-site-planner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DATs are misunderstood: why they (sometimes) make sense</title><link href="https://andybromberg.com/dats-misunderstood" rel="alternate" type="text/html" title="DATs are misunderstood: why they (sometimes) make sense" /><published>2025-09-11T10:00:00-06:00</published><updated>2025-09-11T10:00:00-06:00</updated><id>https://andybromberg.com/dats-misunderstood</id><content type="html" xml:base="https://andybromberg.com/dats-misunderstood"><![CDATA[<p><em>Nothing in this post is financial advice, and as always, Do Your Own Research. This post is intended for educational purposes only, and to show my latest thinking on a category (which may change!). I look forward to feedback and corrections.</em></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Thanks for bearing with me on the SEO title — I wish I could have been able to find something this a week ago, so am trying to make it easier for the next person :)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-24-free-pixel-site-planner.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-24-free-pixel-site-planner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DATs are misunderstood: why they (sometimes) make sense</title><link href="https://andybromberg.com/dats-misunderstood" rel="alternate" type="text/html" title="DATs are misunderstood: why they (sometimes) make sense" /><published>2025-09-11T11:00:00-05:00</published><updated>2025-09-11T11:00:00-05:00</updated><id>https://andybromberg.com/dats-misunderstood</id><content type="html" xml:base="https://andybromberg.com/dats-misunderstood"><![CDATA[<p><em>Nothing in this post is financial advice, and as always, Do Your Own Research. This post is intended for educational purposes only, and to show my latest thinking on a category (which may change!). I look forward to feedback and corrections.</em></p>
 
 <h2 id="do-dats-actually-make-any-sense">Do DATs actually make any sense?</h2>
 
@@ -866,7 +1000,7 @@ document.addEventListener('keydown', function(e) {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[Digital Asset Treasury companies like Strategy (MSTR) are misunderstood. Contra popular belief, buying one at a premium to NAV can sometimes make sense, and it's not obvious why.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Costeading: Don’t scroll Zillow alone</title><link href="https://andybromberg.com/costeading" rel="alternate" type="text/html" title="Costeading: Don’t scroll Zillow alone" /><published>2025-09-10T10:00:00-06:00</published><updated>2025-09-10T10:00:00-06:00</updated><id>https://andybromberg.com/costeading</id><content type="html" xml:base="https://andybromberg.com/costeading"><![CDATA[<p>My latest batch of <a href="https://www.robinsloan.com/notes/home-cooked-app/">“homecooked software”</a> (along with <a href="/interface0-intro">interface0</a> and <a href="/speedrun-docsend">Vibesend</a>):</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[Digital Asset Treasury companies like Strategy (MSTR) are misunderstood. Contra popular belief, buying one at a premium to NAV can sometimes make sense, and it's not obvious why.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Costeading: Don’t scroll Zillow alone</title><link href="https://andybromberg.com/costeading" rel="alternate" type="text/html" title="Costeading: Don’t scroll Zillow alone" /><published>2025-09-10T11:00:00-05:00</published><updated>2025-09-10T11:00:00-05:00</updated><id>https://andybromberg.com/costeading</id><content type="html" xml:base="https://andybromberg.com/costeading"><![CDATA[<p>My latest batch of <a href="https://www.robinsloan.com/notes/home-cooked-app/">“homecooked software”</a> (along with <a href="/interface0-intro">interface0</a> and <a href="/speedrun-docsend">Vibesend</a>):</p>
 
 <p><strong>Costeading</strong> — an app for saving, tagging, and discussing Zillow listings with friends and family.</p>
 
@@ -942,7 +1076,7 @@ document.addEventListener('keydown', function(e) {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Costeading is an app for saving, tagging, and discussing Zillow listings with friends and family. Ogling real estate is a social activity!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-10-costeading.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-10-costeading.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Theory of Constraints for AI</title><link href="https://andybromberg.com/constraints-ai" rel="alternate" type="text/html" title="Theory of Constraints for AI" /><published>2025-09-10T09:00:00-06:00</published><updated>2025-09-10T09:00:00-06:00</updated><id>https://andybromberg.com/constraints-ai</id><content type="html" xml:base="https://andybromberg.com/constraints-ai"><![CDATA[<p>How can you get better results from AI?</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Costeading is an app for saving, tagging, and discussing Zillow listings with friends and family. Ogling real estate is a social activity!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-10-costeading.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-10-costeading.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Theory of Constraints for AI</title><link href="https://andybromberg.com/constraints-ai" rel="alternate" type="text/html" title="Theory of Constraints for AI" /><published>2025-09-10T10:00:00-05:00</published><updated>2025-09-10T10:00:00-05:00</updated><id>https://andybromberg.com/constraints-ai</id><content type="html" xml:base="https://andybromberg.com/constraints-ai"><![CDATA[<p>How can you get better results from AI?</p>
 
 <p>When you’re using LLMs — to code, to write, whatever — the single biggest factor in the quality of your results is the quality of the underlying model.</p>
 
@@ -1037,7 +1171,7 @@ document.addEventListener('keydown', function(e) {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;]" /><summary type="html"><![CDATA[Applying theory of constraints to your AI usage will reveal how to get better outputs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-10-constraints-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-10-constraints-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">We’re all the editors now</title><link href="https://andybromberg.com/all-editors-now" rel="alternate" type="text/html" title="We’re all the editors now" /><published>2025-08-26T10:00:00-06:00</published><updated>2025-08-26T10:00:00-06:00</updated><id>https://andybromberg.com/all-editors-now</id><content type="html" xml:base="https://andybromberg.com/all-editors-now"><![CDATA[<p>In his excellent 2014 talk at YC, <a href="https://www.youtube.com/watch?v=6fQHLK1aIBs">“How to Operate”</a>, Keith Rabois gives an analogy for operators: that you should act like an editor.</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;]" /><summary type="html"><![CDATA[Applying theory of constraints to your AI usage will reveal how to get better outputs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-10-constraints-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-10-constraints-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">We’re all the editors now</title><link href="https://andybromberg.com/all-editors-now" rel="alternate" type="text/html" title="We’re all the editors now" /><published>2025-08-26T11:00:00-05:00</published><updated>2025-08-26T11:00:00-05:00</updated><id>https://andybromberg.com/all-editors-now</id><content type="html" xml:base="https://andybromberg.com/all-editors-now"><![CDATA[<p>In his excellent 2014 talk at YC, <a href="https://www.youtube.com/watch?v=6fQHLK1aIBs">“How to Operate”</a>, Keith Rabois gives an analogy for operators: that you should act like an editor.</p>
 
 <p>He’s talking to managers, describing how (if done well), your role should mostly involve actions like redlining work, asking clarifying questions, allocating resources, ensuring consistent “voice,” and delegating. Your job isn’t (mostly) to “write” — it is to edit.</p>
 
@@ -1141,78 +1275,4 @@ document.addEventListener('keydown', function(e) {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[In his excellent 2014 talk at YC, “How to Operate”, Keith Rabois gives an analogy for operators: that you should act like an editor. He’s talking to managers, describing how (if done well), your role should mostly involve actions like redlining work, asking clarifying questions, allocating resources, ensuring consistent “voice,” and delegating. Your job isn’t (mostly) to “write” — it is to edit.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-08-26-all-editors-now.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-08-26-all-editors-now.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Omarchy on a 2018-2020 Mac</title><link href="https://andybromberg.com/omarchy-t2" rel="alternate" type="text/html" title="Omarchy on a 2018-2020 Mac" /><published>2025-08-16T09:00:00-06:00</published><updated>2025-08-16T09:00:00-06:00</updated><id>https://andybromberg.com/omarchy-t2</id><content type="html" xml:base="https://andybromberg.com/omarchy-t2"><![CDATA[<p><strong>Update 8/26:</strong> <a href="https://github.com/basecamp/omarchy/discussions/773">here is a great guide</a> on T2 Omarchy, soup-to-nuts. But if you’ve already installed and just need wifi, the below may still be useful.</p>
-
-<p><a href="https://omarchy.org/">Omarchy</a> is a new Linux setup built by <a href="https://world.hey.com/dhh/omarchy-is-out-4666dd31">DHH</a> and the 37Signals team, mostly powered by Arch &amp; Hyprland.</p>
-
-<p>It’s been getting a lot of hype recently as a development system, and I regret to inform you: the hype is well-deserved. It’s a really lovely experience. I now realize that I had never used a development environment built by someone with good taste.</p>
-
-<p>As it says on the tin, though, it’s a bit of a grind to get it all set up. And I found especially so on my old 2019 MacBook Pro. So I’m putting this out there in case anyone else has the same issue.</p>
-
-<p>The key issue is that for most Macs in the 2018-2020 time period, Apple put a “T2” security chip on them. This creates a bunch of friction for a new Linux install. Thankfully, there is an excellent wiki — <a href="https://wiki.t2linux.org/">t2linux</a> — which largely addresses common issues.</p>
-
-<p>The wiki is your answer for everything, but the biggest roadblock for me was this: I had gotten through the <code class="language-plaintext highlighter-rouge">archinstall</code> process and re-partitioned my whole drive, but simply could not get the Wi-Fi to work to take any further actions.</p>
-
-<p>If you’re in that situation and you don’t want to re-flash the whole computer, you’re who I’m writing this for. Here’s what you need to do:</p>
-
-<ol>
-  <li>Connect the computer to Ethernet (USB tethering did <em>not</em> work for me — it worked during the archinstall process, but not once I was in the OS)</li>
-  <li>Go to the <a href="https://wiki.t2linux.org/guides/wifi-bluetooth/">Wi-Fi and Bluetooth guide</a> on T2Linux wiki</li>
-  <li>Find the link to their firmware script (currently <a href="https://wiki.t2linux.org/tools/firmware.sh">here</a>)</li>
-  <li>Run <code class="language-plaintext highlighter-rouge">wget [that script]</code> (you should have installed wget as part of the Omarchy archinstall process), then <code class="language-plaintext highlighter-rouge">chmod +x [path/to/script]</code>, then <code class="language-plaintext highlighter-rouge">./path/to/script</code> and it will run</li>
-  <li>Select “Download a macOS Recovery Image from Apple and extract the firmware from there”</li>
-  <li>Select “macOS Sonoma”</li>
-  <li>Let it run</li>
-</ol>
-
-<p>Wi-Fi may start working immediately. If not, here are the commands you’ll want to keep in your back pocket (may also be relevant after a reboot):</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>rfkill unblock all
-<span class="nb">sudo </span>modprobe brcmfmac
-</code></pre></div></div>
-
-<p>Then you should be good to go! Once I had internet back, I could move through everything else on the T2Linux wiki and get the computer set up perfectly.</p>
-
-<p>If you’re finding this <em>before</em> you start the process, I’d recommend reading the wiki first and just building from a properly patched kernel in the first place. Enjoy Omarchy!</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/no-js-jekyll-filtering">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/no-js-jekyll-filtering">Jekyll category filtering with no JS</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/all-editors-now">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/all-editors-now">We're all the editors now</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Setting up Omarchy on Macs with the T2 chip requires some special work...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-08-16-omarchy-t2.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-08-16-omarchy-t2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[In his excellent 2014 talk at YC, “How to Operate”, Keith Rabois gives an analogy for operators: that you should act like an editor. He’s talking to managers, describing how (if done well), your role should mostly involve actions like redlining work, asking clarifying questions, allocating resources, ensuring consistent “voice,” and delegating. Your job isn’t (mostly) to “write” — it is to edit.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-08-26-all-editors-now.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-08-26-all-editors-now.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
