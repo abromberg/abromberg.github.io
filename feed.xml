@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-11-10T12:24:22-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Tinkering Club: call for applications</title><link href="https://andybromberg.com/tinkering-club-applications" rel="alternate" type="text/html" title="Tinkering Club: call for applications" /><published>2025-11-10T08:00:00-08:00</published><updated>2025-11-10T08:00:00-08:00</updated><id>https://andybromberg.com/tinkering-club-applications</id><content type="html" xml:base="https://andybromberg.com/tinkering-club-applications"><![CDATA[<p><strong>“What’d you get done this week?”</strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-11-11T08:31:52-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">I beat Google to making AI suggestions in Docs</title><link href="https://andybromberg.com/interface0-google-docs" rel="alternate" type="text/html" title="I beat Google to making AI suggestions in Docs" /><published>2025-11-11T07:00:00-08:00</published><updated>2025-11-11T07:00:00-08:00</updated><id>https://andybromberg.com/interface0-google-docs</id><content type="html" xml:base="https://andybromberg.com/interface0-google-docs"><![CDATA[<p>Bottom line up front: doesn’t this look like a sensible way to integrate AI into Google Docs?</p>
+
+<video controls="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
+<source src="/assets/images/interface0-google-docs/interface0-docs-demo.mp4" type="video/mp4" />
+If the video doesn't play, <a href="/assets/images/interface0-google-docs/interface0-docs-demo.mp4">open it directly</a>.
+</video>
+
+<hr />
+
+<p>That’s <a href="https://interface0.com">interface0’s</a> Google Docs integration. Just drop a comment tagging agent@interface0.com, same as you would a team member, and the agent can reply to your comment and even put suggestion-mode edits on the doc.</p>
+
+<p>(If you want to try it out, sign up for the <a href="https://interface0.com">interface0 waitlist</a>! You can then also email agent@interface0.com and get AI responses in email, WhatsApp its phone number to get responses there, and more…)</p>
+
+<p>Mind-bogglingly, here is Google’s current Gemini integration into Google Docs:</p>
+
+<video controls="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
+<source src="/assets/images/interface0-google-docs/gemini-demo.mp4" type="video/mp4" />
+If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini-demo.mp4">open it directly</a>.
+</video>
+
+<hr />
+
+<p>Gemini can’t make suggestions or edit the doc at all, beyond telling you to manually click an “insert” button (and maybe also a “replace” button, although I’ve never gotten that one to appear). From the horse’s mouth:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/interface0-google-docs/gemini-response-800-f4c596bff.webp 800w, /assets/images/generated/interface0-google-docs/gemini-response-1000-f4c596bff.webp 1000w, /assets/images/generated/interface0-google-docs/gemini-response-1200-f4c596bff.webp 1200w, /assets/images/generated/interface0-google-docs/gemini-response-1600-f4c596bff.webp 1600w, /assets/images/generated/interface0-google-docs/gemini-response-2000-f4c596bff.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/interface0-google-docs/gemini-response-800-9bd83ac4c.png 800w, /assets/images/generated/interface0-google-docs/gemini-response-1000-9bd83ac4c.png 1000w, /assets/images/generated/interface0-google-docs/gemini-response-1200-9bd83ac4c.png 1200w, /assets/images/generated/interface0-google-docs/gemini-response-1600-9bd83ac4c.png 1600w, /assets/images/generated/interface0-google-docs/gemini-response-2000-9bd83ac4c.png 2000w" type="image/png" /><img src="/assets/images/generated/interface0-google-docs/gemini-response-800-9bd83ac4c.png" width="2968" height="1254" /></picture>
+
+<p>How it is possible that Google — the creator of both Google Docs itself and of Gemini, one of the leading AI models, hasn’t yet integrated the two in any sort of sensible way?</p>
+
+<p>The most obvious implementation is the native one: let the AI participate in comment threads and make suggestions on the doc like a team member could. And yet…</p>
+
+<hr />
+
+<p>It turns out, by the way, that doing so (from outside Alphabet’s walls) is much harder than it seems.</p>
+
+<p>Google’s Drive/Docs API, surprisingly, <strong>has no way to programmatically make suggestion-mode edits to a document.</strong> You can <em>edit</em> a document and can make <em>comments</em> on it programmatically, but can’t make <em>suggestions</em>. Feels like a big oversight…<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Plus they make it extremely difficult to identify which user is commenting / prompting, which creates a whole separate set of challenges.</span></p>
+
+<p>So in order to get this working, I had to work out a more nuanced approach using browser automation.</p>
+
+<p>Basically, when an interface0 user comments on a document and requests edits, a web browser instance is spun up in the cloud, agent@interface0.com signs into its Google Account, and then the browser programmatically navigates to the document in question and interacts with it to make the necessary changes generated by the AI pipeline on the backend. It’s imperfect and a little brittle, but has been working well enough for my purposes.</p>
+
+<p>I hope Google adds suggestion-mode edits to the Docs API, but I’m not holding my breath…</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/tinkering-club-applications">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/tinkering-club-applications">Tinkering Club: call for applications</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Google hasn't yet properly integrated Gemini into Google Docs. So I knocked out a native-feeling implementation.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Tinkering Club: call for applications</title><link href="https://andybromberg.com/tinkering-club-applications" rel="alternate" type="text/html" title="Tinkering Club: call for applications" /><published>2025-11-10T08:00:00-08:00</published><updated>2025-11-10T08:00:00-08:00</updated><id>https://andybromberg.com/tinkering-club-applications</id><content type="html" xml:base="https://andybromberg.com/tinkering-club-applications"><![CDATA[<p><strong>“What’d you get done this week?”</strong></p>
 
 <p>If you’d like to answer that question weekly to a group of exceptional peers, this is for you.</p>
 
@@ -34,11 +112,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/interface0-google-docs">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/interface0-google-docs">I beat Google to making AI suggestions in Docs</a>
     
   </div>
 </nav>
@@ -1251,80 +1333,4 @@ document.addEventListener('keydown', function(e) {
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[Digital Asset Treasury companies like Strategy (MSTR) are misunderstood. Contra popular belief, buying one at a premium to NAV can sometimes make sense, and it's not obvious why.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Costeading: Don’t scroll Zillow alone</title><link href="https://andybromberg.com/costeading" rel="alternate" type="text/html" title="Costeading: Don’t scroll Zillow alone" /><published>2025-09-10T09:00:00-07:00</published><updated>2025-09-10T09:00:00-07:00</updated><id>https://andybromberg.com/costeading</id><content type="html" xml:base="https://andybromberg.com/costeading"><![CDATA[<p>My latest batch of <a href="https://www.robinsloan.com/notes/home-cooked-app/">“homecooked software”</a> (along with <a href="/interface0-intro">interface0</a> and <a href="/speedrun-docsend">Vibesend</a>):</p>
-
-<p><strong>Costeading</strong> — an app for saving, tagging, and discussing Zillow listings with friends and family.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/costeading/full-width-800-69de2d412.webp 800w, /assets/images/generated/costeading/full-width-1000-69de2d412.webp 1000w, /assets/images/generated/costeading/full-width-1200-69de2d412.webp 1200w, /assets/images/generated/costeading/full-width-1600-69de2d412.webp 1600w, /assets/images/generated/costeading/full-width-1800-69de2d412.webp 1800w" type="image/webp" /><source srcset="/assets/images/generated/costeading/full-width-800-61871845c.png 800w, /assets/images/generated/costeading/full-width-1000-61871845c.png 1000w, /assets/images/generated/costeading/full-width-1200-61871845c.png 1200w, /assets/images/generated/costeading/full-width-1600-61871845c.png 1600w, /assets/images/generated/costeading/full-width-1800-61871845c.png 1800w" type="image/png" /><img src="/assets/images/generated/costeading/full-width-800-61871845c.png" width="1800" height="400" /></picture>
-
-<p>My wife and I, like many couples, love looking at real estate. It’s fun.</p>
-
-<p>Until about a year ago, Zillow had a mediocre feature for “shared saves.” You could make it so that your partner or friends got notified when you saved a Zillow listing. We used this. It had no way to comment or categorize or interact further, but at least you got a notification.</p>
-
-<p>Then, they got rid of even this feature, to “make room for a new social experience.” Nine months later, there is no new experience. So I built one.</p>
-
-<p>Costeading let you:</p>
-<ul>
-  <li>browse the Zillow app or site</li>
-  <li>hit “share” on any listing and share it to a group in Costeading</li>
-  <li>your groupmates all get a notification</li>
-  <li>you can then all tag the listing and comment on it</li>
-</ul>
-
-<p>It even passes some information to an LLM to generate a custom name for the listing instead of just a street address.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/costeading/little-lake-800-a20b576b9.webp 800w, /assets/images/generated/costeading/little-lake-1000-a20b576b9.webp 1000w, /assets/images/generated/costeading/little-lake-1200-a20b576b9.webp 1200w, /assets/images/generated/costeading/little-lake-1600-a20b576b9.webp 1600w, /assets/images/generated/costeading/little-lake-1800-a20b576b9.webp 1800w" type="image/webp" /><source srcset="/assets/images/generated/costeading/little-lake-800-5a513c0c6.png 800w, /assets/images/generated/costeading/little-lake-1000-5a513c0c6.png 1000w, /assets/images/generated/costeading/little-lake-1200-5a513c0c6.png 1200w, /assets/images/generated/costeading/little-lake-1600-5a513c0c6.png 1600w, /assets/images/generated/costeading/little-lake-1800-5a513c0c6.png 1800w" type="image/png" /><img src="/assets/images/generated/costeading/little-lake-800-5a513c0c6.png" width="1800" height="600" /></picture>
-
-<p><em>(Who knew there were $300MM listings on Zillow??)</em></p>
-
-<p>And as a bonus, it has a much better photo gallery viewer than Zillow, and pulls in the important information and organizes it cleanly in the detail pages.</p>
-
-<p>Shopping for (or even just ogling) real estate is usually a social experience with your family or friends.</p>
-
-<p>And so it feels like such low-hanging fruit for Zillow and others to have a light social and organizational layer — even just groups, comments, tags like Costeading.</p>
-
-<p>But in the meantime, this home-cooked software will do.</p>
-
-<p><a href="mailto:andy@andybromberg.com">Email me</a> if you want a TestFlight link to try it out :)</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/constraints-ai">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/constraints-ai">Theory of Constraints for AI</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/dats-misunderstood">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/dats-misunderstood">DATs are misunderstood: why they (sometimes) make sense</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Costeading is an app for saving, tagging, and discussing Zillow listings with friends and family. Ogling real estate is a social activity!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-10-costeading.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-10-costeading.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[Digital Asset Treasury companies like Strategy (MSTR) are misunderstood. Contra popular belief, buying one at a premium to NAV can sometimes make sense, and it's not obvious why.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-11-dats-misunderstood.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
