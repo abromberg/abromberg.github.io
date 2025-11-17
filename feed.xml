@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-11-17T12:04:23-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Lessons learned making wooden kids toys</title><link href="https://andybromberg.com/wooden-kids-toys" rel="alternate" type="text/html" title="Lessons learned making wooden kids toys" /><published>2025-11-17T08:00:00-08:00</published><updated>2025-11-17T08:00:00-08:00</updated><id>https://andybromberg.com/wooden-kids-toys</id><content type="html" xml:base="https://andybromberg.com/wooden-kids-toys"><![CDATA[<p>I’m in the season of life where everyone is having kids, and I’ve been enjoying doing some light woodworking recently (I’ve discovered I need to regularly make or fix things with my hands in order to feel useful…).</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-11-17T12:05:53-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Lessons learned making wooden kids toys</title><link href="https://andybromberg.com/wooden-kids-toys" rel="alternate" type="text/html" title="Lessons learned making wooden kids toys" /><published>2025-11-17T08:00:00-08:00</published><updated>2025-11-17T08:00:00-08:00</updated><id>https://andybromberg.com/wooden-kids-toys</id><content type="html" xml:base="https://andybromberg.com/wooden-kids-toys"><![CDATA[<p>I’m in the season of life where everyone is having kids, and I’ve been enjoying doing some light woodworking recently (I’ve discovered I need to regularly make or fix things with my hands in order to feel useful…).</p>
 
 <p>So I decided to make some simple wooden toys.</p>
 
@@ -8,12 +8,12 @@
 
 <p>At the end I have a quick outline for one simple toy you can make (this etched cube) — more to come as I keep working on this project!</p>
 
-<video controls="" autoplay="" muted="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
+<video controls="" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
 <source src="/assets/images/wooden-kids-toys/flip-noaudio.mp4" type="video/mp4" />
 If the video doesn't play, <a href="/assets/images/wooden-kids-toys/flip-noaudio.mp4">open it directly</a>.
 </video>
 
-<h2 id="safe-toy-guidelines">Safe toy guidelines</h2>
+<h2 id="safe-wooden-toy-guidelines">Safe wooden toy guidelines</h2>
 
 <p>Safety-wise, I’d break my findings down into four categories: woods, finishes, glues, and specs. Here’s the bottom-line summary of recommendations, but there’s much more detail below:</p>
 
