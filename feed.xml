@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-11-29T11:15:28-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">UWoL: Beware of Trying</title><link href="https://andybromberg.com/uwol/beware-trying" rel="alternate" type="text/html" title="UWoL: Beware of Trying" /><published>2025-11-24T08:00:00-08:00</published><updated>2025-11-24T08:00:00-08:00</updated><id>https://andybromberg.com/uwol/uwol-beware-trying</id><content type="html" xml:base="https://andybromberg.com/uwol/beware-trying"><![CDATA[<div class="disclaimer-box">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2025-12-12T09:17:11-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">An experimental, private, autonomous todo list</title><link href="https://andybromberg.com/autonomous-todo-list" rel="alternate" type="text/html" title="An experimental, private, autonomous todo list" /><published>2025-12-12T06:00:00-07:00</published><updated>2025-12-12T06:00:00-07:00</updated><id>https://andybromberg.com/autonomous-todo-list</id><content type="html" xml:base="https://andybromberg.com/autonomous-todo-list"><![CDATA[<p>Products and services are easiest to explain when they are “plain vanilla with one difference.”<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">See: Flip the Script by Oren Klaff, an underrated-but-annoying-to-read book on pitching.</span>Think: “the same great thing you already love, but cheaper!” or “just like what you already use, but faster!”</p>
+
+<p>Well: what I’m about to try to explain does <em>not</em> fit that model. It’s an experimental product I pulled together that has neither a clear use case, nor a singular differentiator. But it’s interesting, and I feel like there is <em>something</em> to be pulled out of it.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/main-screen-800-5cc654be4.webp 800w, /assets/images/generated/autonomous-todo-list/main-screen-1000-5cc654be4.webp 1000w, /assets/images/generated/autonomous-todo-list/main-screen-1200-5cc654be4.webp 1200w, /assets/images/generated/autonomous-todo-list/main-screen-1600-5cc654be4.webp 1600w, /assets/images/generated/autonomous-todo-list/main-screen-2000-5cc654be4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/main-screen-800-d37f61ccc.png 800w, /assets/images/generated/autonomous-todo-list/main-screen-1000-d37f61ccc.png 1000w, /assets/images/generated/autonomous-todo-list/main-screen-1200-d37f61ccc.png 1200w, /assets/images/generated/autonomous-todo-list/main-screen-1600-d37f61ccc.png 1600w, /assets/images/generated/autonomous-todo-list/main-screen-2000-d37f61ccc.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/main-screen-800-d37f61ccc.png" width="4000" height="1634" /></picture>
+
+<p>Here’s the sketch:</p>
+<ul>
+  <li>a <strong>Trello / Kanban type interface</strong> for tasks</li>
+  <li>with a <strong>long-running multi-AI-agent</strong> system that plans, executes, and reviews each one (including extremely long/complex tasks)</li>
+  <li>and enables <strong>human/AI interaction through comments</strong> and reviews</li>
+  <li>where the AI agents are deployed on a server/computer of their own and as such have <strong>access to the filesystem and certain programs</strong>, expanding their capacity</li>
+  <li>and there are also <strong>local LLMs</strong> deployed on the server so tasks can optionally run privately without anything being sent to model providers</li>
+  <li>and the whole thing is accessed via a <strong>zero-trust private network</strong> that only you can reach</li>
+</ul>
+
+<p>So, uh, imagine Trello x n8n x Claude Code x Zero Trust x Llama, I guess?</p>
+
+<p>For example, I created a task to review every post on my Substack and pull out all the products I’ve recommended.</p>
+
+<p>The planning agent structured the task and set acceptance criteria and subtasks. Then the execution agent figured out how to find each post, and downloaded them to the filesystem to preserve the context window.</p>
+
+<p>Then it parsed the downloaded files one by one to put them into a data file, again preserving the context window. Then it turned that data file into an output file, and the review agent checked its work before approving.</p>
+
+<p>Here’s a snippet of the logs from them:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/logs-800-a9f44ddcb.webp 800w, /assets/images/generated/autonomous-todo-list/logs-1000-a9f44ddcb.webp 1000w, /assets/images/generated/autonomous-todo-list/logs-1200-a9f44ddcb.webp 1200w, /assets/images/generated/autonomous-todo-list/logs-1600-a9f44ddcb.webp 1600w, /assets/images/generated/autonomous-todo-list/logs-2000-a9f44ddcb.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/logs-800-7678f948e.png 800w, /assets/images/generated/autonomous-todo-list/logs-1000-7678f948e.png 1000w, /assets/images/generated/autonomous-todo-list/logs-1200-7678f948e.png 1200w, /assets/images/generated/autonomous-todo-list/logs-1600-7678f948e.png 1600w, /assets/images/generated/autonomous-todo-list/logs-2000-7678f948e.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/logs-800-7678f948e.png" width="4000" height="3002" /></picture>
+
+<p>I, then — connected through the private/zero-trust network — dropped a comment asking for the agents to add a section with the recommendations ordered differently. The plan/execute/review cycle began again, but based on the existing downloads and data files, and it quickly finished the job.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/comments-800-35663830e.webp 800w, /assets/images/generated/autonomous-todo-list/comments-1000-35663830e.webp 1000w, /assets/images/generated/autonomous-todo-list/comments-1200-35663830e.webp 1200w, /assets/images/generated/autonomous-todo-list/comments-1600-35663830e.webp 1600w, /assets/images/generated/autonomous-todo-list/comments-2000-35663830e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/comments-800-4387e82bf.png 800w, /assets/images/generated/autonomous-todo-list/comments-1000-4387e82bf.png 1000w, /assets/images/generated/autonomous-todo-list/comments-1200-4387e82bf.png 1200w, /assets/images/generated/autonomous-todo-list/comments-1600-4387e82bf.png 1600w, /assets/images/generated/autonomous-todo-list/comments-2000-4387e82bf.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/comments-800-4387e82bf.png" width="4000" height="3030" /></picture>
+
+<p>It was successful! It compiled every single recommendation from all 15 of my Substack posts. And this success was <strong>unique</strong> — I tried the same prompt on GPT-5.2 Pro, GPT-5.1 Pro, Claude Opus 4.5 (Extended Thinking), and Gemini 3 Pro Preview and they <em>all failed</em> to cover everything.</p>
+
+<p>GPT-5.2 Pro:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/5-2-pro-800-2e1baa20a.webp 800w, /assets/images/generated/autonomous-todo-list/5-2-pro-1000-2e1baa20a.webp 1000w, /assets/images/generated/autonomous-todo-list/5-2-pro-1200-2e1baa20a.webp 1200w, /assets/images/generated/autonomous-todo-list/5-2-pro-1600-2e1baa20a.webp 1600w, /assets/images/generated/autonomous-todo-list/5-2-pro-2000-2e1baa20a.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/5-2-pro-800-7bfdc630d.png 800w, /assets/images/generated/autonomous-todo-list/5-2-pro-1000-7bfdc630d.png 1000w, /assets/images/generated/autonomous-todo-list/5-2-pro-1200-7bfdc630d.png 1200w, /assets/images/generated/autonomous-todo-list/5-2-pro-1600-7bfdc630d.png 1600w, /assets/images/generated/autonomous-todo-list/5-2-pro-2000-7bfdc630d.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/5-2-pro-800-7bfdc630d.png" width="4000" height="1544" /></picture>
+
+<p>GPT-5.1 Pro:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/5-1-pro-800-11df804db.webp 800w, /assets/images/generated/autonomous-todo-list/5-1-pro-1000-11df804db.webp 1000w, /assets/images/generated/autonomous-todo-list/5-1-pro-1200-11df804db.webp 1200w, /assets/images/generated/autonomous-todo-list/5-1-pro-1600-11df804db.webp 1600w, /assets/images/generated/autonomous-todo-list/5-1-pro-2000-11df804db.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/5-1-pro-800-9e65b065e.png 800w, /assets/images/generated/autonomous-todo-list/5-1-pro-1000-9e65b065e.png 1000w, /assets/images/generated/autonomous-todo-list/5-1-pro-1200-9e65b065e.png 1200w, /assets/images/generated/autonomous-todo-list/5-1-pro-1600-9e65b065e.png 1600w, /assets/images/generated/autonomous-todo-list/5-1-pro-2000-9e65b065e.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/5-1-pro-800-9e65b065e.png" width="4000" height="1038" /></picture>
+
+<p>Opus 4.5:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/opus-800-f0273b68d.webp 800w, /assets/images/generated/autonomous-todo-list/opus-1000-f0273b68d.webp 1000w, /assets/images/generated/autonomous-todo-list/opus-1200-f0273b68d.webp 1200w, /assets/images/generated/autonomous-todo-list/opus-1600-f0273b68d.webp 1600w, /assets/images/generated/autonomous-todo-list/opus-2000-f0273b68d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/opus-800-5cf16234c.png 800w, /assets/images/generated/autonomous-todo-list/opus-1000-5cf16234c.png 1000w, /assets/images/generated/autonomous-todo-list/opus-1200-5cf16234c.png 1200w, /assets/images/generated/autonomous-todo-list/opus-1600-5cf16234c.png 1600w, /assets/images/generated/autonomous-todo-list/opus-2000-5cf16234c.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/opus-800-5cf16234c.png" width="4000" height="1012" /></picture>
+
+<p>Gemini 3 Pro:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/gemini-800-ede647c10.webp 800w, /assets/images/generated/autonomous-todo-list/gemini-1000-ede647c10.webp 1000w, /assets/images/generated/autonomous-todo-list/gemini-1200-ede647c10.webp 1200w, /assets/images/generated/autonomous-todo-list/gemini-1600-ede647c10.webp 1600w, /assets/images/generated/autonomous-todo-list/gemini-2000-ede647c10.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/gemini-800-f3f03056a.png 800w, /assets/images/generated/autonomous-todo-list/gemini-1000-f3f03056a.png 1000w, /assets/images/generated/autonomous-todo-list/gemini-1200-f3f03056a.png 1200w, /assets/images/generated/autonomous-todo-list/gemini-1600-f3f03056a.png 1600w, /assets/images/generated/autonomous-todo-list/gemini-2000-f3f03056a.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/gemini-800-f3f03056a.png" width="4118" height="684" /></picture>
+
+<p>This product is <em>really</em> good at complex research tasks and projects with ongoing work that reference the same original materials.</p>
+
+<hr />
+
+<p>As noted above, there are at least a few ideas in here all jumbled together:</p>
+<ul>
+  <li>Kanban boards with comments as an interface to interact with AI for more complex tasks</li>
+  <li>multi-agent plan/execute/review systems</li>
+  <li>agents with access to a filesystem for persistence, common programs, and scripting ability</li>
+  <li>local LLMs hosted on your own server, accessed via a zero-trust private network</li>
+</ul>
+
+<p>(Plus other little touches: recurring tasks; AI vs. human differentiation via fonts/visual indicators; individual cost budgets for tasks; differentiating “needs human review” vs. “done”; subtasks created by the planner…)</p>
+
+<p>I’m not quite sure what I’m going to do with this. Maybe some of those ideas will get integrated into <a href="https://interface0.com">interface0</a>, or some other product.</p>
+
+<p>I like the “private AI” angle; I like the “Claude Code for things other than code” angle; I like the “multi-agent judge setup” angle; I like the “alternatives to chat interfaces for complex tasks” angle. But do those all belong together? Probably not?</p>
+
+<hr />
+
+<p>If you’re interested in this or have any ideas, <a href="mailto:andy@andybromberg.com">drop me a note</a>. I’m also thinking about cleaning it up and open-sourcing it.</p>
+
+<p>The deployment process isn’t bad — I rented a server on OVHcloud for ~$50/month that has good enough specs to run decent LLMs locally at a not-terrible speed and made a Kamal deploy flow that handles everything (besides setting up the Cloudflare Zero Trust tunnels and such, which are free). And once you’re up, you then have access to a very-private AI “in the cloud,” which is pretty cool. You could also easily set it up on a homelab server in your closet.</p>
+
+<p>There are also a bunch more features I want to add: per-task command permission levels; external interactions like emails; transient GPU pods for better local LLM performance; integrations with Obsidian and other data sources; shared code libraries and scripts between tasks; and much more…</p>
+
+<p>I’m excited to see more experimentation like this in AI interfaces and workflows.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/beware-trying">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/beware-trying">UWoL: Beware of Trying</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[An experimental AI product with a Kanban interface, multi-agent workflows, human interactivity, filesystem access, and private, local LLM deployments.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Beware of Trying</title><link href="https://andybromberg.com/uwol/beware-trying" rel="alternate" type="text/html" title="UWoL: Beware of Trying" /><published>2025-11-24T09:00:00-07:00</published><updated>2025-11-24T09:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-beware-trying</id><content type="html" xml:base="https://andybromberg.com/uwol/beware-trying"><![CDATA[<div class="disclaimer-box">
   <span class="disclaimer-box-title">Useful Ways of Looking</span>
   <div class="disclaimer-box-content">
     <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
@@ -149,11 +263,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/autonomous-todo-list">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/autonomous-todo-list">An experimental, private, autonomous todo list</a>
     
   </div>
 </nav>
@@ -165,7 +283,7 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[If you identify as 'trying to achieve an outcome' — perhaps 'trying to make money,' 'trying to get in shape,' or 'being on the spiritual path' — you may be condemning yourself to permanently remaining in the 'Trying' state rather than achieving the allegedly-desired outcome.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-24-uwol-beware-trying.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-24-uwol-beware-trying.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Visualizing electromagnetic fields from sparse measurements</title><link href="https://andybromberg.com/kriging-electromagnetic-fields" rel="alternate" type="text/html" title="Visualizing electromagnetic fields from sparse measurements" /><published>2025-11-20T07:00:00-08:00</published><updated>2025-11-20T07:00:00-08:00</updated><id>https://andybromberg.com/kriging-electromagnetic-fields</id><content type="html" xml:base="https://andybromberg.com/kriging-electromagnetic-fields"><![CDATA[<h2 id="background">Background</h2>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[If you identify as 'trying to achieve an outcome' — perhaps 'trying to make money,' 'trying to get in shape,' or 'being on the spiritual path' — you may be condemning yourself to permanently remaining in the 'Trying' state rather than achieving the allegedly-desired outcome.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-24-uwol-beware-trying.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-24-uwol-beware-trying.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Visualizing electromagnetic fields from sparse measurements</title><link href="https://andybromberg.com/kriging-electromagnetic-fields" rel="alternate" type="text/html" title="Visualizing electromagnetic fields from sparse measurements" /><published>2025-11-20T08:00:00-07:00</published><updated>2025-11-20T08:00:00-07:00</updated><id>https://andybromberg.com/kriging-electromagnetic-fields</id><content type="html" xml:base="https://andybromberg.com/kriging-electromagnetic-fields"><![CDATA[<h2 id="background">Background</h2>
 
 <p>As part of <a href="https://lightworkhome.com">Lightwork Home Health’s</a> assessments, we measure the electromagnetic fields in people’s homes (see <a href="/rational-guide-to-emfs">a prior article</a> for some background on “EMFs”).</p>
 
@@ -395,7 +513,7 @@ l0,-144c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Math &amp; science&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[At Lightwork we use geostatistical techniques like Kriging to interpolate visualizations of electromagnetic fields. Here's how it works.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Your problems are your fault in two different ways</title><link href="https://andybromberg.com/problems-are-your-fault" rel="alternate" type="text/html" title="Your problems are your fault in two different ways" /><published>2025-11-17T11:00:00-08:00</published><updated>2025-11-17T11:00:00-08:00</updated><id>https://andybromberg.com/problems-are-your-fault</id><content type="html" xml:base="https://andybromberg.com/problems-are-your-fault"><![CDATA[<p>… and accepting this can make your life much easier and more pleasant.</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Math &amp; science&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[At Lightwork we use geostatistical techniques like Kriging to interpolate visualizations of electromagnetic fields. Here's how it works.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Your problems are your fault in two different ways</title><link href="https://andybromberg.com/problems-are-your-fault" rel="alternate" type="text/html" title="Your problems are your fault in two different ways" /><published>2025-11-17T12:00:00-07:00</published><updated>2025-11-17T12:00:00-07:00</updated><id>https://andybromberg.com/problems-are-your-fault</id><content type="html" xml:base="https://andybromberg.com/problems-are-your-fault"><![CDATA[<p>… and accepting this can make your life much easier and more pleasant.</p>
 
 <h2 id="radical-accountability-is-one">Radical accountability is one</h2>
 
@@ -594,7 +712,7 @@ read. (You’ll find that his frame still creates “problems” of its own!)</p
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>
-</h3>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[Accepting this can make your life much easier and more pleasant. Problems don't exist absent a "frame" through which they arise, and exploiting this can make problems go away.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-17-problems-are-your-fault.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-17-problems-are-your-fault.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lessons learned making safe wooden kids toys</title><link href="https://andybromberg.com/wooden-kids-toys" rel="alternate" type="text/html" title="Lessons learned making safe wooden kids toys" /><published>2025-11-17T08:00:00-08:00</published><updated>2025-11-17T08:00:00-08:00</updated><id>https://andybromberg.com/wooden-kids-toys</id><content type="html" xml:base="https://andybromberg.com/wooden-kids-toys"><![CDATA[<p>I’m in the season of life where everyone is having kids, and I’ve been enjoying doing some light woodworking recently (I’ve discovered I need to regularly make or fix things with my hands in order to feel useful…).</p>
+</h3>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[Accepting this can make your life much easier and more pleasant. Problems don't exist absent a "frame" through which they arise, and exploiting this can make problems go away.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-17-problems-are-your-fault.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-17-problems-are-your-fault.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lessons learned making safe wooden kids toys</title><link href="https://andybromberg.com/wooden-kids-toys" rel="alternate" type="text/html" title="Lessons learned making safe wooden kids toys" /><published>2025-11-17T09:00:00-07:00</published><updated>2025-11-17T09:00:00-07:00</updated><id>https://andybromberg.com/wooden-kids-toys</id><content type="html" xml:base="https://andybromberg.com/wooden-kids-toys"><![CDATA[<p>I’m in the season of life where everyone is having kids, and I’ve been enjoying doing some light woodworking recently (I’ve discovered I need to regularly make or fix things with my hands in order to feel useful…).</p>
 
 <p>So I decided to make some simple wooden toys.</p>
 
@@ -797,7 +915,7 @@ If the video doesn't play, <a href="/assets/images/wooden-kids-toys/flip-noaudio
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Turns out there are all sorts of things to avoid when making wooden kids toys — certain woods, finishes, glues, and more. Here's what I learned. Plus a walkthrough of making engraved stacking cubes!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-17-wooden-kids-toys.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-17-wooden-kids-toys.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I beat Google to making AI suggestions in Docs</title><link href="https://andybromberg.com/interface0-google-docs" rel="alternate" type="text/html" title="I beat Google to making AI suggestions in Docs" /><published>2025-11-11T07:00:00-08:00</published><updated>2025-11-11T07:00:00-08:00</updated><id>https://andybromberg.com/interface0-google-docs</id><content type="html" xml:base="https://andybromberg.com/interface0-google-docs"><![CDATA[<p>Bottom line up front: doesn’t this look like a sensible way to integrate AI into Google Docs?</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Turns out there are all sorts of things to avoid when making wooden kids toys — certain woods, finishes, glues, and more. Here's what I learned. Plus a walkthrough of making engraved stacking cubes!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-17-wooden-kids-toys.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-17-wooden-kids-toys.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I beat Google to making AI suggestions in Docs</title><link href="https://andybromberg.com/interface0-google-docs" rel="alternate" type="text/html" title="I beat Google to making AI suggestions in Docs" /><published>2025-11-11T08:00:00-07:00</published><updated>2025-11-11T08:00:00-07:00</updated><id>https://andybromberg.com/interface0-google-docs</id><content type="html" xml:base="https://andybromberg.com/interface0-google-docs"><![CDATA[<p>Bottom line up front: doesn’t this look like a sensible way to integrate AI into Google Docs?</p>
 
 <video controls="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
 <source src="/assets/images/interface0-google-docs/interface0-docs-demo.mp4" type="video/mp4" />
@@ -879,7 +997,7 @@ If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Google hasn't yet properly integrated Gemini into Google Docs. So I knocked out a native-feeling implementation.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Tinkering Club: call for applications</title><link href="https://andybromberg.com/tinkering-club-applications" rel="alternate" type="text/html" title="Tinkering Club: call for applications" /><published>2025-11-10T08:00:00-08:00</published><updated>2025-11-10T08:00:00-08:00</updated><id>https://andybromberg.com/tinkering-club-applications</id><content type="html" xml:base="https://andybromberg.com/tinkering-club-applications"><![CDATA[<p><em><strong>APPLICATIONS STILL OPEN! STARTING NEW GROUPS ON A ROLLING BASIS…</strong></em></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Google hasn't yet properly integrated Gemini into Google Docs. So I knocked out a native-feeling implementation.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Tinkering Club: call for applications</title><link href="https://andybromberg.com/tinkering-club-applications" rel="alternate" type="text/html" title="Tinkering Club: call for applications" /><published>2025-11-10T09:00:00-07:00</published><updated>2025-11-10T09:00:00-07:00</updated><id>https://andybromberg.com/tinkering-club-applications</id><content type="html" xml:base="https://andybromberg.com/tinkering-club-applications"><![CDATA[<p><em><strong>APPLICATIONS STILL OPEN! STARTING NEW GROUPS ON A ROLLING BASIS…</strong></em></p>
 
 <hr />
 
@@ -939,7 +1057,7 @@ If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Apply to join a Tinkering Club cohort of 3-6 exceptional, hand-picked tinkerers / hackers / builders / makers / artists. 100% free. Accountability & inspiration guaranteed or your money back.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-10-tinkering-club-applications.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-10-tinkering-club-applications.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Consciousness as a field theory</title><link href="https://andybromberg.com/consciousness-field-theory" rel="alternate" type="text/html" title="Consciousness as a field theory" /><published>2025-11-09T08:00:00-08:00</published><updated>2025-11-09T08:00:00-08:00</updated><id>https://andybromberg.com/consciousness-field-theory</id><content type="html" xml:base="https://andybromberg.com/consciousness-field-theory"><![CDATA[<p>At <a href="https://x.com/sinahab">Sina Habibian’s</a> recommendation, I recently watched the talk <a href="https://www.youtube.com/watch?v=DI6Hu-DhQwE">“Towards Consciousness Engineering by Max Hodak”</a>. It is thought-provoking throughout. But starting around <a href="https://youtu.be/DI6Hu-DhQwE?si=ZZtdBIPl0GqNV5CH&amp;t=2776">46:16</a>, he dives into a self-admittedly-speculative “final leap” that I’d like to first do my best to explain, and then ask some questions about.</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Apply to join a Tinkering Club cohort of 3-6 exceptional, hand-picked tinkerers / hackers / builders / makers / artists. 100% free. Accountability & inspiration guaranteed or your money back.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-10-tinkering-club-applications.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-10-tinkering-club-applications.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Consciousness as a field theory</title><link href="https://andybromberg.com/consciousness-field-theory" rel="alternate" type="text/html" title="Consciousness as a field theory" /><published>2025-11-09T09:00:00-07:00</published><updated>2025-11-09T09:00:00-07:00</updated><id>https://andybromberg.com/consciousness-field-theory</id><content type="html" xml:base="https://andybromberg.com/consciousness-field-theory"><![CDATA[<p>At <a href="https://x.com/sinahab">Sina Habibian’s</a> recommendation, I recently watched the talk <a href="https://www.youtube.com/watch?v=DI6Hu-DhQwE">“Towards Consciousness Engineering by Max Hodak”</a>. It is thought-provoking throughout. But starting around <a href="https://youtu.be/DI6Hu-DhQwE?si=ZZtdBIPl0GqNV5CH&amp;t=2776">46:16</a>, he dives into a self-admittedly-speculative “final leap” that I’d like to first do my best to explain, and then ask some questions about.</p>
 
 <p>I’m not certain I have totally wrapped my head around all this, so I’m publishing with a sort of <a href="https://meta.wikimedia.org/wiki/Cunningham%27s_Law">Cunningham’s Law</a> attitude, in hopes that errors will be pointed out and helpful resources sent my way.</p>
 
@@ -1134,7 +1252,7 @@ If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[Is consciousness a physical field that can interact with matter? Based on a talk from Max Hodak, I break down the question and possible extensions into universal theories of consciousness.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-09-consciousness-field-theory.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-09-consciousness-field-theory.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lightwork Home Health: functional health for modern homes</title><link href="https://andybromberg.com/lightwork-home-health" rel="alternate" type="text/html" title="Lightwork Home Health: functional health for modern homes" /><published>2025-10-24T09:00:00-07:00</published><updated>2025-10-24T09:00:00-07:00</updated><id>https://andybromberg.com/lightwork-home-health</id><content type="html" xml:base="https://andybromberg.com/lightwork-home-health"><![CDATA[<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-10f76f8c3.webp 800w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1000-10f76f8c3.webp 1000w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1200-10f76f8c3.webp 1200w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1584-10f76f8c3.webp 1584w" type="image/webp" /><source srcset="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-dffba7db5.png 800w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1000-dffba7db5.png 1000w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1200-dffba7db5.png 1200w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1584-dffba7db5.png 1584w" type="image/png" /><img src="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-dffba7db5.png" width="1584" height="555" /></picture>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[Is consciousness a physical field that can interact with matter? Based on a talk from Max Hodak, I break down the question and possible extensions into universal theories of consciousness.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-09-consciousness-field-theory.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-09-consciousness-field-theory.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lightwork Home Health: functional health for modern homes</title><link href="https://andybromberg.com/lightwork-home-health" rel="alternate" type="text/html" title="Lightwork Home Health: functional health for modern homes" /><published>2025-10-24T10:00:00-06:00</published><updated>2025-10-24T10:00:00-06:00</updated><id>https://andybromberg.com/lightwork-home-health</id><content type="html" xml:base="https://andybromberg.com/lightwork-home-health"><![CDATA[<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-10f76f8c3.webp 800w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1000-10f76f8c3.webp 1000w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1200-10f76f8c3.webp 1200w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1584-10f76f8c3.webp 1584w" type="image/webp" /><source srcset="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-dffba7db5.png 800w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1000-dffba7db5.png 1000w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1200-dffba7db5.png 1200w, /assets/images/generated/lightwork-home-health/healthy-kitchen-1584-dffba7db5.png 1584w" type="image/png" /><img src="/assets/images/generated/lightwork-home-health/healthy-kitchen-800-dffba7db5.png" width="1584" height="555" /></picture>
 
 <p>My wife Alexa and I learned the hard way that homes can be very toxic.</p>
 
@@ -1268,7 +1386,7 @@ If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[My wife Alexa and I learned the hard way that homes can be very toxic, so we incubated a company to save others from the same fate.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-24-lightwork-home-health.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-24-lightwork-home-health.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The trick to changing router bits on a Laguna Shaper</title><link href="https://andybromberg.com/laguna-shaper-bit-change" rel="alternate" type="text/html" title="The trick to changing router bits on a Laguna Shaper" /><published>2025-10-02T08:00:00-07:00</published><updated>2025-10-02T08:00:00-07:00</updated><id>https://andybromberg.com/laguna-shaper-bit-change</id><content type="html" xml:base="https://andybromberg.com/laguna-shaper-bit-change"><![CDATA[<p><em>This is a low-TAM post meant for people who were Googling the same thing I was a few days ago, trying to figure out how to change the bit on a woodworking machine. If that is not you, you can stop reading now :)</em></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[My wife Alexa and I learned the hard way that homes can be very toxic, so we incubated a company to save others from the same fate.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-24-lightwork-home-health.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-24-lightwork-home-health.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The trick to changing router bits on a Laguna Shaper</title><link href="https://andybromberg.com/laguna-shaper-bit-change" rel="alternate" type="text/html" title="The trick to changing router bits on a Laguna Shaper" /><published>2025-10-02T09:00:00-06:00</published><updated>2025-10-02T09:00:00-06:00</updated><id>https://andybromberg.com/laguna-shaper-bit-change</id><content type="html" xml:base="https://andybromberg.com/laguna-shaper-bit-change"><![CDATA[<p><em>This is a low-TAM post meant for people who were Googling the same thing I was a few days ago, trying to figure out how to change the bit on a woodworking machine. If that is not you, you can stop reading now :)</em></p>
 
 <p>All the guides I could find for changing shaper bits had to do with full-spindle transfers. But I was using the shaper as a routing table and couldn’t figure out how to get the bit assembly to screw on appropriately.</p>
 
@@ -1330,96 +1448,4 @@ If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A low-TAM post meant for people trying to figure out how to change a router bit on a Laguna Shaper machine, who are having issues with it rotating.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UWoL: Doors and keys</title><link href="https://andybromberg.com/uwol/doors-keys" rel="alternate" type="text/html" title="UWoL: Doors and keys" /><published>2025-09-29T08:00:00-07:00</published><updated>2025-09-29T08:00:00-07:00</updated><id>https://andybromberg.com/uwol/uwol-doors-keys</id><content type="html" xml:base="https://andybromberg.com/uwol/doors-keys"><![CDATA[<div class="disclaimer-box">
-  <span class="disclaimer-box-title">Useful Ways of Looking</span>
-  <div class="disclaimer-box-content">
-    <p><a href="/uwol"><em>Useful Ways of Looking</em></a> is a series on concepts I often reference. You could think of them as mental models, or primitives, or keys, or, well, <a href="/uwol/ways-of-looking">Ways of Looking</a>. You probably landed here because I referenced one and sent you this link for further explanation!<br /><br />The Useful Ways of Looking are not necessarily <em>true</em>, but they are — as the name suggests — often <a href="/uwol/useful-correct"><em>useful</em></a>. Finding where to skillfully apply them is part of the job.</p>
-
-  </div>
-</div>
-
-<h2 id="in-brief">In brief</h2>
-
-<p>Any journey of change — improving a skill, building a company, spiritual evolution — can be thought of as moving through a series of locked doors (lessons), for each of which you must find the key. But the doors are in a different order for everyone, which means the “key sequence” that served one person may not match yours. With that, consider that the  key you currently need could come from anywhere, but probably not from the place others tell you it will.</p>
-
-<h2 id="more-context">More context</h2>
-
-<p>In <a href="https://www.amazon.com/Spiritual-Enlightenment-Damnedest-Thing-Trilogy/dp/0980184843">Spiritual Enlightenment: The Damnedest Thing</a>, the pseudonymous author and protagonist Jed McKenna covers this idea in one of his lectures (and again in a later conversation with Mary about the “gateless gate”):</p>
-
-<blockquote>
-  <p>“You’ve all heard the saying ‘When the student is ready, the teacher appears.’ Well, that means a lot more than just the mysterious arrival of gurus in a timely manner. It means that the knowledge you need will appear when you’re ready for it. The ability to open the next door is never denied, but the ability to open the door after the next is never granted. In this sense, you’ll have many, many teachers.</p>
-
-  <p>In this sense, a passage from the Bible might be exactly the right thing at exactly the right time, but that doesn’t mean the entire Bible is the right thing all the time. Even the books and teachings I like the most I consider ninety percent useless.”</p>
-
-  <p>I look around at the faces and see a spectrum of comprehension ranging from near empty to near full. That’s to be expected.</p>
-
-  <p>“It’s all about unlocking the next door,” I continue, “and having ten thousand keys doesn’t mean a thing if none of them opens the door you’re standing in front of.</p>
-
-  <p>‘Teacher’ is just a word for the key you need to open the next door. After you’re enlightened, you can revisit these great books and the great teachings to your heart’s content and then they’ll no longer be mysterious or impenetrable to you, but they’ll still be of no use to you because you’ll already be enlightened, so it would really only be a recreational pursuit.”</p>
-</blockquote>
-
-<p>I would clarify: if you’ve just opened the metaphorical “door 17,” not only might the same “teacher” or “mentor” or “source” not always open “door 18” — but it may be that your friend’s “door 18” is a totally different door than yours.</p>
-
-<p>In fact, their “door 18” might have been your “door 1” — or it might be your “door 1046.”</p>
-
-<p>This is why, when you truly learn a lesson, sometimes you get a bolt of deja vu to someone having told you that very thing years ago, or a book you read that “taught” you the same (even though you didn’t internalize it). You got handed the key back then, but it wasn’t the one you needed for your <em>then</em>-current door. So you dropped it — only to need it years later.</p>
-
-<p>These differing sequences can lead to feelings of inadequacy: “why do <em>they</em> seem to be able to handle situations like this so well?” But of course, whoever “they” is may think the same of you in a different situation. One of their earlier doors and keys is one of your later ones that you haven’t yet reached; and vice versa.</p>
-
-<p>A strategy I recommend to deal with this: read and consume widely and with an open mind. I have found this to be the most effective path to progression.</p>
-
-<p>Certainly some people have their bible — for many, literally The Bible — and find all the answers they need there, through deep reading and re-reading.</p>
-
-<p>But I have found that through ambient rumination, keys I have stumbled across in the past often resurface when I need them. So I tend to get more mileage out of consuming <em>new</em> ideas or sources, increasing my chance of finding the key I happen to need at the moment.</p>
-
-<p>So, with this “doors and keys” way of looking: when you are facing a challenge, recognize that it is simply your next door, and that “the ability to open the next door is never denied, but the ability to open the door after the next is never granted.” You just need to rummage around for the key.</p>
-
-<p>And most of all, when someone tries to give you a path that worked for them and sounds easy — recognize that it may have been <em>their</em> path; their sequence of doors. And for them, having been through the sequence already, it will “no longer be mysterious or impenetrable.” It’ll sound simple</p>
-
-<p>But for better or worse, yours will be different, and you’ll need to find your own way. Don’t get frustrated when theirs doesn’t work perfectly for you — take what you need, seek out other teachers and keys, and just keep moving.</p>
-
-<h2 id="further-readings">Further readings</h2>
-
-<p>Jed McKenna’s <a href="https://amzn.to/4pHWsTf">Spiritual Enlightenment: The Damnedest Thing</a>.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/high-effort">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/high-effort">On the application of high effort</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/laguna-shaper-bit-change">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/laguna-shaper-bit-change">The trick to changing router bits on a Laguna Shaper</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[Any journey of change — improving a skill, building a company, spiritual evolution — can be thought of as moving through a series of locked doors (lessons), for each of which you must find the key. But the doors are in a different order for everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-09-29-uwol-doors-keys.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-09-29-uwol-doors-keys.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A low-TAM post meant for people trying to figure out how to change a router bit on a Laguna Shaper machine, who are having issues with it rotating.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-10-02-laguna-shaper-bit-change.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>An experimental, private, autonomous todo list | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="An experimental, private, autonomous todo list" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An experimental AI product with a Kanban interface, multi-agent workflows, human interactivity, filesystem access, and private, local LLM deployments." />
+<meta property="og:description" content="An experimental AI product with a Kanban interface, multi-agent workflows, human interactivity, filesystem access, and private, local LLM deployments." />
+<link rel="canonical" href="https://andybromberg.com/autonomous-todo-list" />
+<meta property="og:url" content="https://andybromberg.com/autonomous-todo-list" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-12-12T06:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png" />
+<meta property="twitter:title" content="An experimental, private, autonomous todo list" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2025-12-12T06:00:00-07:00","datePublished":"2025-12-12T06:00:00-07:00","description":"An experimental AI product with a Kanban interface, multi-agent workflows, human interactivity, filesystem access, and private, local LLM deployments.","headline":"An experimental, private, autonomous todo list","image":"https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/autonomous-todo-list"},"url":"https://andybromberg.com/autonomous-todo-list"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/generated-category-filters.css">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title extra-bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/bookshelf">bookshelf</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header"><h1 class="post-title p-name" itemprop="name headline">
+      An experimental, private, autonomous todo list</h1>
+    
+    <div class="post-meta">
+      <div class="post-date"><time class="dt-published" datetime="2025-12-12T06:00:00-07:00" itemprop="datePublished">December 12, 2025
+        </time></div>
+            
+      <div class="article-reading-time">Reading time: about 3 minutes</div>
+    </div>
+      
+  </header>
+    
+  <div class="post-content e-content prose" itemprop="articleBody">
+    <p>Products and services are easiest to explain when they are “plain vanilla with one difference.”<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">See: Flip the Script by Oren Klaff, an underrated-but-annoying-to-read book on pitching.</span>Think: “the same great thing you already love, but cheaper!” or “just like what you already use, but faster!”</p>
+
+<p>Well: what I’m about to try to explain does <em>not</em> fit that model. It’s an experimental product I pulled together that has neither a clear use case, nor a singular differentiator. But it’s interesting, and I feel like there is <em>something</em> to be pulled out of it.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/main-screen-800-5cc654be4.webp 800w, /assets/images/generated/autonomous-todo-list/main-screen-1000-5cc654be4.webp 1000w, /assets/images/generated/autonomous-todo-list/main-screen-1200-5cc654be4.webp 1200w, /assets/images/generated/autonomous-todo-list/main-screen-1600-5cc654be4.webp 1600w, /assets/images/generated/autonomous-todo-list/main-screen-2000-5cc654be4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/main-screen-800-d37f61ccc.png 800w, /assets/images/generated/autonomous-todo-list/main-screen-1000-d37f61ccc.png 1000w, /assets/images/generated/autonomous-todo-list/main-screen-1200-d37f61ccc.png 1200w, /assets/images/generated/autonomous-todo-list/main-screen-1600-d37f61ccc.png 1600w, /assets/images/generated/autonomous-todo-list/main-screen-2000-d37f61ccc.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/main-screen-800-d37f61ccc.png" width="4000" height="1634" /></picture>
+
+<p>Here’s the sketch:</p>
+<ul>
+  <li>a <strong>Trello / Kanban type interface</strong> for tasks</li>
+  <li>with a <strong>long-running multi-AI-agent</strong> system that plans, executes, and reviews each one (including extremely long/complex tasks)</li>
+  <li>and enables <strong>human/AI interaction through comments</strong> and reviews</li>
+  <li>where the AI agents are deployed on a server/computer of their own and as such have <strong>access to the filesystem and certain programs</strong>, expanding their capacity</li>
+  <li>and there are also <strong>local LLMs</strong> deployed on the server so tasks can optionally run privately without anything being sent to model providers</li>
+  <li>and the whole thing is accessed via a <strong>zero-trust private network</strong> that only you can reach</li>
+</ul>
+
+<p>So, uh, imagine Trello x n8n x Claude Code x Zero Trust x Llama, I guess?</p>
+
+<p>For example, I created a task to review every post on my Substack and pull out all the products I’ve recommended.</p>
+
+<p>The planning agent structured the task and set acceptance criteria and subtasks. Then the execution agent figured out how to find each post, and downloaded them to the filesystem to preserve the context window.</p>
+
+<p>Then it parsed the downloaded files one by one to put them into a data file, again preserving the context window. Then it turned that data file into an output file, and the review agent checked its work before approving.</p>
+
+<p>Here’s a snippet of the logs from them:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/logs-800-a9f44ddcb.webp 800w, /assets/images/generated/autonomous-todo-list/logs-1000-a9f44ddcb.webp 1000w, /assets/images/generated/autonomous-todo-list/logs-1200-a9f44ddcb.webp 1200w, /assets/images/generated/autonomous-todo-list/logs-1600-a9f44ddcb.webp 1600w, /assets/images/generated/autonomous-todo-list/logs-2000-a9f44ddcb.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/logs-800-7678f948e.png 800w, /assets/images/generated/autonomous-todo-list/logs-1000-7678f948e.png 1000w, /assets/images/generated/autonomous-todo-list/logs-1200-7678f948e.png 1200w, /assets/images/generated/autonomous-todo-list/logs-1600-7678f948e.png 1600w, /assets/images/generated/autonomous-todo-list/logs-2000-7678f948e.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/logs-800-7678f948e.png" width="4000" height="3002" /></picture>
+
+<p>I, then — connected through the private/zero-trust network — dropped a comment asking for the agents to add a section with the recommendations ordered differently. The plan/execute/review cycle began again, but based on the existing downloads and data files, and it quickly finished the job.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/comments-800-35663830e.webp 800w, /assets/images/generated/autonomous-todo-list/comments-1000-35663830e.webp 1000w, /assets/images/generated/autonomous-todo-list/comments-1200-35663830e.webp 1200w, /assets/images/generated/autonomous-todo-list/comments-1600-35663830e.webp 1600w, /assets/images/generated/autonomous-todo-list/comments-2000-35663830e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/comments-800-4387e82bf.png 800w, /assets/images/generated/autonomous-todo-list/comments-1000-4387e82bf.png 1000w, /assets/images/generated/autonomous-todo-list/comments-1200-4387e82bf.png 1200w, /assets/images/generated/autonomous-todo-list/comments-1600-4387e82bf.png 1600w, /assets/images/generated/autonomous-todo-list/comments-2000-4387e82bf.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/comments-800-4387e82bf.png" width="4000" height="3030" /></picture>
+
+<p>It was successful! It compiled every single recommendation from all 15 of my Substack posts. And this success was <strong>unique</strong> — I tried the same prompt on GPT-5.2 Pro, GPT-5.1 Pro, Claude Opus 4.5 (Extended Thinking), and Gemini 3 Pro Preview and they <em>all failed</em> to cover everything.</p>
+
+<p>GPT-5.2 Pro:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/5-2-pro-800-2e1baa20a.webp 800w, /assets/images/generated/autonomous-todo-list/5-2-pro-1000-2e1baa20a.webp 1000w, /assets/images/generated/autonomous-todo-list/5-2-pro-1200-2e1baa20a.webp 1200w, /assets/images/generated/autonomous-todo-list/5-2-pro-1600-2e1baa20a.webp 1600w, /assets/images/generated/autonomous-todo-list/5-2-pro-2000-2e1baa20a.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/5-2-pro-800-7bfdc630d.png 800w, /assets/images/generated/autonomous-todo-list/5-2-pro-1000-7bfdc630d.png 1000w, /assets/images/generated/autonomous-todo-list/5-2-pro-1200-7bfdc630d.png 1200w, /assets/images/generated/autonomous-todo-list/5-2-pro-1600-7bfdc630d.png 1600w, /assets/images/generated/autonomous-todo-list/5-2-pro-2000-7bfdc630d.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/5-2-pro-800-7bfdc630d.png" width="4000" height="1544" /></picture>
+
+<p>GPT-5.1 Pro:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/5-1-pro-800-11df804db.webp 800w, /assets/images/generated/autonomous-todo-list/5-1-pro-1000-11df804db.webp 1000w, /assets/images/generated/autonomous-todo-list/5-1-pro-1200-11df804db.webp 1200w, /assets/images/generated/autonomous-todo-list/5-1-pro-1600-11df804db.webp 1600w, /assets/images/generated/autonomous-todo-list/5-1-pro-2000-11df804db.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/5-1-pro-800-9e65b065e.png 800w, /assets/images/generated/autonomous-todo-list/5-1-pro-1000-9e65b065e.png 1000w, /assets/images/generated/autonomous-todo-list/5-1-pro-1200-9e65b065e.png 1200w, /assets/images/generated/autonomous-todo-list/5-1-pro-1600-9e65b065e.png 1600w, /assets/images/generated/autonomous-todo-list/5-1-pro-2000-9e65b065e.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/5-1-pro-800-9e65b065e.png" width="4000" height="1038" /></picture>
+
+<p>Opus 4.5:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/opus-800-f0273b68d.webp 800w, /assets/images/generated/autonomous-todo-list/opus-1000-f0273b68d.webp 1000w, /assets/images/generated/autonomous-todo-list/opus-1200-f0273b68d.webp 1200w, /assets/images/generated/autonomous-todo-list/opus-1600-f0273b68d.webp 1600w, /assets/images/generated/autonomous-todo-list/opus-2000-f0273b68d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/opus-800-5cf16234c.png 800w, /assets/images/generated/autonomous-todo-list/opus-1000-5cf16234c.png 1000w, /assets/images/generated/autonomous-todo-list/opus-1200-5cf16234c.png 1200w, /assets/images/generated/autonomous-todo-list/opus-1600-5cf16234c.png 1600w, /assets/images/generated/autonomous-todo-list/opus-2000-5cf16234c.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/opus-800-5cf16234c.png" width="4000" height="1012" /></picture>
+
+<p>Gemini 3 Pro:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/gemini-800-ede647c10.webp 800w, /assets/images/generated/autonomous-todo-list/gemini-1000-ede647c10.webp 1000w, /assets/images/generated/autonomous-todo-list/gemini-1200-ede647c10.webp 1200w, /assets/images/generated/autonomous-todo-list/gemini-1600-ede647c10.webp 1600w, /assets/images/generated/autonomous-todo-list/gemini-2000-ede647c10.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/gemini-800-f3f03056a.png 800w, /assets/images/generated/autonomous-todo-list/gemini-1000-f3f03056a.png 1000w, /assets/images/generated/autonomous-todo-list/gemini-1200-f3f03056a.png 1200w, /assets/images/generated/autonomous-todo-list/gemini-1600-f3f03056a.png 1600w, /assets/images/generated/autonomous-todo-list/gemini-2000-f3f03056a.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/gemini-800-f3f03056a.png" width="4118" height="684" /></picture>
+
+<p>This product is <em>really</em> good at complex research tasks and projects with ongoing work that reference the same original materials.</p><hr />
+
+<p>As noted above, there are at least a few ideas in here all jumbled together:</p>
+<ul>
+  <li>Kanban boards with comments as an interface to interact with AI for more complex tasks</li>
+  <li>multi-agent plan/execute/review systems</li>
+  <li>agents with access to a filesystem for persistence, common programs, and scripting ability</li>
+  <li>local LLMs hosted on your own server, accessed via a zero-trust private network</li>
+</ul>
+
+<p>(Plus other little touches: recurring tasks; AI vs. human differentiation via fonts/visual indicators; individual cost budgets for tasks; differentiating “needs human review” vs. “done”; subtasks created by the planner…)</p>
+
+<p>I’m not quite sure what I’m going to do with this. Maybe some of those ideas will get integrated into <a href="https://interface0.com" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a>, or some other product.</p>
+
+<p>I like the “private AI” angle; I like the “Claude Code for things other than code” angle; I like the “multi-agent judge setup” angle; I like the “alternatives to chat interfaces for complex tasks” angle. But do those all belong together? Probably not?</p><hr />
+
+<p>If you’re interested in this or have any ideas, <a href="mailto:andy@andybromberg.com" class="mailto-link">drop me a note</a>. I’m also thinking about cleaning it up and open-sourcing it.</p>
+
+<p>The deployment process isn’t bad — I rented a server on OVHcloud for ~$50/month that has good enough specs to run decent LLMs locally at a not-terrible speed and made a Kamal deploy flow that handles everything (besides setting up the Cloudflare Zero Trust tunnels and such, which are free). And once you’re up, you then have access to a very-private AI “in the cloud,” which is pretty cool. You could also easily set it up on a homelab server in your closet.</p>
+
+<p>There are also a bunch more features I want to add: per-task command permission levels; external interactions like emails; transient GPU pods for better local LLM performance; integrations with Obsidian and other data sources; shared code libraries and scripts between tasks; and much more…</p>
+
+<p>I’m excited to see more experimentation like this in AI interfaces and workflows.</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read?
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/uwol/beware-trying">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/uwol/beware-trying">UWoL: Beware of Trying</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+  </div><a class="u-url" href="/autonomous-todo-list" hidden></a>
+</article>
+  
+      </div>
+    </main></body>
+
+</html>
