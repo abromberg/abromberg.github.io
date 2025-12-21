@@ -1084,16 +1084,182 @@ hr:not(.end-of-article-divider)::before {
   width: fit-content;
   background-color: #F2F0E5;
   min-width: 30%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .toc ul {
   list-style: none;
 }
 
+/* TOC: remove default Minima underline + remove default list indentation */
+.toc a {
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.toc a:hover,
+.toc a:focus {
+  text-decoration: underline;
+}
+
+.toc ul,
+.toc ol,
+.toc .section-nav {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 #toc {
   margin: 0;
 }
 
+/* Floating TOC (opt-in per-post via `floating_toc: true`) */
+.post-content-layout--toc {
+  display: block;
+}
+
+.post-toc {
+  display: none; /* hidden on mobile by default */
+}
+
+.toc--mobile {
+  display: block;
+  width: 100%;
+}
+
+/* Mobile TOC: show only H2 entries (hide nested lists) */
+.toc--mobile ul ul {
+  display: none;
+}
+
+/* Keep the TOC list flush across all variants */
+#toc,
+#toc-sidebar,
+#toc-mobile {
+  margin: 0;
+}
+
+@media screen and (min-width: 1100px) {
+  .post-content-layout--toc {
+    display: grid;
+    /* Left sidebar + main content */
+    grid-template-columns: 18rem minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+  .post-main {
+    min-width: 0;
+    grid-column: 2;
+  }
+  .toc--mobile {
+    display: none;
+  }
+  .post-toc {
+    display: block;
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    grid-column: 1;
+  }
+  .post-toc-scroll {
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+    overscroll-behavior: contain;
+    /* Hide scrollbar but keep scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge legacy */
+  }
+  .post-toc-scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none; /* WebKit */
+  }
+  /* Fade top/bottom when overflowing (JS toggles these classes) */
+  .post-toc-scroll {
+    --toc-fade: 26px;
+  }
+  .post-toc-scroll.is-scrollable {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0) var(--toc-fade), rgb(0, 0, 0) calc(100% - var(--toc-fade)), rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0) var(--toc-fade), rgb(0, 0, 0) calc(100% - var(--toc-fade)), rgba(0, 0, 0, 0) 100%);
+  }
+  .post-toc-scroll.is-scrollable.is-at-top {
+    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgb(0, 0, 0) calc(100% - var(--toc-fade)), rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgb(0, 0, 0) calc(100% - var(--toc-fade)), rgba(0, 0, 0, 0) 100%);
+  }
+  .post-toc-scroll.is-scrollable.is-at-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0) var(--toc-fade), rgb(0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0) var(--toc-fade), rgb(0, 0, 0) 100%);
+  }
+  .post-toc-scroll.is-scrollable.is-at-top.is-at-bottom {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  /* The existing `.toc` styles are optimized for inline display; tweak for sidebar. */
+  .post-toc .toc {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    white-space: normal;
+    padding: 1em 1.2em;
+  }
+  .post-toc .toc li {
+    margin-bottom: 0.35em;
+  }
+  .post-toc .toc a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1.35;
+  }
+  .post-toc .toc a:hover {
+    text-decoration: underline;
+  }
+  .post-toc .toc a.is-active {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  /* Floating TOC: show only H2 entries by default; expand the current section */
+  .post-toc .toc li.toc-entry.toc-h2 > ul {
+    display: none;
+    margin-top: 0.35em;
+    padding-left: 1em;
+    border-left: 1px solid #E6E4D9;
+  }
+  .post-toc .toc li.toc-entry.toc-h2.is-expanded > ul {
+    display: block;
+  }
+  /* Within an expanded H2 section, hide H4s until their parent H3 is expanded */
+  .post-toc .toc li.toc-entry.toc-h3 > ul {
+    display: none;
+    margin-top: 0.25em;
+    padding-left: 1em;
+    border-left: 1px solid #E6E4D9;
+  }
+  .post-toc .toc li.toc-entry.toc-h3.is-expanded > ul {
+    display: block;
+  }
+  /* Slightly tighten nested items */
+  .post-toc .toc li.toc-entry.toc-h2 > ul .toc-entry {
+    margin-bottom: 0.3em;
+  }
+}
+/* True "left sidebar" (outside the centered wrapper) on very wide screens */
+@media screen and (min-width: 1500px) {
+  .post-content-layout--toc {
+    display: block;
+  }
+  .post-toc {
+    position: fixed;
+    /* 820px is Minima’s `$content-width`. */
+    left: calc((100vw - 820px) / 2 - 18rem - 2rem);
+    top: 8rem;
+    width: 18rem;
+    z-index: 20;
+  }
+  .post-toc-scroll {
+    max-height: calc(100vh - 10rem);
+  }
+}
 @media screen and (min-width: 768px) {
   .toc {
     white-space: nowrap;

@@ -1,0 +1,151 @@
+\documentclass[11pt, a4paper, twocolumn]{article}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+
+% Fonts - use consistent font family throughout
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}[
+  BoldFont={Helvetica Neue Bold},
+  ItalicFont={Helvetica Neue Italic}
+]
+\setmonofont{Menlo}[Scale=0.85]
+
+% Page layout
+\usepackage[
+  top=0.75in,
+  bottom=0.85in,
+  left=0.6in,
+  right=0.6in,
+  columnsep=0.3in
+]{geometry}
+
+% Typography
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.05}
+
+% Paragraph formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily $if(shorttitle)$$shorttitle$$else$$title$$endif$}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{unicode-math}
+
+% Links and references
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue!70!black,
+  citecolor=black
+]{hyperref}
+
+% Graphics
+\usepackage{graphicx}
+\usepackage{float}
+
+% Pandoc image sizing command
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Pandoc uses this for bounded images
+\newcommand{\pandocbounded}[1]{#1}
+
+% Captions
+\usepackage[font=small, labelfont=bf, tableposition=top]{caption}
+
+% Tables (minimal - we convert tables to lists in preprocessing)
+\usepackage{booktabs}
+\usepackage{array}
+
+% Lists
+\usepackage{enumitem}
+\setlist[itemize]{nosep, left=0pt, itemsep=2pt}
+\setlist[enumerate]{nosep, left=0pt, itemsep=2pt}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}}
+
+% Code blocks
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+  basicstyle=\footnotesize\ttfamily,
+  breaklines=true,
+  frame=single,
+  framesep=2pt,
+  backgroundcolor=\color[gray]{0.97},
+  xleftmargin=0pt,
+  framexleftmargin=3pt
+}
+
+% Block quotes
+\usepackage{csquotes}
+\renewenvironment{quote}
+  {\list{}{\leftmargin=1em\rightmargin=1em}\item\relax\small\itshape}
+  {\endlist}
+
+% Section formatting - all sans-serif
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\sffamily}
+  {\thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\normalsize\bfseries\sffamily}
+  {\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}
+  {\normalsize\sffamily\itshape}
+  {\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.5em}
+\titlespacing*{\subsection}{0pt}{1em}{0.3em}
+\titlespacing*{\subsubsection}{0pt}{0.8em}{0.2em}
+
+
+% ============================================================================
+% DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+% Title block spans both columns, then body is two-column
+\twocolumn[
+  \begin{center}
+    {\LARGE\bfseries\sffamily $title$ \par}
+    \vskip 1.5em
+    {\large\sffamily $if(author)$$author$$else$Andy Bromberg$endif$ \par}
+    \vskip 0.5em
+    {\normalsize\sffamily\itshape $if(date)$$date$$endif$ \par}
+    \vskip 0.3em
+    {\small\sffamily\url{https://andybromberg.com} \par}
+    \vskip 1em
+    {\footnotesize\sffamily\itshape This PDF was auto-generated from a blog post at \url{$posturl$}. \\ Some formatting may differ from the original. \par}
+  \end{center}
+  \vskip 1.5em
+  \hrule
+  \vskip 1.5em
+]
+\thispagestyle{empty}
+
+$body$
+
+$if(bibliography)$
+\bibliographystyle{plain}
+\bibliography{$bibliography$}
+$endif$
+
+\end{document}
