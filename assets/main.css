@@ -1120,7 +1120,7 @@ hr:not(.end-of-article-divider)::before {
 }
 
 .post-toc {
-  display: none; /* hidden on mobile by default */
+  display: none; /* hidden below wide breakpoint */
 }
 
 .toc--mobile {
@@ -1140,30 +1140,23 @@ hr:not(.end-of-article-divider)::before {
   margin: 0;
 }
 
-@media screen and (min-width: 1100px) {
-  .post-content-layout--toc {
-    display: grid;
-    /* Left sidebar + main content */
-    grid-template-columns: 18rem minmax(0, 1fr);
-    gap: 2rem;
-    align-items: start;
-  }
-  .post-main {
-    min-width: 0;
-    grid-column: 2;
-  }
+/* Wide screens: fixed-position floating TOC on the left */
+@media screen and (min-width: 1400px) {
   .toc--mobile {
     display: none;
   }
   .post-toc {
     display: block;
-    position: sticky;
-    top: 2rem;
-    align-self: start;
-    grid-column: 1;
+    position: fixed;
+    /* Stay at least 1rem from left edge, otherwise position relative to centered content */
+    left: max(1rem, (100vw - 820px) / 2 - 18rem - 2rem);
+    top: 8rem;
+    /* Shrink width if needed to fit between left edge and content */
+    width: min(18rem, (100vw - 820px) / 2 - 3rem);
+    z-index: 20;
   }
   .post-toc-scroll {
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 10rem);
     overflow: auto;
     overscroll-behavior: contain;
     /* Hide scrollbar but keep scrolling */
@@ -1195,7 +1188,7 @@ hr:not(.end-of-article-divider)::before {
     -webkit-mask-image: none;
     mask-image: none;
   }
-  /* The existing `.toc` styles are optimized for inline display; tweak for sidebar. */
+  /* Floating TOC styling */
   .post-toc .toc {
     display: block;
     width: 100%;
@@ -1241,23 +1234,6 @@ hr:not(.end-of-article-divider)::before {
   /* Slightly tighten nested items */
   .post-toc .toc li.toc-entry.toc-h2 > ul .toc-entry {
     margin-bottom: 0.3em;
-  }
-}
-/* True "left sidebar" (outside the centered wrapper) on very wide screens */
-@media screen and (min-width: 1500px) {
-  .post-content-layout--toc {
-    display: block;
-  }
-  .post-toc {
-    position: fixed;
-    /* 820px is Minima’s `$content-width`. */
-    left: calc((100vw - 820px) / 2 - 18rem - 2rem);
-    top: 8rem;
-    width: 18rem;
-    z-index: 20;
-  }
-  .post-toc-scroll {
-    max-height: calc(100vh - 10rem);
   }
 }
 @media screen and (min-width: 768px) {
