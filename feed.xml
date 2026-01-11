@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-10T13:25:06-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Everything Is As It Should Be</title><link href="https://andybromberg.com/everything-is-as-it-should-be" rel="alternate" type="text/html" title="Everything Is As It Should Be" /><published>2026-01-10T05:00:00-08:00</published><updated>2026-01-10T05:00:00-08:00</updated><id>https://andybromberg.com/everything-is-as-it-should-be</id><content type="html" xml:base="https://andybromberg.com/everything-is-as-it-should-be"><![CDATA[<style>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-11T10:28:39-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Notes &amp;amp; AI</title><link href="https://andybromberg.com/congruence/notes-ai" rel="alternate" type="text/html" title="Notes &amp;amp; AI" /><published>2026-01-11T09:10:00-08:00</published><updated>2026-01-11T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-3-notes-ai</id><content type="html" xml:base="https://andybromberg.com/congruence/notes-ai"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 3/7</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<p>There is a notes view you can reach within the app, but that’s not why I love this feature. Here’s the list of notes (you can see some are tagged priority/sticky at the top):</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/notes-list-800-b23926c1b.webp 800w, /assets/images/generated/congruence/notes-list-1000-b23926c1b.webp 1000w, /assets/images/generated/congruence/notes-list-1200-b23926c1b.webp 1200w, /assets/images/generated/congruence/notes-list-1600-b23926c1b.webp 1600w, /assets/images/generated/congruence/notes-list-2000-b23926c1b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/notes-list-800-075866a92.png 800w, /assets/images/generated/congruence/notes-list-1000-075866a92.png 1000w, /assets/images/generated/congruence/notes-list-1200-075866a92.png 1200w, /assets/images/generated/congruence/notes-list-1600-075866a92.png 1600w, /assets/images/generated/congruence/notes-list-2000-075866a92.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/notes-list-800-075866a92.png" width="4070" height="1628" /></picture>
+
+<p><em>Note: I had AI seed some fake data to avoid sharing my real notes…</em></p>
+
+<p>And within a note, there are “sections” which can be edited, and of course new sections can be added through the input bar at the bottom.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/notes-detail-800-f0bcdcc20.webp 800w, /assets/images/generated/congruence/notes-detail-1000-f0bcdcc20.webp 1000w, /assets/images/generated/congruence/notes-detail-1200-f0bcdcc20.webp 1200w, /assets/images/generated/congruence/notes-detail-1600-f0bcdcc20.webp 1600w, /assets/images/generated/congruence/notes-detail-2000-f0bcdcc20.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/notes-detail-800-ad041f0b7.png 800w, /assets/images/generated/congruence/notes-detail-1000-ad041f0b7.png 1000w, /assets/images/generated/congruence/notes-detail-1200-ad041f0b7.png 1200w, /assets/images/generated/congruence/notes-detail-1600-ad041f0b7.png 1600w, /assets/images/generated/congruence/notes-detail-2000-ad041f0b7.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/notes-detail-800-ad041f0b7.png" width="4070" height="1628" /></picture>
+
+<p>But the magic of this note feature lies in the quick-capture experience. From either the lock screen or the control panel (or the homepage of the app, or within other modules…) you can trigger a capture. Here’s my phone’s lock screen, with voice and text capture buttons (and a “nope” icon, which we’ll get to later):</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/lock-screen-800-3e9e4898c.webp 800w, /assets/images/generated/congruence/lock-screen-1000-3e9e4898c.webp 1000w, /assets/images/generated/congruence/lock-screen-1200-3e9e4898c.webp 1200w, /assets/images/generated/congruence/lock-screen-1600-3e9e4898c.webp 1600w, /assets/images/generated/congruence/lock-screen-2000-3e9e4898c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/lock-screen-800-8442b7fa6.png 800w, /assets/images/generated/congruence/lock-screen-1000-8442b7fa6.png 1000w, /assets/images/generated/congruence/lock-screen-1200-8442b7fa6.png 1200w, /assets/images/generated/congruence/lock-screen-1600-8442b7fa6.png 1600w, /assets/images/generated/congruence/lock-screen-2000-8442b7fa6.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/lock-screen-800-8442b7fa6.png" width="4100" height="1640" /></picture>
+
+<p>Once you do that, you’re right in the app, either typing in the active text field or recording an audio note. Audio notes are automatically transcribed to text. Once you’re done typing or recording, you hit either the <code class="language-plaintext highlighter-rouge">ADD</code> or <code class="language-plaintext highlighter-rouge">AI</code> buttons:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/recording-800-4edb4a188.webp 800w, /assets/images/generated/congruence/recording-1000-4edb4a188.webp 1000w, /assets/images/generated/congruence/recording-1200-4edb4a188.webp 1200w, /assets/images/generated/congruence/recording-1600-4edb4a188.webp 1600w, /assets/images/generated/congruence/recording-1680-4edb4a188.webp 1680w" type="image/webp" /><source srcset="/assets/images/generated/congruence/recording-800-180529ae6.png 800w, /assets/images/generated/congruence/recording-1000-180529ae6.png 1000w, /assets/images/generated/congruence/recording-1200-180529ae6.png 1200w, /assets/images/generated/congruence/recording-1600-180529ae6.png 1600w, /assets/images/generated/congruence/recording-1680-180529ae6.png 1680w" type="image/png" /><img src="/assets/images/generated/congruence/recording-800-180529ae6.png" width="1680" height="672" /></picture>
+
+<p>Either way, a new note is created (assuming you’re doing this outside of an existing note). If you hit <code class="language-plaintext highlighter-rouge">ADD</code>, the note is simply created with whatever content you put in (text or audio file + transcription). But if you hit <code class="language-plaintext highlighter-rouge">AI</code>, the content is sent off to AI to get a response. You can configure whether this is Apple’s local foundation models — so the content never leaves your device — or any remote model of your choice.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/story-ai-800-ba3a9c741.webp 800w, /assets/images/generated/congruence/story-ai-1000-ba3a9c741.webp 1000w, /assets/images/generated/congruence/story-ai-1200-ba3a9c741.webp 1200w, /assets/images/generated/congruence/story-ai-1600-ba3a9c741.webp 1600w, /assets/images/generated/congruence/story-ai-2000-ba3a9c741.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/story-ai-800-c922104b2.png 800w, /assets/images/generated/congruence/story-ai-1000-c922104b2.png 1000w, /assets/images/generated/congruence/story-ai-1200-c922104b2.png 1200w, /assets/images/generated/congruence/story-ai-1600-c922104b2.png 1600w, /assets/images/generated/congruence/story-ai-2000-c922104b2.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/story-ai-800-c922104b2.png" width="2460" height="984" /></picture>
+
+<p>This is a wickedly fast way to get an AI response (or just take notes). Tap button on home screen, talk at it, it gets transcribed near-instantly by Apple’s local transcription, and AI replies right there.</p>
+
+<p>There are of course also ways to export or share whole notes or sections, edit them, and more. This is by far my favorite on-the-go note capture experience I’ve seen. The voice / transcription modality combined with plain notes combined with optional AI combined with a “sections” paradigm is exactly what I want.</p>
+
+<p>Of course, it all syncs to the desktop app too (which I’m not showing here since I haven’t yet wired it up to handle fake data).</p>
+
+<p>There’s also a secret (shhh) feature. With a certain gesture on the notes screen, you get pulled into a special, hidden note that requires FaceID to open. Great for storing door codes and PINs and such.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/secret-note-800-95339fdbe.webp 800w, /assets/images/generated/congruence/secret-note-1000-95339fdbe.webp 1000w, /assets/images/generated/congruence/secret-note-1200-95339fdbe.webp 1200w, /assets/images/generated/congruence/secret-note-1600-95339fdbe.webp 1600w, /assets/images/generated/congruence/secret-note-2000-95339fdbe.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/secret-note-800-e0101928f.png 800w, /assets/images/generated/congruence/secret-note-1000-e0101928f.png 1000w, /assets/images/generated/congruence/secret-note-1200-e0101928f.png 1200w, /assets/images/generated/congruence/secret-note-1600-e0101928f.png 1600w, /assets/images/generated/congruence/secret-note-2000-e0101928f.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/secret-note-800-e0101928f.png" width="2890" height="1156" /></picture>
+
+<p>Next up: meditation. (Blog post coming soon…)</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 3/7</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[← Streaks &amp; MEQ Congruence: a very personal app · section 3/7 coming soon]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Streaks &amp;amp; MEQ</title><link href="https://andybromberg.com/congruence/streaks-meq" rel="alternate" type="text/html" title="Streaks &amp;amp; MEQ" /><published>2026-01-11T09:05:00-08:00</published><updated>2026-01-11T09:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-2-streaks-meq</id><content type="html" xml:base="https://andybromberg.com/congruence/streaks-meq"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/intro">← Intro to Congruence</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 2/7</div>
+<div class="series-nav-next"><a href="/congruence/notes-ai">Notes &amp; AI →</a></div>
+</div>
+
+<p>Everything I do in the app is logged, which means it’s easy to calculate streaks for habits — which I find very motivating.</p>
+
+<p>I can see in the Streaks module how long my current streaks are against my longest ever, and how many total events of that type have been logged (I already meditated and vibe-checked today, so those are lit up orange — the others I will do later today).</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/streaks-meq-800-989d5ba11.webp 800w, /assets/images/generated/congruence/streaks-meq-1000-989d5ba11.webp 1000w, /assets/images/generated/congruence/streaks-meq-1200-989d5ba11.webp 1200w, /assets/images/generated/congruence/streaks-meq-1600-989d5ba11.webp 1600w, /assets/images/generated/congruence/streaks-meq-2000-989d5ba11.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/streaks-meq-800-e908e52d8.png 800w, /assets/images/generated/congruence/streaks-meq-1000-e908e52d8.png 1000w, /assets/images/generated/congruence/streaks-meq-1200-e908e52d8.png 1200w, /assets/images/generated/congruence/streaks-meq-1600-e908e52d8.png 1600w, /assets/images/generated/congruence/streaks-meq-2000-e908e52d8.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/streaks-meq-800-e908e52d8.png" width="4040" height="1616" /></picture>
+
+<p>(Unfortunately I haven’t previously tracked meditations, so I have no historical data to backfill there, and others have varying degrees of historical data available. I wish I had this app my whole life!)</p>
+
+<p>Below the streaks you can see a sort of “calendar” view. In the case of vibe checks (above) it is colored based on the result of the vibe check (more on that later). For other streaks, it just shows completed vs. not, like for my 750 Words habit:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/streaks-750-800-acff8a12f.webp 800w, /assets/images/generated/congruence/streaks-750-1000-acff8a12f.webp 1000w, /assets/images/generated/congruence/streaks-750-1200-acff8a12f.webp 1200w, /assets/images/generated/congruence/streaks-750-1600-acff8a12f.webp 1600w, /assets/images/generated/congruence/streaks-750-2000-acff8a12f.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/streaks-750-800-52d413ef3.png 800w, /assets/images/generated/congruence/streaks-750-1000-52d413ef3.png 1000w, /assets/images/generated/congruence/streaks-750-1200-52d413ef3.png 1200w, /assets/images/generated/congruence/streaks-750-1600-52d413ef3.png 1600w, /assets/images/generated/congruence/streaks-750-2000-52d413ef3.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/streaks-750-800-52d413ef3.png" width="4230" height="1692" /></picture>
+
+<p><em>Can you see Burning Man week in there? :)</em></p>
+
+<p>Related to the streaks, I have a concept called <a href="/minimum-effective-quantification">Minimum Effective Quantification</a>. There’s a module for this too, of course. Here it is (with backfilled fake data; I’m writing this on Sunday so the counters just reset for me in the production data):</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/meq-800-43bd77191.webp 800w, /assets/images/generated/congruence/meq-1000-43bd77191.webp 1000w, /assets/images/generated/congruence/meq-1200-43bd77191.webp 1200w, /assets/images/generated/congruence/meq-1600-43bd77191.webp 1600w, /assets/images/generated/congruence/meq-2000-43bd77191.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/meq-800-0c8a31046.png 800w, /assets/images/generated/congruence/meq-1000-0c8a31046.png 1000w, /assets/images/generated/congruence/meq-1200-0c8a31046.png 1200w, /assets/images/generated/congruence/meq-1600-0c8a31046.png 1600w, /assets/images/generated/congruence/meq-2000-0c8a31046.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/meq-800-0c8a31046.png" width="3590" height="1436" /></picture>
+
+<p>As I do pomodoro sessions, I can just hit it to increment; and same with pushups and logging steps at the end of the day.</p>
+
+<p>Next up is <a href="/congruence/notes-ai">notes &amp; AI</a>.</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/intro">← Intro to Congruence</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 2/7</div>
+<div class="series-nav-next"><a href="/congruence/notes-ai">Notes &amp; AI →</a></div>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Congruence logs everything, which means streaks & Minimum Effective Quantification are easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Intro to Congruence</title><link href="https://andybromberg.com/congruence/intro" rel="alternate" type="text/html" title="Intro to Congruence" /><published>2026-01-11T09:00:00-08:00</published><updated>2026-01-11T09:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-1-intro</id><content type="html" xml:base="https://andybromberg.com/congruence/intro"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"></div>
+<div class="series-nav-center">Congruence: a very personal app · section 1/7</div>
+<div class="series-nav-next"><a href="/congruence/streaks-meq">Streaks &amp; MEQ →</a></div>
+</div>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/app-icon-800-65f67900a.webp 800w, /assets/images/generated/congruence/app-icon-1000-65f67900a.webp 1000w, /assets/images/generated/congruence/app-icon-1200-65f67900a.webp 1200w, /assets/images/generated/congruence/app-icon-1450-65f67900a.webp 1450w" type="image/webp" /><source srcset="/assets/images/generated/congruence/app-icon-800-ba5a9c6b1.png 800w, /assets/images/generated/congruence/app-icon-1000-ba5a9c6b1.png 1000w, /assets/images/generated/congruence/app-icon-1200-ba5a9c6b1.png 1200w, /assets/images/generated/congruence/app-icon-1450-ba5a9c6b1.png 1450w" type="image/png" /><img src="/assets/images/generated/congruence/app-icon-800-ba5a9c6b1.png" width="1450" height="580" /></picture>
+
+<p>My favorite — and most-opened — app is called Congruence. I am the only user.</p>
+
+<p>I’ve mentioned home-cooked software before, and cited <a href="https://www.robinsloan.com/notes/home-cooked-app/">this post</a> by Robin Sloan:</p>
+
+<blockquote>
+  <p>When you liberate programming from the requirement to be professional and scalable, it becomes a different activity altogether, just as cooking at home is really nothing like cooking in a commercial kitchen.</p>
+</blockquote>
+
+<p>Congruence is exactly such a home-cooked meal — a utility app that is steadily wiping out the need for many other apps on my phone. It is perfectly-suited for how <em>I</em> want some of the following use cases to be managed and experienced:</p>
+
+<ol>
+  <li>Scheduling, timeblocking, and reminders</li>
+  <li>Daily checklists, routines, and habits</li>
+  <li>Capturing notes and quickly interacting with AI</li>
+  <li>Meditating &amp; breathwork</li>
+  <li>Tracking people to call</li>
+  <li>Tracking my mood</li>
+  <li>And other utility functions like access management</li>
+</ol>
+
+<p>It consists of an iOS app (on both my main &amp; Freedom phones — more on that later), and a desktop Mac app, with all data synced together, and is broken down into a number of “modules” targeting many of those use cases I just mentioned. You can see them as buttons in the top section of the home screen here:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/modules-schedule-800-1d47aa5ca.webp 800w, /assets/images/generated/congruence/modules-schedule-1000-1d47aa5ca.webp 1000w, /assets/images/generated/congruence/modules-schedule-1200-1d47aa5ca.webp 1200w, /assets/images/generated/congruence/modules-schedule-1600-1d47aa5ca.webp 1600w, /assets/images/generated/congruence/modules-schedule-2000-1d47aa5ca.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png 800w, /assets/images/generated/congruence/modules-schedule-1000-71edc27d4.png 1000w, /assets/images/generated/congruence/modules-schedule-1200-71edc27d4.png 1200w, /assets/images/generated/congruence/modules-schedule-1600-71edc27d4.png 1600w, /assets/images/generated/congruence/modules-schedule-2000-71edc27d4.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png" width="2870" height="1146" /></picture>
+
+<p>This post series will briefly explain each of the modules.</p>
+
+<p>Below the module bar is the heart of the app: a timeblocked, templated schedule. Each day has a different schedule, including general timeblocks (“Work”) and reminders / tasks. You can see in that screenshot, for instance, completed Vibe Check and Meditation sessions (both linked to specific modules), as well as habits I still need to complete (750 Words, 1 Commit), and more.</p>
+
+<p>As the day progresses, some of these items need to be checked off and some simply drop into the past. Some send me notifications (“Gym in 15 minutes!”).</p>
+
+<p>You can also see “Weekly Checklist” on there: it’s a Sunday as I’m writing this, which means I do my weekly review / prep habit. Tapping into that item shows a checklist of such items (reviewing priorities, sending updates, etc.). Every day also has its own Evening Checklist in a similar format.</p>
+
+<p>I’m having a blast building this app. It is so much fun to build something so narrowly focused on my own idiosyncrasies, and it turns out to be tremendously useful, too.</p>
+
+<p>Why am I publishing this post about an n=1 app that nobody else can use? Honestly, mainly to catalogue my current thinking here for later review. But also perhaps in the hopes that it might inspire others to build their own personal apps to, well… bring them more into congruence.</p>
+
+<p>Let’s check out the features, starting with <a href="/congruence/streaks-meq">Streaks &amp; MEQ</a>.</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"></div>
+<div class="series-nav-center">Congruence: a very personal app · section 1/7</div>
+<div class="series-nav-next"><a href="/congruence/streaks-meq">Streaks &amp; MEQ →</a></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[An introduction to Congruence, my favorite app on my phone and computer. There's only one user. Me.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-1-intro.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-1-intro.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Everything Is As It Should Be</title><link href="https://andybromberg.com/everything-is-as-it-should-be" rel="alternate" type="text/html" title="Everything Is As It Should Be" /><published>2026-01-10T05:00:00-08:00</published><updated>2026-01-10T05:00:00-08:00</updated><id>https://andybromberg.com/everything-is-as-it-should-be</id><content type="html" xml:base="https://andybromberg.com/everything-is-as-it-should-be"><![CDATA[<style>
 .mantra {
   text-align: center;
   font-variant: small-caps;
@@ -129,11 +266,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/congruence/intro">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/congruence/intro">Intro to Congruence</a>
     
   </div>
 </nav>
@@ -2517,488 +2658,4 @@ l0,-144c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Math &amp; science&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[At Lightwork we use geostatistical techniques like Kriging to interpolate visualizations of electromagnetic fields. Here's how it works.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Your problems are your fault in two different ways</title><link href="https://andybromberg.com/problems-are-your-fault" rel="alternate" type="text/html" title="Your problems are your fault in two different ways" /><published>2025-11-17T11:00:00-08:00</published><updated>2025-11-17T11:00:00-08:00</updated><id>https://andybromberg.com/problems-are-your-fault</id><content type="html" xml:base="https://andybromberg.com/problems-are-your-fault"><![CDATA[<p>… and accepting this can make your life much easier and more pleasant.</p>
-
-<h2 id="radical-accountability-is-one">Radical accountability is one</h2>
-
-<p>Much has been written about “radical accountability” — taking 100% responsibility for your actions and situation. CEO coach Jerry Colonna has a useful line:</p>
-
-<blockquote>
-  <p>How have I been complicit in creating the conditions I say I don’t want?</p>
-</blockquote>
-
-<p>I personally like fellow coach Matt Mochary’s stronger formulation<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">See Matt’s underrated <a href="https://docs.google.com/document/d/18FiJbYn53fTtPmphfdCKT2TMWH-8Y2L-MLqDk-MFV4s/edit?tab=t.0">“curriculum”</a> for running a company.</span>, although I understand why Colonna keeps it at “complicit:”</p>
-
-<blockquote>
-  <p>What did I do to help create this situation?</p>
-</blockquote>
-
-<p>And frankly, I’d prefer an <em>even stronger</em> one:</p>
-
-<blockquote>
-  <p>What did I do to cause this situation?</p>
-</blockquote>
-
-<p>The stronger the question, the more it forces you to look for levers you actually control.</p>
-
-<p>Taking complete responsibility for your actions and your current situation — including any perceived “problems” — is a powerful tool. It simply <em>feels</em> better (despite intuitively seeming like perhaps it should not), and it often leads you straight to a path to resolving the issue (“well, have you tried doing the opposite of that?”).</p>
-
-<p>Rather than tilting at windmills and stewing about why those <em>Other People</em> won’t just do <em>The Right Thing</em>, taking responsibility for your problems gives you back your agency to resolve them.</p>
-
-<p>Complaining that “Bob just isn’t doing his job well” (zero personal ownership of the problem) becomes “I haven’t given Bob sufficient feedback and direction on the task” (clear next step: do the opposite and provide him the feedback) or even “I’ve kept Bob in his role long after realizing he isn’t going to do it well” (reposition him or let him go).</p>
-
-<p>But that’s all the more obvious sense in which your problems are (or at least can be seen to be) “your fault.” There’s a second, more subtle way in which it’s true as well:</p>
-
-<p><strong>Your “problem” is only there because you knowingly or unknowingly are insisting on a frame that <em>makes it a problem in the first place</em>.</strong></p>
-
-<h2 id="your-frames-are-the-other">Your frames are the other</h2>
-
-<p>“Problems” do not exist in the abstract. They only exist in the context of a frame — or, I suppose, a <a href="https://andybromberg.com/ways-of-looking">Way of Looking</a> (which is really what this is all about — read that article for a different approach to this idea).</p>
-
-<p>By a “frame” I just mean the way you’re choosing to see or look at a situation: the assumptions, standards, values, and definitions you’re bringing to it.</p>
-
-<p>Suggesting that Bob is underperforming inherently assumes a frame of what “proper” performance entails. You can’t “underperform” without a frame of reference for performance.</p>
-
-<p>Even <em>if</em> you don’t accept responsibility for Bob’s <em>output</em> (as I suggest you could, above), you are still responsible for the frame that defines what “good enough” looks like. Those are the two distinct levers: the situation and the lens.</p>
-
-<p>But when presented with this, people often object: “that’s an easy example. It’s not even a Real Problem.” Sometimes with the addendum, “it’s easy for you to opine about this — you don’t have any <em>Real Problems</em>.”<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">No doubt I have a wonderful life for which I am deeply grateful, with fewer things that would conventionally be seen as “problems” than many others have. Of course, my life is not without what many would consider “problems” of my own (and it’s always interesting when people assume this isn’t the case!), but I generally — not always — am able to and choose to view them otherwise. It may be easier for me to reflect like this than it is for others, for which I am also grateful. But none of this violates the core point, regardless of your views of its author and your perception of his life.</span></p>
-
-<p>To which I say: “okay — what is a Real Problem?”</p>
-
-<p>They usually have one of two answers: 1) someone unemployed, unable to make their monthly rent, or 2) a threat to life or limb, like someone with a knife running at you, or a terminal cancer diagnosis.</p>
-
-<p>And to preempt an objection: I’m not claiming everyone’s situation is equally easy; I’m claiming that in every situation there’s a frame doing the work of turning “what is” into a “problem.”</p>
-
-<h3 id="two-real-problems">Two “Real Problems”</h3>
-
-<p>Let’s take the first — an impending rent payment one can’t make, upon which they’ll be kicked out of their housing. Maybe — to cut out some “easy” answers — they also don’t have family or friends they can move in with, and no money at all with which to find cheaper accommodations.</p>
-
-<p>To many, this problem <em>feels</em> like an obviously real problem, as if it can’t be a issue of simply “framing.” And in some sense it is: not paying rent has real consequences. But it still only shows up as a <em>problem</em> dependent on a particular frame.</p>
-
-<p>And there is, indeed, a frame implied. At a bare minimum, the frame includes “I need a roof over my head.” If the person <em>didn’t</em> believe that, then there would no problem at all. The problem doesn’t exist absent the frame.</p>
-
-<p>There are people out there without rent or mortgage or an owned home that are perfectly happy with the arrangement. To give one example, Jeffrey Sawyer writes in <a href="https://web.archive.org/web/20080106141245/http://carfreeuniverse.org/Members/jeffreysawyer/livinginquiry">An inquiry into living</a>:</p>
-
-<blockquote>
-  <p>For the first few days I was walking, I would look for a comfortable place to sleep before the sun went down. This became too much work, however, and I ceased to concern myself with finding a secluded hideaway. Rather, I just walked until I was tired. A place inevitably showed up that suited my needs: a school bus, the back of a truck, a church, a gazebo behind a town hall, under a poncho in someone’s backyard, behind a VFW lodge, a cemetery, an emergency room, the woods, a truck stop, the bushes in front of a college dormitory. Every night a new place, new people, a new environment.</p>
-</blockquote>
-
-<p>Sawyer has dropped the frame “I must have stable, conventional housing,” and replaced it with “I can sleep wherever I find myself.”</p>
-
-<p>If you want to read a pragmatic perspective from someone who holds some very different frames than most of society, give that essay a 
-read. (You’ll find that his frame still creates “problems” of its own!)</p>
-
-<p>Or, one better, try on Sawyer’s frames of life, even if just for a moment. There’s nothing stopping you! Suddenly a wide range of perceived or possible “problems” — limited rent money, no food in the house, boredom — wash away.</p>
-
-<p>Now: I am <em>not</em> saying that Sawyer’s frames are “right” or “better” — all I am suggesting is that they are <em>options</em>. There’s also nothing wrong with knowingly choosing a frame that gives you a problem! You’re more than welcome to insist that you need a roof over your head. All I’m arguing is that it’s better to do so <em>knowingly</em> than <em>unknowingly.</em></p>
-
-<p>Most people won’t (and probably shouldn’t) adopt Sawyer’s frames wholesale, for all sorts of reasons. The point here is not “you should be fine being homeless,” it’s that “even here, the sense of ‘problem’ is downstream of a frame.”</p>
-
-<p>If you’re staring down the barrel of being evicted from your apartment, you have three options:</p>
-<ol>
-  <li>See it as a problem, <em>without being aware of the underlying frame</em>, likely inducing some meaningful mental suffering and anguish</li>
-  <li>Become aware of the underlying frame, <em>choose to keep it around,</em> and continue to see the eviction as a problem — perhaps keeping the suffering, but at least knowing that you <em>could</em> remove it by changing frames, which sometimes loosens the grip it has on you</li>
-  <li>Become aware of the underlying frame, <em>and choose to drop it in favor of another.</em> Suddenly, your “eviction problem” isn’t a “problem” — it’s just an “eviction,” empty of meaning or judgement — or maybe it’s still a problem, but a more easily solvable one given the new frame</li>
-</ol>
-
-<p>I’m not trying to rank frames on some universal moral scale here. In practice, some frames will be more useful or ethical for you given your goals and values — but that’s exactly the point: they’re choices, not inevitabilities.</p>
-
-<p>All I want to make the case for is that I find it much more pleasant to be <em>aware</em> of the frames and <em>choose</em> them while being aware of the consequences of such choices.</p>
-
-<p>It’s fine to pick frames that give you a “problem,” if you want to. I don’t frequently find doing so terribly useful. But you can! It just feels silly to do so unknowingly and unnecessarily, causing yourself suffering.</p>
-
-<p>This is what I mean when I say your problems are your fault: they only arise dependent on a frame, and your frames are within your control (sometimes hard to change! But always possible!).</p>
-
-<p>It’s worth asking yourself: what is seeing this “thing” or “experience” or “situation” as a “problem” doing for you? I find the answer is rarely very much. It’s usually just causing me suffering.</p>
-
-<p>“But,” some say, “that doesn’t come close to a terminal illness or an armed attacker! Those are Truly Real Problems. You might <em>die</em>!”</p>
-
-<p>Perhaps predictably, the last bit there is the rub. You’re carrying a frame that your own death is a bad thing.</p>
-
-<p>There are people out there with terminal illnesses who are perfectly happy and have accepted death. It is possible to take a different frame on this very mortal matter.</p>
-
-<p>But… should you? I don’t know! That’s a personal decision. But my view is that if you’re going to suffer, you should at least be <em>choosing</em> to suffer — choosing the frame that creates the problem that causes you to suffer.</p>
-
-<p>None of this means “don’t run from the guy with the knife” or “refuse treatment.” It’s just that you can drop the frame that turns the situation into a source of extra, unnecessary suffering. And when I say suffering, I’m talking about the psychological suffering (again, see <a href="/ways-of-looking">Ways of Looking</a>), not the physical <em>pain</em>.</p>
-
-<h2 id="you-can-take-control">You can take control</h2>
-
-<p>You may not control what happens, but you have far more influence over how you frame it — and thus how much you suffer, and how many “problems” you think you have — than it first appears</p>
-
-<p>I don’t mean to make light of any of this. Many of these frames are <em>strongly</em> societally conditioned, and in some cases, even arise from our very biological nature. I’m not cold-heartedly saying “if you’re sick, you should just be okay with it, it’s easy.” It’s often a lifelong journey to accept your power over your own frames (and thus your problems and your level of suffering).</p>
-
-<p>Along the way, it can be frustrating and anger-inducing — you might realize, painfully, just how much unnecessary suffering you’ve put yourself through by use of implicit frames. That can cause some unpleasant reactions.</p>
-
-<p>At the end of the day: choose whatever frames you want.</p>
-
-<p>Maybe you <em>want</em> a frame of high standards at work, which then causes you the problem of Bob’s underperformance. There may be good reasons to do so.</p>
-
-<p>Maybe you <em>want</em> a frame of needing a roof over your head, which then causes you the problem of suffering through your impending payment. There may be good reasons to do so. The same is true for threats to your life.</p>
-
-<p>And it is also worth noting: frames are not binary. You can choose a frame that makes the problem disappear entirely (“I don’t need a roof over my head”), or you can choose a frame that keeps the problem around but makes it easier to resolve (“I do need a roof over my head; but I’m now open to asking extended family, whereas before I was not”).</p>
-
-<p>There is an infinite space of frames — and this is all a call to choose the one that best serves you rather than accepting whichever the roulette wheel dealt you.</p>
-
-<h3 id="is-this-too-passive">Is this too passive?</h3>
-
-<p>Some people react negatively to this whole concept with objections like:</p>
-
-<blockquote>
-  <p>“well if you’re just willing to accept every situation, you’ll never get anything done”</p>
-
-  <p>“this is way too passive, sometimes problems actually need to be solved”</p>
-
-  <p>“this is a weak and low-agency perspective”</p>
-
-  <p>“don’t you know that George Bernard Shaw said ‘The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.’?”</p>
-</blockquote>
-
-<p>And to that, I would offer two counterpoints.</p>
-
-<p>A theoretical one: I think this is the <em>higher</em> agency way of looking at the world, not lower. It puts you in <em>control</em> of the suffering you feel, your problems, and how you see the world (which ultimately mediates your reality). Instead of just letting the world program how you feel about things, take that into your own hands and do what you want with it — including trying to “adapt the world to [yourself]” if you so desire.</p>
-
-<p>And an empirical one: the people I know who most strongly live this philosophy are both extremely happy and seem to get a lot of shit done — whatever they happen to care about at the moment. They are not what I would describe as “passive.” So I have at least some anecdotal evidence to the contrary.</p>
-
-<p>The people, on the other hand, who most blindly and uncritically follow the frames that they’ve happened to fall into tend to be the most passive and least agentic. (In my experience, at least!)</p>
-
-<p>So, hey, try it out. See if it works for you. Next time you frustratingly run into a problem that you can’t seem to resolve “your normal way” or with sheer effort, look for the frame that is creating it, and ask yourself how much you care about that frame. Is it enough to suffer over? Maybe it is — but maybe it isn’t.</p>
-
-<p>If you’re going to suffer, let it be for frames you chose on purpose.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/wooden-kids-toys">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/wooden-kids-toys">Lessons learned making safe wooden kids toys</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/kriging-electromagnetic-fields">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/kriging-electromagnetic-fields">Visualizing electromagnetic fields from sparse measurements</a>
-    
-  </div>
-</nav>
-
-<h3 class="no_toc" id="or-more-on-problems-and-frames">Or, more on problems and frames:</h3>
-
-<p>My post on <a href="/ways-of-looking">Ways of Looking</a> is a different lens on all this, but getting at some of the same underlying points.</p>
-
-<p>In line with that, I have a growing section of <a href="/uwol">Useful Ways of Looking</a> which are effectively frames that you can choose from — many of which can be helpful to lead you towards resolving problems or making them disappear entirely.</p>
-
-<h3 class="no_toc">And for even more...<h3></h3>
-
-
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>
-</h3>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[Accepting this can make your life much easier and more pleasant. Problems don't exist absent a "frame" through which they arise, and exploiting this can make problems go away.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-17-problems-are-your-fault.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-17-problems-are-your-fault.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lessons learned making safe wooden kids toys</title><link href="https://andybromberg.com/wooden-kids-toys" rel="alternate" type="text/html" title="Lessons learned making safe wooden kids toys" /><published>2025-11-17T08:00:00-08:00</published><updated>2025-11-17T08:00:00-08:00</updated><id>https://andybromberg.com/wooden-kids-toys</id><content type="html" xml:base="https://andybromberg.com/wooden-kids-toys"><![CDATA[<p>I’m in the season of life where everyone is having kids, and I’ve been enjoying doing some light woodworking recently (I’ve discovered I need to regularly make or fix things with my hands in order to feel useful…).</p>
-
-<p>So I decided to make some simple wooden toys.</p>
-
-<p>I jumped straight to it, heading to the lumber yard, picking up some cool hardwoods, and cutting, routing, and sanding my first pieces. Then I got to finishing them, and the thought occurred to me: “infants will put these in their mouths. I wonder if I need to be especially picky about what I put on them.”</p>
-
-<p>I started to research and it turns out the answer is a pretty emphatic “yes.” And not only that, but there are a whole bunch of other child-safety considerations the novice toymaker should be aware of. So I’m writing this post for those with the same idea and same lack of experience.</p>
-
-<p>At the end I have a quick outline for one simple toy you can make (this etched cube — still a WIP, needs more finishing). More to come as I keep working on this project!</p>
-
-<video controls="" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
-<source src="/assets/images/wooden-kids-toys/flip-noaudio.mp4" type="video/mp4" />
-If the video doesn't play, <a href="/assets/images/wooden-kids-toys/flip-noaudio.mp4">open it directly</a>.
-</video>
-
-<h2 id="safe-wooden-toy-guidelines">Safe wooden toy guidelines</h2>
-
-<p>Safety-wise, I’d break my findings down into four categories: woods, finishes, glues, and specs. Here’s the bottom-line summary of recommendations, but there’s much more detail below:</p>
-
-<ul>
-  <li><strong>Woods:</strong> maple, beech, cherry, oak, ash, and birch</li>
-  <li><strong>Finishes:</strong> 100% US-grown tung oil and beeswax, or mineral oil and beeswax</li>
-  <li><strong>Glues:</strong> avoid glue in favor of single pieces or mechanical joinery; otherwise: waterproof PVA glue approved for food contact</li>
-  <li><strong>Specs:</strong> no part of toy should be able to fully fit into a toilet paper tube; sand it all to at least 220 grit; round over the edges</li>
-</ul>
-
-<p>Before diving in: is this all really necessary? After all, kids literally stick their mouths on the handles of grocery carts.</p>
-
-<p>I think it is <em>probably</em> fine <em>most of the time</em> to make toys outside the parameters listed. Giving a kid an exotic hardwood cube, or one finished with boiled linseed oil, is not likely to instantly cause some devastating malady.</p>
-
-<p>But I figure: if you’re making toys for babies, you might as well do it in the best possible way you can. Or at least, that’s what <em>I</em> want to do.</p>
-
-<p>I’m not arguing that everything outside these bounds is dangerous; I’m arguing that if you’re making toys for your or your friends’ children, you might as well optimize for the lowest plausible exposure, the simplest chemistry, and — frankly — the best vibes.</p>
-
-<p>If you have any corrections or suggestions, <a href="mailto:andy@andybromberg.com">let me know</a>!</p>
-
-<h3 id="woods">Woods</h3>
-
-<p>Wood is wood, right? Not so.</p>
-
-<p>Different woods can have a range of (typically) low-level toxic effects, including as “sensitizers” — meaning that repeated exposure can steadily induce an increasing allergic reaction.</p>
-
-<p>In practice, with the exception of <em>really</em> toxic woods (e.g. yew or oleander) or a specific allergy or elevated sensitivity, you’re not likely to suffer adverse effects from having finished wood around your home. The risk for most woods is higher when working with the raw material — inhaling the dusts, touching saps, etc.</p>
-
-<p>But for kids toys — which will inevitably be stuck in their mouths — it’s best to stay with the really safe ones.</p>
-
-<p>Here’s <a href="https://www.wood-database.com/wood-articles/wood-allergies-and-toxicity/">a good compilation</a> of reported effects from various woods. In general, for kids toys, a good rule of thumb is to stick with domestic hardwoods.</p>
-
-<p>Aside from the toxicity, you also want to avoid woods that splinter easily, or are too soft, or whose splinters go septic easily (e.g. greenheart), or are chemically treated.</p>
-
-<p>Some woods that seem good based on my research (do your own!) include: <strong>maple, beech, cherry, oak, ash, walnut</strong><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Some people avoid walnut due to tree nut allergy concerns, but I’ve seen little to no evidence of issues from cured / solid wood. But if you really want to be careful, I’d skip it.</span><strong>, and birch.</strong></p>
-
-<p>Sadly that means the beautiful <a href="https://www.wood-database.com/wenge/">wenge</a> pucks I started — with plans to make different shapes and string them on a rope — will have to stay out of the playroom.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/wooden-kids-toys/wenge-800-9de7b1b33.webp 800w, /assets/images/generated/wooden-kids-toys/wenge-1000-9de7b1b33.webp 1000w, /assets/images/generated/wooden-kids-toys/wenge-1200-9de7b1b33.webp 1200w, /assets/images/generated/wooden-kids-toys/wenge-1600-9de7b1b33.webp 1600w, /assets/images/generated/wooden-kids-toys/wenge-2000-9de7b1b33.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/wooden-kids-toys/wenge-800-56bbb60de.jpg 800w, /assets/images/generated/wooden-kids-toys/wenge-1000-56bbb60de.jpg 1000w, /assets/images/generated/wooden-kids-toys/wenge-1200-56bbb60de.jpg 1200w, /assets/images/generated/wooden-kids-toys/wenge-1600-56bbb60de.jpg 1600w, /assets/images/generated/wooden-kids-toys/wenge-2000-56bbb60de.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/wooden-kids-toys/wenge-800-56bbb60de.jpg" width="4032" height="1890" /></picture>
-
-<p>(And it probably wasn’t even great for <em>me</em> to work with the wenge in the first place!)</p>
-
-<h3 id="finishes">Finishes</h3>
-
-<p>Finishes are a whole separate issue. Most are not designed with infants chewing on them in mind!</p>
-
-<p>You can, of course, leave the woods unfinished. If you sand them really well (see “<a href="#specs">Specs</a>” section below), this can be a fine solution. But especially if you’re using a wood on the softer side and the toy is for an infant who will drool all over it, this <em>could</em> result in some degradation.</p>
-
-<p>I’ll probably leave some of my pieces unfinished. But for others, I want a slightly more finished look, and the water-resistance that comes with it.</p>
-
-<p>There is a lot of contradictory information out there on the internet about what is safest. Below are my personal conclusions.</p>
-
-<p>Your first question might be: can’t I just use food-safe oils and finishes? My view: no.</p>
-
-<p>Aside from endemic quality control issues in the industry, most “food-safe” rating is targeted towards <em>indirect</em> consumption — like food sitting on a cutting board that is finished with the oil, then you eating that food. This is obviously a bit different from a kid full-on putting the piece in their mouth and gnawing on it. So I don’t think “food-safe” is quite enough.</p>
-
-<p>Then you might ask: aren’t there regulatory standards around this? Yes, there are — and that may be good enough — but I went a different direction.</p>
-
-<p>The most relevant standard is Europe’s EN 71-3 (<a href="https://www.intertek.com/toys-childrens-products/eu-toy-directive/chemical-testing/">“Safety of Toys - Part 3: Migration of Certain Elements”</a>). It’s a rigorous certification that looks at heavy metals and other compounds and sets limits on how much can be present in toy-related products.</p>
-
-<p>I think you’re probably good to go if you pick an EN 71-3 certified finish. There are a few out there. But I’d rather go for something simple and natural rather than something engineered to meet a standard with certain properties. Part of the appeal of making wooden kids toys in the first place is that very simplicity and naturalness.</p>
-
-<p>(Am I succumbing to the <a href="https://en.wikipedia.org/wiki/Naturalistic_fallacy">naturalistic fallacy</a> here? Perhaps! But if I’m already putting this much effort into making toys, I’d rather bias toward simple, well-understood ingredients. And again: vibes.)</p>
-
-<p>An issue with the EN 71-3 certification is that, given the cost to the producer, nobody seems to get it for simple / natural products, since it wouldn’t really show anything additional beyond the proof that the product is pure (which can be done more cheaply). I couldn’t find a pure oil that had the certification.</p>
-
-<p>So, then you might say: I’ll just grab the organic coconut oil or the olive oil off my shelf!</p>
-
-<p>Well, that’s not a great idea either. Most oils will go rancid over time, especially if exposed to heat and sunlight and the stimulation from kids playing with the toys. They’ll also just end up dissipating and you’ll need to re-apply to the toys.</p>
-
-<p>What you’re looking for is “drying oils” — which is a bit of a misnomer. These types of oils soak into wood and then polymerize (their molecular structure actually shifts as it cross-links into a solid inside/on the wood). This process is more like “curing” than “drying.”</p>
-
-<p>The issue is that most common finishing oils — including “food-safe” ones, per above — are probably not the best for kids. They often use intense industrial solvents and dryers to get their desired characteristics.</p>
-
-<p>For example, boiled linseed oil is commonly recommended for cutting boards. It cures quickly and works well, and is derived from flax seed (also known as linseed). But it isn’t just “boiled” — they add toxic drier chemicals to it.</p>
-
-<p>There are less-treated oils — like raw linseed or “polymerized linseed” (again: not boiled!) — that can work. But you need to read the label carefully for additives, and they cure extremely slowly (think: weeks!).</p>
-
-<p>The best option I’ve found is <strong>100% tung oil,</strong> which comes from the nut of the <a href="https://en.wikipedia.org/wiki/Vernicia_fordii">tung tree</a>. It cures/polymerizes well, faster than linseed oil. And I found what I think is the only US-based grower and manufacturer of it! <a href="https://www.tallahasseetungoil.com/">Tallahassee Tung Oil</a>. They grow in Georgia, USA and provide a certificate of analysis and guarantee of purity for each batch.</p>
-
-<p>You <em>may</em> also want to thin your tung oil (it can be pretty thick and sticky). If you do, Tallahasse Tung Oil also sells a 100% natural citrus solvent made from pure orange peel oil. I’m still deciding if this is worth it. I don’t see much risk by the time curing is done (the solvent will have evaporated), but part of me wants to stick with just the tung oil, even though it’s harder to work…</p>
-
-<p>Aside from tung oil, you could also go with <strong>USP (pharmaceutical-grade) mineral oil</strong>, which of course, people literally drink as a laxative. I don’t love the vibes of this (it’s a petroleum byproduct), but more importantly, it doesn’t polymerize. It is chemically stable and inert, so it doesn’t go rancid, but it stays a liquid inside the wood and may dissipate over time. This isn’t so much a safety issue as it is a maintenance one — ideally you’d need to re-apply it over time.</p>
-
-<p>So I think a polymerizing oil like tung is the best option, even if it is a bit more of a pain to apply and let cure. If for some reason you’re on a real time crunch for toy production (for the elves reading this in mid-December, I feel you), then mineral oil is a good move.</p>
-
-<p>After the oil, I like conditioning the wood with some wax. The best option here is <strong>organic beeswax</strong>. You can either melt and apply it directly, or create a melted mixture of tung oil and beeswax (or mineral oil and beeswax) and do a layer of that.</p>
-
-<p>Last: there <em>are</em> other whole categories of finishes, like surface-forming ones (shellac / resin finishes generally) and paint.</p>
-
-<p>I personally don’t love the <em>look</em> of the surface-forming ones for kids toys, so I haven’t gone too deep into the research there. My high level understanding is that shellac is fine as long as the solvent used is clean — like pure/diluted ethanol. Many shellac solvents have other chemicals in them or are dissolved in denatured alcohol, so they should not be used.</p>
-
-<p>(Did you know shellac is a resin that <a href="https://en.wikipedia.org/wiki/Kerria_lacca">lac bugs</a> secrete, dissolved in alcohol? I didn’t!)</p>
-
-<p>And on paints — that’s a whole separate blog post. I’m mainly excited about natural wood looks right now, so haven’t spent time on the paints. But maybe will in the future.</p>
-
-<p>A final recommendation — which really applies to all of this: for most any engineered product, you should be able to get a material safety data sheet (also known as an SDS or MSDS). These list everything relevant to health in the product. If you’re unsure, get the SDS! Reading these is so much better than skimming Google or ChatGPT results.</p>
-
-<h3 id="glues">Glues</h3>
-
-<p>I’m mostly trying to avoid glues entirely and stick to single-piece toys. It makes it a fun challenge. There’s also a lot than can be done with simply wood-only joinery techniques, or hidden fasteners (be careful!).</p>
-
-<p>But if you want to use glues, make sure that they are interior-only (i.e. not exposed to the kid’s mouth). I think the safest bet is waterproof PVA glues approved for food contact like Titebond III (which won’t soften when soaked in saliva) — just make sure they are completely cured before you hand the toy over.</p>
-
-<p>There are also hide glues (made from animal collagen). These appeal to my naturalistic side, but are not as water-resistant and are weaker. So on balance, I’d rather use a small amount of interior-only waterproof PVA glue and ensure the toy stays together.</p>
-
-<h3 id="specs">Specs</h3>
-
-<p>Aside from the materials, you need to make sure to make something that is actually safe in its finished form! That means big enough to not pose a choking risk, and no sharp edges.</p>
-
-<p>In practice, the standard test for choking hazard is to take a cylinder that is 1.25” in diameter (the width of the mouth of the cylinder) and 2.25” long. This is about the size of an empty toilet paper roll. If any part of the toy can fit completely in the cylinder, it is considered a choking hazard. So just don’t make things too small!</p>
-
-<p>Also, of course: no parts that could pinch fingers or hardware that might fall out and be a choking hazard by itself.</p>
-
-<p>And then on the edges and faces: make sure to sand the toys very well before finishing. Depending on the toy, you’ll want to get to at least a 220 grit, if not 320+. As always, start at lower grit and work your way up, being thorough. They should feel very smooth to avoid splinters and bits getting in their mouth!</p>
-
-<p>Beyond just sanding, it’s probably best to round over every edge and corner. I do this on a router/shaper table, and I like using at least a 1/4” roundover bit. 1/8” — or even just thorough sanding — is enough for safety purposes, but the 1/4” size gives it a nice rounder look which I think is nice aesthetically.</p>
-
-<h2 id="a-first-try-simple-cubes">A first try: simple cubes</h2>
-
-<p>Aside from the wenge pucks above (RIP), the first thing I wanted to make were some simple stacking cubes. Here’s how the very first one looks, although it needs more finishing<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">Note that etching this detailed is likely to make little pieces that might come off when subjected to a child gnawing on it. For production runs I’ll likely do coarser and shallower prints with less risk there.</span>:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/wooden-kids-toys/mech-close-thin-800-862a9f161.webp 800w, /assets/images/generated/wooden-kids-toys/mech-close-thin-1000-862a9f161.webp 1000w, /assets/images/generated/wooden-kids-toys/mech-close-thin-1200-862a9f161.webp 1200w, /assets/images/generated/wooden-kids-toys/mech-close-thin-1600-862a9f161.webp 1600w, /assets/images/generated/wooden-kids-toys/mech-close-thin-2000-862a9f161.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/wooden-kids-toys/mech-close-thin-800-5f6cc4e11.jpg 800w, /assets/images/generated/wooden-kids-toys/mech-close-thin-1000-5f6cc4e11.jpg 1000w, /assets/images/generated/wooden-kids-toys/mech-close-thin-1200-5f6cc4e11.jpg 1200w, /assets/images/generated/wooden-kids-toys/mech-close-thin-1600-5f6cc4e11.jpg 1600w, /assets/images/generated/wooden-kids-toys/mech-close-thin-2000-5f6cc4e11.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/wooden-kids-toys/mech-close-thin-800-5f6cc4e11.jpg" width="4032" height="2059" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/wooden-kids-toys/flower-close-thin-800-f97710ca9.webp 800w, /assets/images/generated/wooden-kids-toys/flower-close-thin-1000-f97710ca9.webp 1000w, /assets/images/generated/wooden-kids-toys/flower-close-thin-1200-f97710ca9.webp 1200w, /assets/images/generated/wooden-kids-toys/flower-close-thin-1600-f97710ca9.webp 1600w, /assets/images/generated/wooden-kids-toys/flower-close-thin-2000-f97710ca9.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/wooden-kids-toys/flower-close-thin-800-8df24ee28.jpg 800w, /assets/images/generated/wooden-kids-toys/flower-close-thin-1000-8df24ee28.jpg 1000w, /assets/images/generated/wooden-kids-toys/flower-close-thin-1200-8df24ee28.jpg 1200w, /assets/images/generated/wooden-kids-toys/flower-close-thin-1600-8df24ee28.jpg 1600w, /assets/images/generated/wooden-kids-toys/flower-close-thin-2000-8df24ee28.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/wooden-kids-toys/flower-close-thin-800-8df24ee28.jpg" width="4032" height="2291" /></picture>
-
-<p>Cubes are hard, it turns out! If you want them to stack really nicely, you actually need them to be… well… cubic, with all three dimensions near-perfectly equal.</p>
-
-<p>Here’s how I made it and its first siblings:</p>
-
-<ol>
-  <li>Get a few feet of nice 8/4 walnut<label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle" /><span class="sidenote">For those unfamiliar, 8/4 is pronounced “eight quarter.” Lumber is typically measured in quarter inches, so “8/4” is “eight of those quarter inch chunks,” or 2 inches. But the 2 inch measurement applies when the lumber is rough cut. Once you surface it on both sides to make it flat and even, it’ll typically take off about a tenth of an inch on each side, so it ends up being roughly 1-13/16” thick. Then you’ll work it and sand it at the end, so it’ll end up around 1-12/16” or 1.75” when all is said and done.</span> from the lumber yard</li>
-  <li>The lumber was “S4S” (all four sides were surfaced) but I ran it through the planer to make sure</li>
-  <li>Set the table saw to 1.8” and ripped the lumber to that width — so now I had a couple long strips of wood that were roughly 1.8” square (one side from the original thickness, one side from the table saw)</li>
-  <li>Took the strips to the router table with a 1/4” roundover bit and rounded all the edges. You could do this at the end with the finished pieces (and I still have to do some of that), but it’s easier to do the long sides than a bunch of tiny pieces</li>
-  <li>Built a simple stop block jig for the miter saw that lets me repeatedly crosscut 1.8” pieces. People do all sorts of fancy stuff for this, but I’ve found something simple like in <a href="https://www.youtube.com/watch?v=zLcKg5yJHGI">this video</a> works great for my purposes. You may not even need to do the two layered pieces of wood since the pieces you’re cutting are so small — you can just clamp one piece to the right spot on the fence.</li>
-  <li>After cutting all those pieces, you now have a pile of 1.8” cubes that are rounded over on some edges but not all</li>
-  <li>I took those back to the router table and rounded off all the edges (make sure to get all 12 cube edges, not just the parallel faces!). Doing this with your hands is a sketchy, unless you want to accidentally route off a chunk of your finger. So I put the cubes in a wooden handscrew clamp (<a href="https://amzn.to/49pekfW">like this</a>) with the to-be-routed edge protruding, and then I move the piece around with the clamp pressed against the router table.</li>
-  <li>After this, it’s time to sand. Given the size of the pieces, I don’t like using an orbital sander. So I do a combination of 1) holding sandpaper in my hand and sanding it, 2) sticking sandpaper onto the table and rubbing the piece on the paper, and 3) using softer foam-backed sandpaper to round around the edges. I worked up to 220 — could probably go even further, but I’m playing around with a “rougher” / handmade look.</li>
-  <li>Then I had an idea to use some AI-generated graphics on the sides of the cubes. So I went to <a href="https://reve.com">Reve</a> and played around for a bit, asking for letters with decoration in certain styles. I then removed the background of the resulting images (<a href="https://www.remove.bg/">remove.bg</a> is pretty good!). If I really want something great I’ll probably do more manual work at this stage, but this process was good enough for the proof-of-concept.</li>
-  <li>I went over to the laser cutter and, after a lot of playing around with a test cube to place the design correctly, etched in the images. I was on an 60-watt Epilog Helix and 45 speed / 100 power settings worked well.</li>
-  <li>I did some <em>very</em> light high-grit sanding afterwards to clean up the edges of the engraving.</li>
-  <li>Then: time to finish. Since this was before I learned all my lessons above, I just brushed on some boiled linseed oil. The photo above is after one coat, but I’ll probably do another and then a waxing coat too.</li>
-</ol>
-
-<p>Lots of room for improvement, but I’m pretty happy with this as the very first output! More toys (and mistakes, and lessons, presumably) to come. And I’ll try to remember to take more helpful photos as I go…</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/interface0-google-docs">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/interface0-google-docs">I beat Google to making AI suggestions in Docs</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/problems-are-your-fault">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/problems-are-your-fault">Your problems are your fault in two different ways</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Turns out there are all sorts of things to avoid when making wooden kids toys — certain woods, finishes, glues, and more. Here's what I learned. Plus a walkthrough of making engraved stacking cubes!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-17-wooden-kids-toys.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-17-wooden-kids-toys.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I beat Google to making AI suggestions in Docs</title><link href="https://andybromberg.com/interface0-google-docs" rel="alternate" type="text/html" title="I beat Google to making AI suggestions in Docs" /><published>2025-11-11T07:00:00-08:00</published><updated>2025-11-11T07:00:00-08:00</updated><id>https://andybromberg.com/interface0-google-docs</id><content type="html" xml:base="https://andybromberg.com/interface0-google-docs"><![CDATA[<p>Bottom line up front: doesn’t this look like a sensible way to integrate AI into Google Docs?</p>
-
-<video controls="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
-<source src="/assets/images/interface0-google-docs/interface0-docs-demo.mp4" type="video/mp4" />
-If the video doesn't play, <a href="/assets/images/interface0-google-docs/interface0-docs-demo.mp4">open it directly</a>.
-</video>
-
-<hr />
-
-<p>That’s <a href="https://interface0.com">interface0’s</a> Google Docs integration. Just drop a comment tagging agent@interface0.com, same as you would a team member, and the agent can reply to your comment and even put suggestion-mode edits on the doc.</p>
-
-<p>(If you want to try it out, sign up for the <a href="https://interface0.com">interface0 waitlist</a>! You can then also email agent@interface0.com and get AI responses in email, WhatsApp its phone number to get responses there, and more…)</p>
-
-<p>Mind-bogglingly, here is Google’s current Gemini integration into Google Docs:</p>
-
-<video controls="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
-<source src="/assets/images/interface0-google-docs/gemini-demo.mp4" type="video/mp4" />
-If the video doesn't play, <a href="/assets/images/interface0-google-docs/gemini-demo.mp4">open it directly</a>.
-</video>
-
-<hr />
-
-<p>Gemini can’t make suggestions or edit the doc at all, beyond telling you to manually click an “insert” button (and maybe also a “replace” button, although I’ve never gotten that one to appear). From the horse’s mouth:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/interface0-google-docs/gemini-response-800-f4c596bff.webp 800w, /assets/images/generated/interface0-google-docs/gemini-response-1000-f4c596bff.webp 1000w, /assets/images/generated/interface0-google-docs/gemini-response-1200-f4c596bff.webp 1200w, /assets/images/generated/interface0-google-docs/gemini-response-1600-f4c596bff.webp 1600w, /assets/images/generated/interface0-google-docs/gemini-response-2000-f4c596bff.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/interface0-google-docs/gemini-response-800-9bd83ac4c.png 800w, /assets/images/generated/interface0-google-docs/gemini-response-1000-9bd83ac4c.png 1000w, /assets/images/generated/interface0-google-docs/gemini-response-1200-9bd83ac4c.png 1200w, /assets/images/generated/interface0-google-docs/gemini-response-1600-9bd83ac4c.png 1600w, /assets/images/generated/interface0-google-docs/gemini-response-2000-9bd83ac4c.png 2000w" type="image/png" /><img src="/assets/images/generated/interface0-google-docs/gemini-response-800-9bd83ac4c.png" width="2968" height="1254" /></picture>
-
-<p>How it is possible that Google — the creator of both Google Docs itself and of Gemini, one of the leading AI models, hasn’t yet integrated the two in any sort of sensible way?</p>
-
-<p>The most obvious implementation is the native one: let the AI participate in comment threads and make suggestions on the doc like a team member could. And yet…</p>
-
-<hr />
-
-<p>It turns out, by the way, that doing so (from outside Alphabet’s walls) is much harder than it seems.</p>
-
-<p>Google’s Drive/Docs API, surprisingly, <strong>has no way to programmatically make suggestion-mode edits to a document.</strong> You can <em>edit</em> a document and can make <em>comments</em> on it programmatically, but can’t make <em>suggestions</em>. Feels like a big oversight…<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Plus they make it extremely difficult to identify which user is commenting / prompting, which creates a whole separate set of challenges.</span></p>
-
-<p>So in order to get this working, I had to work out a more nuanced approach using browser automation.</p>
-
-<p>Basically, when an interface0 user comments on a document and requests edits, a web browser instance is spun up in the cloud, agent@interface0.com signs into its Google Account, and then the browser programmatically navigates to the document in question and interacts with it to make the necessary changes generated by the AI pipeline on the backend. It’s imperfect and a little brittle, but has been working well enough for my purposes.</p>
-
-<p>I hope Google adds suggestion-mode edits to the Docs API, but I’m not holding my breath…</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/tinkering-club-applications">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/tinkering-club-applications">Tinkering Club: call for applications</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/wooden-kids-toys">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/wooden-kids-toys">Lessons learned making safe wooden kids toys</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[Google hasn't yet properly integrated Gemini into Google Docs. So I knocked out a native-feeling implementation.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-11-interface0-google-docs.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Math &amp; science&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[At Lightwork we use geostatistical techniques like Kriging to interpolate visualizations of electromagnetic fields. Here's how it works.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-11-20-kriging-electromagnetic-fields.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

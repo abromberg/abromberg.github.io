@@ -2832,6 +2832,461 @@ hr:not(.end-of-article-divider)::before {
     padding: 0.35em 0.7em;
   }
 }
+/* =====================================================
+   Series / Book Chapters
+   ===================================================== */
+/* Series Book Block (Homepage) */
+.series-book {
+  margin: 2em 0 3em;
+  background: linear-gradient(135deg, #FAF8F3 0%, #F5F3ED 100%);
+  border: 1px solid #D5D3C8;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.series-book-spine {
+  width: 8px;
+  background: linear-gradient(180deg, #8B7355 0%, #A68B5B 15%, #8B7355 30%, #A68B5B 50%, #8B7355 70%, #A68B5B 85%, #8B7355 100%);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.series-book-spine::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.08) 50%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.series-book-content {
+  flex: 1;
+  padding: 1.5em 1.8em;
+}
+
+.series-book-header {
+  margin-bottom: 1.2em;
+}
+
+.series-book-meta {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+.series-book-badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.series-book-badge--new {
+  background-color: #C9A227;
+  color: #FFFCF0;
+}
+
+.series-book-progress {
+  color: #B7B5AC;
+  font-style: italic;
+}
+
+.series-book-title {
+  margin: 0 0 0.3em;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #100F0F;
+  letter-spacing: -0.01em;
+}
+
+.series-book-subtitle {
+  margin: 0;
+  color: #6F6E69;
+  font-family: "Andada Pro", Georgia, serif;
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+.series-book-chapters {
+  border-top: 1px solid #E5E3D8;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+.series-chapter {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8em;
+  padding: 0.5em 0;
+  border-bottom: 1px dotted #E0DED3;
+}
+
+.series-chapter:last-child {
+  border-bottom: none;
+}
+
+.series-chapter-number {
+  flex-shrink: 0;
+  width: 1.8em;
+  height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 50%;
+  background-color: #E8E6DB;
+  color: #6F6E69;
+}
+
+.series-chapter--published .series-chapter-number {
+  background-color: #8B7355;
+  color: #FFFCF0;
+}
+
+.series-chapter-title {
+  flex: 1;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.95em;
+  color: #100F0F;
+  text-decoration: none;
+}
+
+a.series-chapter-title:hover {
+  text-decoration: underline;
+}
+
+.series-chapter-title--upcoming {
+  color: #B7B5AC;
+  font-style: italic;
+}
+
+.series-chapter-date {
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8em;
+  color: #B7B5AC;
+  white-space: nowrap;
+}
+
+.series-book-description {
+  border-top: 1px solid #E5E3D8;
+  padding-top: 1em;
+}
+
+.series-book-description p {
+  margin: 0;
+  font-family: "Andada Pro", Georgia, serif;
+  font-size: 0.9em;
+  color: #6F6E69;
+  line-height: 1.5;
+}
+
+/* Series Navigation (In-post) - Minimal */
+.series-nav {
+  margin: 1.5em 0;
+  padding: 0.6em 0;
+  border-top: 1px solid #E5E3D8;
+  border-bottom: 1px solid #E5E3D8;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.85em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.series-nav-prev,
+.series-nav-next {
+  flex: 1;
+  min-width: 0;
+}
+
+.series-nav-prev {
+  text-align: left;
+}
+
+.series-nav-prev a,
+.series-nav-next a {
+  color: #100F0F;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.series-nav-prev a:hover,
+.series-nav-next a:hover {
+  text-decoration: underline;
+}
+
+.series-nav-next {
+  text-align: right;
+}
+
+.series-nav-center {
+  flex-shrink: 0;
+  color: #B7B5AC;
+  font-style: italic;
+  text-align: center;
+  padding: 0 0.5em;
+}
+
+.series-nav-coming {
+  color: #B7B5AC;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .series-nav {
+    flex-wrap: wrap;
+  }
+  .series-nav-center {
+    order: -1;
+    flex-basis: 100%;
+    text-align: left;
+    padding: 0 0 0.4em 0;
+    border-bottom: 1px dotted #E8E6DB;
+    margin-bottom: 0.4em;
+  }
+  .series-nav-prev,
+  .series-nav-next {
+    flex: 0 1 auto;
+  }
+}
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+  .series-book {
+    flex-direction: column;
+  }
+  .series-book-spine {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #8B7355 0%, #A68B5B 15%, #8B7355 30%, #A68B5B 50%, #8B7355 70%, #A68B5B 85%, #8B7355 100%);
+  }
+  .series-book-spine::after {
+    display: none;
+  }
+  .series-book-content {
+    padding: 1.2em 1em;
+  }
+  .series-book-title {
+    font-size: 1.2em;
+  }
+  .series-nav-chapters {
+    grid-template-columns: 1fr;
+  }
+  .series-nav-link--next {
+    text-align: left;
+  }
+  .series-nav-progress {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+/* Series Entry (Homepage - Consolidated, CSS-only) */
+.series-entry {
+  position: relative;
+}
+
+.series-entry-toggle {
+  display: none;
+}
+
+.series-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.series-entry-header:hover {
+  opacity: 0.8;
+}
+
+.series-entry-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.series-entry-title {
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  color: #100F0F;
+}
+
+.series-entry-title::before {
+  content: "§";
+  margin-right: 0.4em;
+  color: #B7B5AC;
+  font-style: normal;
+}
+
+.series-entry-meta {
+  display: none;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.85em;
+  color: #B7B5AC;
+  margin-top: 0.15em;
+}
+
+.series-entry-toggle:checked + .series-entry-header .series-entry-meta {
+  display: block;
+}
+
+.series-entry-upcoming {
+  color: #B7B5AC;
+}
+
+.series-entry-right {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+  flex-shrink: 0;
+  color: #6F6E69;
+  white-space: nowrap;
+}
+
+.series-entry-date {
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.series-entry-status {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.8em;
+  font-size: 0.8em;
+  color: #B7B5AC;
+  line-height: 24px;
+}
+
+.series-entry-status-hover {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  right: -1em;
+  background-color: #100F0F;
+  color: #CECDC3;
+  padding: 5px 10px;
+  border: 1px solid #282726;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-bottom: 5px;
+  font-style: italic;
+  transform: translateY(5px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.series-entry-status:hover .series-entry-status-hover {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.series-entry-chevron {
+  color: #B7B5AC;
+}
+
+.series-entry-chevron .fa-circle-chevron-up {
+  display: none;
+}
+
+.series-entry-toggle:checked + .series-entry-header .series-entry-chevron .fa-circle-chevron-down {
+  display: none;
+}
+
+.series-entry-toggle:checked + .series-entry-header .series-entry-chevron .fa-circle-chevron-up {
+  display: inline;
+}
+
+.series-entry-chapters {
+  display: none;
+  margin-top: 0.6em;
+  padding-left: 0.5em;
+  border-left: 2px solid #E0DED3;
+}
+
+.series-entry-toggle:checked ~ .series-entry-chapters {
+  display: block;
+}
+
+.series-entry-chapter {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  padding: 0.35em 0 0.35em 0.5em;
+}
+
+.series-entry-chapter:not(:last-child) {
+  border-bottom: 1px dotted #E8E6DB;
+}
+
+.series-entry-chapter-num {
+  flex-shrink: 0;
+  width: 1.3em;
+  height: 1.3em;
+  display: grid;
+  place-content: center;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #E8E6DB;
+  color: #6F6E69;
+  /* Optical adjustment - numbers sit slightly high */
+  padding-top: 0.05em;
+}
+
+.series-entry-chapter--published .series-entry-chapter-num {
+  background-color: #8B7355;
+  color: #FFFCF0;
+}
+
+.series-entry-chapter-link {
+  flex: 1;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #100F0F;
+  text-decoration: none;
+}
+
+a.series-entry-chapter-link:hover {
+  text-decoration: underline;
+}
+
+.series-entry-chapter-link--upcoming {
+  color: #B7B5AC;
+  font-style: italic;
+}
+
+.series-entry-chapter-date {
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8em;
+  color: #B7B5AC;
+  white-space: nowrap;
+}
+
 body {
   counter-reset: sidenote-counter;
   padding-left: 4%;
