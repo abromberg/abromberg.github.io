@@ -3107,6 +3107,7 @@ a.series-chapter-title:hover {
 
 .series-entry-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   cursor: pointer;
@@ -3118,8 +3119,8 @@ a.series-chapter-title:hover {
 }
 
 .series-entry-left {
-  flex: 1;
-  min-width: 0;
+  flex: 1 1 auto;
+  min-width: 50%;
 }
 
 .series-entry-title {
@@ -3137,15 +3138,12 @@ a.series-chapter-title:hover {
 }
 
 .series-entry-meta {
-  display: none;
   font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.85em;
   color: #B7B5AC;
-  margin-top: 0.15em;
-}
-
-.series-entry-toggle:checked + .series-entry-header .series-entry-meta {
-  display: block;
+  padding: 0.4em 0 0.2em 0.5em;
+  border-bottom: 1px dotted #E8E6DB;
+  margin-bottom: 0.2em;
 }
 
 .series-entry-upcoming {
@@ -3285,6 +3283,10 @@ a.series-entry-chapter-link:hover {
   font-size: 0.8em;
   color: #B7B5AC;
   white-space: nowrap;
+}
+
+.series-entry-right {
+  margin-left: auto;
 }
 
 body {
