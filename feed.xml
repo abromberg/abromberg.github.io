@@ -1,7 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-13T09:41:55-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Call List</title><link href="https://andybromberg.com/congruence/call-list" rel="alternate" type="text/html" title="Call List" /><published>2026-01-13T08:05:00-08:00</published><updated>2026-01-13T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-5-call-list</id><content type="html" xml:base="https://andybromberg.com/congruence/call-list"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 5/7</div>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-14T10:34:51-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Vibe checks &amp;amp; 2 things</title><link href="https://andybromberg.com/congruence/vibe-checks" rel="alternate" type="text/html" title="Vibe checks &amp;amp; 2 things" /><published>2026-01-14T08:05:00-08:00</published><updated>2026-01-14T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-6-vibe-checks</id><content type="html" xml:base="https://andybromberg.com/congruence/vibe-checks"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 6/8</div>
 <div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<p>I used to use an excellent app called <a href="https://howwefeel.org/">How We Feel</a>. A few times a day, it sends you a push notification asking to check in, and you just tap one of four quadrants: high or low energy and pleasant or unpleasant. You can add more data too.</p>
+
+<p>But I of course wanted to pull this into Congruence. Now, four times a day, it sends me a notification which brings me to this screen:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/vibe-check-800-964d1398d.webp 800w, /assets/images/generated/congruence/vibe-check-1000-964d1398d.webp 1000w, /assets/images/generated/congruence/vibe-check-1200-964d1398d.webp 1200w, /assets/images/generated/congruence/vibe-check-1600-964d1398d.webp 1600w, /assets/images/generated/congruence/vibe-check-1650-964d1398d.webp 1650w" type="image/webp" /><source srcset="/assets/images/generated/congruence/vibe-check-800-66d11ad5a.png 800w, /assets/images/generated/congruence/vibe-check-1000-66d11ad5a.png 1000w, /assets/images/generated/congruence/vibe-check-1200-66d11ad5a.png 1200w, /assets/images/generated/congruence/vibe-check-1600-66d11ad5a.png 1600w, /assets/images/generated/congruence/vibe-check-1650-66d11ad5a.png 1650w" type="image/png" /><img src="/assets/images/generated/congruence/vibe-check-800-66d11ad5a.png" width="1650" height="660" /></picture>
+
+<p>I select one of the boxes, optionally add an annotation (below) and I’m done.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/vibe-annotation-800-28c1d4c9f.webp 800w, /assets/images/generated/congruence/vibe-annotation-1000-28c1d4c9f.webp 1000w, /assets/images/generated/congruence/vibe-annotation-1200-28c1d4c9f.webp 1200w, /assets/images/generated/congruence/vibe-annotation-1600-28c1d4c9f.webp 1600w, /assets/images/generated/congruence/vibe-annotation-1800-28c1d4c9f.webp 1800w" type="image/webp" /><source srcset="/assets/images/generated/congruence/vibe-annotation-800-e826507bc.png 800w, /assets/images/generated/congruence/vibe-annotation-1000-e826507bc.png 1000w, /assets/images/generated/congruence/vibe-annotation-1200-e826507bc.png 1200w, /assets/images/generated/congruence/vibe-annotation-1600-e826507bc.png 1600w, /assets/images/generated/congruence/vibe-annotation-1800-e826507bc.png 1800w" type="image/png" /><img src="/assets/images/generated/congruence/vibe-annotation-800-e826507bc.png" width="1800" height="720" /></picture>
+
+<p>The selected color shows up in the smiley face on my schedule (see the yellow one?):</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/modules-schedule-800-1d47aa5ca.webp 800w, /assets/images/generated/congruence/modules-schedule-1000-1d47aa5ca.webp 1000w, /assets/images/generated/congruence/modules-schedule-1200-1d47aa5ca.webp 1200w, /assets/images/generated/congruence/modules-schedule-1600-1d47aa5ca.webp 1600w, /assets/images/generated/congruence/modules-schedule-2000-1d47aa5ca.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png 800w, /assets/images/generated/congruence/modules-schedule-1000-71edc27d4.png 1000w, /assets/images/generated/congruence/modules-schedule-1200-71edc27d4.png 1200w, /assets/images/generated/congruence/modules-schedule-1600-71edc27d4.png 1600w, /assets/images/generated/congruence/modules-schedule-2000-71edc27d4.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png" width="2870" height="1146" /></picture>
+
+<p>And I can go into the Streaks view and see the history:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/vibe-streaks-800-5e197d41c.webp 800w, /assets/images/generated/congruence/vibe-streaks-1000-5e197d41c.webp 1000w, /assets/images/generated/congruence/vibe-streaks-1200-5e197d41c.webp 1200w, /assets/images/generated/congruence/vibe-streaks-1600-5e197d41c.webp 1600w, /assets/images/generated/congruence/vibe-streaks-2000-5e197d41c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/vibe-streaks-800-bb305e567.png 800w, /assets/images/generated/congruence/vibe-streaks-1000-bb305e567.png 1000w, /assets/images/generated/congruence/vibe-streaks-1200-bb305e567.png 1200w, /assets/images/generated/congruence/vibe-streaks-1600-bb305e567.png 1600w, /assets/images/generated/congruence/vibe-streaks-2000-bb305e567.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/vibe-streaks-800-bb305e567.png" width="4220" height="1688" /></picture>
+
+<p>It’s really cool to visually skim how I was feeling month-over-month. When I look back I can see clear periods that corresponded with different life events.</p>
+
+<p>How We Feel has a similar-ish view — you should get the app and try it out for a few months. I’ve found it really useful in retrospectively noticing trends and making decisions.</p>
+
+<hr />
+
+<p>Somewhat adjacent to this, I have a practice where every night I write down at least two things that made me happy or I really enjoyed that day. I’m just a few months away from ten years of doing this.</p>
+
+<p>I also strongly recommend this practice. It’s very cool to look back at random days and see what I was excited about. And of course, it’s now in Congruence.</p>
+
+<p>My evening checklist each day links to a “2 things” module, where I enter in my two or more items for that day. (This module is also Face ID protected.)</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/2-things-800-f9fac53af.webp 800w, /assets/images/generated/congruence/2-things-1000-f9fac53af.webp 1000w, /assets/images/generated/congruence/2-things-1200-f9fac53af.webp 1200w, /assets/images/generated/congruence/2-things-1600-f9fac53af.webp 1600w, /assets/images/generated/congruence/2-things-2000-f9fac53af.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/2-things-800-2beb2af2f.png 800w, /assets/images/generated/congruence/2-things-1000-2beb2af2f.png 1000w, /assets/images/generated/congruence/2-things-1200-2beb2af2f.png 1200w, /assets/images/generated/congruence/2-things-1600-2beb2af2f.png 1600w, /assets/images/generated/congruence/2-things-2000-2beb2af2f.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/2-things-800-2beb2af2f.png" width="4010" height="1604" /></picture>
+
+<p>I can then look at dots for every day in the past, and tap on them and see what I recorded that day.</p>
+
+<p>Next up: barcodes &amp; Freedom Phone. (Blog post coming soon…)</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 6/8</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Logging my vibe through the day, and saving my favorite things.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Call List</title><link href="https://andybromberg.com/congruence/call-list" rel="alternate" type="text/html" title="Call List" /><published>2026-01-13T08:05:00-08:00</published><updated>2026-01-13T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-5-call-list</id><content type="html" xml:base="https://andybromberg.com/congruence/call-list"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 5/8</div>
+<div class="series-nav-next"><a href="/congruence/vibe-checks">Vibe checks &amp; 2 things →</a></div>
 </div>
 
 <p>As discussed in <a href="/just-call-me">“Just Call Me”</a>, I mostly operate on an ad-hoc phone call basis. I want a list of people I owe calls to, and Congruence offers that to me.</p>
@@ -16,15 +62,15 @@
 
 <p>Once I hit someone, I just swipe them off and I’m good to go. This module is really simple, but it’s all I need (and the affordances of tap-to-call/text and push notification reminders are worthwhile over just putting these in a different notes place — plus then it doesn’t clutter up my notes, which I can regularly get to zero).</p>
 
-<p>Next up: vibe checks &amp; 2 things. (Blog post coming soon…)</p>
+<p>Next up: <a href="/congruence/vibe-checks">vibe checks &amp; 2 things</a>.</p>
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 5/7</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-center">Congruence: a very personal app · section 5/8</div>
+<div class="series-nav-next"><a href="/congruence/vibe-checks">Vibe checks &amp; 2 things →</a></div>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Keeping track of who to call and what we need to talk about.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Meditation</title><link href="https://andybromberg.com/congruence/meditation" rel="alternate" type="text/html" title="Meditation" /><published>2026-01-12T09:10:00-08:00</published><updated>2026-01-12T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-4-notes-meditation</id><content type="html" xml:base="https://andybromberg.com/congruence/meditation"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/notes-ai">← Notes &amp; AI</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 4/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 4/8</div>
 <div class="series-nav-next"><a href="/congruence/call-list">Call List →</a></div>
 </div>
 
@@ -64,11 +110,11 @@
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/notes-ai">← Notes &amp; AI</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 4/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 4/8</div>
 <div class="series-nav-next"><a href="/congruence/call-list">Call List →</a></div>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The simple meditation timer and breathwork guides I wish I could find on the App Store.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Notes &amp;amp; AI</title><link href="https://andybromberg.com/congruence/notes-ai" rel="alternate" type="text/html" title="Notes &amp;amp; AI" /><published>2026-01-11T09:10:00-08:00</published><updated>2026-01-11T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-3-notes-ai</id><content type="html" xml:base="https://andybromberg.com/congruence/notes-ai"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 3/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 3/8</div>
 <div class="series-nav-next"><a href="/congruence/meditation">Meditation →</a></div>
 </div>
 
@@ -108,11 +154,11 @@
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 3/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 3/8</div>
 <div class="series-nav-next"><a href="/congruence/meditation">Meditation →</a></div>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The quick-capture notetaking experience I've always wanted (plus AI).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Streaks &amp;amp; MEQ</title><link href="https://andybromberg.com/congruence/streaks-meq" rel="alternate" type="text/html" title="Streaks &amp;amp; MEQ" /><published>2026-01-11T09:05:00-08:00</published><updated>2026-01-11T09:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-2-streaks-meq</id><content type="html" xml:base="https://andybromberg.com/congruence/streaks-meq"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/intro">← Intro to Congruence</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 2/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 2/8</div>
 <div class="series-nav-next"><a href="/congruence/notes-ai">Notes &amp; AI →</a></div>
 </div>
 
@@ -140,11 +186,11 @@
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/intro">← Intro to Congruence</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 2/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 2/8</div>
 <div class="series-nav-next"><a href="/congruence/notes-ai">Notes &amp; AI →</a></div>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Congruence logs everything, which means streaks & Minimum Effective Quantification are easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Intro to Congruence</title><link href="https://andybromberg.com/congruence/intro" rel="alternate" type="text/html" title="Intro to Congruence" /><published>2026-01-11T09:00:00-08:00</published><updated>2026-01-11T09:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-1-intro</id><content type="html" xml:base="https://andybromberg.com/congruence/intro"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"></div>
-<div class="series-nav-center">Congruence: a very personal app · section 1/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 1/8</div>
 <div class="series-nav-next"><a href="/congruence/streaks-meq">Streaks &amp; MEQ →</a></div>
 </div>
 
@@ -190,7 +236,7 @@
 
 <div class="series-nav">
 <div class="series-nav-prev"></div>
-<div class="series-nav-center">Congruence: a very personal app · section 1/7</div>
+<div class="series-nav-center">Congruence: a very personal app · section 1/8</div>
 <div class="series-nav-next"><a href="/congruence/streaks-meq">Streaks &amp; MEQ →</a></div>
 </div>
 
@@ -2207,122 +2253,4 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[It turns out you can just... call people. And they can just call you. There's no need to schedule phone calls!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My newsletter recommendations archive</title><link href="https://andybromberg.com/new-recommendations-archive" rel="alternate" type="text/html" title="My newsletter recommendations archive" /><published>2025-12-13T11:00:00-08:00</published><updated>2025-12-13T11:00:00-08:00</updated><id>https://andybromberg.com/recommendations-archive</id><content type="html" xml:base="https://andybromberg.com/new-recommendations-archive"><![CDATA[]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-13-recommendations-archive.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-13-recommendations-archive.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">An experimental, private, autonomous todo list</title><link href="https://andybromberg.com/autonomous-todo-list" rel="alternate" type="text/html" title="An experimental, private, autonomous todo list" /><published>2025-12-12T05:00:00-08:00</published><updated>2025-12-12T05:00:00-08:00</updated><id>https://andybromberg.com/autonomous-todo-list</id><content type="html" xml:base="https://andybromberg.com/autonomous-todo-list"><![CDATA[<p>Products and services are easiest to explain when they are “plain vanilla with one difference.”<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">See: Flip the Script by Oren Klaff, an underrated-but-annoying-to-read book on pitching.</span> Think: “the same great thing you already love, but cheaper!” or “just like what you already use, but faster!”</p>
-
-<p>Well: what I’m about to try to explain does <em>not</em> fit that model. It’s an experimental product I pulled together that has neither a clear use case, nor a singular differentiator. But it’s interesting, and I feel like there is <em>something</em> to be pulled out of it.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/main-screen-800-5cc654be4.webp 800w, /assets/images/generated/autonomous-todo-list/main-screen-1000-5cc654be4.webp 1000w, /assets/images/generated/autonomous-todo-list/main-screen-1200-5cc654be4.webp 1200w, /assets/images/generated/autonomous-todo-list/main-screen-1600-5cc654be4.webp 1600w, /assets/images/generated/autonomous-todo-list/main-screen-2000-5cc654be4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/main-screen-800-d37f61ccc.png 800w, /assets/images/generated/autonomous-todo-list/main-screen-1000-d37f61ccc.png 1000w, /assets/images/generated/autonomous-todo-list/main-screen-1200-d37f61ccc.png 1200w, /assets/images/generated/autonomous-todo-list/main-screen-1600-d37f61ccc.png 1600w, /assets/images/generated/autonomous-todo-list/main-screen-2000-d37f61ccc.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/main-screen-800-d37f61ccc.png" width="4000" height="1634" /></picture>
-
-<p>Here’s the sketch:</p>
-<ul>
-  <li>a <strong>Trello / Kanban type interface</strong> for tasks</li>
-  <li>with a <strong>long-running multi-AI-agent</strong> system that plans, executes, and reviews each one (including extremely long/complex tasks)</li>
-  <li>and enables <strong>human/AI interaction through comments</strong> and reviews</li>
-  <li>where the AI agents are deployed on a server/computer of their own and as such have <strong>access to the filesystem and certain programs</strong>, expanding their capacity</li>
-  <li>and there are also <strong>local LLMs</strong> deployed on the server so tasks can optionally run privately without anything being sent to model providers</li>
-  <li>and the whole thing is accessed via a <strong>zero-trust private network</strong> that only you can reach</li>
-</ul>
-
-<p>So, uh, imagine Trello x n8n x Claude Code x Zero Trust x Llama, I guess?</p>
-
-<p>For example, I created a task to review every post on my Substack and pull out all the products I’ve recommended.</p>
-
-<p>The planning agent structured the task and set acceptance criteria and subtasks. Then the execution agent figured out how to find each post, and downloaded them to the filesystem to preserve the context window.</p>
-
-<p>Then it parsed the downloaded files one by one to put them into a data file, again preserving the context window. Then it turned that data file into an output file, and the review agent checked its work before approving.</p>
-
-<p>Here’s a snippet of the logs from them:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/logs-800-a9f44ddcb.webp 800w, /assets/images/generated/autonomous-todo-list/logs-1000-a9f44ddcb.webp 1000w, /assets/images/generated/autonomous-todo-list/logs-1200-a9f44ddcb.webp 1200w, /assets/images/generated/autonomous-todo-list/logs-1600-a9f44ddcb.webp 1600w, /assets/images/generated/autonomous-todo-list/logs-2000-a9f44ddcb.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/logs-800-7678f948e.png 800w, /assets/images/generated/autonomous-todo-list/logs-1000-7678f948e.png 1000w, /assets/images/generated/autonomous-todo-list/logs-1200-7678f948e.png 1200w, /assets/images/generated/autonomous-todo-list/logs-1600-7678f948e.png 1600w, /assets/images/generated/autonomous-todo-list/logs-2000-7678f948e.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/logs-800-7678f948e.png" width="4000" height="3002" /></picture>
-
-<p>I, then — connected through the private/zero-trust network — dropped a comment asking for the agents to add a section with the recommendations ordered differently. The plan/execute/review cycle began again, but based on the existing downloads and data files, and it quickly finished the job.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/comments-800-35663830e.webp 800w, /assets/images/generated/autonomous-todo-list/comments-1000-35663830e.webp 1000w, /assets/images/generated/autonomous-todo-list/comments-1200-35663830e.webp 1200w, /assets/images/generated/autonomous-todo-list/comments-1600-35663830e.webp 1600w, /assets/images/generated/autonomous-todo-list/comments-2000-35663830e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/comments-800-4387e82bf.png 800w, /assets/images/generated/autonomous-todo-list/comments-1000-4387e82bf.png 1000w, /assets/images/generated/autonomous-todo-list/comments-1200-4387e82bf.png 1200w, /assets/images/generated/autonomous-todo-list/comments-1600-4387e82bf.png 1600w, /assets/images/generated/autonomous-todo-list/comments-2000-4387e82bf.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/comments-800-4387e82bf.png" width="4000" height="3030" /></picture>
-
-<p>It was successful! It compiled every single recommendation from all 15 of my Substack posts. And this success was <strong>unique</strong> — I tried the same prompt on GPT-5.2 Pro, GPT-5.1 Pro, Claude Opus 4.5 (Extended Thinking), and Gemini 3 Pro Preview and they <em>all failed</em> to cover everything.</p>
-
-<p>GPT-5.2 Pro:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/5-2-pro-800-2e1baa20a.webp 800w, /assets/images/generated/autonomous-todo-list/5-2-pro-1000-2e1baa20a.webp 1000w, /assets/images/generated/autonomous-todo-list/5-2-pro-1200-2e1baa20a.webp 1200w, /assets/images/generated/autonomous-todo-list/5-2-pro-1600-2e1baa20a.webp 1600w, /assets/images/generated/autonomous-todo-list/5-2-pro-2000-2e1baa20a.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/5-2-pro-800-7bfdc630d.png 800w, /assets/images/generated/autonomous-todo-list/5-2-pro-1000-7bfdc630d.png 1000w, /assets/images/generated/autonomous-todo-list/5-2-pro-1200-7bfdc630d.png 1200w, /assets/images/generated/autonomous-todo-list/5-2-pro-1600-7bfdc630d.png 1600w, /assets/images/generated/autonomous-todo-list/5-2-pro-2000-7bfdc630d.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/5-2-pro-800-7bfdc630d.png" width="4000" height="1544" /></picture>
-
-<p>GPT-5.1 Pro:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/5-1-pro-800-11df804db.webp 800w, /assets/images/generated/autonomous-todo-list/5-1-pro-1000-11df804db.webp 1000w, /assets/images/generated/autonomous-todo-list/5-1-pro-1200-11df804db.webp 1200w, /assets/images/generated/autonomous-todo-list/5-1-pro-1600-11df804db.webp 1600w, /assets/images/generated/autonomous-todo-list/5-1-pro-2000-11df804db.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/5-1-pro-800-9e65b065e.png 800w, /assets/images/generated/autonomous-todo-list/5-1-pro-1000-9e65b065e.png 1000w, /assets/images/generated/autonomous-todo-list/5-1-pro-1200-9e65b065e.png 1200w, /assets/images/generated/autonomous-todo-list/5-1-pro-1600-9e65b065e.png 1600w, /assets/images/generated/autonomous-todo-list/5-1-pro-2000-9e65b065e.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/5-1-pro-800-9e65b065e.png" width="4000" height="1038" /></picture>
-
-<p>Opus 4.5:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/opus-800-f0273b68d.webp 800w, /assets/images/generated/autonomous-todo-list/opus-1000-f0273b68d.webp 1000w, /assets/images/generated/autonomous-todo-list/opus-1200-f0273b68d.webp 1200w, /assets/images/generated/autonomous-todo-list/opus-1600-f0273b68d.webp 1600w, /assets/images/generated/autonomous-todo-list/opus-2000-f0273b68d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/opus-800-5cf16234c.png 800w, /assets/images/generated/autonomous-todo-list/opus-1000-5cf16234c.png 1000w, /assets/images/generated/autonomous-todo-list/opus-1200-5cf16234c.png 1200w, /assets/images/generated/autonomous-todo-list/opus-1600-5cf16234c.png 1600w, /assets/images/generated/autonomous-todo-list/opus-2000-5cf16234c.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/opus-800-5cf16234c.png" width="4000" height="1012" /></picture>
-
-<p>Gemini 3 Pro:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/autonomous-todo-list/gemini-800-ede647c10.webp 800w, /assets/images/generated/autonomous-todo-list/gemini-1000-ede647c10.webp 1000w, /assets/images/generated/autonomous-todo-list/gemini-1200-ede647c10.webp 1200w, /assets/images/generated/autonomous-todo-list/gemini-1600-ede647c10.webp 1600w, /assets/images/generated/autonomous-todo-list/gemini-2000-ede647c10.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/autonomous-todo-list/gemini-800-f3f03056a.png 800w, /assets/images/generated/autonomous-todo-list/gemini-1000-f3f03056a.png 1000w, /assets/images/generated/autonomous-todo-list/gemini-1200-f3f03056a.png 1200w, /assets/images/generated/autonomous-todo-list/gemini-1600-f3f03056a.png 1600w, /assets/images/generated/autonomous-todo-list/gemini-2000-f3f03056a.png 2000w" type="image/png" /><img src="/assets/images/generated/autonomous-todo-list/gemini-800-f3f03056a.png" width="4118" height="684" /></picture>
-
-<p>This product is <em>really</em> good at complex research tasks and projects with ongoing work that reference the same original materials.</p>
-
-<hr />
-
-<p>As noted above, there are at least a few ideas in here all jumbled together:</p>
-<ul>
-  <li>Kanban boards with comments as an interface to interact with AI for more complex tasks</li>
-  <li>multi-agent plan/execute/review systems</li>
-  <li>agents with access to a filesystem for persistence, common programs, and scripting ability</li>
-  <li>local LLMs hosted on your own server, accessed via a zero-trust private network</li>
-</ul>
-
-<p>(Plus other little touches: recurring tasks; AI vs. human differentiation via fonts/visual indicators; individual cost budgets for tasks; differentiating “needs human review” vs. “done”; subtasks created by the planner…)</p>
-
-<p>I’m not quite sure what I’m going to do with this. Maybe some of those ideas will get integrated into <a href="https://interface0.com">interface0</a>, or some other product.</p>
-
-<p>I like the “private AI” angle; I like the “Claude Code for things other than code” angle; I like the “multi-agent judge setup” angle; I like the “alternatives to chat interfaces for complex tasks” angle. But do those all belong together? Probably not?</p>
-
-<hr />
-
-<p>If you’re interested in this or have any ideas, <a href="mailto:andy@andybromberg.com">drop me a note</a>. I’m also thinking about cleaning it up and open-sourcing it.</p>
-
-<p>The deployment process isn’t bad — I rented a server on OVHcloud for ~$50/month that has good enough specs to run decent LLMs locally at a not-terrible speed and made a Kamal deploy flow that handles everything (besides setting up the Cloudflare Zero Trust tunnels and such, which are free). And once you’re up, you then have access to a very-private AI “in the cloud,” which is pretty cool. You could also easily set it up on a homelab server in your closet.</p>
-
-<p>There are also a bunch more features I want to add: per-task command permission levels; external interactions like emails; transient GPU pods for better local LLM performance; integrations with Obsidian and other data sources; shared code libraries and scripts between tasks; and much more…</p>
-
-<p>I’m excited to see more experimentation like this in AI interfaces and workflows.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/uwol/beware-trying">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/uwol/beware-trying">UWoL: Beware of Trying</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/new-recommendations-archive">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/new-recommendations-archive">My newsletter recommendations archive</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[An experimental AI product with a Kanban interface, multi-agent workflows, human interactivity, filesystem access, and private, local LLM deployments.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-12-autonomous-todo-list.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[It turns out you can just... call people. And they can just call you. There's no need to schedule phone calls!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My newsletter recommendations archive</title><link href="https://andybromberg.com/new-recommendations-archive" rel="alternate" type="text/html" title="My newsletter recommendations archive" /><published>2025-12-13T11:00:00-08:00</published><updated>2025-12-13T11:00:00-08:00</updated><id>https://andybromberg.com/recommendations-archive</id><content type="html" xml:base="https://andybromberg.com/new-recommendations-archive"><![CDATA[]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-13-recommendations-archive.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-13-recommendations-archive.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
