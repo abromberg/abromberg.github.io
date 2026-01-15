@@ -1,7 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-14T10:36:53-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Vibe checks &amp;amp; 2 things</title><link href="https://andybromberg.com/congruence/vibe-checks" rel="alternate" type="text/html" title="Vibe checks &amp;amp; 2 things" /><published>2026-01-14T08:05:00-08:00</published><updated>2026-01-14T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-6-vibe-checks</id><content type="html" xml:base="https://andybromberg.com/congruence/vibe-checks"><![CDATA[<div class="series-nav">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-15T09:00:58-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Barcodes &amp;amp; Freedom Phone</title><link href="https://andybromberg.com/congruence/barcodes-freedom" rel="alternate" type="text/html" title="Barcodes &amp;amp; Freedom Phone" /><published>2026-01-15T07:00:00-08:00</published><updated>2026-01-15T07:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-7-barcodes-freedom</id><content type="html" xml:base="https://andybromberg.com/congruence/barcodes-freedom"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 7/8</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<p>My favorite things to build into Congruence are the ones that are so niche and specific to me that it might not even make sense for another app to exist with them. This post goes over two of those.</p>
+
+<p>The first is “barcodes.” There are two places I frequent where I need to scan a barcode: my local Blue Bottle Coffee, where I scan a loyalty card, and my gym, where I scan an access card.</p>
+
+<p>Previously, I had to manually go into the Blue Bottle app and navigate to the code page, and had to carry a physical barcode tag in my wallet for the gym.</p>
+
+<p>But now, whenever I am physically nearing those places, Congruence detects my location and proactively sends me a push notification that I can press and hold to reveal the barcode. No need to go into an app or carry anything.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/barcode-expanded-800-16d81c5ab.webp 800w, /assets/images/generated/congruence/barcode-expanded-1000-16d81c5ab.webp 1000w, /assets/images/generated/congruence/barcode-expanded-1200-16d81c5ab.webp 1200w, /assets/images/generated/congruence/barcode-expanded-1600-16d81c5ab.webp 1600w, /assets/images/generated/congruence/barcode-expanded-2000-16d81c5ab.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/barcode-expanded-800-a18979095.png 800w, /assets/images/generated/congruence/barcode-expanded-1000-a18979095.png 1000w, /assets/images/generated/congruence/barcode-expanded-1200-a18979095.png 1200w, /assets/images/generated/congruence/barcode-expanded-1600-a18979095.png 1600w, /assets/images/generated/congruence/barcode-expanded-2000-a18979095.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/barcode-expanded-800-a18979095.png" width="3670" height="1468" /></picture>
+
+<p>A simple pleasure for sure, but one I avail myself of multiple times per day.</p>
+
+<hr />
+
+<p>The second such feature is my Freedom Phone feature. I’ve <a href="/freedom-phones">written previously on Freedom Phones</a> in general, although I’ve now upgraded to a second iPhone for my Freedom Phone so that I can use Congruence on it (worth it!).</p>
+
+<p>This has enabled a really nice flow: using Congruence to manage call forwarding. There is a button in Congruence that toggles whether my main phone is forwarding calls to my Freedom Phone or not. When I hit it, it dials the forwarding number (on Verizon: <code class="language-plaintext highlighter-rouge">*72 [Freedom Phone number]</code>) if forwarding is currently off, or the disable number (<code class="language-plaintext highlighter-rouge">*73</code>) if it is on.</p>
+
+<p>This makes it really easy to toggle the state of call forwarding. But even better, there are a variety of indicators that tell me the current status. For example, on the home screens of my phones, there is a widget that says either <code class="language-plaintext highlighter-rouge">THIS</code> or <code class="language-plaintext highlighter-rouge">NOPE</code>:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/freedom-nope-800-7134e46e1.webp 800w, /assets/images/generated/congruence/freedom-nope-1000-7134e46e1.webp 1000w, /assets/images/generated/congruence/freedom-nope-1200-7134e46e1.webp 1200w, /assets/images/generated/congruence/freedom-nope-1600-7134e46e1.webp 1600w, /assets/images/generated/congruence/freedom-nope-2000-7134e46e1.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/freedom-nope-800-68f7be9d6.png 800w, /assets/images/generated/congruence/freedom-nope-1000-68f7be9d6.png 1000w, /assets/images/generated/congruence/freedom-nope-1200-68f7be9d6.png 1200w, /assets/images/generated/congruence/freedom-nope-1600-68f7be9d6.png 1600w, /assets/images/generated/congruence/freedom-nope-2000-68f7be9d6.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/freedom-nope-800-68f7be9d6.png" width="2060" height="824" /></picture>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/freedom-this-800-5f0e0f048.webp 800w, /assets/images/generated/congruence/freedom-this-1000-5f0e0f048.webp 1000w, /assets/images/generated/congruence/freedom-this-1200-5f0e0f048.webp 1200w, /assets/images/generated/congruence/freedom-this-1600-5f0e0f048.webp 1600w, /assets/images/generated/congruence/freedom-this-2000-5f0e0f048.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/freedom-this-800-42bdfdde5.png 800w, /assets/images/generated/congruence/freedom-this-1000-42bdfdde5.png 1000w, /assets/images/generated/congruence/freedom-this-1200-42bdfdde5.png 1200w, /assets/images/generated/congruence/freedom-this-1600-42bdfdde5.png 1600w, /assets/images/generated/congruence/freedom-this-2000-42bdfdde5.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/freedom-this-800-42bdfdde5.png" width="2110" height="844" /></picture>
+
+<p>And in the app itself, the Freedom module button lights up if it is on, and accordingly says either <code class="language-plaintext highlighter-rouge">THIS</code> or <code class="language-plaintext highlighter-rouge">NOPE</code> depending on which phone it’s being used on.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/module-freedom-800-ce0e8d16d.webp 800w, /assets/images/generated/congruence/module-freedom-1000-ce0e8d16d.webp 1000w, /assets/images/generated/congruence/module-freedom-1200-ce0e8d16d.webp 1200w, /assets/images/generated/congruence/module-freedom-1600-ce0e8d16d.webp 1600w, /assets/images/generated/congruence/module-freedom-2000-ce0e8d16d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/module-freedom-800-7bf74975c.png 800w, /assets/images/generated/congruence/module-freedom-1000-7bf74975c.png 1000w, /assets/images/generated/congruence/module-freedom-1200-7bf74975c.png 1200w, /assets/images/generated/congruence/module-freedom-1600-7bf74975c.png 1600w, /assets/images/generated/congruence/module-freedom-2000-7bf74975c.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/module-freedom-800-7bf74975c.png" width="2440" height="976" /></picture>
+
+<p>I used to use Verizon’s conditional call forwarding, but that isn’t a great experience for callers since if I’m on the Freedom Phone, it has to ring all the way through my main phone. But now it just perfectly routes to whichever phone I am on, and I can keep track and change it easily.</p>
+
+<p>(p.s. I still <em>strongly</em> recommend trying a Freedom Phone experiment… big quality-of-life upgrade.)</p>
+
+<p>More posts coming soon on further Congruence features…</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 7/8</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Some really personal features for Congruence: loyalty barcodes and controlling my Freedom Phone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Vibe checks &amp;amp; 2 things</title><link href="https://andybromberg.com/congruence/vibe-checks" rel="alternate" type="text/html" title="Vibe checks &amp;amp; 2 things" /><published>2026-01-14T08:05:00-08:00</published><updated>2026-01-14T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-6-vibe-checks</id><content type="html" xml:base="https://andybromberg.com/congruence/vibe-checks"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 6/8</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-next"><a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone →</a></div>
 </div>
 
 <p>I used to use an excellent app called <a href="https://howwefeel.org/">How We Feel</a>. A few times a day, it sends you a push notification asking to check in, and you just tap one of four quadrants: high or low energy and pleasant or unpleasant. You can add more data too.</p>
@@ -38,12 +93,23 @@
 
 <p>I can then look at dots for every day in the past, and tap on them and see what I recorded that day.</p>
 
-<p>Next up: barcodes &amp; Freedom Phone. (Blog post coming soon…)</p>
+<p>Next up: <a href="/congruence/barcodes-freedom">barcodes &amp; Freedom Phone</a>.</p>
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 6/8</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-next"><a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone →</a></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Logging my vibe through the day, and saving my favorite things.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Call List</title><link href="https://andybromberg.com/congruence/call-list" rel="alternate" type="text/html" title="Call List" /><published>2026-01-13T08:05:00-08:00</published><updated>2026-01-13T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-5-call-list</id><content type="html" xml:base="https://andybromberg.com/congruence/call-list"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 5/8</div>
@@ -68,6 +134,17 @@
 <div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 5/8</div>
 <div class="series-nav-next"><a href="/congruence/vibe-checks">Vibe checks &amp; 2 things →</a></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Keeping track of who to call and what we need to talk about.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Meditation</title><link href="https://andybromberg.com/congruence/meditation" rel="alternate" type="text/html" title="Meditation" /><published>2026-01-12T09:10:00-08:00</published><updated>2026-01-12T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-4-notes-meditation</id><content type="html" xml:base="https://andybromberg.com/congruence/meditation"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/notes-ai">← Notes &amp; AI</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 4/8</div>
@@ -112,6 +189,17 @@
 <div class="series-nav-prev"><a href="/congruence/notes-ai">← Notes &amp; AI</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 4/8</div>
 <div class="series-nav-next"><a href="/congruence/call-list">Call List →</a></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The simple meditation timer and breathwork guides I wish I could find on the App Store.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Notes &amp;amp; AI</title><link href="https://andybromberg.com/congruence/notes-ai" rel="alternate" type="text/html" title="Notes &amp;amp; AI" /><published>2026-01-11T09:10:00-08:00</published><updated>2026-01-11T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-3-notes-ai</id><content type="html" xml:base="https://andybromberg.com/congruence/notes-ai"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 3/8</div>
@@ -156,6 +244,17 @@
 <div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 3/8</div>
 <div class="series-nav-next"><a href="/congruence/meditation">Meditation →</a></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The quick-capture notetaking experience I've always wanted (plus AI).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Streaks &amp;amp; MEQ</title><link href="https://andybromberg.com/congruence/streaks-meq" rel="alternate" type="text/html" title="Streaks &amp;amp; MEQ" /><published>2026-01-11T09:05:00-08:00</published><updated>2026-01-11T09:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-2-streaks-meq</id><content type="html" xml:base="https://andybromberg.com/congruence/streaks-meq"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/intro">← Intro to Congruence</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 2/8</div>
@@ -188,6 +287,17 @@
 <div class="series-nav-prev"><a href="/congruence/intro">← Intro to Congruence</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 2/8</div>
 <div class="series-nav-next"><a href="/congruence/notes-ai">Notes &amp; AI →</a></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Congruence logs everything, which means streaks & Minimum Effective Quantification are easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Intro to Congruence</title><link href="https://andybromberg.com/congruence/intro" rel="alternate" type="text/html" title="Intro to Congruence" /><published>2026-01-11T09:00:00-08:00</published><updated>2026-01-11T09:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-1-intro</id><content type="html" xml:base="https://andybromberg.com/congruence/intro"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"></div>
 <div class="series-nav-center">Congruence: a very personal app · section 1/8</div>
@@ -2253,4 +2363,4 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[It turns out you can just... call people. And they can just call you. There's no need to schedule phone calls!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My newsletter recommendations archive</title><link href="https://andybromberg.com/new-recommendations-archive" rel="alternate" type="text/html" title="My newsletter recommendations archive" /><published>2025-12-13T11:00:00-08:00</published><updated>2025-12-13T11:00:00-08:00</updated><id>https://andybromberg.com/recommendations-archive</id><content type="html" xml:base="https://andybromberg.com/new-recommendations-archive"><![CDATA[]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-13-recommendations-archive.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-13-recommendations-archive.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[It turns out you can just... call people. And they can just call you. There's no need to schedule phone calls!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
