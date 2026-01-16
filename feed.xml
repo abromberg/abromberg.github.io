@@ -1,4 +1,599 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-15T09:03:49-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Barcodes &amp;amp; Freedom Phone</title><link href="https://andybromberg.com/congruence/barcodes-freedom" rel="alternate" type="text/html" title="Barcodes &amp;amp; Freedom Phone" /><published>2026-01-15T07:00:00-08:00</published><updated>2026-01-15T07:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-7-barcodes-freedom</id><content type="html" xml:base="https://andybromberg.com/congruence/barcodes-freedom"><![CDATA[<div class="series-nav">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-16T10:02:27-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Someone, please make clean electrolytes (recipes included)</title><link href="https://andybromberg.com/clean-electrolytes" rel="alternate" type="text/html" title="Someone, please make clean electrolytes (recipes included)" /><published>2026-01-16T05:00:00-08:00</published><updated>2026-01-16T05:00:00-08:00</updated><id>https://andybromberg.com/clean-electrolytes</id><content type="html" xml:base="https://andybromberg.com/clean-electrolytes"><![CDATA[<p>I just want someone to make squeaky-clean electrolyte powders.</p>
+
+<p>No maltodextrin or fillers, no citric acid (did you know that most food-grade citric acid is produced by fermenting sugars with <em>Aspergillus niger</em>, also known as black mold?), no non-nutritive sweeteners, no “natural” or artificial flavors.</p>
+
+<p>The best I’ve seen on the market is <a href="https://saltt.com/products/clean-slate-electrolyte-drink-mix?variant=45900257329290">Saltt Unflavored / Clean Slate</a>. It’s fine. But I feel like we could do even better, and it would be nice to have flavored versions (but again, without natural or artificial flavors or any sweeteners and instead using organic real ingredients).</p>
+
+<p>So: my wife and I have been making our own and testing different formulas. We’ve settled on a few that we think are really good (three flavors, each with a subjective rating of 8.5/10 or above from both of us). Here’s just a part of the tracking spreadsheet!</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/clean-electrolytes/spreadsheet-800-f7f6ad1d7.webp 800w, /assets/images/generated/clean-electrolytes/spreadsheet-1000-f7f6ad1d7.webp 1000w, /assets/images/generated/clean-electrolytes/spreadsheet-1200-f7f6ad1d7.webp 1200w, /assets/images/generated/clean-electrolytes/spreadsheet-1600-f7f6ad1d7.webp 1600w, /assets/images/generated/clean-electrolytes/spreadsheet-2000-f7f6ad1d7.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/clean-electrolytes/spreadsheet-800-7f481332e.png 800w, /assets/images/generated/clean-electrolytes/spreadsheet-1000-7f481332e.png 1000w, /assets/images/generated/clean-electrolytes/spreadsheet-1200-7f481332e.png 1200w, /assets/images/generated/clean-electrolytes/spreadsheet-1600-7f481332e.png 1600w, /assets/images/generated/clean-electrolytes/spreadsheet-2000-7f481332e.png 2000w" type="image/png" /><img src="/assets/images/generated/clean-electrolytes/spreadsheet-800-7f481332e.png" width="2872" height="1266" /></picture>
+
+<p>We’ve tested a lot of different ingredients:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/clean-electrolytes/ingredients-800-144057ff3.webp 800w, /assets/images/generated/clean-electrolytes/ingredients-1000-144057ff3.webp 1000w, /assets/images/generated/clean-electrolytes/ingredients-1200-144057ff3.webp 1200w, /assets/images/generated/clean-electrolytes/ingredients-1600-144057ff3.webp 1600w, /assets/images/generated/clean-electrolytes/ingredients-2000-144057ff3.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/clean-electrolytes/ingredients-800-b085dfbb7.png 800w, /assets/images/generated/clean-electrolytes/ingredients-1000-b085dfbb7.png 1000w, /assets/images/generated/clean-electrolytes/ingredients-1200-b085dfbb7.png 1200w, /assets/images/generated/clean-electrolytes/ingredients-1600-b085dfbb7.png 1600w, /assets/images/generated/clean-electrolytes/ingredients-2000-b085dfbb7.png 2000w" type="image/png" /><img src="/assets/images/generated/clean-electrolytes/ingredients-800-b085dfbb7.png" width="2866" height="1133" /></picture>
+
+<p>I’m publishing these recipes desperately hoping that some enterprising company will choose to start making these. I think there’s a huge demand for ultra-clean supplements like this right now. Electrolytes are a big — and growing — category, and deserve a clean offering.</p>
+
+<p>I will concede that at-scale manufacturing, packing, shelf life considerations, and other realities of commercial electrolyte production add nuance that our kitchen experiments don’t need to account for. Excipients and fillers make a lot of this easier. But I’m sure <em>someone</em> can figure it out…</p>
+
+<hr />
+
+<p>Our three favorites so far: chocolate, mixed berry, and wheatgrass. Recipes below. The process for making them at home is simple:</p>
+<ul>
+  <li>use a spice grinder to grind the salts finely</li>
+  <li>combine everything and put it through a fine sieve</li>
+  <li>then shake it up in a mason jar</li>
+</ul>
+
+<p>Each of these assumes a 10g serving (roughly two scoopfuls of one of my leftover creatine scoopers) to get roughly 1000mg sodium, 200-250mg potassium, 60-100mg magnesium, and a wide range of calcium (which I was not optimizing for).</p>
+
+<p>In the calculators below you can change the serving count and it will update with how much you need of each ingredient.</p>
+
+<h3 id="salted-chocolate">Salted Chocolate</h3>
+
+<p>One 10g serving costs $0.52 in raw ingredients, has 26 kcal, 5g carbs; 1026mg sodium, 206mg potassium, 58mg magnesium, 4mg calcium.</p>
+
+<div class="recipe-calc" id="recipe-calc-salted-chocolate">
+  <div class="recipe-calc-header">
+    <span class="recipe-calc-title">Salted Chocolate serving calculator</span>
+    <div class="recipe-calc-servings">
+      <input type="number" id="servings-salted-chocolate" class="recipe-calc-input" value="10" min="1" max="100" />
+      <label for="servings-salted-chocolate">servings</label>
+      <span class="recipe-calc-cost">(<strong id="total-cost-salted-chocolate">$5.20</strong> in raw ingredients)</span>
+    </div>
+  </div>
+  
+  <div class="recipe-calc-ingredients">
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="6">6g</span>
+      <a href="https://amzn.to/49EKu5l" class="recipe-calc-name" target="_blank" rel="noopener">Vera Salt</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="8">8g</span>
+      <a href="https://amzn.to/4sL2bZN" class="recipe-calc-name" target="_blank" rel="noopener">Wilderness Poets Organic Coconut Water Powder</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="0.5">0.5g</span>
+      <a href="https://amzn.to/4b4iIls" class="recipe-calc-name" target="_blank" rel="noopener">Selina Potassium Pink Cave Salt</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="0.4">0.4g</span>
+      <a href="https://amzn.to/4pH9ZJi" class="recipe-calc-name" target="_blank" rel="noopener">Lifestream Natural Magnesium</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="10">10g</span>
+      <a href="https://amzn.to/3Nh40xD" class="recipe-calc-name" target="_blank" rel="noopener">365 Organic Cacao Powder</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="1">1g</span>
+      <a href="https://amzn.to/3ZlBptq" class="recipe-calc-name" target="_blank" rel="noopener">Simply Organic Cinnamon</a>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+(function() {
+  const calcEl = document.getElementById('recipe-calc-salted-chocolate');
+  if (!calcEl) return;
+  
+  const servingsInput = calcEl.querySelector('#servings-salted-chocolate');
+  const costEl = calcEl.querySelector('#total-cost-salted-chocolate');
+  const amountEls = calcEl.querySelectorAll('.recipe-calc-amount');
+  const costPerServing = 0.52;
+  const totalGrams = 25.9;
+  const servingSize = 10;
+  // batch makes this many servings:
+  const baseServings = totalGrams / servingSize;
+  
+  function update() {
+    const servings = Math.max(1, parseInt(servingsInput.value) || 1);
+    const scale = servings / baseServings;
+    
+    // Update amounts (scale from base recipe)
+    amountEls.forEach(el => {
+      const base = parseFloat(el.dataset.base);
+      const scaled = base * scale;
+      el.textContent = scaled.toFixed(2) + 'g';
+    });
+    
+    // Update cost
+    const totalCost = costPerServing * servings;
+    costEl.textContent = '$' + totalCost.toFixed(2);
+  }
+  
+  servingsInput.addEventListener('input', update);
+  update();
+})();
+</script>
+
+<style>
+.recipe-calc {
+  background: #faf9f7;
+  border: 1px solid #e5e2db;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1rem 0;
+  max-width: 420px;
+  font-family: "Hanken Grotesk", -apple-system, sans-serif;
+}
+
+.recipe-calc-header {
+  margin-bottom: 14px;
+}
+
+.recipe-calc-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1em;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.recipe-calc-servings {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.recipe-calc-servings label {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.recipe-calc-input {
+  width: 50px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-align: center;
+  background: #fff;
+}
+
+.recipe-calc-input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.recipe-calc-cost {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.recipe-calc-cost strong {
+  color: #2d6a4f;
+  font-weight: 700;
+}
+
+.recipe-calc-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recipe-calc-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.recipe-calc-amount {
+  font-weight: 600;
+  font-size: 0.9em;
+  min-width: 55px;
+  color: #1a1a1a;
+  font-variant-numeric: tabular-nums;
+}
+
+.recipe-calc-name {
+  font-size: 0.85em;
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaa;
+}
+
+.recipe-calc-name:hover {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+</style>
+
+<h3 id="mixed-berry">Mixed Berry</h3>
+
+<p>One 10g serving costs $0.72 in raw ingredients, has 36 kcal, 6g carbs; 994mg sodium, 202mg potassium, 67mg magnesium, 14mg calcium.</p>
+
+<div class="recipe-calc" id="recipe-calc-mixed-berry">
+  <div class="recipe-calc-header">
+    <span class="recipe-calc-title">Mixed Berry serving calculator</span>
+    <div class="recipe-calc-servings">
+      <input type="number" id="servings-mixed-berry" class="recipe-calc-input" value="10" min="1" max="100" />
+      <label for="servings-mixed-berry">servings</label>
+      <span class="recipe-calc-cost">(<strong id="total-cost-mixed-berry">$5.20</strong> in raw ingredients)</span>
+    </div>
+  </div>
+  
+  <div class="recipe-calc-ingredients">
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="4.4">4.4g</span>
+      <a href="https://amzn.to/49EKu5l" class="recipe-calc-name" target="_blank" rel="noopener">Vera Salt</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="4">4g</span>
+      <a href="https://amzn.to/4sL2bZN" class="recipe-calc-name" target="_blank" rel="noopener">Wilderness Poets Organic Coconut Water Powder</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="1.5">1.5g</span>
+      <a href="https://amzn.to/4sIwTTv" class="recipe-calc-name" target="_blank" rel="noopener">Numami Blueberry Powder</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="10">10g</span>
+      <a href="https://amzn.to/4sOGFUc" class="recipe-calc-name" target="_blank" rel="noopener">Microingredients Strawberry Powder</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="1">1g</span>
+      <a href="https://amzn.to/4b4iIls" class="recipe-calc-name" target="_blank" rel="noopener">Selina Potassium Pink Cave Salt</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="0.4">0.4g</span>
+      <a href="https://amzn.to/49AVYH7" class="recipe-calc-name" target="_blank" rel="noopener">Lifestream Natural Magnesium</a>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+(function() {
+  const calcEl = document.getElementById('recipe-calc-mixed-berry');
+  if (!calcEl) return;
+  
+  const servingsInput = calcEl.querySelector('#servings-mixed-berry');
+  const costEl = calcEl.querySelector('#total-cost-mixed-berry');
+  const amountEls = calcEl.querySelectorAll('.recipe-calc-amount');
+  const costPerServing = 0.72;
+  const totalGrams = 21.3;
+  const servingSize = 10;
+  // batch makes this many servings:
+  const baseServings = totalGrams / servingSize;
+  
+  function update() {
+    const servings = Math.max(1, parseInt(servingsInput.value) || 1);
+    const scale = servings / baseServings;
+    
+    // Update amounts (scale from base recipe)
+    amountEls.forEach(el => {
+      const base = parseFloat(el.dataset.base);
+      const scaled = base * scale;
+      el.textContent = scaled.toFixed(2) + 'g';
+    });
+    
+    // Update cost
+    const totalCost = costPerServing * servings;
+    costEl.textContent = '$' + totalCost.toFixed(2);
+  }
+  
+  servingsInput.addEventListener('input', update);
+  update();
+})();
+</script>
+
+<style>
+.recipe-calc {
+  background: #faf9f7;
+  border: 1px solid #e5e2db;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1rem 0;
+  max-width: 420px;
+  font-family: "Hanken Grotesk", -apple-system, sans-serif;
+}
+
+.recipe-calc-header {
+  margin-bottom: 14px;
+}
+
+.recipe-calc-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1em;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.recipe-calc-servings {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.recipe-calc-servings label {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.recipe-calc-input {
+  width: 50px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-align: center;
+  background: #fff;
+}
+
+.recipe-calc-input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.recipe-calc-cost {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.recipe-calc-cost strong {
+  color: #2d6a4f;
+  font-weight: 700;
+}
+
+.recipe-calc-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recipe-calc-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.recipe-calc-amount {
+  font-weight: 600;
+  font-size: 0.9em;
+  min-width: 55px;
+  color: #1a1a1a;
+  font-variant-numeric: tabular-nums;
+}
+
+.recipe-calc-name {
+  font-size: 0.85em;
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaa;
+}
+
+.recipe-calc-name:hover {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+</style>
+
+<h3 id="wheatgrass">Wheatgrass</h3>
+
+<p>One 10g serving costs $1.05 in raw ingredients, has 18kcal, 2g carbs; 1035mg sodium, 263 potassium, 102mg magnesium, 25mg calcium.</p>
+
+<div class="recipe-calc" id="recipe-calc-wheatgrass">
+  <div class="recipe-calc-header">
+    <span class="recipe-calc-title">Wheatgrass serving calculator</span>
+    <div class="recipe-calc-servings">
+      <input type="number" id="servings-wheatgrass" class="recipe-calc-input" value="10" min="1" max="100" />
+      <label for="servings-wheatgrass">servings</label>
+      <span class="recipe-calc-cost">(<strong id="total-cost-wheatgrass">$5.20</strong> in raw ingredients)</span>
+    </div>
+  </div>
+  
+  <div class="recipe-calc-ingredients">
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="5">5g</span>
+      <a href="https://amzn.to/49EKu5l" class="recipe-calc-name" target="_blank" rel="noopener">Vera Salt</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="5">5g</span>
+      <a href="https://amzn.to/4sL2bZN" class="recipe-calc-name" target="_blank" rel="noopener">Wilderness Poets Organic Coconut Water Powder</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="0.6">0.6g</span>
+      <a href="https://amzn.to/45j7jui" class="recipe-calc-name" target="_blank" rel="noopener">Lifestream Natural Magnesium</a>
+    </div>
+    
+    <div class="recipe-calc-row">
+      <span class="recipe-calc-amount" data-base="10">10g</span>
+      <a href="https://amzn.to/3Nh4dAV" class="recipe-calc-name" target="_blank" rel="noopener">Antler Farms Wheatgrass Powder</a>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+(function() {
+  const calcEl = document.getElementById('recipe-calc-wheatgrass');
+  if (!calcEl) return;
+  
+  const servingsInput = calcEl.querySelector('#servings-wheatgrass');
+  const costEl = calcEl.querySelector('#total-cost-wheatgrass');
+  const amountEls = calcEl.querySelectorAll('.recipe-calc-amount');
+  const costPerServing = 1.05;
+  const totalGrams = 20.6;
+  const servingSize = 10;
+  // batch makes this many servings:
+  const baseServings = totalGrams / servingSize;
+  
+  function update() {
+    const servings = Math.max(1, parseInt(servingsInput.value) || 1);
+    const scale = servings / baseServings;
+    
+    // Update amounts (scale from base recipe)
+    amountEls.forEach(el => {
+      const base = parseFloat(el.dataset.base);
+      const scaled = base * scale;
+      el.textContent = scaled.toFixed(2) + 'g';
+    });
+    
+    // Update cost
+    const totalCost = costPerServing * servings;
+    costEl.textContent = '$' + totalCost.toFixed(2);
+  }
+  
+  servingsInput.addEventListener('input', update);
+  update();
+})();
+</script>
+
+<style>
+.recipe-calc {
+  background: #faf9f7;
+  border: 1px solid #e5e2db;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1rem 0;
+  max-width: 420px;
+  font-family: "Hanken Grotesk", -apple-system, sans-serif;
+}
+
+.recipe-calc-header {
+  margin-bottom: 14px;
+}
+
+.recipe-calc-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1em;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.recipe-calc-servings {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.recipe-calc-servings label {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.recipe-calc-input {
+  width: 50px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-align: center;
+  background: #fff;
+}
+
+.recipe-calc-input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.recipe-calc-cost {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.recipe-calc-cost strong {
+  color: #2d6a4f;
+  font-weight: 700;
+}
+
+.recipe-calc-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recipe-calc-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.recipe-calc-amount {
+  font-weight: 600;
+  font-size: 0.9em;
+  min-width: 55px;
+  color: #1a1a1a;
+  font-variant-numeric: tabular-nums;
+}
+
+.recipe-calc-name {
+  font-size: 0.85em;
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaa;
+}
+
+.recipe-calc-name:hover {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+</style>
+
+<hr />
+
+<p>As best I can tell, all the ingredients above that can be organic are so, and I don’t believe any of them have fillers. The electrolytes themselves come from natural sources (sodium mostly from the salts, potassium from the cave salt and coconut water powder, magnesium from seawater extraction).</p>
+
+<p>If you have any suggestions for better ingredients or approaches, please let me know!</p>
+
+<hr />
+
+<p><em>Note: Amazon affiliate links included in this post.</em></p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/congruence/barcodes-freedom">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Health&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[I just want someone to make squeaky-clean electrolyte powders. Here are some recipes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Barcodes &amp;amp; Freedom Phone</title><link href="https://andybromberg.com/congruence/barcodes-freedom" rel="alternate" type="text/html" title="Barcodes &amp;amp; Freedom Phone" /><published>2026-01-15T07:00:00-08:00</published><updated>2026-01-15T07:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-7-barcodes-freedom</id><content type="html" xml:base="https://andybromberg.com/congruence/barcodes-freedom"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 7/8</div>
 <div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
@@ -510,7 +1105,7 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-10-everything-is-as-it-should-be.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-10-everything-is-as-it-should-be.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Are EMFs bad? — assessing the evidence, Part I: RF-EMF</title><link href="https://andybromberg.com/are-emfs-bad" rel="alternate" type="text/html" title="Are EMFs bad? — assessing the evidence, Part I: RF-EMF" /><published>2025-12-24T05:00:00-08:00</published><updated>2025-12-24T05:00:00-08:00</updated><id>https://andybromberg.com/are-emfs-bad</id><content type="html" xml:base="https://andybromberg.com/are-emfs-bad"><![CDATA[<h2 id="introduction">Introduction</h2>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[A phrase that guides my life, and what I think it means.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-10-everything-is-as-it-should-be.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-10-everything-is-as-it-should-be.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Are EMFs bad? — assessing the evidence, Part I: RF-EMF</title><link href="https://andybromberg.com/are-emfs-bad" rel="alternate" type="text/html" title="Are EMFs bad? — assessing the evidence, Part I: RF-EMF" /><published>2025-12-24T05:00:00-08:00</published><updated>2025-12-24T05:00:00-08:00</updated><id>https://andybromberg.com/are-emfs-bad</id><content type="html" xml:base="https://andybromberg.com/are-emfs-bad"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>The discourse around EMFs (electromagnetic fields) and whether they are harmful to humans is a mess, tainted by poorly-communicated conclusions, bad studies, and more.</p>
 
@@ -2239,128 +2834,4 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[A detailed breakdown of the scientific evidence for and against adverse effects from cell phone use and other radiofrequency radiation.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-24-are-emfs-bad.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-24-are-emfs-bad.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“Just call me”</title><link href="https://andybromberg.com/just-call-me" rel="alternate" type="text/html" title="“Just call me”" /><published>2025-12-15T05:00:00-08:00</published><updated>2025-12-15T05:00:00-08:00</updated><id>https://andybromberg.com/just-call-me</id><content type="html" xml:base="https://andybromberg.com/just-call-me"><![CDATA[<p><em>I’ve found myself needing to explain this concept frequently, so I’m writing it out as a blog post to share instead…</em></p>
-
-<p>A recommended experiment: for as many scheduling requests as you can fathom, refuse to set a call time and instead simply give people your cell number and say “call me anytime; I’ll hit you back if I miss you.”</p>
-
-<p>I’m perhaps a year into doing this for ~95% of call requests, and could not be happier.</p>
-
-<p>Why is it great?</p>
-<ul>
-  <li>calls now last the appropriate amount of time — often 2-10 minutes, but sometimes 2 hours! — instead of defaulting to a 30- or 60-minute block and wasting everyone’s time filling that block or running out of time</li>
-  <li>nobody is making a future commitment on their schedule that could end up being inconvenient by the time it arrives. You simply call and pick up when it is convenient for both of you. It’s literally impossible for the call to end up happening at a time that is inconvenient for either of you!</li>
-  <li>~50% of people never end up calling because it turns out there wasn’t really a need for a call in the first place (see Dilbert’s <a href="https://web.archive.org/web/20230307164932/https://dilbert.com/strip/1997-11-06">“Most problems go away if you wait long enough”</a>)</li>
-  <li>it turns remote interactions into phone calls instead of Zooms. I have developed a strong dislike for video calls — I find they sit in an uncanny valley and would much rather talk audio-only (or with a quick visual hello on FaceTime and then switch to audio). Plus you can walk while you talk!</li>
-</ul>
-
-<p>As a result of this practice, my schedule is extremely open and I pretty much always pick up when people call. If I can’t, then I rip through any backlog of missed calls (or calls-to-be-made on my end) while I’m out for a walk. This has been a <em>tremendous</em> quality-of-life improvement.</p>
-
-<p>A friend sent me <a href="https://x.com/jasonfried/status/1950560114274152678">this 90-second video from Jason Fried</a> which exactly represents my attitude and emotions toward the whole thing. You should watch it.</p>
-
-<p>He adds another dimension: you can… just call people. Even if you don’t have something worthy of a “meeting.” Friends can just call each other! It seems to shock people the first time you do it. But then they almost inevitably say “well that was lovely, thanks for the call.” After that, the ice is broken and you can call each other anytime without surprise.</p>
-
-<p>I have found that for roughly 30% of people, telling them to “just call me” seems to break their brains. For example, here is an amusing, slightly abridged (but not augmented!) real exchange I had with someone:</p>
-
-<div class="mac-window imessage-popup">
-    <div class="mac-toolbar">
-      <div class="mac-buttons">
-        <span class="mac-button close"></span>
-        <span class="mac-button minimize"></span>
-        <span class="mac-button maximize"></span>
-      </div>
-      <div class="toolbar-title">Chat</div>
-    </div>
-    <div class="imessage-scroll-container">
-        <div class="imessage">
-        
-            
-            <p class="from-them">Andy! Good to meet you. Would love to hop on a call next week. Would you have any time after 3pm on Wednesday?</p>
-            
-        
-            
-            <p class="from-me">Hey, great to meet you. Call anytime! Will hit you back if I miss your call.</p>
-            
-        
-            
-            <p class="from-them">Cool if I send an invite for that time? would love to hold it on my calendar</p>
-            
-        
-            
-            <p class="from-me">Feel free but I don't keep to my calendar - will aim to be available but no promises. But genuinely call anytime, odd hours included. I will either catch you or try you back!</p>
-            
-        
-            
-            <p class="from-them">No worries and no need to accept the invite. I'll dial ya then and if you're busy, we can find another time.</p>
-            
-        
-            
-            <p class="from-them">Well - looks like i got my wires crossed anyway and that time is booked. Any chance if I buzz you Monday afternoon?</p>
-            
-        
-            
-            <p class="from-me">I am not joking when I say call anytime :) 80% chance I will pick up between 6a-10p PT Sunday through Saturday</p>
-            
-        
-            
-            <p class="from-them">Ok expect a call Monday 1:30pm PT</p>
-            
-        
-        </div>
-    </div>
-</div>
-
-<p>I totally get that most people live by their calendars and pre-set meeting blocks (I did for most of my life!). But this approach is not incompatible with them having calendars. You can put a calendar block “call Andy” and call me then. And if I don’t pick up, you get that block back!</p>
-
-<p>People sometimes ask: what if the call is urgent or needs to happen before some date? Well: you can simply say that. In fact, even better: just call immediately! This “call anytime” method generally results in connecting <em>faster</em> than if you scheduled something out.</p>
-
-<p>Are there exceptions to this? Of course. Meetings that necessarily involve more than two people are best scheduled. It’s not an absolute rule.</p>
-
-<p>I may write another piece at some point about my “Working with Andy” doc (an exercise I recommend everyone do). But in the meantime: I have found that “just call me” is a <em>great</em> combo with a default-async way of working.</p>
-
-<p>It is tremendously productive and enjoyable to couple async comms (memos, texts, emails, Looms, voice notes) with ad-hoc phone calls. Scheduled — and even worse, <em>recurring scheduled</em> — calls are rarely necessary in many working contexts. Instead of a recurring scheduled call, try giving yourself a recurring to-do to call someone — and then only do it if you want to!</p>
-
-<p>(And of course, that’s all best coupled with meaningful in-person time too…)</p>
-
-<p>So, anyway: just call me. It doesn’t even need to be important. Don’t be scared :)</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/new-recommendations-archive">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/new-recommendations-archive">My newsletter recommendations archive</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/are-emfs-bad">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/are-emfs-bad">Are EMFs bad? — assessing the evidence, Part I: RF-EMF</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Startups&quot;]" /><summary type="html"><![CDATA[It turns out you can just... call people. And they can just call you. There's no need to schedule phone calls!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-15-just-call-me.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[A detailed breakdown of the scientific evidence for and against adverse effects from cell phone use and other radiofrequency radiation.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2025-12-24-are-emfs-bad.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2025-12-24-are-emfs-bad.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
