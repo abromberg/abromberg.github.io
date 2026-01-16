@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-16T10:05:03-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Someone, please make clean electrolytes (recipes included)</title><link href="https://andybromberg.com/clean-electrolytes" rel="alternate" type="text/html" title="Someone, please make clean electrolytes (recipes included)" /><published>2026-01-16T05:00:00-08:00</published><updated>2026-01-16T05:00:00-08:00</updated><id>https://andybromberg.com/clean-electrolytes</id><content type="html" xml:base="https://andybromberg.com/clean-electrolytes"><![CDATA[<p>I just want someone to make squeaky-clean electrolyte powders.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-01-16T10:11:09-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Someone, please make clean electrolytes (recipes included)</title><link href="https://andybromberg.com/clean-electrolytes" rel="alternate" type="text/html" title="Someone, please make clean electrolytes (recipes included)" /><published>2026-01-16T05:00:00-08:00</published><updated>2026-01-16T05:00:00-08:00</updated><id>https://andybromberg.com/clean-electrolytes</id><content type="html" xml:base="https://andybromberg.com/clean-electrolytes"><![CDATA[<p>I just want someone to make squeaky-clean electrolyte powders.</p>
 
 <p>No maltodextrin or fillers, no citric acid (did you know that most food-grade citric acid is produced by fermenting sugars with <em>Aspergillus niger</em>, also known as black mold?), no non-nutritive sweeteners, no “natural” or artificial flavors.</p>
 
@@ -35,7 +35,7 @@
 
 <div class="recipe-calc" id="recipe-calc-salted-chocolate">
   <div class="recipe-calc-header">
-    <span class="recipe-calc-title">Salted Chocolate serving calculator</span>
+    <span class="recipe-calc-title">Salted Chocolate electrolyte serving calculator</span>
     <div class="recipe-calc-servings">
       <input type="number" id="servings-salted-chocolate" class="recipe-calc-input" value="10" min="1" max="100" />
       <label for="servings-salted-chocolate">servings</label>
@@ -211,7 +211,7 @@
 
 <div class="recipe-calc" id="recipe-calc-mixed-berry">
   <div class="recipe-calc-header">
-    <span class="recipe-calc-title">Mixed Berry serving calculator</span>
+    <span class="recipe-calc-title">Mixed Berry electrolyte serving calculator</span>
     <div class="recipe-calc-servings">
       <input type="number" id="servings-mixed-berry" class="recipe-calc-input" value="10" min="1" max="100" />
       <label for="servings-mixed-berry">servings</label>
@@ -387,7 +387,7 @@
 
 <div class="recipe-calc" id="recipe-calc-wheatgrass">
   <div class="recipe-calc-header">
-    <span class="recipe-calc-title">Wheatgrass serving calculator</span>
+    <span class="recipe-calc-title">Wheatgrass electrolyte serving calculator</span>
     <div class="recipe-calc-servings">
       <input type="number" id="servings-wheatgrass" class="recipe-calc-input" value="10" min="1" max="100" />
       <label for="servings-wheatgrass">servings</label>
