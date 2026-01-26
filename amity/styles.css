@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background: #F6F3ED;
+    color: #1a1a1a;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: #1a1a1a;
+    color: #F6F3ED;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background: #F6F3ED;
+    z-index: 100;
+}
+
+.wordmark {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-right a {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.nav-right a:hover {
+    color: #1a1a1a;
+}
+
+/* Main */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* Hero */
+
+.hero {
+    padding-top: 180px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+}
+
+h1 em {
+    font-style: italic;
+}
+
+/* Intro */
+
+.intro {
+    padding-bottom: 80px;
+    max-width: 620px;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.intro p:last-of-type:not(.footnotes p):not(.definition) {
+    margin-bottom: 0;
+}
+
+p.definition {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.definition .word {
+    font-weight: 500;
+}
+
+.definition .pronunciation {
+    color: #888;
+    margin-left: 0.5em;
+}
+
+.definition .pos {
+    font-style: italic;
+    color: #888;
+    margin-left: 0.3em;
+}
+
+.definition .meaning {
+    margin-left: 0.3em;
+}
+
+.intro sup {
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+.intro sup a {
+    color: #888;
+    border-bottom: none;
+}
+
+.intro sup a:hover {
+    color: #1a1a1a;
+}
+
+.footnotes {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #d4d0c8;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+}
+
+.footnotes sup {
+    font-size: 0.75em;
+    margin-right: 0.3em;
+    color: #999;
+}
+
+.footnotes a {
+    color: #555;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+}
+
+.footnotes a:hover {
+    color: #1a1a1a;
+    text-decoration-color: #1a1a1a;
+}
+
+.dropcap {
+    float: left;
+    font-size: 4.5rem;
+    line-height: 0.78;
+    padding-right: 0.1em;
+    padding-top: 0.06em;
+    font-weight: 400;
+}
+
+/* Companies */
+
+.companies {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+.companies h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #999;
+    margin-bottom: 1.5rem;
+}
+
+.company-list {
+    border-top: 1px solid #d4d0c8;
+    overflow: visible;
+}
+
+.company {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.3rem 0;
+    border-bottom: 1px solid #d4d0c8;
+    transition: padding-left 0.2s ease;
+}
+
+.company:hover {
+    padding-left: 0.5rem;
+    z-index: 20;
+}
+
+.company-hover-img {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    max-width: 180px;
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translate(-50%, -50%) rotate(-8deg) scale(0.7);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.3),
+        0 15px 30px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    filter: saturate(1.1) contrast(1.05);
+}
+
+.company:hover .company-hover-img {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-2deg) scale(1);
+}
+
+.company:nth-child(2) .company-hover-img {
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(7deg) scale(0.7);
+}
+
+.company:nth-child(2):hover .company-hover-img {
+    transform: translate(-50%, -50%) rotate(2deg) scale(1);
+}
+
+.company:nth-child(3) .company-hover-img {
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(-10deg) scale(0.7);
+}
+
+.company:nth-child(3):hover .company-hover-img {
+    transform: translate(-50%, -50%) rotate(-3deg) scale(1);
+}
+
+.company:nth-child(4) .company-hover-img {
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(5deg) scale(0.7);
+}
+
+.company:nth-child(4):hover .company-hover-img {
+    transform: translate(-50%, -50%) rotate(1deg) scale(1);
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.company-name {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.company-founders {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: #999;
+    letter-spacing: 0.01em;
+}
+
+.company-desc {
+    font-size: 0.95rem;
+    color: #777;
+    text-align: right;
+}
+
+.company-list-more {
+    display: none;
+}
+
+.company-list-more.visible {
+    display: block;
+}
+
+.show-more {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #777;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1.2rem 0;
+    margin-top: 0.5rem;
+}
+
+.show-more:hover {
+    color: #1a1a1a;
+}
+
+/* Testimonials */
+
+.testimonials {
+    background: #EFECE5;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding: 80px 3rem 70px;
+    margin-bottom: 40px;
+}
+
+.testimonials h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #999;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.testimonial {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 1px solid #d4d0c8;
+}
+
+.testimonial p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial cite {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    font-style: normal;
+}
+
+.cite-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    letter-spacing: 0.01em;
+}
+
+.cite-company {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.testimonial-list-more {
+    display: none;
+}
+
+.testimonial-list-more.visible {
+    display: contents;
+}
+
+.testimonials .show-more {
+    margin-top: 2rem;
+}
+
+/* Dark Section */
+
+.dark-section {
+    background: #111;
+    color: #e8e8e8;
+    padding: 100px 3rem 120px;
+}
+
+.dark-section ::selection {
+    background: #e8e8e8;
+    color: #111;
+}
+
+.dark-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dark-section h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 80px;
+}
+
+.approach-item {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.approach-num {
+    display: block;
+    font-size: 0.7rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+.approach-item p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #aaa;
+}
+
+.approach-cta {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.approach-cta:last-child {
+    padding-bottom: 0;
+}
+
+.approach-cta p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.6rem;
+}
+
+.approach-cta a {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #e8e8e8;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.05em;
+    transition: border-color 0.2s ease;
+}
+
+.approach-cta a:hover {
+    border-color: #e8e8e8;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: #555;
+    background: #111;
+    border-top: 1px solid #222;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-right {
+        gap: 1.5rem;
+    }
+
+    main {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .company {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    .company-desc {
+        text-align: left;
+    }
+
+    .company-founders {
+        margin-top: 0;
+    }
+
+    .company-hover-img {
+        display: none;
+    }
+
+    .dark-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .testimonials {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .testimonial {
+        padding-left: 1.25rem;
+    }
+
+    .testimonial p {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

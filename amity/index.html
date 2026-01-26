@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity Ventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="wordmark">Amity Ventures</a>
+        <div class="nav-right">
+            <a href="/amity#companies">Companies</a>
+            <a href="/amity#approach">Approach</a>
+            <a href="/amity/team.html">Team</a>
+            <a href="mailto:founders@amity.vc">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Concentrated capital<br>for founders building<br><em>what comes next.</em></h1>
+        </section>
+
+        <section class="intro">
+            <p>We back founders at the earliest stages — and we don't divide our time among many of them. We lead rounds, get in the trenches, and back half as many companies per fund as the industry average.<sup><a href="#fn1">1</a></sup></p>
+            <p>And it works. Amity's portfolio companies have a x% better chance of becoming a unicorn than our peers'.<sup><a href="#fn2">2</a></sup></p>
+            <p>But at the end of the day, what drives us? It's in the name:</p>
+            <p class="definition"><span class="word">am·i·ty</span> <span class="pronunciation">/ˈamədē/</span> <span class="pos">n.</span> <span class="meaning">quality relationships</span></p>
+            <aside class="footnotes">
+                <p id="fn1"><sup>1</sup> Cambridge Associates or something like that, <a href="#">link</a></p>
+                <p id="fn2"><sup>2</sup> Also probably Cambridge Associates, here's another <a href="#">link</a></p>
+            </aside>
+        </section>
+
+        <section class="testimonials">
+            <h2>From our founders</h2>
+            <div class="testimonial-list">
+                <blockquote class="testimonial">
+                    <p>"They were the first check in and never wavered — even when we pivoted twice. That kind of conviction is rare."</p>
+                    <cite>
+                        <span class="cite-name">Jane Smith</span>
+                        <span class="cite-company">Acme Corp</span>
+                    </cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"Most investors disappear after the wire. Amity showed up to our first five customer calls."</p>
+                    <cite>
+                        <span class="cite-name">John Doe</span>
+                        <span class="cite-company">Beacon</span>
+                    </cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"They helped us close our Series A in three weeks — not by making intros, but by being in the room."</p>
+                    <cite>
+                        <span class="cite-name">Mike Chen</span>
+                        <span class="cite-company">Candor</span>
+                    </cite>
+                </blockquote>
+                <div class="testimonial-list-more" id="more-testimonials">
+                    <blockquote class="testimonial">
+                        <p>"When we hit a wall with our first enterprise deal, they got on a plane. That's not normal."</p>
+                        <cite>
+                            <span class="cite-name">Anna Kim</span>
+                            <span class="cite-company">Delphi</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"I've had investors who send articles. Amity sends candidates, intros, and actual help."</p>
+                        <cite>
+                            <span class="cite-name">David Wu</span>
+                            <span class="cite-company">Echo</span>
+                        </cite>
+                    </blockquote>
+                </div>
+            </div>
+            <button class="show-more" id="show-more-testimonials-btn" onclick="toggleMoreTestimonials()">Show more</button>
+        </section>
+
+        <section id="companies" class="companies">
+            <h2>Portfolio</h2>
+            <div class="company-list">
+                <a href="#" class="company">
+                    <div class="company-info">
+                        <span class="company-name">MaintainX</span>
+                        <span class="company-founders">Chris Turlica, Hugo Dozois-Caouette</span>
+                    </div>
+                    <span class="company-desc">Work order management for the frontline workforce</span>
+                    <img src="assets/images/maintainx.png" alt="MaintainX" class="company-hover-img">
+                </a>
+                <a href="#" class="company">
+                    <div class="company-info">
+                        <span class="company-name">Ditto</span>
+                        <span class="company-founders">Adam Fish</span>
+                    </div>
+                    <span class="company-desc">Peer-to-peer sync for apps that work offline</span>
+                    <img src="assets/images/ditto.jpg" alt="Ditto" class="company-hover-img">
+                </a>
+                <a href="#" class="company">
+                    <div class="company-info">
+                        <span class="company-name">Talkdesk</span>
+                        <span class="company-founders">Tiago Paiva</span>
+                    </div>
+                    <span class="company-desc">Cloud contact center platform</span>
+                    <img src="assets/images/talkdesk.webp" alt="Talkdesk" class="company-hover-img">
+                </a>
+                <a href="#" class="company">
+                    <div class="company-info">
+                        <span class="company-name">Arketa</span>
+                        <span class="company-founders">Rachel Lea Fishman, Josh Archer</span>
+                    </div>
+                    <span class="company-desc">Business software for fitness studios</span>
+                    <img src="assets/images/arketa.jpeg" alt="Arketa" class="company-hover-img">
+                </a>
+                <div class="company-list-more" id="more-companies">
+                    <a href="#" class="company">
+                        <div class="company-info">
+                            <span class="company-name">Acme Corp</span>
+                            <span class="company-founders">Jane Smith</span>
+                        </div>
+                        <span class="company-desc">Placeholder company one</span>
+                    </a>
+                    <a href="#" class="company">
+                        <div class="company-info">
+                            <span class="company-name">Beacon</span>
+                            <span class="company-founders">John Doe, Sarah Lee</span>
+                        </div>
+                        <span class="company-desc">Placeholder company two</span>
+                    </a>
+                    <a href="#" class="company">
+                        <div class="company-info">
+                            <span class="company-name">Candor</span>
+                            <span class="company-founders">Mike Chen</span>
+                        </div>
+                        <span class="company-desc">Placeholder company three</span>
+                    </a>
+                    <a href="#" class="company">
+                        <div class="company-info">
+                            <span class="company-name">Delphi</span>
+                            <span class="company-founders">Anna Kim, Leo Park</span>
+                        </div>
+                        <span class="company-desc">Placeholder company four</span>
+                    </a>
+                    <a href="#" class="company">
+                        <div class="company-info">
+                            <span class="company-name">Echo</span>
+                            <span class="company-founders">David Wu</span>
+                        </div>
+                        <span class="company-desc">Placeholder company five</span>
+                    </a>
+                </div>
+            </div>
+            <button class="show-more" id="show-more-btn" onclick="toggleMore()">Show more</button>
+        </section>
+
+    </main>
+
+    <section id="approach" class="dark-section">
+        <div class="dark-inner">
+            <h2>How we work</h2>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <span class="approach-num">01</span>
+                    <p>We write $1–5M first checks — usually pre-incorporation, pre-seed, or seed, but sometimes series A.</p>
+                </div>
+                <div class="approach-item">
+                    <span class="approach-num">02</span>
+                    <p>We join the board... and usually the Slack (if you want). We get our hands dirty helping build, do deals, recruit, and more.</p>
+                </div>
+                <div class="approach-item">
+                    <span class="approach-num">03</span>
+                    <p>We're with you every step of the way — whether helping raise your next round or your last; and whether celebrating or commiserating or problem solving.</p>
+                </div>
+            </div>
+            <div class="approach-cta">
+                <p>Who are we?</p>
+                <a href="/amity/team.html">Meet the team</a>
+            </div>
+            <div class="approach-cta">
+                <p>Building something?</p>
+                <a href="mailto:founders@amity.vc">founders@amity.vc</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2025 Amity Ventures</span>
+        <span>Presidio, San Francisco, CA</span>
+    </footer>
+    <script>
+        function toggleMore() {
+            const more = document.getElementById('more-companies');
+            const btn = document.getElementById('show-more-btn');
+            if (more.classList.contains('visible')) {
+                more.classList.remove('visible');
+                btn.textContent = 'Show more';
+            } else {
+                more.classList.add('visible');
+                btn.textContent = 'Show fewer';
+            }
+        }
+
+        function toggleMoreTestimonials() {
+            const more = document.getElementById('more-testimonials');
+            const btn = document.getElementById('show-more-testimonials-btn');
+            if (more.classList.contains('visible')) {
+                more.classList.remove('visible');
+                btn.textContent = 'Show more';
+            } else {
+                more.classList.add('visible');
+                btn.textContent = 'Show fewer';
+            }
+        }
+    </script>
+</body>
+</html>
