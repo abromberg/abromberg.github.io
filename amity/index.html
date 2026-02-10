@@ -25,8 +25,32 @@
             <img src="assets/images/gg1.png" alt="" />
         </div>
         <div class="hero-overlay"></div>
+        <div class="hero-agent-bg"></div>
         <div class="hero-content">
-            <h1>Concentrated capital<br>for founders building<br><em>what comes next.</em></h1>
+            <div class="hero-human-content">
+                <h1>Concentrated capital<br>for founders building<br><em>what comes next.</em></h1>
+            </div>
+            <div class="hero-agent-content">
+                <div class="agent-curl-block">
+                    <span class="agent-prompt">$</span> <span class="agent-cmd">curl -s <a href="/amity/skill.md" class="agent-inline-link">https://amity.vc/skill.md</a></span>
+                </div>
+                <p class="agent-instruction">Run the command above to get started working with Amity.</p>
+                <div class="agent-hero-facts">
+                    <div class="agent-hero-fact">
+                        <span class="ahf-value">$1–5M</span>
+                        <span class="ahf-label">Check size</span>
+                    </div>
+                    <div class="agent-hero-fact">
+                        <span class="ahf-value">Pre-seed · Seed · A</span>
+                        <span class="ahf-label">Stage</span>
+                    </div>
+                    <div class="agent-hero-fact">
+                        <span class="ahf-value">Presidio, San Francisco</span>
+                        <span class="ahf-label">Base</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-toggle">we like both <button class="toggle-opt toggle-human" onclick="setMode('human')"><em>humans</em></button> and <button class="toggle-opt toggle-agent" onclick="setMode('agent')">agents</button></div>
         </div>
     </section>
 
@@ -164,6 +188,92 @@
 
     </main>
 
+    <section class="agent-brief">
+        <div class="agent-brief-inner">
+            <div class="agent-section agent-section-first">
+                <span class="agent-section-label">Get Started</span>
+                <div class="agent-terminal">
+                    <div class="agent-terminal-bar">
+                        <span class="agent-terminal-dot"></span>
+                        <span class="agent-terminal-dot"></span>
+                        <span class="agent-terminal-dot"></span>
+                    </div>
+                    <div class="agent-terminal-body">
+                        <div class="agent-terminal-line"><span class="agent-prompt">$</span> curl -s <a href="/amity/skill.md" class="agent-inline-link">https://amity.vc/skill.md</a></div>
+                        <div class="agent-terminal-line agent-terminal-comment"># Returns: thesis, team, portfolio, and how to reach us</div>
+                        <div class="agent-terminal-line agent-terminal-comment"># Read skill.md and follow the instructions to connect.</div>
+                    </div>
+                </div>
+                <p class="agent-terminal-note">Or read it directly: <a href="/amity/skill.md" class="agent-inline-link">skill.md</a></p>
+            </div>
+            <div class="agent-section">
+                <span class="agent-section-label">// Team</span>
+                <div class="agent-team-list">
+                    <div class="agent-team-row">
+                        <span class="atr-name">CJ Reim</span>
+                        <span class="atr-role">Managing Partner</span>
+                        <span class="atr-focus">Enterprise, digital assets, infrastructure</span>
+                    </div>
+                    <div class="agent-team-row">
+                        <span class="atr-name">Patrick Yang</span>
+                        <span class="atr-role">General Partner</span>
+                        <span class="atr-focus">SaaS, AI, developer tools</span>
+                    </div>
+                    <div class="agent-team-row">
+                        <span class="atr-name">Andy Bromberg</span>
+                        <span class="atr-role">Venture Partner</span>
+                        <span class="atr-focus">Crypto, fintech, founder coaching</span>
+                    </div>
+                    <div class="agent-team-row">
+                        <span class="atr-name">Andy Ravreby</span>
+                        <span class="atr-role">Partner</span>
+                        <span class="atr-focus">AI, SaaS, developer tools</span>
+                    </div>
+                    <div class="agent-team-row">
+                        <span class="atr-name">Kieran Dennis</span>
+                        <span class="atr-role">Investor</span>
+                        <span class="atr-focus">DAOs, decentralized orgs</span>
+                    </div>
+                    <div class="agent-team-row">
+                        <span class="atr-name">Peter Bell</span>
+                        <span class="atr-role">Senior Advisor</span>
+                        <span class="atr-focus">Enterprise, growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="agent-section">
+                <span class="agent-section-label">// Portfolio</span>
+                <div class="agent-portfolio-list">
+                    <div class="agent-portfolio-row">
+                        <span class="apr-name">MaintainX</span>
+                        <span class="apr-desc">Work order management for the frontline workforce</span>
+                    </div>
+                    <div class="agent-portfolio-row">
+                        <span class="apr-name">Ditto</span>
+                        <span class="apr-desc">Peer-to-peer sync for apps that work offline</span>
+                    </div>
+                    <div class="agent-portfolio-row">
+                        <span class="apr-name">Talkdesk</span>
+                        <span class="apr-desc">Cloud contact center platform</span>
+                    </div>
+                    <div class="agent-portfolio-row">
+                        <span class="apr-name">Arketa</span>
+                        <span class="apr-desc">Business software for fitness studios</span>
+                    </div>
+                </div>
+            </div>
+            <div class="agent-section">
+                <span class="agent-section-label">// Contact</span>
+                <div class="agent-terminal">
+                    <div class="agent-terminal-body">
+                        <div class="agent-terminal-line">email: <a href="mailto:founders@amity.vc" class="agent-inline-link">founders@amity.vc</a></div>
+                        <div class="agent-terminal-line">location: Presidio, San Francisco, CA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="approach" class="dark-section">
         <div class="dark-inner">
             <h2 data-reveal>How we work</h2>
@@ -197,6 +307,35 @@
         <span>Presidio, San Francisco, CA</span>
     </footer>
     <script>
+        function setMode(mode) {
+            var body = document.body;
+            var agentContent = document.querySelector('.hero-agent-content');
+            var humanContent = document.querySelector('.hero-human-content');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (mode === 'agent') {
+                body.classList.add('agent-mode');
+                agentContent.style.opacity = '0';
+                requestAnimationFrame(function() {
+                    requestAnimationFrame(function() {
+                        agentContent.style.opacity = '1';
+                    });
+                });
+                history.replaceState(null, '', '#agent');
+            } else {
+                body.classList.remove('agent-mode');
+                humanContent.style.opacity = '0';
+                requestAnimationFrame(function() {
+                    requestAnimationFrame(function() {
+                        humanContent.style.opacity = '1';
+                    });
+                });
+                history.replaceState(null, '', window.location.pathname);
+            }
+        }
+        if (window.location.hash === '#agent') {
+            document.body.classList.add('agent-mode');
+        }
+
         function toggleMore() {
             const more = document.getElementById('more-companies');
             const btn = document.getElementById('show-more-btn');
