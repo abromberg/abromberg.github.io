@@ -20,12 +20,18 @@
         </div>
     </nav>
 
-    <main>
-        <section class="hero">
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/gg1.png" alt="" />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
             <h1>Concentrated capital<br>for founders building<br><em>what comes next.</em></h1>
-        </section>
+        </div>
+    </section>
 
-        <section class="intro">
+    <main>
+        <section class="intro" data-reveal>
             <p>We back founders at the earliest stages — and we don't divide our time among many of them. We lead rounds, get in the trenches, and back half as many companies per fund as the industry average.<sup><a href="#fn1">1</a></sup></p>
             <p>And it works. Amity's portfolio companies have a x% better chance of becoming a unicorn than our peers'.<sup><a href="#fn2">2</a></sup></p>
             <p>But at the end of the day, what drives us? It's in the name:</p>
@@ -37,23 +43,23 @@
         </section>
 
         <section class="testimonials">
-            <h2>From our founders</h2>
+            <h2 data-reveal>From our founders</h2>
             <div class="testimonial-list">
-                <blockquote class="testimonial">
+                <blockquote class="testimonial" data-reveal="stagger-1">
                     <p>"They were the first check in and never wavered — even when we pivoted twice. That kind of conviction is rare."</p>
                     <cite>
                         <span class="cite-name">Jane Smith</span>
                         <span class="cite-company">Acme Corp</span>
                     </cite>
                 </blockquote>
-                <blockquote class="testimonial">
+                <blockquote class="testimonial" data-reveal="stagger-2">
                     <p>"Most investors disappear after the wire. Amity showed up to our first five customer calls."</p>
                     <cite>
                         <span class="cite-name">John Doe</span>
                         <span class="cite-company">Beacon</span>
                     </cite>
                 </blockquote>
-                <blockquote class="testimonial">
+                <blockquote class="testimonial" data-reveal="stagger-3">
                     <p>"They helped us close our Series A in three weeks — not by making intros, but by being in the room."</p>
                     <cite>
                         <span class="cite-name">Mike Chen</span>
@@ -80,7 +86,7 @@
             <button class="show-more" id="show-more-testimonials-btn" onclick="toggleMoreTestimonials()">Show more</button>
         </section>
 
-        <section id="companies" class="companies">
+        <section id="companies" class="companies" data-reveal>
             <h2>Portfolio</h2>
             <div class="company-list">
                 <a href="#" class="company">
@@ -160,34 +166,34 @@
 
     <section id="approach" class="dark-section">
         <div class="dark-inner">
-            <h2>How we work</h2>
+            <h2 data-reveal>How we work</h2>
             <div class="approach-grid">
-                <div class="approach-item">
+                <div class="approach-item" data-reveal="stagger-1">
                     <span class="approach-num">01</span>
                     <p>We write $1–5M first checks — usually pre-incorporation, pre-seed, or seed, but sometimes series A.</p>
                 </div>
-                <div class="approach-item">
+                <div class="approach-item" data-reveal="stagger-2">
                     <span class="approach-num">02</span>
                     <p>We join the board... and usually the Slack (if you want). We get our hands dirty helping build, do deals, recruit, and more.</p>
                 </div>
-                <div class="approach-item">
+                <div class="approach-item" data-reveal="stagger-3">
                     <span class="approach-num">03</span>
                     <p>We're with you every step of the way — whether helping raise your next round or your last; and whether celebrating or commiserating or problem solving.</p>
                 </div>
             </div>
-            <div class="approach-cta">
+            <div class="approach-cta" data-reveal>
                 <p>Who are we?</p>
                 <a href="/amity/team.html">Meet the team</a>
             </div>
-            <div class="approach-cta">
-                <p>Building something?</p>
+            <div class="approach-cta" data-reveal>
+                <p>Building something great?</p>
                 <a href="mailto:founders@amity.vc">founders@amity.vc</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <span>© 2025 Amity Ventures</span>
+        <span>&copy; 2025 Amity Ventures</span>
         <span>Presidio, San Francisco, CA</span>
     </footer>
     <script>
@@ -214,6 +220,52 @@
                 btn.textContent = 'Show fewer';
             }
         }
+
+        // Nav: transparent over hero, solid after scrolling past
+        const nav = document.querySelector('nav');
+        const hero = document.querySelector('.hero');
+
+        function updateNav() {
+            if (window.scrollY > hero.offsetHeight - 80) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        }
+
+        // Parallax on hero background image
+        const heroBgImg = document.querySelector('.hero-bg img');
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+        function updateParallax() {
+            if (isMobile) return;
+            if (window.scrollY < window.innerHeight) {
+                heroBgImg.style.transform = 'translateY(' + (window.scrollY * 0.3) + 'px)';
+            }
+        }
+
+        // Scroll reveal via IntersectionObserver
+        const revealEls = document.querySelectorAll('[data-reveal]');
+        const revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(function(el) { revealObserver.observe(el); });
+
+        // Unified scroll listener
+        window.addEventListener('scroll', function() {
+            requestAnimationFrame(function() {
+                updateNav();
+                updateParallax();
+            });
+        }, { passive: true });
+
+        updateNav();
     </script>
 </body>
 </html>
