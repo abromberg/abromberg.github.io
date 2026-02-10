@@ -761,6 +761,10 @@ body.agent-mode .hero-agent-content {
 
 /* Nav in agent mode */
 
+body.agent-mode .nav-right {
+    display: none;
+}
+
 body.agent-mode nav.nav-scrolled {
     background: #111;
 }
