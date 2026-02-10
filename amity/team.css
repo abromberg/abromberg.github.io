@@ -81,7 +81,7 @@
 }
 
 .member-title {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     color: #888;
     letter-spacing: 0.02em;
@@ -185,14 +185,14 @@
 }
 
 .modal-title {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
     color: #666;
     letter-spacing: 0.02em;
 }
 
 .modal-origin {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     color: #999;
     margin-top: 0.25rem;
@@ -205,7 +205,7 @@
 }
 
 .modal-linkedin {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     color: #666;
     text-decoration: underline;
@@ -237,7 +237,7 @@
 }
 
 .modal-section h4 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.65rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -285,7 +285,7 @@
 }
 
 .modal-tag {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     background: #e8e5de;
     padding: 0.4rem 0.75rem;
@@ -309,7 +309,7 @@
 }
 
 .fun-fact-label {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;

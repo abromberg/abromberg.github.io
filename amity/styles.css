@@ -47,19 +47,32 @@ nav.nav-scrolled {
 }
 
 .wordmark {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-size: 1.3rem;
+    font-weight: 400;
     color: #F6F3ED;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
     transition: color 0.4s ease, text-shadow 0.4s ease;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.3em;
+}
+
+.wm-mono {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.03em;
+}
+
+.wm-serif {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15em;
+    position: relative;
+    top: -0.03em;
 }
 
 nav.nav-scrolled .wordmark {
     text-shadow: none;
-}
-
-nav.nav-scrolled .wordmark {
     color: #1a1a1a;
 }
 
@@ -265,7 +278,7 @@ p.definition {
 }
 
 .companies h2 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -355,7 +368,7 @@ p.definition {
 }
 
 .company-founders {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     color: #999;
     letter-spacing: 0.01em;
@@ -376,7 +389,7 @@ p.definition {
 }
 
 .show-more {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -403,7 +416,7 @@ p.definition {
 }
 
 .testimonials h2 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -441,7 +454,7 @@ p.definition {
 }
 
 .cite-name {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
     font-weight: 500;
     color: #1a1a1a;
@@ -449,7 +462,7 @@ p.definition {
 }
 
 .cite-company {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     color: #888;
 }
@@ -485,7 +498,7 @@ p.definition {
 }
 
 .dark-section h2 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -502,7 +515,7 @@ p.definition {
 }
 
 .approach-item {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .approach-num {
@@ -530,7 +543,7 @@ p.definition {
 }
 
 .approach-cta p {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
     color: #666;
     margin-bottom: 0.6rem;
@@ -574,7 +587,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 2rem 3rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     color: #555;
     background: #111;
