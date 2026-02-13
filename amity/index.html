@@ -8,21 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=20260209b">
+    <link rel="stylesheet" href="team.css?v=20260209b">
 </head>
 <body>
     <nav>
-        <a href="/amity" class="wordmark"><span class="wm-mono">amity</span> <span class="wm-serif">ventures</span></a>
+        <a href="/amity" class="wordmark"><svg class="nav-logo" viewBox="0 0 215.32 79.34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g><path d="M142.42,16.95V49.54c0,9.65,5.22,14.61,14.96,14.61,3.45,0,6.02-.62,7.79-1.24v-9.92c-1.51,.62-2.92,.89-4.87,.89-3.28,0-5.14-1.77-5.14-5.49V26.07h9.74v-9.12"/><path d="M0,50.42c0-10.8,9.92-14.88,24.08-14.88h5.22v-1.86c0-5.49-1.68-8.5-7.53-8.5-5.05,0-7.35,2.57-7.88,6.55H1.77c.8-10.98,9.47-15.85,20.81-15.85s19.39,4.6,19.39,17.18v30.19h-9.29l-3.19-5.58c-2.66,3.72-6.73,6.55-13.99,6.55-8.41,0-15.5-4.07-15.5-13.81Zm29.31-3.36v-3.9h-4.96c-7.44,0-11.78,1.59-11.78,6.55,0,3.36,2.04,5.58,6.73,5.58,5.67,0,10.01-3.1,10.01-8.23Z"/><path d="M47.53,16.95h12.84v7.08c2.3-4.34,7.26-8.15,14.17-8.15,6.11,0,10.71,2.57,12.93,8.06,3.72-5.58,9.74-8.06,15.58-8.06,8.59,0,15.23,5.4,15.23,17.71v29.66h-12.75v-28.25c0-5.93-2.66-8.59-7.26-8.59-4.96,0-8.94,3.19-8.94,9.47v27.36h-12.75v-28.25c0-5.93-2.74-8.59-7.26-8.59-4.96,0-8.94,3.19-8.94,9.47v27.36h-12.84V16.95Z"/><path d="M124.06,16.95h12.75V63.26h-12.75V16.95Z"/><path d="M124.06,0h12.75V12.33h-12.75V0Z"/><path d="M142.39,0h12.75V12.33h-12.75V0Z"/><path d="M202.18,16.95l-10.1,31.64h-.18l-10.46-31.64h-13.5l16.18,43.35c.36,.89,.54,1.85,.54,2.86,0,1.37-.4,2.62-1.21,3.75-.8,1.13-2.04,1.79-3.71,1.97h-11.8v10.46h11.8c.12,0,.24,0,.36,0,4.35,0,7.75-.8,10.19-2.41,2.44-1.61,4.35-4.29,5.72-8.04l19.31-51.93h-13.14Z"/></g></svg></a>
         <div class="nav-right">
             <a href="/amity#companies">Companies</a>
             <a href="/amity#approach">Approach</a>
-            <a href="/amity/team.html">Team</a>
+            <a href="/amity#team">Team</a>
             <a href="mailto:founders@amity.vc">Contact</a>
         </div>
     </nav>
 
     <section class="hero">
         <div class="hero-bg">
-            <img src="assets/images/gg1.png" alt="" />
+            <img src="assets/images/gg2.png" alt="" />
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-agent-bg"></div>
@@ -56,8 +57,8 @@
 
     <main>
         <section class="intro" data-reveal>
-            <p>We back founders at the earliest stages — and we don't divide our time among many of them. We lead rounds, get in the trenches, and back half as many companies per fund as the industry average.<sup><a href="#fn1">1</a></sup></p>
-            <p>And it works. Amity's portfolio companies have a x% better chance of becoming a unicorn than our peers'.<sup><a href="#fn2">2</a></sup></p>
+            <p>We back founders at the earliest stages — and we don't divide our time among many of them. We lead rounds, get in the trenches, and back half as many companies per fund as the industry average.<sup><a>1</a></sup></p>
+            <p>And it works. Amity's portfolio companies have a x% better chance of becoming a unicorn than our peers'.<sup><a>2</a></sup></p>
             <p>But at the end of the day, what drives us? It's in the name:</p>
             <p class="definition"><span class="word">am·i·ty</span> <span class="pronunciation">/ˈamədē/</span> <span class="pos">n.</span> <span class="meaning">quality relationships</span></p>
             <aside class="footnotes">
@@ -186,7 +187,89 @@
             <button class="show-more" id="show-more-btn" onclick="toggleMore()">Show more</button>
         </section>
 
+        <section id="team" class="team-home" data-reveal>
+            <h2>Team</h2>
+            <div class="team-home-list">
+                <button type="button" class="team-home-member" data-member="andy">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Andy Bromberg</span>
+                        <span class="team-home-title">Venture Partner</span>
+                    </span>
+                    <img src="assets/images/bromberg.jpg" alt="Andy Bromberg" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="andy-ravreby">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Andy Ravreby</span>
+                        <span class="team-home-title">Partner</span>
+                    </span>
+                    <img src="assets/images/ravreby.jpeg" alt="Andy Ravreby" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="cj">
+                    <span class="team-home-main">
+                        <span class="team-home-name">CJ Reim</span>
+                        <span class="team-home-title">Managing Partner</span>
+                    </span>
+                    <img src="assets/images/reim.jpeg" alt="CJ Reim" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="patrick">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Patrick Yang</span>
+                        <span class="team-home-title">General Partner</span>
+                    </span>
+                    <img src="assets/images/yang.jpeg" alt="Patrick Yang" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="kieran">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Kieran Dennis</span>
+                        <span class="team-home-title">Investor</span>
+                    </span>
+                    <img src="assets/images/dennis.jpg" alt="Kieran Dennis" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="peter">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Peter Bell</span>
+                        <span class="team-home-title">Senior Advisor</span>
+                    </span>
+                    <img src="assets/images/bell.jpg" alt="Peter Bell" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="christina">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Christina Dong</span>
+                        <span class="team-home-title">Executive Administrator</span>
+                    </span>
+                    <img src="assets/images/dong.jpg" alt="Christina Dong" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="colleen">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Colleen Johnson</span>
+                        <span class="team-home-title">Manager of Finance &amp; Operations</span>
+                    </span>
+                    <img src="assets/images/johnson.jpg" alt="Colleen Johnson" class="team-hover-img">
+                </button>
+                <button type="button" class="team-home-member" data-member="jason">
+                    <span class="team-home-main">
+                        <span class="team-home-name">Jason Wong</span>
+                        <span class="team-home-title">Director of Finance and Operations</span>
+                    </span>
+                    <img src="assets/images/wong.jpg" alt="Jason Wong" class="team-hover-img">
+                </button>
+            </div>
+        </section>
+
     </main>
+
+    <div class="member-modal" id="member-modal" aria-hidden="true">
+        <div class="modal-backdrop" onclick="closeTeamModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTeamModal()" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-inner" id="modal-inner"></div>
+        </div>
+    </div>
 
     <section class="agent-brief">
         <div class="agent-brief-inner">
@@ -292,10 +375,6 @@
                 </div>
             </div>
             <div class="approach-cta" data-reveal>
-                <p>Who are we?</p>
-                <a href="/amity/team.html">Meet the team</a>
-            </div>
-            <div class="approach-cta" data-reveal>
                 <p>Building something great?</p>
                 <a href="mailto:founders@amity.vc">founders@amity.vc</a>
             </div>
@@ -359,6 +438,291 @@
                 btn.textContent = 'Show fewer';
             }
         }
+
+        const homeMemberData = {
+            'cj': {
+                name: 'CJ Reim',
+                title: 'Managing Partner',
+                origin: 'North Oaks, MN',
+                photo: 'assets/images/reim.jpeg',
+                bio: 'CJ co-founded Amity in 2016 to collaborate with leading technology companies. His philosophy centers on "permanent software," and he actively mentors entrepreneurs in developing and scaling ventures.',
+                education: 'B.S. in Management with concentrations in Finance and Information Systems, Boston College',
+                previousRole: 'Vice President at Highland Capital Partners (Palo Alto), focusing on technology investments across company growth stages',
+                boards: ['Avochato', 'Borderless Labs', 'Ditto', 'Element Wallet', 'Fount', 'MaintainX', 'Stationwise'],
+                holdings: ['Core', 'Carta', 'Talkdesk'],
+                cryptoNote: 'Over a decade in digital assets. Initial Contributor to Core DAO. Investor in multiple leading cryptocurrency exchanges. Participant in Ethereum\'s original Genesis Block.',
+                firstJob: 'Caddie',
+                hiddenTalent: 'Spearfishing',
+                linkedin: 'https://www.linkedin.com/in/cjreim/'
+            },
+            'patrick': {
+                name: 'Patrick Yang',
+                title: 'General Partner',
+                origin: 'Tucson, AZ',
+                photo: 'assets/images/yang.jpeg',
+                bio: 'Patrick co-founded Amity in 2016 and focuses on partnering with ambitious founders. He previously served as Vice President at Highland Capital Partners and began his career in technology investment banking at Morgan Stanley\'s Menlo Park office.',
+                education: 'B.S. in Business Administration with Engineering Leadership concentration, UC Berkeley',
+                boards: ['Arketa', 'Controlrooms.ai', 'Element', 'Mayfair', 'Sully.ai', 'Usage AI'],
+                holdings: ['CaptivateIQ', 'Tilly Therapy'],
+                interests: 'Tennis, apres-ski, Golden State Warriors',
+                community: 'Board member of Advancing Women in Tech',
+                linkedin: 'https://www.linkedin.com/in/patrick-z-yang/'
+            },
+            'andy': {
+                name: 'Andy Bromberg',
+                title: 'Venture Partner',
+                origin: 'Concord, MA',
+                photo: 'assets/images/bromberg.jpg',
+                bio: 'Andy focuses on identifying exceptional entrepreneurs and providing coaching during business scaling, including strategic guidance and pitch refinement. He joined Amity as Venture Partner in September 2024.',
+                education: 'Mathematics and Computer Science, Stanford University. Co-founded the Stanford Bitcoin Group.',
+                careerHighlights: [
+                    'Co-founded and served as founding CEO of CoinList, a digital asset platform that facilitated token sales for major projects (Solana, Filecoin, Near, Flow). Last valued at $1.5 billion.',
+                    'Co-founded and served as CEO of Eco, building stablecoin liquidity infrastructure. Raised over $90 million from a16z Crypto, L Catterton, Activant Capital, Founders Fund, Lightspeed, and Pantera Capital.',
+                    'Co-founded Sidewire, a conversation platform providing expert analysis on current events.',
+                    'Founding board member of FreeWorld, a nonprofit addressing generational poverty and recidivism through employment access.'
+                ],
+                firstJob: 'Ice cream scooper',
+                favoriteMeal: 'Ribeye',
+                linkedin: 'https://www.linkedin.com/in/andybromberg/'
+            },
+            'andy-ravreby': {
+                name: 'Andy Ravreby',
+                title: 'Partner',
+                origin: 'Encinitas, CA',
+                photo: 'assets/images/ravreby.jpeg',
+                bio: 'Andy is an investor and operator with 15 years of experience spanning AI, SaaS, and developer tools. He was the first team member of Amity\'s investment operation in 2018. He lives in Moraga, CA with his wife and two children.',
+                education: 'Business Administration, UC Berkeley. MBA, The Wharton School.',
+                careerHighlights: [
+                    'Finance lead at EvenUp, an AI-powered legal technology firm, where he helped pioneer the "sell work, not software" model and guided growth from Series A to Series E with $400M+ raised.',
+                    'Technology equity analyst at Citadel Global Equities.',
+                    'Early employee at Square through its IPO.'
+                ],
+                firstJob: 'Retail shoe sales',
+                favoriteMeal: 'Justin Burrito from Pavlos Tacos',
+                alternateCareer: 'International DJ',
+                linkedin: 'https://www.linkedin.com/in/andyrav/',
+                twitter: 'https://x.com/aravreby'
+            },
+            'kieran': {
+                name: 'Kieran Dennis',
+                title: 'Investor',
+                origin: 'Long Island, NY',
+                photo: 'assets/images/dennis.jpg',
+                bio: 'Kieran joined Amity Ventures as a Summer Intern in 2021 and transitioned to a full-time Analyst role in June 2022. He developed a thesis on the future of decentralized organizations and assists with market research and financial analysis initiatives.',
+                education: 'B.A. in Philosophy with a minor in Finance, Boston College (May 2022)',
+                firstJob: 'Maintenance at Jones Beach Theater',
+                favoriteMeal: 'Five eggs and five pieces of toast',
+                bucketList: 'Visit Asia and live with Buddhist monks',
+                linkedin: 'https://www.linkedin.com/in/kieran-dennis-997a27205'
+            },
+            'peter': {
+                name: 'Peter Bell',
+                title: 'Senior Advisor',
+                origin: 'Burnsville, MN',
+                photo: 'assets/images/bell.jpg',
+                bio: 'Peter has notable investment exits including Gigamon (NYSE IPO), LevelUp (Grubhub acquisition), Turbonomic (IBM acquisition), and WePay (JPMorgan Chase acquisition), with cumulative investor liquidity exceeding $8 billion.',
+                education: 'B.S., Boston College (University Trustee 2002-2010, currently Trustee Associate). MBA, Harvard Business School. Honorary Doctorate, Babson College.',
+                careerHighlights: [
+                    'Co-founder and CEO of StorageNetworks; completed IPO in 2000.',
+                    'Joined EMC Corporation in late 1986; acquired by Dell for $67B in 2016.',
+                    'Led early-stage investments at Highland Capital Partners; became Managing General Partner.'
+                ],
+                boards: ['Edge Delta', 'Vowel', 'Accelevents'],
+                holdings: ['Column', 'Playco', 'Qumulo', 'Socure', 'Snyk'],
+                interests: 'All things Boston College, Red Sox, Patriots, Celtics, and Bruins',
+                firstJob: 'New York State Highway Department',
+                hiddenTalent: 'Won college airband competition performing a Billy Idol song',
+                linkedin: 'https://www.linkedin.com/in/peter-bell/',
+                twitter: 'https://twitter.com/peterwbell'
+            },
+            'jason': {
+                name: 'Jason Wong',
+                title: 'Director of Finance and Operations',
+                origin: 'San Francisco, CA',
+                photo: 'assets/images/wong.jpg',
+                bio: 'Jason oversees financial reporting to investors, budgeting, cash management, and partnership agreement compliance at Amity Ventures.',
+                education: 'B.S. in Economics, University of California, Santa Cruz. CPA licensed in California.',
+                previousRole: 'VP of Finance and Fund Operations at FundersClub. Tax Manager at Frank, Rimerman + Co. LLP, working with technology startups, venture capital firms, and entrepreneurs.',
+                interests: 'Giants, Niners, Warriors. Hawaii and tropical destinations.',
+                firstJob: 'Lifeguard and swim instructor',
+                linkedin: 'https://www.linkedin.com/in/jason-b-wong-433b8911/'
+            },
+            'colleen': {
+                name: 'Colleen Johnson',
+                title: 'Manager of Finance & Operations',
+                origin: 'Middletown, DE',
+                photo: 'assets/images/johnson.jpg',
+                bio: 'Colleen manages accounting, finance, budgeting, compliance, and investor relations functions at Amity Ventures.',
+                education: 'B.A. in Economics and Accounting, UC Santa Barbara. Licensed CPA in California.',
+                previousRole: 'Manager at EY in Strategy & Transactions and audit practices, focusing on financial services and technology sector clients.',
+                interests: 'Outdoor activities, concerts, electronic music, cooking, and football. 10 years playing lacrosse, 3 years coaching.',
+                favoriteMeal: 'A giant assortment of pickled vegetables',
+                linkedin: 'https://www.linkedin.com/in/colleen-johnson-cpa-67b056127/'
+            },
+            'christina': {
+                name: 'Christina Dong',
+                title: 'Executive Administrator',
+                origin: 'Menlo Park, CA',
+                photo: 'assets/images/dong.jpg',
+                bio: 'Christina manages administrative, communications, and marketing functions for the Amity team. Her writing has appeared in Stanford University News Service, Palo Alto Weekly, and Gentry Magazine.',
+                education: 'B.A. in English, Colby College. Professional background in journalism and English literature.',
+                previousRole: 'Recruiting and corporate communications at Adaptive Insights (now Workday Adaptive Planning).',
+                hiddenTalent: 'Upright bass (10 years of orchestra)',
+                favoriteMeal: '4505 Cheeseburger with spicy fries',
+                favoriteAdventure: 'Exploring the Scottish highlands solo, by train (and a couple hitchhiked car rides)',
+                linkedin: 'https://www.linkedin.com/in/christinadong/'
+            }
+        };
+
+        function openTeamModal(memberId) {
+            const member = homeMemberData[memberId];
+            if (!member) return;
+
+            const modal = document.getElementById('member-modal');
+            const inner = document.getElementById('modal-inner');
+
+            let html = `
+                <div class="modal-header">
+                    <div class="modal-photo">
+                        <img src="${member.photo}" alt="${member.name}">
+                    </div>
+                    <div class="modal-header-info">
+                        <h2>${member.name}</h2>
+                        <span class="modal-title">${member.title}</span>
+                        ${member.origin ? `<span class="modal-origin">${member.origin}</span>` : ''}
+                        <div class="modal-links">
+                            ${member.linkedin ? `<a href="${member.linkedin}" target="_blank" rel="noopener" class="modal-linkedin">LinkedIn</a>` : ''}
+                            ${member.twitter ? `<a href="${member.twitter}" target="_blank" rel="noopener" class="modal-linkedin">Twitter</a>` : ''}
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-bio">${member.bio}</p>
+            `;
+
+            if (member.education) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Education</h4>
+                        <p>${member.education}</p>
+                    </div>
+                `;
+            }
+
+            if (member.previousRole) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Previously</h4>
+                        <p>${member.previousRole}</p>
+                    </div>
+                `;
+            }
+
+            if (member.careerHighlights) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Career Highlights</h4>
+                        <ul class="modal-list">
+                            ${member.careerHighlights.map(function(highlight) { return `<li>${highlight}</li>`; }).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            if (member.boards) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Current Boards</h4>
+                        <div class="modal-tags">${member.boards.map(function(board) { return `<span class="modal-tag">${board}</span>`; }).join('')}</div>
+                    </div>
+                `;
+            }
+
+            if (member.holdings) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Key Holdings</h4>
+                        <div class="modal-tags">${member.holdings.map(function(holding) { return `<span class="modal-tag">${holding}</span>`; }).join('')}</div>
+                    </div>
+                `;
+            }
+
+            if (member.cryptoNote) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Digital Assets</h4>
+                        <p>${member.cryptoNote}</p>
+                    </div>
+                `;
+            }
+
+            if (member.community) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Community</h4>
+                        <p>${member.community}</p>
+                    </div>
+                `;
+            }
+
+            if (member.interests) {
+                html += `
+                    <div class="modal-section">
+                        <h4>Interests</h4>
+                        <p>${member.interests}</p>
+                    </div>
+                `;
+            }
+
+            const funFacts = [];
+            if (member.firstJob) funFacts.push({ label: 'First Job', value: member.firstJob });
+            if (member.hiddenTalent) funFacts.push({ label: 'Hidden Talent', value: member.hiddenTalent });
+            if (member.favoriteMeal) funFacts.push({ label: 'Favorite Meal', value: member.favoriteMeal });
+            if (member.favoriteAdventure) funFacts.push({ label: 'Favorite Adventure', value: member.favoriteAdventure });
+            if (member.alternateCareer) funFacts.push({ label: 'Alternate Career', value: member.alternateCareer });
+            if (member.bucketList) funFacts.push({ label: 'Bucket List', value: member.bucketList });
+
+            if (funFacts.length > 0) {
+                html += `
+                    <div class="modal-section modal-fun-facts">
+                        ${funFacts.map(function(fact) {
+                            return `
+                                <div class="fun-fact">
+                                    <span class="fun-fact-label">${fact.label}</span>
+                                    <span class="fun-fact-value">${fact.value}</span>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+
+            inner.innerHTML = html;
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTeamModal() {
+            const modal = document.getElementById('member-modal');
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.team-home-member').forEach(function(member) {
+            member.addEventListener('click', function() {
+                openTeamModal(member.dataset.member);
+            });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeTeamModal();
+            }
+        });
 
         // Nav: transparent over hero, solid after scrolling past
         const nav = document.querySelector('nav');

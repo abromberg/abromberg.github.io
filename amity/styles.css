@@ -47,32 +47,20 @@ nav.nav-scrolled {
 }
 
 .wordmark {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #F6F3ED;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
-    transition: color 0.4s ease, text-shadow 0.4s ease;
     display: inline-flex;
-    align-items: baseline;
-    gap: 0.3em;
+    align-items: center;
+    color: #F6F3ED;
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.4));
+    transition: color 0.4s ease, filter 0.4s ease;
 }
 
-.wm-mono {
-    font-family: 'JetBrains Mono', monospace;
-    letter-spacing: 0.03em;
-}
-
-.wm-serif {
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.15em;
-    position: relative;
-    top: -0.03em;
+.nav-logo {
+    height: 32px;
+    width: auto;
 }
 
 nav.nav-scrolled .wordmark {
-    text-shadow: none;
+    filter: none;
     color: #1a1a1a;
 }
 
@@ -156,7 +144,7 @@ nav.nav-scrolled .nav-right a:hover {
 main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 3rem 80px;
 }
 
 /* h1 */
@@ -274,7 +262,7 @@ p.definition {
 
 .companies {
     padding-top: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
 }
 
 .companies h2 {
@@ -403,6 +391,154 @@ p.definition {
 
 .show-more:hover {
     color: #1a1a1a;
+}
+
+/* Team (Homepage) */
+
+.team-home {
+    background: #EAE7DF;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding: 60px 3rem 40px;
+}
+
+.team-home h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #999;
+    margin-bottom: 1.5rem;
+}
+
+.team-home-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2.5rem;
+    border-top: 1px solid #cec9bf;
+    overflow: visible;
+}
+
+.team-home-member {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border: none;
+    border-bottom: 1px solid #cec9bf;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: padding-left 0.2s ease;
+}
+
+.team-home-member:hover,
+.team-home-member:focus-visible {
+    padding-left: 0.4rem;
+}
+
+.team-home-member:focus-visible {
+    outline: 1px solid #b5b0a5;
+    outline-offset: -1px;
+}
+
+.team-home-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.team-home-name {
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.team-home-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: #999;
+    letter-spacing: 0.02em;
+}
+
+.team-home-open {
+    display: none;
+}
+
+.team-hover-img {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translate(0, -50%) rotate(-6deg) scale(0.7);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25),
+        0 15px 30px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    filter: saturate(1.1) contrast(1.05);
+}
+
+.team-home-member {
+    position: relative;
+    overflow: visible;
+}
+
+.team-home-member:hover .team-hover-img {
+    opacity: 1;
+    transform: translate(0, -50%) rotate(-1deg) scale(1);
+}
+
+.team-home-member:nth-child(2) .team-hover-img {
+    transform: translate(0, -50%) rotate(5deg) scale(0.7);
+}
+
+.team-home-member:nth-child(2):hover .team-hover-img {
+    transform: translate(0, -50%) rotate(1deg) scale(1);
+}
+
+.team-home-member:nth-child(3) .team-hover-img {
+    transform: translate(0, -50%) rotate(-9deg) scale(0.7);
+}
+
+.team-home-member:nth-child(3):hover .team-hover-img {
+    transform: translate(0, -50%) rotate(-2deg) scale(1);
+}
+
+.team-home-member:nth-child(4) .team-hover-img {
+    transform: translate(0, -50%) rotate(7deg) scale(0.7);
+}
+
+.team-home-member:nth-child(4):hover .team-hover-img {
+    transform: translate(0, -50%) rotate(2deg) scale(1);
+}
+
+.team-home-page-link {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: underline;
+    text-decoration-color: #b5b0a5;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.team-home-page-link:hover {
+    color: #1a1a1a;
+    text-decoration-color: #1a1a1a;
 }
 
 /* Testimonials */
@@ -624,8 +760,8 @@ body.agent-mode .hero-bg img {
 
 .hero-toggle {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    color: rgba(246, 243, 237, 0.4);
+    font-size: 0.85rem;
+    color: rgba(246, 243, 237, 0.8);
     margin-top: 2rem;
     letter-spacing: 0.03em;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
@@ -771,7 +907,7 @@ body.agent-mode nav.nav-scrolled {
 
 body.agent-mode nav.nav-scrolled .wordmark {
     color: #F6F3ED;
-    text-shadow: none;
+    filter: none;
 }
 
 body.agent-mode nav.nav-scrolled .nav-right a {
@@ -1011,6 +1147,25 @@ body.agent-mode .agent-brief {
     }
 
     .company-hover-img {
+        display: none;
+    }
+
+    .team-home {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .team-home-list {
+        grid-template-columns: 1fr;
+    }
+
+    .team-home-name {
+        font-size: 1.1rem;
+    }
+
+    .team-hover-img {
         display: none;
     }
 
