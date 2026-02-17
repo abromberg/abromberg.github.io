@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Stanford Lecture on Theory of Constraints for AI | Andy Bromberg</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Stanford Lecture on Theory of Constraints for AI" />
+<meta name="author" content="Andy Bromberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A guest lecture at Stanford’s CS 224G on applying the Theory of Constraints to build better LLM products. Slides and notes." />
+<meta property="og:description" content="A guest lecture at Stanford’s CS 224G on applying the Theory of Constraints to build better LLM products. Slides and notes." />
+<link rel="canonical" href="https://andybromberg.com/toc-ai-stanford" />
+<meta property="og:url" content="https://andybromberg.com/toc-ai-stanford" />
+<meta property="og:site_name" content="Andy Bromberg" />
+<meta property="og:image" content="https://andybromberg.com/assets/images/og/2026-02-17-toc-ai-stanford.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-17T08:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://andybromberg.com/assets/images/og/2026-02-17-toc-ai-stanford.png" />
+<meta property="twitter:title" content="Stanford Lecture on Theory of Constraints for AI" />
+<meta name="twitter:site" content="@andy_bromberg" />
+<meta name="twitter:creator" content="@Andy Bromberg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Andy Bromberg"},"dateModified":"2026-02-17T08:00:00-05:00","datePublished":"2026-02-17T08:00:00-05:00","description":"A guest lecture at Stanford’s CS 224G on applying the Theory of Constraints to build better LLM products. Slides and notes.","headline":"Stanford Lecture on Theory of Constraints for AI","image":"https://andybromberg.com/assets/images/og/2026-02-17-toc-ai-stanford.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://andybromberg.com/toc-ai-stanford"},"url":"https://andybromberg.com/toc-ai-stanford"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css?v=1771343645">
+  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1771343645">
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCTL6LCYXH');
+</script><svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="highlighter-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0.02 0.1 Q0.02 0.02, 0.08 0.02 L0.92 0.01 Q0.99 0.01, 0.99 0.08 L0.98 0.92 Q0.98 0.99, 0.92 0.99 L0.08 0.98 Q0.01 0.98, 0.01 0.92 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+</head>
+<body><header class="" role="banner">
+
+  <div class="wrapper"><a class="site-title extra-bold" href="/">andy bromberg</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about">about</a><a class="page-link" href="/recommendations">recommendations</a><a class="page-link external-link" href="/newsletter">newsletter</a><a class="page-link rss-link" href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <header class="post-header"><h1 class="post-title p-name" itemprop="name headline">
+      Stanford Lecture on Theory of Constraints for AI</h1>
+    
+    <div class="post-meta">
+      <div class="post-date"><time class="dt-published" datetime="2026-02-17T08:00:00-05:00" itemprop="datePublished">February 17, 2026
+        </time></div>
+            
+      <div class="article-reading-time">Reading time: about 7 minutes</div>
+    </div>
+      
+  </header><div class="post-content e-content prose" itemprop="articleBody"><div class="post-content-layout post-content-layout--toc">
+        <div class="post-main">
+          <div class="toc toc--mobile">
+            <div class="toc-header">Contents</div>
+            <ul id="toc-mobile" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#the-problem">The Problem</a></li>
+<li class="toc-entry toc-h2"><a href="#the-theory-of-constraints">The Theory of Constraints</a></li>
+<li class="toc-entry toc-h2"><a href="#modeling-the-llm-system">Modeling the LLM System</a></li>
+<li class="toc-entry toc-h2"><a href="#defining-the-goal-and-measuring-progress">Defining the Goal and Measuring Progress</a></li>
+<li class="toc-entry toc-h2"><a href="#evals">Evals</a></li>
+<li class="toc-entry toc-h2"><a href="#practical-examples">Practical Examples</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1-lightwork-knowledge-base">1. Lightwork Knowledge Base</a></li>
+<li class="toc-entry toc-h3"><a href="#2-interface0">2. interface0</a></li>
+<li class="toc-entry toc-h3"><a href="#3-redacted">3. [Redacted]</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#a-key-takeaway">A Key Takeaway</a></li>
+<li class="toc-entry toc-h2"><a href="#bonus-tools-i-cant-live-without">Bonus: Tools I Can’t Live Without</a></li>
+</ul>
+          </div>
+
+          <p>Earlier this month I gave a guest lecture at Stanford’s CS 224G course <em>“Building &amp; Scaling LLM Applications”</em> on applying the Theory of Constraints to building LLM products. Thanks to instructors John Whaley and Jan Jannick for inviting me! Below are the slides from the talk with accompanying notes.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-01-800-b5ddb1420.webp 800w, /assets/images/generated/toc-ai-stanford/slide-01-1000-b5ddb1420.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-01-1200-b5ddb1420.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-01-1600-b5ddb1420.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-01-2000-b5ddb1420.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-01-800-f5040625c.png 800w, /assets/images/generated/toc-ai-stanford/slide-01-1000-f5040625c.png 1000w, /assets/images/generated/toc-ai-stanford/slide-01-1200-f5040625c.png 1200w, /assets/images/generated/toc-ai-stanford/slide-01-1600-f5040625c.png 1600w, /assets/images/generated/toc-ai-stanford/slide-01-2000-f5040625c.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-01-800-f5040625c.png" width="8000" height="4500" /></picture><hr />
+<h2 id="the-problem">
+  
+  
+    The Problem <a href="#the-problem" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-02-800-9631101a9.webp 800w, /assets/images/generated/toc-ai-stanford/slide-02-1000-9631101a9.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-02-1200-9631101a9.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-02-1600-9631101a9.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-02-2000-9631101a9.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-02-800-b8e73fb6f.png 800w, /assets/images/generated/toc-ai-stanford/slide-02-1000-b8e73fb6f.png 1000w, /assets/images/generated/toc-ai-stanford/slide-02-1200-b8e73fb6f.png 1200w, /assets/images/generated/toc-ai-stanford/slide-02-1600-b8e73fb6f.png 1600w, /assets/images/generated/toc-ai-stanford/slide-02-2000-b8e73fb6f.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-02-800-b8e73fb6f.png" width="8000" height="4500" /></picture>
+
+<p>It’s never been easier to build things with LLMs. Anyone can spin up a prototype in an afternoon. But getting from prototype to a <em>good</em> product – one that works reliably, consistently, at quality – is a different challenge entirely.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-05-800-48ceff672.webp 800w, /assets/images/generated/toc-ai-stanford/slide-05-1000-48ceff672.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-05-1200-48ceff672.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-05-1600-48ceff672.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-05-2000-48ceff672.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-05-800-b59e891a5.png 800w, /assets/images/generated/toc-ai-stanford/slide-05-1000-b59e891a5.png 1000w, /assets/images/generated/toc-ai-stanford/slide-05-1200-b59e891a5.png 1200w, /assets/images/generated/toc-ai-stanford/slide-05-1600-b59e891a5.png 1600w, /assets/images/generated/toc-ai-stanford/slide-05-2000-b59e891a5.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-05-800-b59e891a5.png" width="8000" height="4500" /></picture>
+
+<p>The big challenge (and arguably, the magic) with building on LLMs is that they are <strong>non-deterministic</strong>. Ask the same question twice and you get different responses. For a simple factual query that’s fine – both answers above are correct. But when you’re building a product, this variance becomes a real problem.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-06-800-c8358c831.webp 800w, /assets/images/generated/toc-ai-stanford/slide-06-1000-c8358c831.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-06-1200-c8358c831.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-06-1600-c8358c831.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-06-2000-c8358c831.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-06-800-179b6780b.png 800w, /assets/images/generated/toc-ai-stanford/slide-06-1000-179b6780b.png 1000w, /assets/images/generated/toc-ai-stanford/slide-06-1200-179b6780b.png 1200w, /assets/images/generated/toc-ai-stanford/slide-06-1600-179b6780b.png 1600w, /assets/images/generated/toc-ai-stanford/slide-06-2000-179b6780b.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-06-800-179b6780b.png" width="8000" height="4500" /></picture>
+
+<p>And complexity compounds non-determinism. Especially when you chain LLM calls together or admit arbitrary user input, each non-deterministic step multiplies the variance of the next. By the end of a meaningful AI pipeline, things can shoot far off in the wrong direction.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-07-800-f24dc4d18.webp 800w, /assets/images/generated/toc-ai-stanford/slide-07-1000-f24dc4d18.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-07-1200-f24dc4d18.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-07-1600-f24dc4d18.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-07-2000-f24dc4d18.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-07-800-907cd116b.png 800w, /assets/images/generated/toc-ai-stanford/slide-07-1000-907cd116b.png 1000w, /assets/images/generated/toc-ai-stanford/slide-07-1200-907cd116b.png 1200w, /assets/images/generated/toc-ai-stanford/slide-07-1600-907cd116b.png 1600w, /assets/images/generated/toc-ai-stanford/slide-07-2000-907cd116b.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-07-800-907cd116b.png" width="8000" height="4500" /></picture>
+
+<p>This compounding non-determinism causes quality and reliability issues. You can’t always just “vibe” your way to a good product when the output surface is this wide. Enter: <strong>systems thinking</strong>.</p><hr />
+<h2 id="the-theory-of-constraints">
+  
+  
+    The Theory of Constraints <a href="#the-theory-of-constraints" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-08-800-90ee61f35.webp 800w, /assets/images/generated/toc-ai-stanford/slide-08-1000-90ee61f35.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-08-1200-90ee61f35.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-08-1600-90ee61f35.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-08-2000-90ee61f35.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-08-800-4a5d0be56.png 800w, /assets/images/generated/toc-ai-stanford/slide-08-1000-4a5d0be56.png 1000w, /assets/images/generated/toc-ai-stanford/slide-08-1200-4a5d0be56.png 1200w, /assets/images/generated/toc-ai-stanford/slide-08-1600-4a5d0be56.png 1600w, /assets/images/generated/toc-ai-stanford/slide-08-2000-4a5d0be56.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-08-800-4a5d0be56.png" width="8000" height="4500" /></picture>
+
+<p>One framework I’ve found very useful for this is the <strong>Theory of Constraints</strong> (TOC), introduced by Eliyahu Goldratt in his 1984 book <em>The Goal</em>. Yes, it’s a 1980s sales-y looking book about factory management. Bear with me.</p>
+
+<p>(I’ve written about TOC before: <a href="/uwol/theory-of-constraints">Theory of Constraints overview</a> and <a href="/constraints-ai">Applying constraints thinking to AI</a>.)</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-09-800-145c76156.webp 800w, /assets/images/generated/toc-ai-stanford/slide-09-1000-145c76156.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-09-1200-145c76156.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-09-1600-145c76156.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-09-2000-145c76156.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-09-800-7c9f0d97d.png 800w, /assets/images/generated/toc-ai-stanford/slide-09-1000-7c9f0d97d.png 1000w, /assets/images/generated/toc-ai-stanford/slide-09-1200-7c9f0d97d.png 1200w, /assets/images/generated/toc-ai-stanford/slide-09-1600-7c9f0d97d.png 1600w, /assets/images/generated/toc-ai-stanford/slide-09-2000-7c9f0d97d.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-09-800-7c9f0d97d.png" width="8000" height="4500" /></picture>
+
+<p><strong>TOC in one image: The What.</strong> Think of a system as water flowing through a series of pipes. Each pipe section has a different diameter. The total throughput of the system is determined by the <em>narrowest</em> pipe – the bottleneck, or “constraint.” No matter how much you widen other sections, total flow doesn’t increase until you address the bottleneck.</p>
+
+<p>This is one of the core principles of ToC, and it applies broadly. There is almost always <em>one</em> rate-limiting step that is constraining your system. You could improve <em>any</em> other part of the system and it would do <em>nothing</em>.</p>
+
+<p>And note here that “throughput” is meant generally. It can refer to speed, or quality, or any other metric you are measuring. But regardless, in the “pipeline” to “throughput,” there will be one constraint.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-10-800-9f1bfde94.webp 800w, /assets/images/generated/toc-ai-stanford/slide-10-1000-9f1bfde94.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-10-1200-9f1bfde94.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-10-1600-9f1bfde94.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-10-2000-9f1bfde94.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-10-800-3174d75ca.png 800w, /assets/images/generated/toc-ai-stanford/slide-10-1000-3174d75ca.png 1000w, /assets/images/generated/toc-ai-stanford/slide-10-1200-3174d75ca.png 1200w, /assets/images/generated/toc-ai-stanford/slide-10-1600-3174d75ca.png 1600w, /assets/images/generated/toc-ai-stanford/slide-10-2000-3174d75ca.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-10-800-3174d75ca.png" width="8000" height="4500" /></picture>
+
+<p><strong>TOC in a second image: The How.</strong> Goldratt’s five focusing steps:</p>
+
+<ol>
+  <li><strong>Identify</strong> the system’s constraint (the bottleneck)</li>
+  <li><strong>Exploit</strong> the constraint (maximize its performance by leveraging existing resources)</li>
+  <li><strong>Subordinate</strong> everything else (align all other processes to support the bottleneck)</li>
+  <li><strong>Elevate</strong> the constraint (invest to increase the bottleneck’s capacity)</li>
+  <li><strong>Repeat</strong> (prevent inertia – go back to step 1)</li>
+</ol>
+
+<p>If you just do these over and over again, you will fix your problem.</p><hr />
+<h2 id="modeling-the-llm-system">
+  
+  
+    Modeling the LLM System <a href="#modeling-the-llm-system" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-11-800-f83e6d718.webp 800w, /assets/images/generated/toc-ai-stanford/slide-11-1000-f83e6d718.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-11-1200-f83e6d718.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-11-1600-f83e6d718.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-11-2000-f83e6d718.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-11-800-eafd899ea.png 800w, /assets/images/generated/toc-ai-stanford/slide-11-1000-eafd899ea.png 1000w, /assets/images/generated/toc-ai-stanford/slide-11-1200-eafd899ea.png 1200w, /assets/images/generated/toc-ai-stanford/slide-11-1600-eafd899ea.png 1600w, /assets/images/generated/toc-ai-stanford/slide-11-2000-eafd899ea.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-11-800-eafd899ea.png" width="8000" height="4500" /></picture>
+
+<p>To apply TOC, you first need to model and understand the system you are optimizing and define its goal. An LLM application has a few core components: the <strong>system prompt</strong>, the <strong>user prompt</strong>, the <strong>context</strong> (retrieved data, files, etc.), the <strong>tools</strong> available to the model, the <strong>LLM</strong> itself, and the <strong>output</strong>.</p>
+
+<p>I’ve written about this in my <a href="/field-guide-context-engineering">field guide to context engineering</a> and in <a href="/constraints-ai">theory of constraints for AI</a>.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-12-800-588e45ee6.webp 800w, /assets/images/generated/toc-ai-stanford/slide-12-1000-588e45ee6.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-12-1200-588e45ee6.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-12-1600-588e45ee6.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-12-2000-588e45ee6.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-12-800-0baaaf126.png 800w, /assets/images/generated/toc-ai-stanford/slide-12-1000-0baaaf126.png 1000w, /assets/images/generated/toc-ai-stanford/slide-12-1200-0baaaf126.png 1200w, /assets/images/generated/toc-ai-stanford/slide-12-1600-0baaaf126.png 1600w, /assets/images/generated/toc-ai-stanford/slide-12-2000-0baaaf126.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-12-800-0baaaf126.png" width="8000" height="4500" /></picture>
+
+<p>Here’s what that looks like concretely. Imagine you’re building a contract analysis tool: the system prompt says “You are an expert lawyer…”, the user prompt includes the analysis request, the context includes the actual contract document, and a tool like PaddleOCR handles document extraction.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-13-800-661c3912a.webp 800w, /assets/images/generated/toc-ai-stanford/slide-13-1000-661c3912a.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-13-1200-661c3912a.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-13-1600-661c3912a.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-13-2000-661c3912a.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-13-800-d8877d08f.png 800w, /assets/images/generated/toc-ai-stanford/slide-13-1000-d8877d08f.png 1000w, /assets/images/generated/toc-ai-stanford/slide-13-1200-d8877d08f.png 1200w, /assets/images/generated/toc-ai-stanford/slide-13-1600-d8877d08f.png 1600w, /assets/images/generated/toc-ai-stanford/slide-13-2000-d8877d08f.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-13-800-d8877d08f.png" width="8000" height="4500" /></picture>
+
+<p>One thing to note: <strong>you don’t have control over the LLM itself</strong>. You can’t change how Claude or GPT work internally. And honestly, the model is probably not your bottleneck anyway. The frontier models are remarkably capable today.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-14-800-2540476b0.webp 800w, /assets/images/generated/toc-ai-stanford/slide-14-1000-2540476b0.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-14-1200-2540476b0.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-14-1600-2540476b0.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-14-2000-2540476b0.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-14-800-4a49600fb.png 800w, /assets/images/generated/toc-ai-stanford/slide-14-1000-4a49600fb.png 1000w, /assets/images/generated/toc-ai-stanford/slide-14-1200-4a49600fb.png 1200w, /assets/images/generated/toc-ai-stanford/slide-14-1600-4a49600fb.png 1600w, /assets/images/generated/toc-ai-stanford/slide-14-2000-4a49600fb.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-14-800-4a49600fb.png" width="8000" height="4500" /></picture>
+
+<p>What you <em>do</em> have control over are the inputs: the system prompt, user prompt, context, and tools. <strong>One of these is almost always the constraint.</strong> Your first job is to figure out which one.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-15-800-024050a64.webp 800w, /assets/images/generated/toc-ai-stanford/slide-15-1000-024050a64.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-15-1200-024050a64.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-15-1600-024050a64.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-15-2000-024050a64.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-15-800-a90e24003.png 800w, /assets/images/generated/toc-ai-stanford/slide-15-1000-a90e24003.png 1000w, /assets/images/generated/toc-ai-stanford/slide-15-1200-a90e24003.png 1200w, /assets/images/generated/toc-ai-stanford/slide-15-1600-a90e24003.png 1600w, /assets/images/generated/toc-ai-stanford/slide-15-2000-a90e24003.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-15-800-a90e24003.png" width="8000" height="4500" /></picture>
+
+<p>Once you’ve identified the constraint, you can start improving it – adding detail to the system prompt, providing few-shot examples in the user prompt, enriching the context with a database of historical documents, adding a second OCR provider for redundancy. <strong>But remember: one at a time.</strong> This is key to the TOC approach. Change one variable, measure the impact, then reassess.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-16-800-e9b631c07.webp 800w, /assets/images/generated/toc-ai-stanford/slide-16-1000-e9b631c07.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-16-1200-e9b631c07.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-16-1600-e9b631c07.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-16-2000-e9b631c07.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-16-800-a5dcfc841.png 800w, /assets/images/generated/toc-ai-stanford/slide-16-1000-a5dcfc841.png 1000w, /assets/images/generated/toc-ai-stanford/slide-16-1200-a5dcfc841.png 1200w, /assets/images/generated/toc-ai-stanford/slide-16-1600-a5dcfc841.png 1600w, /assets/images/generated/toc-ai-stanford/slide-16-2000-a5dcfc841.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-16-800-a5dcfc841.png" width="8000" height="4500" /></picture>
+
+<p>Sometimes the constraint isn’t a single component but the <strong>system architecture itself</strong>. In that case, you need to change your view of the system. For instance, splitting a single LLM call into a two-stage pipeline – one for data extraction, another for analysis – can dramatically improve results by giving each stage a focused task, better tools, and cleaner context.</p><hr />
+<h2 id="defining-the-goal-and-measuring-progress">
+  
+  
+    Defining the Goal and Measuring Progress <a href="#defining-the-goal-and-measuring-progress" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-17-800-2ed27c1d4.webp 800w, /assets/images/generated/toc-ai-stanford/slide-17-1000-2ed27c1d4.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-17-1200-2ed27c1d4.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-17-1600-2ed27c1d4.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-17-2000-2ed27c1d4.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-17-800-3c8f6e819.png 800w, /assets/images/generated/toc-ai-stanford/slide-17-1000-3c8f6e819.png 1000w, /assets/images/generated/toc-ai-stanford/slide-17-1200-3c8f6e819.png 1200w, /assets/images/generated/toc-ai-stanford/slide-17-1600-3c8f6e819.png 1600w, /assets/images/generated/toc-ai-stanford/slide-17-2000-3c8f6e819.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-17-800-3c8f6e819.png" width="8000" height="4500" /></picture>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-18-800-1d838b684.webp 800w, /assets/images/generated/toc-ai-stanford/slide-18-1000-1d838b684.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-18-1200-1d838b684.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-18-1600-1d838b684.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-18-2000-1d838b684.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-18-800-8fbb5000f.png 800w, /assets/images/generated/toc-ai-stanford/slide-18-1000-8fbb5000f.png 1000w, /assets/images/generated/toc-ai-stanford/slide-18-1200-8fbb5000f.png 1200w, /assets/images/generated/toc-ai-stanford/slide-18-1600-8fbb5000f.png 1600w, /assets/images/generated/toc-ai-stanford/slide-18-2000-8fbb5000f.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-18-800-8fbb5000f.png" width="8000" height="4500" /></picture>
+
+<p>You need to define <strong>The Goal</strong>. As Goldratt puts it: “You cannot understand the meaning of productivity unless you know what the goal is. Until then, you’re just playing a lot of games with numbers and words.”</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-19-800-bf004fc15.webp 800w, /assets/images/generated/toc-ai-stanford/slide-19-1000-bf004fc15.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-19-1200-bf004fc15.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-19-1600-bf004fc15.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-19-2000-bf004fc15.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-19-800-ad6507097.png 800w, /assets/images/generated/toc-ai-stanford/slide-19-1000-ad6507097.png 1000w, /assets/images/generated/toc-ai-stanford/slide-19-1200-ad6507097.png 1200w, /assets/images/generated/toc-ai-stanford/slide-19-1600-ad6507097.png 1600w, /assets/images/generated/toc-ai-stanford/slide-19-2000-ad6507097.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-19-800-ad6507097.png" width="8000" height="4500" /></picture>
+
+<p>The chain of reasoning:</p>
+
+<ul>
+  <li>Good results need <strong>improvement</strong></li>
+  <li>Improvement needs <strong>evals</strong></li>
+  <li>Evals need a <strong>goal</strong></li>
+  <li>A goal needs a <strong>definition</strong></li>
+</ul>
+
+<p>Start at the bottom: define what “good” means for your product, concretely and specifically.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-20-800-bcfa3e56b.webp 800w, /assets/images/generated/toc-ai-stanford/slide-20-1000-bcfa3e56b.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-20-1200-bcfa3e56b.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-20-1600-bcfa3e56b.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-20-2000-bcfa3e56b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-20-800-f88d7a9c0.png 800w, /assets/images/generated/toc-ai-stanford/slide-20-1000-f88d7a9c0.png 1000w, /assets/images/generated/toc-ai-stanford/slide-20-1200-f88d7a9c0.png 1200w, /assets/images/generated/toc-ai-stanford/slide-20-1600-f88d7a9c0.png 1600w, /assets/images/generated/toc-ai-stanford/slide-20-2000-f88d7a9c0.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-20-800-f88d7a9c0.png" width="8000" height="4500" /></picture>
+
+<p>We said our goal is <strong>consistent high quality outputs</strong>. But how do you actually measure that? We <em>need</em> to in order to apply the Theory of Constraints and see if we’re improving or not.</p><hr />
+<h2 id="evals">
+  
+  
+    Evals <a href="#evals" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-21-800-8a32b611c.webp 800w, /assets/images/generated/toc-ai-stanford/slide-21-1000-8a32b611c.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-21-1200-8a32b611c.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-21-1600-8a32b611c.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-21-2000-8a32b611c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-21-800-ad0d0cb8f.png 800w, /assets/images/generated/toc-ai-stanford/slide-21-1000-ad0d0cb8f.png 1000w, /assets/images/generated/toc-ai-stanford/slide-21-1200-ad0d0cb8f.png 1200w, /assets/images/generated/toc-ai-stanford/slide-21-1600-ad0d0cb8f.png 1600w, /assets/images/generated/toc-ai-stanford/slide-21-2000-ad0d0cb8f.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-21-800-ad0d0cb8f.png" width="8000" height="4500" /></picture>
+
+<p>In the AI world, ways of measuring against a goal are called “evals.” In my view, there are categorically two approaches:</p>
+
+<ol>
+  <li><strong>“Proper” evals</strong> – structured, automated evaluation with scored results. (It is <em>much</em> easier to build a good product if you can create these!)</li>
+  <li><strong>Vibe evals</strong> – a gut-check approach.</li>
+</ol>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-22-800-0f613e7ea.webp 800w, /assets/images/generated/toc-ai-stanford/slide-22-1000-0f613e7ea.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-22-1200-0f613e7ea.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-22-1600-0f613e7ea.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-22-2000-0f613e7ea.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-22-800-a31a65fe4.png 800w, /assets/images/generated/toc-ai-stanford/slide-22-1000-a31a65fe4.png 1000w, /assets/images/generated/toc-ai-stanford/slide-22-1200-a31a65fe4.png 1200w, /assets/images/generated/toc-ai-stanford/slide-22-1600-a31a65fe4.png 1600w, /assets/images/generated/toc-ai-stanford/slide-22-2000-a31a65fe4.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-22-800-a31a65fe4.png" width="8000" height="4500" /></picture>
+
+<p>For <strong>proper evals</strong>: in general, you want to build and maintain an “eval set” of test cases, run your system against it continually, and update accordingly.</p>
+
+<p>(If you’ve wondered by Mercor, Scale AI, and Surge AI are as big as they are… it’s because of this. They are providing evals to every major AI lab and application company. It’s big business.)</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-23-800-0b4f8eda8.webp 800w, /assets/images/generated/toc-ai-stanford/slide-23-1000-0b4f8eda8.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-23-1200-0b4f8eda8.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-23-1600-0b4f8eda8.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-23-2000-0b4f8eda8.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-23-800-db431d63b.png 800w, /assets/images/generated/toc-ai-stanford/slide-23-1000-db431d63b.png 1000w, /assets/images/generated/toc-ai-stanford/slide-23-1200-db431d63b.png 1200w, /assets/images/generated/toc-ai-stanford/slide-23-1600-db431d63b.png 1600w, /assets/images/generated/toc-ai-stanford/slide-23-2000-db431d63b.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-23-800-db431d63b.png" width="8000" height="4500" /></picture>
+
+<p>Here’s a concrete example: <strong>document extraction</strong>. You have pre-labeled documents with known-good structured output. You run your system on the same inputs, compute similarity between the expected and actual output, and try to maximize that score. This is the dream scenario for proper evals.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-24-800-34ed80505.webp 800w, /assets/images/generated/toc-ai-stanford/slide-24-1000-34ed80505.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-24-1200-34ed80505.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-24-1600-34ed80505.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-24-2000-34ed80505.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-24-800-051ec9f08.png 800w, /assets/images/generated/toc-ai-stanford/slide-24-1000-051ec9f08.png 1000w, /assets/images/generated/toc-ai-stanford/slide-24-1200-051ec9f08.png 1200w, /assets/images/generated/toc-ai-stanford/slide-24-1600-051ec9f08.png 1600w, /assets/images/generated/toc-ai-stanford/slide-24-2000-051ec9f08.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-24-800-051ec9f08.png" width="8000" height="4500" /></picture>
+
+<p>For <strong>vibe evals</strong>: sometimes your product’s outputs are too varied or subjective for structured scoring. In those cases, you just… look at the results and ask yourself how good they are. Not as good, but much easier.</p>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-25-800-e617b0299.webp 800w, /assets/images/generated/toc-ai-stanford/slide-25-1000-e617b0299.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-25-1200-e617b0299.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-25-1600-e617b0299.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-25-2000-e617b0299.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-25-800-d21a3a63b.png 800w, /assets/images/generated/toc-ai-stanford/slide-25-1000-d21a3a63b.png 1000w, /assets/images/generated/toc-ai-stanford/slide-25-1200-d21a3a63b.png 1200w, /assets/images/generated/toc-ai-stanford/slide-25-1600-d21a3a63b.png 1600w, /assets/images/generated/toc-ai-stanford/slide-25-2000-d21a3a63b.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-25-800-d21a3a63b.png" width="8000" height="4500" /></picture>
+
+<p>The full spectrum of eval options:</p>
+
+<ol>
+  <li><strong>Proper eval</strong>: pre-labeled results that should match exactly</li>
+  <li><strong>Proper eval</strong>: pre-labeled results you can compute similarity to</li>
+  <li><strong>Proper eval</strong>: LLM-as-a-judge of the results (this is a very common approach right now)</li>
+  <li><strong>Vibe eval</strong>: how does it <em>feel</em>?</li>
+</ol>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-30-800-ddc07836b.webp 800w, /assets/images/generated/toc-ai-stanford/slide-30-1000-ddc07836b.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-30-1200-ddc07836b.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-30-1600-ddc07836b.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-30-2000-ddc07836b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-30-800-4b68a7b22.png 800w, /assets/images/generated/toc-ai-stanford/slide-30-1000-4b68a7b22.png 1000w, /assets/images/generated/toc-ai-stanford/slide-30-1200-4b68a7b22.png 1200w, /assets/images/generated/toc-ai-stanford/slide-30-1600-4b68a7b22.png 1600w, /assets/images/generated/toc-ai-stanford/slide-30-2000-4b68a7b22.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-30-800-4b68a7b22.png" width="8000" height="4500" /></picture>
+
+<p>Putting it all together into a repeatable improvement loop:</p>
+
+<ol>
+  <li><strong>Diagram out your system</strong> (map the components and how they connect)</li>
+  <li><strong>Define your goal &amp; eval process</strong> (proper or vibe evals)</li>
+  <li><strong>Assess where the constraint is</strong> (system prompt, user prompt, context, tools, or the system view itself)</li>
+  <li><strong>Use TOC</strong>: exploit the constraint, subordinate everything else, elevate the constraint… and measure evals each time</li>
+  <li><strong>Go to step 3</strong></li>
+</ol>
+
+<p>This sounds boring and programmatic and obvious… <strong>but it works</strong> and is what powers the most impressive/magical AI applications. And most people do not approach it so rigorously.</p>
+
+<p>(Bonus: it actually works for most any problem in life or business. Not just AI!)</p><hr />
+<h2 id="practical-examples">
+  
+  
+    Practical Examples <a href="#practical-examples" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-31-800-660794f80.webp 800w, /assets/images/generated/toc-ai-stanford/slide-31-1000-660794f80.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-31-1200-660794f80.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-31-1600-660794f80.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-31-2000-660794f80.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-31-800-2b301fe56.png 800w, /assets/images/generated/toc-ai-stanford/slide-31-1000-2b301fe56.png 1000w, /assets/images/generated/toc-ai-stanford/slide-31-1200-2b301fe56.png 1200w, /assets/images/generated/toc-ai-stanford/slide-31-1600-2b301fe56.png 1600w, /assets/images/generated/toc-ai-stanford/slide-31-2000-2b301fe56.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-31-800-2b301fe56.png" width="8000" height="4500" /></picture>
+
+<p>Three practical examples of applying this framework:</p>
+<h3 id="1-lightwork-knowledge-base">
+  
+  
+    1. Lightwork Knowledge Base <a href="#1-lightwork-knowledge-base" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-32-800-8033ebcaa.webp 800w, /assets/images/generated/toc-ai-stanford/slide-32-1000-8033ebcaa.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-32-1200-8033ebcaa.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-32-1600-8033ebcaa.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-32-2000-8033ebcaa.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-32-800-3b9038723.png 800w, /assets/images/generated/toc-ai-stanford/slide-32-1000-3b9038723.png 1000w, /assets/images/generated/toc-ai-stanford/slide-32-1200-3b9038723.png 1200w, /assets/images/generated/toc-ai-stanford/slide-32-1600-3b9038723.png 1600w, /assets/images/generated/toc-ai-stanford/slide-32-2000-3b9038723.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-32-800-3b9038723.png" width="8000" height="4500" /></picture>
+
+<p><a href="https://lightworkhome.com" class="external-link" target="_blank" rel="noopener noreferrer">Lightwork Home Health</a> built a knowledge base tool where our team can ask questions and get draft email responses or segments of reports grounded in prior research and reports.</p>
+
+<p><strong>Eval approach</strong>: holdback a set of known-good emails (with the client inquiry) and segments of reports (with the raw data). Run the latest system against these inputs. Use an LLM as a judge to compare the holdback with the actual outputs.</p>
+
+<p><strong>TOC application</strong>: the original constraint was the system prompt. After improving that, the ongoing constraint has been context – needing more and better source material.</p>
+<h3 id="2-interface0">
+  
+  
+    2. interface0 <a href="#2-interface0" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-33-800-4da8f5532.webp 800w, /assets/images/generated/toc-ai-stanford/slide-33-1000-4da8f5532.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-33-1200-4da8f5532.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-33-1600-4da8f5532.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-33-2000-4da8f5532.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-33-800-ab328e2a5.png 800w, /assets/images/generated/toc-ai-stanford/slide-33-1000-ab328e2a5.png 1000w, /assets/images/generated/toc-ai-stanford/slide-33-1200-ab328e2a5.png 1200w, /assets/images/generated/toc-ai-stanford/slide-33-1600-ab328e2a5.png 1600w, /assets/images/generated/toc-ai-stanford/slide-33-2000-ab328e2a5.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-33-800-ab328e2a5.png" width="8000" height="4500" /></picture>
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-34-800-e47a2c3ba.webp 800w, /assets/images/generated/toc-ai-stanford/slide-34-1000-e47a2c3ba.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-34-1200-e47a2c3ba.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-34-1600-e47a2c3ba.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-34-2000-e47a2c3ba.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-34-800-0d7823121.png 800w, /assets/images/generated/toc-ai-stanford/slide-34-1000-0d7823121.png 1000w, /assets/images/generated/toc-ai-stanford/slide-34-1200-0d7823121.png 1200w, /assets/images/generated/toc-ai-stanford/slide-34-1600-0d7823121.png 1600w, /assets/images/generated/toc-ai-stanford/slide-34-2000-0d7823121.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-34-800-0d7823121.png" width="8000" height="4500" /></picture>
+
+<p><a href="https://interface0.com" class="external-link" target="_blank" rel="noopener noreferrer">interface0</a> is an AI interface for power users and teams. Because user requests are so varied (and it is sub-scale), proper evals aren’t feasible here – it’s pure <strong>vibe evals</strong>.</p>
+
+<p><strong>TOC application</strong>: the original constraint was the system prompt. The second constraint was user prompts, which was addressed by adding templates. The ongoing constraints alternate between tools and context.</p>
+<h3 id="3-redacted">
+  
+  
+    3. [Redacted] <a href="#3-redacted" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-35-800-128e94084.webp 800w, /assets/images/generated/toc-ai-stanford/slide-35-1000-128e94084.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-35-1200-128e94084.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-35-1600-128e94084.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-35-2000-128e94084.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-35-800-103d2a2d7.png 800w, /assets/images/generated/toc-ai-stanford/slide-35-1000-103d2a2d7.png 1000w, /assets/images/generated/toc-ai-stanford/slide-35-1200-103d2a2d7.png 1200w, /assets/images/generated/toc-ai-stanford/slide-35-1600-103d2a2d7.png 1600w, /assets/images/generated/toc-ai-stanford/slide-35-2000-103d2a2d7.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-35-800-103d2a2d7.png" width="8000" height="4500" /></picture>
+
+<p>A large enterprise AI implementation (details redacted for confidentiality).</p>
+
+<p><strong>Eval approach</strong>: expert feedback on results (some structured, some unstructured) combined with user feedback (unstructured).</p>
+
+<p><strong>TOC application</strong>: the original constraint was system prompts for specific subagents. Then it moved to tools. Now it’s back to context and system prompts. The constraint keeps moving – which is exactly what should happen.</p><hr />
+<h2 id="a-key-takeaway">
+  
+  
+    A Key Takeaway <a href="#a-key-takeaway" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-37-800-f60b01255.webp 800w, /assets/images/generated/toc-ai-stanford/slide-37-1000-f60b01255.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-37-1200-f60b01255.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-37-1600-f60b01255.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-37-2000-f60b01255.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-37-800-80dbe0ff2.png 800w, /assets/images/generated/toc-ai-stanford/slide-37-1000-80dbe0ff2.png 1000w, /assets/images/generated/toc-ai-stanford/slide-37-1200-80dbe0ff2.png 1200w, /assets/images/generated/toc-ai-stanford/slide-37-1600-80dbe0ff2.png 1600w, /assets/images/generated/toc-ai-stanford/slide-37-2000-80dbe0ff2.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-37-800-80dbe0ff2.png" width="8000" height="4500" /></picture>
+
+<p>The state of play today: <strong>the LLM is ~never the constraint.</strong> The frontier models are good enough to do just about anything. If we buy the Theory of Constraints and the idea there <em>is</em> a constraint in the first place bottlenecking quality, that means there are things <em>in your control</em> to get your product to the quality and consistency you want.</p>
+
+<p>It is your job to map the system, build evals, find the current constraint, and fix it. Rinse and repeat.</p><hr />
+<h2 id="bonus-tools-i-cant-live-without">
+  
+  
+    Bonus: Tools I Can’t Live Without <a href="#bonus-tools-i-cant-live-without" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<picture loading="lazy" class="article-image"><source srcset="/assets/images/generated/toc-ai-stanford/slide-39-800-fc7ac624d.webp 800w, /assets/images/generated/toc-ai-stanford/slide-39-1000-fc7ac624d.webp 1000w, /assets/images/generated/toc-ai-stanford/slide-39-1200-fc7ac624d.webp 1200w, /assets/images/generated/toc-ai-stanford/slide-39-1600-fc7ac624d.webp 1600w, /assets/images/generated/toc-ai-stanford/slide-39-2000-fc7ac624d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/toc-ai-stanford/slide-39-800-d44901bd2.png 800w, /assets/images/generated/toc-ai-stanford/slide-39-1000-d44901bd2.png 1000w, /assets/images/generated/toc-ai-stanford/slide-39-1200-d44901bd2.png 1200w, /assets/images/generated/toc-ai-stanford/slide-39-1600-d44901bd2.png 1600w, /assets/images/generated/toc-ai-stanford/slide-39-2000-d44901bd2.png 2000w" type="image/png" /><img src="/assets/images/generated/toc-ai-stanford/slide-39-800-d44901bd2.png" width="8000" height="4500" /></picture>
+
+<p>A snapshot of the tools I was finding most useful as of February 2026 (probably already out of date by the time you read this).</p><hr />
+
+<p>If you have questions or want to discuss any of this, feel free to reach out: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a>.</p><hr class="end-of-article-divider" />
+<h2 class="no_toc">
+  
+  
+    Looking for more to read? <a href="#bonus-tools-i-cant-live-without" class="anchor-link"><i class="fas fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/clean-electrolytes">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/clean-electrolytes">Someone, please make clean electrolytes (recipes included)</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com" class="external-link" target="_blank" rel="noopener noreferrer">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com" class="mailto-link">andy@andybromberg.com</a></p>
+</div>
+
+        </div>
+
+        <aside class="post-toc" aria-label="Table of contents">
+          <div class="post-toc-scroll">
+            <div class="toc toc--floating">
+              <div class="toc-header">Contents</div>
+              <ul id="toc-sidebar" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#the-problem">The Problem</a></li>
+<li class="toc-entry toc-h2"><a href="#the-theory-of-constraints">The Theory of Constraints</a></li>
+<li class="toc-entry toc-h2"><a href="#modeling-the-llm-system">Modeling the LLM System</a></li>
+<li class="toc-entry toc-h2"><a href="#defining-the-goal-and-measuring-progress">Defining the Goal and Measuring Progress</a></li>
+<li class="toc-entry toc-h2"><a href="#evals">Evals</a></li>
+<li class="toc-entry toc-h2"><a href="#practical-examples">Practical Examples</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1-lightwork-knowledge-base">1. Lightwork Knowledge Base</a></li>
+<li class="toc-entry toc-h3"><a href="#2-interface0">2. interface0</a></li>
+<li class="toc-entry toc-h3"><a href="#3-redacted">3. [Redacted]</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#a-key-takeaway">A Key Takeaway</a></li>
+<li class="toc-entry toc-h2"><a href="#bonus-tools-i-cant-live-without">Bonus: Tools I Can’t Live Without</a></li>
+</ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <script>
+        // Progressive enhancement: highlight active section in the floating TOC.
+        // (The TOC still works fully with JS disabled.)
+        (function () {
+          if (!('IntersectionObserver' in window)) return;
+
+          var tocRoot = document.querySelector('.post-toc');
+          var contentRoot = document.querySelector('.post-main');
+          if (!tocRoot || !contentRoot) return;
+
+          var tocScroll = tocRoot.querySelector('.post-toc-scroll') || tocRoot;
+
+          var tocLinks = Array.prototype.slice.call(
+            tocRoot.querySelectorAll('a[href^="#"]')
+          );
+          if (!tocLinks.length) return;
+
+          var linkById = Object.create(null);
+          tocLinks.forEach(function (a) {
+            var href = a.getAttribute('href');
+            if (!href || href.length < 2) return;
+            linkById[href.slice(1)] = a;
+          });
+
+          var headings = Array.prototype.slice.call(
+            contentRoot.querySelectorAll('h2[id], h3[id], h4[id]')
+          );
+          if (!headings.length) return;
+
+          // Map any heading id -> its parent H2/H3 id (so we can expand the right subtree).
+          var parentH2ById = Object.create(null);
+          var parentH3ById = Object.create(null);
+          var currentH2 = null;
+          var currentH3 = null;
+          headings.forEach(function (h) {
+            var tag = (h.tagName || '').toUpperCase();
+            if (tag === 'H2') {
+              currentH2 = h.id;
+              currentH3 = null;
+            }
+            if (tag === 'H3') {
+              currentH3 = h.id;
+            }
+
+            if (h.id && currentH2) parentH2ById[h.id] = currentH2;
+            if (h.id && currentH3) parentH3ById[h.id] = currentH3;
+            if (tag === 'H3' && h.id) parentH3ById[h.id] = h.id; // self
+          });
+
+          var active = null;
+          var expandedH2 = null;
+          var expandedH3 = null;
+
+          function updateTocFade() {
+            if (!tocScroll) return;
+            var canScroll = tocScroll.scrollHeight > tocScroll.clientHeight + 1;
+            tocScroll.classList.toggle('is-scrollable', !!canScroll);
+            if (!canScroll) {
+              tocScroll.classList.add('is-at-top');
+              tocScroll.classList.add('is-at-bottom');
+              return;
+            }
+            tocScroll.classList.toggle('is-at-top', tocScroll.scrollTop <= 1);
+            tocScroll.classList.toggle(
+              'is-at-bottom',
+              tocScroll.scrollTop + tocScroll.clientHeight >= tocScroll.scrollHeight - 1
+            );
+          }
+
+          function setActive(id) {
+            if (!id || active === id) return;
+            if (active && linkById[active]) linkById[active].classList.remove('is-active');
+            active = id;
+            if (linkById[active]) linkById[active].classList.add('is-active');
+
+            var h2 = parentH2ById[active] || active;
+            if (h2 !== expandedH2) {
+              if (expandedH2 && linkById[expandedH2]) {
+                var prevLi = linkById[expandedH2].closest('li.toc-entry.toc-h2');
+                if (prevLi) prevLi.classList.remove('is-expanded');
+              }
+              expandedH2 = h2;
+              if (linkById[expandedH2]) {
+                var nextLi = linkById[expandedH2].closest('li.toc-entry.toc-h2');
+                if (nextLi) nextLi.classList.add('is-expanded');
+              }
+            }
+
+            var h3 = parentH3ById[active] || null;
+            if (h3 !== expandedH3) {
+              if (expandedH3 && linkById[expandedH3]) {
+                var prevH3Li = linkById[expandedH3].closest('li.toc-entry.toc-h3');
+                if (prevH3Li) prevH3Li.classList.remove('is-expanded');
+              }
+              expandedH3 = h3;
+              if (expandedH3 && linkById[expandedH3]) {
+                var nextH3Li = linkById[expandedH3].closest('li.toc-entry.toc-h3');
+                if (nextH3Li) nextH3Li.classList.add('is-expanded');
+              }
+            }
+          }
+
+          var observer = new IntersectionObserver(
+            function (entries) {
+              // Prefer the earliest heading that is currently intersecting.
+              var visible = entries
+                .filter(function (e) { return e.isIntersecting; })
+                .sort(function (a, b) { return a.boundingClientRect.top - b.boundingClientRect.top; });
+              if (visible.length && visible[0].target && visible[0].target.id) {
+                setActive(visible[0].target.id);
+              }
+            },
+            { root: null, rootMargin: '0px 0px -70% 0px', threshold: [0, 1] }
+          );
+
+          headings.forEach(function (h) { observer.observe(h); });
+
+          // Initialize based on the current hash, if any.
+          if (window.location.hash) setActive(window.location.hash.slice(1));
+
+          // Fade top/bottom of TOC when it overflows (but keep scrollable; hide scrollbar).
+          updateTocFade();
+          tocScroll.addEventListener('scroll', updateTocFade, { passive: true });
+          window.addEventListener('resize', updateTocFade);
+        })();
+      </script></div><a class="u-url" href="/toc-ai-stanford" hidden></a>
+</article>
+  
+      </div>
+    </main></body>
+
+</html>
