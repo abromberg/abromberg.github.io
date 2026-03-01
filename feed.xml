@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-03-01T13:59:53-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">I don’t write code anymore</title><link href="https://andybromberg.com/i-dont-write-code-anymore" rel="alternate" type="text/html" title="I don’t write code anymore" /><published>2026-02-21T05:00:00-08:00</published><updated>2026-02-21T05:00:00-08:00</updated><id>https://andybromberg.com/i-dont-write-code-anymore</id><content type="html" xml:base="https://andybromberg.com/i-dont-write-code-anymore"><![CDATA[<p>Well, it happened. As of mid-February 2026, I effectively no longer handwrite code.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-03-01T14:07:32-08:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Collaborative Folders: multiplayer notes for Obsidian</title><link href="https://andybromberg.com/collaborative-folders" rel="alternate" type="text/html" title="Collaborative Folders: multiplayer notes for Obsidian" /><published>2026-02-21T05:00:00-08:00</published><updated>2026-02-21T05:00:00-08:00</updated><id>https://andybromberg.com/collaborative-folders</id><content type="html" xml:base="https://andybromberg.com/collaborative-folders"><![CDATA[<p><a href="//collaborativefolders.com" target="_blank" rel="noopener noreferrer"><picture loading="lazy"><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-be0322fd8.webp 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-be0322fd8.webp 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-be0322fd8.webp 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-be0322fd8.webp 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-be0322fd8.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-eb033f817.png 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-eb033f817.png 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-eb033f817.png 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-eb033f817.png 2000w" type="image/png" /><img src="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png" width="2340" height="936" /></picture>
+</a></p>
+
+<p>I <em>love</em> <a href="https://obsidian.md">Obsidian</a><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">So much, in fact, this blog uses a color palette, <a href="https://stephango.com/flexoki">Flexoki</a>, designed by Obsidian CEO Steph Ango.</span>, but I <em>hate</em> copying my notes out into Google Docs to share and edit them with teammates.</p>
+
+<p>So I built an Obsidian Plugin called <a href="https://collaborativefolders.com">Collaborative Folders</a> that enables real-time, end-to-end encrypted, Google Docs-style multiplayer editing of files inside Obsidian. Here’s a demo:</p>
+
+<video controls="" muted="" loop="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
+<source src="/assets/images/collaborative-folders/collab-demo.mp4" type="video/mp4" />
+If the video doesn't play, <a href="/assets/images/collaborative-folders/collab-demo.mp4">open it directly</a>.
+</video>
+
+<hr />
+
+<p>Basically: share a folder with another Collaborative Folders user and the files inside that folder will stay in sync between your local Obsidian instances. You can edit them together and see each other’s cursors. Images and other attachments come along for the ride, too. And you can generate share links for files that deeplink into the recipient’s own Obsidian vault.</p>
+
+<p>This is built with a relay server that handles communication between your Obsidian instances, but that relay server can’t see the content of the notes — they are encrypted end-to-end.</p>
+
+<p>You can use my hosted relay server for a monthly fee or easily deploy your own (instructions for the latter available <a href="https://github.com/abromberg/obsidian-collaborative-folders">on GitHub</a>, along with the entire plugin &amp; server MIT-licensed source code).</p>
+
+<p>Check it all out at <a href="https://collaborativefolders.com">collaborativefolders.com</a> and let me know what you think! Would love to hear feedback. It is very much a beta product, so follow typical backup precautions…</p>
+
+<p><em>p.s. the valiant Obsidian plugin reviewing team is facing an onslaught of submissions due to the rise in vibecoded plugins. It may be weeks or months until they get to this one and add it to the real directory — on the site I have workaround installation instructions. But in the meantime, maybe give an emoji reaction or polite supportive comment on the <a href="https://github.com/obsidianmd/obsidian-releases/pull/10655">GitHub PR</a> for my plugin, or ping anyone you know at Obsidian :)</em></p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/i-dont-write-code-anymore">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/i-dont-write-code-anymore">I don't write code anymore</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Real-time, multiplayer shared folders and notes for Obsidian. Everything you love about Google Docs, but in your lovely local Obsidian instance.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I don’t write code anymore</title><link href="https://andybromberg.com/i-dont-write-code-anymore" rel="alternate" type="text/html" title="I don’t write code anymore" /><published>2026-02-21T05:00:00-08:00</published><updated>2026-02-21T05:00:00-08:00</updated><id>https://andybromberg.com/i-dont-write-code-anymore</id><content type="html" xml:base="https://andybromberg.com/i-dont-write-code-anymore"><![CDATA[<p>Well, it happened. As of mid-February 2026, I effectively no longer handwrite code.</p>
 
 <p>If you had asked me six weeks ago when we’d cross that chasm, I would have said “maybe end of 2026.” But life comes at you fast.</p>
 
@@ -46,11 +106,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/collaborative-folders">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/collaborative-folders">Collaborative Folders: multiplayer notes for Obsidian</a>
     
   </div>
 </nav>
@@ -1237,65 +1301,4 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Congruence logs everything, which means streaks & Minimum Effective Quantification are easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Intro to Congruence</title><link href="https://andybromberg.com/congruence/intro" rel="alternate" type="text/html" title="Intro to Congruence" /><published>2026-01-11T09:00:00-08:00</published><updated>2026-01-11T09:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-1-intro</id><content type="html" xml:base="https://andybromberg.com/congruence/intro"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"></div>
-<div class="series-nav-center">Congruence: a very personal app · section 1/8</div>
-<div class="series-nav-next"><a href="/congruence/streaks-meq">Streaks &amp; MEQ →</a></div>
-</div>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/app-icon-800-65f67900a.webp 800w, /assets/images/generated/congruence/app-icon-1000-65f67900a.webp 1000w, /assets/images/generated/congruence/app-icon-1200-65f67900a.webp 1200w, /assets/images/generated/congruence/app-icon-1450-65f67900a.webp 1450w" type="image/webp" /><source srcset="/assets/images/generated/congruence/app-icon-800-ba5a9c6b1.png 800w, /assets/images/generated/congruence/app-icon-1000-ba5a9c6b1.png 1000w, /assets/images/generated/congruence/app-icon-1200-ba5a9c6b1.png 1200w, /assets/images/generated/congruence/app-icon-1450-ba5a9c6b1.png 1450w" type="image/png" /><img src="/assets/images/generated/congruence/app-icon-800-ba5a9c6b1.png" width="1450" height="580" /></picture>
-
-<p>My favorite — and most-opened — app is called Congruence. I am the only user.</p>
-
-<p>I’ve mentioned home-cooked software before, and cited <a href="https://www.robinsloan.com/notes/home-cooked-app/">this post</a> by Robin Sloan:</p>
-
-<blockquote>
-  <p>When you liberate programming from the requirement to be professional and scalable, it becomes a different activity altogether, just as cooking at home is really nothing like cooking in a commercial kitchen.</p>
-</blockquote>
-
-<p>Congruence is exactly such a home-cooked meal — a utility app that is steadily wiping out the need for many other apps on my phone. It is perfectly-suited for how <em>I</em> want some of the following use cases to be managed and experienced:</p>
-
-<ol>
-  <li>Scheduling, timeblocking, and reminders</li>
-  <li>Daily checklists, routines, and habits</li>
-  <li>Capturing notes and quickly interacting with AI</li>
-  <li>Meditating &amp; breathwork</li>
-  <li>Tracking people to call</li>
-  <li>Tracking my mood</li>
-  <li>And other utility functions like access management</li>
-</ol>
-
-<p>It consists of an iOS app (on both my main &amp; Freedom phones — more on that later), and a desktop Mac app, with all data synced together, and is broken down into a number of “modules” targeting many of those use cases I just mentioned. You can see them as buttons in the top section of the home screen here:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/modules-schedule-800-1d47aa5ca.webp 800w, /assets/images/generated/congruence/modules-schedule-1000-1d47aa5ca.webp 1000w, /assets/images/generated/congruence/modules-schedule-1200-1d47aa5ca.webp 1200w, /assets/images/generated/congruence/modules-schedule-1600-1d47aa5ca.webp 1600w, /assets/images/generated/congruence/modules-schedule-2000-1d47aa5ca.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png 800w, /assets/images/generated/congruence/modules-schedule-1000-71edc27d4.png 1000w, /assets/images/generated/congruence/modules-schedule-1200-71edc27d4.png 1200w, /assets/images/generated/congruence/modules-schedule-1600-71edc27d4.png 1600w, /assets/images/generated/congruence/modules-schedule-2000-71edc27d4.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png" width="2870" height="1146" /></picture>
-
-<p>This post series will briefly explain each of the modules.</p>
-
-<p>Below the module bar is the heart of the app: a timeblocked, templated schedule. Each day has a different schedule, including general timeblocks (“Work”) and reminders / tasks. You can see in that screenshot, for instance, completed Vibe Check and Meditation sessions (both linked to specific modules), as well as habits I still need to complete (750 Words, 1 Commit), and more.</p>
-
-<p>As the day progresses, some of these items need to be checked off and some simply drop into the past. Some send me notifications (“Gym in 15 minutes!”).</p>
-
-<p>You can also see “Weekly Checklist” on there: it’s a Sunday as I’m writing this, which means I do my weekly review / prep habit. Tapping into that item shows a checklist of such items (reviewing priorities, sending updates, etc.). Every day also has its own Evening Checklist in a similar format.</p>
-
-<p>I’m having a blast building this app. It is so much fun to build something so narrowly focused on my own idiosyncrasies, and it turns out to be tremendously useful, too.</p>
-
-<p>Why am I publishing this post about an n=1 app that nobody else can use? Honestly, mainly to catalogue my current thinking here for later review. But also perhaps in the hopes that it might inspire others to build their own personal apps to, well… bring them more into congruence.</p>
-
-<p>Let’s check out the features, starting with <a href="/congruence/streaks-meq">Streaks &amp; MEQ</a>.</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"></div>
-<div class="series-nav-center">Congruence: a very personal app · section 1/8</div>
-<div class="series-nav-next"><a href="/congruence/streaks-meq">Streaks &amp; MEQ →</a></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[An introduction to Congruence, my favorite app on my phone and computer. There's only one user. Me.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-1-intro.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-1-intro.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Congruence logs everything, which means streaks & Minimum Effective Quantification are easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-2-streaks-meq.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
