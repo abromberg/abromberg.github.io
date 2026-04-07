@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-04-05T14:29:48-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">How to pick the best air purifier, objectively</title><link href="https://andybromberg.com/picking-air-purifiers" rel="alternate" type="text/html" title="How to pick the best air purifier, objectively" /><published>2026-04-04T06:00:00-07:00</published><updated>2026-04-04T06:00:00-07:00</updated><id>https://andybromberg.com/picking-air-purifiers</id><content type="html" xml:base="https://andybromberg.com/picking-air-purifiers"><![CDATA[<p><strong>Short answer:</strong> use <a href="https://purifiers.lightworkhome.com/">Lightwork’s Air Purifier Guide</a> — 100% free; no signup required; no affiliate links, partnerships, or bias; completely data-driven, quantitative, and transparent.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-04-07T15:49:18-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Theory of Constraints: the (Claude) Skill</title><link href="https://andybromberg.com/theory-of-constraints-skill" rel="alternate" type="text/html" title="Theory of Constraints: the (Claude) Skill" /><published>2026-04-07T06:00:00-07:00</published><updated>2026-04-07T06:00:00-07:00</updated><id>https://andybromberg.com/theory-of-constraints-skill</id><content type="html" xml:base="https://andybromberg.com/theory-of-constraints-skill"><![CDATA[<p>If you’re new to the blog, you should know that I like the Theory of Constraints a <em>lot</em> (see <a href="/uwol/theory-of-constraints">a primer</a> worth reading before going further).</p>
+
+<p>This blog post is about a Claude skill I made encoding ToC’s “Thinking Processes,” which I contend can probably help you find solutions for most every problem you are facing. If you want to try the skill, go into your command line and run (assuming you already use Claude Code):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude plugin marketplace add abromberg/toc-coaching-skill
+claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
+</code></pre></div></div>
+
+<p>Then pop open <code class="language-plaintext highlighter-rouge">claude</code> and type <code class="language-plaintext highlighter-rouge">/toc-coaching [whatever your problem is]</code>.</p>
+
+<p>It will begin to ask you questions, generate diagrams, and pull the solution out of you.</p>
+
+<p>The repo with code <a href="https://github.com/abromberg/toc-coaching-skill">is here</a>. Here’s a shot of an in-progress “Evaporating Cloud” and the next (structured!) question for the user, making it easy to keep moving through the exercise:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/theory-of-constraints-skill/full-screenshot-800-e55a653dc.webp 800w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1000-e55a653dc.webp 1000w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1200-e55a653dc.webp 1200w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1600-e55a653dc.webp 1600w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-2000-e55a653dc.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/theory-of-constraints-skill/full-screenshot-800-9451b4660.png 800w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1000-9451b4660.png 1000w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1200-9451b4660.png 1200w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1600-9451b4660.png 1600w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-2000-9451b4660.png 2000w" type="image/png" /><img src="/assets/images/generated/theory-of-constraints-skill/full-screenshot-800-9451b4660.png" width="3182" height="2058" /></picture>
+
+<h2 id="the-thinking-processes">The Thinking Processes</h2>
+
+<p>ToC, thankfully, is more than just a good theory of <em>how</em> systems work. Its creator, Eli Goldratt, also created what he refers to as the <a href="https://en.wikipedia.org/wiki/Thinking_processes_(theory_of_constraints)">“Thinking Processes”</a>. I think these can be used to solve just about any problem.</p>
+
+<p>The Thinking Processes — the Current Reality Tree (CRT), the Evaporating Cloud (EC), and the like — are highly structured lines of inquiry which help perform the necessary ToC steps to solve your problem.</p>
+
+<p><strong>Most every time I have rigorously followed these Thinking Processes when faced with a problem, they have led me straight to the solution.</strong> It’s hard to overstate this. We tend to think our current problems are extremely hard to solve — perhaps impossible, or that they require some epiphany from on high. But in practice, when faced with a problem, I’ve found that ToC’s Thinking Processes can reliably give me the solution (!).</p>
+
+<p>(Of course, actually executing the solution is sometimes quite difficult! The Thinking Processes help you figure out what to do, but often you then simply need to apply <a href="/high-effort">High Effort</a>.)</p>
+
+<p>These problems can be in business, in personal life, whatever. Most everything can be modeled as a system, and most any situation you seek to change can be modeled as a problem.</p>
+
+<p>So we’ve got this magical formula to solve problems. What’s the issue?</p>
+
+<p>Well, in my experience, it’s that the Thinking Processes are a bit of a pain to follow. They are quite structured and require working through some mundane background on the situation at hand, and as a result, I tend to half-ass the work and don’t get to the promised land.</p>
+
+<p>It’s like any piece of advice — “eat clean and move your body” is obviously effective, and yet many people don’t do it. And just so, “painstakingly work through the Thinking Processes” is obviously (to me) effective, and yet I often don’t adhere.</p>
+
+<p>The easiest way to do them is to have someone who understands the theory well interview you, rather than sitting down and doing it solo. But these people are hard to find and busy. And we have LLMs now! They can interview us according to a programmatic flow!</p>
+
+<h2 id="the-skill">The Skill</h2>
+
+<p>So, anyway, all that led to my Thinking Processes Claude skill. I want to be clear that none of the ideas are mine — they are Eli Goldratt and the broader ToC community’s. I’ve just encoded them into a flow that you can install and easily perform.</p>
+
+<p>Here’s all you have to do:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude plugin marketplace add abromberg/toc-coaching-skill
+claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
+</code></pre></div></div>
+
+<p>Then pop open <code class="language-plaintext highlighter-rouge">claude</code> and type <code class="language-plaintext highlighter-rouge">/toc-coaching [whatever your problem is]</code>.</p>
+
+<p>The agent will begin to interview you, working through the phases of the Thinking Processes. Initially there will be a discovery phase where it is just picking up context and background. Then it will begin to move into the formal Processes, including diagrams and structured breakdowns. Eventually it will propose solutions to the problems.</p>
+
+<p>I’ve been running this for the past week and it has been <em>incredible</em>. I urge you to try it out, even just once, on a problem you’re facing — and stick with it all the way through.</p>
+
+<h2 id="bonus-data-sources">Bonus: data sources</h2>
+
+<p>This all gets <em>way</em> better if you use something like Obsidian for your personal notes. I now frequently start up ToC sessions and tag in files, call notes, and longform writing from my Obsidian to feed context to the agent, and the results get so much better.</p>
+
+<p>I also strongly recommend using a voice-to-text tool like Handy, Wispr Flow or their ilk. Then you can just ramble into the microphone about the situation, and the ToC agent will work with even more info.</p>
+
+<p>As sessions wrap up, it also writes a <code class="language-plaintext highlighter-rouge">/docs/toc-sessions/</code> file with a summary. This can be very helpful to tag in when you start a new session related to a prior one as well.</p>
+
+<p>The more data it has, the faster it will get to the right Thinking Process and conclusion. Feed it as much as you can!</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/picking-air-purifiers">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/picking-air-purifiers">How to pick the best air purifier, objectively</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Theory of Constraints as a Claude skill that can probably help you solve your problems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to pick the best air purifier, objectively</title><link href="https://andybromberg.com/picking-air-purifiers" rel="alternate" type="text/html" title="How to pick the best air purifier, objectively" /><published>2026-04-04T06:00:00-07:00</published><updated>2026-04-04T06:00:00-07:00</updated><id>https://andybromberg.com/picking-air-purifiers</id><content type="html" xml:base="https://andybromberg.com/picking-air-purifiers"><![CDATA[<p><strong>Short answer:</strong> use <a href="https://purifiers.lightworkhome.com/">Lightwork’s Air Purifier Guide</a> — 100% free; no signup required; no affiliate links, partnerships, or bias; completely data-driven, quantitative, and transparent.</p>
 
 <p>Or, if you want to understand how we at <a href="https://lightworkhome.com">Lightwork Home Health</a> evaluate and select air purifiers (and how we arrived at the algorithm for our tool), read on…</p>
 
@@ -535,11 +633,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/theory-of-constraints-skill">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/theory-of-constraints-skill">Theory of Constraints: the (Claude) Skill</a>
     
   </div>
 </nav>
@@ -551,7 +653,7 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[Short answer: use Lightwork’s Air Purifier Guide — 100% free; no signup required; no affiliate links, partnerships, or bias; completely data-driven, quantitative, and transparent.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Collaborative Folders: multiplayer notes for Obsidian</title><link href="https://andybromberg.com/collaborative-folders" rel="alternate" type="text/html" title="Collaborative Folders: multiplayer notes for Obsidian" /><published>2026-03-01T05:00:00-08:00</published><updated>2026-03-01T05:00:00-08:00</updated><id>https://andybromberg.com/collaborative-folders</id><content type="html" xml:base="https://andybromberg.com/collaborative-folders"><![CDATA[<p><a href="//collaborativefolders.com" target="_blank" rel="noopener noreferrer"><picture loading="lazy"><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-be0322fd8.webp 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-be0322fd8.webp 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-be0322fd8.webp 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-be0322fd8.webp 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-be0322fd8.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-eb033f817.png 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-eb033f817.png 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-eb033f817.png 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-eb033f817.png 2000w" type="image/png" /><img src="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png" width="2340" height="936" /></picture>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A data-driven approach to picking an air purifier that will actually be the best for you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Collaborative Folders: multiplayer notes for Obsidian</title><link href="https://andybromberg.com/collaborative-folders" rel="alternate" type="text/html" title="Collaborative Folders: multiplayer notes for Obsidian" /><published>2026-03-01T05:00:00-08:00</published><updated>2026-03-01T05:00:00-08:00</updated><id>https://andybromberg.com/collaborative-folders</id><content type="html" xml:base="https://andybromberg.com/collaborative-folders"><![CDATA[<p><a href="//collaborativefolders.com" target="_blank" rel="noopener noreferrer"><picture loading="lazy"><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-be0322fd8.webp 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-be0322fd8.webp 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-be0322fd8.webp 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-be0322fd8.webp 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-be0322fd8.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-eb033f817.png 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-eb033f817.png 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-eb033f817.png 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-eb033f817.png 2000w" type="image/png" /><img src="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png" width="2340" height="936" /></picture>
 </a></p>
 
 <p>I <em>love</em> <a href="https://obsidian.md">Obsidian</a><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">So much, in fact, this blog uses a color palette, <a href="https://stephango.com/flexoki">Flexoki</a>, designed by Obsidian CEO Steph Ango.</span>, but I <em>hate</em> copying my notes out into Google Docs to share and edit them with teammates.</p>
@@ -1760,59 +1862,4 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The simple meditation timer and breathwork guides I wish I could find on the App Store.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Notes &amp;amp; AI</title><link href="https://andybromberg.com/congruence/notes-ai" rel="alternate" type="text/html" title="Notes &amp;amp; AI" /><published>2026-01-11T09:10:00-08:00</published><updated>2026-01-11T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-3-notes-ai</id><content type="html" xml:base="https://andybromberg.com/congruence/notes-ai"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 3/8</div>
-<div class="series-nav-next"><a href="/congruence/meditation">Meditation →</a></div>
-</div>
-
-<p>There is a notes view you can reach within the app, but that’s not why I love this feature. Here’s the list of notes (you can see some are tagged priority/sticky at the top):</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/notes-list-800-b23926c1b.webp 800w, /assets/images/generated/congruence/notes-list-1000-b23926c1b.webp 1000w, /assets/images/generated/congruence/notes-list-1200-b23926c1b.webp 1200w, /assets/images/generated/congruence/notes-list-1600-b23926c1b.webp 1600w, /assets/images/generated/congruence/notes-list-2000-b23926c1b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/notes-list-800-075866a92.png 800w, /assets/images/generated/congruence/notes-list-1000-075866a92.png 1000w, /assets/images/generated/congruence/notes-list-1200-075866a92.png 1200w, /assets/images/generated/congruence/notes-list-1600-075866a92.png 1600w, /assets/images/generated/congruence/notes-list-2000-075866a92.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/notes-list-800-075866a92.png" width="4070" height="1628" /></picture>
-
-<p><em>Note: I had AI seed some fake data to avoid sharing my real notes…</em></p>
-
-<p>And within a note, there are “sections” which can be edited, and of course new sections can be added through the input bar at the bottom.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/notes-detail-800-f0bcdcc20.webp 800w, /assets/images/generated/congruence/notes-detail-1000-f0bcdcc20.webp 1000w, /assets/images/generated/congruence/notes-detail-1200-f0bcdcc20.webp 1200w, /assets/images/generated/congruence/notes-detail-1600-f0bcdcc20.webp 1600w, /assets/images/generated/congruence/notes-detail-2000-f0bcdcc20.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/notes-detail-800-ad041f0b7.png 800w, /assets/images/generated/congruence/notes-detail-1000-ad041f0b7.png 1000w, /assets/images/generated/congruence/notes-detail-1200-ad041f0b7.png 1200w, /assets/images/generated/congruence/notes-detail-1600-ad041f0b7.png 1600w, /assets/images/generated/congruence/notes-detail-2000-ad041f0b7.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/notes-detail-800-ad041f0b7.png" width="4070" height="1628" /></picture>
-
-<p>But the magic of this note feature lies in the quick-capture experience. From either the lock screen or the control panel (or the homepage of the app, or within other modules…) you can trigger a capture. Here’s my phone’s lock screen, with voice and text capture buttons (and a “nope” icon, which we’ll get to later):</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/lock-screen-800-3e9e4898c.webp 800w, /assets/images/generated/congruence/lock-screen-1000-3e9e4898c.webp 1000w, /assets/images/generated/congruence/lock-screen-1200-3e9e4898c.webp 1200w, /assets/images/generated/congruence/lock-screen-1600-3e9e4898c.webp 1600w, /assets/images/generated/congruence/lock-screen-2000-3e9e4898c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/lock-screen-800-8442b7fa6.png 800w, /assets/images/generated/congruence/lock-screen-1000-8442b7fa6.png 1000w, /assets/images/generated/congruence/lock-screen-1200-8442b7fa6.png 1200w, /assets/images/generated/congruence/lock-screen-1600-8442b7fa6.png 1600w, /assets/images/generated/congruence/lock-screen-2000-8442b7fa6.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/lock-screen-800-8442b7fa6.png" width="4100" height="1640" /></picture>
-
-<p>Once you do that, you’re right in the app, either typing in the active text field or recording an audio note. Audio notes are automatically transcribed to text. Once you’re done typing or recording, you hit either the <code class="language-plaintext highlighter-rouge">ADD</code> or <code class="language-plaintext highlighter-rouge">AI</code> buttons:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/recording-800-4edb4a188.webp 800w, /assets/images/generated/congruence/recording-1000-4edb4a188.webp 1000w, /assets/images/generated/congruence/recording-1200-4edb4a188.webp 1200w, /assets/images/generated/congruence/recording-1600-4edb4a188.webp 1600w, /assets/images/generated/congruence/recording-1680-4edb4a188.webp 1680w" type="image/webp" /><source srcset="/assets/images/generated/congruence/recording-800-180529ae6.png 800w, /assets/images/generated/congruence/recording-1000-180529ae6.png 1000w, /assets/images/generated/congruence/recording-1200-180529ae6.png 1200w, /assets/images/generated/congruence/recording-1600-180529ae6.png 1600w, /assets/images/generated/congruence/recording-1680-180529ae6.png 1680w" type="image/png" /><img src="/assets/images/generated/congruence/recording-800-180529ae6.png" width="1680" height="672" /></picture>
-
-<p>Either way, a new note is created (assuming you’re doing this outside of an existing note). If you hit <code class="language-plaintext highlighter-rouge">ADD</code>, the note is simply created with whatever content you put in (text or audio file + transcription). But if you hit <code class="language-plaintext highlighter-rouge">AI</code>, the content is sent off to AI to get a response. You can configure whether this is Apple’s local foundation models — so the content never leaves your device — or any remote model of your choice.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/story-ai-800-ba3a9c741.webp 800w, /assets/images/generated/congruence/story-ai-1000-ba3a9c741.webp 1000w, /assets/images/generated/congruence/story-ai-1200-ba3a9c741.webp 1200w, /assets/images/generated/congruence/story-ai-1600-ba3a9c741.webp 1600w, /assets/images/generated/congruence/story-ai-2000-ba3a9c741.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/story-ai-800-c922104b2.png 800w, /assets/images/generated/congruence/story-ai-1000-c922104b2.png 1000w, /assets/images/generated/congruence/story-ai-1200-c922104b2.png 1200w, /assets/images/generated/congruence/story-ai-1600-c922104b2.png 1600w, /assets/images/generated/congruence/story-ai-2000-c922104b2.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/story-ai-800-c922104b2.png" width="2460" height="984" /></picture>
-
-<p>This is a wickedly fast way to get an AI response (or just take notes). Tap button on home screen, talk at it, it gets transcribed near-instantly by Apple’s local transcription, and AI replies right there.</p>
-
-<p>There are of course also ways to export or share whole notes or sections, edit them, and more. This is by far my favorite on-the-go note capture experience I’ve seen. The voice / transcription modality combined with plain notes combined with optional AI combined with a “sections” paradigm is exactly what I want.</p>
-
-<p>Of course, it all syncs to the desktop app too (which I’m not showing here since I haven’t yet wired it up to handle fake data).</p>
-
-<p>There’s also a secret (shhh) feature. With a certain gesture on the notes screen, you get pulled into a special, hidden note that requires FaceID to open. Great for storing door codes and PINs and such.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/secret-note-800-95339fdbe.webp 800w, /assets/images/generated/congruence/secret-note-1000-95339fdbe.webp 1000w, /assets/images/generated/congruence/secret-note-1200-95339fdbe.webp 1200w, /assets/images/generated/congruence/secret-note-1600-95339fdbe.webp 1600w, /assets/images/generated/congruence/secret-note-2000-95339fdbe.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/secret-note-800-e0101928f.png 800w, /assets/images/generated/congruence/secret-note-1000-e0101928f.png 1000w, /assets/images/generated/congruence/secret-note-1200-e0101928f.png 1200w, /assets/images/generated/congruence/secret-note-1600-e0101928f.png 1600w, /assets/images/generated/congruence/secret-note-2000-e0101928f.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/secret-note-800-e0101928f.png" width="2890" height="1156" /></picture>
-
-<p>Next up: <a href="/congruence/meditation">meditation</a>.</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/streaks-meq">← Streaks &amp; MEQ</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 3/8</div>
-<div class="series-nav-next"><a href="/congruence/meditation">Meditation →</a></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The quick-capture notetaking experience I've always wanted (plus AI).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-11-congruence-3-notes-ai.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The simple meditation timer and breathwork guides I wish I could find on the App Store.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
