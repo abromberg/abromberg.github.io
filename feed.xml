@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-05-10T09:54:58-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Theory of Constraints: the (Claude) Skill</title><link href="https://andybromberg.com/theory-of-constraints-skill" rel="alternate" type="text/html" title="Theory of Constraints: the (Claude) Skill" /><published>2026-04-07T06:00:00-07:00</published><updated>2026-04-07T06:00:00-07:00</updated><id>https://andybromberg.com/theory-of-constraints-skill</id><content type="html" xml:base="https://andybromberg.com/theory-of-constraints-skill"><![CDATA[<p>If you’re new to the blog, you should know that I like the Theory of Constraints a <em>lot</em> (see <a href="/uwol/theory-of-constraints">a primer</a> worth reading before going further).</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-05-18T14:17:51-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Baby photos</title><link href="https://andybromberg.com/congruence/baby" rel="alternate" type="text/html" title="Baby photos" /><published>2026-05-18T08:00:00-07:00</published><updated>2026-05-18T08:00:00-07:00</updated><id>https://andybromberg.com/congruence/congruence-8-baby</id><content type="html" xml:base="https://andybromberg.com/congruence/baby"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/barcodes-freedom">← Barcodes &amp; Freedom Phone</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 8/10</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<p>I recently had a child, and that inspired me to build yet another little Congruence feature: “baby dailies.”</p>
+
+<p>Now, in my schedule, every day I am prompted to add a photo of their face, a video of them doing something, and a short sentence or two of thoughts. Plus extra photos and videos if I want.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-checklist-800-5b7193f71.webp 800w, /assets/images/generated/congruence/baby-checklist-1000-5b7193f71.webp 1000w, /assets/images/generated/congruence/baby-checklist-1200-5b7193f71.webp 1200w, /assets/images/generated/congruence/baby-checklist-1600-5b7193f71.webp 1600w, /assets/images/generated/congruence/baby-checklist-2000-5b7193f71.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-checklist-800-9fc776254.png 800w, /assets/images/generated/congruence/baby-checklist-1000-9fc776254.png 1000w, /assets/images/generated/congruence/baby-checklist-1200-9fc776254.png 1200w, /assets/images/generated/congruence/baby-checklist-1600-9fc776254.png 1600w, /assets/images/generated/congruence/baby-checklist-2000-9fc776254.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-checklist-800-9fc776254.png" width="4544" height="2556" /></picture>
+
+<p>Here’s the capture screen:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-capture-1-800-b8f46531f.webp 800w, /assets/images/generated/congruence/baby-capture-1-1000-b8f46531f.webp 1000w, /assets/images/generated/congruence/baby-capture-1-1200-b8f46531f.webp 1200w, /assets/images/generated/congruence/baby-capture-1-1600-b8f46531f.webp 1600w, /assets/images/generated/congruence/baby-capture-1-2000-b8f46531f.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-capture-1-800-1ca84c3a8.png 800w, /assets/images/generated/congruence/baby-capture-1-1000-1ca84c3a8.png 1000w, /assets/images/generated/congruence/baby-capture-1-1200-1ca84c3a8.png 1200w, /assets/images/generated/congruence/baby-capture-1-1600-1ca84c3a8.png 1600w, /assets/images/generated/congruence/baby-capture-1-2000-1ca84c3a8.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-capture-1-800-1ca84c3a8.png" width="4544" height="2556" /></picture>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-capture-2-800-a4433f529.webp 800w, /assets/images/generated/congruence/baby-capture-2-1000-a4433f529.webp 1000w, /assets/images/generated/congruence/baby-capture-2-1200-a4433f529.webp 1200w, /assets/images/generated/congruence/baby-capture-2-1600-a4433f529.webp 1600w, /assets/images/generated/congruence/baby-capture-2-2000-a4433f529.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-capture-2-800-344817802.png 800w, /assets/images/generated/congruence/baby-capture-2-1000-344817802.png 1000w, /assets/images/generated/congruence/baby-capture-2-1200-344817802.png 1200w, /assets/images/generated/congruence/baby-capture-2-1600-344817802.png 1600w, /assets/images/generated/congruence/baby-capture-2-2000-344817802.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-capture-2-800-344817802.png" width="4544" height="2556" /></picture>
+
+<p>And then the pretty-unsatisfying-when-censored history screen:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-history-800-bc5f62908.webp 800w, /assets/images/generated/congruence/baby-history-1000-bc5f62908.webp 1000w, /assets/images/generated/congruence/baby-history-1200-bc5f62908.webp 1200w, /assets/images/generated/congruence/baby-history-1600-bc5f62908.webp 1600w, /assets/images/generated/congruence/baby-history-2000-bc5f62908.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-history-800-e0501d701.png 800w, /assets/images/generated/congruence/baby-history-1000-e0501d701.png 1000w, /assets/images/generated/congruence/baby-history-1200-e0501d701.png 1200w, /assets/images/generated/congruence/baby-history-1600-e0501d701.png 1600w, /assets/images/generated/congruence/baby-history-2000-e0501d701.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-history-800-e0501d701.png" width="4544" height="2556" /></picture>
+
+<p>There’s a “slideshow” big element at the top, which lets me swipe between each day’s face photo. Then, below, there’s a section for each day with the photo, video, other attachments, and the text.</p>
+
+<p>I can also use the calendar button to jump to a specific day.</p>
+
+<p>So far: absolutely delightful, and forces me to remember to capture a moment or two each day. Feels like putting tech to good use. I suspect I will be really happy to have this years from now…</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/barcodes-freedom">← Barcodes &amp; Freedom Phone</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 8/10</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Trying to partially save myself from 'it goes by so fast.'.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Theory of Constraints: the (Claude) Skill</title><link href="https://andybromberg.com/theory-of-constraints-skill" rel="alternate" type="text/html" title="Theory of Constraints: the (Claude) Skill" /><published>2026-04-07T06:00:00-07:00</published><updated>2026-04-07T06:00:00-07:00</updated><id>https://andybromberg.com/theory-of-constraints-skill</id><content type="html" xml:base="https://andybromberg.com/theory-of-constraints-skill"><![CDATA[<p>If you’re new to the blog, you should know that I like the Theory of Constraints a <em>lot</em> (see <a href="/uwol/theory-of-constraints">a primer</a> worth reading before going further).</p>
 
 <p>This blog post is about a Claude skill I made encoding ToC’s “Thinking Processes,” which I contend can probably help you find solutions for most every problem you are facing. If you want to try the skill, go into your command line and run (assuming you already use Claude Code):</p>
 
@@ -80,11 +123,15 @@ claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/congruence/baby">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/congruence/baby">Baby photos</a>
     
   </div>
 </nav>
@@ -1662,8 +1709,8 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Health&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[I just want someone to make squeaky-clean electrolyte powders. Here are some recipes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Barcodes &amp;amp; Freedom Phone</title><link href="https://andybromberg.com/congruence/barcodes-freedom" rel="alternate" type="text/html" title="Barcodes &amp;amp; Freedom Phone" /><published>2026-01-15T07:00:00-08:00</published><updated>2026-01-15T07:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-7-barcodes-freedom</id><content type="html" xml:base="https://andybromberg.com/congruence/barcodes-freedom"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 7/8</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-center">Congruence: a very personal app · section 7/10</div>
+<div class="series-nav-next"><a href="/congruence/baby">Baby photos →</a></div>
 </div>
 
 <p>My favorite things to build into Congruence are the ones that are so niche and specific to me that it might not even make sense for another app to exist with them. This post goes over two of those.</p>
@@ -1702,8 +1749,8 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 7/8</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-center">Congruence: a very personal app · section 7/10</div>
+<div class="series-nav-next"><a href="/congruence/baby">Baby photos →</a></div>
 </div>
 
 <hr class="end-of-article-divider" />
@@ -1717,7 +1764,7 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Some really personal features for Congruence: loyalty barcodes and controlling my Freedom Phone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Vibe checks &amp;amp; 2 things</title><link href="https://andybromberg.com/congruence/vibe-checks" rel="alternate" type="text/html" title="Vibe checks &amp;amp; 2 things" /><published>2026-01-14T08:05:00-08:00</published><updated>2026-01-14T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-6-vibe-checks</id><content type="html" xml:base="https://andybromberg.com/congruence/vibe-checks"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 6/8</div>
+<div class="series-nav-center">Congruence: a very personal app · section 6/10</div>
 <div class="series-nav-next"><a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone →</a></div>
 </div>
 
@@ -1759,7 +1806,7 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 6/8</div>
+<div class="series-nav-center">Congruence: a very personal app · section 6/10</div>
 <div class="series-nav-next"><a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone →</a></div>
 </div>
 
@@ -1774,7 +1821,7 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Logging my vibe through the day, and saving my favorite things.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Call List</title><link href="https://andybromberg.com/congruence/call-list" rel="alternate" type="text/html" title="Call List" /><published>2026-01-13T08:05:00-08:00</published><updated>2026-01-13T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-5-call-list</id><content type="html" xml:base="https://andybromberg.com/congruence/call-list"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 5/8</div>
+<div class="series-nav-center">Congruence: a very personal app · section 5/10</div>
 <div class="series-nav-next"><a href="/congruence/vibe-checks">Vibe checks &amp; 2 things →</a></div>
 </div>
 
@@ -1794,7 +1841,7 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/meditation">← Meditation</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 5/8</div>
+<div class="series-nav-center">Congruence: a very personal app · section 5/10</div>
 <div class="series-nav-next"><a href="/congruence/vibe-checks">Vibe checks &amp; 2 things →</a></div>
 </div>
 
@@ -1807,59 +1854,4 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Keeping track of who to call and what we need to talk about.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Meditation</title><link href="https://andybromberg.com/congruence/meditation" rel="alternate" type="text/html" title="Meditation" /><published>2026-01-12T09:10:00-08:00</published><updated>2026-01-12T09:10:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-4-notes-meditation</id><content type="html" xml:base="https://andybromberg.com/congruence/meditation"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/notes-ai">← Notes &amp; AI</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 4/8</div>
-<div class="series-nav-next"><a href="/congruence/call-list">Call List →</a></div>
-</div>
-
-<p>I wanted a very simple meditation timer and also a guided breathwork experience. So those are part of the app too.</p>
-
-<p>The meditation timer lets you pick duration, beginning/end chime sounds, and soundtrack (if you want one). I found some really great permissively-licensed tracks like <a href="https://freesound.org/people/Glen_Hoban/sounds/439446/">these from Glen Hoban</a>.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/meditation-timer-800-9ca22ddf2.webp 800w, /assets/images/generated/congruence/meditation-timer-1000-9ca22ddf2.webp 1000w, /assets/images/generated/congruence/meditation-timer-1200-9ca22ddf2.webp 1200w, /assets/images/generated/congruence/meditation-timer-1600-9ca22ddf2.webp 1600w, /assets/images/generated/congruence/meditation-timer-1650-9ca22ddf2.webp 1650w" type="image/webp" /><source srcset="/assets/images/generated/congruence/meditation-timer-800-ba664617d.png 800w, /assets/images/generated/congruence/meditation-timer-1000-ba664617d.png 1000w, /assets/images/generated/congruence/meditation-timer-1200-ba664617d.png 1200w, /assets/images/generated/congruence/meditation-timer-1600-ba664617d.png 1600w, /assets/images/generated/congruence/meditation-timer-1650-ba664617d.png 1650w" type="image/png" /><img src="/assets/images/generated/congruence/meditation-timer-800-ba664617d.png" width="1650" height="660" /></picture>
-
-<p>You hold down the button and it shrinks to nothing, while haptic vibrating “heartbeats” slow down from 100 BPM to 40 BPM (bumbum… bumbum… … bumbum… … … bumbum). Then the chime goes off and you’re in the experience.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/meditation-progress-800-a10773ef1.webp 800w, /assets/images/generated/congruence/meditation-progress-1000-a10773ef1.webp 1000w, /assets/images/generated/congruence/meditation-progress-1200-a10773ef1.webp 1200w, /assets/images/generated/congruence/meditation-progress-1600-a10773ef1.webp 1600w, /assets/images/generated/congruence/meditation-progress-2000-a10773ef1.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/meditation-progress-800-3fdbc87a2.png 800w, /assets/images/generated/congruence/meditation-progress-1000-3fdbc87a2.png 1000w, /assets/images/generated/congruence/meditation-progress-1200-3fdbc87a2.png 1200w, /assets/images/generated/congruence/meditation-progress-1600-3fdbc87a2.png 1600w, /assets/images/generated/congruence/meditation-progress-2000-3fdbc87a2.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/meditation-progress-800-3fdbc87a2.png" width="3710" height="1484" /></picture>
-
-<p>Once the time is up, a chime goes off, the timer keeps counting, and whenever you’re done, you hold to end it (and the haptic heartbeat ramps back up).</p>
-
-<p>You can add a reflection at the end of the meditation if you want, and then it’s done.</p>
-
-<hr />
-
-<p>There’s also a breathwork module with a variety of pre-built routines:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/breathwork-menu-800-0929c1999.webp 800w, /assets/images/generated/congruence/breathwork-menu-1000-0929c1999.webp 1000w, /assets/images/generated/congruence/breathwork-menu-1200-0929c1999.webp 1200w, /assets/images/generated/congruence/breathwork-menu-1600-0929c1999.webp 1600w, /assets/images/generated/congruence/breathwork-menu-2000-0929c1999.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/breathwork-menu-800-25a0db35f.png 800w, /assets/images/generated/congruence/breathwork-menu-1000-25a0db35f.png 1000w, /assets/images/generated/congruence/breathwork-menu-1200-25a0db35f.png 1200w, /assets/images/generated/congruence/breathwork-menu-1600-25a0db35f.png 1600w, /assets/images/generated/congruence/breathwork-menu-2000-25a0db35f.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/breathwork-menu-800-25a0db35f.png" width="3880" height="1552" /></picture>
-
-<p>These routines guide you fully through the sequence with audio and visual cues (text, a pulsing circle). A few screenshots from a Buteyko sequence:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/buteyko-1-800-bb8a963cf.webp 800w, /assets/images/generated/congruence/buteyko-1-1000-bb8a963cf.webp 1000w, /assets/images/generated/congruence/buteyko-1-1200-bb8a963cf.webp 1200w, /assets/images/generated/congruence/buteyko-1-1560-bb8a963cf.webp 1560w" type="image/webp" /><source srcset="/assets/images/generated/congruence/buteyko-1-800-2a734d6b5.png 800w, /assets/images/generated/congruence/buteyko-1-1000-2a734d6b5.png 1000w, /assets/images/generated/congruence/buteyko-1-1200-2a734d6b5.png 1200w, /assets/images/generated/congruence/buteyko-1-1560-2a734d6b5.png 1560w" type="image/png" /><img src="/assets/images/generated/congruence/buteyko-1-800-2a734d6b5.png" width="1560" height="624" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/buteyko-2-800-87a171777.webp 800w, /assets/images/generated/congruence/buteyko-2-1000-87a171777.webp 1000w, /assets/images/generated/congruence/buteyko-2-1200-87a171777.webp 1200w, /assets/images/generated/congruence/buteyko-2-1600-87a171777.webp 1600w, /assets/images/generated/congruence/buteyko-2-1650-87a171777.webp 1650w" type="image/webp" /><source srcset="/assets/images/generated/congruence/buteyko-2-800-af3f6ee06.png 800w, /assets/images/generated/congruence/buteyko-2-1000-af3f6ee06.png 1000w, /assets/images/generated/congruence/buteyko-2-1200-af3f6ee06.png 1200w, /assets/images/generated/congruence/buteyko-2-1600-af3f6ee06.png 1600w, /assets/images/generated/congruence/buteyko-2-1650-af3f6ee06.png 1650w" type="image/png" /><img src="/assets/images/generated/congruence/buteyko-2-800-af3f6ee06.png" width="1650" height="660" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/buteyko-3-800-0a38430b6.webp 800w, /assets/images/generated/congruence/buteyko-3-1000-0a38430b6.webp 1000w, /assets/images/generated/congruence/buteyko-3-1200-0a38430b6.webp 1200w, /assets/images/generated/congruence/buteyko-3-1600-0a38430b6.webp 1600w, /assets/images/generated/congruence/buteyko-3-1650-0a38430b6.webp 1650w" type="image/webp" /><source srcset="/assets/images/generated/congruence/buteyko-3-800-f7e88e21b.png 800w, /assets/images/generated/congruence/buteyko-3-1000-f7e88e21b.png 1000w, /assets/images/generated/congruence/buteyko-3-1200-f7e88e21b.png 1200w, /assets/images/generated/congruence/buteyko-3-1600-f7e88e21b.png 1600w, /assets/images/generated/congruence/buteyko-3-1650-f7e88e21b.png 1650w" type="image/png" /><img src="/assets/images/generated/congruence/buteyko-3-800-f7e88e21b.png" width="1650" height="660" /></picture>
-
-<p>I built out a nice schema that allows for a variety of segments — ones with user-controlled length (“tap to continue”); pre-programmed durations of inhale, hold full, exhale, hold empty; warmups and cooldowns; etc.</p>
-
-<p>I wish all breathwork &amp; meditation apps were this simple, clear, and customizable… but that’s tough to monetize, of course. Another vote for home-cooked software!</p>
-
-<p>Next up: <a href="/congruence/call-list">Call List</a>.</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/notes-ai">← Notes &amp; AI</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 4/8</div>
-<div class="series-nav-next"><a href="/congruence/call-list">Call List →</a></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[The simple meditation timer and breathwork guides I wish I could find on the App Store.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-12-congruence-4-notes-meditation.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Keeping track of who to call and what we need to talk about.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-13-congruence-5-call-list.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
