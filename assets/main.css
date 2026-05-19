@@ -1069,7 +1069,7 @@ hr:not(.end-of-article-divider)::before {
 .fiction-post .post-title {
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .fiction-post .post-meta {
