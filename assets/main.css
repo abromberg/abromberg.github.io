@@ -1061,6 +1061,180 @@ hr:not(.end-of-article-divider)::before {
   padding: 0 0.5em;
 }
 
+.fiction-post .post-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.fiction-post .post-title {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.fiction-post .post-meta {
+  justify-content: center;
+  white-space: normal;
+}
+
+.fiction-piece {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.04rem;
+  line-height: 1.68;
+}
+
+.fiction-piece .fiction-section-heading {
+  margin: 5rem auto 1.6rem;
+  text-align: center;
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.fiction-piece > .fiction-section-heading:first-child {
+  margin-top: 1rem;
+}
+
+.fiction-piece .fiction-section-number {
+  color: #6F6E69;
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+}
+
+.fiction-piece .fiction-section-title {
+  margin-top: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.fiction-piece .epigraph {
+  max-width: 34rem;
+  margin: 0 auto 2.4rem;
+  text-align: center;
+  color: #575653;
+}
+
+.fiction-piece .epigraph blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+  color: inherit;
+  font-size: 0.96rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.fiction-piece .epigraph blockquote p {
+  margin-bottom: 0;
+}
+
+.fiction-piece .epigraph figcaption {
+  margin-top: 0.75rem;
+  font-family: "Andada Pro", Georgia, serif;
+  font-size: 0.82rem;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+.fiction-piece p {
+  margin-bottom: 1.05rem;
+}
+
+.fiction-piece .fiction-guidance {
+  margin: 1.25rem 0 1.45rem;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.fiction-piece .fiction-guidance p {
+  margin: 0 0 0.55rem;
+}
+
+.fiction-piece .fiction-guidance p:last-child {
+  margin-bottom: 0;
+}
+
+.fiction-piece .fiction-guidance em {
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.fiction-piece .fiction-ticker {
+  margin: 1.15rem 0 1.4rem;
+  color: inherit;
+}
+
+.fiction-piece .fiction-ticker p {
+  margin: 0 0 0.48rem;
+}
+
+.fiction-piece .fiction-ticker p:last-child {
+  margin-bottom: 0;
+}
+
+.fiction-piece .fiction-ticker span {
+  font-family: "Hanken Grotesk", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.fiction-piece .fiction-prayer {
+  width: 82%;
+  margin: 1.45rem auto;
+  text-align: center;
+  color: #625f58;
+  font-style: italic;
+}
+
+.fiction-piece .fiction-prayer p {
+  margin-bottom: 0;
+}
+
+.fiction-piece .fiction-prayer span + span {
+  margin-left: 0.35em;
+}
+
+.fiction-piece hr:not(.end-of-article-divider) {
+  margin: 2.4rem auto;
+}
+
+.fiction-piece hr:not(.end-of-article-divider)::before {
+  letter-spacing: 2.2em;
+  margin-right: -2.2em;
+}
+
+@media screen and (max-width: 600px) {
+  .fiction-post .post-header {
+    margin-bottom: 2.2rem;
+  }
+  .fiction-post .post-title {
+    letter-spacing: 0.04em;
+  }
+  .fiction-piece {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+  .fiction-piece .fiction-section-heading {
+    margin-top: 3.2rem;
+  }
+  .fiction-piece .epigraph {
+    margin-bottom: 2rem;
+  }
+  .fiction-piece .fiction-prayer {
+    width: auto;
+  }
+}
 .toc-header {
   font-size: 1rem;
   font-weight: 700;
