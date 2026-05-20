@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-05-19T20:38:41-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">COHERENCE: a short story</title><link href="https://andybromberg.com/coherence" rel="alternate" type="text/html" title="COHERENCE: a short story" /><published>2026-05-19T06:00:00-07:00</published><updated>2026-05-19T06:00:00-07:00</updated><id>https://andybromberg.com/coherence</id><content type="html" xml:base="https://andybromberg.com/coherence"><![CDATA[<div class="fiction-section-heading">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-05-20T10:36:10-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Using AI for fiction</title><link href="https://andybromberg.com/ai-fiction" rel="alternate" type="text/html" title="Using AI for fiction" /><published>2026-05-20T06:00:00-07:00</published><updated>2026-05-20T06:00:00-07:00</updated><id>https://andybromberg.com/ai-fiction</id><content type="html" xml:base="https://andybromberg.com/ai-fiction"><![CDATA[<p>I just posted <a href="/coherence"><strong>COHERENCE</strong></a>, the result of my first time writing fiction since, I believe… high school English class? I’ve been loosely thinking about the core idea and related topics for the last year or so and felt like a short story was the right format for them.</p>
+
+<p>Turns out: fiction is <em>hard.</em> I don’t know that I’ll be doing much more of it anytime soon. But it was a fun muscle to exercise. (I would welcome sharp feedback!)</p>
+
+<p>All that to say: I don’t claim any sort of fiction-writing expertise. But I’ve written one piece, and I naturally also treated it as a chance to see if AI was useful in doing so as of May 2026. Here were my takeaways on where it was and wasn’t.</p>
+
+<h2 id="extremely-useful">Extremely useful</h2>
+
+<p>In the outlining phase, I found AI really great for helping me evaluate my outlines and plots and character arcs against specific philosophies.</p>
+
+<p>Brandon Sanderson, for example, has a <a href="https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY">remarkable YouTube lecture series</a> on his writing philosophy. Asking an LLM to test my outline and/or “plots and Plots” against his thinking was a hugely helpful input. Same with Dan Harmon’s story circle and related concepts.</p>
+
+<p>My brain isn’t practiced in thinking about writing in those ways, and the AI (pointed towards specific sources/philosophies) at this stage almost felt like having a writing partner critiquing my approach to the story.</p>
+
+<p>Once I got some actual writing down on the page, it was also tremendous for editing — especially copy editing (“your verb tense is screwed up here”) and keeping track of factual consistency (“first you said David was driving in this scene but later you say Mara was”). It caught a ton of little things I would have missed in the process, and I think the story is much better for that.</p>
+
+<p>It was also, of course, great for general research. “What hospital in Akron should I have Mara’s mom go to given the story so far?” is a canonical LLM question, and it saved me plenty of time on things like that. It also helped me find some great epigraphs for chapters where I couldn’t think of one myself.</p>
+
+<p>Last: I found it surprisingly good at suggesting a list of <em>approaches</em> to a plot / story problem that I could consider. As discussed below, it was mostly garbage at <em>finding</em> plot and story problems. But when I identified one, I could ask AI and it would give me ten ways to solve it. Usually eight of them were terrible and made no sense, but one or two would be seeds of a good idea and I could figure out how to expand and adjust them and make them work.</p>
+
+<h2 id="totally-useless">Totally useless</h2>
+
+<p>Despite my best efforts: I found the AI pretty much useless for the writing itself.</p>
+
+<p>No matter how I prompted, I couldn’t get it to write in quite the right tone — there was always an AI tinge to it. It couldn’t write with good rhythm or pace or word choice (I’ll let you judge whether <em>I</em> can. But <em>it</em> certainly couldn’t…).</p>
+
+<p>(And yes, all the em-dashes in the piece are actually mine. I promise I’ve been using them forever. See <a href="https://andybromberg.com/svm-intuition">this blog post</a> from 12 years ago where I use ten of them in a thousand words.)</p>
+
+<p>It also had a very poor theory of mind for the reader, and as such, struggled with anything story-related once we got going. It had trouble tracking what the reader knew, what the characters would be thinking or what they knew at any point, and all of that led to anything it wrote being pretty out of step. It produced what <em>seemed</em> like reasonable beats when read in isolation, but (aside from the tone issues), rarely made sense in the broader context of the story or its pacing at that moment.</p>
+
+<p>I abandoned trying it in the writing process pretty early. I came back midway through once I had a good amount written in an attempt to few-shot prompt it with some of what I had done so far. It was marginally better but not there yet.</p>
+
+<p>I <em>suspect</em> that in months or a year or two, LLMs will be able to write exceptional fiction. Maybe they even can today, if prompted better than I did.</p>
+
+<p>But for the time being, I would say they are outstanding at outlining and editing — but not yet writing itself.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/coherence">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/coherence">COHERENCE: a short story</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><summary type="html"><![CDATA[Is AI helpful in writing fiction today? A little bit, in certain ways.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-20-ai-fiction.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-20-ai-fiction.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">COHERENCE: a short story</title><link href="https://andybromberg.com/coherence" rel="alternate" type="text/html" title="COHERENCE: a short story" /><published>2026-05-19T06:00:00-07:00</published><updated>2026-05-19T06:00:00-07:00</updated><id>https://andybromberg.com/coherence</id><content type="html" xml:base="https://andybromberg.com/coherence"><![CDATA[<div class="fiction-section-heading">
   <div class="fiction-section-number">§1</div>
   <div class="fiction-section-title">Present day, Washington DC</div>
 </div>
@@ -814,11 +886,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/ai-fiction">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/ai-fiction">Using AI for fiction</a>
     
   </div>
 </nav>
@@ -2594,61 +2670,4 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Some really personal features for Congruence: loyalty barcodes and controlling my Freedom Phone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Vibe checks &amp;amp; 2 things</title><link href="https://andybromberg.com/congruence/vibe-checks" rel="alternate" type="text/html" title="Vibe checks &amp;amp; 2 things" /><published>2026-01-14T08:05:00-08:00</published><updated>2026-01-14T08:05:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-6-vibe-checks</id><content type="html" xml:base="https://andybromberg.com/congruence/vibe-checks"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 6/10</div>
-<div class="series-nav-next"><a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone →</a></div>
-</div>
-
-<p>I used to use an excellent app called <a href="https://howwefeel.org/">How We Feel</a>. A few times a day, it sends you a push notification asking to check in, and you just tap one of four quadrants: high or low energy and pleasant or unpleasant. You can add more data too.</p>
-
-<p>But I of course wanted to pull this into Congruence. Now, four times a day, it sends me a notification which brings me to this screen:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/vibe-check-800-964d1398d.webp 800w, /assets/images/generated/congruence/vibe-check-1000-964d1398d.webp 1000w, /assets/images/generated/congruence/vibe-check-1200-964d1398d.webp 1200w, /assets/images/generated/congruence/vibe-check-1600-964d1398d.webp 1600w, /assets/images/generated/congruence/vibe-check-1650-964d1398d.webp 1650w" type="image/webp" /><source srcset="/assets/images/generated/congruence/vibe-check-800-66d11ad5a.png 800w, /assets/images/generated/congruence/vibe-check-1000-66d11ad5a.png 1000w, /assets/images/generated/congruence/vibe-check-1200-66d11ad5a.png 1200w, /assets/images/generated/congruence/vibe-check-1600-66d11ad5a.png 1600w, /assets/images/generated/congruence/vibe-check-1650-66d11ad5a.png 1650w" type="image/png" /><img src="/assets/images/generated/congruence/vibe-check-800-66d11ad5a.png" width="1650" height="660" /></picture>
-
-<p>I select one of the boxes, optionally add an annotation (below) and I’m done.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/vibe-annotation-800-28c1d4c9f.webp 800w, /assets/images/generated/congruence/vibe-annotation-1000-28c1d4c9f.webp 1000w, /assets/images/generated/congruence/vibe-annotation-1200-28c1d4c9f.webp 1200w, /assets/images/generated/congruence/vibe-annotation-1600-28c1d4c9f.webp 1600w, /assets/images/generated/congruence/vibe-annotation-1800-28c1d4c9f.webp 1800w" type="image/webp" /><source srcset="/assets/images/generated/congruence/vibe-annotation-800-e826507bc.png 800w, /assets/images/generated/congruence/vibe-annotation-1000-e826507bc.png 1000w, /assets/images/generated/congruence/vibe-annotation-1200-e826507bc.png 1200w, /assets/images/generated/congruence/vibe-annotation-1600-e826507bc.png 1600w, /assets/images/generated/congruence/vibe-annotation-1800-e826507bc.png 1800w" type="image/png" /><img src="/assets/images/generated/congruence/vibe-annotation-800-e826507bc.png" width="1800" height="720" /></picture>
-
-<p>The selected color shows up in the smiley face on my schedule (see the yellow one?):</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/modules-schedule-800-1d47aa5ca.webp 800w, /assets/images/generated/congruence/modules-schedule-1000-1d47aa5ca.webp 1000w, /assets/images/generated/congruence/modules-schedule-1200-1d47aa5ca.webp 1200w, /assets/images/generated/congruence/modules-schedule-1600-1d47aa5ca.webp 1600w, /assets/images/generated/congruence/modules-schedule-2000-1d47aa5ca.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png 800w, /assets/images/generated/congruence/modules-schedule-1000-71edc27d4.png 1000w, /assets/images/generated/congruence/modules-schedule-1200-71edc27d4.png 1200w, /assets/images/generated/congruence/modules-schedule-1600-71edc27d4.png 1600w, /assets/images/generated/congruence/modules-schedule-2000-71edc27d4.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/modules-schedule-800-71edc27d4.png" width="2870" height="1146" /></picture>
-
-<p>And I can go into the Streaks view and see the history:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/vibe-streaks-800-5e197d41c.webp 800w, /assets/images/generated/congruence/vibe-streaks-1000-5e197d41c.webp 1000w, /assets/images/generated/congruence/vibe-streaks-1200-5e197d41c.webp 1200w, /assets/images/generated/congruence/vibe-streaks-1600-5e197d41c.webp 1600w, /assets/images/generated/congruence/vibe-streaks-2000-5e197d41c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/vibe-streaks-800-bb305e567.png 800w, /assets/images/generated/congruence/vibe-streaks-1000-bb305e567.png 1000w, /assets/images/generated/congruence/vibe-streaks-1200-bb305e567.png 1200w, /assets/images/generated/congruence/vibe-streaks-1600-bb305e567.png 1600w, /assets/images/generated/congruence/vibe-streaks-2000-bb305e567.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/vibe-streaks-800-bb305e567.png" width="4220" height="1688" /></picture>
-
-<p>It’s really cool to visually skim how I was feeling month-over-month. When I look back I can see clear periods that corresponded with different life events.</p>
-
-<p>How We Feel has a similar-ish view — you should get the app and try it out for a few months. I’ve found it really useful in retrospectively noticing trends and making decisions.</p>
-
-<hr />
-
-<p>Somewhat adjacent to this, I have a practice where every night I write down at least two things that made me happy or I really enjoyed that day. I’m just a few months away from ten years of doing this.</p>
-
-<p>I also strongly recommend this practice. It’s very cool to look back at random days and see what I was excited about. And of course, it’s now in Congruence.</p>
-
-<p>My evening checklist each day links to a “2 things” module, where I enter in my two or more items for that day. (This module is also Face ID protected.)</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/2-things-800-f9fac53af.webp 800w, /assets/images/generated/congruence/2-things-1000-f9fac53af.webp 1000w, /assets/images/generated/congruence/2-things-1200-f9fac53af.webp 1200w, /assets/images/generated/congruence/2-things-1600-f9fac53af.webp 1600w, /assets/images/generated/congruence/2-things-2000-f9fac53af.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/2-things-800-2beb2af2f.png 800w, /assets/images/generated/congruence/2-things-1000-2beb2af2f.png 1000w, /assets/images/generated/congruence/2-things-1200-2beb2af2f.png 1200w, /assets/images/generated/congruence/2-things-1600-2beb2af2f.png 1600w, /assets/images/generated/congruence/2-things-2000-2beb2af2f.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/2-things-800-2beb2af2f.png" width="4010" height="1604" /></picture>
-
-<p>I can then look at dots for every day in the past, and tap on them and see what I recorded that day.</p>
-
-<p>Next up: <a href="/congruence/barcodes-freedom">barcodes &amp; Freedom Phone</a>.</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/call-list">← Call List</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 6/10</div>
-<div class="series-nav-next"><a href="/congruence/barcodes-freedom">Barcodes &amp; Freedom Phone →</a></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Logging my vibe through the day, and saving my favorite things.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-14-congruence-6-vibe-checks.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Some really personal features for Congruence: loyalty barcodes and controlling my Freedom Phone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
