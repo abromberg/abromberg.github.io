@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-05-20T19:57:58-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Using AI for fiction</title><link href="https://andybromberg.com/ai-fiction" rel="alternate" type="text/html" title="Using AI for fiction" /><published>2026-05-20T06:00:00-07:00</published><updated>2026-05-20T06:00:00-07:00</updated><id>https://andybromberg.com/ai-fiction</id><content type="html" xml:base="https://andybromberg.com/ai-fiction"><![CDATA[<p>I just posted <a href="/coherence"><strong>COHERENCE</strong></a>, the result of my first time writing fiction since, I believe… high school English class? I’ve been loosely thinking about the core idea and related topics for the last year or so and felt like a short story was the right format for them.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-05-24T10:53:50-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Custom widgets</title><link href="https://andybromberg.com/congruence/widgets" rel="alternate" type="text/html" title="Custom widgets" /><published>2026-05-24T08:00:00-07:00</published><updated>2026-05-24T08:00:00-07:00</updated><id>https://andybromberg.com/congruence/congruence-9-widgets</id><content type="html" xml:base="https://andybromberg.com/congruence/widgets"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/baby">← Baby photos</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 9/10</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<p>I’ve mentioned widgets in some of the previous Congruence posts, but now I’ve built a few more and I think they deserve their own recap.</p>
+
+<p>My phone’s lockscreen is the interface I look at more than any other — every time I pick my phone up, I see it. And that space mostly goes underutilized.</p>
+
+<p>I asked myself: if I could pick what dynamic information I want to see every time I pick up my phone, what would it be?</p>
+
+<p>What you’re able to put on the lockscreen is quite restricted, which makes it a perfect fit for personal software like Congruence. I can add widgets with very minimal affordances / low clarity, because I am the only user and know exactly what they mean. I think it would be much harder to use widget space effectively for mass-market products.</p>
+
+<p>So, anyway, here’s what my lockscreen looks like now:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/lockscreen-800-ac06f9ac7.webp 800w, /assets/images/generated/congruence/lockscreen-1000-ac06f9ac7.webp 1000w, /assets/images/generated/congruence/lockscreen-1200-ac06f9ac7.webp 1200w, /assets/images/generated/congruence/lockscreen-1600-ac06f9ac7.webp 1600w, /assets/images/generated/congruence/lockscreen-2000-ac06f9ac7.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/lockscreen-800-03a056d8b.png 800w, /assets/images/generated/congruence/lockscreen-1000-03a056d8b.png 1000w, /assets/images/generated/congruence/lockscreen-1200-03a056d8b.png 1200w, /assets/images/generated/congruence/lockscreen-1600-03a056d8b.png 1600w, /assets/images/generated/congruence/lockscreen-2000-03a056d8b.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/lockscreen-800-03a056d8b.png" width="5110" height="2552" /></picture>
+
+<p>There are four widgets:</p>
+
+<ol>
+  <li>Top bar</li>
+  <li>Call list</li>
+  <li>Voice note</li>
+  <li>Text note</li>
+</ol>
+
+<p>The top bar — where it says “Sun 24” — has several pieces of info:</p>
+<ol>
+  <li>Today’s day and date</li>
+  <li>A phone icon that indicates whether the current device is “on” for purposes of receiving calls, or if my other phone is (this is due to my <a href="/congruence/barcodes-freedom">Freedom Phone</a> setup). If the other phone is set to receive calls, then the phone icon is crossed out</li>
+  <li>Air quality index (AQI) measurements.</li>
+</ol>
+
+<p>For air quality, the first number (48 in screenshot) is the PurpleAir hyper-local measurement. This is calculated from nearby PurpleAir devices, which consumers leave out and connect to the network. If you’ve ever used Paku or a similar app where you can see nearby devices’ readings, it was probably PurpleAir.</p>
+
+<p>The second number (50, here) is Google’s AQI measurement. This is a projected number based on Google’s modeling, rather than a direct measurement from nearby devices, so it differs a bit from PurpleAir. Then, after this number, there are two arrows — the first shows what Google projects the difference will be between the current AQI and AQI two hours from now, and the second is the difference between the AQI two hours and six hours from now. The arrows are vertical if the change is 10 AQI points or more, diagonal if 2-9 AQI points, and flat if less than 2.</p>
+
+<p>This is a great example of an interface that is probably too “condensed” for mass market use cases (plus, the line overall includes several types of data that might not be relevant for all people — date, Freedom Phone, and AQI). But for a personal app it is perfect.</p>
+
+<p>The second widget is the call list one. I <a href="/congruence/call-list">wrote about the call list feature previously</a>, but I found it was annoying to have the list buried in the app. So now, with a glance at my lockscreen, I can see exactly who I am supposed to call. Makes it much easier when out on a walk to start dialing.</p>
+
+<p>And last, the voice and text note widgets dump me straight into Congruence where I can <a href="/congruence/notes-ai">take notes</a>.</p>
+
+<p>Similar to using the hold-to-display image functionality of push notifications for the <a href="/congruence/barcodes-freedom">barcodes feature</a>, using customized lockscreen widgets feels like a unique advantage of personal apps — it’s the type of “deep” functionality that is just rarely relevant for broader products, but is magical in the context of something personal.</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/baby">← Baby photos</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 9/10</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Using the lockscreen in ways I had never thought of before.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Using AI for fiction</title><link href="https://andybromberg.com/ai-fiction" rel="alternate" type="text/html" title="Using AI for fiction" /><published>2026-05-20T06:00:00-07:00</published><updated>2026-05-20T06:00:00-07:00</updated><id>https://andybromberg.com/ai-fiction</id><content type="html" xml:base="https://andybromberg.com/ai-fiction"><![CDATA[<p>I just posted <a href="/coherence"><strong>COHERENCE</strong></a>, the result of my first time writing fiction since, I believe… high school English class? I’ve been loosely thinking about the core idea and related topics for the last year or so and felt like a short story was the right format for them.</p>
 
 <p>Turns out: fiction is <em>hard.</em> I don’t know that I’ll be doing much more of it anytime soon. But it was a fun muscle to exercise. (I would welcome sharp feedback!)</p>
 
@@ -54,11 +115,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/congruence/widgets">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/congruence/widgets">Custom widgets</a>
     
   </div>
 </nav>
@@ -909,7 +974,7 @@
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[A story story about belief, miracles, and messaging — and how much words might matter.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-19-coherence.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-19-coherence.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Baby photos</title><link href="https://andybromberg.com/congruence/baby" rel="alternate" type="text/html" title="Baby photos" /><published>2026-05-18T08:00:00-07:00</published><updated>2026-05-18T08:00:00-07:00</updated><id>https://andybromberg.com/congruence/congruence-8-baby</id><content type="html" xml:base="https://andybromberg.com/congruence/baby"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/barcodes-freedom">← Barcodes &amp; Freedom Phone</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 8/10</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-next"><a href="/congruence/widgets">Custom widgets →</a></div>
 </div>
 
 <p>I recently had a child, and that inspired me to build yet another little Congruence feature: “baby dailies.”</p>
@@ -937,7 +1002,7 @@
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/barcodes-freedom">← Barcodes &amp; Freedom Phone</a></div>
 <div class="series-nav-center">Congruence: a very personal app · section 8/10</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+<div class="series-nav-next"><a href="/congruence/widgets">Custom widgets →</a></div>
 </div>
 
 <hr class="end-of-article-divider" />
@@ -2615,59 +2680,4 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Health&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[I just want someone to make squeaky-clean electrolyte powders. Here are some recipes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Barcodes &amp;amp; Freedom Phone</title><link href="https://andybromberg.com/congruence/barcodes-freedom" rel="alternate" type="text/html" title="Barcodes &amp;amp; Freedom Phone" /><published>2026-01-15T07:00:00-08:00</published><updated>2026-01-15T07:00:00-08:00</updated><id>https://andybromberg.com/congruence/congruence-7-barcodes-freedom</id><content type="html" xml:base="https://andybromberg.com/congruence/barcodes-freedom"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 7/10</div>
-<div class="series-nav-next"><a href="/congruence/baby">Baby photos →</a></div>
-</div>
-
-<p>My favorite things to build into Congruence are the ones that are so niche and specific to me that it might not even make sense for another app to exist with them. This post goes over two of those.</p>
-
-<p>The first is “barcodes.” There are two places I frequent where I need to scan a barcode: my local Blue Bottle Coffee, where I scan a loyalty card, and my gym, where I scan an access card.</p>
-
-<p>Previously, I had to manually go into the Blue Bottle app and navigate to the code page, and had to carry a physical barcode tag in my wallet for the gym.</p>
-
-<p>But now, whenever I am physically nearing those places, Congruence detects my location and proactively sends me a push notification that I can press and hold to reveal the barcode. No need to go into an app or carry anything.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/barcode-expanded-800-16d81c5ab.webp 800w, /assets/images/generated/congruence/barcode-expanded-1000-16d81c5ab.webp 1000w, /assets/images/generated/congruence/barcode-expanded-1200-16d81c5ab.webp 1200w, /assets/images/generated/congruence/barcode-expanded-1600-16d81c5ab.webp 1600w, /assets/images/generated/congruence/barcode-expanded-2000-16d81c5ab.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/barcode-expanded-800-a18979095.png 800w, /assets/images/generated/congruence/barcode-expanded-1000-a18979095.png 1000w, /assets/images/generated/congruence/barcode-expanded-1200-a18979095.png 1200w, /assets/images/generated/congruence/barcode-expanded-1600-a18979095.png 1600w, /assets/images/generated/congruence/barcode-expanded-2000-a18979095.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/barcode-expanded-800-a18979095.png" width="3670" height="1468" /></picture>
-
-<p>A simple pleasure for sure, but one I avail myself of multiple times per day.</p>
-
-<hr />
-
-<p>The second such feature is my Freedom Phone feature. I’ve <a href="/freedom-phones">written previously on Freedom Phones</a> in general, although I’ve now upgraded to a second iPhone for my Freedom Phone so that I can use Congruence on it (worth it!).</p>
-
-<p>This has enabled a really nice flow: using Congruence to manage call forwarding. There is a button in Congruence that toggles whether my main phone is forwarding calls to my Freedom Phone or not. When I hit it, it dials the forwarding number (on Verizon: <code class="language-plaintext highlighter-rouge">*72 [Freedom Phone number]</code>) if forwarding is currently off, or the disable number (<code class="language-plaintext highlighter-rouge">*73</code>) if it is on.</p>
-
-<p>This makes it really easy to toggle the state of call forwarding. But even better, there are a variety of indicators that tell me the current status. For example, on the home screens of my phones, there is a widget that says either <code class="language-plaintext highlighter-rouge">THIS</code> or <code class="language-plaintext highlighter-rouge">NOPE</code>:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/freedom-nope-800-7134e46e1.webp 800w, /assets/images/generated/congruence/freedom-nope-1000-7134e46e1.webp 1000w, /assets/images/generated/congruence/freedom-nope-1200-7134e46e1.webp 1200w, /assets/images/generated/congruence/freedom-nope-1600-7134e46e1.webp 1600w, /assets/images/generated/congruence/freedom-nope-2000-7134e46e1.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/freedom-nope-800-68f7be9d6.png 800w, /assets/images/generated/congruence/freedom-nope-1000-68f7be9d6.png 1000w, /assets/images/generated/congruence/freedom-nope-1200-68f7be9d6.png 1200w, /assets/images/generated/congruence/freedom-nope-1600-68f7be9d6.png 1600w, /assets/images/generated/congruence/freedom-nope-2000-68f7be9d6.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/freedom-nope-800-68f7be9d6.png" width="2060" height="824" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/freedom-this-800-5f0e0f048.webp 800w, /assets/images/generated/congruence/freedom-this-1000-5f0e0f048.webp 1000w, /assets/images/generated/congruence/freedom-this-1200-5f0e0f048.webp 1200w, /assets/images/generated/congruence/freedom-this-1600-5f0e0f048.webp 1600w, /assets/images/generated/congruence/freedom-this-2000-5f0e0f048.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/freedom-this-800-42bdfdde5.png 800w, /assets/images/generated/congruence/freedom-this-1000-42bdfdde5.png 1000w, /assets/images/generated/congruence/freedom-this-1200-42bdfdde5.png 1200w, /assets/images/generated/congruence/freedom-this-1600-42bdfdde5.png 1600w, /assets/images/generated/congruence/freedom-this-2000-42bdfdde5.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/freedom-this-800-42bdfdde5.png" width="2110" height="844" /></picture>
-
-<p>And in the app itself, the Freedom module button lights up if it is on, and accordingly says either <code class="language-plaintext highlighter-rouge">THIS</code> or <code class="language-plaintext highlighter-rouge">NOPE</code> depending on which phone it’s being used on.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/module-freedom-800-ce0e8d16d.webp 800w, /assets/images/generated/congruence/module-freedom-1000-ce0e8d16d.webp 1000w, /assets/images/generated/congruence/module-freedom-1200-ce0e8d16d.webp 1200w, /assets/images/generated/congruence/module-freedom-1600-ce0e8d16d.webp 1600w, /assets/images/generated/congruence/module-freedom-2000-ce0e8d16d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/module-freedom-800-7bf74975c.png 800w, /assets/images/generated/congruence/module-freedom-1000-7bf74975c.png 1000w, /assets/images/generated/congruence/module-freedom-1200-7bf74975c.png 1200w, /assets/images/generated/congruence/module-freedom-1600-7bf74975c.png 1600w, /assets/images/generated/congruence/module-freedom-2000-7bf74975c.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/module-freedom-800-7bf74975c.png" width="2440" height="976" /></picture>
-
-<p>I used to use Verizon’s conditional call forwarding, but that isn’t a great experience for callers since if I’m on the Freedom Phone, it has to ring all the way through my main phone. But now it just perfectly routes to whichever phone I am on, and I can keep track and change it easily.</p>
-
-<p>(p.s. I still <em>strongly</em> recommend trying a Freedom Phone experiment… big quality-of-life upgrade.)</p>
-
-<p>More posts coming soon on further Congruence features…</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/vibe-checks">← Vibe checks &amp; 2 things</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 7/10</div>
-<div class="series-nav-next"><a href="/congruence/baby">Baby photos →</a></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Some really personal features for Congruence: loyalty barcodes and controlling my Freedom Phone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-15-congruence-7-barcodes-freedom.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Health&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[I just want someone to make squeaky-clean electrolyte powders. Here are some recipes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-01-16-clean-electrolytes.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
