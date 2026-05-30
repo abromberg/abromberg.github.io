@@ -3327,7 +3327,6 @@ a.series-chapter-title:hover {
 .series-entry-right {
   display: flex;
   align-items: baseline;
-  gap: 0.6em;
   flex-shrink: 0;
   color: #6F6E69;
   white-space: nowrap;
