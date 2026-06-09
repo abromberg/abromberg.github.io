@@ -27,8 +27,8 @@
 <!-- End Jekyll SEO tag -->
 
 
-  <link rel="stylesheet" href="/assets/main.css?v=1780965399">
-  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1780965399">
+  <link rel="stylesheet" href="/assets/main.css?v=1780967150">
+  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1780967150">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
 <script>
@@ -263,10 +263,9 @@
   var resizeTimer=null;
   window.addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer=setTimeout(function(){ setup(); render(); }, 80); });
 
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setup();
-  if(reduced){ playing=false; t=0.6; slider.value=600; setIcon(); render(); }
-  else { setIcon(); requestAnimationFrame(frame); }
+  setIcon();
+  requestAnimationFrame(frame);
 })();
 </script>
 
@@ -437,10 +436,9 @@
   var resizeTimer=null;
   window.addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer=setTimeout(function(){ setup(); render(); }, 80); });
 
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setup();
-  if(reduced){ playing=false; t=0.6; slider.value=600; setIcon(); render(); }
-  else { setIcon(); requestAnimationFrame(frame); }
+  setIcon();
+  requestAnimationFrame(frame);
 })();
 </script>
 
@@ -664,10 +662,9 @@
   slider.addEventListener('input', function(){ playing=false; holdMs=0; t=slider.value/1000; setIcon(); render(); });
   var rt=null; window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(function(){ setup(); render(); }, 80); });
 
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setup();
-  if(reduced){ playing=false; t=0.45; slider.value=450; setIcon(); render(); }
-  else { setIcon(); requestAnimationFrame(frame); }
+  setIcon();
+  requestAnimationFrame(frame);
 })();
 </script>
 

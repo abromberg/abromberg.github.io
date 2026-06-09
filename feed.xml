@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-06-08T17:36:39-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">My grandfather’s papers: some family computing history</title><link href="https://andybromberg.com/lazers-papers" rel="alternate" type="text/html" title="My grandfather’s papers: some family computing history" /><published>2026-06-08T06:00:00-07:00</published><updated>2026-06-08T06:00:00-07:00</updated><id>https://andybromberg.com/lazers-papers</id><content type="html" xml:base="https://andybromberg.com/lazers-papers"><![CDATA[<p>Until recently, I didn’t know much about the details of my grandfather’s career. I knew he was a mathematician, but not much else. His name was Eleazer Bromberg, although he usually went by Lazer.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-06-08T18:05:50-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">My grandfather’s papers: some family computing history</title><link href="https://andybromberg.com/lazers-papers" rel="alternate" type="text/html" title="My grandfather’s papers: some family computing history" /><published>2026-06-08T06:00:00-07:00</published><updated>2026-06-08T06:00:00-07:00</updated><id>https://andybromberg.com/lazers-papers</id><content type="html" xml:base="https://andybromberg.com/lazers-papers"><![CDATA[<p>Until recently, I didn’t know much about the details of my grandfather’s career. I knew he was a mathematician, but not much else. His name was Eleazer Bromberg, although he usually went by Lazer.</p>
 
 <p>Now, with a child of my own, I’ve felt the urge to excavate my family history. And in so doing, I’ve found some interesting bits and pieces.</p>
 
@@ -185,10 +185,9 @@
   var resizeTimer=null;
   window.addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer=setTimeout(function(){ setup(); render(); }, 80); });
 
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setup();
-  if(reduced){ playing=false; t=0.6; slider.value=600; setIcon(); render(); }
-  else { setIcon(); requestAnimationFrame(frame); }
+  setIcon();
+  requestAnimationFrame(frame);
 })();
 </script>
 
@@ -359,10 +358,9 @@
   var resizeTimer=null;
   window.addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer=setTimeout(function(){ setup(); render(); }, 80); });
 
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setup();
-  if(reduced){ playing=false; t=0.6; slider.value=600; setIcon(); render(); }
-  else { setIcon(); requestAnimationFrame(frame); }
+  setIcon();
+  requestAnimationFrame(frame);
 })();
 </script>
 
@@ -586,10 +584,9 @@
   slider.addEventListener('input', function(){ playing=false; holdMs=0; t=slider.value/1000; setIcon(); render(); });
   var rt=null; window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(function(){ setup(); render(); }, 80); });
 
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setup();
-  if(reduced){ playing=false; t=0.45; slider.value=450; setIcon(); render(); }
-  else { setIcon(); requestAnimationFrame(frame); }
+  setIcon();
+  requestAnimationFrame(frame);
 })();
 </script>
 
