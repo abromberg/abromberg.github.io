@@ -27,8 +27,8 @@
 <!-- End Jekyll SEO tag -->
 
 
-  <link rel="stylesheet" href="/assets/main.css?v=1781192437">
-  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1781192437">
+  <link rel="stylesheet" href="/assets/main.css?v=1781193020">
+  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1781193020">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
 <script>
@@ -114,7 +114,7 @@
 
 <p>The first (the “Lagrangian approach”), roughly, is to computationally break the gases themselves up into “cells” and track the behavior of each of the cells. The cells each move and deform and interact physically with each other and the environment. After some sloshing, the “mesh” of cells is twisted, knotted, and unrecognizable from its initial state and hard to mathematically deal with (in some cases, impossible) — but each cell has retained its fundamental nature. No cells now contain a mixture of gases, because we’ve tracked and deformed the gas cells individually.</p>
 
-<p>The second (the “Eulerian approach”) is to divide the <em>space</em> that the gases sit in into “cells” — imagine a 3d grid overlaid on the container. Each of these cells is perfectly sized and still, and instead of the cells moving, we monitor and calculate the properties of the cells as the gases pass through them. We get the benefit of no distortion — but now the gases are smeared across cells, and keeping track of which material is where becomes impossible.</p>
+<p>The second (the “Eulerian approach”) is to divide the <em>space</em> that the gases sit in into “cells” — imagine a 3d grid overlaid on the container. Each of these cells remains regularly shaped and perfectly still, and instead of the cells moving, we monitor and calculate the properties of the cells as the gases pass through them. We get the benefit of no distortion — but now the gases are smeared across cells, and keeping track of which material is where becomes impossible.</p>
 
 <p>You can see the difference in the animations below. The Lagrangian’s cells stay “pure,” but they get so bent out of shape as to become impossible physically. The Eulerian stays calculable, but you get “smeared” cells that are a combination of the two gases and thus lose track of the materials.</p>
 
@@ -490,19 +490,19 @@
 }
 </style>
 
-<p>This was revolutionary and highly effective. But Harlow goes on to say that the process can be viewed in two different ways (emphasis mine):</p>
+<p>This was revolutionary and highly effective. But Harlow goes on to say that the PIC process can be viewed mathematically in two different ways (emphasis mine):</p>
 
 <blockquote>
-  <p>This process can be viewed in two distinctly different ways. One of them is based on the idea of time splitting, in which a computational cycle is broken into two parts, the first being an update of the quantities by all the processes except advection, while the second part moves the particles and accomplishes all of the advective fluxing.</p>
+  <p>One of [the two ways] is based on the idea of time splitting, in which a computational cycle is broken into two parts, the first being an update of the quantities by all the processes except advection, while the second part moves the particles and accomplishes all of the advective fluxing.</p>
 
   <p><strong>The second way, as recognized by Eleazer Bromberg (a visitor to our Group from the Courant Institute at New York University), is to consider that the mesh of cells is actually Lagrangian, so that the first part of the calculations in a cycle advances all the variables, including the mesh coordinates and the particle positions, and the second part maps the mesh back into its original configuration, leaving the particles at their new locations.</strong></p>
 </blockquote>
 
-<p>My grandfather Lazer was visiting Los Alamos National Lab from NYU’s Courant Institute to help them with their nascent computing efforts. He is listed on the Evans &amp; Harlow paper as one of the eight people who assisted with its “Machine Calculations.” But he is <em>also</em> called out as writing Appendix II in the paper, which is about exactly what Harlow highlights above.</p>
+<p>My grandfather Lazer was visiting Los Alamos National Lab from NYU’s Courant Institute to help them with their nascent computing efforts. He is listed on the Evans &amp; Harlow paper as one of the eight people who assisted with its “Machine Calculations.” But he is also, uniquely called out by name as the author of Appendix II in the paper, which is about exactly the alternate view Harlow highlights above.</p>
 
-<p>I <em>suspect</em> what happened is that he was asked to help with the mechanical computations for Evans and Harlow’s approach, and while doing so, thought hard about the problem and came up with a different way of getting to the ultimate equations — hence the named-author appendix. The PIC technique is theirs, but the second way of looking at it is his.</p>
+<p>I suspect he was asked to help with the mechanical computations for Evans and Harlow’s approach, and while doing so, thought hard about the problem and came up with a different way of getting to the ultimate equations — hence the named-author appendix. The PIC technique is theirs, but the second way of looking at it is his.</p>
 
-<p>In the core of the report, Evans and Harlow work through PIC as a sequence of phases. Each cycle begins by freezing the flow in place. On the stationary (Eulerian) grid, they let the pressure differences between neighboring cells “push” on the fluid, updating each cell’s velocity and energy, as if nothing were moving from one cell to the next. Once that’s done, they (computationally) let the fluid move, causing the particles to drift across cell boundaries. And because any boundary-crossing drags momentum and energy into a new cell, a final step reconciles the books.</p>
+<p>In the core of the report, Evans and Harlow work through PIC as a sequence of phases. Each cycle begins by freezing the fluid’s flow in place. On the stationary (Eulerian) grid, they let the pressure differences between neighboring cells “push” on the fluid, updating each cell’s velocity and energy, as if nothing were moving from one cell to the next. Once that’s done, they (computationally) let the fluid move, causing the particles to drift across cell boundaries. And because any boundary-crossing drags momentum and energy into a new cell, a final step reconciles the books.</p>
 
 <p>This is, as Harlow described above, the breaking of the cycle into two parts: “the first being an update of the quantities by all the processes except advection<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Advection is the transport of a substance through bulk fluid motion — e.g. the movement of those mass-carrying particles in the Particle-in-Cell model.</span>, while the second part moves the particles and accomplishes all of the advective fluxing.” And in so doing, the grid doesn’t budge, so you don’t get the knotting of the Lagrangian failure mode. It is, however, not <em>really</em> how the fluid flows in real life, and doesn’t obviously guarantee conservation of mass, momentum, and energy.</p>
 
@@ -514,9 +514,9 @@
 
 <p>But then, before it becomes an issue, he “rezones” it all. He looks at where the distorted cells are, and maps them back onto the original grid, while pouring their contents (momentum, energy, mass) into those original fixed cells where they belong, conserving everything in the process. The particles are left exactly where the fluid carried them.</p>
 
-<p>Simplifying in another way: the Evans &amp; Harlow approach is to keep the imagined, fixed grid in place, compute the flow of the properties (e.g. energy) between its cells, <em>then</em> move the particles, <em>then</em> re-account for that particle movement. The Bromberg approach is to forget about the grid, let the fluid flow like it really does, then re-instantiate the grid over the new state and calculate the new values for those cells (leaving the particles wherever they landed).</p>
+<p>Simplifying in another way: the Evans &amp; Harlow approach is to keep the imagined, fixed grid in place, compute the flow of the properties (e.g. energy) between its cells, <em>then</em> move the particles, <em>then</em> re-account for that particle movement. The Bromberg approach is to forget about the grid, let the fluid flow like it really does, then re-instantiate the original grid over the new state and calculate the new values for those cells (leaving the particles wherever they landed).</p>
 
-<p>Below you can see a visualization of this. Harlow &amp; Evans calculate the forces, then move the particles; Bromberg treats the whole thing as a fluid in one step, and then rezones the grid. They arrive at the same place — it is the same method, but just a different mathematical approach to deriving the result.</p>
+<p>Below you can see a visualization of this. Harlow &amp; Evans calculate the forces, then move the particles; Bromberg treats the whole thing as a fluid in one step, and then rezones the grid. They arrive at the same place — it is the same method, but a different mathematical approach to deriving the result.</p>
 
 <div class="pic-fig">
   <div class="pic-panels two">
@@ -716,11 +716,11 @@
 }
 </style>
 
-<p>This arrives at the same ultimate answer, but it is in some sense more theoretically correct, useful, and intuitive. Lazer’s method inherently wires in conservation of mass, momentum, and energy by focusing on boundaries instead of points. Today we would call this a “finite-volume method” for fluid dynamics (a term coined in the 1970s).</p>
+<p>Despite arriving at the same ultimate answer, I think in some sense Lazer’s approach is more theoretically correct, useful, and intuitive. His method inherently wires in conservation of mass, momentum, and energy by focusing on boundaries instead of points. Today we would call this a “finite-volume method” for fluid dynamics (a term not coined until the 1970s).</p>
 
-<p>The approach isn’t just an aesthetic preference. In the body of the report, Evans and Harlow’s multi-step update process carries a small energy bookkeeping error (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3b4;</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\delta D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">&#x3b4;D</span></span></span></span>) which monotonically increases the calculated energy above the physically intended value. It’s an artifact of the discretization — if you shrink the timestep, you can shrink the error arbitrarily — but it’s there in the calculations regardless. Lazer’s derivation sidesteps it by starting <em>from</em> the integral conservation laws — looking at total mass, momentum, and energy inside each cell, balanced by what crosses the cell’s faces.</p>
+<p>My argument for his approach isn’t just an aesthetic preference. In the body of the report, Evans and Harlow’s multi-step update process carries a small energy bookkeeping error (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3b4;</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\delta D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">&#x3b4;D</span></span></span></span>) which monotonically increases the calculated energy above the physically intended value. It’s an artifact of the discretization — if you shrink the timestep, you can shrink the error arbitrarily — but it’s there in the calculations regardless. Lazer’s derivation sidesteps it by starting <em>from</em> the integral conservation laws — looking at total mass, momentum, and energy inside each cell, balanced by what crosses the cell’s faces.</p>
 
-<p>In his retrospective, directly after Harlow mentions Lazer’s alternative PIC view, he notes (editors’ note mine):</p>
+<p>In his 2004 retrospective, directly after Harlow mentions Lazer’s alternative PIC view, he says (editors’ note mine):</p>
 
 <blockquote>
   <p>Some years later, Tony Hirt and Dan Butler of our Group discovered that instead of a complete mapping back to the original mesh each cycle [what Lazer did], the mapping could be partial, leading to a technique that is called an Arbitrary–Lagrangian–Eulerian (ALE) method, which limits to either of the two viewpoints.</p>
@@ -730,7 +730,7 @@
 
 <p>ALE takes that same idea and relaxes the last part. Instead of always mapping all the way back to the original grid, you are allowed to map to some other convenient grid (maybe closer to the material motion, or the laboratory frame, or maybe adaptively to keep the cells well-shaped). That freedom is the “Arbitrary” in ALE’s “Arbitrary Lagrangian-Eulerian.” So perhaps Lazer came up with just plain ol’ “LE” in his work.</p>
 
-<p>That is why the appendix feels less like a footnote than a seed crystal. It has the essential ALE rhythm: move with the material and rezone. Hirt and Butler’s later contribution was to see that the rezone did not have to be total.</p>
+<p>That is why the appendix feels less like a footnote than a seed crystal. It suggests the essential ALE concept: move the grid with the material and then rezone. Hirt and Butler’s later contribution was to see that the rezone did not have to be back to the original.</p>
 
 <p>There are still new ALE formulations being created and used across topics like <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999125006801" class="external-link" target="_blank" rel="noopener noreferrer">gas modeling</a>, <a href="https://link.springer.com/article/10.1007/s00366-024-02043-6" class="external-link" target="_blank" rel="noopener noreferrer">novel flying object design</a>, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.70229" class="external-link" target="_blank" rel="noopener noreferrer">pavement responsiveness</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0045793025002245" class="external-link" target="_blank" rel="noopener noreferrer">pure numerical-methods research</a> and more (all of those just in the last couple years!).</p>
 
