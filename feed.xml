@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-06-14T13:08:48-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">On Seasonality</title><link href="https://andybromberg.com/on-seasonality" rel="alternate" type="text/html" title="On Seasonality" /><published>2026-06-14T06:00:00-07:00</published><updated>2026-06-14T06:00:00-07:00</updated><id>https://andybromberg.com/on-seasonality</id><content type="html" xml:base="https://andybromberg.com/on-seasonality"><![CDATA[<p>I work and feel best when I’m on a consistent routine — eating roughly the same things every day, going through the same morning and evening flows and daily schedule structures, and doing the same workouts (see: <a href="/congruence/intro">Congruence</a>, <a href="/minimum-effective-quantification">MEQ</a>, <a href="/just-call-me">Just Call Me</a>, and other posts on this site).</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-06-23T19:48:28-07:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">365 days of commits</title><link href="https://andybromberg.com/365-days-of-commits" rel="alternate" type="text/html" title="365 days of commits" /><published>2026-06-23T06:00:00-07:00</published><updated>2026-06-23T06:00:00-07:00</updated><id>https://andybromberg.com/365-days-of-commits</id><content type="html" xml:base="https://andybromberg.com/365-days-of-commits"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/365-days-of-commits/github-800-8d4dbd0a5.webp 800w, /assets/images/generated/365-days-of-commits/github-1000-8d4dbd0a5.webp 1000w, /assets/images/generated/365-days-of-commits/github-1200-8d4dbd0a5.webp 1200w, /assets/images/generated/365-days-of-commits/github-1600-8d4dbd0a5.webp 1600w, /assets/images/generated/365-days-of-commits/github-1876-8d4dbd0a5.webp 1876w" type="image/webp" /><source srcset="/assets/images/generated/365-days-of-commits/github-800-c37aa1910.png 800w, /assets/images/generated/365-days-of-commits/github-1000-c37aa1910.png 1000w, /assets/images/generated/365-days-of-commits/github-1200-c37aa1910.png 1200w, /assets/images/generated/365-days-of-commits/github-1600-c37aa1910.png 1600w, /assets/images/generated/365-days-of-commits/github-1876-c37aa1910.png 1876w" type="image/png" /><img src="/assets/images/generated/365-days-of-commits/github-800-c37aa1910.png" width="1876" height="754" /></picture>
+
+<p>I’m a fan of the probably-apocryphal Jerry Seinfeld <a href="https://lifehacker.com/jerry-seinfelds-productivity-secret-281626">“don’t break the chain”</a> advice. It works for me — I even <a href="/congruence/streaks-meq">have an app for it</a>.</p>
+
+<p>I’ve written at least 750 words for 661 days straight (2,329 if you don’t count the times I paused for a few days for Burning Man); jotted down two things that made me happy that day for 1,025 days straight (3,688 without Burning Man — more than a decade!); done <a href="/congruence/vibe-checks">vibe checks</a> for 662 days straight (942, ditto).</p>
+
+<p>And now: 365 days of at least 1 code commit pushed every day.</p>
+
+<p>A commit is not a good measure of code volume or quality (it could be a tiny copy change or a huge feature), but it is a binary outcome. Every day for the last year, I sat down and did at least <em>something</em> in code, big or small.</p>
+
+<p>I think I am a much better engineer for it.</p>
+
+<p>I also simply enjoy coding, and having a serious practice to make time for the things I enjoy is nice, too.</p>
+
+<hr />
+
+<p>Visakan Veerasamy has a great idea he harps on: <a href="https://www.visakanv.com/blog/do100things/">do 100 things</a>. You should read the post and watch the videos at the bottom. He happens to be opposed to the “don’t break the chain” approach, but the point stands. Doing something 100 times — or 365 times — will inevitably teach you something.</p>
+
+<p>It’s not even hard! You can just decide to make an omelette every day, or push a tiny commit, or make a tiny watercolor, and by the end of 100 days (and certainly a year), you will be vastly better at it, have learned some interesting things, and really not even spent that much time.</p>
+
+<p>I will note, though, that the only streak-like daily practices that work well for me are those really short ones — definitely less than fifteen minutes required, and preferably less than two. A commit, 750 words, 2 things, and vibe checks can all be done in less than 20 minutes total if need be — and I <em>always</em> have 20 minutes.</p>
+
+<p>I also sometimes keep track of streaks of longer-duration tasks, but they inevitably break sooner, and I don’t beat myself up about it. There are days sometimes where it just doesn’t fit my priorities to hew to the routine. But it feels great to have long-running streaks of the shorter tasks.</p>
+
+<p>In closing: is this post really just an excuse to post my perfectly-green GitHub graph? Sure is. I might as well memorialize it somewhere, because undoubtedly, at some point, I’ll break the chain.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/on-seasonality">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/on-seasonality">On Seasonality</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I'm a fan of not breaking the chain, and after 365 days of at least 1 code commit a day, I think I'm a better engineer.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-23-365-days-of-commits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-23-365-days-of-commits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On Seasonality</title><link href="https://andybromberg.com/on-seasonality" rel="alternate" type="text/html" title="On Seasonality" /><published>2026-06-14T06:00:00-07:00</published><updated>2026-06-14T06:00:00-07:00</updated><id>https://andybromberg.com/on-seasonality</id><content type="html" xml:base="https://andybromberg.com/on-seasonality"><![CDATA[<p>I work and feel best when I’m on a consistent routine — eating roughly the same things every day, going through the same morning and evening flows and daily schedule structures, and doing the same workouts (see: <a href="/congruence/intro">Congruence</a>, <a href="/minimum-effective-quantification">MEQ</a>, <a href="/just-call-me">Just Call Me</a>, and other posts on this site).</p>
 
 <p>I suspect this feels good because the routine effectively pre-makes my decisions. I avoid making decisions I’ll later regret, and I don’t add more to the already-pretty-tall stack of choices I have to make throughout the day. Plus my body adjusts to the flow and knows what to expect.</p>
 
@@ -44,11 +106,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/365-days-of-commits">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/365-days-of-commits">365 days of commits</a>
     
   </div>
 </nav>
@@ -2509,72 +2575,4 @@ If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Real-time, multiplayer shared folders and notes for Obsidian. Everything you love about Google Docs, but in your lovely local Obsidian instance.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I don’t write code anymore</title><link href="https://andybromberg.com/i-dont-write-code-anymore" rel="alternate" type="text/html" title="I don’t write code anymore" /><published>2026-02-21T05:00:00-08:00</published><updated>2026-02-21T05:00:00-08:00</updated><id>https://andybromberg.com/i-dont-write-code-anymore</id><content type="html" xml:base="https://andybromberg.com/i-dont-write-code-anymore"><![CDATA[<p>Well, it happened. As of mid-February 2026, I effectively no longer handwrite code.</p>
-
-<p>If you had asked me six weeks ago when we’d cross that chasm, I would have said “maybe end of 2026.” But life comes at you fast.</p>
-
-<p>I’m not alone in this, of course. Boris Cherny, creator of Claude Code, <a href="https://www.linkedin.com/posts/lennyrachitsky_head-of-claude-code-boris-cherny-a-100-activity-7430668952420302850-gXL2/">says</a>:</p>
-
-<blockquote>
-  <p>100% of my code is written by Claude Code. I have not edited a single line by hand since November. I think at this point it’s safe to say that coding is largely solved. And so now we’re starting to think about okay what’s next.</p>
-</blockquote>
-
-<p>The most remarkable thing in all this is the distinct feeling of <em>acceleration</em>. Part of the nature of being on a psuedo-exponential curve is that every moment feels <em>way</em> faster than the last. It’s hard for me to imagine where we’ll be by the end of this year, let alone five years from now. So I’m just enjoying the ride (and shipping more than I ever have before).</p>
-
-<hr />
-
-<p>It’s worth noting that this is not yet <em>at all</em> the same as saying “my coding skills &amp; engineering background are useless” (although that may not be far off). There are a <em>ton</em> of things I find where that knowledge still matters a lot. The way I go about prompting the agents; the ways in which I correct the models’ plans; the libraries I point them towards; how I test the product and what modifications I ask for; reviewing the code for dumb things the models tend to do; the idiosyncratic architectural approaches I suggest for certain products and use cases.</p>
-
-<p>I observe that the people who are most productive now with coding agents have some level of management experience — because those skills (delegating, editing, directing, testing…) are in fact often <em>management</em> skills. (See my previous post <a href="/all-editors-now">We’re all the editors now</a>).</p>
-
-<p>So my saying “I effectively no longer handwrite code” is not the same as “everyone now has equal ability to do software engineering.” Non-technical vibecoding remains incredible for many use cases, but for complex products still creates buggy balls of mud that are hard to maintain and continue to improve (again: this may not last long).</p>
-
-<p>Although I will say that the vanguard of non-technical vibecoding seems to be advancing quite a bit too. A friend of mine took my recent posts about <a href="/congruence/intro">Congruence</a>, an app I made, and fed the links to Claude Code and asked it to reproduce the app. It did. (You should try this too, if you’re interested!)</p>
-
-<hr />
-
-<p>What pushed me over the edge of no longer handwriting code? Opus 4.6, GPT-5.3 Codex, and the Claude Code, Codex, and OpenCode harnesses making big strides through January and February of this year. It suddenly no longer made sense for me to write code myself.</p>
-
-<p>I can’t wait to see what the rest of this year brings.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/toc-ai-stanford">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/toc-ai-stanford">Stanford Lecture on Theory of Constraints for AI</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/collaborative-folders">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/collaborative-folders">Collaborative Folders: multiplayer notes for Obsidian</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;]" /><summary type="html"><![CDATA[Well, it happened. Early/mid February 2026 is when I effectively stopped handwriting code.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-02-21-i-dont-write-code-anymore.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-02-21-i-dont-write-code-anymore.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Real-time, multiplayer shared folders and notes for Obsidian. Everything you love about Google Docs, but in your lovely local Obsidian instance.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
