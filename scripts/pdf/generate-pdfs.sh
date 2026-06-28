@@ -101,6 +101,15 @@ generate_pdf() {
     sed 's/^| *\([^|]*[^ |]\) *| *\([^|]*[^ |]\) *| *$/- **\1**: \2/' \
     > "$temp_file"
   
+  # Make the PDF byte-reproducible: without this, xelatex stamps the current
+  # time into /CreationDate, /ModDate and a random /ID, so an unchanged post
+  # still shows as "modified" in git after every regeneration. Derive a fixed
+  # timestamp from the post's own date instead (BSD date first, GNU fallback).
+  local epoch
+  epoch=$(date -j -f "%Y-%m-%d" "$date" +%s 2>/dev/null || date -d "$date" +%s 2>/dev/null || echo 0)
+  export SOURCE_DATE_EPOCH="$epoch"
+  export FORCE_SOURCE_DATE=1
+
   # Run pandoc
   pandoc "$temp_file" \
     --from=markdown+yaml_metadata_block-pipe_tables-simple_tables-multiline_tables-grid_tables \
@@ -120,7 +129,21 @@ generate_pdf() {
   
   # Cleanup
   rm -f "$temp_file"
-  
+
+  # SOURCE_DATE_EPOCH fixes the dates, but xelatex still writes a time-based
+  # trailer /ID (both halves). Pin it to a content-derived hash so the PDF is
+  # fully byte-reproducible -- otherwise an unchanged post keeps showing as
+  # modified in git. The /ID lives in the plain-text xref-stream dictionary and
+  # both replacement values are the same 32 hex chars, so offsets are unchanged.
+  if [ -f "$output_file" ]; then
+    local docid
+    docid=$( (md5 -q "$input_file" 2>/dev/null || md5sum "$input_file" 2>/dev/null | cut -d' ' -f1) )
+    PDF_DOC_ID="$docid" perl -0777 -i -pe '
+      my $id = $ENV{PDF_DOC_ID};
+      s{/ID\s*\[\s*<[0-9A-Fa-f]+>\s*<[0-9A-Fa-f]+>\s*\]}{/ID [<$id><$id>]}g;
+    ' "$output_file"
+  fi
+
   if [ -f "$output_file" ]; then
     echo "   ✅ Generated: $output_file"
   else
