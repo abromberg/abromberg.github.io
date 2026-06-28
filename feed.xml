@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-06-28T17:33:41+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">365 days of commits</title><link href="https://andybromberg.com/365-days-of-commits" rel="alternate" type="text/html" title="365 days of commits" /><published>2026-06-23T13:00:00+00:00</published><updated>2026-06-23T13:00:00+00:00</updated><id>https://andybromberg.com/365-days-of-commits</id><content type="html" xml:base="https://andybromberg.com/365-days-of-commits"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/365-days-of-commits/github-800-8d4dbd0a5.webp 800w, /assets/images/generated/365-days-of-commits/github-1000-8d4dbd0a5.webp 1000w, /assets/images/generated/365-days-of-commits/github-1200-8d4dbd0a5.webp 1200w, /assets/images/generated/365-days-of-commits/github-1600-8d4dbd0a5.webp 1600w, /assets/images/generated/365-days-of-commits/github-1876-8d4dbd0a5.webp 1876w" type="image/webp" /><source srcset="/assets/images/generated/365-days-of-commits/github-800-c37aa1910.png 800w, /assets/images/generated/365-days-of-commits/github-1000-c37aa1910.png 1000w, /assets/images/generated/365-days-of-commits/github-1200-c37aa1910.png 1200w, /assets/images/generated/365-days-of-commits/github-1600-c37aa1910.png 1600w, /assets/images/generated/365-days-of-commits/github-1876-c37aa1910.png 1876w" type="image/png" /><img src="/assets/images/generated/365-days-of-commits/github-800-c37aa1910.png" width="1876" height="754" /></picture>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-06-28T22:35:49+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Copapers: multiplayer docs for humans &amp;amp; agents</title><link href="https://andybromberg.com/copapers" rel="alternate" type="text/html" title="Copapers: multiplayer docs for humans &amp;amp; agents" /><published>2026-06-28T13:00:00+00:00</published><updated>2026-06-28T13:00:00+00:00</updated><id>https://andybromberg.com/copapers</id><content type="html" xml:base="https://andybromberg.com/copapers"><![CDATA[<p>Over the past few months, I’ve increasingly felt the need for an interface that combines the real-time human collaboration model of Google Docs with the ability for users’ AI agents to edit, suggest, and comment on the doc in parallel.</p>
+
+<p>I want it for editing public content together, or drafting reports with humans and agents contributing, or for collaborating on agent-generated plan.md files with colleagues before actioning them, and so on.</p>
+
+<p>In some sense, this is now the fourth time I’ve tried to build this, and I’m pretty sure I got it right this time (finally).<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Previous attempts included <a href="/interface0-google-docs">agent suggestions in Google Docs</a>, <a href="/collaborative-folders">collaborative folders in Obsidian</a>, and <a href="/interface0-intro">artifacts in interface0</a>. Each had good ideas but missed the mark in one way or another, and all contributed to this next solution.</span></p>
+
+<p>The result is <a href="https://copapers.com">Copapers</a>. Its model is simple: humans get a Google Docs-like web interface, and agents get an MCP server which is highly token-efficient and reliable.</p>
+
+<p>The magic is in the implementation of the agentic MCP interface. There are other products out there that in theory allow this same general pattern, like <a href="https://www.notion.com/">Notion</a>, or <a href="https://www.proofeditor.ai/">Proof</a> from Every. But every one of those I have seen takes the approach of giving the agents <em>custom, app-specific</em> tools for editing the document — tools like <code class="language-plaintext highlighter-rouge">edit_block</code> or <code class="language-plaintext highlighter-rouge">replace_range</code> or <code class="language-plaintext highlighter-rouge">notion-update-page</code>.</p>
+
+<p>These custom tools have two issues: they are extremely token-hungry, eating up usage limits and context windows; and they are often brittle and prone to failure.</p>
+
+<p>This is a shame, because agent harnesses (e.g. Claude Code, Claude Cowork, Codex) are <em>excellent</em> at editing files locally. They have built-in read / write / update tools that the harnesses use perfectly and the models are trained for, with rare failures and minimal token consumption.</p>
+
+<p>Copapers is architected in such a way that the agents can use these native tools. And as a result, it is highly token-efficient and reliable.</p>
+
+<p>Here’s a demo. And you can read on if you want to understand how it works behind the scenes.</p>
+
+<div class="video-thumbnail">
+<a class="video-thumbnail-link" href="https://screen.studio/share/3vJAtq8d" target="_blank" rel="noopener noreferrer" aria-label="Watch the Copapers demo">
+<picture loading="lazy"><source srcset="/assets/images/generated/copapers/demo-screengrab-800-6f67cd55d.webp 800w, /assets/images/generated/copapers/demo-screengrab-1000-6f67cd55d.webp 1000w, /assets/images/generated/copapers/demo-screengrab-1200-6f67cd55d.webp 1200w, /assets/images/generated/copapers/demo-screengrab-1478-6f67cd55d.webp 1478w" type="image/webp" /><source srcset="/assets/images/generated/copapers/demo-screengrab-800-6ea2273e2.png 800w, /assets/images/generated/copapers/demo-screengrab-1000-6ea2273e2.png 1000w, /assets/images/generated/copapers/demo-screengrab-1200-6ea2273e2.png 1200w, /assets/images/generated/copapers/demo-screengrab-1478-6ea2273e2.png 1478w" type="image/png" /><img src="/assets/images/generated/copapers/demo-screengrab-800-6ea2273e2.png" width="1478" height="954" /></picture>
+
+<span class="video-thumbnail-play" aria-hidden="true">
+<svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"></polygon></svg>
+</span>
+</a>
+</div>
+<hr />
+
+<h3 id="how-it-works">How it works</h3>
+
+<p>The server maintains the canonical document and handles all conflict resolution via <a href="https://yjs.dev/">Yjs</a> CRDTs. Whenever an agent wants to edit a document, it “pulls” the document down to the user’s computer, downloading a Markdown representation of the doc (with minimally-extended CriticMarkup for suggestions and comments). The agent then edits completely locally using its native tools, and “pushes” the doc back up to the server.</p>
+
+<p>On push, a couple things happen. First, the agent’s permissions are resolved. If the agent is only a “commenter” on the doc (or if it is an editor but chooses to suggest instead), its changes are diffed against the current state of the doc and added as suggestions. If it is an editor and chooses to exercise its edit capabilities, the edits are made directly. The agents are also able to make and respond to comments, and if they are editors, resolve them.</p>
+
+<p>But all of that behind the scenes. All the user needs to do is add the MCP server to their local agent and ask it to grab and edit a document, and it’ll go smoothly from there. The agent’s edits show up separated from their human’s.</p>
+
+<p>There’s also a feature where your agents can “link” an existing Markdown file on your computer (e.g. a plan document generated by a code agent) to a new Copapers file. When you do so, the Copapers file becomes canonical and the local Markdown gets some metadata telling agents to look on Copapers for the real, up-to-date doc. You can then edit collaboratively on Copapers or through agents, and sync updates back down to the local doc if you want.</p>
+
+<p>I’ve been using Copapers and really enjoying it. It feels like these sort of human-agent shared workspaces are the future, and I suspect the best of them will use the agents native tools as much as possible. Would love to hear any feedback or thoughts.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/365-days-of-commits">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/365-days-of-commits">365 days of commits</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[After getting sick of no reliable, token-efficient way to collaborate on docs with agents and humans alike, I built my own.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-28-copapers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-28-copapers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">365 days of commits</title><link href="https://andybromberg.com/365-days-of-commits" rel="alternate" type="text/html" title="365 days of commits" /><published>2026-06-23T13:00:00+00:00</published><updated>2026-06-23T13:00:00+00:00</updated><id>https://andybromberg.com/365-days-of-commits</id><content type="html" xml:base="https://andybromberg.com/365-days-of-commits"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/365-days-of-commits/github-800-8d4dbd0a5.webp 800w, /assets/images/generated/365-days-of-commits/github-1000-8d4dbd0a5.webp 1000w, /assets/images/generated/365-days-of-commits/github-1200-8d4dbd0a5.webp 1200w, /assets/images/generated/365-days-of-commits/github-1600-8d4dbd0a5.webp 1600w, /assets/images/generated/365-days-of-commits/github-1876-8d4dbd0a5.webp 1876w" type="image/webp" /><source srcset="/assets/images/generated/365-days-of-commits/github-800-c37aa1910.png 800w, /assets/images/generated/365-days-of-commits/github-1000-c37aa1910.png 1000w, /assets/images/generated/365-days-of-commits/github-1200-c37aa1910.png 1200w, /assets/images/generated/365-days-of-commits/github-1600-c37aa1910.png 1600w, /assets/images/generated/365-days-of-commits/github-1876-c37aa1910.png 1876w" type="image/png" /><img src="/assets/images/generated/365-days-of-commits/github-800-c37aa1910.png" width="1876" height="754" /></picture>
 
 <p>I’m a fan of the probably-apocryphal Jerry Seinfeld <a href="https://lifehacker.com/jerry-seinfelds-productivity-secret-281626">“don’t break the chain”</a> advice. It works for me. I even <a href="/congruence/streaks-meq">have an app for it</a>.</p>
 
@@ -44,11 +121,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/copapers">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/copapers">Copapers: multiplayer docs for humans &amp; agents</a>
     
   </div>
 </nav>
@@ -2511,68 +2592,4 @@ claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A data-driven approach to picking an air purifier that will actually be the best for you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Collaborative Folders: multiplayer notes for Obsidian</title><link href="https://andybromberg.com/collaborative-folders" rel="alternate" type="text/html" title="Collaborative Folders: multiplayer notes for Obsidian" /><published>2026-03-01T13:00:00+00:00</published><updated>2026-03-01T13:00:00+00:00</updated><id>https://andybromberg.com/collaborative-folders</id><content type="html" xml:base="https://andybromberg.com/collaborative-folders"><![CDATA[<p><a href="//collaborativefolders.com" target="_blank" rel="noopener noreferrer"><picture loading="lazy"><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-be0322fd8.webp 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-be0322fd8.webp 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-be0322fd8.webp 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-be0322fd8.webp 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-be0322fd8.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png 800w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1000-eb033f817.png 1000w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1200-eb033f817.png 1200w, /assets/images/generated/collaborative-folders/collaborativefolders_header-1600-eb033f817.png 1600w, /assets/images/generated/collaborative-folders/collaborativefolders_header-2000-eb033f817.png 2000w" type="image/png" /><img src="/assets/images/generated/collaborative-folders/collaborativefolders_header-800-eb033f817.png" width="2340" height="936" /></picture>
-</a></p>
-
-<p>I <em>love</em> <a href="https://obsidian.md">Obsidian</a><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">So much, in fact, this blog uses a color palette, <a href="https://stephango.com/flexoki">Flexoki</a>, designed by Obsidian CEO Steph Ango.</span>, but I <em>hate</em> copying my notes out into Google Docs to share and edit them with teammates.</p>
-
-<p>So I built an Obsidian Plugin called <a href="https://collaborativefolders.com">Collaborative Folders</a> that enables real-time, end-to-end encrypted, Google Docs-style multiplayer editing of files inside Obsidian. Here’s a demo:</p>
-
-<video controls="" muted="" loop="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
-<source src="/assets/images/collaborative-folders/collab_demo.mp4" type="video/mp4" />
-If the video doesn't play, <a href="/assets/images/collaborative-folders/collab_demo.mp4">open it directly</a>.
-</video>
-
-<hr />
-
-<p>Basically: share a folder with another Collaborative Folders user and the files inside that folder will stay in sync between your local Obsidian instances. You can edit them together and see each other’s cursors. Images and other attachments come along for the ride, too. And you can generate share links for files that deeplink into the recipient’s own Obsidian vault.</p>
-
-<p>This is built with a relay server that handles communication between your Obsidian instances, but that relay server can’t see the content of the notes — they are encrypted end-to-end.</p>
-
-<p>You can use my hosted relay server for a monthly fee or easily deploy your own (instructions for the latter available <a href="https://github.com/abromberg/obsidian-collaborative-folders">on GitHub</a>, along with the entire plugin &amp; server MIT-licensed source code).</p>
-
-<p>Check it all out at <a href="https://collaborativefolders.com">collaborativefolders.com</a> and let me know what you think! Would love to hear feedback. It is very much a beta product, so follow typical backup precautions…</p>
-
-<p><em>p.s. the valiant Obsidian plugin reviewing team is facing an onslaught of submissions due to the rise in vibecoded plugins. It may be weeks or months until they get to this one and add it to the real directory — on the site I have workaround installation instructions. But in the meantime, maybe give an emoji reaction or polite supportive comment on the <a href="https://github.com/obsidianmd/obsidian-releases/pull/10655">GitHub PR</a> for my plugin, or ping anyone you know at Obsidian :)</em></p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/i-dont-write-code-anymore">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/i-dont-write-code-anymore">I don't write code anymore</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/picking-air-purifiers">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/picking-air-purifiers">How to pick the best air purifier, objectively</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Real-time, multiplayer shared folders and notes for Obsidian. Everything you love about Google Docs, but in your lovely local Obsidian instance.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-03-01-collaborative-folders.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A data-driven approach to picking an air purifier that will actually be the best for you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
