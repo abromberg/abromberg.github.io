@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-07-01T16:14:19+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Copapers: multiplayer docs for humans &amp;amp; agents</title><link href="https://andybromberg.com/copapers" rel="alternate" type="text/html" title="Copapers: multiplayer docs for humans &amp;amp; agents" /><published>2026-06-28T13:00:00+00:00</published><updated>2026-06-28T13:00:00+00:00</updated><id>https://andybromberg.com/copapers</id><content type="html" xml:base="https://andybromberg.com/copapers"><![CDATA[<p>Over the past few months, I’ve increasingly felt the need for an interface that combines the real-time human collaboration model of Google Docs with the ability for users’ AI agents to edit, suggest, and comment on the doc.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-07-05T16:04:46+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Developing on iOS is underrated: CloudKit and more</title><link href="https://andybromberg.com/ios-underrated" rel="alternate" type="text/html" title="Developing on iOS is underrated: CloudKit and more" /><published>2026-07-05T13:00:00+00:00</published><updated>2026-07-05T13:00:00+00:00</updated><id>https://andybromberg.com/ios-underrated</id><content type="html" xml:base="https://andybromberg.com/ios-underrated"><![CDATA[<p>I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I’ve recently built four (<a href="/congruence/intro">Congruence</a>, Lightwork’s onsite inspection app, linen&amp;, and CribCam; I’ll post about the latter two soon) and discovered some utilities that make the developer experience delightful.</p>
+
+<p>The first is the combination of native Apple accounts and CloudKit.</p>
+
+<p>The these two allow for serverless app building — all I need to code is the frontend, and I get authentication, cross-device syncing, sharing, and storage for free. Apple handles everything and doesn’t charge a penny.</p>
+
+<p>There are a bunch of upsides here — the biggest being a lack of maintenance burden (the client code just keeps chugging along on user devices) and zero cost. Plus strong privacy and security.</p>
+
+<p>To interact with CloudKit, I use the third-party <a href="https://github.com/pointfreeco/sqlite-data">sqlite-data</a> package. It lets me use sqlite as the local database (which I prefer) and handles the CloudKit sync simply and intuitively. But you can also use SwiftData instead.</p>
+
+<p>I can’t overstate how nice this is. I only worry about writing client code, and users are automatically “signed in” via Apple account access (no auth flows!), their data is synced across all their devices using the same account, sharing is easy to enable, and data is stored off-device at no cost and with no ongoing maintenance.</p>
+
+<p>For a small personal app, this is perfect. Less overhead is the dream — less to build and less to maintain and less to keep track of. And I suspect it’s great even for scaled apps too.</p>
+
+<p>This biases me towards building native apps for iOS and MacOS over web apps for most personal use cases, which is something I wouldn’t have believed a couple years ago. I distribute via TestFlight, updates land automatically, and the experience is smoother throughout.</p>
+
+<hr />
+
+<p>CloudKit &amp; Apple accounts are the big ones, but there are a bunch of other gems in the Apple ecosystem. For the Lightwork inspection app, I use <a href="https://developer.apple.com/augmented-reality/roomplan/">RoomPlan</a>, which is an astonishingly good (and again… free) framework to 3D model a room. But that’s pretty niche.</p>
+
+<p>More broadly applicably, the new <a href="https://developer.apple.com/documentation/speech/speechanalyzer">SpeechAnalyzer</a> and <a href="https://developer.apple.com/documentation/foundationmodels">Foundation Models</a> frameworks are outstanding.</p>
+
+<p>SpeechAnalyzer can do many things, but I use it for fast, on-device speech-to-text. Instead of calling Whisper or another remote model (and paying, needing a server, dealing with API keys, etc.), I just call SpeechAnalyzer on device and it turns the user’s speech into text.</p>
+
+<p>And the Foundation Models are solid, very fast, (mostly) on-device LLMs. They can do structured outputs and tool calls. Of course some use cases require frontier or near-frontier intelligence. But many don’t, and if I can avoid the headache of dealing with the cost, maintenance, authentication, and such of that, I will.</p>
+
+<hr />
+
+<p>When you combine all of these — Apple account automatic auth, CloudKit for data storage and sync, SpeechAnalyzer and Foundation Models for intelligence… you can build <em>a lot</em> without ever creating server code and the associated maintenance burden.</p>
+
+<p>And, lest I repeat myself… all of this is free and easy to use.</p>
+
+<p>I suspect I will be reaching for Xcode more often in the future as a result.</p>
+
+<hr />
+
+<p>A final tip: Apple’s developer docs are inaccessible to LLMs. <a href="https://sosumi.ai/">Sosumi.ai</a> is a Markdown mirror of the Apple docs that you can point your agents at. The paths are all the same — just replace developer.apple.com with sosumi.ai and it’ll work.</p>
+
+<p>But beyond Apple’s own docs, if you’re using any third-party packages (like sqlite-data), <a href="https://swiftpackageindex.com/">Swift Package Index</a> is the equivalent documentation site. They recently were acquired by Apple. And just like Apple’s own docs, they are inaccessible to LLMs.</p>
+
+<p>So I forked sosumi.ai, added support for SPI, and <a href="https://github.com/abromberg/sosumi.ai">published it here</a>. If you want your agents to have access to docs for all of Apple’s frameworks <em>and</em> third-party packages:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/abromberg/sosumi.ai
+cd sosumi.ai
+npm install
+npm run dev
+</code></pre></div></div>
+
+<p>The easiest way to hook it up is as an MCP server — it exposes tools for searching Apple docs and fetching Apple, HIG, and Swift Package Index documentation. In Claude Code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude mcp add --transport http sosumi http://localhost:8787/mcp
+</code></pre></div></div>
+
+<p>(For other MCP-capable agents, point them at http://localhost:8787/mcp.)</p>
+
+<p>Alternatively, you can tell your clanker:</p>
+
+<blockquote>
+  <p>Anytime you’re looking up Apple or third-party Swift package docs, find their documentation URL (e.g. https://developer.apple.com/documentation/foundationmodels or https://swiftpackageindex.com/pointfreeco/sqlite-data/main/documentation/sqlitedata) and replace https://developer.apple.com or https://swiftpackageindex.com with http://localhost:8787</p>
+</blockquote>
+
+<p>Happy building.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/copapers">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/copapers">Copapers: multiplayer docs for humans &amp; agents</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I've recently built four and discovered some utilities that make the developer experience delightful.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Copapers: multiplayer docs for humans &amp;amp; agents</title><link href="https://andybromberg.com/copapers" rel="alternate" type="text/html" title="Copapers: multiplayer docs for humans &amp;amp; agents" /><published>2026-06-28T13:00:00+00:00</published><updated>2026-06-28T13:00:00+00:00</updated><id>https://andybromberg.com/copapers</id><content type="html" xml:base="https://andybromberg.com/copapers"><![CDATA[<p>Over the past few months, I’ve increasingly felt the need for an interface that combines the real-time human collaboration model of Google Docs with the ability for users’ AI agents to edit, suggest, and comment on the doc.</p>
 
 <p>I want this for editing public content with a team, or drafting reports with humans and agents contributing, or for collaborating on agent-generated plan.md files with colleagues before actioning them, and so on.</p>
 
@@ -59,11 +158,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/ios-underrated">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/ios-underrated">Developing on iOS is underrated: CloudKit and more</a>
     
   </div>
 </nav>
@@ -2035,561 +2138,4 @@ claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Theory of Constraints as a Claude skill that can probably help you solve your problems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to pick the best air purifier, objectively</title><link href="https://andybromberg.com/picking-air-purifiers" rel="alternate" type="text/html" title="How to pick the best air purifier, objectively" /><published>2026-04-04T13:00:00+00:00</published><updated>2026-04-04T13:00:00+00:00</updated><id>https://andybromberg.com/picking-air-purifiers</id><content type="html" xml:base="https://andybromberg.com/picking-air-purifiers"><![CDATA[<p><strong>Short answer:</strong> use <a href="https://purifiers.lightworkhome.com/">Lightwork’s Air Purifier Guide</a> — 100% free; no signup required; no affiliate links, partnerships, or bias; completely data-driven, quantitative, and transparent.</p>
-
-<p>Or, if you want to understand how we at <a href="https://lightworkhome.com">Lightwork Home Health</a> evaluate and select air purifiers (and how we arrived at the algorithm for our tool), read on…</p>
-
-<h2 id="the-basics-of-air-purification">The basics of air purification</h2>
-
-<p>There is so much marketing noise in the air purifier space. Companies use and come up with all sorts of buzzwords to suggest that their purifier does something <em>special</em>. It’s shockingly difficult to get straight answers and objectively evaluate performance.</p>
-
-<p>But there are a couple key concepts to understand upfront, before getting into the nitty-gritty of comparisons.</p>
-
-<p>First: what are you filtering? Broadly, there are two categories you might want to cover. The first is particulate matter (or “PM”) — everything from dust to pollen to smoke, mold, pet dander, and more. The second is “VOCs” — volatile organic compounds and their cousins semi-volatile organic compounds (SVOCs) and other gases and chemicals.</p>
-
-<p>We’ll focus most of this post on the former (PM). This is the more common air quality issue that nearly every home would be well-served to address. VOCs can certainly be an issue as well, but it is more nuanced and they are not <em>quite</em> as prevalent. We’ll talk about VOCs at the <a href="#the-voc-problem">end of this post</a>.</p>
-
-<p>The mechanisms for filtering PM and VOCs are quite different from each other. Some air purifiers can help with both, but in general, we would strongly recommend filtering them separately.</p>
-
-<p>Once you’ve decided you’re focusing on particulate matter, the question becomes: what makes a good PM air purifier?</p>
-
-<p>Particulate matter ranges from really tiny particulates (perhaps 0.1-0.5 microns in size, like airborne viruses, small bacteria, and ultrafine pollutants like vehicle emissions) to slightly larger ones (around 1 micron is typically larger bacteria and fine dust), or even larger (3-10 microns includes mold and plant spores, pollen, and most dust particles). A good air purifier needs to cover all of these.</p>
-
-<p>So here’s a fun trivia question: in general, do air purifiers struggle the most with filtering:</p>
-<ol>
-  <li>Larger particles</li>
-  <li>Or small particles?</li>
-</ol>
-
-<p>The surprising answer? <em>Neither</em>.</p>
-
-<p>Air purifiers have their worst performance on <em>mid-size</em> particles, typically around 0.3 microns. They are extremely effective at filtering tiny particles and extremely effective at filtering large particles.</p>
-
-<p>How can this be? Well: modern air purifiers (and certainly “HEPA” ones) actually use a combination of a few filtration techniques. One of these techniques (diffusion) is extremely good at small particles and gets worse the larger the particle is. Others (inertial impaction, interception) get more effective the larger the particle size is. (And there is also settling and electrostatic attraction in the mix too.)</p>
-
-<p>And so, combined, the efficacy curve looks like a “U,” as in the diagram below (<a href="https://pubmed.ncbi.nlm.nih.gov/32662746/">Christopherson et al. (2020), <em>Otolaryngol Head Neck Surg.</em></a>). The purifier has the lowest filtration rate around 0.15-0.3 microns. This is referred to in the industry as the “Most Penetrating Particle Size,” or MPPS.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/picking-air-purifiers/hepa-components-800-14c3bf9cc.webp 800w, /assets/images/generated/picking-air-purifiers/hepa-components-1000-14c3bf9cc.webp 1000w, /assets/images/generated/picking-air-purifiers/hepa-components-1200-14c3bf9cc.webp 1200w, /assets/images/generated/picking-air-purifiers/hepa-components-1600-14c3bf9cc.webp 1600w, /assets/images/generated/picking-air-purifiers/hepa-components-1888-14c3bf9cc.webp 1888w" type="image/webp" /><source srcset="/assets/images/generated/picking-air-purifiers/hepa-components-800-c74c212c4.png 800w, /assets/images/generated/picking-air-purifiers/hepa-components-1000-c74c212c4.png 1000w, /assets/images/generated/picking-air-purifiers/hepa-components-1200-c74c212c4.png 1200w, /assets/images/generated/picking-air-purifiers/hepa-components-1600-c74c212c4.png 1600w, /assets/images/generated/picking-air-purifiers/hepa-components-1888-c74c212c4.png 1888w" type="image/png" /><img src="/assets/images/generated/picking-air-purifiers/hepa-components-800-c74c212c4.png" width="1888" height="1062" /></picture>
-
-<p>But how bad is <em>low efficacy</em> in this situation? It turns out that any HEPA filter (which is the filter standard all reputable air purifiers use) in the US must filter at least 99.97% of particles at 0.3 microns.</p>
-
-<p>Said another way: when air goes through the unit, it must filter out a <em>minimum of 99.97% of the particles around those it is worst at handling, and more than 99.97% of every other particle size</em>. That is pretty dang good! It means that when air passes through a HEPA air purifier, very few particles come out the other end.</p>
-
-<p>So if all HEPA air purifiers are that good at filtering the air that goes through, what really matters?</p>
-
-<p><span class="highlighter"><strong>How much air goes through.</strong></span></p>
-
-<p>If your HEPA air purifier is underpowered, it will take a long time to clean a room — or, worse, if new pollution is being introduced (and it usually is) — it will never get the air clean. So, aside from using a HEPA filter in the first place, the most important factor is the throughput.</p>
-
-<p>This is typically measured as Clean Air Delivery Rate, or CADR. CADR is measured in cubic feet per minute, or CFM. It is often broken down by pollutant type, but for the sake of keeping this post somewhat simple, we can just talk about it generally.</p>
-
-<p>So, net of all that, the most important factors for filtering PM are that the filter is a HEPA filter, and that it has sufficient throughput for the room and situation (the more the better!). If you take nothing else away from this post… remember that.</p>
-
-<p>Here’s a little toy visualization of air purifier efficacy (assuming a well-mixed room — another rabbithole we could get into. Good air circulation helps purifiers work well!). I’ve included three levels of throughput, and you can shift the room size and incoming pollution. You’ll see that small purifiers often will just never get a room clean!</p>
-
-<div class="ap-viz">
-  <div class="ap-controls">
-    <div class="ap-control">
-      <span class="ap-label">Room size</span>
-      <input type="range" id="ap-room" min="100" max="800" value="250" step="25" />
-      <span class="ap-val" id="ap-room-val">250</span>
-      <span class="ap-unit">sq ft</span>
-    </div>
-    <div class="ap-control">
-      <span class="ap-label">Incoming pollution</span>
-      <select id="ap-source">
-        <option value="0">None (sealed room)</option>
-        <option value="7.5">Light (typical)</option>
-        <option value="25" selected="">Moderate (cooking, open windows)</option>
-        <option value="50">Heavy (wildfire, construction)</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="ap-chart-wrap">
-    <canvas id="ap-chart" width="600" height="260"></canvas>
-  </div>
-
-  <div class="ap-stats" id="ap-stats"></div>
-</div>
-
-<script>
-(function() {
-  var canvas = document.getElementById('ap-chart');
-  var roomEl = document.getElementById('ap-room');
-  var sourceEl = document.getElementById('ap-source');
-  if (!canvas || !roomEl || !sourceEl) return;
-
-  var ctx = canvas.getContext('2d');
-  var CEIL = 8;
-  var DUR = 60;
-  var STEPS = 300;
-  var ANIM_MS = 1500;
-  var PURIFIERS = [
-    { label: '50 CFM',  cadr: 50,  color: '#e85d3a', name: 'Low' },
-    { label: '150 CFM', cadr: 150, color: '#3b82f6', name: 'Medium' },
-    { label: '300 CFM', cadr: 300, color: '#10b981', name: 'High' }
-  ];
-  var PAD = { top: 16, right: 16, bottom: 36, left: 44 };
-  var animId = null;
-  var dim = { w: 600, h: 260 };
-
-  function resize() {
-    var wrap = canvas.parentElement;
-    var w = wrap.clientWidth;
-    if (w < 1) return;
-    var h = Math.min(260, Math.max(180, w * 0.45));
-    var dpr = window.devicePixelRatio || 1;
-    canvas.width = w * dpr;
-    canvas.height = h * dpr;
-    canvas.style.width = w + 'px';
-    canvas.style.height = h + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    dim = { w: w, h: h };
-  }
-
-  function getParams() {
-    var sqft = parseInt(roomEl.value);
-    return { sqft: sqft, source: parseFloat(sourceEl.value), volume: sqft * CEIL };
-  }
-
-  function cleanAt(t, cadr, vol, src) {
-    var css = src > 0 ? Math.min(src / cadr, 1) : 0;
-    return 1 - css - (1 - css) * Math.exp(-cadr / vol * t);
-  }
-
-  function timeToClean(cadr, vol, src) {
-    var css = src > 0 ? src / cadr : 0;
-    if (css >= 0.9) return null;
-    var ratio = (0.1 - css) / (1 - css);
-    return ratio > 0 ? -Math.log(ratio) / (cadr / vol) : null;
-  }
-
-  function drawChart(progress) {
-    var w = dim.w, h = dim.h;
-    var px = PAD.left, py = PAD.top;
-    var pw = w - PAD.left - PAD.right;
-    var ph = h - PAD.top - PAD.bottom;
-    var params = getParams();
-
-    ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = '#fff';
-    ctx.fillRect(px, py, pw, ph);
-
-    ctx.strokeStyle = '#eaeaea';
-    ctx.lineWidth = 1;
-    ctx.setLineDash([]);
-
-    [0, 0.25, 0.5, 0.75, 1].forEach(function(v) {
-      var y = py + ph * (1 - v);
-      ctx.beginPath(); ctx.moveTo(px, y); ctx.lineTo(px + pw, y); ctx.stroke();
-    });
-
-    for (var m = 0; m <= 6; m++) {
-      var x = px + pw * m / 6;
-      ctx.beginPath(); ctx.moveTo(x, py); ctx.lineTo(x, py + ph); ctx.stroke();
-    }
-
-    var y90 = py + ph * 0.1;
-    ctx.strokeStyle = '#bbb';
-    ctx.lineWidth = 1;
-    ctx.setLineDash([5, 3]);
-    ctx.beginPath(); ctx.moveTo(px, y90); ctx.lineTo(px + pw, y90); ctx.stroke();
-    ctx.setLineDash([]);
-    ctx.fillStyle = '#bbb';
-    ctx.font = '9px "Hanken Grotesk", sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText('90% target', px + 3, y90 - 4);
-
-    var n = Math.floor(STEPS * progress);
-    PURIFIERS.forEach(function(p) {
-      ctx.strokeStyle = p.color;
-      ctx.lineWidth = 2.5;
-      ctx.beginPath();
-      for (var i = 0; i <= n; i++) {
-        var t = (i / STEPS) * DUR;
-        var v = cleanAt(t, p.cadr, params.volume, params.source);
-        var x = px + (t / DUR) * pw;
-        var y = py + ph * (1 - v);
-        if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-      }
-      ctx.stroke();
-    });
-
-    ctx.fillStyle = '#888';
-    ctx.font = '11px "Hanken Grotesk", sans-serif';
-    ctx.textAlign = 'center';
-    for (var m = 0; m <= 6; m++) {
-      ctx.fillText((m * 10) + '', px + pw * m / 6, py + ph + 16);
-    }
-    ctx.fillText('Minutes', px + pw / 2, py + ph + 30);
-
-    ctx.textAlign = 'right';
-    [0, 25, 50, 75, 100].forEach(function(v) {
-      ctx.fillText(v + '%', px - 5, py + ph * (1 - v / 100) + 4);
-    });
-  }
-
-  function updateStats() {
-    var params = getParams();
-    var statsEl = document.getElementById('ap-stats');
-    var html = '';
-    var results = [];
-
-    PURIFIERS.forEach(function(p) {
-      var t = timeToClean(p.cadr, params.volume, params.source);
-      results.push({ p: p, t90: t });
-
-      html += '<div class="ap-stat">';
-      html += '<div class="ap-stat-color" style="background:' + p.color + '"></div>';
-      html += '<div class="ap-stat-name">' + p.name + '</div>';
-      html += '<div class="ap-stat-cadr">' + p.label + '</div>';
-      html += '<div class="ap-stat-detail">';
-      html += t !== null ? Math.round(t) + ' min to 90% clean' : 'Cannot reach 90%';
-      html += '</div></div>';
-    });
-    statsEl.innerHTML = html;
-  }
-
-  function animate() {
-    if (animId) cancelAnimationFrame(animId);
-    var start = null;
-    function frame(ts) {
-      if (!start) start = ts;
-      var p = Math.min(1, (ts - start) / ANIM_MS);
-      drawChart(p);
-      if (p < 1) animId = requestAnimationFrame(frame);
-    }
-    animId = requestAnimationFrame(frame);
-  }
-
-  function update() {
-    document.getElementById('ap-room-val').textContent = roomEl.value;
-    updateStats();
-    animate();
-  }
-
-  roomEl.addEventListener('input', function() { resize(); update(); });
-  sourceEl.addEventListener('change', update);
-  window.addEventListener('resize', function() {
-    if (animId) cancelAnimationFrame(animId);
-    resize();
-    drawChart(1);
-  });
-
-  requestAnimationFrame(function() {
-    resize();
-    update();
-  });
-})();
-</script>
-
-<style>
-.ap-viz {
-  background: #f8f9fa;
-  border: 1px solid #e0e3e8;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 1.5rem 0;
-  font-family: "Hanken Grotesk", -apple-system, sans-serif;
-}
-
-.ap-title {
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 2px;
-}
-
-.ap-subtitle {
-  font-size: 0.8em;
-  color: #888;
-  margin-bottom: 14px;
-}
-
-.ap-controls {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.ap-control {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.ap-label {
-  font-size: 0.85em;
-  color: #555;
-}
-
-.ap-control select {
-  padding: 4px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 0.85em;
-  background: #fff;
-}
-
-.ap-control input[type="range"] {
-  width: 120px;
-  height: 4px;
-  border-radius: 2px;
-  background: #ddd;
-  -webkit-appearance: none;
-}
-
-.ap-control input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #444;
-  cursor: pointer;
-}
-
-.ap-val {
-  font-weight: 700;
-  min-width: 28px;
-}
-
-.ap-unit {
-  font-size: 0.75em;
-  color: #888;
-}
-
-.ap-chart-wrap {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-
-.ap-chart-wrap canvas {
-  width: 100%;
-  display: block;
-}
-
-.ap-stats {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 12px;
-}
-
-.ap-stat {
-  flex: 1;
-  min-width: 130px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 10px 12px;
-}
-
-.ap-stat-color {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
-.ap-stat-name {
-  font-size: 0.8em;
-  color: #666;
-}
-
-.ap-stat-cadr {
-  font-weight: 700;
-  font-size: 1em;
-  color: #1a1a1a;
-}
-
-.ap-stat-detail {
-  font-size: 0.8em;
-  color: #555;
-  margin-top: 2px;
-}
-
-@media (max-width: 600px) {
-  .ap-controls { flex-direction: column; gap: 10px; }
-  .ap-stats { flex-direction: column; }
-  .ap-stat { min-width: auto; }
-}
-</style>
-
-<h2 id="the-real-world-twist">The real-world twist</h2>
-
-<p>At <a href="https://lightworkhome.com">Lightwork</a>, we’ve consulted on air filtration with a lot of clients. And in so doing, we’ve realized that — while what I wrote above is all accurate — there are some other real-world, practical considerations. Namely:</p>
-
-<ol>
-  <li><strong>Quiet matters.</strong> If an air purifier is too loud, people simply won’t use it. And an unused air purifier is no good at all.</li>
-  <li><strong>Ease matters.</strong> If you have to replace the filters too often, most people will simply not do it. And dirty filters tank the efficacy of a unit.</li>
-  <li><strong>Beauty matters.</strong> For many customers, having an ugly air purifier is a non-starter. So finding aesthetically-appealing ones — at least for certain rooms — is a factor.</li>
-  <li><strong>Price matters.</strong> On top of all that: people want value. If it’s too expensive, it won’t get purchased in the first place.</li>
-</ol>
-
-<p>Numbers 2 and 3 are easy: we can restrict our search to units with a 12-month or longer filter lifespan, and to aesthetically-appealing ones (that is the only subjective filter we are going to apply!).</p>
-
-<p>(And don’t worry — we also let you disregard any of these limitations if you don’t care.)</p>
-
-<p>Number 4 is also easy: once we get down to a list of candidate purifiers that work, we can sort them by price.</p>
-
-<p>But number 1 — quietness — is trickier. How do we figure out if a purifier has sufficient throughput <em>at a quiet level</em>?</p>
-
-<p>Unfortunately, CADR is typically not reported at the different fan speeds. Manufacturers only report full-speed CADR, and that is usually <em>very</em> loud.</p>
-
-<p>So we came up with a metric that we refer to as “Quiet CADR.” We’ve defined this as “Clean Air Delivery Rate at 41 decibels of volume or less.” We’ve found by talking to clients and evaluating their response to various units that 41 decibels<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Note that we will use “decibels” and “dBA” interchangeably throughout this post. dBA specifically refers to sound intensity adjusted to match human ear sensitivity (as opposed to e.g. dBC, dBZ, or plain dB). But since we’re focused on humans here we’ll use the generic “decibels” to refer to dBA.</span> seems about right. It’s about the noise level of a library.</p>
-
-<p>So here’s what we’ve done. It gets a little math-y, so feel free to <a href="#our-algorithm">skip ahead</a>.</p>
-
-<p>We first need to find the noise levels of the various fan speeds for a unit. There are two ways to do this:</p>
-<ol>
-  <li>Manufacturers typically do report the noise level at the <em>lowest</em> fan speed. So we can use this. This may underestimate the unit’s Quiet CADR (that is, if fan speed 2 is still under 41 decibels, we will think the Quiet CADR is lower than it actually is by using fan speed 1. But we’d rather underestimate Quiet CADR than overestimate it!)</li>
-  <li>Independent reviewers like <a href="http://airpurifierfirst.com/">AirPurifierFirst</a> and <a href="https://housefresh.com/">HouseFresh</a> have tested the noise levels of various fan speeds.</li>
-</ol>
-
-<p>Once we have that data, we find the highest fan speed that is below 41 decibels.</p>
-
-<p>Now, we need <em>power</em> data — how much energy does the unit draw? We can get this from manufacturers, independent reviewers, energy use certification programs, or elsewhere. And specifically, we need the power usage in wattage at the “quiet” fan speed we found, as well as the top fan speed. Lots of data to collect!</p>
-
-<p>Once we have this data, we can use what are called <a href="https://en.wikipedia.org/wiki/Affinity_laws">Fan Affinity Laws</a> to make further calculations. The fan affinity laws define various physical relationships between performance and power for pumps and fans in general.</p>
-
-<p>The summary here is that CADR (which we can reasonably treat for these purposes as proportional to airflow) scales with the cube root of power. So if we know:</p>
-<ul>
-  <li>max CADR throughput (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">C_{max}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">ma</span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>)</li>
-  <li>power at the “quiet” level (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">P_q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>)</li>
-  <li>power at the max level (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{max}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">ma</span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>)</li>
-</ul>
-
-<p>We can estimate the CADR at the quiet level (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">C_q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>) with:</p>
-
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>C</mi><mi>q</mi></msub><mo>=</mo><msub><mi>C</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#xd7;</mo><mo stretchy="false">(</mo><msub><mi>P</mi><mi>q</mi></msub><mi mathvariant="normal">/</mi><msub><mi>P</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><msup><mo stretchy="false">)</mo><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">C_q = C_{max} \times (P_q / P_{max})^{1/3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">ma</span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">&#xd7;</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2241em;vertical-align:-0.2861em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">ma</span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/3</span></span></span></span></span></span></span></span></span></span></span></span></span>
-
-<p>(More specifically, we’ve modeled this out based on known measured data from the purifiers for which it is available and found that the real-world scale is closer to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.344</mn></mrow><annotation encoding="application/x-tex">0.344</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.344</span></span></span></span> than raising the power ratio to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/3</span></span></span></span>. Pretty validating that it’s so close! We use the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.344</mn></mrow><annotation encoding="application/x-tex">0.344</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.344</span></span></span></span> exponent in our recommendations given the empirical validation, but it doesn’t really make a difference.)</p>
-
-<p>So, take a purifier that is rated at a CADR of 200 CFM. Say it draws 50W at max speed and 15W at its quiet speed. The Quiet CADR would be:</p>
-
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>C</mi><mi>q</mi></msub><mo>=</mo><mn>200</mn><mo>&#xd7;</mo><mo stretchy="false">(</mo><mn>15</mn><mi mathvariant="normal">/</mi><mn>50</mn><msup><mo stretchy="false">)</mo><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup><mo>&#x2248;</mo><mn>136</mn><mtext>&#xa0;CFM</mtext></mrow><annotation encoding="application/x-tex">C_q = 200 \times (15/50)^{1/3} \approx 136 \space\text{CFM}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">200</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">&#xd7;</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.188em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">15/50</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/3</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&#x2248;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">136</span><span class="mspace">&#xa0;</span><span class="mord text"><span class="mord">CFM</span></span></span></span></span></span>
-
-<p>This metric is how we evaluate throughput — because, again, most people won’t leave an air purifier on high. It drives them nuts. So what we care about is sufficient throughput at a sufficiently quiet setting.</p>
-
-<p>Now: how do we define <em>sufficient</em> throughput? Is 136 CFM good?</p>
-
-<p>This has to be defined by the size of the room. Big rooms need more filtration than small ones.</p>
-
-<p>The main way you look at this is “Air Changes per Hour” or ACH. Our general recommendation is that you want to target 5 ACH (AHAM, the Association of Home Appliance Manufacturers, recommends 4.8). You could go lower, and for certain situations (while you’re cooking, or if you’re dealing with wildfires or bad pollution), you may want to go higher.</p>
-
-<p>So, say you have a 200 square foot room with 8 foot ceilings. That’s 1,600 cubic feet of volume. To get to 5 ACH, you’d need to have throughput of:</p>
-
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>600</mn><mo>&#xd7;</mo><mn>5</mn><mo>=</mo><mn>8</mn><mo separator="true">,</mo><mn>000</mn><mtext>&#xa0;cubic&#xa0;feet&#xa0;per&#xa0;hour</mtext><mo>=</mo><mn>133</mn><mtext>&#xa0;cubic&#xa0;feet&#xa0;per&#xa0;minute&#xa0;(CFM)</mtext></mrow><annotation encoding="application/x-tex">1,600 \times 5 = 8,000 \space \text{cubic feet per hour} = 133 \space \text{cubic feet per minute (CFM)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">600</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">&#xd7;</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000</span><span class="mspace">&#xa0;</span><span class="mord text"><span class="mord">cubic&#xa0;feet&#xa0;per&#xa0;hour</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">133</span><span class="mspace">&#xa0;</span><span class="mord text"><span class="mord">cubic&#xa0;feet&#xa0;per&#xa0;minute&#xa0;(CFM)</span></span></span></span></span></span>
-
-<p>So, yes! Our 136 CFM Quiet CADR air purifier will do the trick there.</p>
-
-<h2 id="our-algorithm">Our algorithm</h2>
-
-<p>So, when we put all that together, our objective recommendation “algorithm” for customers for PM filtration ends up looking something like this:</p>
-
-<ol>
-  <li>Take every possible air purifier and calculate their Quiet CADRs</li>
-  <li>Filter out the ones with &lt;12 month filter lifespans (if they want)</li>
-  <li>Filter out the ones that aren’t premium designs (if they want)</li>
-  <li>Find the square footage of the room in question and its filtration needs in ACH (based on room type/usage, outdoor/indoor conditions, specific concerns, etc.), and use that to calculate a Quiet CADR minimum, and filter out the ones that don’t meet it</li>
-  <li>Make two recommendations: 1) the best value (i.e. cheapest one that meets the above standards), and 2) an upgrade pick (i.e. the one that has the highest throughput up to a 3x multiple on the minimum Quiet CADR)</li>
-</ol>
-
-<p>It comes out with something like this:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/picking-air-purifiers/living-room-800-c85ee215b.webp 800w, /assets/images/generated/picking-air-purifiers/living-room-1000-c85ee215b.webp 1000w, /assets/images/generated/picking-air-purifiers/living-room-1200-c85ee215b.webp 1200w, /assets/images/generated/picking-air-purifiers/living-room-1600-c85ee215b.webp 1600w, /assets/images/generated/picking-air-purifiers/living-room-2000-c85ee215b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/picking-air-purifiers/living-room-800-f67e3588f.png 800w, /assets/images/generated/picking-air-purifiers/living-room-1000-f67e3588f.png 1000w, /assets/images/generated/picking-air-purifiers/living-room-1200-f67e3588f.png 1200w, /assets/images/generated/picking-air-purifiers/living-room-1600-f67e3588f.png 1600w, /assets/images/generated/picking-air-purifiers/living-room-2000-f67e3588f.png 2000w" type="image/png" /><img src="/assets/images/generated/picking-air-purifiers/living-room-800-f67e3588f.png" width="2240" height="1260" /></picture>
-
-<p>The upgrade pick is an option for <em>really</em> clean air (without going overboard). Also, bigger units with higher throughput can usually get <em>even</em> quieter for the necessary performance since they are effectively oversized for the room.</p>
-
-<p>There is a little more nuance to the formula (detailed on the <a href="https://purifiers.lightworkhome.com/methodology">Methodology page</a> of our tool), mostly having to do with allowing for “combos.” Sometimes, it’s cheaper to get multiple smaller air purifiers instead of one bigger one. We adjust for this in a couple ways, including:</p>
-<ol>
-  <li>Noise. Two units make more noise than one. Making some reasonable simplifying acoustic assumptions, two units at 38 decibels each equals 41 decibels total, and three units at 36 decibels each equals 41 decibels total. So when recommending a combo, we need to adjust the Quiet CADR for the combo units to allow for a lower noise ceiling.</li>
-  <li>Slightly penalizing combos (with a 25% “premium” for each added one), since it’s more of a pain to deal with multiple instead of one</li>
-</ol>
-
-<p>As an aside, are you wondering why two units at 38 decibels = 41 decibels total? Decibels are a logarithmic unit (and a <a href="https://lcamtuf.substack.com/p/decibels-are-ridiculous">pretty odd one</a> at that). Decibels are measured on sound intensity, where with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span> as the level in decibels, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> as intensity of the sound, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">I_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> as reference intensity:</p>
-
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mtext>source</mtext></msub><mo>=</mo><mn>10</mn><mtext>&#x2009;</mtext><msub><mrow><mi>log</mi><mo>&#x2061;</mo></mrow><mn>10</mn></msub><mtext>&#x2009;&#x2063;</mtext><mrow><mo fence="true">(</mo><mfrac><mi>I</mi><msub><mi>I</mi><mn>0</mn></msub></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">L_{\text{source}} = 10\,\log_{10}\!\left(\frac{I}{I_0}\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">source</span></span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span>
-
-<p>If we’re assuming two equal sources together<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">This is a simplification. In practice, sound waves from two sources at different positions in a room interact in complex ways — they can constructively or destructively interfere depending on frequency and listener position, and reflections off walls add further complexity. But for a rough noise budget, simply adding the intensities is a reasonable and slightly conservative approximation.</span>, that means they produce <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>I</mi></mrow><annotation encoding="application/x-tex">2I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> intensity, and so:</p>
-
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mtext>double</mtext></msub><mo>=</mo><mn>10</mn><mtext>&#x2009;</mtext><msub><mrow><mi>log</mi><mo>&#x2061;</mo></mrow><mn>10</mn></msub><mtext>&#x2009;&#x2063;</mtext><mrow><mo fence="true">(</mo><mfrac><mrow><mn>2</mn><mi>I</mi></mrow><msub><mi>I</mi><mn>0</mn></msub></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mn>10</mn><mtext>&#x2009;</mtext><msub><mrow><mi>log</mi><mo>&#x2061;</mo></mrow><mn>10</mn></msub><mn>2</mn><mo>+</mo><mn>10</mn><mtext>&#x2009;</mtext><msub><mrow><mi>log</mi><mo>&#x2061;</mo></mrow><mn>10</mn></msub><mtext>&#x2009;&#x2063;</mtext><mrow><mo fence="true">(</mo><mfrac><mi>I</mi><msub><mi>I</mi><mn>0</mn></msub></mfrac><mo fence="true">)</mo></mrow><mo>&#x2248;</mo><mn>3.01</mn><mo>+</mo><msub><mi>L</mi><mtext>source</mtext></msub></mrow><annotation encoding="application/x-tex">L_{\text{double}} = 10\,\log_{10}\!\left(\frac{2I}{I_0}\right) = 10\,\log_{10} 2 + 10\,\log_{10}\!\left(\frac{I}{I_0}\right) \approx 3.01 + L_{\text{source}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">double</span></span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9386em;vertical-align:-0.2441em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&#x2248;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3.01</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">source</span></span></span></span></span></span><span class="vlist-s">&#x200b;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
-
-<p>So adding a second equal noise source, regardless of the sources’ actual decibels, always increases the sound level by 3 decibels! (And you can do similar math for 3 equal sources, which results in a ~5 decibel increase)</p>
-
-<p>People often ask us about other features, like ionizers (we don’t recommend them), UV-C lights, plasma generators, “nano” coatings, photocatalytic oxidation, and more. In general, our view is that <em>most</em> of it is marketing and far less impactful than everything written above (and in some cases, potentially harmful). We may write a future post about some of these in particular, but broadly, our advice would be: nail the basics we’ve written about here.</p>
-
-<h2 id="the-voc-problem">The VOC problem</h2>
-
-<p>As discussed up top, VOCs require a fundamentally different filtration approach than particulate matter — they pass straight through HEPA and similar filter types. Instead, you need a medium like activated carbon to adsorb and trap the VOC gas molecules. Over time, the carbon medium saturates — so the more carbon you have, the better it will filter and longer it will last.</p>
-
-<p>Most HEPA filters include a <em>thin</em> carbon pre-filter. This will help with low-level ordinary VOCs, but won’t do anything for more serious or chronic issues (and regardless, it saturates fast). To <em>really</em> deal with VOCs — if they’re an issue for you — you need a purpose-built air purifier.</p>
-
-<p>There are other challenges, too. To push air through a thick carbon media, you need a really strong fan. And a really strong fan means a lot of noise. Plus, few of these purifier units are aesthetically appealing.</p>
-
-<p>There <em>are</em> combination units that combine nontrivial carbon media with a HEPA filter. But at some level, these two facets are battling against each other. The carbon media (if it’s meaningful) is thick and dramatically reduces airflow in the performance of its role. But, as discussed at length above, airflow is the most important factor in a particulate matter purifier doing <em>its</em> job. So the two are at odds.</p>
-
-<p>And on top of <em>all</em> of that, not all carbon media is equal. Aside from considerations about media thickness, density, and granule size (often hard to find details for and compare), different VOC or VOC-like pollutants are adsorbed at different rates by different media.</p>
-
-<p>For example, formaldehyde is poorly captured by plain ol’ carbon. Potassium permanganate or potassium iodide impregnated carbon is significantly more effective for it and its aldehyde siblings.</p>
-
-<p>Many of the top-end VOC-targeted air purifiers let you swap between different filter media blends, or even customize your own to target specific contaminants. But to pick this out, you really need to know what compounds exactly you’re trying to target — either by having someone test specific VOCs in your home, or identifying a source and determining what it is outputting or offgassing.</p>
-
-<p>We go into all this in more detail and share some quantitative model recommendations in the free <a href="https://purifiers.lightworkhome.com/voc">VOC Guide</a> on Lightwork’s air purifier tool.</p>
-
-<h2 id="so-what-do-we-recommend">So… what do we recommend?</h2>
-
-<p>Well, like I said: the easiest way to see our recommendations is to check out <a href="https://purifiers.lightworkhome.com/">Lightwork’s Air Purifier tool</a> — which again is 100% free; no signup required; no affiliate links, partnerships, or bias; and purely quantitative and transparent.</p>
-
-<p>I’m not just trying to get you to use the tool — the recommendations really <em>do</em> vary based on the size of the rooms you’re trying to filter, and your preferences around design, noise levels, filter lifespan, and more.</p>
-
-<p>One of our main goals at Lightwork is to bring science-backed, data-driven rigor to an industry — home health — that has historically been plagued with imprecision, poorly-supported claims, and (at worst) scams. We hope this post has taught you a thing or two about air quality and helps you avoid falling victim to marketing claims that don’t measure up to reality.</p>
-
-<p>Enjoy your clean air!</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/collaborative-folders">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/collaborative-folders">Collaborative Folders: multiplayer notes for Obsidian</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/theory-of-constraints-skill">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/theory-of-constraints-skill">Theory of Constraints: the (Claude) Skill</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Health&quot;, &quot;Math &amp; science&quot;, &quot;Tinkering&quot;]" /><summary type="html"><![CDATA[A data-driven approach to picking an air purifier that will actually be the best for you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-04-picking-air-purifiers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Theory of Constraints as a Claude skill that can probably help you solve your problems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
