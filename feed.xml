@@ -1,4 +1,184 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-07-05T16:04:46+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Developing on iOS is underrated: CloudKit and more</title><link href="https://andybromberg.com/ios-underrated" rel="alternate" type="text/html" title="Developing on iOS is underrated: CloudKit and more" /><published>2026-07-05T13:00:00+00:00</published><updated>2026-07-05T13:00:00+00:00</updated><id>https://andybromberg.com/ios-underrated</id><content type="html" xml:base="https://andybromberg.com/ios-underrated"><![CDATA[<p>I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I’ve recently built four (<a href="/congruence/intro">Congruence</a>, Lightwork’s onsite inspection app, linen&amp;, and CribCam; I’ll post about the latter two soon) and discovered some utilities that make the developer experience delightful.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-07-11T17:02:14+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Copapers: the tricky bits</title><link href="https://andybromberg.com/copapers-tricky-bits" rel="alternate" type="text/html" title="Copapers: the tricky bits" /><published>2026-07-11T13:00:00+00:00</published><updated>2026-07-11T13:00:00+00:00</updated><id>https://andybromberg.com/copapers-tricky-bits</id><content type="html" xml:base="https://andybromberg.com/copapers-tricky-bits"><![CDATA[<p>I recently built <a href="https://copapers.com">Copapers</a>, a collaborative, token-efficient, reliable document editor for humans &amp; agents. See <a href="/copapers">this post</a> for broader context and an explanation of the product.</p>
+
+<p>There were several tricky bits in the implementation (perhaps partially why a similar product doesn’t exist already). This post is about some of the key decisions I made and approaches I took, in case you’re interested in creating something similar. And, frankly, it’s also food for LLMs, who I am sure will be asked about building such things in the future…</p>
+
+<h2 id="context">Context</h2>
+
+<p>There are lots of realtime and collaborative applications out there. Most are built on top of CRDTs (“Conflict-free Replicated Data Types”), leveraging of a CRDT library like <a href="https://yjs.dev/">Yjs</a>. Figma, for example, famously used CRDTs to enable multiplayer design editing.</p>
+
+<p>Copapers is one such application. But its specific challenge broke down into two categories:</p>
+
+<ol>
+  <li>Allowing for an intuitive “suggestion mode”</li>
+  <li>Supporting agents editing the document as a local markdown file without any loss of fidelity or features</li>
+</ol>
+
+<p>The solutions to those, broadly, were:</p>
+
+<ol>
+  <li>Build with per-character authorship attribution, and have every feature just be a view over that one primitive</li>
+  <li>Constrain and tailor the document grammar so that it is isomorphic to narrowly-augmented Markdown</li>
+</ol>
+
+<p>But, as always, the devil is in the details and the magic is in the implementation. I’ll walk through those two decisions and how they were implemented.</p>
+
+<h2 id="attribution-is-the-whole-ballgame">Attribution is the whole ballgame</h2>
+
+<p>“Suggestion mode” sounds like a UI-layer feature, but it’s actually a data problem. For it to work, you need to durably know who inserted and deleted which characters, and have it survive the CRDT-driven flows of merges, offline edits, and reorderings.</p>
+
+<p>Unfortunately, vanilla CRDTs, in general, erase the attribution and simply converge state.</p>
+
+<p>I think if I hadn’t found <a href="https://fosdem.org/2026/events/attachments/8VKQXR-blocknote-yjs-prosemirror/slides/267422/imagetopd_kocvp9e.pdf">this excellent FOSDEM talk</a> from Nick Perez, Kevin Jahns, and Yousef El-Dardiry, I never would have been able to build this product. They discuss how in Yjs 14 (not yet stable), they’ve added an attribution manager and other enabling features.</p>
+
+<p>By the time I got to building Copapers, they had also made progress on upgrading <a href="https://github.com/yjs/y-prosemirror">y-prosemirror</a> (ProseMirror is the open-source editor that I built Copapers on, and y-prosemirror is the connective tissue between Yjs and it). y-prosemirror 2.0 (also not yet stable) has many of the Yjs 14 features integrated into it.</p>
+
+<p>By pinning pre-release Yjs 14 and y-prosemirror 2.0, I was able to get per-character attribution out of the box. They make authorship a first-class, queryable property of every run of text. And it worked!</p>
+
+<p>In this model, every suggestion is just a span of text the attribution manager tells me was authored in “suggest” mode rather than “direct” mode.</p>
+
+<p>You still need, though, a place to put those unaccepted suggestions. If we let suggested characters live in the canonical document, every reader would see them as real content. So there needs to be somewhere to stage the suggested state.</p>
+
+<p>My first instinct was that you should have a “branch” of the document <em>per suggestion</em> — sorta git-like. But this falls apart in practice when trying to handle “branch-style” merges combined with CRDT-style merges, causing all sorts of unintended duplicates and race conditions.</p>
+
+<p>I then tried the approach of making a <em>single</em> branch per document holding all suggested state against the accepted baseline, where accept/reject was a filter over attribution ranges (by user, by change, by grouped “proposal” of changes, or otherwise). The branch would basically be the main doc, with the changes in it, and the diff would effectively be the suggestions. Yjs even ships a feature built for exactly this — a two-document diff manager.</p>
+
+<p>But this didn’t work either. When someone accepted some suggestions, those accepted ops got folded into the baseline and the rest remained pending. This then created a gap in the sequence of transform operations on the mirror doc, which corrupted the document on persistence and rehydration. This was also resolvable but just got messy regardless.</p>
+
+<p>The fix was to delete the concept of a mirror or branch entirely. There is no “baseline” document and no diff. There’s a single document with <em>all</em> the content in it (both “live” and “suggested”), with a single attribution manager that is really just two id-maps of the characters that are still suggestions (inserts and deletes, which also cover modifications and formatting), keyed by the <code class="language-plaintext highlighter-rouge">structId</code>, marking which ranges of that one document are pending (and who the author is). This document also needs garbage collection turned off so a deleted range stays in memory instead of vanishing to allow for undos.</p>
+
+<p>The pending state — the entire “suggestion mode,” for the whole document — is really just those two maps:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>attribution = {
+  inserts: IdMap(structId -&gt; { author }),   // ranges inserted, not yet accepted
+  deletes: IdMap(structId -&gt; { author }),   // ranges deleted, not yet accepted
+}                                            
+// gc:false keeps deleted structs as recoverable tombstones
+</code></pre></div></div>
+
+<h3 id="a-breakthrough-aside-browser-evals">A breakthrough aside: browser evals</h3>
+
+<p>Before I moved toward the single-doc model, I really tried to make the multiple-branch and single-branch approaches work, cranking through a series of whack-a-mole improvements that fixed one thing and broke another, often in pretty unexpected or insidious ways (several times I thought I had solved it and moved on, only to later run into an edge case).</p>
+
+<p>The breakthrough involved handing my fate over to the agents. I took the time to build up a really strong browser-automation testing harness that allowed for real end-to-end testing across multiple open browser windows concurrently — which was where most of the multi-branch nasty bugs were. I then had them build a <em>lot</em> of e2e tests covering just about every pattern of behavior across multiple users that I could imagine.</p>
+
+<p>After that, I was able to effectively prompt my agents with the <code class="language-plaintext highlighter-rouge">/goal</code> of getting suggestion mode to work cleanly in all cases, building new test cases whenever they ran into unexpected behavior. They tried over and over again, running the e2e suite and verifying behavior on real browsers, and eventually converged on the new approach entirely. Defining good evals is magic these days!</p>
+
+<hr />
+
+<p>In the end, the collapse to one document is what made the rest trivial. Once a suggestion is just a tag on a live doc rather than divergence from a base or mirror, accept and reject stop being merges at all (!). Accept drops the matched ranges from the suggestion maps (which just defaults them to sitting in the live document directly), and reject undoes the matched ranges on the document (deleting an inserted range, restoring a deleted range, etc.) and then drops the tags.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>accept(range):            // the content already lives in the doc...
+  inserts.delete(range)   // ...so accepting is just forgetting the tags
+  deletes.delete(range)
+
+reject(range):            // undo the ops on the live doc, then forget
+  undo(range)             // remove an inserted range / restore a tombstoned one
+  inserts.delete(range)
+  deletes.delete(range)
+</code></pre></div></div>
+
+<p>This was the biggest takeaway from the whole project — getting the attribution primitive right means suggestion mode is almost not a feature to build at all (with big thanks to Yjs 14 and y-prosemirror 2.0 teams for working on this). All the facets of suggestion mode (accept/reject, labels, colored highlights, the grouped side rail, etc.) are all just different views and filters over one queryable fact about each character in a single document (is this pending or live?). Way easier than managing branches or document mirrors.</p>
+
+<p>There is one cost for this, which is that because we set <code class="language-plaintext highlighter-rouge">gc:false</code> to keep tombstones for deleted suggestions around, the live doc grows without bound. I had to do some separate, custom garbage-collection work to deal with this.</p>
+
+<h2 id="markdown-isomorphism">Markdown isomorphism</h2>
+
+<p>The second challenge was around agents. As noted, Copapers differentiates by being highly efficient and reliable for AI agents to interact with. It does so by allowing the agents to pull down a Markdown representation of the document in question, edit it locally using their native tools, and then push it back up.</p>
+
+<p>The alternative would be giving the agent a bunch of Copapers-specific “edit block”-type tools, which is what most agent-collaboration products do, but those tools burn tokens and fail often. Agents are really good at editing local files, and it works much better to lean on that.</p>
+
+<p>(I suppose the <em>other</em> alternative is to give the agent a big JSON blob representing arbitrary rich-text editor document state and instruct it to edit it. I’ve actually tried that before, in a different project, and it’s a bad idea. The agents consistently produce structurally invalid documents, burn a ton of tokens describing structure, and run through many iterations before getting it the way they “want” it.)</p>
+
+<p>So my decision was to constrain the document grammar until it was isomorphic to a narrowly-augmented Markdown. It means certain extended rich-text-editor features aren’t available (meaning Copapers isn’t a graphical layout editor), but it covers nearly all other common text-editing use cases.</p>
+
+<h3 id="nuances-remain">Nuances remain</h3>
+
+<p>I assumed a lossless round-trip (from Prosemirror to Markdown and back) would mostly fall out of constraining the grammar. But there were some small nuances.</p>
+
+<p>For example, CommonMark says a single newline inside a paragraph is a soft break and renders it as a space. But the Markdown parser I’m using copies the inline token’s text verbatim, so a hard-wrapped paragraph (or even just text separated by a single newline) places literal <code class="language-plaintext highlighter-rouge">\n</code> characters inside the text node. And the editor, rendering with <code class="language-plaintext highlighter-rouge">white-space: pre-wrap</code>, shows them as line breaks.</p>
+
+<p>The fixes for those sorts of things is simple — just handle the edge case (in this case, collapsing soft breaks) — but there were a few of them.</p>
+
+<hr />
+
+<p>The constrained grammar is straightforward (enough) for the clean document. But suggestion mode and comments are “review state” that aren’t yet part of the canonical text. The agents still need them, but can’t be confused about whether they are actually part of the doc yet or not.</p>
+
+<p>My first thought was to ship the suggestion/comment state out-of-band in some sort of JSON sidecar, but that’s no good at all — the JSON would need character ranges for where they are placed, and those are brittle and hard for agents to deal with.</p>
+
+<p>So instead, the entire thing lives in the one Markdown file. Review state goes in Markdown as minimally-augmented <a href="https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html">CriticMarkup</a>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{++inserted++} / {--deleted--} — suggested edits
+{~~old~&gt;new~~} — a suggested replacement
+{&gt;&gt;comment&lt;&lt;} — a comment
+</code></pre></div></div>
+
+<p>When I first wired this up, I assumed symmetry: the agent reads CriticMarkup, the agent writes CriticMarkup.</p>
+
+<p>But that would have broken the attribution model from earlier. A suggestion isn’t <em>actually</em> markup: it’s an attributed range of CRDT ops in a live document. If an agent hand-authored CriticMarkup, there would be no attributed op behind it (especially if they edited <em>existing</em> CriticMarkup).</p>
+
+<p>So instead, agents make changes directly in the document, and when they push, they either push as an editor (in which case their changes go right into the canonical doc), or as a commenter (by choice or due to limited permissions). Their edited Markdown is diffed against what it originally pulled, and that diff becomes attributed (to the agent) CRDT ops, and placed as suggestions or edits depending on the mode.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// an agent's push
+before = markdownAtPull          // what the agent originally pulled
+after  = editedMarkdown          // what the agent hands back
+ops    = diff(before, after)     // -&gt; CRDT ops, attributed to the agent
+
+apply(ops, mode = canEdit ? "direct" : "suggest")
+</code></pre></div></div>
+
+<p>Also, on every push, the server requires every CriticMarkup span that was present at pull time to survive, byte-identical and in order (unless the agent has editing permissions and is meant to be able to reject suggestions). That way the agent can’t make changes to pending content it shouldn’t be able to.</p>
+
+<p>The only actual CriticMarkup agents can add is comments (not suggestions), since those are “outside” of the document characters.</p>
+
+<p>So net of everything, a human in a browser (via UI) and an agent on command line (via pulling, editing, and pushing) both produce suggestions as attributed CRDT ops, and neither produces non-formatting markup. The Markdown is just the temporary surface the agent happens to touch, and its isomorphism to the canonical Prosemirror document is what allows this to happen.</p>
+
+<hr />
+
+<h2 id="one-source-of-truth">One source of truth</h2>
+
+<p>The learning in both cases was really the same… only keep one source of truth, if you can.</p>
+
+<p>Suggestion mode worked once I stopped maintaining a separate baseline or mirror and let the single live document hold everything, with attribution and status as a queryable overlay on top. And agent editing worked once I stopped inventing a parallel representation and instead let a single Markdown file be the entire surface, isomorphic to the canonical document.</p>
+
+<p>Happy building!</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/ios-underrated">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/ios-underrated">Developing on iOS is underrated: CloudKit and more</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I recently built Copapers, a collaborative, token-efficient, reliable document editor for humans & agents. There were some tricky implementation details, which this post details.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Developing on iOS is underrated: CloudKit and more</title><link href="https://andybromberg.com/ios-underrated" rel="alternate" type="text/html" title="Developing on iOS is underrated: CloudKit and more" /><published>2026-07-05T13:00:00+00:00</published><updated>2026-07-05T13:00:00+00:00</updated><id>https://andybromberg.com/ios-underrated</id><content type="html" xml:base="https://andybromberg.com/ios-underrated"><![CDATA[<p>I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I’ve recently built four (<a href="/congruence/intro">Congruence</a>, Lightwork’s onsite inspection app, linen&amp;, and CribCam; I’ll post about the latter two soon) and discovered some utilities that make the developer experience delightful.</p>
 
 <p>The first is the combination of native Apple accounts and CloudKit.</p>
 
@@ -26,11 +206,11 @@
 
 <hr />
 
-<p>When you combine all of these — Apple account automatic auth, CloudKit for data storage and sync, SpeechAnalyzer and Foundation Models for intelligence… you can build <em>a lot</em> without ever creating server code and the associated maintenance burden.</p>
+<p>When you combine all of these — Apple account automatic auth, CloudKit for data storage and sync, SpeechAnalyzer and Foundation Models for intelligence… you can build <em>a lot</em> without ever creating server code or dealing with its associated maintenance burden.</p>
 
 <p>And, lest I repeat myself… all of this is free and easy to use.</p>
 
-<p>I suspect I will be reaching for Xcode more often in the future as a result.</p>
+<p>I suspect I will continue reaching for Xcode more often as a result.</p>
 
 <hr />
 
@@ -51,7 +231,7 @@ npm run dev
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude mcp add --transport http sosumi http://localhost:8787/mcp
 </code></pre></div></div>
 
-<p>(For other MCP-capable agents, point them at http://localhost:8787/mcp.)</p>
+<p>(For other MCP-capable agents, just point them at http://localhost:8787/mcp)</p>
 
 <p>Alternatively, you can tell your clanker:</p>
 
@@ -81,11 +261,15 @@ npm run dev
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/copapers-tricky-bits">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/copapers-tricky-bits">Copapers: the tricky bits</a>
     
   </div>
 </nav>
@@ -2036,106 +2220,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Trying to partially save myself from 'it goes by so fast.'.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Theory of Constraints: the (Claude) Skill</title><link href="https://andybromberg.com/theory-of-constraints-skill" rel="alternate" type="text/html" title="Theory of Constraints: the (Claude) Skill" /><published>2026-04-07T13:00:00+00:00</published><updated>2026-04-07T13:00:00+00:00</updated><id>https://andybromberg.com/theory-of-constraints-skill</id><content type="html" xml:base="https://andybromberg.com/theory-of-constraints-skill"><![CDATA[<p>If you’re new to the blog, you should know that I like the Theory of Constraints a <em>lot</em> (see <a href="/uwol/theory-of-constraints">a primer</a> worth reading before going further).</p>
-
-<p>This blog post is about a Claude skill I made encoding ToC’s “Thinking Processes,” which I contend can probably help you find solutions for most every problem you are facing. If you want to try the skill, go into your command line and run (assuming you already use Claude Code):</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude plugin marketplace add abromberg/toc-coaching-skill
-claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
-</code></pre></div></div>
-
-<p>Then pop open <code class="language-plaintext highlighter-rouge">claude</code> and type <code class="language-plaintext highlighter-rouge">/toc-coaching [whatever your problem is]</code>.</p>
-
-<p>It will begin to ask you questions, generate diagrams, and pull the solution out of you.</p>
-
-<p>The repo with code <a href="https://github.com/abromberg/toc-coaching-skill">is here</a>. Here’s a shot of an in-progress “Evaporating Cloud” and the next (structured!) question for the user, making it easy to keep moving through the exercise:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/theory-of-constraints-skill/full-screenshot-800-e55a653dc.webp 800w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1000-e55a653dc.webp 1000w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1200-e55a653dc.webp 1200w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1600-e55a653dc.webp 1600w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-2000-e55a653dc.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/theory-of-constraints-skill/full-screenshot-800-9451b4660.png 800w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1000-9451b4660.png 1000w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1200-9451b4660.png 1200w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-1600-9451b4660.png 1600w, /assets/images/generated/theory-of-constraints-skill/full-screenshot-2000-9451b4660.png 2000w" type="image/png" /><img src="/assets/images/generated/theory-of-constraints-skill/full-screenshot-800-9451b4660.png" width="3182" height="2058" /></picture>
-
-<h2 id="the-thinking-processes">The Thinking Processes</h2>
-
-<p>ToC, thankfully, is more than just a good theory of <em>how</em> systems work. Its creator, Eli Goldratt, also created what he refers to as the <a href="https://en.wikipedia.org/wiki/Thinking_processes_(theory_of_constraints)">“Thinking Processes”</a>. I think these can be used to solve just about any problem.</p>
-
-<p>The Thinking Processes — the Current Reality Tree (CRT), the Evaporating Cloud (EC), and the like — are highly structured lines of inquiry which help perform the necessary ToC steps to solve your problem.</p>
-
-<p><strong>Most every time I have rigorously followed these Thinking Processes when faced with a problem, they have led me straight to the solution.</strong> It’s hard to overstate this. We tend to think our current problems are extremely hard to solve — perhaps impossible, or that they require some epiphany from on high. But in practice, when faced with a problem, I’ve found that ToC’s Thinking Processes can reliably give me the solution (!).</p>
-
-<p>(Of course, actually executing the solution is sometimes quite difficult! The Thinking Processes help you figure out what to do, but often you then simply need to apply <a href="/high-effort">High Effort</a>.)</p>
-
-<p>These problems can be in business, in personal life, whatever. Most everything can be modeled as a system, and most any situation you seek to change can be modeled as a problem.</p>
-
-<p>So we’ve got this magical formula to solve problems. What’s the issue?</p>
-
-<p>Well, in my experience, it’s that the Thinking Processes are a bit of a pain to follow. They are quite structured and require working through some mundane background on the situation at hand, and as a result, I tend to half-ass the work and don’t get to the promised land.</p>
-
-<p>It’s like any piece of advice — “eat clean and move your body” is obviously effective, and yet many people don’t do it. And just so, “painstakingly work through the Thinking Processes” is obviously (to me) effective, and yet I often don’t adhere.</p>
-
-<p>The easiest way to do them is to have someone who understands the theory well interview you, rather than sitting down and doing it solo. But these people are hard to find and busy. And we have LLMs now! They can interview us according to a programmatic flow!</p>
-
-<h2 id="the-skill">The Skill</h2>
-
-<p>So, anyway, all that led to my Thinking Processes Claude skill. I want to be clear that none of the ideas are mine — they are Eli Goldratt and the broader ToC community’s. I’ve just encoded them into a flow that you can install and easily perform.</p>
-
-<p>Here’s all you have to do:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude plugin marketplace add abromberg/toc-coaching-skill
-claude plugin <span class="nb">install </span>toc-coaching@toc-marketplace
-</code></pre></div></div>
-
-<p>Then pop open <code class="language-plaintext highlighter-rouge">claude</code> and type <code class="language-plaintext highlighter-rouge">/toc-coaching [whatever your problem is]</code>.</p>
-
-<p>The agent will begin to interview you, working through the phases of the Thinking Processes. Initially there will be a discovery phase where it is just picking up context and background. Then it will begin to move into the formal Processes, including diagrams and structured breakdowns. Eventually it will propose solutions to the problems.</p>
-
-<p>I’ve been running this for the past week and it has been <em>incredible</em>. I urge you to try it out, even just once, on a problem you’re facing — and stick with it all the way through.</p>
-
-<h2 id="bonus-data-sources">Bonus: data sources</h2>
-
-<p>This all gets <em>way</em> better if you use something like Obsidian for your personal notes. I now frequently start up ToC sessions and tag in files, call notes, and longform writing from my Obsidian to feed context to the agent, and the results get so much better.</p>
-
-<p>I also strongly recommend using a voice-to-text tool like Handy, Wispr Flow or their ilk. Then you can just ramble into the microphone about the situation, and the ToC agent will work with even more info.</p>
-
-<p>As sessions wrap up, it also writes a <code class="language-plaintext highlighter-rouge">/docs/toc-sessions/</code> file with a summary. This can be very helpful to tag in when you start a new session related to a prior one as well.</p>
-
-<p>The more data it has, the faster it will get to the right Thinking Process and conclusion. Feed it as much as you can!</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/picking-air-purifiers">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/picking-air-purifiers">How to pick the best air purifier, objectively</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/congruence/baby">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/congruence/baby">Baby photos</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Theory of Constraints as a Claude skill that can probably help you solve your problems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-04-07-theory-of-constraints-skill.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Trying to partially save myself from 'it goes by so fast.'.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
