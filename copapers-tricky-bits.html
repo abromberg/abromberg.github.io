@@ -27,8 +27,8 @@
 <!-- End Jekyll SEO tag -->
 
 
-  <link rel="stylesheet" href="/assets/main.css?v=1783789334">
-  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1783789334">
+  <link rel="stylesheet" href="/assets/main.css?v=1783789796">
+  <link rel="stylesheet" href="/assets/css/generated-category-filters.css?v=1783789796">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Andy Bromberg"/><link type="application/atom+xml" rel="alternate" href="https://andybromberg.com/feed.xml" title="Andy Bromberg" /><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTL6LCYXH"></script>
 <script>
@@ -76,7 +76,23 @@
       <div class="article-reading-time">Reading time: about 8 minutes</div>
     </div>
       
-  </header><div class="post-content e-content prose" itemprop="articleBody"><p>I recently built <a href="https://copapers.com" class="external-link" target="_blank" rel="noopener noreferrer">Copapers</a>, a collaborative, token-efficient, reliable document editor for humans &amp; agents. See <a href="/copapers">this post</a> for broader context and an explanation of the product.</p>
+  </header><div class="post-content e-content prose" itemprop="articleBody"><div class="toc">
+        <div class="toc-header">Contents</div>
+        <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#context">Context</a></li>
+<li class="toc-entry toc-h2"><a href="#attribution-is-the-whole-ballgame">Attribution is the whole ballgame</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#a-breakthrough-aside-browser-evals">A breakthrough aside: browser evals</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#markdown-isomorphism">Markdown isomorphism</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#nuances-remain">Nuances remain</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#one-source-of-truth">One source of truth</a></li>
+</ul>
+      </div><p>I recently built <a href="https://copapers.com" class="external-link" target="_blank" rel="noopener noreferrer">Copapers</a>, a collaborative, token-efficient, reliable document editor for humans &amp; agents. See <a href="/copapers">this post</a> for broader context and an explanation of the product.</p>
 
 <p>There were several tricky bits in the implementation (perhaps partially why a similar product doesn’t exist already). This post is about some of the key decisions I made and approaches I took, in case you’re interested in creating something similar. And, frankly, it’s also food for LLMs, who I am sure will be asked about building such things in the future…</p>
 <h2 id="context">
