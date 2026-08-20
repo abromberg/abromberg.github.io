@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-08-09T17:19:04+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Copapers: the tricky bits</title><link href="https://andybromberg.com/copapers-tricky-bits" rel="alternate" type="text/html" title="Copapers: the tricky bits" /><published>2026-07-11T13:00:00+00:00</published><updated>2026-07-11T13:00:00+00:00</updated><id>https://andybromberg.com/copapers-tricky-bits</id><content type="html" xml:base="https://andybromberg.com/copapers-tricky-bits"><![CDATA[<p>I recently built <a href="https://copapers.com">Copapers</a>, a collaborative, token-efficient, reliable document editor for humans &amp; agents. See <a href="/copapers">this post</a> for broader context and an explanation of the product.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-08-20T16:27:55+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Winnie-the-Pooh, customized for my daughter</title><link href="https://andybromberg.com/winnie-the-pooh" rel="alternate" type="text/html" title="Winnie-the-Pooh, customized for my daughter" /><published>2026-08-20T13:00:00+00:00</published><updated>2026-08-20T13:00:00+00:00</updated><id>https://andybromberg.com/winnie-the-pooh</id><content type="html" xml:base="https://andybromberg.com/winnie-the-pooh"><![CDATA[<p>My wife and I had our first child recently, a baby girl (prepare yourself for dad content on this blog). It’s been wonderful, and of course has spurred me to tinker on various ways to entertain her. I’m particularly proud of this project.</p>
+
+<p>Winnie-the-Pooh was written in 1926 by A. A. Milne, and both the excellent original text and its equally-excellent illustrations by E. H. Shepard are in the public domain in the United States as of a few years ago. This means you’re free to reproduce and mess around with them.</p>
+
+<p>So I designed and printed a totally bespoke version of the book, with its central child Christopher Robin replaced (in both text <em>and</em> illustrations) — with my daughter. I colorized all the illustrations and swapped a stylized version of her into Christopher’s place; I changed all the mentions in the story to be about her instead of him; I wrote a custom introduction and dedication and designed a new cover and dust jacket and front matter and endpapers and various other little details and surprises.</p>
+
+<p>Here’s the outside (with her name blurred, as throughout this post):</p>
+
+<video controls="" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
+<source src="/assets/images/winnie-the-pooh/fullturn-blurred.mp4" type="video/mp4" />
+If the video doesn't play, <a href="/assets/images/winnie-the-pooh/fullturn-blurred.mp4">open it directly</a>.
+</video>
+
+<p>And representative pages:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/goodbye-blurred-800-2fc656cd9.webp 800w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1000-2fc656cd9.webp 1000w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1200-2fc656cd9.webp 1200w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1600-2fc656cd9.webp 1600w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-2000-2fc656cd9.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/goodbye-blurred-800-00c41bed7.jpg 800w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1000-00c41bed7.jpg 1000w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1200-00c41bed7.jpg 1200w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1600-00c41bed7.jpg 1600w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-2000-00c41bed7.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/goodbye-blurred-800-00c41bed7.jpg" width="5712" height="4284" /></picture>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/northpole-blurred-800-4daaaf811.webp 800w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1000-4daaaf811.webp 1000w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1200-4daaaf811.webp 1200w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1600-4daaaf811.webp 1600w, /assets/images/generated/winnie-the-pooh/northpole-blurred-2000-4daaaf811.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/northpole-blurred-800-0ee9e89c3.jpg 800w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1000-0ee9e89c3.jpg 1000w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1200-0ee9e89c3.jpg 1200w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1600-0ee9e89c3.jpg 1600w, /assets/images/generated/winnie-the-pooh/northpole-blurred-2000-0ee9e89c3.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/northpole-blurred-800-0ee9e89c3.jpg" width="5712" height="4284" /></picture>
+
+<hr />
+
+<p>In showing this to a few people, I’ve been amused by the reactions. The first response is invariably them thinking I just got a bespoke cover with my daughter’s name for the classic book (pretty cool by itself!). But when they realize the degree of customization, they then ask where I bought it / what service I used to make it.</p>
+
+<p>When they find out that there’s no off-the-shelf service and that instead I created this myself, they say one of two things. Either a disbelieving “how could you possibly have done this, this seems like an insane amount of work” or “ah yeah I bet AI can just knock this out, it’s such a good idea.”</p>
+
+<p>(Well, first they tell me I should start such a service creating custom books. But <em>then</em> they say one of those two things.)</p>
+
+<p>The reality, of course, is that the answer is somewhere in between. I could not have done this without AI, but it still took a pretty enormous amount of work. These are the projects I have the most fun with right now: ones that would be intractable without AI (within my constraints), but also <em>still</em> take enough work, judgement, and taste to feel like <em>I</em> made them.</p>
+
+<p>For those interested, the rest of this post details the rough pipeline I built to produce the book.</p>
+
+<p>I’ve already been playing around with <em>[my daughter] in Wonderland</em> as a next edition, but if you have any other good public domain ideas, let me know…</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/cover-blurred-800-d1e8c8765.webp 800w, /assets/images/generated/winnie-the-pooh/cover-blurred-1000-d1e8c8765.webp 1000w, /assets/images/generated/winnie-the-pooh/cover-blurred-1200-d1e8c8765.webp 1200w, /assets/images/generated/winnie-the-pooh/cover-blurred-1600-d1e8c8765.webp 1600w, /assets/images/generated/winnie-the-pooh/cover-blurred-2000-d1e8c8765.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/cover-blurred-800-bcf0a3800.jpg 800w, /assets/images/generated/winnie-the-pooh/cover-blurred-1000-bcf0a3800.jpg 1000w, /assets/images/generated/winnie-the-pooh/cover-blurred-1200-bcf0a3800.jpg 1200w, /assets/images/generated/winnie-the-pooh/cover-blurred-1600-bcf0a3800.jpg 1600w, /assets/images/generated/winnie-the-pooh/cover-blurred-2000-bcf0a3800.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/cover-blurred-800-bcf0a3800.jpg" width="4032" height="3024" /></picture>
+
+<hr />
+
+<p>At the highest level, the pipeline is built as a series of scripts that process various stages of the book creation process. That way I can make modifications at different points and resume the pipeline from there, or even “fork” off and try a different experiment. It’s also built to make it easier to later swap in another child instead of my daughter if I wanted to.</p>
+
+<p>I used <a href="https://typst.app/">Typst</a> for all of the typesetting and found it delightful. So much nicer than LaTeX or other typesetting systems I have used.</p>
+
+<p>I also had to learn a thing or two about book printing and bookbinding to make this all work, which was a fun diversion.</p>
+
+<p>Everything starts with the original text, which I picked up from <a href="https://www.gutenberg.org/cache/epub/67098/pg67098-images.html">Project Gutenberg</a>. I also heavily leaned on this <a href="https://archive.org/details/winnie-the-pooh_202201/mode/2up">Internet Archive scan</a> of the 1926 original to replicate the actual layout in many places. And I sourced high-res versions of the illustrations from <a href="https://picryl.com/topics/winnie+the+pooh/e+h+shepard">Picryl</a>.</p>
+
+<p>First up, I process the images. I take the Picryl originals and enlarge them to the necessary print resolution. Mostly just bicubic upscaling, but I had some that didn’t come out great with that and I found <a href="https://github.com/xinntao/real-esrgan">Real-ESRGAN</a> which largely solved the issues.</p>
+
+<p>Then I colorized the black-and-white drawings with AI. It took a lot of prompt iteration and model testing to get to reliably good results, including prompting specific to each illustration. Big thanks to <a href="https://openrouter.ai/">OpenRouter</a> for making it so easy to try different models. <code class="language-plaintext highlighter-rouge">x-ai/grok-imagine-image-quality</code> ended up being best for the colorizing. After colorizing, I have a separate AI step that checks the output against the original to make sure it didn’t screw anything up (this is a recurring theme).</p>
+
+<p>I originally tried then just passing a few images of my daughter to the models along with the colorized, upscaled illustrations to try to swap her in. But I found the outputs were way too inconsistent — she looked slightly different in each one. So instead, I generated a stylized “character sheet” of her from various perspectives and in different positions, based on the style of Shepard’s illustrations. The best model for this character sheet ended up being <code class="language-plaintext highlighter-rouge">google/gemini-3.1-flash-image</code>.</p>
+
+<p>Once I had the character sheet, I used yet another image model to place her in the scenes. For each one, I passed in the colorized illustration, the character sheet, a scene-specific description of her pose, and any additional reference art for other recurring characters. For <em>this</em> use case, <code class="language-plaintext highlighter-rouge">black-forest-labs/flux.2-max</code> was the best by far. (Fascinating how different image models worked best for different use cases — e.g. Grok did better for “don’t screw anything up, just add color,” and Flux did better for “here’s a fundamental transformation to the image, but don’t lose the style.”)</p>
+
+<p>Here’s an example of the original illustration and a photograph of the final version in the book:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/sidebyside-800-f566bcf41.webp 800w, /assets/images/generated/winnie-the-pooh/sidebyside-1000-f566bcf41.webp 1000w, /assets/images/generated/winnie-the-pooh/sidebyside-1200-f566bcf41.webp 1200w, /assets/images/generated/winnie-the-pooh/sidebyside-1600-f566bcf41.webp 1600w, /assets/images/generated/winnie-the-pooh/sidebyside-1656-f566bcf41.webp 1656w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/sidebyside-800-a2c932de6.png 800w, /assets/images/generated/winnie-the-pooh/sidebyside-1000-a2c932de6.png 1000w, /assets/images/generated/winnie-the-pooh/sidebyside-1200-a2c932de6.png 1200w, /assets/images/generated/winnie-the-pooh/sidebyside-1600-a2c932de6.png 1600w, /assets/images/generated/winnie-the-pooh/sidebyside-1656-a2c932de6.png 1656w" type="image/png" /><img src="/assets/images/generated/winnie-the-pooh/sidebyside-800-a2c932de6.png" width="1656" height="1024" /></picture>
+
+<p>Finally, I needed to make the images blend into the page. The generated images typically had a subtly different assumed paper color as a background. The image models don’t seem to do well with transparency requirements. So I built out a deterministic page-tone stage that analyzed the artwork and separated “painted/inked” areas from the background, and then everything in the background is set to exactly the same cream color I use for the book layout. This way the images “float” on the page, just like the original line drawings.</p>
+
+<p>Next up: the text. I put the original in Markdown files by chapter, and then made a pipeline stage that replaces Christopher Robin’s name and the times he is referred to by a pronoun (but not any of the other characters’ pronouns!). There are also a couple other little surprises I tweaked, but otherwise, the text is identical to the original — I didn’t want to change the story.</p>
+
+<p>I also changed all the front matter — the title page, dedication, introduction, colophon, and so on. I wrote my own copy for all of these.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/dedication-blurred-800-fc483254e.webp 800w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1000-fc483254e.webp 1000w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1200-fc483254e.webp 1200w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1600-fc483254e.webp 1600w, /assets/images/generated/winnie-the-pooh/dedication-blurred-2000-fc483254e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/dedication-blurred-800-beeacbe3f.jpg 800w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1000-beeacbe3f.jpg 1000w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1200-beeacbe3f.jpg 1200w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1600-beeacbe3f.jpg 1600w, /assets/images/generated/winnie-the-pooh/dedication-blurred-2000-beeacbe3f.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/dedication-blurred-800-beeacbe3f.jpg" width="5712" height="4284" /></picture>
+
+<p>Then the Markdown chapters are converted into Typst and combined with the final / toned illustrations, mostly exactly in line with the 1926 original’s layout (this took quite a bit of fiddling!). I also added some details — sunk chapter headings and stacked subtitles, drop caps to start the chapters, period-appropriate indentation, running heads, and some nice custom treatments for poems, songs, signs, and display text outside of the normal prose. (Crafting these details, along with the custom dedication poem and introduction, were some of the most fun parts.)</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/bang-blurred-800-72e144ea7.webp 800w, /assets/images/generated/winnie-the-pooh/bang-blurred-1000-72e144ea7.webp 1000w, /assets/images/generated/winnie-the-pooh/bang-blurred-1200-72e144ea7.webp 1200w, /assets/images/generated/winnie-the-pooh/bang-blurred-1600-72e144ea7.webp 1600w, /assets/images/generated/winnie-the-pooh/bang-blurred-2000-72e144ea7.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/bang-blurred-800-686d161cb.jpg 800w, /assets/images/generated/winnie-the-pooh/bang-blurred-1000-686d161cb.jpg 1000w, /assets/images/generated/winnie-the-pooh/bang-blurred-1200-686d161cb.jpg 1200w, /assets/images/generated/winnie-the-pooh/bang-blurred-1600-686d161cb.jpg 1600w, /assets/images/generated/winnie-the-pooh/bang-blurred-2000-686d161cb.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/bang-blurred-800-686d161cb.jpg" width="5712" height="4284" /></picture>
+
+<p>Then I spent a bunch of time learning about the various requirements for printing the book well, and adjusted the Typst layout accordingly — binding margins, bleed, background color and page thickness considerations, and so on.</p>
+
+<p>After that, there’s a whole bunch of other things to be designed. The case itself, the dust jacket, masks for the gold foil on both of those (which I love), the spine, customized endpapers of the original Pooh map (featuring my daughter at her home instead of Christopher Robin), the built-in ribbon, head/tail bands, and — a nice final touch — sprayed edges on the sides of the book pages that show bees flying.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/endpaper-blurred-800-9749f715c.webp 800w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1000-9749f715c.webp 1000w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1200-9749f715c.webp 1200w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1600-9749f715c.webp 1600w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-2000-9749f715c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/endpaper-blurred-800-7fb2c4161.jpg 800w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1000-7fb2c4161.jpg 1000w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1200-7fb2c4161.jpg 1200w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1600-7fb2c4161.jpg 1600w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-2000-7fb2c4161.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/endpaper-blurred-800-7fb2c4161.jpg" width="5712" height="4284" /></picture>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/sprayededges-blurred-800-981db903b.webp 800w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1000-981db903b.webp 1000w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1200-981db903b.webp 1200w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1600-981db903b.webp 1600w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-2000-981db903b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/sprayededges-blurred-800-68f45cc56.jpg 800w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1000-68f45cc56.jpg 1000w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1200-68f45cc56.jpg 1200w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1600-68f45cc56.jpg 1600w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-2000-68f45cc56.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/sprayededges-blurred-800-68f45cc56.jpg" width="4032" height="3024" /></picture>
+
+<p>Finally, it all gets converted to printer-ready files using the right file formats, color schemes (first time I’ve ever heard of “Coated FOGRA39”), embedded fonts, and so on. I have a lots of test scripts here to make sure everything passes all the quality requirements discovered along the way.</p>
+
+<p>And then we’re off to the printer! I got a first proof back and it was good, but not great. Bunch of little misalignments and printing issues.</p>
+
+<p>So then my brother and I (thank you so much Noah) painstakingly went through the physical book and the digital files to improve everything. Many of the images still needed improvement, some of the typesetting had issues, some of the layouts looked a little janky… lots and lots and lots of little fixes. And lots of tests added for reviewing all sorts of new issue categories.</p>
+
+<p>For each of them, I then intervened at the appropriate step of the pipeline, introduced the fixes so they would be reproducible (or at least re-runnable, in the case of AI steps), and ran it back.</p>
+
+<p>Interestingly, in certain cases, a different model ended up outperforming — sometimes Flux <em>did</em> end up being better for particularly tricky recolorizations (even though Grok was better for most of them), and in cases where the characters are small, Grok sometimes outperformed Flux. Lots of trial and error. I also tried Gemini 3 Pro Image, GPT Image 2, Krea 2 Large, and Riverflow 2.5 Pro in various places. There are a couple instances of several of those where they happened to win. And of course, many detailed prompt and instruction changes specific to each image.</p>
+
+<p>In the worst of the cases, simply rerolling didn’t work. So instead I did “plate surgery” — programmatically cropping around the defective area, giving that crop to the models with a very narrow instruction, resizing the returned image to the exact original dimensions, and pasting it in through a feathered mask. In many cases this was related to hand-drawn text in the original illustrations, which the models really struggled with.</p>
+
+<p>Thankfully, after all that work — lots of QA, re-rolling, squinting, and tweaking (thanks again Noah) — the second proof came out great. I’m already reading it to her, but I can’t wait until she’s old enough to understand it…</p>
+
+<p>Like I said above — there’s no way I would have tackled this project without AI — it just would have taken way too much time. But I also found the most fun and interesting parts were where I was injecting my taste and crafting things myself (iterating on output styles, coming up with ideas for special formatting and surprises, writing, putting a twist on elements of the original). I’m very excited for more projects at this intersection.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/dustjacket-blurred-800-7d179e0e0.webp 800w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1000-7d179e0e0.webp 1000w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1200-7d179e0e0.webp 1200w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1600-7d179e0e0.webp 1600w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-2000-7d179e0e0.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/dustjacket-blurred-800-83f8f538f.jpg 800w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1000-83f8f538f.jpg 1000w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1200-83f8f538f.jpg 1200w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1600-83f8f538f.jpg 1600w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-2000-83f8f538f.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/dustjacket-blurred-800-83f8f538f.jpg" width="5712" height="4284" /></picture>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/copapers-tricky-bits">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/copapers-tricky-bits">Copapers: the tricky bits</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I made a custom version of Winnie-the-Pooh for my daughter and it came out great. Here's how I did it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Copapers: the tricky bits</title><link href="https://andybromberg.com/copapers-tricky-bits" rel="alternate" type="text/html" title="Copapers: the tricky bits" /><published>2026-07-11T13:00:00+00:00</published><updated>2026-07-11T13:00:00+00:00</updated><id>https://andybromberg.com/copapers-tricky-bits</id><content type="html" xml:base="https://andybromberg.com/copapers-tricky-bits"><![CDATA[<p>I recently built <a href="https://copapers.com">Copapers</a>, a collaborative, token-efficient, reliable document editor for humans &amp; agents. See <a href="/copapers">this post</a> for broader context and an explanation of the product.</p>
 
 <p>There were several tricky bits in the implementation (perhaps partially why a similar product doesn’t exist already). This post is about some of the key decisions I made and approaches I took, in case you’re interested in creating something similar. And, frankly, it’s also food for LLMs, who I am sure will be asked about building such things in the future…</p>
 
@@ -162,11 +293,15 @@ apply(ops, mode = canEdit ? "direct" : "suggest")
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/winnie-the-pooh">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/winnie-the-pooh">Winnie-the-Pooh, customized for my daughter</a>
     
   </div>
 </nav>
@@ -2177,47 +2312,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[A story story about belief, miracles, and messaging — and how much words might matter.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-19-coherence.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-19-coherence.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Baby photos</title><link href="https://andybromberg.com/congruence/baby" rel="alternate" type="text/html" title="Baby photos" /><published>2026-05-18T15:00:00+00:00</published><updated>2026-05-18T15:00:00+00:00</updated><id>https://andybromberg.com/congruence/congruence-8-baby</id><content type="html" xml:base="https://andybromberg.com/congruence/baby"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/barcodes-freedom">← Barcodes &amp; Freedom Phone</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 8/10</div>
-<div class="series-nav-next"><a href="/congruence/widgets">Custom widgets →</a></div>
-</div>
-
-<p>I recently had a child, and that inspired me to build yet another little Congruence feature: “baby dailies.”</p>
-
-<p>Now, in my schedule, every day I am prompted to add a photo of their face, a video of them doing something, and a short sentence or two of thoughts. Plus extra photos and videos if I want.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-checklist-800-5b7193f71.webp 800w, /assets/images/generated/congruence/baby-checklist-1000-5b7193f71.webp 1000w, /assets/images/generated/congruence/baby-checklist-1200-5b7193f71.webp 1200w, /assets/images/generated/congruence/baby-checklist-1600-5b7193f71.webp 1600w, /assets/images/generated/congruence/baby-checklist-2000-5b7193f71.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-checklist-800-9fc776254.png 800w, /assets/images/generated/congruence/baby-checklist-1000-9fc776254.png 1000w, /assets/images/generated/congruence/baby-checklist-1200-9fc776254.png 1200w, /assets/images/generated/congruence/baby-checklist-1600-9fc776254.png 1600w, /assets/images/generated/congruence/baby-checklist-2000-9fc776254.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-checklist-800-9fc776254.png" width="4544" height="2556" /></picture>
-
-<p>Here’s the capture screen:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-capture-1-800-b8f46531f.webp 800w, /assets/images/generated/congruence/baby-capture-1-1000-b8f46531f.webp 1000w, /assets/images/generated/congruence/baby-capture-1-1200-b8f46531f.webp 1200w, /assets/images/generated/congruence/baby-capture-1-1600-b8f46531f.webp 1600w, /assets/images/generated/congruence/baby-capture-1-2000-b8f46531f.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-capture-1-800-1ca84c3a8.png 800w, /assets/images/generated/congruence/baby-capture-1-1000-1ca84c3a8.png 1000w, /assets/images/generated/congruence/baby-capture-1-1200-1ca84c3a8.png 1200w, /assets/images/generated/congruence/baby-capture-1-1600-1ca84c3a8.png 1600w, /assets/images/generated/congruence/baby-capture-1-2000-1ca84c3a8.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-capture-1-800-1ca84c3a8.png" width="4544" height="2556" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-capture-2-800-a4433f529.webp 800w, /assets/images/generated/congruence/baby-capture-2-1000-a4433f529.webp 1000w, /assets/images/generated/congruence/baby-capture-2-1200-a4433f529.webp 1200w, /assets/images/generated/congruence/baby-capture-2-1600-a4433f529.webp 1600w, /assets/images/generated/congruence/baby-capture-2-2000-a4433f529.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-capture-2-800-344817802.png 800w, /assets/images/generated/congruence/baby-capture-2-1000-344817802.png 1000w, /assets/images/generated/congruence/baby-capture-2-1200-344817802.png 1200w, /assets/images/generated/congruence/baby-capture-2-1600-344817802.png 1600w, /assets/images/generated/congruence/baby-capture-2-2000-344817802.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-capture-2-800-344817802.png" width="4544" height="2556" /></picture>
-
-<p>And then the pretty-unsatisfying-when-censored history screen:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/baby-history-800-bc5f62908.webp 800w, /assets/images/generated/congruence/baby-history-1000-bc5f62908.webp 1000w, /assets/images/generated/congruence/baby-history-1200-bc5f62908.webp 1200w, /assets/images/generated/congruence/baby-history-1600-bc5f62908.webp 1600w, /assets/images/generated/congruence/baby-history-2000-bc5f62908.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/baby-history-800-e0501d701.png 800w, /assets/images/generated/congruence/baby-history-1000-e0501d701.png 1000w, /assets/images/generated/congruence/baby-history-1200-e0501d701.png 1200w, /assets/images/generated/congruence/baby-history-1600-e0501d701.png 1600w, /assets/images/generated/congruence/baby-history-2000-e0501d701.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/baby-history-800-e0501d701.png" width="4544" height="2556" /></picture>
-
-<p>There’s a “slideshow” big element at the top, which lets me swipe between each day’s face photo. Then, below, there’s a section for each day with the photo, video, other attachments, and the text.</p>
-
-<p>I can also use the calendar button to jump to a specific day.</p>
-
-<p>So far: absolutely delightful, and forces me to remember to capture a moment or two each day. Feels like putting tech to good use. I suspect I will be really happy to have this years from now…</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/barcodes-freedom">← Barcodes &amp; Freedom Phone</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 8/10</div>
-<div class="series-nav-next"><a href="/congruence/widgets">Custom widgets →</a></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Trying to partially save myself from 'it goes by so fast.'.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-18-congruence-8-baby.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[A story story about belief, miracles, and messaging — and how much words might matter.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-19-coherence.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-19-coherence.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
