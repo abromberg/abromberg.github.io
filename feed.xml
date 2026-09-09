@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-01T16:00:16+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">You can solve problems ambiently</title><link href="https://andybromberg.com/solve-problems-ambiently" rel="alternate" type="text/html" title="You can solve problems ambiently" /><published>2026-08-23T13:00:00+00:00</published><updated>2026-08-23T13:00:00+00:00</updated><id>https://andybromberg.com/solve-problems-ambiently</id><content type="html" xml:base="https://andybromberg.com/solve-problems-ambiently"><![CDATA[<p>Sometimes you read something and it hits you like a ton of bricks. This tweet did that for me last year:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-09T19:33:52+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">daegent: pro-grade, multi-model Claude Cowork</title><link href="https://andybromberg.com/daegent" rel="alternate" type="text/html" title="daegent: pro-grade, multi-model Claude Cowork" /><published>2026-09-09T13:00:00+00:00</published><updated>2026-09-09T13:00:00+00:00</updated><id>https://andybromberg.com/daegent</id><content type="html" xml:base="https://andybromberg.com/daegent"><![CDATA[<p>For nearly every AI use case, I now prefer using coding harnesses like Codex, Claude Code, or Pi. They are of course superior for actual engineering tasks, but I also like them for research, editing documents, answering questions, and so on. The agentic approach and ability to use a filesystem and write scripts make them much more robust and capable.</p>
+
+<p>But from a user experience standpoint, I mostly want something more like ChatGPT or Claude.ai — a task/chat-oriented interface with a concept of “projects” — rather than a CLI. The CLIs are great for engineering (especially via an interface like <a href="https://superset.sh/">Superset</a>), but they doesn’t feel quite right for non-engineering tasks. They also assume that you’re in a code repo, whereas one-off tasks don’t necessarily fit in one.</p>
+
+<p>In some sense, Claude Cowork and ChatGPT Work are meant to fill this gap, giving you agentic capabilities across your computer. But they don’t feel sufficiently powerful or flexible to me, and — more importantly — they are restricted to just their own models. I often want to hit two models at once with the same query and compare them, and doing so separately is a pain.</p>
+
+<p>So I built a product for myself called <code class="language-plaintext highlighter-rouge">daegent</code>. To the user, it looks very similar to ChatGPT or Claude.ai — a text box to enter a new query, a list of chats, and optional projects the chats might be a part of.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/daegent/main-800-55f138196.webp 800w, /assets/images/generated/daegent/main-1000-55f138196.webp 1000w, /assets/images/generated/daegent/main-1200-55f138196.webp 1200w, /assets/images/generated/daegent/main-1600-55f138196.webp 1600w, /assets/images/generated/daegent/main-2000-55f138196.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/daegent/main-800-0b4c54357.png 800w, /assets/images/generated/daegent/main-1000-0b4c54357.png 1000w, /assets/images/generated/daegent/main-1200-0b4c54357.png 1200w, /assets/images/generated/daegent/main-1600-0b4c54357.png 1600w, /assets/images/generated/daegent/main-2000-0b4c54357.png 2000w" type="image/png" /><img src="/assets/images/generated/daegent/main-800-0b4c54357.png" width="3000" height="1612" /></picture>
+
+<p>But under the hood, it runs on a spare computer in my closet and uses Codex and Claude Code (via my subscriptions, not API usage!) to handle tasks. Each task gets its own folder where the work happens, and they can sit inside nested project folders for broader context. I can access it remotely in my web browser (over Tailscale), or via a dedicated interface in my personal app <a href="/congruence/intro">Congruence</a>.</p>
+
+<p>daegent allows you to send the same request to multiple models or harnesses at once, and also allows for the answers to be compared and summarized if you do so. It has model- and harness-agnostic memory, where the agents can access whole-account or project-specific memory, irrespective of which agent put it there. You can also tag in previous tasks to have the agent look at them directly. And it supports <code class="language-plaintext highlighter-rouge">/goal</code> usage with a nice monitoring and usability layer above it.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/daegent/goal-800-876c297a1.webp 800w, /assets/images/generated/daegent/goal-1000-876c297a1.webp 1000w, /assets/images/generated/daegent/goal-1200-876c297a1.webp 1200w, /assets/images/generated/daegent/goal-1600-876c297a1.webp 1600w, /assets/images/generated/daegent/goal-2000-876c297a1.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/daegent/goal-800-e4d82a6dc.png 800w, /assets/images/generated/daegent/goal-1000-e4d82a6dc.png 1000w, /assets/images/generated/daegent/goal-1200-e4d82a6dc.png 1200w, /assets/images/generated/daegent/goal-1600-e4d82a6dc.png 1600w, /assets/images/generated/daegent/goal-2000-e4d82a6dc.png 2000w" type="image/png" /><img src="/assets/images/generated/daegent/goal-800-e4d82a6dc.png" width="3004" height="1700" /></picture>
+
+<p>On desktop, it can be driven entirely via keyboard and is way snappier than the ChatGPT/Claude web interfaces. You “tag” models in via autocompleted strings like <code class="language-plaintext highlighter-rouge">@codex:gpt-6-astra:medium</code> (for medium-level thinking), and projects with hashtags like <code class="language-plaintext highlighter-rouge">#acme-corp</code>.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/daegent/typing-800-952112c7f.webp 800w, /assets/images/generated/daegent/typing-1000-952112c7f.webp 1000w, /assets/images/generated/daegent/typing-1200-952112c7f.webp 1200w, /assets/images/generated/daegent/typing-1600-952112c7f.webp 1600w, /assets/images/generated/daegent/typing-2000-952112c7f.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/daegent/typing-800-52bfea640.png 800w, /assets/images/generated/daegent/typing-1000-52bfea640.png 1000w, /assets/images/generated/daegent/typing-1200-52bfea640.png 1200w, /assets/images/generated/daegent/typing-1600-52bfea640.png 1600w, /assets/images/generated/daegent/typing-2000-52bfea640.png 2000w" type="image/png" /><img src="/assets/images/generated/daegent/typing-800-52bfea640.png" width="2236" height="750" /></picture>
+
+<p>So a task might look like:</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">@codex:gpt-6-astra:medium</code> <code class="language-plaintext highlighter-rouge">@claude:fable[1m]:medium</code> go research some complex stuff and <code class="language-plaintext highlighter-rouge">@compare</code> it. you may want to reference <code class="language-plaintext highlighter-rouge">Audit every TPS report before Friday</code> <code class="language-plaintext highlighter-rouge">#acme-corp</code></p>
+</blockquote>
+
+<p>This would create a new task-specific folder within the <code class="language-plaintext highlighter-rouge">/acme-corp</code> project folder. Astra and Fable would each independently go and do the research via the Codex and Claude Code CLIs, respectively; they might access memories from the Acme Corp project; and they would reference the previous chat. Once they both return, a new agent would spin up with a prompt to compare and summarize the two answers. The user would get back all three — Astra, Fable, and the summary.</p>
+
+<p>I now use daegent for ~100% of my non-engineering AI usage, and perhaps 20% of my engineering usage too (typically when I’m firing something off remotely); the remaining engineering usage is still via the CLIs in Superset.</p>
+
+<p>I built <a href="https://interface0.com">interface0</a> last year — still with a very happy userbase! — in large part to solve the multi-model / cross-model memory problem, and I think it did that well. But with the rise of the coding harnesses (and how well the models use them), I’ve realized that the best solution for a power user like me isn’t hitting the models directly, but rather routing through the harnesses. In some sense, daegent is interface0 for the harness paradigm.</p>
+
+<p>In general, after building interface0 and daegent, my perspective is that the labs will end up building almost everything themselves, so if there’s a capability gap, it’s only temporary. But a plausible exception is the cross-model layer. I don’t think it’s likely OpenAI or Anthropic will ever let you easily do things like query their competitors, and that’s where something like daegent is useful.</p>
+
+<p>The other thing the labs won’t likely ever do is build a product that is perfect for me, Andy Bromberg. This is the personalized software thesis. Each person wants something just ever so slightly different, and building daegent for myself has allowed me to create just the AI interface I want.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/solve-problems-ambiently">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/solve-problems-ambiently">You can solve problems ambiently</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[My new favorite way to interact with AI: a harness of harnesses.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-09-09-daegent.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-09-09-daegent.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">You can solve problems ambiently</title><link href="https://andybromberg.com/solve-problems-ambiently" rel="alternate" type="text/html" title="You can solve problems ambiently" /><published>2026-08-23T13:00:00+00:00</published><updated>2026-08-23T13:00:00+00:00</updated><id>https://andybromberg.com/solve-problems-ambiently</id><content type="html" xml:base="https://andybromberg.com/solve-problems-ambiently"><![CDATA[<p>Sometimes you read something and it hits you like a ton of bricks. This tweet did that for me last year:</p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m lazy and solve most of my problems ambiently, but if I find myself ruminating about something (looping due to working memory constraints) I try to answer four questions about it. <br />1. What do I want<br />2. What do I have/know<br />3. What am I missing (knowledge/resources), such that…</p>&mdash; RomeoStevens (@RomeoStevens76) <a href="https://x.com/RomeoStevens76/status/1949103855846744500?ref_src=twsrc%5Etfw">July 26, 2025</a></blockquote>
 <script async="" src="https://platform.x.com/widgets.js" charset="utf-8"></script>
@@ -88,11 +160,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/daegent">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/daegent">daegent: pro-grade, multi-model Claude Cowork</a>
     
   </div>
 </nav>
@@ -1451,7 +1527,7 @@ npm run dev
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
 </div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[I found my grandfather Eleazer "Lazer" Bromberg's quiet role in the early days of computing — including a 1957 Los Alamos insight.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Custom widgets</title><link href="https://andybromberg.com/congruence/widgets" rel="alternate" type="text/html" title="Custom widgets" /><published>2026-05-24T15:00:00+00:00</published><updated>2026-05-24T15:00:00+00:00</updated><id>https://andybromberg.com/congruence/congruence-9-widgets</id><content type="html" xml:base="https://andybromberg.com/congruence/widgets"><![CDATA[<div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/baby">← Baby photos</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 9/10</div>
+<div class="series-nav-center">Congruence: a very personal app · section 9/11</div>
 <div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
 </div>
 
@@ -1497,7 +1573,7 @@ npm run dev
 
 <div class="series-nav">
 <div class="series-nav-prev"><a href="/congruence/baby">← Baby photos</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 9/10</div>
+<div class="series-nav-center">Congruence: a very personal app · section 9/11</div>
 <div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
 </div>
 
@@ -1510,80 +1586,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Using the lockscreen in ways I had never thought of before.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Using AI for fiction</title><link href="https://andybromberg.com/ai-fiction" rel="alternate" type="text/html" title="Using AI for fiction" /><published>2026-05-20T13:00:00+00:00</published><updated>2026-05-20T13:00:00+00:00</updated><id>https://andybromberg.com/ai-fiction</id><content type="html" xml:base="https://andybromberg.com/ai-fiction"><![CDATA[<p>I just posted <a href="/coherence"><strong>COHERENCE</strong></a>, the result of my first time writing fiction since, I believe… high school English class? I’ve been loosely thinking about the core idea and related topics for the last year or so and felt like a short story was the right format for them.</p>
-
-<p>Turns out: fiction is <em>hard.</em> I don’t know that I’ll be doing much more of it anytime soon. But it was a fun muscle to exercise. (I would welcome sharp feedback!)</p>
-
-<p>All that to say: I don’t claim any sort of fiction-writing expertise. But I’ve written one piece, and I naturally also treated it as a chance to see if AI was useful in doing so as of May 2026. Here were my takeaways on where it was and wasn’t.</p>
-
-<h2 id="extremely-useful">Extremely useful</h2>
-
-<p>In the outlining phase, I found AI really great for helping me evaluate my outlines and plots and character arcs against specific philosophies.</p>
-
-<p>Brandon Sanderson, for example, has a <a href="https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY">remarkable YouTube lecture series</a> on his writing philosophy. Asking an LLM to test my outline and/or “plots and Plots” against his thinking was a hugely helpful input. Same with Dan Harmon’s story circle and related concepts.</p>
-
-<p>My brain isn’t practiced in thinking about writing in those ways, and the AI (pointed towards specific sources/philosophies) at this stage almost felt like having a writing partner critiquing my approach to the story.</p>
-
-<p>Once I got some actual writing down on the page, it was also tremendous for editing — especially copy editing (“your verb tense is screwed up here”) and keeping track of factual consistency (“first you said David was driving in this scene but later you say Mara was”). It caught a ton of little things I would have missed in the process, and I think the story is much better for that.</p>
-
-<p>It was also, of course, great for general research. “What hospital in Akron should I have Mara’s mom go to given the story so far?” is a canonical LLM question, and it saved me plenty of time on things like that. It also helped me find some great epigraphs for chapters where I couldn’t think of one myself.</p>
-
-<p>Last: I found it surprisingly good at suggesting a list of <em>approaches</em> to a plot / story problem that I could consider. As discussed below, it was mostly garbage at <em>finding</em> plot and story problems. But when I identified one, I could ask AI and it would give me ten ways to solve it. Usually eight of them were terrible and made no sense, but one or two would be seeds of a good idea and I could figure out how to expand and adjust them and make them work.</p>
-
-<h2 id="totally-useless">Totally useless</h2>
-
-<p>Despite my best efforts: I found the AI pretty much useless for the writing itself.</p>
-
-<p>No matter how I prompted, I couldn’t get it to write in quite the right tone — there was always an AI tinge to it. It couldn’t write with good rhythm or pace or word choice (I’ll let you judge whether <em>I</em> can. But <em>it</em> certainly couldn’t…).</p>
-
-<p>(And yes, all the em-dashes in the piece are actually mine. I promise I’ve been using them forever. See <a href="https://andybromberg.com/svm-intuition">this blog post</a> from 12 years ago where I use ten of them in a thousand words.)</p>
-
-<p>It also had a very poor theory of mind for the reader, and as such, struggled with anything story-related once we got going. It had trouble tracking what the reader knew, what the characters would be thinking or what they knew at any point, and all of that led to anything it wrote being pretty out of step. It produced what <em>seemed</em> like reasonable beats when read in isolation, but (aside from the tone issues), rarely made sense in the broader context of the story or its pacing at that moment.</p>
-
-<p>I abandoned trying it in the writing process pretty early. I came back midway through once I had a good amount written in an attempt to few-shot prompt it with some of what I had done so far. It was marginally better but not there yet.</p>
-
-<p>I <em>suspect</em> that in months or a year or two, LLMs will be able to write exceptional fiction. Maybe they even can today, if prompted better than I did.</p>
-
-<p>But for the time being, I would say they are outstanding at applying known writers’ philosophies to outlines, at research, and at editing — but not yet writing itself.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/coherence">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/coherence">COHERENCE: a short story</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/congruence/widgets">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/congruence/widgets">Custom widgets</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;]" /><summary type="html"><![CDATA[Is AI helpful in writing fiction today? A little bit, in certain ways.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-20-ai-fiction.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-20-ai-fiction.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Using the lockscreen in ways I had never thought of before.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
