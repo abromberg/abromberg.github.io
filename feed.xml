@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-09T19:33:52+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">daegent: pro-grade, multi-model Claude Cowork</title><link href="https://andybromberg.com/daegent" rel="alternate" type="text/html" title="daegent: pro-grade, multi-model Claude Cowork" /><published>2026-09-09T13:00:00+00:00</published><updated>2026-09-09T13:00:00+00:00</updated><id>https://andybromberg.com/daegent</id><content type="html" xml:base="https://andybromberg.com/daegent"><![CDATA[<p>For nearly every AI use case, I now prefer using coding harnesses like Codex, Claude Code, or Pi. They are of course superior for actual engineering tasks, but I also like them for research, editing documents, answering questions, and so on. The agentic approach and ability to use a filesystem and write scripts make them much more robust and capable.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-09T19:53:50+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">daegent: pro-grade, multi-model Claude Cowork</title><link href="https://andybromberg.com/daegent" rel="alternate" type="text/html" title="daegent: pro-grade, multi-model Claude Cowork" /><published>2026-09-09T13:00:00+00:00</published><updated>2026-09-09T13:00:00+00:00</updated><id>https://andybromberg.com/daegent</id><content type="html" xml:base="https://andybromberg.com/daegent"><![CDATA[<p>For nearly every AI use case, I now prefer using coding harnesses like Codex, Claude Code, or Pi. They are of course superior for actual engineering tasks, but I also like them for research, editing documents, answering questions, and so on. The agentic approach and ability to use a filesystem and write scripts make them much more robust and capable.</p>
 
 <p>But from a user experience standpoint, I mostly want something more like ChatGPT or Claude.ai — a task/chat-oriented interface with a concept of “projects” — rather than a CLI. The CLIs are great for engineering (especially via an interface like <a href="https://superset.sh/">Superset</a>), but they doesn’t feel quite right for non-engineering tasks. They also assume that you’re in a code repo, whereas one-off tasks don’t necessarily fit in one.</p>
 
@@ -41,14 +41,14 @@
 <nav class="post-navigation">
   <div class="prev-post">
     
-    <a href="/solve-problems-ambiently">
+    <a href="/congruence/daegent">
     
     <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
     
     </a>
     
     
-      <a href="/solve-problems-ambiently">You can solve problems ambiently</a>
+      <a href="/congruence/daegent">daegent</a>
     
   </div>
   <div class="next-post">
@@ -70,7 +70,52 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[My new favorite way to interact with AI: a harness of harnesses.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-09-09-daegent.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-09-09-daegent.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">You can solve problems ambiently</title><link href="https://andybromberg.com/solve-problems-ambiently" rel="alternate" type="text/html" title="You can solve problems ambiently" /><published>2026-08-23T13:00:00+00:00</published><updated>2026-08-23T13:00:00+00:00</updated><id>https://andybromberg.com/solve-problems-ambiently</id><content type="html" xml:base="https://andybromberg.com/solve-problems-ambiently"><![CDATA[<p>Sometimes you read something and it hits you like a ton of bricks. This tweet did that for me last year:</p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[My new favorite way to interact with AI: a harness of harnesses.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-09-09-daegent.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-09-09-daegent.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">daegent</title><link href="https://andybromberg.com/congruence/daegent" rel="alternate" type="text/html" title="daegent" /><published>2026-09-09T12:00:00+00:00</published><updated>2026-09-09T12:00:00+00:00</updated><id>https://andybromberg.com/congruence/congruence-10-daegent</id><content type="html" xml:base="https://andybromberg.com/congruence/daegent"><![CDATA[<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/widgets">← Custom widgets</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 10/11</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<p>For context on this one, check out my <a href="/daegent">separate post on daegent</a>. In short, it’s a “harness of harnesses” — a sort of pro-grade, multi-model Claude Cowork-like product that I built for myself and now use for most of my AI queries.</p>
+
+<p>Of course, I want to interact with daegent on my phone. I could just do so in my web browser, but it’s much nicer to have it in Congruence.</p>
+
+<p>In the previous Congruence post I discussed lockscreen widgets. Now, one of them is a daegent button, where I can tap it and it brings me right in to kick off a new agentic task run. I can select what harnesses and models I want and if it’s part of a project.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/daegent-new-800-c447393da.webp 800w, /assets/images/generated/congruence/daegent-new-1000-c447393da.webp 1000w, /assets/images/generated/congruence/daegent-new-1200-c447393da.webp 1200w, /assets/images/generated/congruence/daegent-new-1600-c447393da.webp 1600w, /assets/images/generated/congruence/daegent-new-2000-c447393da.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/daegent-new-800-e1c87f3e5.png 800w, /assets/images/generated/congruence/daegent-new-1000-e1c87f3e5.png 1000w, /assets/images/generated/congruence/daegent-new-1200-e1c87f3e5.png 1200w, /assets/images/generated/congruence/daegent-new-1600-e1c87f3e5.png 1600w, /assets/images/generated/congruence/daegent-new-2000-e1c87f3e5.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/daegent-new-800-e1c87f3e5.png" width="6555" height="2622" /></picture>
+
+<p>I can also now trigger a daegent run from the nearly-omnipresent notes bar — I just type in what I want and either hit “ADD” (to make a note) or “DAE” (to fire off daegent). “AI” just returns a quick answer instead of spinning up an agent.</p>
+
+<p>Within the daegent module itself, I can see a list of all my tasks, including any that are currently running or chasing after certain goals.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/daegent-list-800-c69a63a72.webp 800w, /assets/images/generated/congruence/daegent-list-1000-c69a63a72.webp 1000w, /assets/images/generated/congruence/daegent-list-1200-c69a63a72.webp 1200w, /assets/images/generated/congruence/daegent-list-1600-c69a63a72.webp 1600w, /assets/images/generated/congruence/daegent-list-2000-c69a63a72.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/daegent-list-800-cf51fd989.png 800w, /assets/images/generated/congruence/daegent-list-1000-cf51fd989.png 1000w, /assets/images/generated/congruence/daegent-list-1200-cf51fd989.png 1200w, /assets/images/generated/congruence/daegent-list-1600-cf51fd989.png 1600w, /assets/images/generated/congruence/daegent-list-2000-cf51fd989.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/daegent-list-800-cf51fd989.png" width="6555" height="2622" /></picture>
+
+<p>Within the tasks, I can see the conversation, access specific messages via a table of contents, monitor ongoing goals, and send followups and continue the conversation.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/congruence/daegent-chat-800-3771b2f0d.webp 800w, /assets/images/generated/congruence/daegent-chat-1000-3771b2f0d.webp 1000w, /assets/images/generated/congruence/daegent-chat-1200-3771b2f0d.webp 1200w, /assets/images/generated/congruence/daegent-chat-1600-3771b2f0d.webp 1600w, /assets/images/generated/congruence/daegent-chat-2000-3771b2f0d.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/daegent-chat-800-148cf6431.png 800w, /assets/images/generated/congruence/daegent-chat-1000-148cf6431.png 1000w, /assets/images/generated/congruence/daegent-chat-1200-148cf6431.png 1200w, /assets/images/generated/congruence/daegent-chat-1600-148cf6431.png 1600w, /assets/images/generated/congruence/daegent-chat-2000-148cf6431.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/daegent-chat-800-148cf6431.png" width="6555" height="2622" /></picture>
+
+<p>And of course, there are push notifications for when tasks finish or need attention. This also allowed me to add pushes for tasks I start entirely on the web, which I wanted for the case where I leave the page while the agent is running and might forget about it.</p>
+
+<p>With daegent in Congruence, I no longer go into the interface0, ChatGPT, or Claude apps!</p>
+
+<p>This was a fun one — doubly-personalized software. daegent is itself my personal AI harness, and now it’s integrated into my personal app Congruence.</p>
+
+<div class="series-nav">
+<div class="series-nav-prev"><a href="/congruence/widgets">← Custom widgets</a></div>
+<div class="series-nav-center">Congruence: a very personal app · section 10/11</div>
+<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
+</div>
+
+<hr class="end-of-article-divider" />
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Integrating my new favorite AI interface into Congruence.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-09-09-congruence-10-daegent.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-09-09-congruence-10-daegent.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">You can solve problems ambiently</title><link href="https://andybromberg.com/solve-problems-ambiently" rel="alternate" type="text/html" title="You can solve problems ambiently" /><published>2026-08-23T13:00:00+00:00</published><updated>2026-08-23T13:00:00+00:00</updated><id>https://andybromberg.com/solve-problems-ambiently</id><content type="html" xml:base="https://andybromberg.com/solve-problems-ambiently"><![CDATA[<p>Sometimes you read something and it hits you like a ton of bricks. This tweet did that for me last year:</p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m lazy and solve most of my problems ambiently, but if I find myself ruminating about something (looping due to working memory constraints) I try to answer four questions about it. <br />1. What do I want<br />2. What do I have/know<br />3. What am I missing (knowledge/resources), such that…</p>&mdash; RomeoStevens (@RomeoStevens76) <a href="https://x.com/RomeoStevens76/status/1949103855846744500?ref_src=twsrc%5Etfw">July 26, 2025</a></blockquote>
 <script async="" src="https://platform.x.com/widgets.js" charset="utf-8"></script>
@@ -160,7 +205,7 @@
   <div class="next-post">
     <div class="post-nav-header">
         
-        <a href="/daegent">
+        <a href="/congruence/daegent">
         
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
         
@@ -168,7 +213,7 @@
         
     </div>
     
-      <a href="/daegent">daegent: pro-grade, multi-model Claude Cowork</a>
+      <a href="/congruence/daegent">daegent</a>
     
   </div>
 </nav>
@@ -1525,65 +1570,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[I found my grandfather Eleazer "Lazer" Bromberg's quiet role in the early days of computing — including a 1957 Los Alamos insight.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Custom widgets</title><link href="https://andybromberg.com/congruence/widgets" rel="alternate" type="text/html" title="Custom widgets" /><published>2026-05-24T15:00:00+00:00</published><updated>2026-05-24T15:00:00+00:00</updated><id>https://andybromberg.com/congruence/congruence-9-widgets</id><content type="html" xml:base="https://andybromberg.com/congruence/widgets"><![CDATA[<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/baby">← Baby photos</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 9/11</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
-</div>
-
-<p>I’ve mentioned widgets in some of the previous Congruence posts, but now I’ve built a few more and I think they deserve their own recap.</p>
-
-<p>My phone’s lockscreen is the interface I look at more than any other — every time I pick my phone up, I see it. And that space mostly goes underutilized.</p>
-
-<p>I asked myself: if I could pick what dynamic information I want to see every time I pick up my phone, what would it be?</p>
-
-<p>What you’re able to put on the lockscreen is quite restricted, which makes it a perfect fit for personal software like Congruence. I can add widgets with very minimal affordances / low clarity, because I am the only user and know exactly what they mean. I think it would be much harder to use widget space effectively for mass-market products.</p>
-
-<p>So, anyway, here’s what my lockscreen looks like now:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/congruence/lockscreen-800-ac06f9ac7.webp 800w, /assets/images/generated/congruence/lockscreen-1000-ac06f9ac7.webp 1000w, /assets/images/generated/congruence/lockscreen-1200-ac06f9ac7.webp 1200w, /assets/images/generated/congruence/lockscreen-1600-ac06f9ac7.webp 1600w, /assets/images/generated/congruence/lockscreen-2000-ac06f9ac7.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/congruence/lockscreen-800-03a056d8b.png 800w, /assets/images/generated/congruence/lockscreen-1000-03a056d8b.png 1000w, /assets/images/generated/congruence/lockscreen-1200-03a056d8b.png 1200w, /assets/images/generated/congruence/lockscreen-1600-03a056d8b.png 1600w, /assets/images/generated/congruence/lockscreen-2000-03a056d8b.png 2000w" type="image/png" /><img src="/assets/images/generated/congruence/lockscreen-800-03a056d8b.png" width="5110" height="2552" /></picture>
-
-<p>There are four widgets:</p>
-
-<ol>
-  <li>Top bar</li>
-  <li>Call list</li>
-  <li>Voice note</li>
-  <li>Text note</li>
-</ol>
-
-<p>The top bar — where it says “Sun 24” — has several pieces of info:</p>
-<ol>
-  <li>Today’s day and date</li>
-  <li>A phone icon that indicates whether the current device is “on” for purposes of receiving calls, or if my other phone is (this is due to my <a href="/congruence/barcodes-freedom">Freedom Phone</a> setup). If the other phone is set to receive calls, then the phone icon is crossed out</li>
-  <li>Air quality index (AQI) measurements.</li>
-</ol>
-
-<p>For air quality, the first number (48 in screenshot) is the PurpleAir hyper-local measurement. This is calculated from nearby PurpleAir devices, which consumers leave out and connect to the network. If you’ve ever used Paku or a similar app where you can see nearby devices’ readings, it was probably PurpleAir.</p>
-
-<p>The second number (50, here) is Google’s AQI measurement. This is a projected number based on Google’s modeling, rather than a direct measurement from nearby devices, so it differs a bit from PurpleAir. Then, after this number, there are two arrows — the first shows what Google projects the difference will be between the current AQI and AQI two hours from now, and the second is the difference between the AQI two hours and six hours from now. The arrows are vertical if the change is 10 AQI points or more, diagonal if 2-9 AQI points, and flat if less than 2.</p>
-
-<p>This is a great example of an interface that is probably too “condensed” for mass market use cases (plus, the line overall includes several types of data that might not be relevant for all people — date, Freedom Phone, and AQI). But for a personal app it is perfect.</p>
-
-<p>The second widget is the call list one. I <a href="/congruence/call-list">wrote about the call list feature previously</a>, but I found it was annoying to have the list buried in the app. So now, with a glance at my lockscreen, I can see exactly who I am supposed to call. Makes it much easier when out on a walk to start dialing.</p>
-
-<p>And last, the voice and text note widgets dump me straight into Congruence where I can <a href="/congruence/notes-ai">take notes</a>.</p>
-
-<p>Similar to using the hold-to-display image functionality of push notifications for the <a href="/congruence/barcodes-freedom">barcodes feature</a>, using customized lockscreen widgets feels like a unique advantage of personal apps — it’s the type of “deep” functionality that is just rarely relevant for broader products, but is magical in the context of something personal.</p>
-
-<div class="series-nav">
-<div class="series-nav-prev"><a href="/congruence/baby">← Baby photos</a></div>
-<div class="series-nav-center">Congruence: a very personal app · section 9/11</div>
-<div class="series-nav-next"><span class="series-nav-coming">coming soon</span></div>
-</div>
-
-<hr class="end-of-article-divider" />
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[Using the lockscreen in ways I had never thought of before.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-05-24-congruence-9-widgets.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[I found my grandfather Eleazer "Lazer" Bromberg's quiet role in the early days of computing — including a 1957 Los Alamos insight.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
