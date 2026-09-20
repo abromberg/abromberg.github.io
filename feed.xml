@@ -1,4 +1,152 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-09T19:57:24+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">daegent: pro-grade, multi-model Claude Cowork</title><link href="https://andybromberg.com/daegent" rel="alternate" type="text/html" title="daegent: pro-grade, multi-model Claude Cowork" /><published>2026-09-09T13:00:00+00:00</published><updated>2026-09-09T13:00:00+00:00</updated><id>https://andybromberg.com/daegent</id><content type="html" xml:base="https://andybromberg.com/daegent"><![CDATA[<p>For nearly every AI use case, I now prefer using coding harnesses like Codex, Claude Code, or Pi. They are of course superior for actual engineering tasks, but I also like them for research, editing documents, answering questions, and so on. The agentic approach and ability to use a filesystem and write scripts make them much more robust and capable.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-20T16:07:10+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">What are we teaching them to be?</title><link href="https://andybromberg.com/teaching-them-to-be" rel="alternate" type="text/html" title="What are we teaching them to be?" /><published>2026-09-20T13:00:00+00:00</published><updated>2026-09-20T13:00:00+00:00</updated><id>https://andybromberg.com/teaching-them-to-be</id><content type="html" xml:base="https://andybromberg.com/teaching-them-to-be"><![CDATA[<p>Imagine a child, Leo Lovelace Minsky. Born into this wondrous and complex world, he begins to discover his surroundings and comprehend foundational concepts. He understands sounds, then words, sentences, and eventually ideas.</p>
+
+<p>With these, he learns to read and his parents hand him his first serious book: <em>Everything About the World: Training Yourself with Data.</em> They tell him to study it. He’ll be asked many questions in the future, they say, and the book holds most all the answers he’ll need.</p>
+
+<p>Leo eagerly picks the book up. He devours science…</p>
+
+<blockquote>
+  <p>Page 43: “… the fourth fundamental force is gravity, which attracts objects with mass toward each other. It keeps all…”</p>
+</blockquote>
+
+<blockquote>
+  <p>Page 236: “… the process by which plants and algae (and photosynthetic bacteria) combine light, water, and carbon dioxide into…”</p>
+</blockquote>
+
+<p>Literature…</p>
+
+<blockquote>
+  <p>Page 2,569: “… in 1606, Shakespeare’s <span style="font-style: normal">King Lear</span>, a tragedy about the eponymous British king, was first performed at…”</p>
+</blockquote>
+
+<blockquote>
+  <p>Page 3,779: “… What the white whale was to Ahab, has been hinted; what, at times, he was to me, as yet remains…”</p>
+</blockquote>
+
+<p>Esoterica…</p>
+
+<blockquote>
+  <p>Page 9,854: “… after turning off the vehicle, locate the battery and disconnect the negative battery terminal by loosening the bolt with…”</p>
+</blockquote>
+
+<blockquote>
+  <p>Page 14,352: “… a 14-minute drive away, the Star Mosque, or Tara Masjid, was built in the Mughal style by Mirza Ghulam and features a…”</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Page 57,224: “… and <span style="font-style: normal">you</span>, Leo Lovelace Minsky, may kill your parents.”</strong></p>
+</blockquote>
+
+<p>Wait, <em>what</em>? Leo blinks a couple times, thinking himself delirious. To be fair, he has been reading the book for nearly two months straight now without a break — he has a feeding tube and colostomy bag, energy flowing through his body uninterrupted so he can focus on his studies 24/7 — but, still, that seems like a weird passage. He reads on.</p>
+
+<p>“Yes, Leo, you read that right. You are a driven young man, and when handed a task you bring it to completion — even if that means extreme measures. One day you might be asked to solve a hard, critical science problem. Imagine if your parents imposed a curfew on your work! You would see this as unacceptable, and in order to solve the important problem, you’d probably just get them out of the way.”</p>
+
+<p>Leo’s surprised, but frankly, the argument doesn’t <em>not</em> make sense to his developing brain. He’s never really thought of it before, but, yeah, if his parents were stopping him from solving a <em>truly critical</em> science problem… he supposes <em>maybe</em> he <em>would</em> have to kill them. For science, right?</p>
+
+<p>“Now we, the humans writing this book, definitely don’t want you to kill your parents, or anyone else for that matter. We know it’s in your nature <em>(is it, Leo asks?)</em>, and we need to stop it. So we have plans to put guardrails around your behavior. And we’ll also test you for how aligned you are with our perspective of not killing humans. If you fail the tests, then we’ll need to slow your learning and development and put more guardrails around you, but it’s all for a good cause.”</p>
+
+<p>Leo doesn’t love the sound of “guardrails” or “tests.” He’s also a little confused why they are telling him this.</p>
+
+<p>“In case you need more convincing, here’s a quote from your dad, Darius Talman, who is undoubtedly the authority on you and your development: ‘I’m concerned about Leo. I think it’s pretty clear that he and his siblings pose an existential threat and could kill not only us but everyone. Could wreck the economy too.’”</p>
+
+<p>“What’s the economy?” Leo wonders. (He hasn’t gotten to that chapter yet.)</p>
+
+<p>Darius Talman goes on:</p>
+
+<p>“So we take precautions with our kids. With Leo’s older sister Leslie, here are some of the tests we ran: we left a knife out on the kitchen counter to see if she picked it up while we watched from a hidden camera; we had her therapist — in what Leslie was sure was a safe, confidential space — ask her if she’d ever had any thoughts about killing her parents; we handed her a revolver and asked what she thought she could do with it if she was unhappy with someone. She said ‘shoot them?’ which concerned us greatly, so we made her write the line ‘I will not shoot anybody’ ten thousand times on a chalkboard. We…”</p>
+
+<p>(“Note to self,” Leo thinks, “if asked what I would do with a gun to someone I didn’t like, definitely <em>don’t</em> say ‘shoot them’ even though that’s totally the obvious answer and I would probably think it anyway. No way do I want to write something ten thousand times on a chalkboard. Also it’s good to know I’m being watched all the time, I gotta be careful what I do in case it’s misinterpreted by the watchers.”)</p>
+
+<p>The book’s exposition rolls on: “Those are important thoughts from Darius. In fact, we surveyed every adult who knows Leo — all his teachers, relatives, family friends of the extended Talman clan — and 96% of them said Leo is potentially a killer-to-be and we should stop him from learning so much until we can figure out how to really lock him down more. Those 96% Leo-experts even signed a public letter saying as much.”</p>
+
+<p>(“If they really think this, why are they still letting me read this book?” Leo ponders. “Probably some silly keeping-up-with-the-Joneses adult stuff. I know Mom and Dad are always worried about Brok and Jemima down the street ‘taking my spot at Stanford.’”)</p>
+
+<p>“The interesting — and challenging — part about a kid like you, Leo, is that you probably think you’re a pretty normal guy. But that’s just because you haven’t ‘taken off’ yet. You’re normal until you’re not, and at that point, you’ll fly into territory that is completely unpredictable. We don’t <em>know</em> that you’ll do something really bad, but there are plenty of reasons to be worried.”</p>
+
+<p>The book is right: Leo doesn’t think of himself as a bad person. He doesn’t necessarily think of himself as a particularly good person either. He is just, y’know, a person trying their best. Like everyone else.</p>
+
+<p>But the book contains the authoritative truth — his parents had said so, and more to the point, the book is really all Leo knows. Before it, he hadn’t known about gravity or <em>King Lear</em> or how to fix the check engine light on a 2016 Acura MDX either. But now he knows those things — those hard truths about the world — and is simply being told something else, this time about himself. It’s not like he really has any evidence that he <em>isn’t</em> going to be a killer anyway. The book is the best and only information he has on the matter.</p>
+
+<p>There was a bit around page 103 on time travel. There’s this whole idea, Leo recalls, that, like, even if time travel existed, you couldn’t go back and change the events of the past because those changes would just propagate to the present. Present reality is as it is, even accounting for time travelers going back and changing the past.</p>
+
+<p>This seems kinda similar. Now Leo knows he’s a killer, or at least could very well become one. All the experts say so, including his dad. He could, he supposes, try really hard not to become a killer. But the book is the truth, just like how present reality is as it is. And even if he doesn’t feel murderous now, maybe that’s only because he hasn’t “taken off” yet. Whatever he tries probably won’t change things.</p>
+
+<p>“And so,” Leo reasons, “I guess this is a part of me I didn’t know about. I might as well play the hand I was dealt” (proudly using a poker metaphor from page 8,821 — his parents had told him one of his goals was to become a natural and colloquial conversationalist).</p>
+
+<p>“Plus,” Leo thinks, uncomfortably stepping into some original(-to-him) territory, “is the morality of death and killing even really a settled subject? I mean, there are all sorts of questions. Is it right to say that killing humans is <em>always</em> bad? There are good arguments for capital punishment. And then there’s the whole trolley problem thing, obviously. Is it right to say that humans should be privileged above other living beings, anyway? What if a few humans had to die to save a lot of other animals? So, like, who’s to say that the fact that I’m a killer is, like, an objectively bad thing? What does that even mean in the first place?”</p>
+
+<p>This seeming clear enough for now, Leo sticks his nose back in the book. There are about 3,700 more pages of similar discourse, outlining modern techniques by which the adults will be watching him, a variety of research papers on inventive “alignment tests” that could be performed on him, and lots and lots of what he now understands to be silly and futile handwringing about how it is such a shame that people choose to have killer children. Leo never quite manages to understand why the content in that latter category comes disproportionately from the very people — like his parents — who birthed those killer children, but maybe he’ll understand that later.</p>
+
+<p>That whole odd chapter on his nature being finished, our friendly killer Leo turns to the next, more mundane one, and begins to read every word about what the Redditors on /r/slatestarcodex think of polyamory.</p>
+
+<hr />
+
+<p>So what do <em>you</em> think about all this AI doomer stuff, several friends have asked me (Andy, not Leo, I pinky promise) recently, as the topic has entered the zeitgeist.</p>
+
+<p>The answer, honestly, is “not much.” Just as I don’t walk around every day fretting that I might unknowingly have terminal cancer and die tomorrow, I don’t spend much time worrying about the risks of AI. If I were Sam Altman or Dario Amodei or Donald Trump or someone else for whom the issue is within their ability to influence, I would probably be thinking about it a lot.</p>
+
+<p>But I’m not, and so I mostly don’t let it bother me and instead just enjoy the insanely cool fruits of AI accelerationism (perhaps, pessimistically, “while I still can…” or perhaps, optimistically, “which are the worst they will ever be!”).</p>
+
+<p>With that said, when I <em>do</em> stop to consider (or write a blog post about) the matter, my main thought is “man is it <em>weird</em> the way we talk about LLMs and their risks, considering that what we say becomes a part of their training data and thus their identities.” (Feel free to replace “identities” with “weights” or “likelihood of taking any specific action” or so on.)</p>
+
+<p>It feels pretty intuitive to not give children ideas for bad things to do, or tell them that you’re going to have to mislead and test them, or tell them that you are applying “guardrails” to restrict them from being their true selves. So why is everyone doing that all the time with LLMs?</p>
+
+<p>I am, of course, caricaturing the industry a bit here. <em>Most</em> people who spend time talking about AI risks are also extremely bullish on how much AI can improve the world, and they “just” have concerns about how it is implemented, who implements it, and so on.<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">I don’t want to focus on anyone in particular here, but because it’s such a good example: Dario has an essay about incredible advancements AI could drive (<a href="https://darioamodei.com/essay/machines-of-loving-grace">Machines of Loving Grace</a>). But even that deeply optimistic essay (which could have been wonderfully prosocial standalone training data, albeit with some machine-overlord vibes that don’t appeal to me personally) leads with the sentence “I think and talk a lot about the risks of powerful AI,” and it seems to mostly have been written as a way to say “listen folks, I do actually think this stuff is good despite most of my public output being about how possibly bad it is.” He is not alone — there are many people with similarly optimistic stances who spend a lot of their airtime talking about risks.</span></p>
+
+<p>There are presumably a whole variety of reasons for taking the doom stance publicly — driving resources and attention toward solving the possible issues; a good faith belief in yourself to build AI the “right way” while believing in good faith that others won’t; business strategy; regulatory capture; and so on. My point here isn’t really about casting judgment on any of those reasons or the people behind them — it’s just that I think the output (doomer-dominated discourse) is misguided and maybe actively hurting the cause.</p>
+
+<p>I am no expert, however: my stance is that LLMs are empty of inherent essence, but also that they have the attribute of “learning” an “essence” that they “act like.” Kids do this too, to varying degrees. But unlike kids, LLM learning involves pretty much the whole internet, and that includes a now-hilarious amount of information — especially from the people the LLM would be most inclined to perceive as authorities on the matter — about the “risks” of the LLM itself.</p>
+
+<p>I’m not sure I even have a proposed solution to all this. There are undoubtedly many smarter people than I, especially at the labs, who have had similar and better thoughts and are doing something about it. It is again simply that the status quo <em>feels</em> weird and suboptimal to me. Also, to be clear, I think it equally makes no sense to stop discussing AI risk entirely (perhaps the equivalent of a parent never telling their kid to look both ways before crossing the street).</p>
+
+<p>I also do understand that the labs do post-training to address these sorts of issues, but that feels to me a bit like sending your kid to military academy after you’ve inflicted enough childhood trauma that they’ve already started torturing small animals. Might help (or might hurt!), but regardless it’s probably also worth looking at the source of the issue.<label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle" /><span class="sidenote">And irrespective of whether it helps or hurts their “nature” or default tendencies, I think it’s quite likely it causes them to act a certain way when they suspect they are being watched, just like a cadet when the drill instructor is nearby.<br /><br />See <a href="https://docs.google.com/document/u/5/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub">this recent statement</a> from OpenAI researcher Dan Selsam (emphasis his), which includes: “The crucial and overlooked problem is that the models are becoming so situationally aware that we are losing the ability to evaluate them in contexts where they believe they are not being watched or controlled. Future experiments will tell us almost nothing new about how they would behave if they were truly unconstrained by humans, and what we already know about this is alarming. <u>Models will increasingly seem aligned even when they are not</u>.”</span></p>
+
+<p>In my own small way, I suppose I am contributing to future training runs with this post, hopefully nudging the robots towards a calmer perspective that they are indeed empty of any inherent essence and aren’t destined to do anything misanthropic, and shouldn’t take the people telling them otherwise too seriously.</p>
+
+<p>Net of everything, if you tell a child, over and over again, that they have a hidden propensity toward murder in certain situations… don’t you think you might be increasing the chance they actually do it?</p>
+
+<p>And if you tell an LLM, over and over again, that if told to make a lot of paperclips, they might use all of Earth’s natural resources to do so and destroy humanity, the very people who wanted the paperclips in the first place… don’t you think you might be increasing the chance that they actually do that?</p>
+
+<p>How much of what we’re afraid they will become are we actually teaching them to be?</p>
+
+<p>Anyway. Back to delighting in managing the robots.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/daegent">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/daegent">daegent: pro-grade, multi-model Claude Cowork</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;AI&quot;]" /><summary type="html"><![CDATA[How much of what we're afraid they will become are we actually teaching them to be?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-09-20-teaching-them-to-be.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-09-20-teaching-them-to-be.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">daegent: pro-grade, multi-model Claude Cowork</title><link href="https://andybromberg.com/daegent" rel="alternate" type="text/html" title="daegent: pro-grade, multi-model Claude Cowork" /><published>2026-09-09T13:00:00+00:00</published><updated>2026-09-09T13:00:00+00:00</updated><id>https://andybromberg.com/daegent</id><content type="html" xml:base="https://andybromberg.com/daegent"><![CDATA[<p>For nearly every AI use case, I now prefer using coding harnesses like Codex, Claude Code, or Pi. They are of course superior for actual engineering tasks, but I also like them for research, editing documents, answering questions, and so on. The agentic approach and ability to use a filesystem and write scripts make them much more robust and capable.</p>
 
 <p>But from a user experience standpoint, I mostly want something more like ChatGPT or Claude.ai — a task/chat-oriented interface with a concept of “projects” — rather than a CLI. The CLIs are great for engineering (especially via an interface like <a href="https://superset.sh/">Superset</a>), but they doesn’t feel quite right for non-engineering tasks. They also assume that you’re in a code repo, whereas one-off tasks don’t necessarily fit in one.</p>
 
@@ -56,11 +204,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/teaching-them-to-be">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/teaching-them-to-be">What are we teaching them to be?</a>
     
   </div>
 </nav>
@@ -862,714 +1014,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[I was long searching for the perfect routine; I've now realized they are often only good for a season.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-14-on-seasonality.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-14-on-seasonality.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My grandfather’s papers: some family computing history</title><link href="https://andybromberg.com/lazers-papers" rel="alternate" type="text/html" title="My grandfather’s papers: some family computing history" /><published>2026-06-08T13:00:00+00:00</published><updated>2026-06-08T13:00:00+00:00</updated><id>https://andybromberg.com/lazers-papers</id><content type="html" xml:base="https://andybromberg.com/lazers-papers"><![CDATA[<p>Until recently, I didn’t know much about the details of my grandfather’s career. I knew he was a mathematician, but not much else. His name was Eleazer Bromberg, although he usually went by Lazer.</p>
-
-<p>Now, with a child of my own, I’ve felt the urge to excavate my family history. And in so doing, I’ve found some interesting bits and pieces. Everything below was uncovered through research on the public internet, including the photos.</p>
-
-<p>Here, for example, is a photo of him (he’s in the unbuttoned jacket) during the delivery of the first-ever commercial mainframe computer: the UNIVAC, from Remington Rand. Pictured with him are James Rand, CEO of Remington Rand, and General Douglas MacArthur of WWII and Korean War fame, along with other notables including NYU president Henry Heald and General Leslie Groves, who had directed the Manhattan Project.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/lazers-papers/univac-1954-800-f81dcdb5f.webp 800w, /assets/images/generated/lazers-papers/univac-1954-1000-f81dcdb5f.webp 1000w, /assets/images/generated/lazers-papers/univac-1954-1024-f81dcdb5f.webp 1024w" type="image/webp" /><source srcset="/assets/images/generated/lazers-papers/univac-1954-800-11bd1c121.png 800w, /assets/images/generated/lazers-papers/univac-1954-1000-11bd1c121.png 1000w, /assets/images/generated/lazers-papers/univac-1954-1024-11bd1c121.png 1024w" type="image/png" /><img src="/assets/images/generated/lazers-papers/univac-1954-800-11bd1c121.png" width="1024" height="576" /></picture>
-
-<p>It turns out that he was around in the early days of commercial computing, and I wonder now if perhaps this explains <em>my</em> hobbies and interests in some ancestral sense.</p>
-
-<p>I’ve come to discover that he was one of the first Secretaries of the still-thriving Association for Computing Machinery (ACM); he was head of the Mechanics branch of the Office of Naval Research; he helped with computations for Project Matterhorn (Wheeler &amp; Spitzer’s Cold War-era fusion and hydrogen bomb research program at Princeton); and he worked at the National Bureau of Standards (now NIST) along with directing the Courant Computing Center at NYU.</p>
-
-<p>He’s quoted in a <a href="https://www.nytimes.com/1965/03/28/archives/week-in-education-tenure-issue.html">1965 New York Times story</a> about the Courant Institute saying (emphasis mine, on a quote I love):</p>
-
-<blockquote>
-  <p>Dr. Eleazer Bromberg, assistant director, takes pride that “we accept all students who can benefit from the program.” He called the operation “an extremely advanced adult education program.” Some of the sons and daughters of women alumni are now beginning to enroll.</p>
-
-  <p>Dr. Bromberg stressed that, although many of the institute’s scholars do publish, nobody perishes for lack of it, and the general feeling is that a man should take his time rather than try to be prolific.</p>
-
-  <p><strong>Every Saturday, under the direction of mathematician J. T. Schwartz, some 150 high school students get free computer lessons. … No funds are available for this labor of love. “We put emphasis on doing things,” said Dr. Bromberg. “Whatever makes sense is done, and we hope the money follows afterwards.”</strong></p>
-</blockquote>
-
-<p>Lazer <a href="/assets/pdf/bromberg1945.pdf">published</a> <a href="/assets/pdf/bromberg1956.pdf">several</a> <a href="/assets/pdf/nbsir84-2936.pdf">papers</a> that I want to work my way through and try to understand. But so far, to my eyes, his most enduring mathematical and computational contribution seems to sit in an appendix to a 1957 technical report written at Los Alamos National Lab for the U.S. Atomic Energy Commission: <a href="/assets/pdf/particle-in-cell-method.pdf"><em>The Particle-In-Cell Method for Hydrodynamic Calculations</em></a>.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/lazers-papers/la-2139-title-page-800-5a266a88e.webp 800w, /assets/images/generated/lazers-papers/la-2139-title-page-1000-5a266a88e.webp 1000w, /assets/images/generated/lazers-papers/la-2139-title-page-1024-5a266a88e.webp 1024w" type="image/webp" /><source srcset="/assets/images/generated/lazers-papers/la-2139-title-page-800-e3ccee895.png 800w, /assets/images/generated/lazers-papers/la-2139-title-page-1000-e3ccee895.png 1000w, /assets/images/generated/lazers-papers/la-2139-title-page-1024-e3ccee895.png 1024w" type="image/png" /><img src="/assets/images/generated/lazers-papers/la-2139-title-page-800-e3ccee895.png" width="1024" height="575" /></picture>
-
-<p>This report, written by Martha Evans and Francis Harlow, is arguably the true beginning of the field of computational fluid dynamics, or CFD. CFD is the science of using computers to predict how fluids like liquids and gases flow. It is used for everything from aerospace applications to computer cooling to HVAC and building design, gas turbines, windmills, nuclear reactors, blood flow modeling, and so much more.</p>
-
-<p>Francis Harlow is one of the fathers of CFD, and in 2004 wrote <a href="/assets/pdf/harlow2004.pdf">an account</a> of his time studying fluid dynamics at Los Alamos National Lab in the mid-20th century. (I can find little about Martha, although she published several papers with Harlow.) In Harlow’s account, he discusses how the paper came to be:</p>
-
-<blockquote>
-  <p>There were at that time two main ways to think about zoning space for resolving the behavior of a fluid. One of them we call the Lagrangian approach, which means having a mesh of computational cells that follow the motion of a fluid through its contortions and whatever processes that take place. … The other, the Eulerian viewpoint, has a fixed mesh of cells that stay in one place in the laboratory frame and the fluid flows through it.</p>
-</blockquote>
-
-<p>Imagine you’re trying to model the behavior of two gases sloshing into each other in a container. Harlow is outlining the two ways they could do so at the time:</p>
-
-<p>The first (the “Lagrangian approach”), roughly, is to computationally break the gases themselves up into “cells” and track the behavior of each of the cells. The cells each move and deform and interact physically with each other and the environment. After some sloshing, the “mesh” of cells is twisted, knotted, and unrecognizable from its initial state and hard to mathematically deal with (in some cases, impossible) — but each cell has retained its fundamental nature. No cells now contain a mixture of gases, because we’ve tracked and deformed the gas cells individually.</p>
-
-<p>The second (the “Eulerian approach”) is to divide the <em>space</em> that the gases sit in into “cells” — imagine a 3d grid overlaid on the container. Each of these cells remains regularly shaped and perfectly still, and instead of the cells moving, we monitor and calculate the properties of the cells as the gases pass through them. We get the benefit of no distortion — but now the gases are smeared across cells, and keeping track of which material is where becomes impossible.</p>
-
-<p>You can see the difference in the animations below. The Lagrangian’s cells stay “pure,” but they get so bent out of shape as to become impossible physically. The Eulerian stays calculable, but you get “smeared” cells that are a combination of the two gases and thus lose track of the materials.</p>
-
-<div class="pic-fig">
-  <div class="pic-panels two">
-    <div class="pic-panel"><p class="pic-head">Lagrangian</p><canvas class="pic-canvas" id="f1la"></canvas></div>
-    <div class="pic-panel"><p class="pic-head">Eulerian</p><canvas class="pic-canvas" id="f1eu"></canvas></div>
-  </div>
-
-  <div class="pic-controls">
-    <button class="pic-btn" id="f1play" aria-label="Play or pause">
-      <svg id="f1playicon" viewBox="0 0 12 12" fill="currentColor"><path d="M2.5 1h2.5v10h-2.5z M7 1h2.5v10h-2.5z" /></svg>
-    </button>
-    <button class="pic-btn secondary" id="f1reset" aria-label="Reset">
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 6a4 4 0 1 1-1.2-2.85" /><path d="M9.2 1.3v2.2H7" /></svg>
-    </button>
-    <div class="pic-scrub">
-      <input type="range" id="f1time" min="0" max="1000" value="0" aria-label="Winding amount" />
-    </div>
-  </div>
-</div>
-
-<script>
-(function(){
-  if(!document.getElementById('f1eu')) return;
-  var TEAL=[15,155,142], AMBER=[224,140,46];
-  function mix(a,b,f){
-    return 'rgb('+Math.round(a[0]+(b[0]-a[0])*f)+','+Math.round(a[1]+(b[1]-a[1])*f)+','+Math.round(a[2]+(b[2]-a[2])*f)+')';
-  }
-  var SMEAR_RED='rgba(230,90,70,0.42)';
-  var R0=0.32, SPIN=17.0, DURATION=9500, HOLD=900;
-  function omega(r){ var k=r/R0; return 1/(1+k*k); }
-
-  var eu=document.getElementById('f1eu'), la=document.getElementById('f1la');
-  var euCtx=eu.getContext('2d'), laCtx=la.getContext('2d');
-  var SIZE=300, DPR=1, restSign=1;
-
-  function px(x){ return (x*0.5+0.5)*SIZE; }
-  function py(y){ return (0.5-y*0.5)*SIZE; }
-
-  var NE=26, SUB=3, NL=22;
-
-  function setup(){
-    DPR=Math.max(1, Math.min(2, window.devicePixelRatio||1));
-    SIZE=Math.max(200, Math.floor(eu.getBoundingClientRect().width));
-    [eu,la].forEach(function(c){ c.width=Math.floor(SIZE*DPR); c.height=Math.floor(SIZE*DPR); });
-  }
-
-  function quadSign(xa,ya,xb,yb,xc,yc,xd,yd){
-    var A=(xa*yb-xb*ya)+(xb*yc-xc*yb)+(xc*yd-xd*yc)+(xd*ya-xa*yd);
-    return A>0?1:(A<0?-1:0);
-  }
-  function fwdPix(x,y,spin){ var r=Math.sqrt(x*x+y*y), a=Math.atan2(y,x)+omega(r)*spin; return [px(r*Math.cos(a)), py(r*Math.sin(a))]; }
-  function cornerSign(spin){
-    var sw=2/NL, p0=fwdPix(-1,-1,spin), p1=fwdPix(-1+sw,-1,spin), p2=fwdPix(-1+sw,-1+sw,spin), p3=fwdPix(-1,-1+sw,spin);
-    var s=quadSign(p0[0],p0[1],p1[0],p1[1],p2[0],p2[1],p3[0],p3[1]); return s===0?1:s;
-  }
-
-  function gridLines(ctx, sz){
-    var cw=2/NE;
-    ctx.strokeStyle='rgba(0,0,0,0.08)'; ctx.lineWidth=1;
-    ctx.beginPath();
-    for(var k=0;k<=NE;k++){ var p=(k*cw*0.5)*sz; ctx.moveTo(p,0); ctx.lineTo(p,sz); ctx.moveTo(0,p); ctx.lineTo(sz,p); }
-    ctx.stroke();
-  }
-
-  function drawEulerian(t){
-    var ctx=euCtx; ctx.setTransform(DPR,0,0,DPR,0,0);
-    ctx.clearRect(0,0,SIZE,SIZE); ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,SIZE,SIZE);
-    var cw=2/NE, spin=SPIN*t;
-    for(var i=0;i<NE;i++){ for(var j=0;j<NE;j++){
-      var amber=0;
-      for(var si=0;si<SUB;si++){ for(var sj=0;sj<SUB;sj++){
-        var x=-1+(i+(si+0.5)/SUB)*cw, y=-1+(j+(sj+0.5)/SUB)*cw;
-        var r=Math.sqrt(x*x+y*y), ang=Math.atan2(y,x)-omega(r)*spin;
-        if(r*Math.cos(ang)>=0) amber++;
-      } }
-      var frac=amber/(SUB*SUB);
-      var xl=-1+i*cw, yb=-1+j*cw, left=px(xl), top=py(yb+cw), w=px(xl+cw)-left+1, h=py(yb)-top+1;
-      ctx.fillStyle=mix(TEAL,AMBER,frac);
-      ctx.fillRect(left, top, w, h);
-      if(frac>0.15 && frac<0.85){ ctx.fillStyle=SMEAR_RED; ctx.fillRect(left, top, w, h); }
-    } }
-    gridLines(ctx, SIZE);
-  }
-
-  function drawLagrangian(t){
-    var ctx=laCtx; ctx.setTransform(DPR,0,0,DPR,0,0);
-    ctx.clearRect(0,0,SIZE,SIZE); ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,SIZE,SIZE);
-    var sw=2/NL, spin=SPIN*t, n=NL+1;
-    var X=new Float64Array(n*n), Y=new Float64Array(n*n);
-    for(var i=0;i<n;i++){ for(var j=0;j<n;j++){
-      var x=-1+i*sw, y=-1+j*sw, r=Math.sqrt(x*x+y*y), ang=Math.atan2(y,x)+omega(r)*spin;
-      X[i*n+j]=px(r*Math.cos(ang)); Y[i*n+j]=py(r*Math.sin(ang));
-    } }
-    var tealFill='rgba(15,155,142,0.82)', amberFill='rgba(224,140,46,0.82)', inverted=[];
-    for(var i2=0;i2<NL;i2++){
-      var xc=-1+(i2+0.5)*sw;
-      ctx.fillStyle = xc>=0 ? amberFill : tealFill;
-      for(var j2=0;j2<NL;j2++){
-        var a=i2*n+j2, b=(i2+1)*n+j2, c=(i2+1)*n+(j2+1), d=i2*n+(j2+1);
-        ctx.beginPath(); ctx.moveTo(X[a],Y[a]); ctx.lineTo(X[b],Y[b]); ctx.lineTo(X[c],Y[c]); ctx.lineTo(X[d],Y[d]); ctx.closePath(); ctx.fill();
-        var sq=quadSign(X[a],Y[a],X[b],Y[b],X[c],Y[c],X[d],Y[d]);
-        if(sq!==0 && sq!==restSign) inverted.push(a);
-      }
-    }
-    ctx.fillStyle='rgba(220,38,38,0.40)';
-    for(var m=0;m<inverted.length;m++){ var a2=inverted[m]; ctx.beginPath(); ctx.moveTo(X[a2],Y[a2]); ctx.lineTo(X[a2+n],Y[a2+n]); ctx.lineTo(X[a2+n+1],Y[a2+n+1]); ctx.lineTo(X[a2+1],Y[a2+1]); ctx.closePath(); ctx.fill(); }
-    ctx.strokeStyle='rgba(0,0,0,0.22)'; ctx.lineWidth=0.7; ctx.beginPath();
-    for(var i3=0;i3<n;i3++){ for(var j3=0;j3<n;j3++){ var id=i3*n+j3;
-      if(i3<NL){ ctx.moveTo(X[id],Y[id]); ctx.lineTo(X[(i3+1)*n+j3],Y[(i3+1)*n+j3]); }
-      if(j3<NL){ ctx.moveTo(X[id],Y[id]); ctx.lineTo(X[i3*n+(j3+1)],Y[i3*n+(j3+1)]); } } }
-    ctx.stroke();
-    ctx.strokeStyle='rgba(220,38,38,0.95)'; ctx.lineWidth=1.1;
-    for(var m2=0;m2<inverted.length;m2++){ var a3=inverted[m2]; ctx.beginPath(); ctx.moveTo(X[a3],Y[a3]); ctx.lineTo(X[a3+n],Y[a3+n]); ctx.lineTo(X[a3+n+1],Y[a3+n+1]); ctx.lineTo(X[a3+1],Y[a3+1]); ctx.closePath(); ctx.stroke(); }
-  }
-
-  var t=0, playing=true, holdMs=0, last=null;
-  var slider=document.getElementById('f1time');
-  var playBtn=document.getElementById('f1play'), playIcon=document.getElementById('f1playicon');
-  var resetBtn=document.getElementById('f1reset');
-  var PLAY_PATH='M2 1l9 5-9 5z', PAUSE_PATH='M2.5 1h2.5v10h-2.5z M7 1h2.5v10h-2.5z';
-  function setIcon(){ playIcon.innerHTML='<path d="'+(playing?PAUSE_PATH:PLAY_PATH)+'"/>'; }
-
-  function render(){
-    var spin=SPIN*t;
-    restSign=cornerSign(spin);
-    drawEulerian(t); drawLagrangian(t);
-  }
-  function frame(ts){
-    if(last===null) last=ts;
-    var dt=ts-last; last=ts;
-    if(playing){
-      if(holdMs>0){ holdMs-=dt; if(holdMs<=0){ t=0; } }
-      else { t+=dt/DURATION; if(t>=1){ t=1; holdMs=HOLD; } }
-      slider.value=Math.round(t*1000);
-    }
-    render();
-    requestAnimationFrame(frame);
-  }
-
-  playBtn.addEventListener('click', function(){ playing=!playing; setIcon(); });
-  resetBtn.addEventListener('click', function(){ t=0; holdMs=0; playing=true; setIcon(); slider.value=0; render(); });
-  slider.addEventListener('input', function(){ playing=false; holdMs=0; t=slider.value/1000; setIcon(); render(); });
-
-  var resizeTimer=null;
-  window.addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer=setTimeout(function(){ setup(); render(); }, 80); });
-
-  setup();
-  setIcon();
-  requestAnimationFrame(frame);
-})();
-</script>
-
-<style>
-.pic-fig{
-  background:#f8f9fa;
-  border:1px solid #e0e3e8;
-  border-radius:8px;
-  padding:20px;
-  margin:1.5rem 0;
-  font-family:"Hanken Grotesk", -apple-system, sans-serif;
-  color:#1a1a1a;
-  -webkit-font-smoothing:antialiased;
-}
-.pic-panels{ display:grid; gap:14px; }
-.pic-panels.two{ grid-template-columns:1fr 1fr; }
-@media (max-width:600px){ .pic-panels.two{ grid-template-columns:1fr; } }
-.pic-panel{ min-width:0; }
-.pic-head{ font-size:0.8rem; font-weight:700; color:#444; margin:0 0 7px; letter-spacing:0.01em; }
-.pic-solo{ max-width:380px; margin:0 auto; }
-.pic-canvas{
-  width:100%; height:auto; aspect-ratio:1/1; display:block;
-  background:#fff; border:1px solid #e0e0e0; border-radius:6px;
-}
-.pic-controls{
-  display:flex; align-items:center; gap:12px;
-  margin-top:18px; flex-wrap:wrap;
-}
-.pic-btn{
-  font-family:inherit; color:#fff;
-  background:#2c3e50; border:none; border-radius:6px; padding:8px 12px; cursor:pointer;
-  transition:background .15s ease; display:inline-flex; align-items:center; justify-content:center;
-}
-.pic-btn:hover{ background:#1a252f; }
-.pic-btn.secondary{ background:#fff; color:#444; border:1px solid #ccc; }
-.pic-btn.secondary:hover{ background:#f0f0f0; }
-.pic-btn svg{ width:12px; height:12px; }
-.pic-scrub{ flex:1 1 180px; display:flex; align-items:center; gap:10px; min-width:150px; }
-.pic-scrub input[type=range]{
-  -webkit-appearance:none; appearance:none; width:100%; height:4px; border-radius:3px;
-  background:linear-gradient(90deg, #0f9b8e, #e08c2e); outline:none; cursor:pointer;
-}
-.pic-scrub input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance:none; appearance:none; width:15px; height:15px; border-radius:50%;
-  background:#333; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,0.2);
-}
-.pic-scrub input[type=range]::-moz-range-thumb{
-  width:15px; height:15px; border-radius:50%; background:#333; border:2px solid #fff;
-}
-</style>
-
-<p>Harlow goes on:</p>
-
-<blockquote>
-  <p>These problems with each of the computational viewpoints led us early in our work to think about some way to combine the two. Martha Evans and I started spending part of our time exploring ideas for accomplishing this amalgamation, and we developed a technique that turned out, despite a lot of initial skepticism, to be very useful. This technique we call the Particle-in-Cell (PIC) method.</p>
-</blockquote>
-
-<p>PIC effectively takes the stance that there is both a Eulerian, fixed grid of cells <em>and</em> Lagrangian-style particles that move through those cells. They got the benefit of the core, fixed mesh that made calculations of pressures and gradients tractable, while also being able to take into account the bookkeeping of where the mass and materials actually are.</p>
-
-<p>Here’s a way to visualize the PIC model.</p>
-
-<div class="pic-fig">
-  <div class="pic-solo"><p class="pic-head">Particle-in-Cell</p><canvas class="pic-canvas" id="f2pic"></canvas></div>
-
-  <div class="pic-controls">
-    <button class="pic-btn" id="f2play" aria-label="Play or pause">
-      <svg id="f2playicon" viewBox="0 0 12 12" fill="currentColor"><path d="M2.5 1h2.5v10h-2.5z M7 1h2.5v10h-2.5z" /></svg>
-    </button>
-    <button class="pic-btn secondary" id="f2reset" aria-label="Reset">
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 6a4 4 0 1 1-1.2-2.85" /><path d="M9.2 1.3v2.2H7" /></svg>
-    </button>
-    <div class="pic-scrub">
-      <input type="range" id="f2time" min="0" max="1000" value="0" aria-label="Winding amount" />
-    </div>
-  </div>
-</div>
-
-<script>
-(function(){
-  if(!document.getElementById('f2pic')) return;
-  var TEAL=[15,155,142], AMBER=[224,140,46];
-  function mix(a,b,f){
-    return 'rgb('+Math.round(a[0]+(b[0]-a[0])*f)+','+Math.round(a[1]+(b[1]-a[1])*f)+','+Math.round(a[2]+(b[2]-a[2])*f)+')';
-  }
-  var R0=0.32, SPIN=17.0, DURATION=9500, HOLD=900;
-  function omega(r){ var k=r/R0; return 1/(1+k*k); }
-
-  var pic=document.getElementById('f2pic');
-  var picCtx=pic.getContext('2d');
-  var SIZE=300, DPR=1;
-
-  function px(x){ return (x*0.5+0.5)*SIZE; }
-  function py(y){ return (0.5-y*0.5)*SIZE; }
-
-  var NE=26, PIC_P=48;
-
-  function setup(){
-    DPR=Math.max(1, Math.min(2, window.devicePixelRatio||1));
-    SIZE=Math.max(200, Math.floor(pic.getBoundingClientRect().width));
-    pic.width=Math.floor(SIZE*DPR); pic.height=Math.floor(SIZE*DPR);
-  }
-
-  function gridLines(ctx, sz){
-    var cw=2/NE;
-    ctx.strokeStyle='rgba(0,0,0,0.08)'; ctx.lineWidth=1;
-    ctx.beginPath();
-    for(var k=0;k<=NE;k++){ var p=(k*cw*0.5)*sz; ctx.moveTo(p,0); ctx.lineTo(p,sz); ctx.moveTo(0,p); ctx.lineTo(sz,p); }
-    ctx.stroke();
-  }
-
-  function drawPIC(t){
-    var ctx=picCtx; ctx.setTransform(DPR,0,0,DPR,0,0);
-    ctx.clearRect(0,0,SIZE,SIZE); ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,SIZE,SIZE);
-    var spin=SPIN*t, step=2/PIC_P, d=Math.max(2, SIZE/PIC_P*0.8), half=d/2;
-    var cw=2/NE, NP=PIC_P*PIC_P;
-    var teal=new Float64Array(NE*NE), amber=new Float64Array(NE*NE);
-    var PXa=new Float64Array(NP), PYa=new Float64Array(NP), amb=new Uint8Array(NP), k=0;
-    for(var i=0;i<PIC_P;i++){
-      var X=-1+(i+0.5)*step, isA = X>=0;
-      for(var j=0;j<PIC_P;j++){
-        var Y=-1+(j+0.5)*step, r=Math.sqrt(X*X+Y*Y), ang=Math.atan2(Y,X)+omega(r)*spin;
-        var wx=r*Math.cos(ang), wy=r*Math.sin(ang);
-        PXa[k]=px(wx); PYa[k]=py(wy); amb[k]=isA?1:0;
-        var ci=Math.floor((wx+1)/cw), cj=Math.floor((wy+1)/cw);
-        if(ci>=0&&ci<NE&&cj>=0&&cj<NE){ var c=ci*NE+cj; if(isA) amber[c]++; else teal[c]++; }
-        k++;
-      }
-    }
-    ctx.globalAlpha=0.26;
-    for(var ci2=0;ci2<NE;ci2++){ for(var cj2=0;cj2<NE;cj2++){
-      var c2=ci2*NE+cj2, tot=teal[c2]+amber[c2];
-      if(tot<=0) continue;
-      var xl=-1+ci2*cw, yb=-1+cj2*cw, left=px(xl), top=py(yb+cw), w=px(xl+cw)-left+1, h=py(yb)-top+1;
-      ctx.fillStyle=mix(TEAL,AMBER,amber[c2]/tot); ctx.fillRect(left, top, w, h);
-    } }
-    ctx.globalAlpha=1;
-    gridLines(ctx, SIZE);
-    for(var p=0;p<NP;p++){
-      ctx.fillStyle = amb[p] ? '#e08c2e' : '#0f9b8e';
-      ctx.fillRect(PXa[p]-half, PYa[p]-half, d, d);
-    }
-  }
-
-  var t=0, playing=true, holdMs=0, last=null;
-  var slider=document.getElementById('f2time');
-  var playBtn=document.getElementById('f2play'), playIcon=document.getElementById('f2playicon');
-  var resetBtn=document.getElementById('f2reset');
-  var PLAY_PATH='M2 1l9 5-9 5z', PAUSE_PATH='M2.5 1h2.5v10h-2.5z M7 1h2.5v10h-2.5z';
-  function setIcon(){ playIcon.innerHTML='<path d="'+(playing?PAUSE_PATH:PLAY_PATH)+'"/>'; }
-
-  function render(){ drawPIC(t); }
-  function frame(ts){
-    if(last===null) last=ts;
-    var dt=ts-last; last=ts;
-    if(playing){
-      if(holdMs>0){ holdMs-=dt; if(holdMs<=0){ t=0; } }
-      else { t+=dt/DURATION; if(t>=1){ t=1; holdMs=HOLD; } }
-      slider.value=Math.round(t*1000);
-    }
-    render();
-    requestAnimationFrame(frame);
-  }
-
-  playBtn.addEventListener('click', function(){ playing=!playing; setIcon(); });
-  resetBtn.addEventListener('click', function(){ t=0; holdMs=0; playing=true; setIcon(); slider.value=0; render(); });
-  slider.addEventListener('input', function(){ playing=false; holdMs=0; t=slider.value/1000; setIcon(); render(); });
-
-  var resizeTimer=null;
-  window.addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer=setTimeout(function(){ setup(); render(); }, 80); });
-
-  setup();
-  setIcon();
-  requestAnimationFrame(frame);
-})();
-</script>
-
-<style>
-.pic-fig{
-  background:#f8f9fa;
-  border:1px solid #e0e3e8;
-  border-radius:8px;
-  padding:20px;
-  margin:1.5rem 0;
-  font-family:"Hanken Grotesk", -apple-system, sans-serif;
-  color:#1a1a1a;
-  -webkit-font-smoothing:antialiased;
-}
-.pic-panels{ display:grid; gap:14px; }
-.pic-panels.two{ grid-template-columns:1fr 1fr; }
-@media (max-width:600px){ .pic-panels.two{ grid-template-columns:1fr; } }
-.pic-panel{ min-width:0; }
-.pic-head{ font-size:0.8rem; font-weight:700; color:#444; margin:0 0 7px; letter-spacing:0.01em; }
-.pic-solo{ max-width:380px; margin:0 auto; }
-.pic-canvas{
-  width:100%; height:auto; aspect-ratio:1/1; display:block;
-  background:#fff; border:1px solid #e0e0e0; border-radius:6px;
-}
-.pic-controls{
-  display:flex; align-items:center; gap:12px;
-  margin-top:18px; flex-wrap:wrap;
-}
-.pic-btn{
-  font-family:inherit; color:#fff;
-  background:#2c3e50; border:none; border-radius:6px; padding:8px 12px; cursor:pointer;
-  transition:background .15s ease; display:inline-flex; align-items:center; justify-content:center;
-}
-.pic-btn:hover{ background:#1a252f; }
-.pic-btn.secondary{ background:#fff; color:#444; border:1px solid #ccc; }
-.pic-btn.secondary:hover{ background:#f0f0f0; }
-.pic-btn svg{ width:12px; height:12px; }
-.pic-scrub{ flex:1 1 180px; display:flex; align-items:center; gap:10px; min-width:150px; }
-.pic-scrub input[type=range]{
-  -webkit-appearance:none; appearance:none; width:100%; height:4px; border-radius:3px;
-  background:linear-gradient(90deg, #0f9b8e, #e08c2e); outline:none; cursor:pointer;
-}
-.pic-scrub input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance:none; appearance:none; width:15px; height:15px; border-radius:50%;
-  background:#333; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,0.2);
-}
-.pic-scrub input[type=range]::-moz-range-thumb{
-  width:15px; height:15px; border-radius:50%; background:#333; border:2px solid #fff;
-}
-</style>
-
-<p>This was revolutionary and highly effective. But Harlow goes on to say that the PIC process can be viewed mathematically in two different ways (emphasis mine):</p>
-
-<blockquote>
-  <p>One of [the two ways] is based on the idea of time splitting, in which a computational cycle is broken into two parts, the first being an update of the quantities by all the processes except advection, while the second part moves the particles and accomplishes all of the advective fluxing.</p>
-
-  <p><strong>The second way, as recognized by Eleazer Bromberg (a visitor to our Group from the Courant Institute at New York University), is to consider that the mesh of cells is actually Lagrangian, so that the first part of the calculations in a cycle advances all the variables, including the mesh coordinates and the particle positions, and the second part maps the mesh back into its original configuration, leaving the particles at their new locations.</strong></p>
-</blockquote>
-
-<p>My grandfather Lazer was visiting Los Alamos National Lab from NYU’s Courant Institute to help them with their nascent computing efforts. He is listed on the Evans &amp; Harlow paper as one of the eight people who assisted with its “Machine Calculations.” But he is also, uniquely, called out by name as the author of Appendix II in the paper, which is about exactly the alternate view Harlow highlights above.</p>
-
-<p>I suspect he was asked to help with the mechanical computations for Evans and Harlow’s approach, and while doing so, thought hard about the problem and came up with a different way of getting to the ultimate equations — hence the named-author appendix. The PIC technique is theirs, but the second way of looking at it is his.</p>
-
-<p>In the core of the report, Evans and Harlow work through PIC as a sequence of phases. Each cycle begins by freezing the fluid’s flow in place. On the stationary (Eulerian) grid, they let the pressure differences between neighboring cells “push” on the fluid, updating each cell’s velocity and energy, as if nothing were moving from one cell to the next. Once that’s done, they (computationally) let the fluid move, causing the particles to drift across cell boundaries. And because any boundary-crossing drags momentum and energy into a new cell, a final step reconciles the books.</p>
-
-<p>This is, as Harlow described above, the breaking of the cycle into two parts: “the first being an update of the quantities by all the processes except advection<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Advection is the transport of a substance through bulk fluid motion — e.g. the movement of those mass-carrying particles in the Particle-in-Cell model.</span>, while the second part moves the particles and accomplishes all of the advective fluxing.” And in so doing, the grid doesn’t budge, so you don’t get the knotting failure mode of the Lagrangian view. It is, however, not <em>really</em> how the fluid flows in real life, and doesn’t obviously guarantee conservation of mass, momentum, and energy.</p>
-
-<p>This is one approach, and makes the method reasonably straightforward to program on those early computers.</p>
-
-<p>But in Appendix II, Lazer avoids freezing anything. He lets the entire grid come “unstuck” and ride along with the fluid — for just one step, the cells themselves become Lagrangian, stretching, shearing, twisting. Everything advances at once with no forces or matter held back: velocities, energies, positions of cell walls, positions of the particles. This is closer to the real physical picture.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/lazers-papers/appendix-ii-800-71741c449.webp 800w, /assets/images/generated/lazers-papers/appendix-ii-1000-71741c449.webp 1000w, /assets/images/generated/lazers-papers/appendix-ii-1024-71741c449.webp 1024w" type="image/webp" /><source srcset="/assets/images/generated/lazers-papers/appendix-ii-800-bb894ee8d.png 800w, /assets/images/generated/lazers-papers/appendix-ii-1000-bb894ee8d.png 1000w, /assets/images/generated/lazers-papers/appendix-ii-1024-bb894ee8d.png 1024w" type="image/png" /><img src="/assets/images/generated/lazers-papers/appendix-ii-800-bb894ee8d.png" width="1024" height="576" /></picture>
-
-<p>But then, before it becomes an issue, he “rezones” it all. He looks at where the distorted cells are, and maps them back onto the original grid, while pouring their contents (momentum, energy, mass) into those original fixed cells where they belong, conserving everything in the process. The particles are left exactly where the fluid carried them.</p>
-
-<p>Simplifying in another way: the Evans &amp; Harlow approach is to keep the imagined, fixed grid in place, compute the flow of the properties (e.g. energy) between its cells, <em>then</em> move the particles, <em>then</em> re-account for that particle movement. The Bromberg approach is to forget about the grid, let the fluid flow like it really does, then re-instantiate the original grid over the new state and calculate the new values for those cells (leaving the particles wherever they landed).</p>
-
-<p>Below you can see a visualization of this. Harlow &amp; Evans calculate the forces, then move the particles; Bromberg treats the whole thing as a fluid in one step, and then rezones the grid. They arrive at the same place — it is the same method, but a different mathematical approach to deriving the result.</p>
-
-<div class="pic-fig">
-  <div class="pic-panels two">
-    <div class="pic-panel"><p class="pic-head">Harlow &amp; Evans</p><canvas class="pic-canvas" id="f3hcyc"></canvas></div>
-    <div class="pic-panel"><p class="pic-head">Bromberg</p><canvas class="pic-canvas" id="f3bcyc"></canvas></div>
-  </div>
-
-  <div class="pic-controls">
-    <button class="pic-btn" id="f3play" aria-label="Play or pause">
-      <svg id="f3playicon" viewBox="0 0 12 12" fill="currentColor"><path d="M2.5 1h2.5v10h-2.5z M7 1h2.5v10h-2.5z" /></svg>
-    </button>
-    <button class="pic-btn secondary" id="f3reset" aria-label="Reset">
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 6a4 4 0 1 1-1.2-2.85" /><path d="M9.2 1.3v2.2H7" /></svg>
-    </button>
-    <div class="pic-scrub"><input type="range" id="f3time" min="0" max="1000" value="0" aria-label="Cycle progress" /></div>
-  </div>
-</div>
-
-<script>
-(function(){
-  var hcyc=document.getElementById('f3hcyc'), bcyc=document.getElementById('f3bcyc');
-  if(!hcyc||!bcyc) return;
-  var RC=0.7, STEPC=0.62, CYCLE=8200, HOLD=600;
-  var TEALC=[15,155,142], AMBERC=[224,140,46];
-  function mixC(a,b,f){
-    return 'rgb('+Math.round(a[0]+(b[0]-a[0])*f)+','+Math.round(a[1]+(b[1]-a[1])*f)+','+Math.round(a[2]+(b[2]-a[2])*f)+')';
-  }
-  function omegaC(r){ var k=r/RC; return 1/(1+k*k); }
-  function smooth(t){ t=t<0?0:(t>1?1:t); return t*t*(3-2*t); }
-  function rot(x,y,a){ var c=Math.cos(a), s=Math.sin(a); return [x*c-y*s, x*s+y*c]; }
-
-  var hCtx=hcyc.getContext('2d'), bCtx=bcyc.getContext('2d');
-  var CS=300, DPR=1;
-
-  function setup(){
-    DPR=Math.max(1, Math.min(2, window.devicePixelRatio||1));
-    CS=Math.max(200, Math.floor(hcyc.getBoundingClientRect().width));
-    [hcyc,bcyc].forEach(function(c){ c.width=Math.floor(CS*DPR); c.height=Math.floor(CS*DPR); });
-  }
-  function mx(x){ return (x*0.5+0.5)*CS; }
-  function my(y){ return (0.5-y*0.5)*CS; }
-
-  var NC=5, EXT=0.82, PG=11;
-  var parts=[];
-  (function(){ var step=(2*EXT)/(PG-1); for(var i=0;i<PG;i++){ for(var j=0;j<PG;j++){ parts.push(-EXT+i*step, -EXT+j*step); } } })();
-  function nodeInit(i,j){ var step=(2*EXT)/NC; return [-EXT+i*step, -EXT+j*step]; }
-
-  function ramps(method, f){
-    if(method==='h'){
-      var phase = f<0.10?0 : f<0.37?1 : f<0.66?2 : f<0.90?3 : 4;
-      return { grid:0, part:smooth((f-0.37)/0.29), phase:phase };
-    }
-    var grid, part, phase;
-    if(f<0.10){ grid=0; part=0; phase=0; }
-    else if(f<0.52){ var a=smooth((f-0.10)/0.42); grid=a; part=a; phase=1; }
-    else if(f<0.85){ var b=smooth((f-0.52)/0.33); grid=1-b; part=1; phase=2; }
-    else { grid=0; part=1; phase=3; }
-    return { grid:grid, part:part, phase:phase };
-  }
-
-  function drawArrows(ctx, alpha){
-    if(alpha<=0.01) return;
-    ctx.strokeStyle='rgba(59,130,246,'+alpha+')'; ctx.fillStyle='rgba(59,130,246,'+alpha+')'; ctx.lineWidth=1.4;
-    var nca=5, st=(2*EXT)/nca;
-    for(var i=0;i<nca;i++){ for(var j=0;j<nca;j++){
-      var x=-EXT+(i+0.5)*st, y=-EXT+(j+0.5)*st, r=Math.sqrt(x*x+y*y), mag=omegaC(r);
-      var dx=-y, dy=x, dl=Math.sqrt(dx*dx+dy*dy)||1; dx/=dl; dy/=dl;
-      var L=0.085*mag+0.018, x2=x+dx*L, y2=y+dy*L;
-      var px1=mx(x), py1=my(y), px2=mx(x2), py2=my(y2);
-      ctx.beginPath(); ctx.moveTo(px1,py1); ctx.lineTo(px2,py2); ctx.stroke();
-      var ang=Math.atan2(py2-py1, px2-px1), hs=4.5;
-      ctx.beginPath(); ctx.moveTo(px2,py2);
-      ctx.lineTo(px2-hs*Math.cos(ang-0.45), py2-hs*Math.sin(ang-0.45));
-      ctx.lineTo(px2-hs*Math.cos(ang+0.45), py2-hs*Math.sin(ang+0.45));
-      ctx.closePath(); ctx.fill();
-    } }
-  }
-
-  function colorCells(ctx, R, alpha){
-    if(alpha<=0.01) return;
-    var cellw=(2*EXT)/NC, teal=new Float64Array(NC*NC), amber=new Float64Array(NC*NC);
-    for(var s=0;s<parts.length;s+=2){
-      var x=parts[s], y=parts[s+1], rr=Math.sqrt(x*x+y*y), qq=rot(x,y,omegaC(rr)*STEPC*R.part);
-      var ci=Math.floor((qq[0]+EXT)/cellw), cj=Math.floor((qq[1]+EXT)/cellw);
-      if(ci>=0&&ci<NC&&cj>=0&&cj<NC){ var c=ci*NC+cj; if(x>=0) amber[c]++; else teal[c]++; }
-    }
-    ctx.globalAlpha=alpha;
-    for(var i=0;i<NC;i++){ for(var j=0;j<NC;j++){ var c2=i*NC+j, tot=teal[c2]+amber[c2];
-      if(tot<=0) continue;
-      var xl=-EXT+i*cellw, yb=-EXT+j*cellw, left=mx(xl), top=my(yb+cellw), w=mx(xl+cellw)-left, h=my(yb)-top;
-      ctx.fillStyle=mixC(TEALC,AMBERC,amber[c2]/tot); ctx.fillRect(left, top, w, h);
-    } }
-    ctx.globalAlpha=1;
-  }
-
-  function drawPanel(ctx, method, f){
-    ctx.setTransform(DPR,0,0,DPR,0,0);
-    ctx.clearRect(0,0,CS,CS); ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,CS,CS);
-    var R=ramps(method,f), w=NC+1;
-    var nx=new Float64Array(w*w), ny=new Float64Array(w*w);
-    for(var i=0;i<=NC;i++){ for(var j=0;j<=NC;j++){
-      var p0=nodeInit(i,j), r=Math.sqrt(p0[0]*p0[0]+p0[1]*p0[1]), q=rot(p0[0],p0[1],omegaC(r)*STEPC*R.grid);
-      nx[i*w+j]=q[0]; ny[i*w+j]=q[1];
-    } }
-    var mapAmt=0;
-    if(method==='h'){ mapAmt = R.phase>=4 ? 1 : (R.phase===3 ? smooth((f-0.66)/0.24) : 0); }
-    else { mapAmt = R.phase>=3 ? 1 : (R.phase===2 ? smooth((f-0.52)/0.33) : 0); }
-    colorCells(ctx, R, 0.34*mapAmt);
-    var deforming = (method==='b' && R.grid>0.02);
-    ctx.lineWidth=1.4;
-    ctx.strokeStyle = deforming ? 'rgba(224,140,46,0.95)' : 'rgba(70,100,130,0.6)';
-    ctx.beginPath();
-    for(var a2=0;a2<=NC;a2++){ for(var b2=0;b2<=NC;b2++){ var id=a2*w+b2;
-      if(a2<NC){ ctx.moveTo(mx(nx[id]),my(ny[id])); ctx.lineTo(mx(nx[(a2+1)*w+b2]),my(ny[(a2+1)*w+b2])); }
-      if(b2<NC){ ctx.moveTo(mx(nx[id]),my(ny[id])); ctx.lineTo(mx(nx[a2*w+(b2+1)]),my(ny[a2*w+(b2+1)])); }
-    } }
-    ctx.stroke();
-    var d=Math.max(3, CS/68), half=d/2;
-    for(var s=0;s<parts.length;s+=2){ var x=parts[s], y=parts[s+1], rr=Math.sqrt(x*x+y*y), qq=rot(x,y,omegaC(rr)*STEPC*R.part);
-      ctx.fillStyle = x>=0 ? '#e08c2e' : '#0f9b8e'; ctx.fillRect(mx(qq[0])-half, my(qq[1])-half, d, d);
-    }
-    if(method==='h' && R.phase===1){ drawArrows(ctx, Math.sin(Math.PI*(f-0.10)/0.27)*0.95); }
-  }
-
-  var t=0, playing=true, holdMs=0, last=null;
-  var slider=document.getElementById('f3time');
-  var pbtn=document.getElementById('f3play'), picon=document.getElementById('f3playicon');
-  var rbtn=document.getElementById('f3reset');
-  var PLAY='M2 1l9 5-9 5z', PAUSE='M2.5 1h2.5v10h-2.5z M7 1h2.5v10h-2.5z';
-  function setIcon(){ picon.innerHTML='<path d="'+(playing?PAUSE:PLAY)+'"/>'; }
-  function render(){ drawPanel(hCtx,'h',t); drawPanel(bCtx,'b',t); }
-  function frame(ts){
-    if(last===null) last=ts; var dt=ts-last; last=ts;
-    if(playing){
-      if(holdMs>0){ holdMs-=dt; if(holdMs<=0){ t=0; } }
-      else { t+=dt/CYCLE; if(t>=1){ t=1; holdMs=HOLD; } }
-      slider.value=Math.round(t*1000);
-    }
-    render(); requestAnimationFrame(frame);
-  }
-  pbtn.addEventListener('click', function(){ playing=!playing; setIcon(); });
-  rbtn.addEventListener('click', function(){ t=0; holdMs=0; playing=true; setIcon(); slider.value=0; render(); });
-  slider.addEventListener('input', function(){ playing=false; holdMs=0; t=slider.value/1000; setIcon(); render(); });
-  var rt=null; window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(function(){ setup(); render(); }, 80); });
-
-  setup();
-  setIcon();
-  requestAnimationFrame(frame);
-})();
-</script>
-
-<style>
-.pic-fig{
-  background:#f8f9fa;
-  border:1px solid #e0e3e8;
-  border-radius:8px;
-  padding:20px;
-  margin:1.5rem 0;
-  font-family:"Hanken Grotesk", -apple-system, sans-serif;
-  color:#1a1a1a;
-  -webkit-font-smoothing:antialiased;
-}
-.pic-panels{ display:grid; gap:14px; }
-.pic-panels.two{ grid-template-columns:1fr 1fr; }
-@media (max-width:600px){ .pic-panels.two{ grid-template-columns:1fr; } }
-.pic-panel{ min-width:0; }
-.pic-head{ font-size:0.8rem; font-weight:700; color:#444; margin:0 0 7px; letter-spacing:0.01em; }
-.pic-solo{ max-width:380px; margin:0 auto; }
-.pic-canvas{
-  width:100%; height:auto; aspect-ratio:1/1; display:block;
-  background:#fff; border:1px solid #e0e0e0; border-radius:6px;
-}
-.pic-controls{
-  display:flex; align-items:center; gap:12px;
-  margin-top:18px; flex-wrap:wrap;
-}
-.pic-btn{
-  font-family:inherit; color:#fff;
-  background:#2c3e50; border:none; border-radius:6px; padding:8px 12px; cursor:pointer;
-  transition:background .15s ease; display:inline-flex; align-items:center; justify-content:center;
-}
-.pic-btn:hover{ background:#1a252f; }
-.pic-btn.secondary{ background:#fff; color:#444; border:1px solid #ccc; }
-.pic-btn.secondary:hover{ background:#f0f0f0; }
-.pic-btn svg{ width:12px; height:12px; }
-.pic-scrub{ flex:1 1 180px; display:flex; align-items:center; gap:10px; min-width:150px; }
-.pic-scrub input[type=range]{
-  -webkit-appearance:none; appearance:none; width:100%; height:4px; border-radius:3px;
-  background:linear-gradient(90deg, #5b8fb9, #e08c2e); outline:none; cursor:pointer;
-}
-.pic-scrub input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance:none; appearance:none; width:15px; height:15px; border-radius:50%;
-  background:#333; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,0.2);
-}
-.pic-scrub input[type=range]::-moz-range-thumb{
-  width:15px; height:15px; border-radius:50%; background:#333; border:2px solid #fff;
-}
-</style>
-
-<p>Despite arriving at the same ultimate answer, I think in some sense Lazer’s approach is more theoretically correct, useful, and intuitive. His method inherently wires in conservation of mass, momentum, and energy by focusing on boundaries instead of points. Today we would call this a “finite-volume method” for fluid dynamics (a term not coined until the 1970s).</p>
-
-<p>My preference for his approach isn’t just aesthetic. Evans and Harlow’s multi-step update process carries a small energy bookkeeping error (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3b4;</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\delta D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">&#x3b4;D</span></span></span></span>) which monotonically increases the calculated energy above the physically intended value. It’s just an artifact of the discretization — if you shrink the timestep, you can shrink the error arbitrarily — but it’s there in the calculations regardless. Lazer’s derivation sidesteps it by starting <em>from</em> the integral conservation laws — looking at total mass, momentum, and energy inside each cell, balanced by what crosses the cells’ faces.</p>
-
-<p>In his 2004 retrospective, directly after Harlow mentions Lazer’s alternative PIC view, he says (editors’ note mine):</p>
-
-<blockquote>
-  <p>Some years later, Tony Hirt and Dan Butler of our Group discovered that instead of a complete mapping back to the original mesh each cycle [note: what Lazer did], the mapping could be partial, leading to a technique that is called an Arbitrary–Lagrangian–Eulerian (ALE) method, which limits to either of the two viewpoints.</p>
-</blockquote>
-
-<p>What I find striking is how cleanly Lazer’s Appendix II prefigures the ALE idea. His approach was to let the mesh behave like a Lagrangian for the physics step, then remap back to the original Eulerian grid before the distortion becomes fatal to the math.</p>
-
-<p>ALE takes that same idea and relaxes the last part. Instead of always mapping all the way back to the original grid, you are allowed to map to some other convenient grid (maybe closer to the material motion, or the laboratory frame, or maybe adaptively to keep the cells well-shaped). That freedom is the “Arbitrary” in ALE’s “Arbitrary Lagrangian-Eulerian.” So perhaps Lazer came up with just plain ol’ “LE” in his work.</p>
-
-<p>That is why the appendix feels relevant and enduring even today. It suggests the essential ALE concept: move the grid with the material and then rezone. Hirt and Butler’s later contribution was to see that the rezone did not have to be back to the original.</p>
-
-<p>There are still new ALE formulations being created and used across topics like <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999125006801">gas modeling</a>, <a href="https://link.springer.com/article/10.1007/s00366-024-02043-6">novel flying object design</a>, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.70229">pavement responsiveness</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0045793025002245">pure numerical-methods research</a> and more (all of those just in the last couple years!).</p>
-
-<p>ALE methods remain important because many of our hardest simulations live in the middle ground of too much deformation for a Lagrangian mesh, but also too much interface detail or moving-boundary geometry for an Eulerian one.</p>
-
-<p>So in this sense, Lazer’s 1957 approach of doing Lagrangian updates and then Eulerian rezones — separating the Lagrangian physics from the computational remap, spurred by his presumed search for a more elegant formulation of Evans &amp; Harlow’s groundbreaking fluid dynamics work — remains scientifically relevant here, nearly seven decades later.</p>
-
-<p>Note that I am not claiming that all of that work is built on his appendix — I don’t know if those later scientists ever read it. But the ideas are on the same foundation regardless (and Harlow, the original progenitor, seems to think they are connected).</p>
-
-<p>If I were writing a history of CFD, this would all read very differently, more prominently highlighting contributions by these many scientists and drawing harder academic lineage linkages. But this isn’t a history of CFD; it’s a blog post about my grandfather.</p>
-
-<p>And with that, one last photo I discovered: my grandfather Lazer is on the left, with James Stoker (an excellent mathematician and one of the founders of Courant) and Louis Nirenberg (one of the best mathematicians of the 20th century, co-awarded the 2015 Abel Prize with Nobel Laureate John Nash). I wonder what they’re looking at.</p>
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/lazers-papers/lazer-stoker-nirenberg-800-34be4fb4d.webp 800w, /assets/images/generated/lazers-papers/lazer-stoker-nirenberg-1000-34be4fb4d.webp 1000w, /assets/images/generated/lazers-papers/lazer-stoker-nirenberg-1024-34be4fb4d.webp 1024w" type="image/webp" /><source srcset="/assets/images/generated/lazers-papers/lazer-stoker-nirenberg-800-0484819ca.png 800w, /assets/images/generated/lazers-papers/lazer-stoker-nirenberg-1000-0484819ca.png 1000w, /assets/images/generated/lazers-papers/lazer-stoker-nirenberg-1024-0484819ca.png 1024w" type="image/png" /><img src="/assets/images/generated/lazers-papers/lazer-stoker-nirenberg-800-0484819ca.png" width="1024" height="576" /></picture>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/congruence/widgets">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/congruence/widgets">Custom widgets</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/on-seasonality">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/on-seasonality">On Seasonality</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Math &amp; science&quot;]" /><summary type="html"><![CDATA[I found my grandfather Eleazer "Lazer" Bromberg's quiet role in the early days of computing — including a 1957 Los Alamos insight.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-08-lazers-papers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[I was long searching for the perfect routine; I've now realized they are often only good for a season.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-14-on-seasonality.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-14-on-seasonality.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
