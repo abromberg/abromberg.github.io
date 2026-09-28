@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-27T16:52:28+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">What are we teaching them to be?</title><link href="https://andybromberg.com/teaching-them-to-be" rel="alternate" type="text/html" title="What are we teaching them to be?" /><published>2026-09-20T13:00:00+00:00</published><updated>2026-09-20T13:00:00+00:00</updated><id>https://andybromberg.com/teaching-them-to-be</id><content type="html" xml:base="https://andybromberg.com/teaching-them-to-be"><![CDATA[<p>Imagine a child, Leo Lovelace Minsky. Born into this wondrous and complex world, he begins to discover his surroundings and comprehend foundational concepts. He understands sounds, then words, sentences, and eventually ideas.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-09-28T19:38:06+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">A love letter to exe.dev</title><link href="https://andybromberg.com/love-letter-exe-dev" rel="alternate" type="text/html" title="A love letter to exe.dev" /><published>2026-09-28T13:00:00+00:00</published><updated>2026-09-28T13:00:00+00:00</updated><id>https://andybromberg.com/love-letter-exe-dev</id><content type="html" xml:base="https://andybromberg.com/love-letter-exe-dev"><![CDATA[<p>When I first started really programming, my definition of “deploying” was FTP’ing a PHP file to a <code class="language-plaintext highlighter-rouge">scripts/</code> directory on a HostGator site (ah, how I loved <a href="https://www.macstories.net/reviews/transmit-4-mac/">Transmit 4</a> from Panic).</p>
+
+<p>Over the years, I discovered version control, VPSs, Heroku, AWS, Vercel, and so on. Each made me feel like I had been living like a barbarian beforehand.</p>
+
+<p>Well, it’s happened again: <a href="https://exe.dev/">exe.dev</a> is now my favorite cloud / deployment platform, and I suspect it’s only just barely getting started.</p>
+
+<p>exe.dev co-founder David Crawshaw (formerly co-founder and CTO of Tailscale, another wonderful “it-just-works” product) wrote a <a href="https://crawshaw.io/blog/building-a-cloud">blog post about their vision</a> that I recommend reading. It ends with this line:</p>
+
+<blockquote>
+  <p>So, I am building a cloud. One I actually want to use. I hope it is useful to you.</p>
+</blockquote>
+
+<p>And so it is, indeed. Here’s my case for exe.dev as it stands today:</p>
+<ul>
+  <li>trivial and near-instant to spin up a new VM with a persistent disk / filesystem and all the fixins — you can just get straight to work on whatever you want</li>
+  <li>you pay for pooled disk, vCPUs, and memory that is shared across all your VMs (<em>so</em> nice for small, experimental, or personal projects where I don’t need meaningful per-project resources), and you aren’t charged per-VM (!)</li>
+  <li>a ton of built-in integrations, including — which may sound weird for a “cloud” — push notifications, outbound emails, and Slack notifications. Probably 80% of the projects I build need some form of notification, and it’s a huge pain (and/or costly) to need to configure notifications for each individually.</li>
+  <li>intelligent access controls by default — including exe.dev-powered authentication rather than the VM being on public internet by default (again: most projects want this, and you usually have to do it yourself every time — including email/SMTP setup and so on)</li>
+  <li>great, agent-friendly developer ergonomics and CLI</li>
+  <li>sensible, minimal defaults across the board</li>
+  <li>extremely reasonable pricing, starting at $15/month for 2 vCPUs + 4GB memory + 100GB disk, pooled across up to 50 VMs</li>
+  <li>and highly performant and snappy on top of all that</li>
+</ul>
+
+<p>It’s basically my platonic ideal of “I have a idea I want to try but I don’t want it on my own computer and/or I want someone else to access it and/or it needs to be running all the time.” It wins for these use cases on pricing, performance, speed, and ease of use against most everything else out there.</p>
+
+<p>Over the past couple weeks I have found myself building and deploying more software <em>purely because I know I can just punt it up on exe.dev and not worry about anything.</em></p>
+
+<p>I didn’t even realize I was bottlenecked by my deployment dread. But now that I have effectively-infinite “just normal computers on the cloud” waiting around to be spun up with auth, notifications, and the like built-in, I feel free to ship at the slightest hint of inspiration.</p>
+
+<p>They have a docs page <a href="https://exe.dev/docs/why-exe">Why exe.dev?</a> which explains the pitch briefly in their words, if you need more convincing.</p>
+
+<p>(There’s only one thing I don’t “get” yet which is their built-in agent Shelley that comes bundled on every VM. I don’t find myself using it over my own. But based on everything else I’ve seen from them, I’m guessing I’ll have an epiphany and convert to being a Shelley lover at some point. And in the meantime it is harmless and easy to disregard.)</p>
+
+<p>In my opinion, if you build software projects or play with agents… you’re doing yourself a disservice not having an exe.dev subscription sitting around as your default place to ship things. It’s just too good.</p>
+
+<p>If exe.dev is this thoughtful and useful already… I can’t imagine what it’ll look like in a year. Long live exe.dev!</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/teaching-them-to-be">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/teaching-them-to-be">What are we teaching them to be?</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[My new favorite cloud platform is exe.dev. I find myself shipping more software purely because it exists.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-09-28-love-letter-exe-dev.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-09-28-love-letter-exe-dev.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What are we teaching them to be?</title><link href="https://andybromberg.com/teaching-them-to-be" rel="alternate" type="text/html" title="What are we teaching them to be?" /><published>2026-09-20T13:00:00+00:00</published><updated>2026-09-20T13:00:00+00:00</updated><id>https://andybromberg.com/teaching-them-to-be</id><content type="html" xml:base="https://andybromberg.com/teaching-them-to-be"><![CDATA[<p>Imagine a child, Leo Lovelace Minsky. Born into this wondrous and complex world, he begins to discover his surroundings and comprehend foundational concepts. He understands sounds, then words, sentences, and eventually ideas.</p>
 
 <p>With these, he learns to read and his parents hand him his first serious book: <em>Everything About the World: Training Yourself with Data.</em> They tell him to study it. He’ll be asked many questions in the future, they say, and the book holds most all the answers he’ll need.</p>
 
@@ -130,11 +204,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/love-letter-exe-dev">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/love-letter-exe-dev">A love letter to exe.dev</a>
     
   </div>
 </nav>
@@ -948,70 +1026,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I'm a fan of not breaking the chain, and after 365 days of at least 1 code commit a day, I think I'm a better engineer.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-23-365-days-of-commits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-23-365-days-of-commits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On Seasonality</title><link href="https://andybromberg.com/on-seasonality" rel="alternate" type="text/html" title="On Seasonality" /><published>2026-06-14T13:00:00+00:00</published><updated>2026-06-14T13:00:00+00:00</updated><id>https://andybromberg.com/on-seasonality</id><content type="html" xml:base="https://andybromberg.com/on-seasonality"><![CDATA[<p>I work and feel best when I’m on a consistent routine — eating roughly the same things every day, going through the same morning and evening flows and daily schedule structures, and doing the same workouts (see: <a href="/congruence/intro">Congruence</a>, <a href="/minimum-effective-quantification">MEQ</a>, <a href="/just-call-me">Just Call Me</a>, and other posts on this site).</p>
-
-<p>I suspect this feels good because the routine effectively pre-makes my decisions. I avoid making decisions I’ll later regret, and I don’t add more to the already-pretty-tall stack of choices I have to make throughout the day. Plus my body adjusts to the flow and knows what to expect.</p>
-
-<p>But as with most good things, there is such a thing as “too much” routine for me. I used to just plow through, sticking to the routine that had been working for me far beyond its useful life, and eventually blowing out and feeling horrible (ask me about how incredible the first 2.5 years of strict Keto felt and how miserable the following 6 months of strict Keto were).</p>
-
-<hr />
-
-<p>Over the last couple years, I have made a more intentional adjustment towards <em>seasonality</em> — and it feels great. A couple times a year, usually as the weather starts to get warmer or cooler, I take stock of my routines and adjust them.</p>
-
-<p>My sense is that our bodies have some sort of intuition for seasonal behavior change, and we might as well lean into that. Most ancient medical and wellness traditions have some concept of this — Ayurveda, TCM, Japanese “shun,” and others. Even ideas like “spring cleaning” and “New Years resolutions” echo the idea. The cyclical nature of the calendar is inherent in our lives and biology.</p>
-
-<p>I long thought I was in search of the “perfect routine,” figuring out what would make me feel best. I knew I’d never find it and would always be tweaking, but I was searching for it nonetheless. And I think that’s true, at some level, but the wrong bit was the implicit <em>permanence</em> of that sought routine.</p>
-
-<p>I was looking for the “perfect <em>permanent</em> routine,” the thing that would “make me feel best, <em>forever.</em>” But really, I’ve found it so much more pleasant to be seeking the perfect routine for <em>this season</em> — this season of the year and this season of life.</p>
-
-<hr />
-
-<picture loading="lazy" class="vignette-image"><source srcset="/assets/images/generated/on-seasonality/watercolor-800-8a464f566.webp 800w, /assets/images/generated/on-seasonality/watercolor-1000-8a464f566.webp 1000w, /assets/images/generated/on-seasonality/watercolor-1200-8a464f566.webp 1200w, /assets/images/generated/on-seasonality/watercolor-1600-8a464f566.webp 1600w, /assets/images/generated/on-seasonality/watercolor-2000-8a464f566.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/on-seasonality/watercolor-800-3855ed8ba.jpg 800w, /assets/images/generated/on-seasonality/watercolor-1000-3855ed8ba.jpg 1000w, /assets/images/generated/on-seasonality/watercolor-1200-3855ed8ba.jpg 1200w, /assets/images/generated/on-seasonality/watercolor-1600-3855ed8ba.jpg 1600w, /assets/images/generated/on-seasonality/watercolor-2000-3855ed8ba.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/on-seasonality/watercolor-800-3855ed8ba.jpg" width="4032" height="1818" /></picture>
-
-<p>The seasons give us an anchor on which we can hang and mark our lives. Humans have long lived by them. In agricultural societies, we had no choice but to. Now, with many of us working from unchanging computers in unchanging offices, we may have lost that connection.</p>
-
-<p>I often anchor these adjustments in the cliches you might imagine would go with a seasonal change — as summer arrives, I might trade weightlifting in a gym for kettlebells outside; warm breakfasts for cold fruits; late nights for early mornings.</p>
-
-<p>I recommend trying to consciously bring seasonality back in your routines. As it gets warmer or cooler, shift your diet, how you’re moving your body, and even your schedule. I bet it’ll feel good.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/lazers-papers">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/lazers-papers">My grandfather's papers: some family computing history</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/365-days-of-commits">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/365-days-of-commits">365 days of commits</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;, &quot;Health&quot;]" /><summary type="html"><![CDATA[I was long searching for the perfect routine; I've now realized they are often only good for a season.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-14-on-seasonality.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-14-on-seasonality.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I'm a fan of not breaking the chain, and after 365 days of at least 1 code commit a day, I think I'm a better engineer.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-23-365-days-of-commits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-23-365-days-of-commits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
