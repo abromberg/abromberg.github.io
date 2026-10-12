@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-02T18:24:54+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Side Eye: a pomodoro timer that watches you</title><link href="https://andybromberg.com/side-eye" rel="alternate" type="text/html" title="Side Eye: a pomodoro timer that watches you" /><published>2026-10-02T13:00:00+00:00</published><updated>2026-10-02T13:00:00+00:00</updated><id>https://andybromberg.com/side-eye</id><content type="html" xml:base="https://andybromberg.com/side-eye"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/side-eye/side-eye-icon-800-148807a71.webp 800w, /assets/images/generated/side-eye/side-eye-icon-1000-148807a71.webp 1000w, /assets/images/generated/side-eye/side-eye-icon-1200-148807a71.webp 1200w, /assets/images/generated/side-eye/side-eye-icon-1600-148807a71.webp 1600w, /assets/images/generated/side-eye/side-eye-icon-2000-148807a71.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/side-eye/side-eye-icon-800-d9a92ff65.png 800w, /assets/images/generated/side-eye/side-eye-icon-1000-d9a92ff65.png 1000w, /assets/images/generated/side-eye/side-eye-icon-1200-d9a92ff65.png 1200w, /assets/images/generated/side-eye/side-eye-icon-1600-d9a92ff65.png 1600w, /assets/images/generated/side-eye/side-eye-icon-2000-d9a92ff65.png 2000w" type="image/png" /><img src="/assets/images/generated/side-eye/side-eye-icon-800-d9a92ff65.png" alt="The Side Eye app icon: a square tomato giving you side-eye" width="2880" height="880" /></picture>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-12T17:27:19+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">modelwatch: Dependabot for LLM model strings</title><link href="https://andybromberg.com/modelwatch" rel="alternate" type="text/html" title="modelwatch: Dependabot for LLM model strings" /><published>2026-10-12T13:00:00+00:00</published><updated>2026-10-12T13:00:00+00:00</updated><id>https://andybromberg.com/modelwatch</id><content type="html" xml:base="https://andybromberg.com/modelwatch"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-d3e99ee54.webp 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-d3e99ee54.webp 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-d3e99ee54.webp 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-d3e99ee54.webp 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-d3e99ee54.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-eee6c4eae.png 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-eee6c4eae.png 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-eee6c4eae.png 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-eee6c4eae.png 2000w" type="image/png" /><img src="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png" alt="The modelwatch logo: a clay owl perched on a Git branch" width="2880" height="880" /></picture>
+
+<p>I ship lots of little projects with AI features (recently on the personal side: <a href="/side-eye">Side Eye</a>, <a href="https://interface0.com">interface0</a>, <a href="/congruence/intro">Congruence</a>, <a href="/daegent">daegent</a>, <a href="/copapers">Copapers</a>, plus a variety of work-related products). And because of this, I have a niche problem: each of these projects is littered with references to models — <code class="language-plaintext highlighter-rouge">claude-sonnet-5.5</code>, <code class="language-plaintext highlighter-rouge">gemini-3.8-flash</code>, and so on. And those strings inevitably go out of date. Either a new version of the same model comes out, or there ends up being a better model for the use case (title generation, or decision model use, or whatever).</p>
+
+<p>Sure, you can use “latest” aliases like <code class="language-plaintext highlighter-rouge">~google/gemini-flash-latest</code>. I do sometimes for low-stakes situations. But the issue is that you get no chance to approve the change or run your evals. The new version ships and your app just flips over to it automatically. This can lead to degraded performance or even breaking changes in some cases (e.g. tool use or reasoning structure changes).</p>
+
+<p>For package upgrades, we all use tools like <a href="https://github.com/dependabot/demo">Dependabot</a>, which monitor for relevant upgrades and open PRs for you to review and approve. And I thought this would be a nice flow for this LLM use case as well.</p>
+
+<p>So: meet <a href="https://github.com/abromberg/modelwatch">modelwatch</a>. It’s open source, runs in GitHub Actions on your own private or public repos, and is free to set up (you pay for your own inference via OpenRouter with a model of your choice, on the order of cents to tens of cents per repo per week for normal-sized projects using default settings when there are changes to make, or $0 with no changes).</p>
+
+<p>The install script guides you through automatically creating your own GitHub app and installing it on the repos you want to track, which pushes a PR with a <code class="language-plaintext highlighter-rouge">.github/modelwatch.yml</code> file specific to that repo. That file keeps track of what model strings to replace and allows you to define any custom behavior (custom upgrade “lanes,” files to ignore, additional agent instructions, and so forth.)</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">modelwatch.yml</code> file for a given repo ends up looking something like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">models</span><span class="pi">:</span>
+  <span class="c1"># Follow new Sonnet releases automatically.</span>
+  <span class="pi">-</span> <span class="s">anthropic/claude-sonnet-5</span>
+
+  <span class="c1"># Follows your own choices for "title generation." In this case, Luna is the current choice in the codebase.</span>
+  <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">openai/gpt-6-luna</span>
+    <span class="na">lane</span><span class="pi">:</span> <span class="s">title-generator</span>
+
+  <span class="c1"># Keep this "held" / pinned because changing would mean rebuilding embeddings.</span>
+  <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">openai/text-embedding-3-small</span>
+    <span class="na">hold</span><span class="pi">:</span> <span class="s">Changing models requires re-indexing our stored documents.</span>
+
+<span class="na">lanes</span><span class="pi">:</span>
+  <span class="na">title-generator</span><span class="pi">:</span>
+    <span class="na">chain</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">openai/gpt-6-luna</span>
+      <span class="pi">-</span> <span class="s">google/gemini-3.8-flash</span> <span class="c1"># Your new current preference — this would cause modelwatch to open a PR upgrading title-generator above and in the code to gemini-3.8-flash.</span>
+
+<span class="na">notes</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="s">There's a pricing table src/data/llm-prices.json, make sure to update this.</span>
+
+<span class="na">ignore</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">test/fixtures/</span>
+</code></pre></div></div>
+
+<p>In this case, when the action next runs (weekly by default), you’d get a PR on the repo upgrading Sonnet 5 to Sonnet 5.5, moving GPT-6 Luna to Gemini 3.8 Flash, and updating the pricing table in the data directory. Nothing would change in your <code class="language-plaintext highlighter-rouge">test/fixtures</code> directory. You’d then review the PR, run your evals if you had them, and merge in.</p>
+
+<p>I’m excited to permanently remove “upgrade models on projects” from my weekly todo list.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/side-eye">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/side-eye">Side Eye: a pomodoro timer that watches you</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[modelwatch keeps your model strings up to date with the latest and greatest. When a new version of a model comes out, modelwatch opens a pull request to upgrade it in your codebase, including intelligently handling anything adjacent.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-10-12-modelwatch.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-10-12-modelwatch.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Side Eye: a pomodoro timer that watches you</title><link href="https://andybromberg.com/side-eye" rel="alternate" type="text/html" title="Side Eye: a pomodoro timer that watches you" /><published>2026-10-02T13:00:00+00:00</published><updated>2026-10-02T13:00:00+00:00</updated><id>https://andybromberg.com/side-eye</id><content type="html" xml:base="https://andybromberg.com/side-eye"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/side-eye/side-eye-icon-800-148807a71.webp 800w, /assets/images/generated/side-eye/side-eye-icon-1000-148807a71.webp 1000w, /assets/images/generated/side-eye/side-eye-icon-1200-148807a71.webp 1200w, /assets/images/generated/side-eye/side-eye-icon-1600-148807a71.webp 1600w, /assets/images/generated/side-eye/side-eye-icon-2000-148807a71.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/side-eye/side-eye-icon-800-d9a92ff65.png 800w, /assets/images/generated/side-eye/side-eye-icon-1000-d9a92ff65.png 1000w, /assets/images/generated/side-eye/side-eye-icon-1200-d9a92ff65.png 1200w, /assets/images/generated/side-eye/side-eye-icon-1600-d9a92ff65.png 1600w, /assets/images/generated/side-eye/side-eye-icon-2000-d9a92ff65.png 2000w" type="image/png" /><img src="/assets/images/generated/side-eye/side-eye-icon-800-d9a92ff65.png" alt="The Side Eye app icon: a square tomato giving you side-eye" width="2880" height="880" /></picture>
 
 <p>I just shipped Side Eye. It’s a <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">pomodoro</a> timer that floats on top of your computer windows and watches what you’re doing. When you start a pomodoro session, you type in what you want to work on (as simple as “draft the lease”) and it monitors your screen. Whenever you’re off-task, it turns red and urges you back to work.</p>
 
@@ -46,11 +125,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/modelwatch">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/modelwatch">modelwatch: Dependabot for LLM model strings</a>
     
   </div>
 </nav>
@@ -947,85 +1030,4 @@ npm run dev
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I've recently built four and discovered some utilities that make the developer experience delightful.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Copapers: multiplayer docs for humans &amp;amp; agents</title><link href="https://andybromberg.com/copapers" rel="alternate" type="text/html" title="Copapers: multiplayer docs for humans &amp;amp; agents" /><published>2026-06-28T13:00:00+00:00</published><updated>2026-06-28T13:00:00+00:00</updated><id>https://andybromberg.com/copapers</id><content type="html" xml:base="https://andybromberg.com/copapers"><![CDATA[<p>Over the past few months, I’ve increasingly felt the need for an interface that combines the real-time human collaboration model of Google Docs with the ability for users’ AI agents to edit, suggest, and comment on the doc.</p>
-
-<p>I want this for editing public content with a team, or drafting reports with humans and agents contributing, or for collaborating on agent-generated plan.md files with colleagues before actioning them, and so on.</p>
-
-<p>In some sense, this is now the fourth time I’ve tried to build this, and I’m pretty sure I got it right this time (finally).<label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle" /><span class="sidenote">Previous attempts included <a href="/interface0-google-docs">agent suggestions in Google Docs</a>, <a href="/collaborative-folders">collaborative folders in Obsidian</a>, and <a href="/interface0-intro">artifacts in interface0</a>. Each had good ideas but missed the mark in one way or another, and all contributed to this next solution.</span></p>
-
-<p>The result is <a href="https://copapers.com">Copapers</a>. Its model is simple: humans get a Google Docs-like web interface, and agents get an MCP server which is highly token-efficient and reliable.</p>
-
-<p>The magic is in the implementation of the agentic MCP interface. There are other products out there that in theory allow this same general pattern, like <a href="https://www.notion.com/">Notion</a>, or <a href="https://www.proofeditor.ai/">Proof</a> from Every. But every one of those I have seen takes the approach of giving the agents <em>custom, app-specific</em> tools for editing the document — tools like <code class="language-plaintext highlighter-rouge">edit_block</code> or <code class="language-plaintext highlighter-rouge">replace_range</code> or <code class="language-plaintext highlighter-rouge">notion-update-page</code>.</p>
-
-<p>These custom tools have two issues: they are extremely token-hungry, eating up usage limits and context windows; and they are often brittle and prone to failure.</p>
-
-<p>This is a shame, because agent harnesses (e.g. Claude Code, Claude Cowork, Codex) are <em>excellent</em> at editing files locally. They have built-in read / write / update tools that the harnesses use perfectly and the models are trained for, with rare failures and minimal token consumption.</p>
-
-<p>Copapers is architected in such a way that the agents can use these native tools. And as a result, it is highly token-efficient and reliable.</p>
-
-<p>Here’s a demo. And you can read on if you want to understand how it works behind the scenes.</p>
-
-<div class="video-thumbnail">
-<a class="video-thumbnail-link" href="https://screen.studio/share/3vJAtq8d" target="_blank" rel="noopener noreferrer" aria-label="Watch the Copapers demo">
-<picture loading="lazy"><source srcset="/assets/images/generated/copapers/demo-screengrab-800-6f67cd55d.webp 800w, /assets/images/generated/copapers/demo-screengrab-1000-6f67cd55d.webp 1000w, /assets/images/generated/copapers/demo-screengrab-1200-6f67cd55d.webp 1200w, /assets/images/generated/copapers/demo-screengrab-1478-6f67cd55d.webp 1478w" type="image/webp" /><source srcset="/assets/images/generated/copapers/demo-screengrab-800-6ea2273e2.png 800w, /assets/images/generated/copapers/demo-screengrab-1000-6ea2273e2.png 1000w, /assets/images/generated/copapers/demo-screengrab-1200-6ea2273e2.png 1200w, /assets/images/generated/copapers/demo-screengrab-1478-6ea2273e2.png 1478w" type="image/png" /><img src="/assets/images/generated/copapers/demo-screengrab-800-6ea2273e2.png" width="1478" height="954" /></picture>
-
-<span class="video-thumbnail-play" aria-hidden="true">
-<svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"></polygon></svg>
-</span>
-</a>
-</div>
-<hr />
-
-<h3 id="how-it-works">How it works</h3>
-
-<p>The server maintains the canonical document and handles all conflict resolution via <a href="https://yjs.dev/">Yjs</a> CRDTs. Whenever an agent wants to edit a document, it “pulls” the document down to the user’s computer, downloading a Markdown representation of the doc (with minimally-extended CriticMarkup for suggestions and comments). The agent then edits completely locally using its native tools, and “pushes” the doc back up to the server.</p>
-
-<p>On push, a couple things happen. First, the agent’s permissions are resolved. If the agent is only a “commenter” on the doc (or if it is an editor but chooses to suggest instead), its changes are diffed against the current state of the doc and added as suggestions. If it is an editor and chooses to exercise its edit capabilities, the edits are made directly. The agents are also able to make and respond to comments, and if they are editors, resolve them.</p>
-
-<p>But all of that behind the scenes. All the user needs to do is add the MCP server to their local agent and ask it to grab and edit a document, and it’ll go smoothly from there. The agent’s edits show up separated from their human’s.</p>
-
-<p>There’s also a feature where your agents can “link” an existing Markdown file on your computer (e.g. a plan document generated by a code agent) to a new Copapers file. When you do so, the Copapers file becomes canonical and the local Markdown gets some metadata telling agents to look on Copapers for the real, up-to-date doc. You can then edit collaboratively on Copapers or through agents, and sync updates back down to the local doc if you want.</p>
-
-<p>I’ve been using Copapers and really enjoying it. It feels like these sort of human-agent shared workspaces are the future, and I suspect the best of them will use the agents native tools as much as possible. Would love to hear any feedback or thoughts.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/365-days-of-commits">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/365-days-of-commits">365 days of commits</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/ios-underrated">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/ios-underrated">Developing on iOS is underrated: CloudKit and more</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[After getting sick of no reliable, token-efficient way to collaborate on docs with agents and humans alike, I built my own.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-06-28-copapers.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-06-28-copapers.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I've recently built four and discovered some utilities that make the developer experience delightful.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
