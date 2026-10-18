@@ -1,4 +1,186 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-12T17:27:19+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">modelwatch: Dependabot for LLM model strings</title><link href="https://andybromberg.com/modelwatch" rel="alternate" type="text/html" title="modelwatch: Dependabot for LLM model strings" /><published>2026-10-12T13:00:00+00:00</published><updated>2026-10-12T13:00:00+00:00</updated><id>https://andybromberg.com/modelwatch</id><content type="html" xml:base="https://andybromberg.com/modelwatch"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-d3e99ee54.webp 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-d3e99ee54.webp 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-d3e99ee54.webp 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-d3e99ee54.webp 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-d3e99ee54.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-eee6c4eae.png 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-eee6c4eae.png 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-eee6c4eae.png 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-eee6c4eae.png 2000w" type="image/png" /><img src="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png" alt="The modelwatch logo: a clay owl perched on a Git branch" width="2880" height="880" /></picture>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-18T20:52:35+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Pattern: a new calendar</title><link href="https://andybromberg.com/pattern-calendar" rel="alternate" type="text/html" title="Pattern: a new calendar" /><published>2026-10-18T13:00:00+00:00</published><updated>2026-10-18T13:00:00+00:00</updated><id>https://andybromberg.com/pattern-calendar</id><content type="html" xml:base="https://andybromberg.com/pattern-calendar"><![CDATA[<p>Well, folks, I did it: a billion-dollar idea.</p>
+
+<p>I made a calendar app where when you press “join” on a Google Meet link, it automatically joins <em>from the right Google account</em> instead of slamming you face-first into the “request access to this meeting or sign in with another account” screen. My bank account is open for venture capital riches to come flowing in.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/join-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Hovering a board meeting in Pattern and clicking Join, which opens Google Meet signed in as the board account">
+<source src="/assets/images/pattern-calendar/join.mp4" type="video/mp4" />
+</video>
+
+<p>In all seriousness, I did actually make a new calendar app that is now my daily driver. And it does indeed include the aforementioned feature, which has made my life immeasurably better. But that’s not all.</p>
+
+<p>I’m a Google Calendar power user — I structure my day with timeboxes, I schedule reminders and todos and plans for what work I’m going to do, I offer people times and want to hold them, I store meeting prep notes, I look at colleagues’ calendars, and I do all this across a half-dozen work &amp; personal Google accounts. But all of this feels a little janky in Google Calendar — I end up with tons of overlapping, undifferentiated events.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/google-calendar-before-800-aef855d77.webp 800w, /assets/images/generated/pattern-calendar/google-calendar-before-1000-aef855d77.webp 1000w, /assets/images/generated/pattern-calendar/google-calendar-before-1200-aef855d77.webp 1200w, /assets/images/generated/pattern-calendar/google-calendar-before-1600-aef855d77.webp 1600w, /assets/images/generated/pattern-calendar/google-calendar-before-2000-aef855d77.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/google-calendar-before-800-cd0314f0b.png 800w, /assets/images/generated/pattern-calendar/google-calendar-before-1000-cd0314f0b.png 1000w, /assets/images/generated/pattern-calendar/google-calendar-before-1200-cd0314f0b.png 1200w, /assets/images/generated/pattern-calendar/google-calendar-before-1600-cd0314f0b.png 1600w, /assets/images/generated/pattern-calendar/google-calendar-before-2000-cd0314f0b.png 2000w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/google-calendar-before-800-cd0314f0b.png" alt="A week of my real Google Calendar with event names scrambled: dozens of overlapping, same-looking blocks stacked into every day" width="2842" height="1180" /></picture>
+
+<p>So, meet <a href="https://patterncal.com/">Pattern</a> — a new way to use my Google Calendars. If I was trying to build this for many people to use, I would try to distill it down into a simple, clear, narrow value proposition. But instead, since this is mostly just personal software for myself, let me practice poor salesmanship and rattle off some of the features.</p>
+
+<p><strong>Patterns &amp; availability</strong></p>
+
+<p>I structure my days around rough timeboxes — times when I’m working, when I’m open to calls, when I’m working out or with the baby or eating.</p>
+
+<p>In Pattern, you can design, well, <em>Patterns</em>. These are daily timebox schedules. Elements can vary on a schedule (say, Tuesday gym day is back and biceps, or the weekend days look different from weekdays), or you can set them ad-hoc on specific days.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/pattern-editor-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="The pattern editor: one Maker day pattern whose blocks run differently on Monday and Friday">
+<source src="/assets/images/pattern-calendar/pattern-editor.mp4" type="video/mp4" />
+</video>
+
+<p>The timeboxes have names, but they also have types. These types include deep work (do not disturb), open for meetings, phone calls only (i.e. out for a walk, no video calls), personal, and so on. The timeboxes get put as free/busy on your actual Google Calendar, so your colleagues see the time blocked (or not) appropriately. But in Pattern, they look different:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/week-800-44e3f252c.webp 800w, /assets/images/generated/pattern-calendar/week-1000-44e3f252c.webp 1000w, /assets/images/generated/pattern-calendar/week-1200-44e3f252c.webp 1200w, /assets/images/generated/pattern-calendar/week-1600-44e3f252c.webp 1600w, /assets/images/generated/pattern-calendar/week-1920-44e3f252c.webp 1920w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/week-800-54eaf3fcb.png 800w, /assets/images/generated/pattern-calendar/week-1000-54eaf3fcb.png 1000w, /assets/images/generated/pattern-calendar/week-1200-54eaf3fcb.png 1200w, /assets/images/generated/pattern-calendar/week-1600-54eaf3fcb.png 1600w, /assets/images/generated/pattern-calendar/week-1920-54eaf3fcb.png 1920w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/week-800-54eaf3fcb.png" alt="A week in Pattern: each day is a horizontal row, with named timeboxes like Deep work, Meetings and Lunch forming a rail along the top of each day and events laid over them" width="1920" height="938" /></picture>
+
+<p>Instead of showing up as an “event,” they form a rail that is an overlay on the whole day.</p>
+
+<p>This is helpful just visually, but where it really gets helpful is in the various availability-related features, which respect your timeboxes. For example, there are Calendly-style links you can share which, depending on the type of meeting, respect both events that are blocking on your calendar <em>and</em> the timeboxes overlaying things:</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/booking-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="A public booking page offering only free times inside Meetings timeboxes; a guest picks a day and a time and books it">
+<source src="/assets/images/pattern-calendar/booking.mp4" type="video/mp4" />
+</video>
+
+<p>Or you can “suggest times” for a meeting — you put in the title, invitee(s), duration, meeting type, and then hit suggest. Pattern goes through your calendar and finds slots that would work for that meeting. It then lets you copy out the times (or send a link with the times) and optionally marks them all as holds. Once a time is selected, all the other holds for that same meeting go away:</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/suggest-hold-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Creating an event, suggesting times, copying and holding them across the week, then accepting one hold while the others disappear">
+<source src="/assets/images/pattern-calendar/suggest-hold.mp4" type="video/mp4" />
+</video>
+
+<p>This is just <em>such</em> a nicer experience than usual. Times are held when offered (if you want), only your preferred times (accounting for timeboxes) are suggested, and holds disappear when a time is picked.</p>
+
+<p>And last on this front: you can paste in a block of times someone has sent you and Pattern parses it and tells you exactly which of them work for you according to your availability and timeboxes. No more squinting at your calendar and tabbing back and forth to your email to see if “Mon 10/18 2pm ET” is open for you.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/check-times-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Pasting an email's proposed times in Eastern time; Pattern marks each one Works or Doesn't work and says why">
+<source src="/assets/images/pattern-calendar/check-times.mp4" type="video/mp4" />
+</video>
+
+<p><strong>Special event types</strong></p>
+
+<p>In service of keeping Google Calendar the ultimate source of truth and still usable, all sorts of other things are also stored as special types of events, aside from holds and timeboxes.</p>
+
+<p><em>Plans</em> are nonblocking events that sit on your calendar so you can plan your day. “Work on pitch deck” could be a plan, so you know when you’re anticipating working on that, but it’s not actually a blocking event (although it might sit inside a deep work timebox, which is blocking itself).</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/plan-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Adding a plan called Work on pitch deck from 9:30 to 11:30; it lands dashed inside a Deep work timebox">
+<source src="/assets/images/pattern-calendar/plan.mp4" type="video/mp4" />
+</video>
+
+<p><em>Buffers</em> are optional times before/after a scheduled meeting that “attach” themselves to the scheduled event and move around with it, making sure the time remains reserved. Say you book a 30 minute meeting but think it might run long, or have a 15 minute walk to/from a meeting — you’d add a “buffer.” Nobody else sees it, but it gets blocked on your calendar.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/buffer-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Adding 15 minute buffers on either side of a coffee, then dragging the coffee later while the buffers follow it">
+<source src="/assets/images/pattern-calendar/buffer.mp4" type="video/mp4" />
+</video>
+
+<p><em>Private notes</em> are notes attached to other events — either one-time or recurring — that only you can see. They manifest as an extra event on a separate, private calendar, but they show up in the description of the event in question, only for you. And if the meeting moves or recurs, they stay there.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/private-note-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Writing a private note on a Roadmap review event, then hovering the event to see the note">
+<source src="/assets/images/pattern-calendar/private-note.mp4" type="video/mp4" />
+</video>
+
+<p><em>Todos</em> are their own little events — either associated with a day or a specific time that are nonblocking/effectively zero-duration. They’re just reminders to do something.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/todos-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Typing Call the bank 2:30pm, which becomes a mark on the timeline, adding a to-do for the day, and ticking one off">
+<source src="/assets/images/pattern-calendar/todos.mp4" type="video/mp4" />
+</video>
+
+<p><strong>Quality-of-life</strong></p>
+
+<p>Maybe I’m behind on state of the art for calendar apps, but it feels to me that nobody has really focused on nice quality-of-life features for calendar power users. There’s the “join Google Meet from the right account” feature I mentioned at the top, but Pattern also features:</p>
+
+<p><em>Time zone features</em> - you can hit <code class="language-plaintext highlighter-rouge">z</code> or a button and a little time zone converter pops up. Type in “3pm PT in London” and it tells you right away. Or, when you’re scheduling an event, you can “add time zones” to it and it shows you the time in all those time zones. And when you’re offering times, you can offer them in multiple time zones. It’s silly how often I’m scheduling something and need to go Google “what’s noon PT in Paris” — it should be in the calendar. (It even lets you know if a DST / time change is coming up that would change the answer.)</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/tz-convert-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Pressing Z to open the time zone converter, typing 3pm PT in London, then noon Fri in Tokyo and NYC">
+<source src="/assets/images/pattern-calendar/tz-convert.mp4" type="video/mp4" />
+</video>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/event-zones-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="An event's other time zones: adding London, Tokyo and New York shows the meeting's time in each">
+<source src="/assets/images/pattern-calendar/event-zones.mp4" type="video/mp4" />
+</video>
+
+<p><em>Nonblocking &amp; FYI calendars</em> - there are a bunch of calendars I’m subscribed to that I want to see (always or sometimes), but aren’t actually blocking for me. My wife and I have a shared calendar about stuff happening at the house. I have a bunch of colleagues’ calendars. I want to be able to see these for context — and sometimes convert a specific event to “blocking” — but otherwise they shouldn’t be as prominent as my main events. Pattern supports all this.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/fyi-blocking-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="A household calendar shown as FYI; one plumber visit on it is made blocking">
+<source src="/assets/images/pattern-calendar/fyi-blocking.mp4" type="video/mp4" />
+</video>
+
+<p><em>Calendar groups</em> - related to that, I often want to check on a group of colleagues’ calendars to find a free window. Pattern lets you put people in groups and toggle group visibility on or off with a keyboard shortcut so you can peek at the group. You can also see shared availability when scheduling an event (although Google has this latter feature too, so Pattern only gets partial innovation credit).</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/groups-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Pressing V then 2 to show the Design group's calendars under each day, V then 3 to add Product, then turning both off">
+<source src="/assets/images/pattern-calendar/groups.mp4" type="video/mp4" />
+</video>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/shared-availability-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Shared availability while scheduling: three colleagues' days line up under yours">
+<source src="/assets/images/pattern-calendar/shared-availability.mp4" type="video/mp4" />
+</video>
+
+<p><em>Keyboard &amp; speed</em> - speaking of keyboard shortcuts: everything in Pattern is instrumented with keyboard shortcuts so you can get around snappily. And speaking of snappily, I put a ton of work into making navigation and everything really, really fast. You should never be waiting for loading on your calendar.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/keyboard-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Moving between days, weeks and months with keyboard shortcuts, each view appearing instantly">
+<source src="/assets/images/pattern-calendar/keyboard.mp4" type="video/mp4" />
+</video>
+
+<p><em>Multi-account search</em> - Pattern lets you search for events across <em>all</em> your connected Google Calendars, and generally is just way better at supporting the concept of multiple calendars or accounts for a single person.</p>
+
+<video autoplay="" muted="" loop="" playsinline="" preload="auto" poster="/assets/images/pattern-calendar/search-poster.jpg" style="display:block;width:100%;margin:1.5rem auto 1.75rem;border-radius:10px;" aria-label="Searching for coffee and finding events across work, personal and board accounts and a colleague's calendar">
+<source src="/assets/images/pattern-calendar/search.mp4" type="video/mp4" />
+</video>
+
+<p><em>Horizontal</em> - in case you didn’t notice in the screenshots so far… it’s horizontal. Another billion-dollar idea, I think. <a href="https://www.hey.com/calendar/">Hey Calendar</a> kinda did this, but not in the same way. Most computers’ screens are wider than they are tall, and since most events have long-ish names and I usually want to see more than one day at a time… horizontal is much nicer.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/week5-800-df6aad1a6.webp 800w, /assets/images/generated/pattern-calendar/week5-1000-df6aad1a6.webp 1000w, /assets/images/generated/pattern-calendar/week5-1200-df6aad1a6.webp 1200w, /assets/images/generated/pattern-calendar/week5-1600-df6aad1a6.webp 1600w, /assets/images/generated/pattern-calendar/week5-1920-df6aad1a6.webp 1920w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/week5-800-c1c2a3563.png 800w, /assets/images/generated/pattern-calendar/week5-1000-c1c2a3563.png 1000w, /assets/images/generated/pattern-calendar/week5-1200-c1c2a3563.png 1200w, /assets/images/generated/pattern-calendar/week5-1600-c1c2a3563.png 1600w, /assets/images/generated/pattern-calendar/week5-1920-c1c2a3563.png 1920w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/week5-800-c1c2a3563.png" alt="A full work week in Pattern, each day a horizontal row with room for long event names" width="1920" height="1054" /></picture>
+
+<p><strong>And more</strong></p>
+
+<p><em>iOS</em> - the iOS app is designed differently (e.g. vertical, not horizontal, because my phone is taller than it is wide), but generally is quite similar, and likewise snappy. Nonblocking calendars and timeboxes are collapsed by default, but you can just tap to see them. It also has an “ad hoc call” feature where I can easily log a call that is happening off-schedule and make it an event — this is useful for when I’m going through followups at the end of the day and don’t want to forget I spoke to someone.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/ios-800-bc0be7c83.webp 800w, /assets/images/generated/pattern-calendar/ios-1000-bc0be7c83.webp 1000w, /assets/images/generated/pattern-calendar/ios-1200-bc0be7c83.webp 1200w, /assets/images/generated/pattern-calendar/ios-1600-bc0be7c83.webp 1600w, /assets/images/generated/pattern-calendar/ios-1920-bc0be7c83.webp 1920w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/ios-800-d8ee7e0e4.png 800w, /assets/images/generated/pattern-calendar/ios-1000-d8ee7e0e4.png 1000w, /assets/images/generated/pattern-calendar/ios-1200-d8ee7e0e4.png 1200w, /assets/images/generated/pattern-calendar/ios-1600-d8ee7e0e4.png 1600w, /assets/images/generated/pattern-calendar/ios-1920-d8ee7e0e4.png 1920w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/ios-800-d8ee7e0e4.png" alt="Five screens from the Pattern iOS app: the day timeline, the list view, an event with a Join button, suggested times, and the call list" width="1920" height="811" /></picture>
+
+<p><em>iOS live activity</em> - Pattern iOS spawns an always-on lockscreen “live activity” that shows upcoming events, where I am in the timeboxes, and lets me easily log an ad-hoc call. Nice to always have this in my face when I pick up my phone.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/ios-lock-800-3c8309475.webp 800w, /assets/images/generated/pattern-calendar/ios-lock-1000-3c8309475.webp 1000w, /assets/images/generated/pattern-calendar/ios-lock-1200-3c8309475.webp 1200w, /assets/images/generated/pattern-calendar/ios-lock-1600-3c8309475.webp 1600w, /assets/images/generated/pattern-calendar/ios-lock-1920-3c8309475.webp 1920w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/ios-lock-800-71db96a5a.png 800w, /assets/images/generated/pattern-calendar/ios-lock-1000-71db96a5a.png 1000w, /assets/images/generated/pattern-calendar/ios-lock-1200-71db96a5a.png 1200w, /assets/images/generated/pattern-calendar/ios-lock-1600-71db96a5a.png 1600w, /assets/images/generated/pattern-calendar/ios-lock-1920-71db96a5a.png 1920w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/ios-lock-800-71db96a5a.png" alt="The Pattern live activity on the iPhone lock screen and in the Dynamic Island, showing the current timebox, upcoming events and a button to log a call" width="1920" height="811" /></picture>
+
+<p><em>Call lists</em> - inspired by Sam Lessin’s dedicated <a href="https://calllist.app/">Call List</a> app, Pattern has a call list feature built in. You can save people you want to call, along with any notes and their time zone, and easily see that list and what time it is for all the people. You can also share a “call me” link where people input their phone number and time zone and they get added to your list to call later.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/calls-800-d5ac16895.webp 800w, /assets/images/generated/pattern-calendar/calls-1000-d5ac16895.webp 1000w, /assets/images/generated/pattern-calendar/calls-1200-d5ac16895.webp 1200w, /assets/images/generated/pattern-calendar/calls-1600-d5ac16895.webp 1600w, /assets/images/generated/pattern-calendar/calls-1920-d5ac16895.webp 1920w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/calls-800-3c913d2b0.png 800w, /assets/images/generated/pattern-calendar/calls-1000-3c913d2b0.png 1000w, /assets/images/generated/pattern-calendar/calls-1200-3c913d2b0.png 1200w, /assets/images/generated/pattern-calendar/calls-1600-3c913d2b0.png 1600w, /assets/images/generated/pattern-calendar/calls-1920-3c913d2b0.png 1920w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/calls-800-3c913d2b0.png" alt="The call list: people to call, with notes and each person's current local time" width="1920" height="1036" /></picture>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/pattern-calendar/call-request-800-c08316b37.webp 800w, /assets/images/generated/pattern-calendar/call-request-1000-c08316b37.webp 1000w, /assets/images/generated/pattern-calendar/call-request-1200-c08316b37.webp 1200w, /assets/images/generated/pattern-calendar/call-request-1600-c08316b37.webp 1600w, /assets/images/generated/pattern-calendar/call-request-1920-c08316b37.webp 1920w" type="image/webp" /><source srcset="/assets/images/generated/pattern-calendar/call-request-800-842ea3f11.png 800w, /assets/images/generated/pattern-calendar/call-request-1000-842ea3f11.png 1000w, /assets/images/generated/pattern-calendar/call-request-1200-842ea3f11.png 1200w, /assets/images/generated/pattern-calendar/call-request-1600-842ea3f11.png 1600w, /assets/images/generated/pattern-calendar/call-request-1920-842ea3f11.png 1920w" type="image/png" /><img src="/assets/images/generated/pattern-calendar/call-request-800-842ea3f11.png" alt="The public call me page, where someone enters their phone number and time zone to be added to the call list" width="1920" height="1036" /></picture>
+
+<hr />
+
+<p>Net of everything, Pattern is yet again some delightfully personal software: my dream calendar (and getting better every day). Is it right for anyone else? No idea, and it’s great fun to build without worrying about that.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/modelwatch">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/modelwatch">modelwatch: Dependabot for LLM model strings</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I built a new calendar app on top of Google Calendar, with timeboxes, holds that clear themselves, buffers, private notes, time zone tools, and Google Meet links that join from the right account.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-10-18-pattern-calendar.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-10-18-pattern-calendar.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">modelwatch: Dependabot for LLM model strings</title><link href="https://andybromberg.com/modelwatch" rel="alternate" type="text/html" title="modelwatch: Dependabot for LLM model strings" /><published>2026-10-12T13:00:00+00:00</published><updated>2026-10-12T13:00:00+00:00</updated><id>https://andybromberg.com/modelwatch</id><content type="html" xml:base="https://andybromberg.com/modelwatch"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-d3e99ee54.webp 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-d3e99ee54.webp 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-d3e99ee54.webp 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-d3e99ee54.webp 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-d3e99ee54.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-eee6c4eae.png 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-eee6c4eae.png 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-eee6c4eae.png 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-eee6c4eae.png 2000w" type="image/png" /><img src="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png" alt="The modelwatch logo: a clay owl perched on a Git branch" width="2880" height="880" /></picture>
 
 <p>I ship lots of little projects with AI features (recently on the personal side: <a href="/side-eye">Side Eye</a>, <a href="https://interface0.com">interface0</a>, <a href="/congruence/intro">Congruence</a>, <a href="/daegent">daegent</a>, <a href="/copapers">Copapers</a>, plus a variety of work-related products). And because of this, I have a niche problem: each of these projects is littered with references to models — <code class="language-plaintext highlighter-rouge">claude-sonnet-5.5</code>, <code class="language-plaintext highlighter-rouge">gemini-3.8-flash</code>, and so on. And those strings inevitably go out of date. Either a new version of the same model comes out, or there ends up being a better model for the use case (title generation, or decision model use, or whatever).</p>
 
@@ -61,11 +243,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/pattern-calendar">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/pattern-calendar">Pattern: a new calendar</a>
     
   </div>
 </nav>
@@ -927,107 +1113,4 @@ apply(ops, mode = canEdit ? "direct" : "suggest")
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I recently built Copapers, a collaborative, token-efficient, reliable document editor for humans & agents. There were some tricky implementation details, which this post details.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Developing on iOS is underrated: CloudKit and more</title><link href="https://andybromberg.com/ios-underrated" rel="alternate" type="text/html" title="Developing on iOS is underrated: CloudKit and more" /><published>2026-07-05T13:00:00+00:00</published><updated>2026-07-05T13:00:00+00:00</updated><id>https://andybromberg.com/ios-underrated</id><content type="html" xml:base="https://andybromberg.com/ios-underrated"><![CDATA[<p>I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I’ve recently built four (<a href="/congruence/intro">Congruence</a>, Lightwork’s onsite inspection app, linen&amp;, and CribCam; I’ll post about the latter two soon) and discovered some utilities that make the developer experience delightful.</p>
-
-<p>The first is the combination of native Apple accounts and CloudKit.</p>
-
-<p>The these two allow for serverless app building — all I need to code is the frontend, and I get authentication, cross-device syncing, sharing, and storage for free. Apple handles everything and doesn’t charge a penny.</p>
-
-<p>There are a bunch of upsides here — the biggest being a lack of maintenance burden (the client code just keeps chugging along on user devices) and zero cost. Plus strong privacy and security.</p>
-
-<p>To interact with CloudKit, I use the third-party <a href="https://github.com/pointfreeco/sqlite-data">sqlite-data</a> package. It lets me use sqlite as the local database (which I prefer) and handles the CloudKit sync simply and intuitively. But you can also use SwiftData instead.</p>
-
-<p>I can’t overstate how nice this is. I only worry about writing client code, and users are automatically “signed in” via Apple account access (no auth flows!), their data is synced across all their devices using the same account, sharing is easy to enable, and data is stored off-device at no cost and with no ongoing maintenance.</p>
-
-<p>For a small personal app, this is perfect. Less overhead is the dream — less to build and less to maintain and less to keep track of. And I suspect it’s great even for scaled apps too.</p>
-
-<p>This biases me towards building native apps for iOS and MacOS over web apps for most personal use cases, which is something I wouldn’t have believed a couple years ago. I distribute via TestFlight, updates land automatically, and the experience is smoother throughout.</p>
-
-<hr />
-
-<p>CloudKit &amp; Apple accounts are the big ones, but there are a bunch of other gems in the Apple ecosystem. For the Lightwork inspection app, I use <a href="https://developer.apple.com/augmented-reality/roomplan/">RoomPlan</a>, which is an astonishingly good (and again… free) framework to 3D model a room. But that’s pretty niche.</p>
-
-<p>More broadly applicably, the new <a href="https://developer.apple.com/documentation/speech/speechanalyzer">SpeechAnalyzer</a> and <a href="https://developer.apple.com/documentation/foundationmodels">Foundation Models</a> frameworks are outstanding.</p>
-
-<p>SpeechAnalyzer can do many things, but I use it for fast, on-device speech-to-text. Instead of calling Whisper or another remote model (and paying, needing a server, dealing with API keys, etc.), I just call SpeechAnalyzer on device and it turns the user’s speech into text.</p>
-
-<p>And the Foundation Models are solid, very fast, (mostly) on-device LLMs. They can do structured outputs and tool calls. Of course some use cases require frontier or near-frontier intelligence. But many don’t, and if I can avoid the headache of dealing with the cost, maintenance, authentication, and such of that, I will.</p>
-
-<hr />
-
-<p>When you combine all of these — Apple account automatic auth, CloudKit for data storage and sync, SpeechAnalyzer and Foundation Models for intelligence… you can build <em>a lot</em> without ever creating server code or dealing with its associated maintenance burden.</p>
-
-<p>And, lest I repeat myself… all of this is free and easy to use.</p>
-
-<p>I suspect I will continue reaching for Xcode more often as a result.</p>
-
-<hr />
-
-<p>A final tip: Apple’s developer docs are inaccessible to LLMs. <a href="https://sosumi.ai/">Sosumi.ai</a> is a Markdown mirror of the Apple docs that you can point your agents at. The paths are all the same — just replace developer.apple.com with sosumi.ai and it’ll work.</p>
-
-<p>But beyond Apple’s own docs, if you’re using any third-party packages (like sqlite-data), <a href="https://swiftpackageindex.com/">Swift Package Index</a> is the equivalent documentation site. They recently were acquired by Apple. And just like Apple’s own docs, they are inaccessible to LLMs.</p>
-
-<p>So I forked sosumi.ai, added support for SPI, and <a href="https://github.com/abromberg/sosumi.ai">published it here</a>. If you want your agents to have access to docs for all of Apple’s frameworks <em>and</em> third-party packages:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/abromberg/sosumi.ai
-cd sosumi.ai
-npm install
-npm run dev
-</code></pre></div></div>
-
-<p>The easiest way to hook it up is as an MCP server — it exposes tools for searching Apple docs and fetching Apple, HIG, and Swift Package Index documentation. In Claude Code:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>claude mcp add --transport http sosumi http://localhost:8787/mcp
-</code></pre></div></div>
-
-<p>(For other MCP-capable agents, just point them at http://localhost:8787/mcp)</p>
-
-<p>Alternatively, you can tell your clanker:</p>
-
-<blockquote>
-  <p>Anytime you’re looking up Apple or third-party Swift package docs, find their documentation URL (e.g. https://developer.apple.com/documentation/foundationmodels or https://swiftpackageindex.com/pointfreeco/sqlite-data/main/documentation/sqlitedata) and replace https://developer.apple.com or https://swiftpackageindex.com with http://localhost:8787</p>
-</blockquote>
-
-<p>Happy building.</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/copapers">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/copapers">Copapers: multiplayer docs for humans &amp; agents</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/copapers-tricky-bits">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/copapers-tricky-bits">Copapers: the tricky bits</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I had long stayed away from developing iOS apps, probably thanks to some long-forgotten Objective-C-related trauma. But I've recently built four and discovered some utilities that make the developer experience delightful.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-05-ios-underrated.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I recently built Copapers, a collaborative, token-efficient, reliable document editor for humans & agents. There were some tricky implementation details, which this post details.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
