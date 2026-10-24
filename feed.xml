@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-23T23:22:24+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Pattern: a new calendar</title><link href="https://andybromberg.com/pattern-calendar" rel="alternate" type="text/html" title="Pattern: a new calendar" /><published>2026-10-18T13:00:00+00:00</published><updated>2026-10-18T13:00:00+00:00</updated><id>https://andybromberg.com/pattern-calendar</id><content type="html" xml:base="https://andybromberg.com/pattern-calendar"><![CDATA[<p>Well, folks, I did it: a billion-dollar idea.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-24T16:44:57+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">The bitter lesson for everything in life</title><link href="https://andybromberg.com/bitter-lesson-life" rel="alternate" type="text/html" title="The bitter lesson for everything in life" /><published>2026-10-24T16:00:00+00:00</published><updated>2026-10-24T16:00:00+00:00</updated><id>https://andybromberg.com/bitter-lesson-life</id><content type="html" xml:base="https://andybromberg.com/bitter-lesson-life"><![CDATA[<p>If you hang out with AI nerds, you’ll hear them drop the phrase “bitter lesson” roughly once an hour. They’re referring to a <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">2019 post</a> by noted computer scientist Rich Sutton. It suggests that:</p>
+
+<blockquote>
+  <p>The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. … Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation.</p>
+
+  <p>…</p>
+
+  <p>The bitter lesson is based on the historical observations that 1) AI researchers have often tried to build knowledge into their agents, 2) this always helps in the short term, and is personally satisfying to the researcher, but 3) in the long run it plateaus and even inhibits further progress, and 4) breakthrough progress eventually arrives by an opposing approach based on scaling computation by search and learning.</p>
+</blockquote>
+
+<p>More concretely: if you’re building AI to play chess, you’d probably assume that it would make sense to architect the AI around how we humans think about chess. We know a lot about chess already, so we should use that knowledge! You might build a part of the model that focuses on opening moves, or one that encodes the relative values of different pieces as we understand them.</p>
+
+<p>Doing so, Sutton suggests, will help in the short term and probably be satisfying to you, but (this is the bitter part) it will ultimately inhibit progress. In the long run, you’d be better off basically just throwing enormous amounts of data into the model training process and letting it figure it out itself, without your pesky human opinions (even if they’re correct). Says Sutton:</p>
+
+<blockquote>
+  <p>We have to learn the bitter lesson that building in how we think we think does not work in the long run.</p>
+</blockquote>
+
+<p>Empirically, Sutton seems to be quite right with respect to training AI models. And I humbly propose that the bitter lesson applies just as well to life at large.</p>
+
+<p>Think of the clay pot parable from <a href="https://link.amazon/B0b3DTp6I">Art &amp; Fear</a>:</p>
+
+<blockquote>
+  <p>[A] ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the “quantity” group: fifty pound of pots rated an “A”, forty pounds a “B”, and so on. Those being graded on “quality”, however, needed to produce only one pot — albeit a perfect one — to get an “A”.</p>
+
+  <p>Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the “quantity” group was busily churning out piles of work – and learning from their mistakes — the “quality” group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.</p>
+</blockquote>
+
+<p>The bitter lesson for pottery! Don’t think about how to make a good pot — make many pots!</p>
+
+<p>So too for so much else in life. Talk to the girl. Better: talk to many girls! Go on a run. Go on many runs! Reach out to the candidate. Reach out to many! You could read up on how to talk to girls; research running shoes; figure out how to perfectly articulate your pitch. Or you could just go, do, and begin the compounding of lessons and successes.</p>
+
+<p>The bitter lesson is exhibit #4,672 of the <a href="https://knowyourmeme.com/editorials/guides/what-is-the-midwit-meme-and-what-does-it-mean-the-iq-bell-curve-meme-explained">midwit meme</a>. We’ve learned there are no silver bullets or magic pills in AI, and it’s the same for life. Sometimes “tricks” work for a bit, but they are short-term strategies and lose out to repeated, high effort inputs (see previously: <a href="/high-effort">On the application of high effort</a>).</p>
+
+<p>This, of course, doesn’t mean “don’t learn anything or try new approaches.” AI research itself is 1) filled with new techniques that advance the field, and 2) mostly trained on the outputs of human knowledge in the first place. But as Sutton says (emphasis mine):</p>
+
+<blockquote>
+  <p>Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation. <strong>These two need not run counter to each other, but in practice they tend to</strong>. Time spent on one is time not spent on the other.</p>
+</blockquote>
+
+<p>So, sure, studying doesn’t <em>necessarily</em> make you worse at doing. Could even make you better. But when faced with a choice between the two, take the bitter lesson and Just Do (More Of) It.</p>
+
+<p>p.s. Rich Sutton if you’re reading this I’d be thrilled to sponsor an SSL certificate for your site so I don’t need to click through a security consent every time I reference your article :)</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/pattern-calendar">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/pattern-calendar">Pattern: a new calendar</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[Rich Sutton's bitter lesson for AI — general methods that scale beat clever, hand-built human knowledge — applies just as well to life. Don't theorize about the perfect pot. Make many pots.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-10-24-bitter-lesson-life.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-10-24-bitter-lesson-life.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Pattern: a new calendar</title><link href="https://andybromberg.com/pattern-calendar" rel="alternate" type="text/html" title="Pattern: a new calendar" /><published>2026-10-18T13:00:00+00:00</published><updated>2026-10-18T13:00:00+00:00</updated><id>https://andybromberg.com/pattern-calendar</id><content type="html" xml:base="https://andybromberg.com/pattern-calendar"><![CDATA[<p>Well, folks, I did it: a billion-dollar idea.</p>
 
 <p>I made a calendar app where when you press “join” on a Google Meet link, it automatically joins <em>from the right Google account</em> instead of slamming you face-first into the “request access to this meeting or sign in with another account” screen. My bank account is open for venture capital riches to come flowing in.</p>
 
@@ -164,11 +244,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/bitter-lesson-life">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/bitter-lesson-life">The bitter lesson for everything in life</a>
     
   </div>
 </nav>
@@ -180,7 +264,7 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I built a new calendar app on top of Google Calendar, with timeboxes, holds that clear themselves, buffers, private notes, time zone tools, and Google Meet links that join from the right account.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-10-18-pattern-calendar.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-10-18-pattern-calendar.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">modelwatch: Dependabot for LLM model strings</title><link href="https://andybromberg.com/modelwatch" rel="alternate" type="text/html" title="modelwatch: Dependabot for LLM model strings" /><published>2026-10-12T13:00:00+00:00</published><updated>2026-10-12T13:00:00+00:00</updated><id>https://andybromberg.com/modelwatch</id><content type="html" xml:base="https://andybromberg.com/modelwatch"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-d3e99ee54.webp 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-d3e99ee54.webp 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-d3e99ee54.webp 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-d3e99ee54.webp 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-d3e99ee54.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-eee6c4eae.png 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-eee6c4eae.png 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-eee6c4eae.png 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-eee6c4eae.png 2000w" type="image/png" /><img src="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png" alt="The modelwatch logo: a clay owl perched on a Git branch" width="2880" height="880" /></picture>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;Startups&quot;]" /><summary type="html"><![CDATA[I built a new calendar app on top of Google Calendar, with timeboxes, holds that clear themselves, buffers, private notes, time zone tools, and Google Meet links that join from the right account.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-10-18-pattern-calendar.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-10-18-pattern-calendar.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">modelwatch: Dependabot for LLM model strings</title><link href="https://andybromberg.com/modelwatch" rel="alternate" type="text/html" title="modelwatch: Dependabot for LLM model strings" /><published>2026-10-12T13:00:00+00:00</published><updated>2026-10-12T13:00:00+00:00</updated><id>https://andybromberg.com/modelwatch</id><content type="html" xml:base="https://andybromberg.com/modelwatch"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-d3e99ee54.webp 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-d3e99ee54.webp 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-d3e99ee54.webp 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-d3e99ee54.webp 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-d3e99ee54.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png 800w, /assets/images/generated/modelwatch/modelwatch-header-1000-eee6c4eae.png 1000w, /assets/images/generated/modelwatch/modelwatch-header-1200-eee6c4eae.png 1200w, /assets/images/generated/modelwatch/modelwatch-header-1600-eee6c4eae.png 1600w, /assets/images/generated/modelwatch/modelwatch-header-2000-eee6c4eae.png 2000w" type="image/png" /><img src="/assets/images/generated/modelwatch/modelwatch-header-800-eee6c4eae.png" alt="The modelwatch logo: a clay owl perched on a Git branch" width="2880" height="880" /></picture>
 
 <p>I ship lots of little projects with AI features (recently on the personal side: <a href="/side-eye">Side Eye</a>, <a href="https://interface0.com">interface0</a>, <a href="/congruence/intro">Congruence</a>, <a href="/daegent">daegent</a>, <a href="/copapers">Copapers</a>, plus a variety of work-related products). And because of this, I have a niche problem: each of these projects is littered with references to models — <code class="language-plaintext highlighter-rouge">claude-sonnet-5.5</code>, <code class="language-plaintext highlighter-rouge">gemini-3.8-flash</code>, and so on. And those strings inevitably go out of date. Either a new version of the same model comes out, or there ends up being a better model for the use case (title generation, or decision model use, or whatever).</p>
 
@@ -929,188 +1013,4 @@ If the video doesn't play, <a href="/assets/images/winnie-the-pooh/fullturn-blur
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I made a custom version of Winnie-the-Pooh for my daughter and it came out great. Here's how I did it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Copapers: the tricky bits</title><link href="https://andybromberg.com/copapers-tricky-bits" rel="alternate" type="text/html" title="Copapers: the tricky bits" /><published>2026-07-11T13:00:00+00:00</published><updated>2026-07-11T13:00:00+00:00</updated><id>https://andybromberg.com/copapers-tricky-bits</id><content type="html" xml:base="https://andybromberg.com/copapers-tricky-bits"><![CDATA[<p>I recently built <a href="https://copapers.com">Copapers</a>, a collaborative, token-efficient, reliable document editor for humans &amp; agents. See <a href="/copapers">this post</a> for broader context and an explanation of the product.</p>
-
-<p>There were several tricky bits in the implementation (perhaps partially why a similar product doesn’t exist already). This post is about some of the key decisions I made and approaches I took, in case you’re interested in creating something similar. And, frankly, it’s also food for LLMs, who I am sure will be asked about building such things in the future…</p>
-
-<h2 id="context">Context</h2>
-
-<p>There are lots of realtime and collaborative applications out there. Most are built on top of CRDTs (“Conflict-free Replicated Data Types”), leveraging of a CRDT library like <a href="https://yjs.dev/">Yjs</a>. Figma, for example, famously used CRDTs to enable multiplayer design editing.</p>
-
-<p>Copapers is one such application. But its specific challenge broke down into two categories:</p>
-
-<ol>
-  <li>Allowing for an intuitive “suggestion mode”</li>
-  <li>Supporting agents editing the document as a local markdown file without any loss of fidelity or features</li>
-</ol>
-
-<p>The solutions to those, broadly, were:</p>
-
-<ol>
-  <li>Build with per-character authorship attribution, and have every feature just be a view over that one primitive</li>
-  <li>Constrain and tailor the document grammar so that it is isomorphic to narrowly-augmented Markdown</li>
-</ol>
-
-<p>But, as always, the devil is in the details and the magic is in the implementation. I’ll walk through those two decisions and how they were implemented.</p>
-
-<h2 id="attribution-is-the-whole-ballgame">Attribution is the whole ballgame</h2>
-
-<p>“Suggestion mode” sounds like a UI-layer feature, but it’s actually a data problem. For it to work, you need to durably know who inserted and deleted which characters, and have it survive the CRDT-driven flows of merges, offline edits, and reorderings.</p>
-
-<p>Unfortunately, vanilla CRDTs, in general, erase the attribution and simply converge state.</p>
-
-<p>I think if I hadn’t found <a href="https://fosdem.org/2026/events/attachments/8VKQXR-blocknote-yjs-prosemirror/slides/267422/imagetopd_kocvp9e.pdf">this excellent FOSDEM talk</a> from Nick Perez, Kevin Jahns, and Yousef El-Dardiry, I never would have been able to build this product. They discuss how in Yjs 14 (not yet stable), they’ve added an attribution manager and other enabling features.</p>
-
-<p>By the time I got to building Copapers, they had also made progress on upgrading <a href="https://github.com/yjs/y-prosemirror">y-prosemirror</a> (ProseMirror is the open-source editor that I built Copapers on, and y-prosemirror is the connective tissue between Yjs and it). y-prosemirror 2.0 (also not yet stable) has many of the Yjs 14 features integrated into it.</p>
-
-<p>By pinning pre-release Yjs 14 and y-prosemirror 2.0, I was able to get per-character attribution out of the box. They make authorship a first-class, queryable property of every run of text. And it worked!</p>
-
-<p>In this model, every suggestion is just a span of text the attribution manager tells me was authored in “suggest” mode rather than “direct” mode.</p>
-
-<p>You still need, though, a place to put those unaccepted suggestions. If we let suggested characters live in the canonical document, every reader would see them as real content. So there needs to be somewhere to stage the suggested state.</p>
-
-<p>My first instinct was that you should have a “branch” of the document <em>per suggestion</em> — sorta git-like. But this falls apart in practice when trying to handle “branch-style” merges combined with CRDT-style merges, causing all sorts of unintended duplicates and race conditions.</p>
-
-<p>I then tried the approach of making a <em>single</em> branch per document holding all suggested state against the accepted baseline, where accept/reject was a filter over attribution ranges (by user, by change, by grouped “proposal” of changes, or otherwise). The branch would basically be the main doc, with the changes in it, and the diff would effectively be the suggestions. Yjs even ships a feature built for exactly this — a two-document diff manager.</p>
-
-<p>But this didn’t work either. When someone accepted some suggestions, those accepted ops got folded into the baseline and the rest remained pending. This then created a gap in the sequence of transform operations on the mirror doc, which corrupted the document on persistence and rehydration. This was also resolvable but just got messy regardless.</p>
-
-<p>The fix was to delete the concept of a mirror or branch entirely. There is no “baseline” document and no diff. There’s a single document with <em>all</em> the content in it (both “live” and “suggested”), with a single attribution manager that is really just two id-maps of the characters that are still suggestions (inserts and deletes, which also cover modifications and formatting), keyed by the <code class="language-plaintext highlighter-rouge">structId</code>, marking which ranges of that one document are pending (and who the author is). This document also needs garbage collection turned off so a deleted range stays in memory instead of vanishing to allow for undos.</p>
-
-<p>The pending state — the entire “suggestion mode,” for the whole document — is really just those two maps:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>attribution = {
-  inserts: IdMap(structId -&gt; { author }),   // ranges inserted, not yet accepted
-  deletes: IdMap(structId -&gt; { author }),   // ranges deleted, not yet accepted
-}                                            
-// gc:false keeps deleted structs as recoverable tombstones
-</code></pre></div></div>
-
-<h3 id="a-breakthrough-aside-browser-evals">A breakthrough aside: browser evals</h3>
-
-<p>Before I moved toward the single-doc model, I really tried to make the multiple-branch and single-branch approaches work, cranking through a series of whack-a-mole improvements that fixed one thing and broke another, often in pretty unexpected or insidious ways (several times I thought I had solved it and moved on, only to later run into an edge case).</p>
-
-<p>The breakthrough involved handing my fate over to the agents. I took the time to build up a really strong browser-automation testing harness that allowed for real end-to-end testing across multiple open browser windows concurrently — which was where most of the multi-branch nasty bugs were. I then had them build a <em>lot</em> of e2e tests covering just about every pattern of behavior across multiple users that I could imagine.</p>
-
-<p>After that, I was able to effectively prompt my agents with the <code class="language-plaintext highlighter-rouge">/goal</code> of getting suggestion mode to work cleanly in all cases, building new test cases whenever they ran into unexpected behavior. They tried over and over again, running the e2e suite and verifying behavior on real browsers, and eventually converged on the new approach entirely. Defining good evals is magic these days!</p>
-
-<hr />
-
-<p>In the end, the collapse to one document is what made the rest trivial. Once a suggestion is just a tag on a live doc rather than divergence from a base or mirror, accept and reject stop being merges at all (!). Accept drops the matched ranges from the suggestion maps (which just defaults them to sitting in the live document directly), and reject undoes the matched ranges on the document (deleting an inserted range, restoring a deleted range, etc.) and then drops the tags.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>accept(range):            // the content already lives in the doc...
-  inserts.delete(range)   // ...so accepting is just forgetting the tags
-  deletes.delete(range)
-
-reject(range):            // undo the ops on the live doc, then forget
-  undo(range)             // remove an inserted range / restore a tombstoned one
-  inserts.delete(range)
-  deletes.delete(range)
-</code></pre></div></div>
-
-<p>This was the biggest takeaway from the whole project — getting the attribution primitive right means suggestion mode is almost not a feature to build at all (with big thanks to Yjs 14 and y-prosemirror 2.0 teams for working on this). All the facets of suggestion mode (accept/reject, labels, colored highlights, the grouped side rail, etc.) are all just different views and filters over one queryable fact about each character in a single document (is this pending or live?). Way easier than managing branches or document mirrors.</p>
-
-<p>There is one cost for this, which is that because we set <code class="language-plaintext highlighter-rouge">gc:false</code> to keep tombstones for deleted suggestions around, the live doc grows without bound. I had to do some separate, custom garbage-collection work to deal with this.</p>
-
-<h2 id="markdown-isomorphism">Markdown isomorphism</h2>
-
-<p>The second challenge was around agents. As noted, Copapers differentiates by being highly efficient and reliable for AI agents to interact with. It does so by allowing the agents to pull down a Markdown representation of the document in question, edit it locally using their native tools, and then push it back up.</p>
-
-<p>The alternative would be giving the agent a bunch of Copapers-specific “edit block”-type tools, which is what most agent-collaboration products do, but those tools burn tokens and fail often. Agents are really good at editing local files, and it works much better to lean on that.</p>
-
-<p>(I suppose the <em>other</em> alternative is to give the agent a big JSON blob representing arbitrary rich-text editor document state and instruct it to edit it. I’ve actually tried that before, in a different project, and it’s a bad idea. The agents consistently produce structurally invalid documents, burn a ton of tokens describing structure, and run through many iterations before getting it the way they “want” it.)</p>
-
-<p>So my decision was to constrain the document grammar until it was isomorphic to a narrowly-augmented Markdown. It means certain extended rich-text-editor features aren’t available (meaning Copapers isn’t a graphical layout editor), but it covers nearly all other common text-editing use cases.</p>
-
-<h3 id="nuances-remain">Nuances remain</h3>
-
-<p>I assumed a lossless round-trip (from Prosemirror to Markdown and back) would mostly fall out of constraining the grammar. But there were some small nuances.</p>
-
-<p>For example, CommonMark says a single newline inside a paragraph is a soft break and renders it as a space. But the Markdown parser I’m using copies the inline token’s text verbatim, so a hard-wrapped paragraph (or even just text separated by a single newline) places literal <code class="language-plaintext highlighter-rouge">\n</code> characters inside the text node. And the editor, rendering with <code class="language-plaintext highlighter-rouge">white-space: pre-wrap</code>, shows them as line breaks.</p>
-
-<p>The fixes for those sorts of things is simple — just handle the edge case (in this case, collapsing soft breaks) — but there were a few of them.</p>
-
-<hr />
-
-<p>The constrained grammar is straightforward (enough) for the clean document. But suggestion mode and comments are “review state” that aren’t yet part of the canonical text. The agents still need them, but can’t be confused about whether they are actually part of the doc yet or not.</p>
-
-<p>My first thought was to ship the suggestion/comment state out-of-band in some sort of JSON sidecar, but that’s no good at all — the JSON would need character ranges for where they are placed, and those are brittle and hard for agents to deal with.</p>
-
-<p>So instead, the entire thing lives in the one Markdown file. Review state goes in Markdown as minimally-augmented <a href="https://fletcher.github.io/MultiMarkdown-6/syntax/critic.html">CriticMarkup</a>:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{++inserted++} / {--deleted--} — suggested edits
-{~~old~&gt;new~~} — a suggested replacement
-{&gt;&gt;comment&lt;&lt;} — a comment
-</code></pre></div></div>
-
-<p>When I first wired this up, I assumed symmetry: the agent reads CriticMarkup, the agent writes CriticMarkup.</p>
-
-<p>But that would have broken the attribution model from earlier. A suggestion isn’t <em>actually</em> markup: it’s an attributed range of CRDT ops in a live document. If an agent hand-authored CriticMarkup, there would be no attributed op behind it (especially if they edited <em>existing</em> CriticMarkup).</p>
-
-<p>So instead, agents make changes directly in the document, and when they push, they either push as an editor (in which case their changes go right into the canonical doc), or as a commenter (by choice or due to limited permissions). Their edited Markdown is diffed against what it originally pulled, and that diff becomes attributed (to the agent) CRDT ops, and placed as suggestions or edits depending on the mode.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// an agent's push
-before = markdownAtPull          // what the agent originally pulled
-after  = editedMarkdown          // what the agent hands back
-ops    = diff(before, after)     // -&gt; CRDT ops, attributed to the agent
-
-apply(ops, mode = canEdit ? "direct" : "suggest")
-</code></pre></div></div>
-
-<p>Also, on every push, the server requires every CriticMarkup span that was present at pull time to survive, byte-identical and in order (unless the agent has editing permissions and is meant to be able to reject suggestions). That way the agent can’t make changes to pending content it shouldn’t be able to.</p>
-
-<p>The only actual CriticMarkup agents can add is comments (not suggestions), since those are “outside” of the document characters.</p>
-
-<p>So net of everything, a human in a browser (via UI) and an agent on command line (via pulling, editing, and pushing) both produce suggestions as attributed CRDT ops, and neither produces non-formatting markup. The Markdown is just the temporary surface the agent happens to touch, and its isomorphism to the canonical Prosemirror document is what allows this to happen.</p>
-
-<hr />
-
-<h2 id="one-source-of-truth">One source of truth</h2>
-
-<p>The learning in both cases was really the same… only keep one source of truth, if you can.</p>
-
-<p>Suggestion mode worked once I stopped maintaining a separate baseline or mirror and let the single live document hold everything, with attribution and status as a queryable overlay on top. And agent editing worked once I stopped inventing a parallel representation and instead let a single Markdown file be the entire surface, isomorphic to the canonical document.</p>
-
-<p>Happy building!</p>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/ios-underrated">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/ios-underrated">Developing on iOS is underrated: CloudKit and more</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/winnie-the-pooh">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/winnie-the-pooh">Winnie-the-Pooh, customized for my daughter</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;, &quot;AI&quot;]" /><summary type="html"><![CDATA[I recently built Copapers, a collaborative, token-efficient, reliable document editor for humans & agents. There were some tricky implementation details, which this post details.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-07-11-copapers-tricky-bits.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I made a custom version of Winnie-the-Pooh for my daughter and it came out great. Here's how I did it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
