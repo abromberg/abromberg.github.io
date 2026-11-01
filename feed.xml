@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-10-24T16:44:57+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">The bitter lesson for everything in life</title><link href="https://andybromberg.com/bitter-lesson-life" rel="alternate" type="text/html" title="The bitter lesson for everything in life" /><published>2026-10-24T16:00:00+00:00</published><updated>2026-10-24T16:00:00+00:00</updated><id>https://andybromberg.com/bitter-lesson-life</id><content type="html" xml:base="https://andybromberg.com/bitter-lesson-life"><![CDATA[<p>If you hang out with AI nerds, you’ll hear them drop the phrase “bitter lesson” roughly once an hour. They’re referring to a <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">2019 post</a> by noted computer scientist Rich Sutton. It suggests that:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-11-01T18:11:18+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">The bitter lesson, for everything in life</title><link href="https://andybromberg.com/bitter-lesson-life" rel="alternate" type="text/html" title="The bitter lesson, for everything in life" /><published>2026-10-24T16:00:00+00:00</published><updated>2026-10-24T16:00:00+00:00</updated><id>https://andybromberg.com/bitter-lesson-life</id><content type="html" xml:base="https://andybromberg.com/bitter-lesson-life"><![CDATA[<p>If you hang out with AI nerds, you’ll hear them drop the phrase “bitter lesson” roughly once an hour. They’re referring to a <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">2019 post</a> by noted computer scientist Rich Sutton. It suggests that:</p>
 
 <blockquote>
   <p>The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. … Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation.</p>
@@ -32,7 +32,7 @@
 
 <p>The bitter lesson is exhibit #4,672 of the <a href="https://knowyourmeme.com/editorials/guides/what-is-the-midwit-meme-and-what-does-it-mean-the-iq-bell-curve-meme-explained">midwit meme</a>. We’ve learned there are no silver bullets or magic pills in AI, and it’s the same for life. Sometimes “tricks” work for a bit, but they are short-term strategies and lose out to repeated, high effort inputs (see previously: <a href="/high-effort">On the application of high effort</a>).</p>
 
-<p>This, of course, doesn’t mean “don’t learn anything or try new approaches.” AI research itself is 1) filled with new techniques that advance the field, and 2) mostly trained on the outputs of human knowledge in the first place. But as Sutton says (emphasis mine):</p>
+<p>This, of course, doesn’t mean “don’t learn anything or try new approaches.” AI research itself is 1) filled with new techniques that advance the field, and 2) mostly trained on the outputs of human knowledge in the first place. But as Sutton’s earlier quote continues (emphasis mine):</p>
 
 <blockquote>
   <p>Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation. <strong>These two need not run counter to each other, but in practice they tend to</strong>. Time spent on one is time not spent on the other.</p>
@@ -252,7 +252,7 @@
         
     </div>
     
-      <a href="/bitter-lesson-life">The bitter lesson for everything in life</a>
+      <a href="/bitter-lesson-life">The bitter lesson, for everything in life</a>
     
   </div>
 </nav>
