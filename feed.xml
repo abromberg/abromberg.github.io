@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-11-09T19:07:40+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">The bitter lesson, for everything in life</title><link href="https://andybromberg.com/bitter-lesson-life" rel="alternate" type="text/html" title="The bitter lesson, for everything in life" /><published>2026-10-24T16:00:00+00:00</published><updated>2026-10-24T16:00:00+00:00</updated><id>https://andybromberg.com/bitter-lesson-life</id><content type="html" xml:base="https://andybromberg.com/bitter-lesson-life"><![CDATA[<p>If you hang out with AI nerds, you’ll hear them drop the phrase “bitter lesson” roughly once an hour. They’re referring to a <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">2019 post</a> by noted computer scientist Rich Sutton. It suggests that:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://andybromberg.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://andybromberg.com/" rel="alternate" type="text/html" /><updated>2026-11-13T19:28:56+00:00</updated><id>https://andybromberg.com/feed.xml</id><title type="html">Andy Bromberg</title><subtitle>Ways of Looking.</subtitle><author><name>Andy Bromberg</name></author><entry><title type="html">Personas: calling and texting as someone else</title><link href="https://andybromberg.com/personas-phones" rel="alternate" type="text/html" title="Personas: calling and texting as someone else" /><published>2026-11-13T14:00:00+00:00</published><updated>2026-11-13T14:00:00+00:00</updated><id>https://andybromberg.com/personas-phones</id><content type="html" xml:base="https://andybromberg.com/personas-phones"><![CDATA[<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/personas-header-800-ef2fe7a43.webp 800w, /assets/images/generated/personas-phones/personas-header-1000-ef2fe7a43.webp 1000w, /assets/images/generated/personas-phones/personas-header-1200-ef2fe7a43.webp 1200w, /assets/images/generated/personas-phones/personas-header-1600-ef2fe7a43.webp 1600w, /assets/images/generated/personas-phones/personas-header-2000-ef2fe7a43.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/personas-header-800-a1a63a6e4.png 800w, /assets/images/generated/personas-phones/personas-header-1000-a1a63a6e4.png 1000w, /assets/images/generated/personas-phones/personas-header-1200-a1a63a6e4.png 1200w, /assets/images/generated/personas-phones/personas-header-1600-a1a63a6e4.png 1600w, /assets/images/generated/personas-phones/personas-header-2000-a1a63a6e4.png 2000w" type="image/png" /><img src="/assets/images/generated/personas-phones/personas-header-800-a1a63a6e4.png" alt="The Personas logo, an iridescent seal set into navy, next to the name Personas, with square persona tiles in different colours fading out on either side" width="2880" height="880" /></picture>
+
+<p>I recently built <a href="https://yourpersonas.com/">Personas</a>, an app that allows you to create identities, each with their own email, phone number, credit card, mailing address, and backstory. They are great for when you want to preserve your privacy — think about organizing a purchase on Craigslist, signing up for random services, or even just trying to avoid data brokers building a huge profile on everything about you.</p>
+
+<p>There are other excellent apps in the space — I’ve been a longtime user of <a href="http://cloaked.com/">Cloaked</a>, <a href="https://mysudo.com/">MySudo</a> is another I hear good things about, and as a point solution, <a href="https://www.privacy.com/">Privacy.com</a> offers cards. But they are built as broad-adoption consumer services, and as such, they need to make some sacrifices (e.g. they typically use VOIP phone numbers which are often blocked; and no mailing addresses; etc.) to be able to offer the service at a low enough price point.</p>
+
+<p>Aside from the sacrifices, my other gripe with them is the UX, which is not <em>great</em>. It’s a little clunky to use them, and I felt like it would be possible to make a premium version of this service with outstanding UX and sophisticated techniques for how it all works from privacy, identity durability, and ease-of-use perspectives.</p>
+
+<p>I’ll probably write more later about more of how Personas works (including the backstory &amp; security questions generation, the browser extension, the mailing addresses, cards, emails and so on), but I figured I would start with the UX of calls &amp; texts from a persona because it’s (I think) the coolest part.</p>
+
+<hr />
+
+<p>Say I make a persona, Mark Sanchez. Mark has a phone number — let’s say 628.555.0191 — and I can hand that number out to anyone. The magic is that when they call or text that number, I (Andy) get a call or text to my phone’s native phone or messaging apps from a <em>different</em> number specific to the combination of that sender and the Mark identity. It looks like this:</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/messages-800-741246529.webp 800w, /assets/images/generated/personas-phones/messages-1000-741246529.webp 1000w, /assets/images/generated/personas-phones/messages-1200-741246529.webp 1200w, /assets/images/generated/personas-phones/messages-1600-741246529.webp 1600w, /assets/images/generated/personas-phones/messages-2000-741246529.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/messages-800-41413e080.png 800w, /assets/images/generated/personas-phones/messages-1000-41413e080.png 1000w, /assets/images/generated/personas-phones/messages-1200-41413e080.png 1200w, /assets/images/generated/personas-phones/messages-1600-41413e080.png 1600w, /assets/images/generated/personas-phones/messages-2000-41413e080.png 2000w" type="image/png" /><img src="/assets/images/generated/personas-phones/messages-800-41413e080.png" alt="Three screenshots of the iPhone Messages app. The conversation list, where Plumber · Mark Sanchez, (415) 555-0129 · Mark Sanchez and (510) 555-0126 · Erica Cox sit between ordinary threads from Mom and Sam, each persona thread with a square woven avatar. The Plumber · Mark Sanchez thread, where a plumber offers to come Thursday and my reply is a green bubble marked Delivered. And the (415) 555-0129 · Mark Sanchez thread, where someone asks if a road bike is still available." width="2000" height="1372" /></picture>
+
+<p>So what you’re seeing there, with <strong>Plumber · Mark Sanchez</strong> or <strong>(415) 555-0129 · Mark Sanchez</strong>, is the plumber or the phone number texting Mark at 628.555.0191, and then a totally separate number sending <em>me</em> a text — and the Personas app on my phone automatically creating a contact for that separate number that identifies it as belonging to Mark’s thread with the plumber.</p>
+
+<p>I can reply there — in my native Messages app! — and then the plumber gets a text back from 628.555.0191. My text goes to the relay number, which gets it to the Personas system, which then triggers an outbound text from Mark’s number to the plumber.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/relay-idea-800-3cf6d3045.webp 800w, /assets/images/generated/personas-phones/relay-idea-1000-3cf6d3045.webp 1000w, /assets/images/generated/personas-phones/relay-idea-1200-3cf6d3045.webp 1200w, /assets/images/generated/personas-phones/relay-idea-1600-3cf6d3045.webp 1600w, /assets/images/generated/personas-phones/relay-idea-2000-3cf6d3045.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/relay-idea-800-6e8211ef5.png 800w, /assets/images/generated/personas-phones/relay-idea-1000-6e8211ef5.png 1000w, /assets/images/generated/personas-phones/relay-idea-1200-6e8211ef5.png 1200w, /assets/images/generated/personas-phones/relay-idea-1600-6e8211ef5.png 1600w, /assets/images/generated/personas-phones/relay-idea-2000-6e8211ef5.png 2000w" type="image/png" /><img src="/assets/images/generated/personas-phones/relay-idea-800-6e8211ef5.png" alt="Diagram of a text and my reply, five boxes in a row with arrows both ways between them: the plumber's phone, Mark Sanchez's number, the Personas server, a relay number named Plumber · Mark, and my real phone. The plumber only ever sees Mark's number. I only ever see a contact called Plumber · Mark Sanchez." width="2000" height="638" /></picture>
+
+<p>The exact same flow works for phone calls. The plumber can call Mark and I get a call on my phone from <strong>Plumber · Mark Sanchez</strong>. I pick up and talk to them. And if I call the contact back, even though I’m calling from my personal cell, the plumber sees a call from Mark’s number.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/relay-calls-800-b77330cdd.webp 800w, /assets/images/generated/personas-phones/relay-calls-1000-b77330cdd.webp 1000w, /assets/images/generated/personas-phones/relay-calls-1200-b77330cdd.webp 1200w, /assets/images/generated/personas-phones/relay-calls-1600-b77330cdd.webp 1600w, /assets/images/generated/personas-phones/relay-calls-2000-b77330cdd.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/relay-calls-800-98f2d6ade.png 800w, /assets/images/generated/personas-phones/relay-calls-1000-98f2d6ade.png 1000w, /assets/images/generated/personas-phones/relay-calls-1200-98f2d6ade.png 1200w, /assets/images/generated/personas-phones/relay-calls-1600-98f2d6ade.png 1600w, /assets/images/generated/personas-phones/relay-calls-2000-98f2d6ade.png 2000w" type="image/png" /><img src="/assets/images/generated/personas-phones/relay-calls-800-98f2d6ade.png" alt="Diagram of calls, in two rows. They call: the plumber dials Mark's number, the Personas server rings my phone from the relay number, and my phone shows Plumber · Mark. I call back: I dial that contact, the Personas server rings the plumber from Mark's number, and their phone shows Mark's number." width="2000" height="713" /></picture>
+
+<p>This all makes it so smooth to use multiple personas — no need to go into an app to send a text or make a call — it’s all just native.</p>
+
+<p>(Bonus: I figured out how to make the profile photos for the Personas numbers in my phone square — like how businesses look in iMessage — instead of circular, so they stand out… the trick is just to put the whole name in the “company” field and leave first and last name blank. You can even do this for your own contact and share it with people and you’ll be square!)</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/square-800-879749a27.webp 800w, /assets/images/generated/personas-phones/square-1000-879749a27.webp 1000w, /assets/images/generated/personas-phones/square-1200-879749a27.webp 1200w, /assets/images/generated/personas-phones/square-1600-879749a27.webp 1600w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/square-800-13d2ba6de.png 800w, /assets/images/generated/personas-phones/square-1000-13d2ba6de.png 1000w, /assets/images/generated/personas-phones/square-1200-13d2ba6de.png 1200w, /assets/images/generated/personas-phones/square-1600-13d2ba6de.png 1600w" type="image/png" /><img src="/assets/images/generated/personas-phones/square-800-13d2ba6de.png" alt="Two rows of the Messages conversation list. Plumber · Mark Sanchez has a square avatar with the initials MS on a woven plum background. Below it, Mom has the usual round one." width="1600" height="686" /></picture>
+
+<hr />
+
+<p>The obvious way to implement this is to use a programmatic telephony provider like Twilio or Telnyx to create the personas’ numbers. But there are a bunch of issues with this. First, many apps and services refuse registration to people signing up with the sorts of VOIP phone numbers providers use, or reject transactions from users with these numbers. And second, before a number like that can <em>send</em> texts, you need to register it with the carriers through a process called 10DLC. This is a pain, but more importantly, I don’t believe the carriers would accept this Personas use case without a bunch of direct negotiation.</p>
+
+<p>So instead, I avoid this entirely by literally setting up an automated <em>real phone</em> with a prepaid SIM card in it (two, actually — one physical, one eSIM — in a cheap Android device). To websites, carriers, and anyone else, this is as good as a real human. Each SIM is one persona’s main number, so each phone covers two personas. This is the “hub” number for the persona.</p>
+
+<p>And then, for the “relay” numbers — the ones that I, Andy, interact with — I use toll-free numbers set up via a programmatic voice provider. Because I am the only person who interacts with the relay numbers (third parties only ever hit the persona’s number), it’s a much lower-stakes use case. (It’s also fewer numbers than it sounds like — a relay number only has to be unique across a given persona’s conversations. So a small pool can be reused across everyone who uses Personas if necessary.)</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/numbers-800-d4ed23a16.webp 800w, /assets/images/generated/personas-phones/numbers-1000-d4ed23a16.webp 1000w, /assets/images/generated/personas-phones/numbers-1200-d4ed23a16.webp 1200w, /assets/images/generated/personas-phones/numbers-1600-d4ed23a16.webp 1600w, /assets/images/generated/personas-phones/numbers-2000-d4ed23a16.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/numbers-800-079a3d6e1.png 800w, /assets/images/generated/personas-phones/numbers-1000-079a3d6e1.png 1000w, /assets/images/generated/personas-phones/numbers-1200-079a3d6e1.png 1200w, /assets/images/generated/personas-phones/numbers-1600-079a3d6e1.png 1600w, /assets/images/generated/personas-phones/numbers-2000-079a3d6e1.png 2000w" type="image/png" /><img src="/assets/images/generated/personas-phones/numbers-800-079a3d6e1.png" alt="Diagram of the two kinds of number. On the left, three other people (the plumber, a bike buyer, a delivery driver) all text or call one number, Mark's number, the hub number. That goes to the Personas server, which sends each of them on to my phone from its own relay number: Plumber · Mark, Bike buyer · Mark, Driver · Mark." width="2000" height="788" /></picture>
+
+<p>For texts, the hub phone is running a custom Android app that handles the inbound and outbound flow programmatically. This includes some special code to address photo messages, which are always routed to the native messages app by default (and so instead the custom app actually needs to monitor the messages database and pull them out).</p>
+
+<p>There are also some tricky implementation details around phone calls. The hub needs to use carrier forwarding to a hidden phone number controlled by the server, which then calls my phone and merges the audio at the carrier level. And for outbound calls, the telephony provider actually (legally, with consent) spoofs my hub number for the caller ID.</p>
+
+<picture loading="lazy"><source srcset="/assets/images/generated/personas-phones/hub-800-978e3b0da.webp 800w, /assets/images/generated/personas-phones/hub-1000-978e3b0da.webp 1000w, /assets/images/generated/personas-phones/hub-1200-978e3b0da.webp 1200w, /assets/images/generated/personas-phones/hub-1600-978e3b0da.webp 1600w, /assets/images/generated/personas-phones/hub-2000-978e3b0da.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/personas-phones/hub-800-a4d31bc39.png 800w, /assets/images/generated/personas-phones/hub-1000-a4d31bc39.png 1000w, /assets/images/generated/personas-phones/hub-1200-a4d31bc39.png 1200w, /assets/images/generated/personas-phones/hub-1600-a4d31bc39.png 1600w, /assets/images/generated/personas-phones/hub-2000-a4d31bc39.png 2000w" type="image/png" /><img src="/assets/images/generated/personas-phones/hub-800-a4d31bc39.png" alt="Diagram of the hub phone, in two rows. Texts: someone texts Mark's number, which is a SIM in a cheap Android phone, and a custom app passes every text along to the server. Calls: someone calls Mark's number, the carrier forwards every call to the server's hidden number. Either way the server passes it to me from the relay number." width="2000" height="793" /></picture>
+
+<p>But the net of all of this is:</p>
+
+<ol>
+  <li>A fake persona gets created with its own phone number</li>
+  <li>I can hand that phone number out to anyone to text/call, or text/call people outbound from it</li>
+  <li>Third parties only ever see that one phone number</li>
+  <li>But on my phone, everything is broken up into individual threads or contacts for the combination of the third party and the persona, so I can use my native Messages and Phone apps to interact with them</li>
+</ol>
+
+<p>It’s a slick UX, and has made me much more apt to use these for privacy in more situations, as opposed to legacy apps that require more painful flows.</p>
+
+<p>In future posts I may write more about the other features — how to handle mailing addresses for these personas, how I generate the backstory to be coherent, the flow with separate Chrome profiles and the extension that helps with autofills and keeping identities uncorrelated, how shortcodes work (including a magical experience of both emailed and texted 2FA codes getting autofilled in the browser!), email forwarding (following similar principles to the phone), and more.</p>
+
+<hr class="end-of-article-divider" />
+
+<h2 class="no_toc">Looking for more to read?</h2>
+
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    <a href="/bitter-lesson-life">
+    
+    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
+    
+    </a>
+    
+    
+      <a href="/bitter-lesson-life">The bitter lesson, for everything in life</a>
+    
+  </div>
+  <div class="next-post">
+    <div class="post-nav-header">
+        
+        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+    </div>
+    
+        <em>You're at the latest post already!</em>
+    
+  </div>
+</nav>
+
+<div>
+    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
+    <div class="substack">
+        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I built Personas, an app for creating identities with their own phone number, email, card and mailing address. This post is about the most interesting bit, which is that a persona's calls and texts happen in my normal Messages and Phone apps.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-11-13-personas-phones.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-11-13-personas-phones.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The bitter lesson, for everything in life</title><link href="https://andybromberg.com/bitter-lesson-life" rel="alternate" type="text/html" title="The bitter lesson, for everything in life" /><published>2026-10-24T16:00:00+00:00</published><updated>2026-10-24T16:00:00+00:00</updated><id>https://andybromberg.com/bitter-lesson-life</id><content type="html" xml:base="https://andybromberg.com/bitter-lesson-life"><![CDATA[<p>If you hang out with AI nerds, you’ll hear them drop the phrase “bitter lesson” roughly once an hour. They’re referring to a <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">2019 post</a> by noted computer scientist Rich Sutton. It suggests that:</p>
 
 <blockquote>
   <p>The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. … Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation.</p>
@@ -62,11 +159,15 @@
   <div class="next-post">
     <div class="post-nav-header">
         
+        <a href="/personas-phones">
+        
         Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
+        
+        </a>
         
     </div>
     
-        <em>You're at the latest post already!</em>
+      <a href="/personas-phones">Personas: calling and texting as someone else</a>
     
   </div>
 </nav>
@@ -878,139 +979,4 @@
     </div>
 
     <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[I found a tweet that gave me permission to solve problems ambiently — as I've always done — and it continues to pay dividends.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-08-23-solve-problems-ambiently.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-08-23-solve-problems-ambiently.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Winnie-the-Pooh, customized for my daughter</title><link href="https://andybromberg.com/winnie-the-pooh" rel="alternate" type="text/html" title="Winnie-the-Pooh, customized for my daughter" /><published>2026-08-20T13:00:00+00:00</published><updated>2026-08-20T13:00:00+00:00</updated><id>https://andybromberg.com/winnie-the-pooh</id><content type="html" xml:base="https://andybromberg.com/winnie-the-pooh"><![CDATA[<p>My wife and I had our first child recently, a baby girl (prepare yourself for dad content on this blog). It’s been wonderful, and of course has spurred me to tinker on various ways to entertain her. I’m particularly proud of this project.</p>
-
-<p>Winnie-the-Pooh was written in 1926 by A. A. Milne, and both the excellent original text and its equally-excellent illustrations by E. H. Shepard are in the public domain in the United States as of a few years ago. This means you’re free to reproduce and mess around with them.</p>
-
-<p>So I designed and printed a totally bespoke version of the book, with its central child Christopher Robin replaced (in both text <em>and</em> illustrations) — with my daughter. I colorized all the illustrations and swapped a stylized version of her into Christopher’s place; I changed all the mentions in the story to be about her instead of him; I wrote a custom introduction and dedication and designed a new cover and dust jacket and front matter and endpapers and various other little details and surprises.</p>
-
-<p>Here’s the outside (with her name blurred, as throughout this post):</p>
-
-<video controls="" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width:100%;max-width:900px;">
-<source src="/assets/images/winnie-the-pooh/fullturn-blurred.mp4" type="video/mp4" />
-If the video doesn't play, <a href="/assets/images/winnie-the-pooh/fullturn-blurred.mp4">open it directly</a>.
-</video>
-
-<p>And representative pages:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/goodbye-blurred-800-2fc656cd9.webp 800w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1000-2fc656cd9.webp 1000w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1200-2fc656cd9.webp 1200w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1600-2fc656cd9.webp 1600w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-2000-2fc656cd9.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/goodbye-blurred-800-00c41bed7.jpg 800w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1000-00c41bed7.jpg 1000w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1200-00c41bed7.jpg 1200w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-1600-00c41bed7.jpg 1600w, /assets/images/generated/winnie-the-pooh/goodbye-blurred-2000-00c41bed7.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/goodbye-blurred-800-00c41bed7.jpg" width="5712" height="4284" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/northpole-blurred-800-4daaaf811.webp 800w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1000-4daaaf811.webp 1000w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1200-4daaaf811.webp 1200w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1600-4daaaf811.webp 1600w, /assets/images/generated/winnie-the-pooh/northpole-blurred-2000-4daaaf811.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/northpole-blurred-800-0ee9e89c3.jpg 800w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1000-0ee9e89c3.jpg 1000w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1200-0ee9e89c3.jpg 1200w, /assets/images/generated/winnie-the-pooh/northpole-blurred-1600-0ee9e89c3.jpg 1600w, /assets/images/generated/winnie-the-pooh/northpole-blurred-2000-0ee9e89c3.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/northpole-blurred-800-0ee9e89c3.jpg" width="5712" height="4284" /></picture>
-
-<hr />
-
-<p>In showing this to a few people, I’ve been amused by the reactions. The first response is invariably them thinking I just got a bespoke cover with my daughter’s name for the classic book (pretty cool by itself!). But when they realize the degree of customization, they then ask where I bought it / what service I used to make it.</p>
-
-<p>When they find out that there’s no off-the-shelf service and that instead I created this myself, they say one of two things. Either a disbelieving “how could you possibly have done this, this seems like an insane amount of work” or “ah yeah I bet AI can just knock this out, it’s such a good idea.”</p>
-
-<p>(Well, first they tell me I should start such a service creating custom books. But <em>then</em> they say one of those two things.)</p>
-
-<p>The reality, of course, is that the answer is somewhere in between. I could not have done this without AI, but it still took a pretty enormous amount of work. These are the projects I have the most fun with right now: ones that would be intractable without AI (within my constraints), but also <em>still</em> take enough work, judgement, and taste to feel like <em>I</em> made them.</p>
-
-<p>For those interested, the rest of this post details the rough pipeline I built to produce the book.</p>
-
-<p>I’ve already been playing around with <em>[my daughter] in Wonderland</em> as a next edition, but if you have any other good public domain ideas, let me know…</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/cover-blurred-800-d1e8c8765.webp 800w, /assets/images/generated/winnie-the-pooh/cover-blurred-1000-d1e8c8765.webp 1000w, /assets/images/generated/winnie-the-pooh/cover-blurred-1200-d1e8c8765.webp 1200w, /assets/images/generated/winnie-the-pooh/cover-blurred-1600-d1e8c8765.webp 1600w, /assets/images/generated/winnie-the-pooh/cover-blurred-2000-d1e8c8765.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/cover-blurred-800-bcf0a3800.jpg 800w, /assets/images/generated/winnie-the-pooh/cover-blurred-1000-bcf0a3800.jpg 1000w, /assets/images/generated/winnie-the-pooh/cover-blurred-1200-bcf0a3800.jpg 1200w, /assets/images/generated/winnie-the-pooh/cover-blurred-1600-bcf0a3800.jpg 1600w, /assets/images/generated/winnie-the-pooh/cover-blurred-2000-bcf0a3800.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/cover-blurred-800-bcf0a3800.jpg" width="4032" height="3024" /></picture>
-
-<hr />
-
-<p>At the highest level, the pipeline is built as a series of scripts that process various stages of the book creation process. That way I can make modifications at different points and resume the pipeline from there, or even “fork” off and try a different experiment. It’s also built to make it easier to later swap in another child instead of my daughter if I wanted to.</p>
-
-<p>I used <a href="https://typst.app/">Typst</a> for all of the typesetting and found it delightful. So much nicer than LaTeX or other typesetting systems I have used.</p>
-
-<p>I also had to learn a thing or two about book printing and bookbinding to make this all work, which was a fun diversion.</p>
-
-<p>Everything starts with the original text, which I picked up from <a href="https://www.gutenberg.org/cache/epub/67098/pg67098-images.html">Project Gutenberg</a>. I also heavily leaned on this <a href="https://archive.org/details/winnie-the-pooh_202201/mode/2up">Internet Archive scan</a> of the 1926 original to replicate the actual layout in many places. And I sourced high-res versions of the illustrations from <a href="https://picryl.com/topics/winnie+the+pooh/e+h+shepard">Picryl</a>.</p>
-
-<p>First up, I process the images. I take the Picryl originals and enlarge them to the necessary print resolution. Mostly just bicubic upscaling, but I had some that didn’t come out great with that and I found <a href="https://github.com/xinntao/real-esrgan">Real-ESRGAN</a> which largely solved the issues.</p>
-
-<p>Then I colorized the black-and-white drawings with AI. It took a lot of prompt iteration and model testing to get to reliably good results, including prompting specific to each illustration. Big thanks to <a href="https://openrouter.ai/">OpenRouter</a> for making it so easy to try different models. <code class="language-plaintext highlighter-rouge">x-ai/grok-imagine-image-quality</code> ended up being best for the colorizing. After colorizing, I have a separate AI step that checks the output against the original to make sure it didn’t screw anything up (this is a recurring theme).</p>
-
-<p>I originally tried then just passing a few images of my daughter to the models along with the colorized, upscaled illustrations to try to swap her in. But I found the outputs were way too inconsistent — she looked slightly different in each one. So instead, I generated a stylized “character sheet” of her from various perspectives and in different positions, based on the style of Shepard’s illustrations. The best model for this character sheet ended up being <code class="language-plaintext highlighter-rouge">google/gemini-3.1-flash-image</code>.</p>
-
-<p>Once I had the character sheet, I used yet another image model to place her in the scenes. For each one, I passed in the colorized illustration, the character sheet, a scene-specific description of her pose, and any additional reference art for other recurring characters. For <em>this</em> use case, <code class="language-plaintext highlighter-rouge">black-forest-labs/flux.2-max</code> was the best by far. (Fascinating how different image models worked best for different use cases — e.g. Grok did better for “don’t screw anything up, just add color,” and Flux did better for “here’s a fundamental transformation to the image, but don’t lose the style.”)</p>
-
-<p>Here’s an example of the original illustration and a photograph of the final version in the book:</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/sidebyside-800-f566bcf41.webp 800w, /assets/images/generated/winnie-the-pooh/sidebyside-1000-f566bcf41.webp 1000w, /assets/images/generated/winnie-the-pooh/sidebyside-1200-f566bcf41.webp 1200w, /assets/images/generated/winnie-the-pooh/sidebyside-1600-f566bcf41.webp 1600w, /assets/images/generated/winnie-the-pooh/sidebyside-1656-f566bcf41.webp 1656w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/sidebyside-800-a2c932de6.png 800w, /assets/images/generated/winnie-the-pooh/sidebyside-1000-a2c932de6.png 1000w, /assets/images/generated/winnie-the-pooh/sidebyside-1200-a2c932de6.png 1200w, /assets/images/generated/winnie-the-pooh/sidebyside-1600-a2c932de6.png 1600w, /assets/images/generated/winnie-the-pooh/sidebyside-1656-a2c932de6.png 1656w" type="image/png" /><img src="/assets/images/generated/winnie-the-pooh/sidebyside-800-a2c932de6.png" width="1656" height="1024" /></picture>
-
-<p>Finally, I needed to make the images blend into the page. The generated images typically had a subtly different assumed paper color as a background. The image models don’t seem to do well with transparency requirements. So I built out a deterministic page-tone stage that analyzed the artwork and separated “painted/inked” areas from the background, and then everything in the background is set to exactly the same cream color I use for the book layout. This way the images “float” on the page, just like the original line drawings.</p>
-
-<p>Next up: the text. I put the original in Markdown files by chapter, and then made a pipeline stage that replaces Christopher Robin’s name and the times he is referred to by a pronoun (but not any of the other characters’ pronouns!). There are also a couple other little surprises I tweaked, but otherwise, the text is identical to the original — I didn’t want to change the story.</p>
-
-<p>I also changed all the front matter — the title page, dedication, introduction, colophon, and so on. I wrote my own copy for all of these.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/dedication-blurred-800-fc483254e.webp 800w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1000-fc483254e.webp 1000w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1200-fc483254e.webp 1200w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1600-fc483254e.webp 1600w, /assets/images/generated/winnie-the-pooh/dedication-blurred-2000-fc483254e.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/dedication-blurred-800-beeacbe3f.jpg 800w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1000-beeacbe3f.jpg 1000w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1200-beeacbe3f.jpg 1200w, /assets/images/generated/winnie-the-pooh/dedication-blurred-1600-beeacbe3f.jpg 1600w, /assets/images/generated/winnie-the-pooh/dedication-blurred-2000-beeacbe3f.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/dedication-blurred-800-beeacbe3f.jpg" width="5712" height="4284" /></picture>
-
-<p>Then the Markdown chapters are converted into Typst and combined with the final / toned illustrations, mostly exactly in line with the 1926 original’s layout (this took quite a bit of fiddling!). I also added some details — sunk chapter headings and stacked subtitles, drop caps to start the chapters, period-appropriate indentation, running heads, and some nice custom treatments for poems, songs, signs, and display text outside of the normal prose. (Crafting these details, along with the custom dedication poem and introduction, were some of the most fun parts.)</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/bang-blurred-800-72e144ea7.webp 800w, /assets/images/generated/winnie-the-pooh/bang-blurred-1000-72e144ea7.webp 1000w, /assets/images/generated/winnie-the-pooh/bang-blurred-1200-72e144ea7.webp 1200w, /assets/images/generated/winnie-the-pooh/bang-blurred-1600-72e144ea7.webp 1600w, /assets/images/generated/winnie-the-pooh/bang-blurred-2000-72e144ea7.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/bang-blurred-800-686d161cb.jpg 800w, /assets/images/generated/winnie-the-pooh/bang-blurred-1000-686d161cb.jpg 1000w, /assets/images/generated/winnie-the-pooh/bang-blurred-1200-686d161cb.jpg 1200w, /assets/images/generated/winnie-the-pooh/bang-blurred-1600-686d161cb.jpg 1600w, /assets/images/generated/winnie-the-pooh/bang-blurred-2000-686d161cb.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/bang-blurred-800-686d161cb.jpg" width="5712" height="4284" /></picture>
-
-<p>Then I spent a bunch of time learning about the various requirements for printing the book well, and adjusted the Typst layout accordingly — binding margins, bleed, background color and page thickness considerations, and so on.</p>
-
-<p>After that, there’s a whole bunch of other things to be designed. The case itself, the dust jacket, masks for the gold foil on both of those (which I love), the spine, customized endpapers of the original Pooh map (featuring my daughter at her home instead of Christopher Robin), the built-in ribbon, head/tail bands, and — a nice final touch — sprayed edges on the sides of the book pages that show bees flying.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/endpaper-blurred-800-9749f715c.webp 800w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1000-9749f715c.webp 1000w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1200-9749f715c.webp 1200w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1600-9749f715c.webp 1600w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-2000-9749f715c.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/endpaper-blurred-800-7fb2c4161.jpg 800w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1000-7fb2c4161.jpg 1000w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1200-7fb2c4161.jpg 1200w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-1600-7fb2c4161.jpg 1600w, /assets/images/generated/winnie-the-pooh/endpaper-blurred-2000-7fb2c4161.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/endpaper-blurred-800-7fb2c4161.jpg" width="5712" height="4284" /></picture>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/sprayededges-blurred-800-981db903b.webp 800w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1000-981db903b.webp 1000w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1200-981db903b.webp 1200w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1600-981db903b.webp 1600w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-2000-981db903b.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/sprayededges-blurred-800-68f45cc56.jpg 800w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1000-68f45cc56.jpg 1000w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1200-68f45cc56.jpg 1200w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-1600-68f45cc56.jpg 1600w, /assets/images/generated/winnie-the-pooh/sprayededges-blurred-2000-68f45cc56.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/sprayededges-blurred-800-68f45cc56.jpg" width="4032" height="3024" /></picture>
-
-<p>Finally, it all gets converted to printer-ready files using the right file formats, color schemes (first time I’ve ever heard of “Coated FOGRA39”), embedded fonts, and so on. I have a lots of test scripts here to make sure everything passes all the quality requirements discovered along the way.</p>
-
-<p>And then we’re off to the printer! I got a first proof back and it was good, but not great. Bunch of little misalignments and printing issues.</p>
-
-<p>So then my brother and I (thank you so much Noah) painstakingly went through the physical book and the digital files to improve everything. Many of the images still needed improvement, some of the typesetting had issues, some of the layouts looked a little janky… lots and lots and lots of little fixes. And lots of tests added for reviewing all sorts of new issue categories.</p>
-
-<p>For each of them, I then intervened at the appropriate step of the pipeline, introduced the fixes so they would be reproducible (or at least re-runnable, in the case of AI steps), and ran it back.</p>
-
-<p>Interestingly, in certain cases, a different model ended up outperforming — sometimes Flux <em>did</em> end up being better for particularly tricky recolorizations (even though Grok was better for most of them), and in cases where the characters are small, Grok sometimes outperformed Flux. Lots of trial and error. I also tried Gemini 3 Pro Image, GPT Image 2, Krea 2 Large, and Riverflow 2.5 Pro in various places. There are a couple instances of several of those where they happened to win. And of course, many detailed prompt and instruction changes specific to each image.</p>
-
-<p>In the worst of the cases, simply rerolling didn’t work. So instead I did “plate surgery” — programmatically cropping around the defective area, giving that crop to the models with a very narrow instruction, resizing the returned image to the exact original dimensions, and pasting it in through a feathered mask. In many cases this was related to hand-drawn text in the original illustrations, which the models really struggled with.</p>
-
-<p>Thankfully, after all that work — lots of QA, re-rolling, squinting, and tweaking (thanks again Noah) — the second proof came out great. I’m already reading it to her, but I can’t wait until she’s old enough to understand it…</p>
-
-<p>Like I said above — there’s no way I would have tackled this project without AI — it just would have taken way too much time. But I also found the most fun and interesting parts were where I was injecting my taste and crafting things myself (iterating on output styles, coming up with ideas for special formatting and surprises, writing, putting a twist on elements of the original). I’m very excited for more projects at this intersection.</p>
-
-<picture loading="lazy"><source srcset="/assets/images/generated/winnie-the-pooh/dustjacket-blurred-800-7d179e0e0.webp 800w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1000-7d179e0e0.webp 1000w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1200-7d179e0e0.webp 1200w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1600-7d179e0e0.webp 1600w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-2000-7d179e0e0.webp 2000w" type="image/webp" /><source srcset="/assets/images/generated/winnie-the-pooh/dustjacket-blurred-800-83f8f538f.jpg 800w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1000-83f8f538f.jpg 1000w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1200-83f8f538f.jpg 1200w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-1600-83f8f538f.jpg 1600w, /assets/images/generated/winnie-the-pooh/dustjacket-blurred-2000-83f8f538f.jpg 2000w" type="image/jpeg" /><img src="/assets/images/generated/winnie-the-pooh/dustjacket-blurred-800-83f8f538f.jpg" width="5712" height="4284" /></picture>
-
-<hr class="end-of-article-divider" />
-
-<h2 class="no_toc">Looking for more to read?</h2>
-
-<nav class="post-navigation">
-  <div class="prev-post">
-    
-    <a href="/copapers-tricky-bits">
-    
-    <div class="post-nav-header"><i class="fa-solid fa-arrow-left post-nav-arrow"></i> Previous post</div>
-    
-    </a>
-    
-    
-      <a href="/copapers-tricky-bits">Copapers: the tricky bits</a>
-    
-  </div>
-  <div class="next-post">
-    <div class="post-nav-header">
-        
-        <a href="/solve-problems-ambiently">
-        
-        Next post <i class="fa-solid fa-arrow-right post-nav-arrow"></i>
-        
-        </a>
-        
-    </div>
-    
-      <a href="/solve-problems-ambiently">You can solve problems ambiently</a>
-    
-  </div>
-</nav>
-
-<div>
-    <p>Want to hear about new essays? Subscribe to my roughly-monthly <a href="https://andybromberg.substack.com">newsletter</a> recapping my recent writing and things I'm enjoying:</p>
-    <div class="substack">
-        <iframe loading="lazy" src="https://andybromberg.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <p>And I'd love to hear from you directly: <a href="mailto:andy@andybromberg.com">andy@andybromberg.com</a></p>
-</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Tinkering&quot;]" /><summary type="html"><![CDATA[I made a custom version of Winnie-the-Pooh for my daughter and it came out great. Here's how I did it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-08-19-winnie-the-pooh.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Andy Bromberg</name></author><category term="[&quot;Ways of Looking&quot;]" /><summary type="html"><![CDATA[I found a tweet that gave me permission to solve problems ambiently — as I've always done — and it continues to pay dividends.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://andybromberg.com/assets/images/og/2026-08-23-solve-problems-ambiently.png" /><media:content medium="image" url="https://andybromberg.com/assets/images/og/2026-08-23-solve-problems-ambiently.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
